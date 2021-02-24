@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/bottomsheet_divider_padding_top" android:paddingBottom="@dimen/bottomsheet_divider_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="?attr/dividerDefault" android:layout_width="match_parent" android:layout_height="@dimen/bottomsheet_divider_height"/>
+</FrameLayout>

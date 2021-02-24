@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" app:cardBackgroundColor="?attr/colorBackgroundFloating">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="56dp">
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:lines="1" android:layout_marginStart="16dp" android:layout_marginEnd="56dp"/>
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" android:textColor="?attr/colorAlert" android:gravity="center_vertical" android:id="@+id/tv_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/synchronization_this_task_blocking" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/tv_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/rl_button_bar" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_discard" android:layout_width="wrap_content" android:layout_height="@dimen/dialog_button_fake_36dp_height" android:text="@string/synchronization_discard" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/Widget.Twist.CustomDialog.Button.Negative"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

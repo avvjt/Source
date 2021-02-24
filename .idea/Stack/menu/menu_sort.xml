@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/creation" android:title="@a/b"/>
+    <item android:id="@+id/activity" android:title="@a/a"/>
+    <item android:id="@+id/votes" android:title="@a/f"/>
+    <item android:id="@+id/hot" android:title="@a/c"/>
+    <item android:id="@+id/week" android:title="@a/g"/>
+    <item android:id="@+id/month" android:title="@a/d"/>
+</menu>

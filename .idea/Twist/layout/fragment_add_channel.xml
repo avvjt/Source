@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.Twist.Tab" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="?attr/toolbarPopupTheme"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+    <com.twistapp.ui.widgets.IllustrationEmptyView android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:emptyBodyText="@string/empty_join_channels_body" app:emptyHelpText="@string/empty_threads_help_link" app:emptyIllustration="@drawable/img_threads_banner" app:emptyPrimaryButtonText="@string/empty_join_channels_button" app:emptyTitleText="@string/empty_join_channels_title"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingTop="@dimen/standard_small_spacing" android:paddingBottom="@dimen/standard_small_spacing" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize"/>
+</FrameLayout>

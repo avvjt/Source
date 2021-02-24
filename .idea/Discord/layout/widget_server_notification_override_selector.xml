@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout android:background="?attr/primary_630" style="@h/AppTheme_AppBarLayout_Flat_Transparent">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar_Transparent"/>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_notifications_channel_search" style="@h/UiKit_TextInputLayout_Search">
+            <com.google.android.material.textfield.TextInputEditText android:hint="@g/search_channels" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/guild_notifications_channel_list" android:paddingTop="8dp" android:paddingBottom="@dimen/list_bottom_padding" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView_AppBarScrollingViewBehavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <LinearLayout android:gravity="center_vertical" android:layout_marginTop="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <ImageView android:id="@+id/premium_settings_nitro" android:layout_width="wrap_content" android:layout_height="70dp" android:src="?attr/img_logo_discord_nitro" android:adjustViewBounds="true" android:contentDescription="@g/premium_tier_2" style="@h/UiKit_ImageView"/>
+        <ImageView android:id="@+id/premium_settings_nitro_wumpus" android:layout_width="wrap_content" android:layout_height="70dp" android:src="@d/img_wumpus_jetpack" android:adjustViewBounds="true" android:scaleX="-1" android:importantForAccessibility="no" android:layout_marginStart="16dp" style="@h/UiKit_ImageView"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:textColor="?attr/primary_000" android:layout_marginTop="16dp" android:text="@g/premium_tier_2_title" style="@h/UiKit_TextView_Semibold"/>
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_200" android:layout_marginTop="8dp" android:text="@g/premium_tier_2_subtitle" style="@h/UiKit_TextView"/>
+    <com.google.android.material.button.MaterialButton android:textColor="@c/white" android:id="@+id/premium_settings_premium" android:layout_marginTop="16dp" app:icon="@d/ic_nitro_badge_white" app:iconGravity="2" app:iconSize="@dimen/uikit_textsize_large" app:iconTint="@c/white" style="@h/UiKit_Material_Button_Green"/>
+</LinearLayout>

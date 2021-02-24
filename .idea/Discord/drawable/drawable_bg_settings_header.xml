@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:insetLeft="@dimen/settings_border_insets" android:insetRight="@dimen/settings_border_insets" android:insetTop="@dimen/settings_border_insets">
+    <shape android:shape="rectangle">
+        <stroke android:width="0.25dp" android:color="@c/black_alpha_10"/>
+        <solid android:color="@c/white_3_alpha_25"/>
+    </shape>
+</inset>

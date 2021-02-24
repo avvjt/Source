@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundSecondary" android:padding="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <ImageView android:layout_gravity="center" android:src="@d/asset_mfa_server" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+    <com.discord.utilities.view.text.LinkifiedTextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorInteractiveActive" android:gravity="center" android:id="@+id/channels_list_item_mfa_text" android:layout_marginTop="16dp" style="@h/UiKit_TextView_Semibold"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <TextView android:padding="16dp" android:layout_width="match_parent" android:text="@g/change_nickname" style="@h/UiKit_TextView_H1_Bold"/>
+    <View style="@h/UiKit_Divider"/>
+    <LinearLayout android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/channels_list_actions_change_nickname_edit_text" android:hint="@g/nickname" style="@h/UiKit_TextInputLayout_Primary">
+            <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@c/purple_brand" android:id="@+id/channels_list_actions_change_nickname_reset" android:paddingTop="8dp" android:text="@g/reset_nickname" android:textAllCaps="true" style="@h/UiKit_TextView_Semibold"/>
+    </LinearLayout>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:id="@+id/channels_list_actions_change_nickname_cancel" android:text="@g/cancel" android:layout_marginEnd="8dp" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/channels_list_actions_change_nickname_save" android:layout_width="wrap_content" android:text="@g/save" style="@h/UiKit_Material_Button_Fit"/>
+    </LinearLayout>
+</LinearLayout>

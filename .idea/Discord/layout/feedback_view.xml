@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/feedback_rating_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_ConstraintLayout">
+        <TextView android:id="@+id/feedback_rating_summary_prompt" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@h/Feedback_Row_Prompt"/>
+        <ImageView android:id="@+id/feedback_sad_rating" android:src="?attr/ic_selectable_feedback_sad" android:contentDescription="@g/call_feedback_sentiment_negative" android:layout_marginEnd="24dp" app:layout_constraintEnd_toStartOf="@+id/feedback_neutral_rating" app:layout_constraintTop_toBottomOf="@+id/feedback_rating_summary_prompt" style="@h/UiKit_ImageView_Clickable"/>
+        <ImageButton android:id="@+id/feedback_neutral_rating" android:src="?attr/ic_selectable_feedback_neutral" android:contentDescription="@g/call_feedback_sentiment_neutral" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/feedback_rating_summary_prompt" style="@h/UiKit_ImageView_Clickable"/>
+        <ImageButton android:id="@+id/feedback_happy_rating" android:src="?attr/ic_selectable_feedback_happy" android:contentDescription="@g/call_feedback_sentiment_positive" android:layout_marginStart="24dp" app:layout_constraintStart_toEndOf="@+id/feedback_neutral_rating" app:layout_constraintTop_toBottomOf="@+id/feedback_rating_summary_prompt" style="@h/UiKit_ImageView_Clickable"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:id="@+id/feedback_issue_section_header" android:visibility="gone" style="@h/Feedback_Row_SectionHeader"/>
+    <androidx.cardview.widget.CardView android:id="@+id/feedback_issues_card" android:visibility="gone" style="@h/Feedback_Row_SectionCard">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/feedback_issues_recycler" style="@h/UiKit_ViewGroup_RecyclerView"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

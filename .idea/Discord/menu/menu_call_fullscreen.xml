@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@d/ic_call_toolbar_icon_camera_swap" android:id="@+id/menu_call_switch_camera" android:title="@g/video_call_return_to_grid" app:showAsAction="ifRoom"/>
+    <item android:icon="@d/ic_call_toolbar_icon_group" android:id="@+id/menu_call_video_list" android:title="@g/video_call_return_to_list" app:showAsAction="ifRoom"/>
+    <item android:icon="@d/ic_call_toolbar_icon_grid" android:id="@+id/menu_call_overlay_launcher" android:visible="true" android:title="@g/settings_games_toggle_overlay" app:showAsAction="ifRoom"/>
+    <item android:icon="@d/ic_call_toolbar_icon_overflow" android:id="@+id/menu_call_voice_settings" android:title="@g/more_options" app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/uikit_guideline_chat" android:layout_marginEnd="@dimen/chat_cell_horizontal_spacing_total" style="@h/UiKit_Chat_Embed_CardView">
+    <com.discord.views.sticker.StickerView android:id="@+id/chat_list_adapter_item_sticker" android:layout_width="@dimen/sticker_length" android:layout_height="@dimen/sticker_length"/>
+</FrameLayout>

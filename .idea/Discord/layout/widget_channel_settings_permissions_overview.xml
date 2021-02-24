@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="64dp" android:layout_marginTop="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_300" android:id="@+id/channel_settings_permissions_overview_add_role" android:focusable="true" android:clickable="true" android:text="@g/add_a_role" app:drawableStartCompat="?attr/ic_plus_a60" style="@h/UiKit_Settings_Item_Icon"/>
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_300" android:id="@+id/channel_settings_permissions_overview_add_member" android:focusable="true" android:clickable="true" android:text="@g/add_a_member" app:drawableStartCompat="?attr/ic_plus_a60" style="@h/UiKit_Settings_Item_Icon"/>
+            <LinearLayout android:id="@+id/channel_settings_permissions_overview_roles_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/roles" style="@h/UiKit_Settings_Item_Header"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/widget_channel_settings_permissions_overview_roles_recycler" style="@h/UiKit_ViewGroup_RecyclerView"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/channel_settings_permissions_overview_members_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/members" style="@h/UiKit_Settings_Item_Header"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/widget_channel_settings_permissions_overview_members_recycler" style="@h/UiKit_ViewGroup_RecyclerView"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

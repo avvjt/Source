@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/toolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="?attr/toolbarPopupTheme"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.twistapp.ui.widgets.IllustrationEmptyView android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingBottom="88dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize"/>
+    <com.twistapp.ui.widgets.FloatingActionButton android:theme="@style/ThemeOverlay.Twist.Fab" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_spacing" android:src="@drawable/ic_create"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/bottom_panel_container" android:background="?attr/colorBackgroundFloating" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/toolbar_elevation">
+        <TextView android:textColor="?android:attr/textColorSecondary" android:id="@+id/bottom_panel_text" android:padding="@dimen/standard_spacing" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:layout_gravity="center_vertical" android:id="@+id/bottom_panel_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_micro_spacing" android:text="@string/menu_channel_unarchive" android:paddingStart="@dimen/standard_spacing" android:paddingEnd="@dimen/standard_spacing" style="@style/Widget.AppCompat.Button.Colored"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

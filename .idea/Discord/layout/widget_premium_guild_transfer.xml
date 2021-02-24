@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:gravity="center" android:layout_marginLeft="16dp" android:layout_marginTop="64dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:src="@d/drawable_boost_removal" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <TextView android:layout_marginTop="32dp" android:text="@g/premium_guild_subscribe_confirm_transfer_header" style="@h/UiKit_TextView_H1_Bold"/>
+            <TextView android:textColor="?attr/colorTextNormal" android:gravity="center_horizontal" android:id="@+id/premium_guild_transfer_confirmation_blurb" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@g/premium_guild_subscribe_confirm_transfer_blurb" style="@h/UiKit_TextView"/>
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:layout_gravity="start" android:id="@+id/premium_guild_transfer_previous_guild_header" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@g/premium_guild_subscribe_confirm_transfer_from_guild" android:textAllCaps="true" style="@h/UiKit_TextView_Bold"/>
+            <com.discord.views.premiumguild.PremiumGuildConfirmationView android:id="@+id/premium_guild_transfer_previous_guild" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardCornerRadius="4dp"/>
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:layout_gravity="start" android:id="@+id/premium_guild_transfer_target_guild_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@g/premium_guild_subscribe_confirm_transfer_to_guild" android:textAllCaps="true" style="@h/UiKit_TextView_Bold"/>
+            <com.discord.views.premiumguild.PremiumGuildConfirmationView android:id="@+id/premium_guild_transfer_target_guild" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardCornerRadius="4dp"/>
+            <TextView android:textColor="@c/status_red_500" android:id="@+id/premium_guild_transfer_error" android:visibility="invisible" android:layout_marginBottom="8dp" android:text="@g/premium_guild_subscription_error_mobile" style="@h/UiKit_TextView"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/premium_guild_transfer_select" android:layout_marginBottom="24dp" android:text="@g/premium_guild_subscribe_transfer_confirm_confirmation" style="@h/UiKit_Material_Button"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

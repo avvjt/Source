@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+    <me.tylerbwong.stack.markdown.MarkdownTextView android:textColor="?android:attr/textColorPrimary" android:id="@+id/commentBody" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="12sp" android:textStyle="italic" android:gravity="start" android:id="@+id/commentedDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="2dp" android:lines="1"/>
+    <me.tylerbwong.stack.ui.owners.OwnerView android:id="@+id/ownerView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

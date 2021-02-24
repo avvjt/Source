@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <ScrollView android:layout_height="match_parent" android:layout_above="@+id/alert_verify_email_anchor" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout android:layout_gravity="center_vertical" style="@h/UiKit_Copy_Container">
+            <com.airbnb.lottie.LottieAnimationView style="@h/UiKit_Anim_Verify_By_Email_Frozen"/>
+            <LinearLayout style="@h/UiKit_Copy">
+                <TextView android:text="@g/verify_by_email" style="@h/UiKit_TextView_H1"/>
+                <TextView android:gravity="center" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@g/enter_email_body" style="@h/UiKit_TextView"/>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/alert_verify_email_change_email" android:hint="@g/email" style="@h/UiKit_TextInputLayout_Primary">
+                    <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Email"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/alert_verify_email_change_password" android:hint="@g/form_label_password" style="@h/UiKit_TextInputLayout_Primary">
+                    <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Password"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/alert_verify_email_anchor" android:layout_alignParentBottom="true" style="@h/UiKit_Copy_Anchor">
+        <com.google.android.material.button.MaterialButton android:enabled="false" android:id="@+id/alert_verify_email_change" android:text="@g/change_email_short" style="@h/UiKit_Material_Button"/>
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat_Transparent">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</RelativeLayout>

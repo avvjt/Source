@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/attachment_group">
+        <item android:icon="@drawable/ic_menu_download_attachment" android:id="@+id/menu_download_attachment" android:title="@string/menu_download_attachment"/>
+        <item android:icon="@drawable/ic_menu_get_link" android:id="@+id/menu_get_attachment_link" android:title="@string/menu_get_attachment_link"/>
+    </group>
+    <item android:icon="@drawable/ic_menu_todoist_task" android:id="@+id/menu_todoist_task" android:title="@string/menu_todoist_task"/>
+    <item android:icon="@drawable/ic_menu_get_link" android:id="@+id/menu_get_link" android:title="@string/menu_get_link"/>
+    <item android:icon="@drawable/ic_menu_copy" android:id="@+id/menu_copy_text" android:title="@string/menu_copy_text"/>
+    <item android:icon="@drawable/ic_menu_recipients" android:id="@+id/menu_recipients" android:title="@string/menu_recipients"/>
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_ScrollView_Page">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:id="@+id/guild_actions_overview_header_tv" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@g/channel_select" android:layout_marginStart="16dp" style="@h/UiKit_Sheet_Header_Title"/>
+        <View style="@h/UiKit_Settings_Divider"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/channel_selector_list" style="@h/UiKit_ViewGroup_RecyclerView"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

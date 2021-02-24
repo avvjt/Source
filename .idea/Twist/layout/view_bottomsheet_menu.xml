@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/bottomsheetToolbarTheme" android:id="@+id/bottomsheet_title" android:layout_width="match_parent" android:layout_height="@dimen/bottomsheet_header_height" app:popupTheme="?attr/bottomsheetToolbarPopupTheme" app:subtitleTextAppearance="@style/TextAppearance.Twist.BottomSheet.Menu.Subtitle" app:titleTextAppearance="@style/TextAppearance.Twist.BottomSheet.Menu.Title"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/bottomsheet_menu" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</merge>

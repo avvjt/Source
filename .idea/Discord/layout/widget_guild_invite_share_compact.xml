@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:layout_height="match_parent" app:layout_behavior="@g/action_bar_scrolling_view_behavior" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+        <com.discord.app.AppViewFlipper android:id="@+id/guild_invite_suggestions_flipper" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_margin="32dp" android:src="?attr/img_empty_server_invites" android:scaleType="centerInside" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_invite_share_compact_search" style="@h/UiKit_TextInputLayout_Search">
+                    <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/guild_invite_suggestion_list" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_weight="1" style="@h/UiKit_ViewGroup_RecyclerView"/>
+                <TextView android:id="@+id/guild_invite_empty_results" android:visibility="gone" style="@h/UiKit_TextView_NoResults"/>
+            </LinearLayout>
+        </com.discord.app.AppViewFlipper>
+        <View android:background="?attr/colorBackgroundSecondary" style="@h/UiKit_Divider"/>
+        <LinearLayout android:gravity="center_horizontal" android:background="?attr/colorBackgroundMobileSecondary" android:padding="16dp" android:clipChildren="false" android:clipToPadding="false" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:text="@g/invite_footer_link_header" style="@h/UiKit_TextView"/>
+            <LinearLayout android:clipChildren="false" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <com.google.android.material.button.MaterialButton android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorTextNormal" android:id="@+id/guild_invite_share_btn" android:layout_width="0dp" android:text="@g/invite_link_example_verified" android:layout_weight="1" android:contentDescription="@g/share_to" android:textAlignment="textStart" app:icon="@d/ic_share_white_24dp" app:iconGravity="3" app:iconTint="?attr/colorInteractiveNormal" app:rippleColor="@c/status_green_500" style="@h/UiKit_Material_Button_Tertiary"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/guild_invite_settings_edit" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:src="?attr/ic_settings" android:scaleType="centerCrop" android:contentDescription="@g/share_invite_link_for_access" android:layout_marginStart="8dp" style="@h/UiKit_ImageView_Clickable"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorInteractiveNormal" android:id="@+id/guild_invite_never_expire" android:text="@g/invite_links_expire_after_1_day" style="@h/UiKit_TextView_Subtext"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/bottom_sheet_tint" android:background="@c/black_alpha_60" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.discord.widgets.guilds.invite.ViewInviteSettingsSheet android:id="@+id/invite_settings_bottom_sheet" android:background="?attr/primary_630" style="@h/UiKit_ViewGroup_LinearLayout_BottomSheet"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

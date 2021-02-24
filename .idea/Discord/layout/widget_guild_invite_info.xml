@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" style="@h/UiKit_ViewGroup_LinearLayout">
+    <RelativeLayout android:id="@+id/invite_avatar_wrap" android:visibility="gone" android:layout_width="@dimen/avatar_size_hero" android:layout_height="@dimen/avatar_size_hero" android:layout_marginTop="16dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@c/transparent" app:cardCornerRadius="64dp">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/invite_avatar" style="@h/Avatar_Hero"/>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout android:id="@+id/invite_avatar_small_wrap" android:background="?attr/colorPrimaryCircle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3dp" android:layout_alignParentBottom="true" android:layout_marginEnd="-3dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/invite_expired_image" android:visibility="gone" android:layout_marginLeft="96dp" android:layout_marginTop="16dp" android:layout_marginRight="96dp" android:layout_marginBottom="16dp" android:src="?attr/img_poop" android:contentDescription="@g/instant_invite_expired" style="@h/UiKit_ImageView"/>
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:textSize="18sp" android:id="@+id/invite_title" android:layout_marginBottom="8dp" style="@h/UiKit_TextView"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <androidx.cardview.widget.CardView android:layout_gravity="center_vertical" android:id="@+id/invite_avatar_small_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardBackgroundColor="@c/transparent" app:cardCornerRadius="23dp">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/invite_avatar_small" style="@h/Avatar_Large"/>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="26sp" android:textColor="?attr/primary_100" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/invite_message" android:drawablePadding="4dp" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/invite_members_wrap" android:visibility="gone" android:layout_width="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout_Rotatable">
+            <androidx.cardview.widget.CardView android:id="@+id/invite_members_online_wrap" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" app:cardBackgroundColor="?attr/primary_630" app:cardCornerRadius="30dp">
+                <LinearLayout android:gravity="center" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginEnd="8dp" app:placeholderImage="@c/status_green_500" app:roundAsCircle="true"/>
+                    <TextView android:textSize="@dimen/uikit_textsize_large" android:gravity="center" android:id="@+id/invite_members_online" android:text="@g/instant_invite_guild_members_online" android:singleLine="true" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@+id/invite_members_total_wrap" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" app:cardBackgroundColor="?attr/primary_630" app:cardCornerRadius="30dp">
+                <LinearLayout android:gravity="center" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <com.facebook.drawee.view.SimpleDraweeView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginEnd="8dp" app:placeholderImage="@c/status_grey_500" app:roundAsCircle="true"/>
+                    <TextView android:textSize="@dimen/uikit_textsize_large" android:id="@+id/invite_members_total" android:singleLine="true" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

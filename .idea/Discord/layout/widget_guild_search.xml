@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout android:background="?attr/primary_630" style="@h/AppTheme_AppBarLayout">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_search_bar" style="@h/UiKit_TextInputLayout_Search_ActionBar">
+            <com.google.android.material.textfield.TextInputEditText android:hint="@g/premium_guild_subscribe_search_guild_placeholder" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/guild_search_recycler" android:paddingTop="8dp" android:paddingBottom="64dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="match_parent" app:layout_behavior="com.discord.app.AppScrollingViewBehavior" style="@h/UiKit_ViewGroup_RecyclerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

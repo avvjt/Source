@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundSecondary" android:paddingBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:textAppearance="@h/UiKit_TextAppearance" android:textColorLink="?attr/colorTextLink" android:autoLink="web" android:id="@+id/dialog_url_actions_url" style="@h/UiKit_Settings_Item"/>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <TextView android:id="@+id/dialog_url_actions_copy" android:text="@g/copy_link" app:drawableStartCompat="?attr/ic_copy" style="@h/UiKit_Settings_Item_Icon"/>
+    <TextView android:id="@+id/dialog_url_actions_open" android:text="@g/open_in_browser" app:drawableStartCompat="?attr/ic_open_in_new" style="@h/UiKit_Settings_Item_Icon"/>
+    <TextView android:id="@+id/dialog_url_actions_share" android:text="@g/share" app:drawableStartCompat="?attr/ic_share" style="@h/UiKit_Settings_Item_Icon"/>
+</LinearLayout>

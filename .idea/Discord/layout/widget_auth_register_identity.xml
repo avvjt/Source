@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/auth_ptrn" style="@h/UiKit_ViewGroup_Page">
+    <include layout="@layout/widget_auth_header"/>
+    <androidx.core.widget.NestedScrollView android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.discord.views.ScreenTitleView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" app:stv_title="@g/enter_phone_or_email"/>
+            <com.discord.views.segmentedcontrol.SegmentedControlContainer android:id="@+id/auth_register_identity_segmented_control" android:background="@d/drawable_segmented_control_container_bg" android:layout_marginBottom="24dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <com.discord.views.segmentedcontrol.CardSegment android:id="@+id/auth_register_identity_first_segment_card" style="@h/SegmentedControlTabCard"/>
+                <com.discord.views.segmentedcontrol.CardSegment android:id="@+id/auth_register_identity_second_segment_card" style="@h/SegmentedControlTabCard"/>
+            </com.discord.views.segmentedcontrol.SegmentedControlContainer>
+            <com.discord.views.phone.PhoneOrEmailInputView android:id="@+id/auth_register_identity_input" android:layout_width="match_parent" android:layout_height="wrap_content" app:hint="@g/form_label_phone_number"/>
+            <com.discord.utilities.view.text.LinkifiedTextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/auth_register_identity_policy_link" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/auth_register_identity_button" android:text="@g/next" style="@h/UiKit_AuthButton_Material"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

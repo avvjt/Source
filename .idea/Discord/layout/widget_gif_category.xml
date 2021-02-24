@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.discord.utilities.views.ContentResizingCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/gif_category_container" android:background="?attr/colorBackgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:background="?attr/colorBackgroundSecondary" style="@h/AppTheme_AppBarLayout_Flat">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="5">
+            <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textSize="@dimen/uikit_textsize_large" android:gravity="center_vertical" android:id="@+id/gif_category_title" android:background="?attr/bg_pressed_highlight" android:padding="12dp" android:layout_width="match_parent" android:minHeight="56dp" app:drawableStartCompat="@d/ic_chevron_left_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_TextView"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/gif_category_gif_recycler" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@h/UiKit_ViewGroup_RecyclerView"/>
+    <com.discord.widgets.chat.input.gifpicker.GifLoadingView android:id="@+id/gif_category_loading_view" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_height="match_parent" app:glv_is_staggered="true" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@h/UiKit_ViewGroup_RecyclerView"/>
+</com.discord.utilities.views.ContentResizingCoordinatorLayout>

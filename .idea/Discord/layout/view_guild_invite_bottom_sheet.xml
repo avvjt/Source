@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/primary_630" style="@h/UiKit_ViewGroup_LinearLayout_BottomSheet">
+    <LinearLayout android:background="?attr/primary_630" android:paddingBottom="@dimen/list_bottom_padding" style="@h/UiKit_ViewGroup_LinearLayout">
+        <LinearLayout android:background="?attr/colorBackgroundPrimary" android:padding="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:padding="0dp" android:text="@g/form_label_instant_invite_channel" android:paddingStart="0dp" android:paddingEnd="0dp" style="@h/UiKit_Settings_Item_Header"/>
+            <Spinner android:id="@+id/guild_invite_channel_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:popupBackground="?attr/colorPrimary"/>
+            <View android:background="?attr/primary_400" android:layout_width="match_parent" android:layout_height="0.25dp"/>
+        </LinearLayout>
+        <TextView android:text="@g/expire_after" style="@h/UiKit_Settings_Item_Header"/>
+        <HorizontalScrollView style="@h/UiKit_ViewGroup_ScrollView_Horizontal">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/guild_invite_expires_after_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+        <TextView android:text="@g/max_number_of_uses" style="@h/UiKit_Settings_Item_Header"/>
+        <HorizontalScrollView style="@h/UiKit_ViewGroup_ScrollView_Horizontal">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/guild_invite_max_uses_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </HorizontalScrollView>
+        <com.discord.views.CheckedSetting android:id="@+id/guild_invite_temporary_membership" app:cs_subtext="@g/temporary_membership_explanation" app:cs_text="@g/grant_temporary_membership" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/guild_invite_generate_link" android:layout_margin="16dp" android:text="@g/create_link" style="@h/UiKit_Material_Button"/>
+    </LinearLayout>
+</merge>

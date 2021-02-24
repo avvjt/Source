@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <LinearLayout android:id="@+id/notice_header_container" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:id="@+id/premium_guild_subscription_cancel_header" android:padding="16dp" android:text="@g/premium_guild_subscription_cancel_title" style="@h/UiKit_TextView_H1_Bold"/>
+        <View style="@h/UiKit_Divider"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+        <LinearLayout android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.discord.app.AppViewFlipper android:id="@+id/premium_guild_subscription_cancel_flipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@+id/active_subscription_progress" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"/>
+                <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:src="@d/img_boost_cancel" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+                    <TextView android:id="@+id/premium_guild_subscription_cancel_body" android:layout_marginBottom="8dp" style="@h/UiKit_TextView"/>
+                    <TextView android:textColor="@c/status_red_500" android:id="@+id/premium_guild_subscription_cancel_error" android:visibility="gone" android:layout_marginTop="8dp" android:text="@g/premium_guild_subscription_error_mobile" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </com.discord.app.AppViewFlipper>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:textColor="?attr/colorInteractiveActive" android:id="@+id/premium_guild_subscription_cancel_nevermind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:text="@g/nevermind" style="@h/UiKit_Material_Button_Transparent"/>
+        <com.discord.views.LoadingButton android:layout_gravity="center_vertical" android:id="@+id/premium_guild_subscription_cancel_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" app:lb_background_color="@c/status_red_500" app:lb_progress_color="@c/white" app:lb_text="@g/premium_guild_subscription_cancel_button_mobile" app:lb_text_color="@d/button_text_color_primary_100"/>
+    </LinearLayout>
+</LinearLayout>

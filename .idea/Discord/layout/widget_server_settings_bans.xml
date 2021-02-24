@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/server_settings_bans_search" style="@h/UiKit_TextInputLayout_Search">
+            <com.google.android.material.textfield.TextInputEditText android:hint="@g/members_search_placeholder" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/server_settings_bans_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/server_settings_bans_recycler" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        <TextView android:id="@+id/no_bans_body" android:text="@g/bans_no_users_banned" app:drawableTopCompat="@d/asset_empty_no_bans" style="@h/UiKit_TextView_NoResults"/>
+        <TextView android:id="@+id/no_results_text" android:text="@g/bans_no_results" app:drawableTopCompat="@d/asset_no_results_light" style="@h/UiKit_TextView_NoResults"/>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <androidx.appcompat.widget.Toolbar android:id="@e/action_bar_toolbar" app:navigationContentDescription="@g/close" app:navigationIcon="?attr/ic_action_bar_close" app:title="@g/payment_source_edit_title" style="@h/AppTheme_Toolbar">
+        <com.discord.views.LoadingButton android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/dialog_save" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" app:lb_progress_color="?attr/primary_100_alpha_60" app:lb_text="@g/save" app:lb_text_color="?attr/primary_100"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView android:layout_weight="1" style="@h/UiKit_ViewGroup_NestedScrollView">
+        <LinearLayout android:paddingBottom="@dimen/list_bottom_padding" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textColor="@c/primary_100" android:gravity="center_vertical" android:id="@+id/payment_source_edit_error" android:background="@d/drawable_button_red" android:padding="8dp" android:visibility="gone" android:layout_width="match_parent" android:drawablePadding="8dp" app:drawableStartCompat="@d/ic_info_outline_white_24dp" style="@h/UiKit_TextView"/>
+            <com.discord.widgets.settings.billing.PaymentSourceView android:id="@+id/payment_source_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/payment_source_edit_help" android:layout_marginBottom="8dp" android:text="@g/payment_source_edit_help_card" style="@h/UiKit_TextView_Subtext"/>
+            <TextView android:layout_marginTop="8dp" android:text="@g/billing_address" style="@h/UiKit_TextView_H2"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/payment_source_edit_name" android:hint="@g/billing_address_name" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:inputType="textPersonName" style="@h/UiKit_TextInputLayout_EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/payment_source_edit_address1" android:hint="@g/billing_address_address" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:inputType="textPostalAddress" style="@h/UiKit_TextInputLayout_EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/payment_source_edit_address2" android:hint="@g/billing_address_address2" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/payment_source_edit_city" android:hint="@g/billing_address_city" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/payment_source_edit_state" android:hint="@g/billing_address_state" app:endIconDrawable="?attr/ic_navigate_next" app:endIconMode="-1" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:imeOptions="actionGo" style="@h/UiKit_TextInputLayout_EditText_NoFocus"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/payment_source_edit_postal_code" android:hint="@g/billing_address_zip_code" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:nextFocusRight="@+id/dialog_save" android:imeOptions="actionDone" android:nextFocusForward="@+id/dialog_save" style="@h/UiKit_TextInputLayout_EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/payment_source_edit_country" android:focusable="false" android:hint="@g/billing_address_country" app:endIconDrawable="@d/ic_lock_white_a60_16dp" app:endIconMode="-1" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:enabled="false" android:textColor="?attr/primary_400" android:inputType="none" style="@h/UiKit_TextInputLayout_EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <CheckBox android:id="@+id/payment_source_edit_default" android:layout_marginTop="8dp" android:checked="true" android:text="@g/payment_source_make_default" app:buttonTint="@c/brand_500" style="@h/UiKit_Checkbox"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/dialog_delete" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@g/payment_source_delete" style="@h/UiKit_Material_Button_Red_Outline"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

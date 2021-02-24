@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/chat_cell_horizontal_spacing_padding" android:paddingTop="@dimen/chat_cell_vertical_spacing_padding" android:paddingRight="@dimen/chat_cell_horizontal_spacing_padding" android:paddingBottom="@dimen/chat_cell_vertical_spacing_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_cell_horizontal_spacing_margin" android:layout_marginRight="@dimen/chat_cell_horizontal_spacing_margin">
+    <ImageView android:id="@+id/system_icon" android:layout_width="@dimen/avatar_size_small" android:layout_height="@dimen/avatar_size_small" android:layout_marginTop="3dp" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/chat_cell_horizontal_spacing_total"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/system_icon">
+        <com.discord.utilities.view.text.LinkifiedTextView android:textColor="?attr/colorTextNormal" android:id="@+id/system_text" android:layout_width="match_parent" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView_Large"/>
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorTextMuted" android:gravity="center_vertical" android:id="@+id/system_timestamp" android:layout_marginBottom="1dp" android:maxWidth="150dp" android:text="@g/sample_time_pm" android:singleLine="true" style="@h/UiKit_TextView"/>
+    </LinearLayout>
+</RelativeLayout>

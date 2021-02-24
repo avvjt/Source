@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/channel_topic" android:background="?attr/colorBackgroundSecondary" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <LinearLayout android:layout_width="match_parent" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="top" android:id="@+id/channel_topic_channel_icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="2dp" android:layout_marginEnd="8dp" app:actualImageScaleType="2" app:placeholderImage="?attr/ic_channel_text" app:roundAsCircle="true"/>
+        <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textSize="@dimen/uikit_textsize_xlarge" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/channel_topic_name" android:layout_width="0dp" android:text="@g/form_label_channel_topic" android:layout_weight="1" app:drawableTint="?attr/colorChannelsDefault" style="@h/UiKit_TextView"/>
+        <ImageView android:layout_gravity="top" android:id="@+id/channel_topic_more_icon" android:visibility="gone" android:layout_marginTop="2dp" android:src="?attr/ic_overflow" android:contentDescription="@g/settings" style="@h/UiKit_ImageView"/>
+    </LinearLayout>
+    <com.discord.utilities.view.text.LinkifiedTextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textColor="?attr/colorHeaderSecondary" android:autoLink="all" android:id="@+id/channel_topic_title" android:layout_width="match_parent" android:layout_marginTop="8dp" style="@h/UiKit_TextView"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="16dp" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <ImageView android:id="@+id/channel_topic_ellipsis" android:src="?attr/ic_channel_topic_ellipsis" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+    </RelativeLayout>
+</LinearLayout>

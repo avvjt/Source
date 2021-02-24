@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" style="@h/UiKit_ViewGroup_Page">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@d/drawable_auth_splash" android:scaleType="centerCrop" android:importantForAccessibility="no"/>
+    <androidx.core.widget.NestedScrollView android:layout_gravity="center" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/oauth_authorize_logo" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="32dp" android:layout_marginBottom="32dp" android:src="@d/img_auth_logo" android:scaleType="centerInside" android:contentDescription="@g/discord" style="@h/UiKit_ImageView"/>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/oauth_authorize_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" app:cardBackgroundColor="?attr/colorBackgroundFloating" app:cardCornerRadius="8dp" app:cardElevation="8dp" style="@style/Widget.MaterialComponents.CardView">
+                <LinearLayout android:id="@+id/oauth_authorize_not_supported" android:visibility="gone" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:padding="16dp" android:layout_width="match_parent" android:text="@g/scope_unsupported_on_android" style="@h/UiKit_TextView_H1"/>
+                    <TextView android:gravity="center" android:layout_gravity="center" android:layout_margin="24dp" android:text="@g/scope_unsupported_on_android_description" android:drawablePadding="16dp" app:drawableBottomCompat="?attr/img_baddies" style="@h/UiKit_TextView"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/oauth_authorize_unsupported_browser" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@g/open_in_browser" style="@h/UiKit_Material_Button"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/oauth_authorize_unsupported_cancel" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/oauth_authorize_content" android:visibility="gone" android:animateLayoutChanges="true" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <LinearLayout android:gravity="center" android:paddingLeft="32dp" android:paddingTop="32dp" android:paddingRight="32dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                        <LinearLayout android:gravity="center" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/oauth_authorize_application_icon" android:importantForAccessibility="no" android:layout_marginEnd="24dp" app:placeholderImage="?attr/ic_game_icon_placeholder" app:placeholderImageScaleType="2" style="@h/Avatar_XXLarge"/>
+                            <TextView android:textSize="40sp" android:textColor="?attr/colorBackgroundAccent" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:text="..." style="@h/UiKit_TextView_SingleLine"/>
+                            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/oauth_authorize_user_icon" android:importantForAccessibility="no" android:layout_marginStart="24dp" app:placeholderImage="?attr/ic_game_icon_placeholder" app:placeholderImageScaleType="2" style="@h/Avatar_XXLarge"/>
+                        </LinearLayout>
+                        <TextView android:textSize="20sp" android:id="@+id/oauth_authorize_application_name" android:layout_marginTop="24dp" style="@h/UiKit_TextView_H1_Bold"/>
+                        <TextView android:id="@+id/oauth_authorize_connect_label" android:text="@g/oauth2_requests_account_access" style="@h/UiKit_TextView_Large"/>
+                    </LinearLayout>
+                    <View android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" style="@h/UiKit_Divider"/>
+                    <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:id="@+id/oauth_authorize_permissions_label_tv" android:padding="0dp" style="@h/UiKit_Settings_Item_Header"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/oauth_authorize_permissions_list" android:clipToPadding="false" android:layout_height="0dp" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_weight="1" style="@h/UiKit_ViewGroup_RecyclerView"/>
+                    <View android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" style="@h/UiKit_Divider"/>
+                    <RelativeLayout android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+                        <ImageView android:id="@+id/oauth_authorize_age_notice_icon" android:layout_height="20dp" android:src="@d/ic_recent_24dp" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_alignParentStart="true" app:tint="?attr/colorTextMuted" style="@h/UiKit_ImageView"/>
+                        <TextView android:textColor="?attr/colorTextMuted" android:id="@+id/oauth_authorize_age_notice" android:padding="0dp" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/oauth_authorize_age_notice_icon" android:layout_alignParentEnd="true" style="@h/UiKit_Auth_Note_Rotatable"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+                        <ImageView android:id="@+id/oauth_authorize_security_notice_icon" android:layout_height="20dp" android:src="@d/ic_shieldstar_24dp" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_alignParentStart="true" app:tint="?attr/colorTextMuted" style="@h/UiKit_ImageView"/>
+                        <TextView android:textColor="?attr/colorTextMuted" android:id="@+id/oauth_authorize_security_notice" android:padding="0dp" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/oauth_authorize_security_notice_icon" android:layout_alignParentEnd="true" style="@h/UiKit_Auth_Note_Rotatable"/>
+                    </RelativeLayout>
+                    <LinearLayout android:layout_marginTop="24dp" android:layoutDirection="rtl" style="@h/UiKit_ViewGroup_LinearLayout_Rotatable">
+                        <com.google.android.material.button.MaterialButton android:id="@+id/oauth_authorize_grant" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@g/authorize" android:layout_weight="1" style="@h/UiKit_Material_Button"/>
+                        <com.google.android.material.button.MaterialButton android:id="@+id/oauth_authorize_deny" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:text="@g/cancel" android:layout_weight="1" style="@h/UiKit_Material_Button_Transparent"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/oauth_authorize_loading" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <ProgressBar android:layout_gravity="center" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/oauth_authorize_loading_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

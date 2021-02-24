@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_marginBottom="4dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+    <ImageView android:id="@+id/channels_item_thread_unread" android:src="@d/ic_unread_white_9dp" android:layout_centerVertical="true" android:importantForAccessibility="no" app:tint="?attr/colorInteractiveActive" style="@h/UiKit_ImageView"/>
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorTextNormal" android:id="@+id/channels_item_thread_name" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="36dp" android:layout_marginEnd="16dp" android:layout_toStartOf="@+id/channels_item_thread_mentions" style="@h/UiKit_TextView"/>
+    <TextView android:id="@+id/channels_item_thread_mentions" android:background="?attr/drawable_overlay_mentions" android:visibility="gone" android:minWidth="16dp" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@h/Icon_Mentions_Large"/>
+</RelativeLayout>

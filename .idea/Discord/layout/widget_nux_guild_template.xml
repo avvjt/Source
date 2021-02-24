@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="?attr/primary_600" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+    <androidx.appcompat.widget.Toolbar android:background="@c/transparent" app:navigationIcon="?attr/ic_action_bar_close" style="@h/AppTheme_Toolbar"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_height="0dp" android:layout_weight="1" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_ConstraintLayout">
+        <LinearLayout android:id="@+id/nux_guild_template_section_top" app:layout_constraintBottom_toTopOf="@+id/nux_guild_template_section_custom_label" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0" app:layout_constraintVertical_chainStyle="2" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:layout_gravity="center" android:layout_marginBottom="8dp" android:text="@g/guild_template_selector_title" style="@h/UiKit_TextView_H1_Bold"/>
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/nux_guild_template_section_custom_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@g/guild_template_selector_description" app:layout_constraintBottom_toTopOf="@+id/nux_guild_template_section_custom" app:layout_constraintTop_toBottomOf="@+id/nux_guild_template_section_top" style="@h/UiKit_TextView"/>
+        <androidx.core.widget.NestedScrollView android:id="@+id/nux_guild_template_section_custom" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@+id/nux_guild_template_section_bottom" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/nux_guild_template_section_custom_label" style="@h/UiKit_ViewGroup_NestedScrollView">
+            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                <com.google.android.material.card.MaterialCardView android:id="@+id/nux_guild_template_action_create" android:layout_marginBottom="24dp" style="@h/Nux_GuildTemplates_Card">
+                    <TextView android:text="@g/guild_template_header_create" app:drawableEndCompat="@d/icon_carrot" app:drawableStartCompat="@d/drawable_guild_template_create" style="@h/Nux_GuildTemplates_Card_Action"/>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:textAppearance="@h/UiKit_TextAppearance_ListItem_Label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@g/guild_template_selector_option_header"/>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/nux_guild_template_action_gaming" android:layout_marginBottom="8dp" style="@h/Nux_GuildTemplates_Card">
+                    <TextView android:text="@g/guild_template_header_gaming" app:drawableEndCompat="@d/icon_carrot" app:drawableStartCompat="@d/drawable_guild_template_gaming" style="@h/Nux_GuildTemplates_Card_Action"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/nux_guild_template_action_friend" android:layout_marginBottom="8dp" style="@h/Nux_GuildTemplates_Card">
+                    <TextView android:text="@g/guild_template_header_friend" app:drawableEndCompat="@d/icon_carrot" app:drawableStartCompat="@d/drawable_guild_template_friend" style="@h/Nux_GuildTemplates_Card_Action"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/nux_guild_template_action_study" android:layout_marginBottom="8dp" style="@h/Nux_GuildTemplates_Card">
+                    <TextView android:text="@g/guild_template_header_study" app:drawableEndCompat="@d/icon_carrot" app:drawableStartCompat="@d/drawable_guild_template_study" style="@h/Nux_GuildTemplates_Card_Action"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/nux_guild_template_action_creator" android:layout_marginBottom="8dp" style="@h/Nux_GuildTemplates_Card">
+                    <TextView android:text="@g/guild_template_header_creator" app:drawableEndCompat="@d/icon_carrot" app:drawableStartCompat="@d/drawable_guild_template_creator" style="@h/Nux_GuildTemplates_Card_Action"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/nux_guild_template_action_club" android:layout_marginBottom="8dp" style="@h/Nux_GuildTemplates_Card">
+                    <TextView android:text="@g/guild_template_header_clubs" app:drawableEndCompat="@d/icon_carrot" app:drawableStartCompat="@d/drawable_guild_template_club" style="@h/Nux_GuildTemplates_Card_Action"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@+id/nux_guild_template_action_community" android:layout_marginBottom="8dp" style="@h/Nux_GuildTemplates_Card">
+                    <TextView android:text="@g/guild_template_header_community" app:drawableEndCompat="@d/icon_carrot" app:drawableStartCompat="@d/drawable_guild_template_community" style="@h/Nux_GuildTemplates_Card_Action"/>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:id="@+id/nux_guild_template_section_bottom" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/nux_guild_template_section_custom" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:layout_gravity="center_horizontal" android:layout_marginBottom="16dp" android:text="@g/nuf_have_an_invite_already" style="@h/UiKit_TextView_Semibold"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/nux_guild_template_action_join" android:text="@g/nuf_join_a_friend" style="@h/UiKit_Material_Button_Secondary"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

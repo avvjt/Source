@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp">
+    <androidx.cardview.widget.CardView android:id="@+id/gating_success_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="168dp" android:layout_centerInParent="true" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+        <LinearLayout android:layout_gravity="center" android:paddingLeft="16dp" android:paddingTop="84dp" android:paddingRight="16dp" android:layout_width="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:textColor="?attr/colorInteractiveActive" android:gravity="center" android:id="@+id/community_gating_guild_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView_Bold"/>
+            <TextView android:gravity="center" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@g/lurker_mode_popout_success_body" style="@h/UiKit_TextView_Medium"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/community_gating_confirm" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@g/lurker_mode_popout_success_button" style="@h/UiKit_Material_Button"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@d/ic_success_discovery" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+</RelativeLayout>

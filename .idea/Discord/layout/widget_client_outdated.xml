@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <ScrollView android:layout_height="match_parent" android:layout_above="@+id/client_outdated_anchor_wrap" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout style="@h/UiKit_Copy_Container">
+            <ImageView android:src="?attr/img_forced_update" android:contentDescription="@g/new_terms_title" style="@h/UiKit_ImageView"/>
+            <LinearLayout style="@h/UiKit_Copy">
+                <TextView android:layout_gravity="center" android:text="@g/out_of_date_title" style="@h/UiKit_TextView_H1"/>
+                <TextView android:gravity="center" android:layout_marginTop="16dp" android:text="@g/out_of_date_description" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/client_outdated_anchor_wrap" android:layout_marginTop="8dp" android:layout_alignParentBottom="true" style="@h/UiKit_Copy_Anchor">
+        <com.google.android.material.button.MaterialButton android:id="@+id/client_outdated_update" android:text="@g/out_of_date_action" style="@h/UiKit_Material_Button"/>
+    </LinearLayout>
+</RelativeLayout>

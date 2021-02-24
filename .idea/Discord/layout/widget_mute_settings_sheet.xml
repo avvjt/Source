@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundPrimary" style="@h/UiKit_ViewGroup_NestedScrollView">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <LinearLayout android:background="?attr/colorBackgroundTertiary" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/title" style="@h/MuteSettings_Row_Title"/>
+            <TextView android:id="@+id/subtitle" style="@h/MuteSettings_Row_Subtitle"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/unmute_button" android:background="?attr/selectableItemBackground" android:paddingTop="24dp" android:paddingBottom="24dp" android:visibility="gone" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/ic_sidebar_notifications_off_24dp"/>
+            <LinearLayout android:layout_marginStart="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:textAppearance="@h/UiKit_TextAppearance" android:textSize="@dimen/uikit_textsize_large" android:id="@+id/unmute_button_label" android:text="@g/unmute_channel" style="@h/UiKit_TextView_SingleLine"/>
+                <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/unmute_button_details_label" android:text="@g/form_label_mobile_channel_muted_until" android:textAllCaps="false" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/mute_settings_sheet_mute_options" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/option_fifteen_minutes" android:text="@g/mute_duration_15_minutes" style="@h/UiKit_ListItem"/>
+            <TextView android:id="@+id/option_one_hour" android:text="@g/mute_duration_1_hour" style="@h/UiKit_ListItem"/>
+            <TextView android:id="@+id/option_eight_hours" android:text="@g/mute_duration_8_hours" style="@h/UiKit_ListItem"/>
+            <TextView android:id="@+id/option_twenty_four_hours" android:text="@g/mute_duration_24_hours" style="@h/UiKit_ListItem"/>
+            <TextView android:id="@+id/option_always" android:text="@g/mute_duration_always" style="@h/UiKit_ListItem"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/notification_settings_button_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="?attr/colorBackgroundModifierAccent" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/notification_settings_button" android:background="@d/bg_pressed_highlight_darken" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <TextView android:id="@+id/notification_settings_label" android:background="@c/transparent" android:layout_width="wrap_content" android:text="@g/notification_settings" style="@h/UiKit_ListItem"/>
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorInteractiveMuted" android:id="@+id/notification_settings_overrides_label" android:drawablePadding="8dp" android:layout_marginEnd="8dp" app:drawableEndCompat="@d/ic_arrow_right_24dp" app:drawableTint="?attr/colorInteractiveMuted" style="@h/UiKit_TextView_SingleLine"/>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:textAppearance="@h/UiKit_TextAppearance" android:id="@+id/channel_muted_details" android:paddingBottom="16dp" android:text="@g/form_description_mobile_notification_muted" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_TextView"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

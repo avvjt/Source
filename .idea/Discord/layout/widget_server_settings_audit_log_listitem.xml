@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_margin="8dp" android:elevation="@dimen/app_elevation" app:cardBackgroundColor="?attr/primary_630" app:cardCornerRadius="4dp" style="@h/UiKit_ViewGroup">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <RelativeLayout android:id="@+id/audit_log_listitem_top_container" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" style="@h/UiKit_ViewGroup_RelativeLayout">
+            <FrameLayout android:id="@+id/audit_log_listitem_action_container" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="12dp" android:layout_centerVertical="true" android:layout_marginStart="16dp">
+                <ImageView android:id="@+id/audit_log_listitem_targettype_image" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+                <ImageView android:id="@+id/audit_log_listitem_actiontype_image" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            </FrameLayout>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/audit_log_listitem_avatar" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_toRightOf="@+id/audit_log_listitem_action_container" android:layout_centerVertical="true" style="@h/Avatar_Standard"/>
+            <TextView android:ellipsize="end" android:id="@+id/audit_log_listitem_header_text" android:layout_marginTop="8dp" android:maxLines="3" android:layout_toLeftOf="@+id/audit_log_listitem_arrow" android:layout_toRightOf="@+id/audit_log_listitem_avatar" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+            <TextView android:textColor="?attr/primary_400" android:ellipsize="end" android:id="@+id/audit_log_listitem_date_text" android:layout_marginTop="8dp" android:layout_marginRight="32dp" android:layout_marginBottom="8dp" android:maxLines="2" android:layout_toRightOf="@+id/audit_log_listitem_avatar" android:layout_below="@+id/audit_log_listitem_header_text" style="@h/UiKit_TextView"/>
+            <ImageView android:id="@+id/audit_log_listitem_arrow" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@d/ic_chevron_right_grey_12dp" android:layout_centerVertical="true" android:contentDescription="@g/more" android:layout_alignParentEnd="true" style="@h/UiKit_ImageView"/>
+        </RelativeLayout>
+        <TextView android:textColor="?attr/primary_400" android:id="@+id/audit_log_listitem_change_text" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" style="@h/UiKit_TextView"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

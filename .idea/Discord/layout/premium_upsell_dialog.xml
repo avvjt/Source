@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/premium_upsell_viewpager" android:layout_width="match_parent" android:layout_height="250dp"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/premium_upsell_dots" android:layout_below="@+id/premium_upsell_viewpager" style="@h/UiKit_TabLayout_PagerIndicator"/>
+    <View android:id="@+id/premium_upsell_divider" android:layout_below="@+id/premium_upsell_dots" style="@h/UiKit_Settings_Divider"/>
+    <LinearLayout android:id="@+id/premium_upsell_button_container" android:layout_below="@+id/premium_upsell_divider" style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:textColor="?attr/colorHeaderPrimary" android:id="@+id/premium_upsell_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/close" style="@h/UiKit_Material_Button_Transparent"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/premium_upsell_send_compressed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/send_compressed" android:layout_marginStart="8dp" style="@h/UiKit_Material_Button_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/premium_upsell_learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/learn_more" android:layout_marginStart="8dp" style="@h/UiKit_Material_Button_Green_Fit"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/premium_upsell_close_alt" android:padding="8dp" android:src="?attr/ic_close_24dp" android:contentDescription="@g/close" android:layout_alignParentEnd="true" style="@h/UiKit_ImageView"/>
+</RelativeLayout>

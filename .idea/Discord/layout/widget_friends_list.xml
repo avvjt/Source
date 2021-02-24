@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.discord.app.AppViewFlipper android:id="@+id/friends_list_flipper" android:background="?attr/colorBackgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@e/action_bar_toolbar_layout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/friends_list_recycler" android:background="?attr/colorBackgroundPrimary" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        <com.discord.widgets.friends.EmptyFriendsStateView android:id="@+id/friends_list_empty_friends_state_view" android:layout_width="match_parent" android:layout_height="match_parent" app:ef_title_text_size="@dimen/uikit_textsize_xlarge"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/friends_list_loading" android:background="?attr/colorBackgroundPrimary" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+    </com.discord.app.AppViewFlipper>
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout">
+        <androidx.appcompat.widget.Toolbar app:contentInsetStartWithNavigation="0dp" style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

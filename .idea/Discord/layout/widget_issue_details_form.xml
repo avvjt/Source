@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_NestedScrollView_Page">
+    <LinearLayout style="@h/UiKit_ViewGroup_Page_LinearLayout">
+        <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+            <androidx.appcompat.widget.Toolbar app:navigationContentDescription="@g/close" app:navigationIcon="?attr/ic_action_bar_close" style="@h/AppTheme_Toolbar"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/issue_details_input" android:layout_margin="16dp" android:hint="@g/feedback_describe_issue" style="@h/UiKit_TextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText android:maxLength="1024" style="@h/UiKit_TextInputLayout_EditText_MultiLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.discord.utilities.view.text.LinkifiedTextView android:textAppearance="@h/UiKit_TextAppearance" android:textColor="?attr/colorTextMuted" android:id="@+id/issue_details_cx_prompt" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" style="@h/UiKit_TextView"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/issue_details_submit_button" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="@g/submit" style="@h/UiKit_Material_Button"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="96dp" android:layout_marginBottom="8dp" app:cardBackgroundColor="@c/transparent" app:cardCornerRadius="4dp" app:cardElevation="0dp" app:strokeWidth="0dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/gif_category_item_preview" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:placeholderImage="?attr/colorBackgroundPrimary"/>
+    <View android:background="@c/primary_800_alpha_50" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:layout_marginBottom="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/gif_category_item_icon" android:layout_width="16dp" android:layout_height="16dp" android:importantForAccessibility="no" android:layout_marginEnd="8dp" app:tint="@c/white"/>
+        <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:textColor="@c/white" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start" android:id="@+id/gif_category_item_title" style="@h/UiKit_TextView"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

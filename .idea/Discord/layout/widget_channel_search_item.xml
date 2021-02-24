@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.discord.widgets.user.search.ViewGlobalSearchItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:paddingTop="2dp" android:paddingBottom="2dp" android:focusable="true" android:clickable="true" android:clipChildren="false" android:paddingEnd="8dp" style="@h/UiKit_ViewGroup_ConstraintLayout"/>

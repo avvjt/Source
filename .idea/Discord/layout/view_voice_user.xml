@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/voice_user_avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" app:actualImageScaleType="2" app:fadeDuration="0" app:roundAsCircle="true"/>
+    <TextView android:textSize="18sp" android:textColor="@c/primary_100" android:gravity="center" android:layout_gravity="center" android:id="@+id/voice_user_name_display" android:background="@d/drawable_bg_voice_user_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" style="@h/UiKit_TextView_Bold"/>
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView app:layout_behavior="@g/action_bar_scrolling_view_behavior" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_account_email_wrap" android:hint="@g/email" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Email"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/settings_account_save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton_Save"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

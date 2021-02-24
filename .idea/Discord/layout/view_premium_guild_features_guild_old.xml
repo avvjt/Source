@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:textColor="?attr/colorHeaderPrimary" android:layout_marginTop="16dp" android:text="@g/premium_guild_guild_features_header" style="@h/UiKit_TextView_H1"/>
+    <TextView android:textColor="?attr/colorTextNormal" android:text="@g/premium_guild_guild_feature_emoji" app:drawableStartCompat="@d/ic_emoji_blue_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:textColor="?attr/colorTextNormal" android:text="@g/premium_guild_guild_feature_audio_quality" app:drawableStartCompat="@d/ic_headset_blue_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:textColor="?attr/colorTextNormal" android:text="@g/premium_guild_guild_feature_upload_size" app:drawableStartCompat="@d/ic_upload_24dp" style="@h/UiKit_TextView_Perk"/>
+</LinearLayout>

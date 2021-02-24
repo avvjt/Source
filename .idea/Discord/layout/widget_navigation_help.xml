@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/navigation_help_close" android:padding="24dp" android:src="@c/ic_close_24dp" android:contentDescription="@g/close_window" style="@h/UiKit_ImageView_Clickable"/>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/navigation_help_nux_pager" android:background="@c/transparent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="16dp" android:layout_weight="1"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/navigation_help_indicators" android:layout_marginBottom="32dp" style="@h/UiKit_TabLayout_PagerIndicator"/>
+</LinearLayout>

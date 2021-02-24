@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <View style="@h/UiKit_Settings_Divider"/>
+    <TextView android:text="@g/guild_settings_server_invite_background" style="@h/UiKit_Settings_Item_Header"/>
+    <FrameLayout android:id="@+id/server_settings_overview_upload_splash_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:foreground="?attr/selectableItemBackground">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/upload_splash" android:background="?attr/primary_630" android:layout_width="match_parent" android:layout_height="wrap_content" app:roundedCornerRadius="3dp" app:viewAspectRatio="1.78"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/server_settings_overview_upload_splash_fab" android:focusable="false" android:clickable="false" android:src="@d/ic_upload_image_40dp" android:scaleType="centerCrop" app:backgroundTint="@c/white" app:fabCustomSize="32dp" app:maxImageSize="32dp" app:tint="@null" style="@h/Settings_FloatingActionButton"/>
+        <TextView android:layout_gravity="center" android:id="@+id/upload_splash_unlock" android:drawablePadding="8dp" android:textAllCaps="true" app:drawableTopCompat="@d/ic_perk_lock" style="@h/UiKit_TextView_Bold"/>
+    </FrameLayout>
+    <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textColor="@c/brand_500" android:id="@+id/server_settings_overview_upload_splash_remove" android:background="?attr/selectableItemBackground" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="wrap_content" android:text="@g/remove" style="@h/UiKit_TextView_Subtext"/>
+    <TextView android:id="@+id/upload_splash_nitro_tier" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:drawablePadding="4dp" app:drawableStartCompat="@d/ic_nitro_badge_nitro_gradient_16dp" style="@h/UiKit_TextView"/>
+    <TextView android:paddingBottom="4dp" android:text="@g/guild_settings_splash_info" style="@h/UiKit_Settings_Item_SubText"/>
+    <com.discord.utilities.view.text.LinkifiedTextView android:id="@+id/upload_splash_learn_more" android:paddingTop="4dp" android:text="@g/guild_settings_splash_recommend" style="@h/UiKit_Settings_Item_SubText"/>
+</LinearLayout>

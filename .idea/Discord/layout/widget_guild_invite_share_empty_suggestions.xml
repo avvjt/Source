@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationContentDescription="@g/close" app:navigationIcon="?attr/ic_action_bar_close" style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="16dp" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_marginBottom="24dp" android:src="@d/drawable_invite_share_art_envelope" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <com.discord.views.ScreenTitleView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:stv_subtitle="@g/invite_empty_body" app:stv_title="@g/invite_empty_title"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_ConstraintLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderPrimary" android:ellipsize="start" android:gravity="center_vertical" android:id="@+id/guild_invite_empty_suggestions_invite_link" android:background="?attr/bg_clickable_rounded_4dp" android:layout_width="0dp" android:layout_height="0dp" android:text="@g/invite_link_example_verified" android:layout_weight="1" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginEnd="8dp" android:backgroundTint="?attr/colorBackgroundTertiary" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/guild_invite_empty_suggestions_settings_edit" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@h/UiKit_TextView_SingleLine"/>
+                <ImageButton android:id="@+id/guild_invite_empty_suggestions_settings_edit" android:background="?attr/bg_clickable_rounded_4dp" android:padding="16dp" android:layout_width="56dp" android:layout_height="56dp" android:src="?attr/ic_settings" android:contentDescription="@g/share_invite_link_for_access" android:backgroundTint="?attr/colorBackgroundTertiary" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView android:textColor="?attr/colorHeaderSecondary" android:id="@+id/guild_invite_empty_suggestions_settings_invite_link_subtext" android:layout_marginBottom="16dp" style="@h/UiKit_TextView_Subtext"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/guild_invite_empty_suggestions_invite_share_btn" android:text="@g/share_link" style="@h/UiKit_AuthButton_Material"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View android:id="@+id/bottom_sheet_tint" android:background="@c/black_alpha_60" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.discord.widgets.guilds.invite.ViewInviteSettingsSheet android:id="@+id/invite_settings_bottom_sheet" android:background="?attr/primary_630" style="@h/UiKit_ViewGroup_LinearLayout_BottomSheet"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

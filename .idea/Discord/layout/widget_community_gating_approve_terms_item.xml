@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.discord.views.CheckedSetting xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/community_gating_rules_check" app:cs_text="@g/member_verification_read_rules" app:cs_text_color="?attr/colorHeaderSecondary" app:cs_text_fontpath="@font/whitney_medium" app:cs_text_size="@dimen/uikit_textsize_medium" app:cs_view_type="0" style="@h/UiKit_CheckedSetting_Themed"/>

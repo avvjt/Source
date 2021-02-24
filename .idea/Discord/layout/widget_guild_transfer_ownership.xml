@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <TextView android:padding="16dp" android:layout_width="match_parent" android:text="@g/transfer_ownership" style="@h/UiKit_TextView_H1_Bold"/>
+    <View style="@h/UiKit_Divider"/>
+    <LinearLayout android:id="@+id/guild_transfer_ownership_mfa_wrap" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:text="@g/two_fa_enter_token_label" android:textAllCaps="true" style="@h/UiKit_Settings_Item_Label"/>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_transfer_ownership_mfa_code" android:layout_margin="16dp" android:hint="@g/two_fa_auth_code" style="@h/UiKit_TextInputLayout_Primary">
+            <com.google.android.material.textfield.TextInputEditText android:inputType="none|text|textUri|textPassword|textVisiblePassword|number|numberPassword|phone" style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.discord.views.CheckedSetting android:id="@+id/guild_transfer_ownership_acknowledge_check" app:cs_text="@g/transfer_ownership_acknowledge" app:cs_text_size="@dimen/uikit_textsize_small" style="@h/UiKit_CheckedSetting_Themed"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:layout_gravity="center_vertical" android:id="@+id/guild_transfer_ownership_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:enabled="true" android:id="@+id/guild_transfer_ownership_confirm" android:text="@g/transfer" android:layout_marginStart="8dp" style="@h/UiKit_Material_Button_Red_Fit"/>
+    </LinearLayout>
+</LinearLayout>

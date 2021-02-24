@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:id="@+id/server_settings_overview_scroll" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:focusableInTouchMode="true" style="@h/UiKit_ViewGroup_LinearLayout">
+            <include android:id="@+id/header" layout="@layout/view_server_settings_icon_name"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <include android:id="@+id/region" layout="@layout/view_server_settings_region"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <include android:id="@+id/afk" layout="@layout/widget_server_settings_overview_section_afk_channel"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <include android:id="@+id/systemChannel" layout="@layout/view_server_settings_system_channel_wrap"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <include android:id="@+id/notifications" layout="@layout/view_server_settings_notifications"/>
+            <include android:id="@+id/uploadSplash" layout="@layout/view_server_settings_upload_splash"/>
+            <include android:id="@+id/uploadBanner" layout="@layout/view_server_settings_upload_banner"/>
+            <View android:layout_width="match_parent" android:layout_height="64dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton_Save"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:textSize="@dimen/uikit_textsize_xxlarge" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/chat_list_adapter_item_header" android:layout_marginBottom="4dp" style="@h/UiKit_TextView_Bold"/>
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/chat_list_adapter_item_subheader" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+    <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="?attr/colorTextLink" android:id="@+id/chat_list_adapter_item_edit_channel" android:focusable="true" android:clickable="true" android:layout_marginTop="12dp" android:text="@g/edit_channel" style="@h/UiKit_TextView"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationIcon="?attr/ic_action_bar_back" app:subtitle="@g/user_settings" app:title="@g/game_activity" style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:padding="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <LinearLayout android:id="@+id/settings_games_detection_section" style="@h/UiKit_ViewGroup_LinearLayout">
+                <LinearLayout android:id="@+id/settings_games_playing_container" android:background="@d/drawable_button_green" android:padding="16dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:elevation="@dimen/app_elevation" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <ImageView android:id="@+id/settings_games_playing_icon" android:layout_width="40dp" android:layout_height="40dp" android:contentDescription="@g/playing_game" android:layout_marginEnd="8dp" android:elevation="8dp" style="@h/UiKit_ImageView"/>
+                    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                        <TextView android:textColor="@c/primary_100" android:id="@+id/settings_games_playing_title" style="@h/UiKit_TextView_Bold"/>
+                        <TextView android:textColor="@c/primary_200" android:id="@+id/settings_games_playing_subtitle" style="@h/UiKit_TextView"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_games_track_cs" app:cs_text="@g/allow_game_detection_mobile" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            </LinearLayout>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_games_status_cs" app:cs_subtext="@g/show_current_game_desc" app:cs_text="@g/show_current_game" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

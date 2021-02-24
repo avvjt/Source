@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.discord.widgets.voice.fullscreen.grid.PrivateCallBlurredGridView android:id="@+id/incoming_call_blurred_view" android:background="@c/primary_dark_630" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/incoming_call_top_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.15"/>
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/incoming_call_status_container" android:paddingTop="16dp" android:layout_width="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/incoming_call_users_grid_view" app:layout_constraintVertical_bias="0.2" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:textSize="@dimen/uikit_textsize_xxlarge" android:textColor="@c/primary_100" android:gravity="center_horizontal" android:id="@+id/incoming_call_status_primary" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:singleLine="true" style="@h/UiKit_TextView_Bold"/>
+        <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="@c/primary_dark_300" android:id="@+id/incoming_call_status_secondary" style="@h/UiKit_TextView"/>
+    </LinearLayout>
+    <com.discord.widgets.voice.fullscreen.grid.PrivateCallGridView android:id="@+id/incoming_call_users_grid_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/incoming_call_top_guideline"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:baselineAligned="false" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/incoming_call_status_container" app:layout_constraintVertical_bias="0.6" style="@h/UiKit_ViewGroup_LinearLayout">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="0dp" android:layout_weight="1" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center" android:id="@+id/incoming_call_accept_button" android:src="@d/ic_call_24dp" android:contentDescription="@g/connect_to_voice" app:backgroundTint="@c/status_green_500" style="@h/Settings_FloatingActionButton"/>
+            <TextView android:textColor="@c/primary_100" android:layout_marginTop="16dp" android:text="@g/join_call" android:textAllCaps="true" style="@h/UiKit_TextView_Semibold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:id="@+id/incoming_call_accept_alt_container" android:layout_width="0dp" android:layout_weight="1" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center" android:id="@+id/incoming_call_accept_video_button" android:src="@d/ic_videocam_white_24dp" android:contentDescription="@g/connect_to_video" app:backgroundTint="@c/status_green_500" style="@h/Settings_FloatingActionButton"/>
+            <TextView android:textColor="@c/primary_100" android:layout_marginTop="16dp" android:text="@g/video" android:textAllCaps="true" style="@h/UiKit_TextView_Semibold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="0dp" android:layout_weight="1" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="center" android:id="@+id/incoming_call_decline_button" android:src="@d/ic_call_disconnect_24dp" android:contentDescription="@g/decline" app:backgroundTint="@c/status_red_500" style="@h/Settings_FloatingActionButton"/>
+            <TextView android:textColor="@c/primary_100" android:layout_marginTop="16dp" android:text="@g/decline" android:contentDescription="@g/decline" android:textAllCaps="true" style="@h/UiKit_TextView_Semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

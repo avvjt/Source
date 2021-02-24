@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:baselineAligned="false" android:animateLayoutChanges="true" style="@h/UiKit_User_Phone_Manage_Number">
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/phone_or_email_country_code_wrap" android:visibility="gone" android:layout_width="wrap_content" android:foreground="?attr/selectableItemBackground" android:hint="@g/country_code" android:layout_marginEnd="8dp" style="@h/UiKit_TextInputLayout">
+        <com.google.android.material.textfield.TextInputEditText android:focusable="true" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="100dp" android:text="+1" android:cursorVisible="false" android:inputType="none" style="@h/UiKit_TextInputLayout_EditText_SingleLine_CountryCode"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/phone_or_email_main_input_wrap" android:layout_width="0dp" android:layout_weight="1" app:endIconMode="2" style="@h/UiKit_TextInputLayout">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/phone_or_email_main_input" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundPrimary" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/primary_400" android:gravity="bottom" android:id="@+id/channel_members_list_item_header_text" android:focusable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:textAllCaps="true" style="@h/UiKit_TextView_Semibold"/>
+</FrameLayout>

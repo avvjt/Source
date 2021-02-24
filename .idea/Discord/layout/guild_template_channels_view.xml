@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/guild_template_channels_recycler_view" style="@h/UiKit_ViewGroup_RecyclerView"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+    <com.google.android.material.button.MaterialButton android:id="@+id/private_channel_sidebar_actions_call" android:text="@g/call" android:drawableTop="@d/ic_call_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/ChannelSideBarActions_Actions_Button"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/private_channel_sidebar_actions_video" android:text="@g/video" android:drawableTop="@d/ic_videocam_white_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/ChannelSideBarActions_Actions_Button"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/private_channel_sidebar_actions_notifications" android:text="@g/notifications" android:drawableTop="@d/ic_sidebar_notifications_off_dark_24dp" style="@h/ChannelSideBarActions_Actions_Button"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/private_channel_sidebar_actions_search" android:text="@g/search" android:drawableTop="@d/ic_sidebar_search_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/ChannelSideBarActions_Actions_Button"/>
+</merge>

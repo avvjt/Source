@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/toolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="?attr/toolbarPopupTheme"/>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorClosedForeground" android:gravity="center" android:id="@+id/closed_banner" android:background="?attr/colorClosedBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="22dp" android:text="@string/close_thread_top_banner_text" android:layout_below="@+id/toolbar" android:elevation="8dp"/>
+    <TextView android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error_msg_couldnt_load_data" android:layout_centerInParent="true" style="@style/empty_search_text"/>
+    <ProgressBar android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom" android:layout_below="@+id/closed_banner"/>
+    <FrameLayout android:orientation="vertical" android:id="@+id/bottom" android:background="?attr/colorBackgroundFloating" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="@dimen/sendbar_elevation">
+        <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Button" android:textColor="?attr/colorAccent" android:gravity="center" android:id="@+id/open" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    </FrameLayout>
+</RelativeLayout>

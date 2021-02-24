@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/guild_search_item_avatar" app:fadeDuration="50" app:roundAsCircle="true" style="@h/UiKit_GuildsListIcon"/>
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_000" android:layout_gravity="center_vertical" android:id="@+id/guild_search_item_name" android:layout_marginStart="32dp" style="@h/UiKit_TextView_Semibold"/>
+</LinearLayout>

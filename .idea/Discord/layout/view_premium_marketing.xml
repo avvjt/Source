@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/view_premium_marketing_marketing_container" android:background="@d/drawable_bg_premium_guild_gradient_corners" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:textColor="@c/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/view_premium_marketing_marketing_title" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:text="@g/guild_settings_premium_upsell_heading_secondary" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView_Bold"/>
+    <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="@c/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/view_premium_marketing_marketing_subtitle" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:text="@g/guild_settings_premium_upsell_heading_secondary" style="@h/UiKit_TextView_Semibold"/>
+    <LinearLayout android:layout_marginTop="16dp" style="@h/UiKit_PremiumGuild_Settings_Marketing_Container">
+        <ImageView android:src="@d/img_logo_discord" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+        <ImageView android:src="@d/img_logo_nitro" android:contentDescription="@g/premium_tier_2" style="@h/UiKit_ImageView"/>
+        <TextView android:id="@+id/view_premium_marketing_nitro_boost_discount" android:layout_marginTop="16dp" style="@h/UiKit_PremiumGuild_Settings_Marketing_Check"/>
+        <TextView android:id="@+id/view_premium_marketing_nitro_boost_count" android:layout_marginTop="8dp" style="@h/UiKit_PremiumGuild_Settings_Marketing_Check"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/view_premium_marketing_container_tier1" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" style="@h/UiKit_PremiumGuild_Settings_Marketing_Container">
+        <ImageView android:src="@d/img_logo_discord" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+        <ImageView android:src="@d/img_logo_nitro_classic_header" android:contentDescription="@g/premium_tier_1" style="@h/UiKit_ImageView"/>
+        <TextView android:id="@+id/view_premium_marketing_nitro_classic_boost_discount" android:layout_marginTop="16dp" style="@h/UiKit_PremiumGuild_Settings_Marketing_Check"/>
+        <TextView android:id="@+id/view_premium_marketing_nitro_classic_boost_count" android:layout_marginTop="8dp" android:alpha="0.5" style="@h/UiKit_PremiumGuild_Settings_Marketing_Clear"/>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton android:textColor="@c/brand_500" android:id="@+id/view_premium_marketing_learn_more" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="@g/guild_settings_premium_upsell_learn_more" style="@h/UiKit_Material_Button_White"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" style="@h/UiKit_User_Phone_Verify_Digits">
+    <TextView android:id="@+id/verify_char_1" style="@h/UiKit_User_Verify_Char"/>
+    <TextView android:id="@+id/verify_char_2" style="@h/UiKit_User_Verify_Char"/>
+    <TextView android:id="@+id/verify_char_3" style="@h/UiKit_User_Verify_Char"/>
+    <Space android:layout_width="16dp" android:layout_height="0dp"/>
+    <TextView android:id="@+id/verify_char_4" style="@h/UiKit_User_Verify_Char"/>
+    <TextView android:id="@+id/verify_char_5" style="@h/UiKit_User_Verify_Char"/>
+    <TextView android:id="@+id/verify_char_6" style="@h/UiKit_User_Verify_Char"/>
+</LinearLayout>

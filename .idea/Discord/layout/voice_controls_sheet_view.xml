@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/VoiceControlsSheet">
+    <LinearLayout android:id="@+id/peek_container" style="@h/UiKit_ViewGroup_LinearLayout">
+        <View android:layout_gravity="center" android:id="@+id/handle" android:background="@d/rounded_rectangle_8dp_radius" android:layout_width="40dp" android:layout_height="4dp" android:layout_marginTop="4dp" android:layout_marginBottom="8dp" android:alpha="0.8"/>
+        <LinearLayout android:gravity="center" android:layout_marginBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <ImageView android:id="@+id/video_button" android:background="@d/drawable_circle_black" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@d/ic_videocam_white_24dp" android:contentDescription="@g/video" app:backgroundTint="?attr/colorBackgroundPrimary" style="@h/UiKit_Calls_ButtonCircle"/>
+            <ImageView android:id="@+id/screen_share_button" android:background="@d/drawable_circle_black" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@d/ic_mobile_screenshare_24dp" android:contentDescription="@g/video" style="@h/UiKit_Calls_ButtonCircle"/>
+            <FrameLayout android:id="@+id/audio_output_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+                <ImageView android:id="@+id/audio_output_button" android:background="@d/drawable_circle_black" android:src="@d/ic_sound_24dp" android:contentDescription="@g/switch_audio_output" app:tint="@c/white" style="@h/UiKit_Calls_ButtonCircle"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/audio_output_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@d/ic_arrow_down_14dp" android:importantForAccessibility="no" android:layout_marginEnd="6dp" app:tint="@c/white"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/mute_button" android:background="@d/drawable_circle_black" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@d/ic_mic_white_24dp" android:contentDescription="@g/mute" style="@h/UiKit_Calls_ButtonCircle"/>
+            <ImageView android:id="@+id/stop_watching_button" android:background="@d/drawable_circle_red" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@d/ic_stop_stream" android:contentDescription="@g/stop_watching" app:tint="@c/white" style="@h/UiKit_Calls_ButtonCircle"/>
+            <ImageView android:id="@+id/disconnect_button" android:background="@d/drawable_circle_red" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@d/ic_call_disconnect_24dp" android:contentDescription="@g/disconnect" app:tint="@c/white" style="@h/UiKit_Calls_ButtonCircle"/>
+        </LinearLayout>
+        <Button android:textColor="@c/primary_100" android:gravity="center" android:id="@+id/push_to_talk_button" android:background="@d/drawable_bg_white_alpha_24_corners_gradient" android:padding="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_marginBottom="16dp" android:text="@g/input_mode_ptt" style="@h/UiKit_TextView_Semibold"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@+id/secondary_actions_card" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@c/white_alpha_24" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@d/drawable_listitem_divider_left_padded" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/stream_volume_label" android:text="@g/stream_volume" style="@h/UiKit_ListItem"/>
+            <com.discord.views.calls.VolumeSliderView android:id="@+id/stream_volume_slider" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_marginBottom="16dp" app:vsv_icon_tint="@c/white" app:vsv_max_volume="300" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal"/>
+            <TextView android:id="@+id/audio_output_secondary_button" android:text="@g/audio_devices_change_output" app:drawableStartCompat="@d/ic_sound_bluetooth_24dp" app:drawableTint="@c/white" style="@h/UiKit_ListItem_Icon"/>
+            <TextView android:id="@+id/screen_share_secondary_button" android:text="@g/mobile_stream_screen_share" app:drawableStartCompat="@d/ic_mobile_screenshare_24dp" app:drawableTint="@c/white" style="@h/UiKit_ListItem_Icon"/>
+            <TextView android:id="@+id/deafen_secondary_button" android:src="?attr/ic_deafen_state" android:text="@g/deafen" app:drawableStartCompat="?attr/ic_deafen_state" app:drawableTint="@c/white" style="@h/UiKit_ListItem_Icon"/>
+            <TextView android:id="@+id/invite_secondary_button" android:text="@g/instant_invite" app:drawableStartCompat="@d/ic_guild_invite_24dp" app:drawableTint="@c/white" style="@h/UiKit_ListItem_Icon"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

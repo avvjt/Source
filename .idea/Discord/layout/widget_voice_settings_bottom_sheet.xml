@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/voice_settings_sheet_container" android:background="?attr/colorBackgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_NestedScrollView">
+    <LinearLayout android:layout_marginBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/voice_settings_toggle_video_participants" android:text="@g/stream_show_non_video" style="@h/UiKit_ListItem_Switch"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/voice_settings_noise_suppression" android:text="@g/mobile_noise_cancellation_popout_title" style="@h/UiKit_ListItem_Switch"/>
+        <TextView android:id="@+id/voice_settings_invite" android:text="@g/instant_invite" android:drawablePadding="16dp" app:drawableStartCompat="@d/ic_header_members_add_white_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_ListItem"/>
+        <TextView android:id="@+id/voice_settings_voice_settings" android:text="@g/voice_settings" android:drawablePadding="16dp" app:drawableStartCompat="@d/ic_settings_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_ListItem"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape>
+            <solid android:color="@c/primary_700"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item android:right="8dp">
+        <bitmap android:gravity="end" android:src="@d/ic_dropdown_white_18dp"/>
+    </item>
+</layer-list>

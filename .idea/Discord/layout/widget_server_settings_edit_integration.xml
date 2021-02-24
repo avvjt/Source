@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/edit_integration_settings_scroll" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <View android:layout_width="match_parent" android:layout_height="20dp"/>
+            <RelativeLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:paddingStart="16dp" android:paddingEnd="0dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+                <ImageView android:id="@+id/edit_integration_icon" android:layout_centerVertical="true" android:layout_marginEnd="16dp" style="@h/UiKit_ImageView"/>
+                <LinearLayout android:id="@+id/edit_integration_name_container" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/edit_integration_icon" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:id="@+id/edit_integration_owner_name" style="@h/UiKit_TextView"/>
+                    <TextView android:id="@+id/edit_integration_name" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/edit_member_roles_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:text="@g/subscriber_information" style="@h/UiKit_Settings_Item_Header"/>
+                <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/integration_sync_settings"/>
+            </LinearLayout>
+            <View style="@h/UiKit_Divider"/>
+            <LinearLayout android:id="@+id/edit_member_administrative_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:text="@g/form_label_sub_expire_behavior" style="@h/UiKit_Settings_Item_Header"/>
+                <LinearLayout android:id="@+id/edit_integration_expired_sub_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <com.discord.views.CheckedSetting android:id="@+id/edit_integration_expire_radio_remove_role" app:cs_text="@g/remove_synced_role" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                    <com.discord.views.CheckedSetting android:id="@+id/edit_integration_expire_radio_kick_user" app:cs_text="@g/kick_from_server" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/form_label_expire_grace_period" style="@h/UiKit_Settings_Item_Header"/>
+            <LinearLayout android:id="@+id/edit_integration_grace_period_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <com.discord.views.CheckedSetting android:id="@+id/edit_integration_grace_period_radio_1_day" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/edit_integration_grace_period_radio_3_days" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/edit_integration_grace_period_radio_7_days" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/edit_integration_grace_period_radio_14_days" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/edit_integration_grace_period_radio_30_days" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <View style="@h/UiKit_Settings_Divider"/>
+                <LinearLayout android:id="@+id/edit_integration_custom_emotes_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:text="@g/form_label_custom_twitch_emoticon" style="@h/UiKit_Settings_Item_Header"/>
+                    <com.discord.views.CheckedSetting android:id="@+id/edit_integration_custom_emotes_toggle" app:cs_text="@g/enable_twitch_emoji_sync" style="@h/UiKit_CheckedSetting_Themed"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Space android:layout_width="match_parent" android:layout_height="64dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/edit_integration_save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton_Save"/>
+    <com.discord.utilities.dimmer.DimmerView style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

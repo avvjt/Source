@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:text="@g/nickname" style="@h/UiKit_Settings_Item_Header"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_member_nickname" android:hint="@g/change_nickname" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:endIconDrawable="@d/ic_role_lock" app:endIconMode="-1" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:maxLength="32" android:inputType="textNoSuggestions" style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:id="@+id/edit_member_roles_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/roles" style="@h/UiKit_Settings_Item_Header"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/edit_member_roles_recycler" style="@h/UiKit_ViewGroup_RecyclerView"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/edit_member_administrative_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/administrative" style="@h/UiKit_Settings_Item_Header"/>
+                <TextView android:textColor="@c/status_red_500" android:id="@+id/edit_member_kick_button" android:text="@g/kick_user_title" app:drawableStartCompat="@d/ic_remove_friend_red_24dp" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:textColor="@c/status_red_500" android:id="@+id/edit_member_ban_button" android:text="@g/ban_user_title" app:drawableStartCompat="@d/ic_ban_red_24dp" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:textColor="@c/status_red_500" android:id="@+id/edit_member_transfer_ownership_button" android:text="@g/transfer_ownership" app:drawableStartCompat="@d/ic_transfer_red_24dp" style="@h/UiKit_Settings_Item_Icon"/>
+            </LinearLayout>
+            <Space android:layout_width="match_parent" android:layout_height="64dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/edit_member_save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton_Save"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

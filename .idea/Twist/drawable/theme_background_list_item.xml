@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <selector>
+            <item android:drawable="@color/theme_doist_fill_pinnacle" android:state_activated="true"/>
+            <item android:drawable="@android:color/transparent"/>
+        </selector>
+    </item>
+    <item android:drawable="?attr/selectableItemBackground"/>
+</layer-list>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:textColor="?attr/primary_000" android:paddingTop="8dp" android:paddingBottom="8dp" android:text="@g/premium_included" style="@h/UiKit_TextView_Semibold"/>
+    <TextView android:text="@g/premium_chat_perks_discriminator_mobile" app:drawableStartCompat="@d/ic_nitro_tag_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:text="@g/premium_chat_perks_animated_avatar_and_emoji_mobile" app:drawableStartCompat="@d/ic_nitro_gifs_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:text="@g/premium_chat_perks_streaming_mobile" app:drawableStartCompat="@d/ic_nitro_perk_stream_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:text="@g/premium_chat_perks_screenshare_mobile" app:drawableStartCompat="@d/ic_nitro_highquality_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:text="@g/premium_chat_perks_custom_emoji_mobile" app:drawableStartCompat="@d/ic_nitro_globalemojis_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:id="@+id/premium_perks_upload_text" android:text="@g/premium_chat_perks_description_upload_limit" app:drawableStartCompat="@d/ic_upload_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:text="@g/premium_chat_perks_rep_mobile" app:drawableStartCompat="@d/ic_nitro_rep_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:text="@g/premium_chat_perks_premium_guild_subscription" app:drawableStartCompat="@d/ic_boosted_badge_24dp" style="@h/UiKit_TextView_Perk"/>
+    <TextView android:id="@+id/premium_perks_stickers_text" android:visibility="gone" app:drawableStartCompat="@d/ic_sticker_icon_20dp" style="@h/UiKit_TextView_Perk"/>
+</LinearLayout>

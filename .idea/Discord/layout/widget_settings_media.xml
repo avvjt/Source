@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/settings_text_images_display_header" android:text="@g/inline_media_label" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_text_images_embeds_toggle" app:cs_text="@g/inline_embed_media" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/attachments_toggle" app:cs_subtext="@g/inline_attachment_media_help" app:cs_text="@g/inline_attachment_media" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_text_images_allow_autoplay_gif_switch" app:cs_text="@g/gif_auto_play_label_mobile" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <TextView android:id="@+id/settings_text_images_emoji_header" android:text="@g/emoji" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_text_images_allow_animate_emoji_switch" app:cs_subtext="@g/animate_emoji_note" app:cs_text="@g/animate_emoji" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <LinearLayout android:id="@+id/settings_text_images_stickers_container" android:visibility="gone" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/settings_text_images_stickers_header" android:text="@g/stickers_auto_play_heading" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.CheckedSetting android:id="@+id/stickers_always_animate" app:cs_text="@g/stickers_always_animate" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/stickers_animate_on_interaction" app:cs_subtext="@g/stickers_animate_on_interaction_description" app:cs_text="@g/stickers_animate_on_interaction" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/stickers_never_animate" app:cs_text="@g/stickers_never_animate" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/stickers_suggestions" android:visibility="gone" app:cs_subtext="@g/auto_suggest_stickers_description" app:cs_text="@g/auto_suggest_stickers" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/compression_container" android:visibility="gone" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:id="@+id/settings_text_images_compression_header" android:text="@g/image_compression" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.CheckedSetting android:id="@+id/compression_toggle" app:cs_text="@g/image_compression_label" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.utilities.view.text.LinkifiedTextView android:id="@+id/compression_toggle_subtext" android:paddingTop="4dp" style="@h/UiKit_Settings_Item_SubText"/>
+            </LinearLayout>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_text_images_preview_header" android:text="@g/render_embeds_label" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_text_images_links_toggle" app:cs_text="@g/render_embeds" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_text_images_sync_header" android:text="@g/sync" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_text_images_sync_toggle" app:cs_text="@g/settings_sync" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

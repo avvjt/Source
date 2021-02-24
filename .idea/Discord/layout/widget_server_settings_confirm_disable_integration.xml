@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/AppAlertDialog">
+    <TextView android:id="@+id/server_settings_confirm_disable_integration_header" android:text="@g/disable_integration_title" style="@h/AppAlertDialogHeader"/>
+    <LinearLayout style="@h/AppAlertDialogContent">
+        <TextView android:id="@+id/server_settings_confirm_disable_integration_body" style="@h/AppAlertDialogText"/>
+    </LinearLayout>
+    <LinearLayout style="@h/AppAlertDialogFooter">
+        <com.google.android.material.button.MaterialButton android:id="@+id/server_settings_confirm_disable_integration_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/server_settings_confirm_disable_integration_confirm" android:text="@g/disable" style="@h/UiKit_Material_Button_Red_Fit"/>
+    </LinearLayout>
+</LinearLayout>

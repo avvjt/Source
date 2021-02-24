@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_marginTop="16dp" app:cardBackgroundColor="?attr/primary_660" app:cardCornerRadius="4dp" style="@h/UiKit_ViewGroup">
+    <RelativeLayout android:padding="8dp" style="@h/UiKit_ViewGroup">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/gift_sku_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="8dp" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_000" android:id="@+id/gift_sku_name" android:layout_alignParentTop="true" android:layout_marginStart="48dp" android:layout_alignParentStart="true" style="@h/UiKit_TextView_Semibold"/>
+        <TextView android:id="@+id/gift_sku_copies" android:layout_below="@+id/gift_sku_name" android:layout_marginStart="48dp" android:layout_alignParentStart="true" style="@h/UiKit_TextView"/>
+        <ImageView android:id="@+id/gift_sku_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@d/icon_carrot" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="8dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

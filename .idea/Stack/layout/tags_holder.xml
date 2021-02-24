@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.google.android.material.chip.ChipGroup android:id="@+id/tagsViewTop" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" app:singleLine="true"/>
+        <com.google.android.material.chip.ChipGroup android:id="@+id/tagsViewMiddle" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" app:singleLine="true"/>
+        <com.google.android.material.chip.ChipGroup android:id="@+id/tagsViewBottom" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" app:singleLine="true"/>
+    </LinearLayout>
+</HorizontalScrollView>

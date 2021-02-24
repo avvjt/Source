@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/server_settings_instant_invites_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/server_settings_instant_invites_recycler" android:paddingTop="4dp" android:scrollbars="vertical" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_margin="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/no_invites_header" android:text="@g/no_invites_label" android:textAllCaps="true" app:drawableTopCompat="@d/asset_empty_no_invites" style="@h/UiKit_TextView_NoResults"/>
+            <TextView android:gravity="center" android:id="@+id/no_invites_body" android:layout_marginTop="8dp" android:text="@g/no_invites_body" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

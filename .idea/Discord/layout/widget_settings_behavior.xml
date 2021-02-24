@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/settings_behavior_keyboard_header" android:text="@g/keyboard_behavior_mobile_header" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_behavior_shift_send_toggle" app:cs_subtext="@g/keyboard_behavior_mobile_shift_enter_to_send_hint" app:cs_text="@g/keyboard_behavior_mobile_shift_enter_to_send" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_behavior_chat_header" android:text="@g/chat_behavior" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_behavior_dev_mode_switch" app:cs_subtext="@g/developer_mode_help_text" app:cs_text="@g/developer_mode" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_behavior_browser_switch" app:cs_subtext="@g/custom_tabs_mobile_body" app:cs_text="@g/custom_tabs_mobile_header" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

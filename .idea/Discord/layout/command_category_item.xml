@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/bg_pressed_highlight" android:layout_width="48dp" android:layout_height="match_parent">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/command_category_item_icon" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="fitCenter" android:importantForAccessibility="no" app:placeholderImage="@d/asset_default_avatar_32dp" app:roundAsCircle="true"/>
+    <include android:id="@+id/overline" layout="@layout/expression_picker_category_selection_overline_view"/>
+</FrameLayout>

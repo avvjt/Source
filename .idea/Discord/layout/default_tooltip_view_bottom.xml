@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/TooltipDefaultContainer">
+    <ImageView android:src="@d/ic_tooltip_bottom_tail" android:rotation="180" app:layout_constraintBottom_toTopOf="@+id/default_tooltip_text" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:tint="@c/brand" style="@h/UiKit_ImageView"/>
+    <TextView android:id="@+id/default_tooltip_text" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" style="@h/TooltipDefaultText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

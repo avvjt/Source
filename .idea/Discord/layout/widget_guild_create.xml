@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationContentDescription="@g/close" app:navigationIcon="?attr/ic_action_bar_close" style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:paddingBottom="8dp" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.discord.views.ScreenTitleView android:id="@+id/guild_create_screen_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:stv_subtitle="@g/create_server_description_mobile_refresh" app:stv_title="@g/create_server_title_mobile_refresh"/>
+            <include android:layout_gravity="center" android:id="@+id/guild_create_icon_uploader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" layout="@layout/layout_icon_uploader"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_create_name" android:layout_marginBottom="8dp" android:hint="@g/form_label_server_name" app:endIconMode="2" style="@h/UiKit_TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.discord.utilities.view.text.LinkifiedTextView android:textColor="?attr/colorHeaderSecondary" android:id="@+id/guild_create_guidelines" android:layout_marginBottom="16dp" style="@h/UiKit_TextView"/>
+            <com.discord.views.LoadingButton android:id="@+id/guild_create_button" android:layout_width="match_parent" android:layout_height="wrap_content" app:lb_padding_bottom="16dp" app:lb_padding_top="16dp" app:lb_progress_color="@c/white" app:lb_text="@g/nuf_create_server_button" app:lb_text_color="@d/button_text_color_primary_100" app:lb_text_size="@dimen/uikit_textsize_large"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

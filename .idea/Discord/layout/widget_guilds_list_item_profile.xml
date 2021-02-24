@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_marginTop="@dimen/guild_item_spacing" android:contentDescription="@g/direct_messages" style="@h/UiKit_GuildsListItem">
+    <FrameLayout android:layout_centerInParent="true" style="@h/UiKit_GuildsListIcon">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/guilds_item_profile_avatar_background" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="match_parent" app:placeholderImage="?attr/colorBackgroundSecondary" app:roundAsCircle="true"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/guilds_item_profile_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@d/ic_guild_list_dms_24dp" android:importantForAccessibility="no"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/guilds_item_profile_selected" android:importantForAccessibility="no" style="@h/UiKit_GuildsListSelected"/>
+</RelativeLayout>

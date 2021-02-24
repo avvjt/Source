@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout">
+        <androidx.appcompat.widget.Toolbar app:navigationContentDescription="@g/back" app:navigationIcon="?attr/ic_action_bar_back" app:subtitle="@g/user_settings" app:title="@g/authorized_apps" style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:text="@g/applications_and_connections" style="@h/UiKit_Settings_Item_Header"/>
+            <TextView android:text="@g/applications_and_connections_body" style="@h/UiKit_Settings_Item_Addition"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/authorized_apps_list" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

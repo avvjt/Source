@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <TextView android:id="@+id/dialog_title" android:layout_width="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:lineSpacingMultiplier="1.4" android:elevation="@dimen/app_elevation" style="@h/UiKit_TextView_H1_Bold"/>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <com.discord.utilities.view.recycler.MaxHeightRecyclerView android:orientation="vertical" android:id="@+id/dialog_selections" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager" app:max_height_screen_ratio="0.5"/>
+    <View style="@h/UiKit_Divider"/>
+    <FrameLayout android:background="?attr/primary_630" android:layout_width="match_parent" style="@h/UiKit_ViewGroup_Page">
+        <com.google.android.material.button.MaterialButton android:textColor="?attr/primary_100" android:layout_gravity="end" android:id="@+id/dialog_cancel" android:text="@g/cancel" android:textAllCaps="true" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+    </FrameLayout>
+</LinearLayout>

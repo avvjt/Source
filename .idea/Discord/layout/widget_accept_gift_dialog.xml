@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:minWidth="260dp" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <com.discord.app.AppViewFlipper android:id="@+id/accept_gift_flipper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+                <LinearLayout android:gravity="center" android:id="@+id/accept_gift_body_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/accept_gift_body_image" android:layout_margin="16dp" style="@h/Icon_Game"/>
+                    <TextView android:gravity="center_horizontal" android:id="@+id/accept_gift_header" style="@h/UiKit_TextView_H1_Bold"/>
+                    <TextView android:gravity="center_horizontal" android:id="@+id/accept_gift_body_text" android:layout_marginTop="8dp" style="@h/UiKit_TextView"/>
+                    <LinearLayout android:id="@+id/accept_gift_disclaimer_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                        <View android:layout_marginTop="12dp" android:layout_marginBottom="12dp" style="@h/UiKit_Divider"/>
+                        <com.discord.utilities.view.text.LinkifiedTextView android:textSize="@dimen/uikit_textsize_small" android:gravity="center_horizontal" android:id="@+id/accept_gift_disclaimer_text" style="@h/UiKit_TextView"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <ProgressBar android:layout_gravity="center" android:id="@+id/accept_gift_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.google.android.material.button.MaterialButton android:layout_gravity="center" android:id="@+id/accept_gift_confirm" android:layout_width="wrap_content" style="@h/UiKit_Material_Button"/>
+            </FrameLayout>
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+</LinearLayout>

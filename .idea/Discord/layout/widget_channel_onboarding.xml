@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundPrimary" style="@h/UiKit_ViewGroup_LinearLayout">
+    <LinearLayout android:gravity="center_horizontal" android:padding="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+        <com.discord.views.ScreenTitleView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:stv_subtitle="@g/nuf_channels_description" app:stv_title="@g/nuf_channels_title"/>
+        <ImageView android:layout_width="280dp" android:layout_marginBottom="24dp" android:src="?attr/drawable_channels_onboarding" android:contentDescription="@g/nuf_channels_description" style="@h/UiKit_ImageView"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/channel_actions_view" android:text="@g/nuf_channels_cta_label" style="@h/UiKit_AuthButton_Material"/>
+    </LinearLayout>
+</LinearLayout>

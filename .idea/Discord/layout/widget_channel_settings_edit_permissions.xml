@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_margin="16dp" style="@h/UiKit_ViewGroup_ConstraintLayout">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/channel_permissions_avatar" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/channel_permissions_target_name" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@h/Avatar_Standard"/>
+                <TextView android:ellipsize="end" android:id="@+id/channel_permissions_target_name" android:layout_width="0dp" android:layout_margin="16dp" android:maxLines="4" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/channel_permissions_channel_name" app:layout_constraintStart_toEndOf="@+id/channel_permissions_avatar" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_default="2" app:layout_constraintWidth_percent="0.6" app:layout_goneMarginLeft="0dp" style="@h/UiKit_TextView"/>
+                <TextView android:ellipsize="end" android:gravity="end" android:id="@+id/channel_permissions_channel_name" android:maxLines="4" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/channel_permissions_target_name" app:layout_constraintTop_toTopOf="0" style="@h/UiKit_TextView"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:id="@+id/section_general_permissions" android:text="@g/role_permissions_section_general_channel" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_read_messages" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/view_channel" app:tcs_subtext="@g/role_permissions_view_channel_description_channel"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_general_manage_channel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/manage_channel" app:tcs_subtext="@g/role_permissions_manage_channel_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_general_manage_permissions" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/manage_permissions" app:tcs_subtext="@g/role_permissions_manage_roles_description_channel"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_general_manage_webhooks" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/manage_webhooks" app:tcs_subtext="@g/role_permissions_manage_webhooks_description_channel"/>
+            </LinearLayout>
+            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/role_permissions_section_membership" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_general_create_instant_invite" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/create_instant_invite" app:tcs_subtext="@g/role_permissions_create_instant_invite_description_text"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/channel_permissions_text_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/role_permissions_section_text" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_send_messages" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/send_messages" app:tcs_subtext="@g/role_permissions_send_messages_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_embed_links" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/embed_links" app:tcs_subtext="@g/role_permissions_embed_links_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_attach_files" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/attach_files" app:tcs_subtext="@g/role_permissions_attach_files_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_add_reactions" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/add_reactions" app:tcs_subtext="@g/role_permissions_add_reactions_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_use_external_emojis" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/use_external_emojis" app:tcs_subtext="@g/role_permissions_use_external_emojis_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_mention_everyone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/mention_everyone_android" app:tcs_subtext="@g/role_permissions_mention_everyone_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_manage_messages" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/manage_messages" app:tcs_subtext="@g/role_permissions_manage_messages_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_read_message_history" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/read_message_history" app:tcs_subtext="@g/role_permissions_read_message_history_description_text"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_text_send_tts_messages" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/send_tts_messages" app:tcs_subtext="@g/role_permissions_send_tts_messages_description_text"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/channel_permissions_voice_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/role_permissions_section_voice" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_connect" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/connect" app:tcs_subtext="@g/role_permissions_connect_description_voice"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_speak" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/speak" app:tcs_subtext="@g/role_permissions_speak_description_voice"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_video" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/video" app:tcs_subtext="@g/role_permissions_stream_description_voice"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_use_vad" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/use_vad" app:tcs_subtext="@g/role_permissions_use_vad_description_voice"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_priority_speaker" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/priority_speaker" app:tcs_subtext="@g/role_permissions_priority_speaker_description"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_mute_members" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/mute_members" app:tcs_subtext="@g/role_permissions_mute_members_description_voice"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_deafen_members" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/deafen_members" app:tcs_subtext="@g/role_permissions_deafen_members_description_voice"/>
+                <com.discord.views.TernaryCheckBox android:id="@+id/channel_permission_voice_move_members" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/move_members" app:tcs_subtext="@g/role_permissions_move_members_description_voice"/>
+            </LinearLayout>
+            <Space android:layout_width="match_parent" android:layout_height="64dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/channel_permissions_save" android:focusable="true" android:visibility="gone" android:src="@d/icon_save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationContentDescription="@g/back" app:navigationIcon="?attr/ic_action_bar_back" app:subtitle="@g/user_settings" app:title="@g/voice_and_video" style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/settings_voice_input_header" android:text="@g/form_label_input" style="@h/UiKit_Settings_Item_Header"/>
+            <RelativeLayout android:id="@+id/settings_voice_mode" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/settings_voice_mode_header" android:text="@g/form_label_input_mode" style="@h/UiKit_Settings_Item_Label"/>
+                <TextView android:id="@+id/settings_voice_mode_value" android:layout_below="@+id/settings_voice_mode_header" style="@h/UiKit_Settings_Item_Addition"/>
+                <ImageView android:src="?attr/ic_navigate_next" android:layout_centerVertical="true" android:contentDescription="@g/form_label_input_mode" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@h/UiKit_ImageView"/>
+            </RelativeLayout>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_auto_vad_toggle" app:cs_text="@g/form_label_automatic_vad_mobile" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <RelativeLayout android:id="@+id/settings_voice_sensitivity_wrap" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" style="@h/UiKit_ViewGroup">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_100" android:ellipsize="end" android:id="@+id/settings_voice_sensitivity_header" android:text="@g/form_label_sensitivty" android:maxLines="1" android:layout_alignBaseline="@+id/settings_voice_sensitivity_test_button" android:importantForAccessibility="no" android:layout_toStartOf="@+id/settings_voice_sensitivity_test_button" android:layout_alignParentStart="true" style="@h/UiKit_TextView"/>
+                <com.google.android.material.button.MaterialButton android:textSize="@dimen/uikit_textsize_medium" android:textColor="?attr/primary_100" android:ellipsize="end" android:id="@+id/settings_voice_sensitivity_test_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/form_label_test_microphone" android:maxLines="1" android:layout_alignParentEnd="true" app:icon="?attr/ic_mic" app:iconTint="?attr/primary_100" style="@h/UiKit_Material_Button_White_Outline"/>
+                <LinearLayout android:id="@+id/settings_voice_sensitivity_testing_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/settings_voice_sensitivity_header" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <SeekBar android:id="@+id/settings_voice_sensitivity_manual" android:layout_height="32dp" android:layout_marginTop="4dp" android:progressDrawable="@d/drawable_voice_sensitivity_progress" android:contentDescription="@g/form_label_sensitivty" style="@h/UiKit_SeekBar"/>
+                        <View android:layout_gravity="center_vertical" android:id="@+id/settings_voice_sensitivity_automatic" android:background="@d/drawable_voice_indicator_speaking" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginLeft="2dp" android:layout_marginTop="4dp" android:layout_marginRight="2dp" android:layout_marginBottom="2dp" android:contentDescription="@g/form_label_sensitivty"/>
+                    </FrameLayout>
+                    <TextView android:id="@+id/settings_voice_sensitivity_label" android:text="@g/form_help_automatic_vad" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:layout_marginTop="0dp" style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_voice_output_header" android:text="@g/form_label_output" style="@h/UiKit_Settings_Item_Header"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/settings_voice_output_volume_wrap" android:background="@d/drawable_bg_settings_item" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_100" android:text="@g/form_label_volume" android:labelFor="@+id/settings_voice_output_volume" style="@h/UiKit_TextView"/>
+                <SeekBar android:id="@+id/settings_voice_output_volume" android:layout_marginTop="4dp" style="@h/UiKit_SeekBar"/>
+            </LinearLayout>
+            <View android:layout_marginTop="0dp" style="@h/UiKit_Settings_Divider"/>
+            <com.discord.utilities.view.text.LinkifiedTextView android:id="@+id/settings_voice_video_troubleshooting_guide" android:text="@g/form_help_voice_video_troubleshooting_guide" style="@h/UiKit_Settings_Item_SubText"/>
+            <View android:layout_marginTop="0dp" style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_voice_overlay_header" android:text="@g/settings_games_overlay" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_overlay_toggle" app:cs_subtext="@g/overlay_mobile_toggle_desc" app:cs_text="@g/overlay_mobile_toggle_label" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_voice_processing_header" android:text="@g/form_label_voice_processing" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_noise_cancellation_toggle" app:cs_subtext="@g/user_settings_noise_cancellation_description" app:cs_text="@g/user_settings_noise_cancellation" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <TextView android:id="@+id/settings_voice_krisp_info" android:text="@g/learn_more_link" android:drawablePadding="12dp" app:drawableStartCompat="?attr/ic_krisp_logo" style="@h/UiKit_Settings_Item_Icon"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_echo_cancellation_toggle" app:cs_text="@g/echo_cancellation" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_noise_suppression_toggle" app:cs_text="@g/noise_suppression" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_gain_control_toggle" app:cs_text="@g/automatic_gain_control" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_krisp_vad_toggle" app:cs_subtext="@g/user_settings_disable_advanced_voice_activity" app:cs_text="@g/advanced_voice_activity" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <LinearLayout android:id="@+id/settings_voice_video_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/settings_voice_video_header" android:text="@g/video" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_voice_enable_hardware_scaling_toggle" app:cs_subtext="@g/mobile_enable_hardware_scaling_desc" app:cs_text="@g/mobile_enable_hardware_scaling" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            </LinearLayout>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_voice_opensl_header" android:text="@g/form_label_android_opensl" style="@h/UiKit_Settings_Item_Header"/>
+            <TextView android:id="@+id/settings_voice_opensles_help" style="@h/UiKit_Settings_Item_SubText"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_opensles_default" app:cs_subtext="@g/form_label_android_opensl_default_desc" app:cs_text="@g/form_label_android_opensl_default" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_opensles_force_enabled" app:cs_subtext="@g/form_label_android_opensl_force_enabled_desc" app:cs_text="@g/form_label_android_opensl_force_enabled" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_voice_opensles_force_disabled" app:cs_subtext="@g/form_label_android_opensl_force_disabled_desc" app:cs_text="@g/form_label_android_opensl_force_disabled" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

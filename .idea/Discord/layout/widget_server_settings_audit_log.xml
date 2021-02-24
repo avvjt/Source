@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/server_settings_audit_logs_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+        <LinearLayout android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <LinearLayout android:id="@+id/server_settings_audit_logs_user_filter_container" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <TextView android:textSize="@dimen/uikit_textsize_small" android:minWidth="90dp" android:text="@g/guild_settings_filtered_user" android:layout_marginEnd="8dp" style="@h/UiKit_TextView"/>
+                <TextView android:id="@+id/server_settings_audit_logs_user_filter" style="@h/UiKit_Search_Chip"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/server_settings_audit_logs_action_filter_container" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <TextView android:textSize="@dimen/uikit_textsize_small" android:minWidth="90dp" android:text="@g/guild_settings_filtered_action" android:layout_marginEnd="8dp" style="@h/UiKit_TextView"/>
+                <TextView android:id="@+id/server_settings_audit_logs_action_filter" style="@h/UiKit_Search_Chip"/>
+            </LinearLayout>
+            <com.discord.app.AppViewFlipper android:id="@+id/server_settings_audit_logs_view_results_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@h/AppTheme_AppBarScrollingViewBehavior">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/server_settings_audit_logs_recycler" android:scrollbars="vertical" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+                <LinearLayout android:gravity="center" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:id="@+id/no_logs_title" android:text="@g/guild_settings_label_audit_log_empty_title" style="@h/UiKit_TextView_NoResults"/>
+                    <TextView android:gravity="center" android:id="@+id/no_logs_body" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@g/guild_settings_label_audit_log_empty_body" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </com.discord.app.AppViewFlipper>
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

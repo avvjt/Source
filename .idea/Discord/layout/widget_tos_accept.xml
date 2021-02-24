@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <ScrollView android:layout_height="match_parent" android:layout_above="@+id/alert_tos_ack_wrap" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout style="@h/UiKit_Copy_Container">
+            <ImageView android:src="?attr/img_new_tos" android:contentDescription="@g/new_terms_title" style="@h/UiKit_ImageView"/>
+            <LinearLayout style="@h/UiKit_Copy">
+                <TextView android:layout_gravity="start" android:id="@+id/alert_tos_text_title" android:text="@g/new_terms_title" style="@h/UiKit_TextView_H1"/>
+                <TextView android:id="@+id/alert_tos_text_description" android:layout_marginTop="16dp" android:text="@g/new_terms_description" style="@h/UiKit_TextView"/>
+                <com.discord.utilities.view.text.LinkifiedTextView android:layout_gravity="start" android:id="@+id/alert_tos_terms_of_service" android:layout_marginTop="16dp" android:text="@g/terms_of_service_url" style="@h/UiKit_TextView_Link"/>
+                <com.discord.utilities.view.text.LinkifiedTextView android:layout_gravity="start" android:id="@+id/alert_tos_privacy_policy" android:layout_marginTop="12dp" android:text="@g/privacy_policy_url" style="@h/UiKit_TextView_Link"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/alert_tos_ack_wrap" android:layout_marginTop="8dp" android:layout_alignParentBottom="true" style="@h/UiKit_Copy_Anchor">
+        <FrameLayout style="@h/UiKit_Copy_Anchor_Item_Rotatable">
+            <CheckBox android:id="@+id/alert_tos_ack" android:layout_height="52dp" android:text="@g/new_terms_ack" style="@h/UiKit_Checkbox"/>
+        </FrameLayout>
+        <FrameLayout style="@h/UiKit_Copy_Anchor_Item_Rotatable">
+            <com.google.android.material.button.MaterialButton android:enabled="false" android:id="@+id/alert_tos_ack_continue" android:layout_width="match_parent" android:text="@g/new_terms_continue" style="@h/UiKit_Material_Button"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat_Transparent">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

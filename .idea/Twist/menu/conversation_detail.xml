@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_action_info" android:id="@+id/menu_details" android:title="@string/menu_conversation_details" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_mark_unread" android:title="@string/menu_mark_unread" app:showAsAction="never"/>
+    <item android:id="@+id/menu_set_title" android:title="@string/menu_edit_conversation_title" app:showAsAction="never"/>
+    <item android:id="@+id/menu_conversation_mute" android:title="@string/menu_mute" app:showAsAction="never"/>
+    <item android:id="@+id/menu_conversation_users" android:title="@string/menu_conversation_users" app:showAsAction="never"/>
+    <item android:id="@+id/menu_todoist_task" android:title="@string/menu_todoist_task" app:showAsAction="never"/>
+    <item android:id="@+id/menu_get_email" android:title="@string/menu_get_conversation_email" app:showAsAction="never"/>
+    <item android:id="@+id/menu_get_link" android:title="@string/menu_get_conversation_link" app:showAsAction="never"/>
+    <item android:id="@+id/menu_archive" android:title="@string/menu_conversation_archive" app:showAsAction="never"/>
+</menu>

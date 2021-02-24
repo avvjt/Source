@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundPrimary" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+        <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:textSize="@dimen/uikit_textsize_large" android:textColor="@c/brand" android:id="@+id/sticker_pack_details_close" android:text="@g/close" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@h/UiKit_TextView"/>
+        <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/sticker_pack_details_pack" android:layout_alignParentTop="true" android:layout_marginEnd="8dp" android:layout_toStartOf="@+id/sticker_pack_details_close" android:layout_alignParentStart="true" style="@h/UiKit_TextView"/>
+        <LinearLayout android:layout_marginTop="8dp" android:layout_below="@+id/sticker_pack_details_pack" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/sticker_pack_details_animated" android:visibility="gone" style="@h/UiKit_TextView"/>
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/sticker_pack_details_premium" android:visibility="gone" style="@h/UiKit_TextView"/>
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/sticker_pack_details_limited" android:visibility="gone" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

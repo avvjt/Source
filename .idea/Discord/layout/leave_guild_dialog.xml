@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <LinearLayout android:id="@+id/notice_header_container" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:id="@+id/leave_guild_dialog_header" android:padding="16dp" style="@h/UiKit_TextView_H1_Bold"/>
+        <View style="@h/UiKit_Divider"/>
+    </LinearLayout>
+    <TextView android:id="@+id/leave_guild_dialog_body" android:paddingTop="8dp" android:layout_marginBottom="8dp" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_TextView"/>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:textColor="?attr/primary_200" android:id="@+id/leave_guild_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent"/>
+        <com.discord.views.LoadingButton android:id="@+id/leave_guild_confirm_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:lb_progress_color="@c/white" app:lb_text="@g/leave_server" app:lb_text_color="@d/button_text_color_primary_100"/>
+    </LinearLayout>
+</LinearLayout>

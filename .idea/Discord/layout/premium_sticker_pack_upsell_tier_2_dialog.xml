@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_ScrollView">
+    <RelativeLayout style="@h/UiKit_ViewGroup_Page">
+        <ImageView android:id="@+id/premium_sticker_upsell_close" android:padding="16dp" android:src="@d/ic_close_white_18dp" android:layout_alignParentTop="true" android:contentDescription="@g/close_window" android:layout_alignParentEnd="true" style="@h/UiKit_ImageView_Clickable"/>
+        <LinearLayout android:layout_marginLeft="24dp" android:layout_marginRight="24dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_marginTop="32dp" android:layout_marginBottom="12dp" android:src="@d/img_premium_stickers_upsell" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:gravity="center" android:id="@+id/premium_sticker_upsell_description" android:layout_marginBottom="16dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+            <androidx.cardview.widget.CardView android:background="@c/transparent" android:layout_marginBottom="16dp" app:cardCornerRadius="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <LinearLayout android:background="?attr/colorBackgroundSecondary" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:textColor="?attr/colorTextNormal" android:id="@+id/premium_sticker_upsell_perk_sticker_discount" android:layout_width="match_parent" app:drawableStartCompat="@d/ic_sticker_icon_20dp" app:drawableTint="#aec7ff" style="@h/UiKit_TextView_Perk_Small"/>
+                    <View android:background="?attr/colorBackgroundPrimary" style="@h/UiKit_Divider_Thick"/>
+                    <TextView android:id="@+id/premium_sticker_upsell_perk_free_pack" android:layout_width="match_parent" app:drawableStartCompat="@d/ic_sticker_icon_20dp" style="@h/UiKit_TextView_Perk_Small"/>
+                    <View android:background="?attr/colorBackgroundPrimary" style="@h/UiKit_Divider_Thick"/>
+                    <TextView android:id="@+id/premium_sticker_upsell_perk_boost_discount" android:layout_width="match_parent" app:drawableStartCompat="@d/ic_boosted_badge_24dp" style="@h/UiKit_TextView_Perk_Small"/>
+                    <View android:background="?attr/colorBackgroundPrimary" style="@h/UiKit_Divider_Thick"/>
+                    <TextView android:layout_width="match_parent" android:text="@g/sticker_premium_tier_2_upsell_perk_premium_subscription" app:drawableStartCompat="@d/ic_emoji_blue_24dp" app:drawableTint="#fed648" style="@h/UiKit_TextView_Perk_Small"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:layout_marginBottom="32dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <com.google.android.material.button.MaterialButton android:id="@+id/premium_sticker_upsell_upgrade" android:layout_marginBottom="16dp" android:text="@g/premium_upsell_upgrade" android:backgroundTint="@c/status_green" style="@h/UiKit_Dialog_Button"/>
+                <TextView android:id="@+id/premium_sticker_upsell_continue" android:text="@g/_continue" style="@h/UiKit_Dialog_TextView_Dismiss"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

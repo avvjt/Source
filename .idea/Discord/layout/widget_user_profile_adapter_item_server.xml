@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:padding="16dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+    <RelativeLayout android:id="@+id/user_profile_adapter_item_server_wrap" android:layout_width="@dimen/avatar_size_large" android:layout_height="@dimen/avatar_size_large" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/user_profile_adapter_item_server_image" style="@h/Avatar_Large"/>
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:ellipsize="none" android:gravity="center" android:id="@+id/user_profile_adapter_item_server_text" android:background="@d/drawable_circle_purple_brand" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" style="@h/UiKit_TextView_H2"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_toEndOf="@+id/user_profile_adapter_item_server_wrap" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:id="@+id/user_profile_adapter_item_server_name" android:singleLine="true" style="@h/UiKit_TextView_Large"/>
+        <TextView android:id="@+id/user_profile_adapter_item_server_nick" android:paddingTop="4dp" android:singleLine="true" style="@h/UiKit_TextView"/>
+    </LinearLayout>
+</RelativeLayout>

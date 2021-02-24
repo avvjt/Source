@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:id="@+id/content" android:paddingBottom="@dimen/dialog_button_bar_height" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dialog_standard_margin" android:paddingBottom="@dimen/standard_small_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_spacing" android:layout_marginStart="@dimen/dialog_standard_margin" android:layout_marginEnd="@dimen/dialog_standard_margin" style="@style/Widget.Twist.CustomDialog.Title"/>
+            <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/standard_spacing" android:layout_marginStart="@dimen/dialog_standard_margin" android:layout_marginEnd="@dimen/dialog_standard_margin" style="@style/Widget.Twist.CustomDialog.Message.Secondary"/>
+            <EditText android:id="@+id/edit_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dialog_fake_edit_text_standard_margin" android:layout_marginEnd="@dimen/dialog_fake_edit_text_standard_margin" android:importantForAutofill="2" style="@style/Widget.Twist.CustomDialog.EditText"/>
+            <TextView android:id="@+id/helper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dialog_standard_margin" android:layout_marginEnd="@dimen/dialog_standard_margin" style="@style/Widget.Twist.CustomDialog.Helper"/>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@+id/rl_dialog_button_bar" android:layout_width="match_parent" android:layout_height="@dimen/dialog_button_bar_height" android:layout_alignBottom="@+id/content" layout="@layout/button_bar_dialog"/>
+</RelativeLayout>

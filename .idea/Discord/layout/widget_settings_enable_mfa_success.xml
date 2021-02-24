@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:layout_margin="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <ImageView android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp" android:src="?attr/img_mfa" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+    <TextView android:textSize="24sp" android:textColor="?attr/primary_100" android:layout_marginBottom="8dp" android:text="@g/two_fa_success_header" style="@h/UiKit_TextView"/>
+    <TextView android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="@g/two_fa_success_body_mobile" style="@h/UiKit_TextView"/>
+    <View android:layout_width="150dp" android:layout_marginTop="32dp" android:layout_marginBottom="32dp" style="@h/UiKit_Divider"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/mfa_success_enable_sms" android:text="@g/mfa_sms_enable" style="@h/UiKit_Material_Button"/>
+    <TextView android:gravity="center" android:layout_marginTop="8dp" android:text="@g/mfa_sms_auth_sales_pitch" style="@h/UiKit_TextView_Subtext"/>
+</LinearLayout>

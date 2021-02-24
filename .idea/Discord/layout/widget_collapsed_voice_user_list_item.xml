@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/primary_630_circle" android:padding="@dimen/uikit_settings_voice_user_border_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/widget_collapsed_user_imageview" app:placeholderImage="@d/drawable_grey_user_icon" style="@h/Avatar_Medium"/>
+    <TextView android:textSize="10sp" android:textColor="@c/white" android:layout_gravity="center" android:id="@+id/widget_collapsed_user_count" style="@h/UiKit_TextView_Bold"/>
+</FrameLayout>

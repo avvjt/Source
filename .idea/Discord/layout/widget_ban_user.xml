@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/settings_account_scroll" style="@h/UiKit_Dialog_Container">
+    <TextView android:id="@+id/ban_user_title" android:text="@g/ban_user_title" style="@h/UiKit_Dialog_Title"/>
+    <View style="@h/UiKit_Divider"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:gravity="center_vertical" android:id="@+id/ban_user_body" android:text="@g/ban_user_body" style="@h/UiKit_Dialog_Body"/>
+            <TextView android:text="@g/form_label_delete_message_history" style="@h/UiKit_Dialog_Subtitle"/>
+            <com.discord.views.CheckedSetting android:id="@+id/ban_user_delete_messages_none" android:layout_width="match_parent" android:layout_height="wrap_content" app:cs_text="@g/delete_message_history_option_none" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/ban_user_delete_messages_1_day" android:layout_width="match_parent" android:layout_height="wrap_content" app:cs_text="@g/delete_message_history_option_24hr" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/ban_user_delete_messages_7_days" android:layout_width="match_parent" android:layout_height="wrap_content" app:cs_text="@g/delete_message_history_option_7d" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <TextView android:text="@g/form_label_reason_ban" style="@h/UiKit_Dialog_Subtitle"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/ban_user_reason" android:layout_margin="16dp" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:hint="@g/form_label_reason_ban" style="@h/UiKit_TextInputLayout_EditText_MultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/ban_user_button_container" style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:id="@+id/ban_user_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/ban_user_confirm" android:text="@g/confirm" style="@h/UiKit_Material_Button_Red_Fit"/>
+    </LinearLayout>
+</LinearLayout>

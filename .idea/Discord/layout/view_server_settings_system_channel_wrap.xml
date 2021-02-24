@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/system_channel_wrap" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:text="@g/form_label_system_channel" style="@h/UiKit_Settings_Item_Label"/>
+    <TextView android:id="@+id/system_channel" android:drawablePadding="2dp" style="@h/UiKit_Settings_Item_Addition"/>
+    <TextView android:text="@g/form_help_system_channel" style="@h/UiKit_Settings_Item_SubText"/>
+    <com.discord.views.CheckedSetting android:id="@+id/system_channel_join" app:cs_text="@g/form_help_system_channel_join_messages" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+    <com.discord.views.CheckedSetting android:id="@+id/system_channel_boost" app:cs_text="@g/form_help_system_channel_premium_subscription_messages" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+</LinearLayout>

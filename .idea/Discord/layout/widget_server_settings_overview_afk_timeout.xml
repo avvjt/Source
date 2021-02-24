@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_ScrollView_Page">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@h/UiKit_Sheet_Header">
+            <androidx.constraintlayout.widget.Guideline style="@h/UiKit_Sheet_Guideline"/>
+            <TextView android:id="@+id/guild_actions_overview_header_tv" android:text="@g/form_label_afk_timeout" style="@h/UiKit_Sheet_Header_Title"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@h/UiKit_Settings_Divider"/>
+        <ScrollView style="@h/UiKit_ViewGroup_ScrollView">
+            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/server_settings_overview_afk_timeout_01" android:tag="60" app:drawableStartCompat="?attr/ic_timer" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_overview_afk_timeout_05" android:tag="300" app:drawableStartCompat="?attr/ic_timer" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_overview_afk_timeout_15" android:tag="900" app:drawableStartCompat="?attr/ic_timer" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_overview_afk_timeout_30" android:tag="1800" app:drawableStartCompat="?attr/ic_timer" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_overview_afk_timeout_60" android:tag="3600" app:drawableStartCompat="?attr/ic_timer" style="@h/UiKit_Settings_Item_Icon"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

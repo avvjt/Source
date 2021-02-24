@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="activity_feed_now_playing_header_two_known_extras">
+        <item>%s other</item>
+        <item>%s others</item>
+    </plurals>
+    <plurals name="activity_feed_single_member_list_header_memberCount">
+        <item>%s Person</item>
+        <item>%s People</item>
+    </plurals>
+    <plurals name="activity_feed_user_played_days_ago_time">
+        <item>day</item>
+        <item>days</item>
+    </plurals>
+    <plurals name="activity_feed_user_played_hours_ago_time">
+        <item>hour</item>
+        <item>hours</item>
+    </plurals>
+    <plurals name="activity_feed_user_played_minutes_ago_time">
+        <item>minute</item>
+        <item>minutes</item>
+    </plurals>
+    <plurals name="activity_feed_user_played_seconds_ago_time">
+        <item>second</item>
+        <item>seconds</item>
+    </plurals>
+    <plurals name="age_gate_confirm_header_age">
+        <item>1 year old</item>
+        <item>%s years old</item>
+    </plurals>
+    <plurals name="age_gate_underage_existing_body_deletion_with_days_days">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="announcement_edit_rate_limit_retryAfterMinutes">
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="application_progress_indicator_installing_hours_timeRemaining">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="application_progress_indicator_installing_minutes_timeRemaining">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="application_progress_indicator_installing_seconds_timeRemaining">
+        <item>wrapping up</item>
+        <item>%s seconds remaining</item>
+    </plurals>
+    <plurals name="application_progress_indicator_updating_hours_timeRemaining">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="application_progress_indicator_updating_minutes_timeRemaining">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="application_progress_indicator_updating_seconds_timeRemaining">
+        <item>wrapping up</item>
+        <item>%s seconds remaining</item>
+    </plurals>
+    <plurals name="application_store_gift_purchase_confirm_monthly_mobile_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="application_store_gift_purchase_confirm_subscription_monthly_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="application_store_gift_purchase_confirm_subscription_yearly_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="application_store_gift_purchase_confirm_yearly_mobile_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="application_store_recommendation_ever_played_other_count">
+        <item>1 person</item>
+        <item>%s people</item>
+    </plurals>
+    <plurals name="application_store_recommendation_now_playing_other_count">
+        <item>1 person</item>
+        <item>%s people</item>
+    </plurals>
+    <plurals name="application_store_recommendation_recently_played_other_count">
+        <item>1 person</item>
+        <item>%s people</item>
+    </plurals>
+    <plurals name="attach_payment_source_optional_with_entitlements_warning_months">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="bans_header_bans">
+        <item>No Bans</item>
+        <item>1 Ban</item>
+        <item>%s Bans</item>
+    </plurals>
+    <plurals name="billing_price_per_year_months_free_numFreeMonths">
+        <item>%s Month</item>
+        <item>%s Months</item>
+    </plurals>
+    <plurals name="billing_refund_purchase_date_daysSincePurchase">
+        <item>Today</item>
+        <item>%s day ago</item>
+        <item>%s days ago</item>
+    </plurals>
+    <plurals name="billing_switch_plan_confirm_upgrade_tier_2_year_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="billing_switch_plan_tier_2_description_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="billing_switch_plan_upgrade_body_tier_2_year_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="blocked_message_count_count">
+        <item>No blocked messages</item>
+        <item>%s blocked message</item>
+        <item>%s blocked messages</item>
+    </plurals>
+    <plurals name="blocked_messages_count">
+        <item>1 Blocked Message</item>
+        <item>%s Blocked Messages</item>
+    </plurals>
+    <plurals name="blocked_messages_hide_count">
+        <item>Collapse message</item>
+        <item>Collapse messages</item>
+    </plurals>
+    <plurals name="blocked_messages_show_count">
+        <item>Show message</item>
+        <item>Show messages</item>
+    </plurals>
+    <plurals name="camera_disabled_limit_reached_limit">
+        <item>%s user</item>
+        <item>%s users</item>
+    </plurals>
+    <plurals name="channel_members_a11y_label_count">
+        <item>%s member</item>
+        <item>%s members</item>
+    </plurals>
+    <plurals name="channel_mention_badge_a11y_label_mentionCount">
+        <item>%s mention</item>
+        <item>%s mentions</item>
+    </plurals>
+    <plurals name="channel_slowmode_cooldown_seconds">
+        <item>1 second</item>
+        <item>%s seconds</item>
+    </plurals>
+    <plurals name="channel_slowmode_desc_hours_hours">
+        <item>1 hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="channel_slowmode_desc_hours_minutes">
+        <item />
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="channel_slowmode_desc_hours_seconds">
+        <item />
+        <item>1 second</item>
+        <item>%s seconds</item>
+    </plurals>
+    <plurals name="channel_slowmode_desc_minutes_minutes">
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="channel_slowmode_desc_minutes_seconds">
+        <item />
+        <item>1 second</item>
+        <item>%s seconds</item>
+    </plurals>
+    <plurals name="channel_slowmode_desc_seconds">
+        <item>1 second</item>
+        <item>%s seconds</item>
+    </plurals>
+    <plurals name="custom_status_clear_in_hours_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="custom_status_clear_in_minutes_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="custom_status_hours_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="custom_status_minutes_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="dm_tooltip_a11y_label_mentions">
+        <item />
+        <item>, %s unread message</item>
+        <item>, %s unread messages</item>
+    </plurals>
+    <plurals name="duration_days_days">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="duration_hours_hours">
+        <item>1 hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="duration_hours_short_hours">
+        <item>1h</item>
+        <item>%sh</item>
+    </plurals>
+    <plurals name="duration_mins_mins">
+        <item>1 min</item>
+        <item>%s mins</item>
+    </plurals>
+    <plurals name="duration_minutes_minutes">
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="duration_minutes_short_minutes">
+        <item>1m</item>
+        <item>%sm</item>
+    </plurals>
+    <plurals name="duration_seconds_seconds">
+        <item>1 second</item>
+        <item>%s seconds</item>
+    </plurals>
+    <plurals name="duration_seconds_short_seconds">
+        <item>1s</item>
+        <item>%ss</item>
+    </plurals>
+    <plurals name="embedded_activities_are_playing_count">
+        <item>%s other</item>
+        <item>%s others</item>
+    </plurals>
+    <plurals name="emoji_slots_available_count">
+        <item>no slots</item>
+        <item>%s slot</item>
+        <item>%s slots</item>
+    </plurals>
+    <plurals name="emojis_title_count">
+        <item>no emoji</item>
+        <item>%s emoji</item>
+        <item>%s emojis</item>
+    </plurals>
+    <plurals name="form_help_last_seen_days">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="form_help_last_seen_members">
+        <item>0 members</item>
+        <item>1 member</item>
+        <item>%s members</item>
+    </plurals>
+    <plurals name="form_help_last_seen_with_roles_days">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="form_help_last_seen_with_roles_members">
+        <item>0 members</item>
+        <item>1 member</item>
+        <item>%s members</item>
+    </plurals>
+    <plurals name="game_feed_user_played_days_ago_time">
+        <item>day</item>
+        <item>days</item>
+    </plurals>
+    <plurals name="game_feed_user_played_hours_ago_time">
+        <item>hour</item>
+        <item>hours</item>
+    </plurals>
+    <plurals name="game_feed_user_played_minutes_ago_time">
+        <item>minute</item>
+        <item>minutes</item>
+    </plurals>
+    <plurals name="game_feed_user_played_months_ago_time">
+        <item>month</item>
+        <item>months</item>
+    </plurals>
+    <plurals name="game_feed_user_played_weeks_ago_time">
+        <item>week</item>
+        <item>weeks</item>
+    </plurals>
+    <plurals name="game_feed_user_played_years_ago_time">
+        <item>year</item>
+        <item>years</item>
+    </plurals>
+    <plurals name="game_feed_user_playing_for_days_time">
+        <item>day</item>
+        <item>days</item>
+    </plurals>
+    <plurals name="game_feed_user_playing_for_hours_time">
+        <item>hour</item>
+        <item>hours</item>
+    </plurals>
+    <plurals name="game_feed_user_playing_for_minutes_time">
+        <item>minute</item>
+        <item>minutes</item>
+    </plurals>
+    <plurals name="game_library_last_played_days_time">
+        <item>yesterday</item>
+        <item>%s days ago</item>
+    </plurals>
+    <plurals name="game_library_last_played_hours_time">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="game_library_last_played_minutes_time">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="game_library_last_played_months_time">
+        <item>last month</item>
+        <item>%s months ago</item>
+    </plurals>
+    <plurals name="game_library_last_played_weeks_time">
+        <item>last week</item>
+        <item>%s weeks ago</item>
+    </plurals>
+    <plurals name="game_library_last_played_years_time">
+        <item>last year</item>
+        <item>%s years ago</item>
+    </plurals>
+    <plurals name="game_library_time_played_hours_time">
+        <item>hour</item>
+        <item>hours</item>
+    </plurals>
+    <plurals name="game_library_time_played_minutes_time">
+        <item>minute</item>
+        <item>minutes</item>
+    </plurals>
+    <plurals name="game_library_time_played_seconds_time">
+        <item>second</item>
+        <item>seconds</item>
+    </plurals>
+    <plurals name="game_library_updates_installing_hours_timeRemaining">
+        <item>1 hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="game_library_updates_installing_minutes_timeRemaining">
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="game_library_updates_installing_seconds_timeRemaining">
+        <item>wrapping up</item>
+        <item>%s seconds remaining</item>
+    </plurals>
+    <plurals name="game_library_updates_updating_updating_hours_timeRemaining">
+        <item>1 hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="game_library_updates_updating_updating_minutes_timeRemaining">
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="game_library_updates_updating_updating_seconds_timeRemaining">
+        <item>wrapping up</item>
+        <item>%s seconds remaining</item>
+    </plurals>
+    <plurals name="gift_code_auth_gifted_subscription_monthly_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_code_auth_gifted_subscription_yearly_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_subscription_monthly_confirm_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_subscription_yearly_confirm_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_success_generic_subscription_monthly_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_success_generic_subscription_yearly_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_success_premium_tier_1_monthly_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_success_premium_tier_1_yearly_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_success_premium_tier_2_monthly_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_confirmation_body_success_premium_tier_2_yearly_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_confirmation_nitro_time_frame_months_time">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_confirmation_nitro_time_frame_years_time">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_embed_body_subscription_default_months_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_embed_body_subscription_default_years_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_embed_body_subscription_no_user_default_months_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_embed_body_subscription_no_user_default_years_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="gift_embed_expiration_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="gift_inventory_copies_copies">
+        <item>%s copy</item>
+        <item>%s copies</item>
+    </plurals>
+    <plurals name="gift_inventory_expires_in_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="gift_inventory_expires_in_mobile_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="gift_inventory_subscription_months_intervalCount">
+        <item>%s month</item>
+        <item>%s months</item>
+    </plurals>
+    <plurals name="gift_inventory_subscription_years_intervalCount">
+        <item>%s year</item>
+        <item>%s years</item>
+    </plurals>
+    <plurals name="group_dm_invite_remaining_number">
+        <item>You can add 1 more friend.</item>
+        <item>You can add %s more friends.</item>
+    </plurals>
+    <plurals name="group_dm_invite_unselect_users_number">
+        <item>You must unselect 1 friend.</item>
+        <item>You must unselect %s friends.</item>
+    </plurals>
+    <plurals name="guild_discovery_header_search_results_count">
+        <item>1 result</item>
+        <item>%s results</item>
+    </plurals>
+    <plurals name="guild_discovery_search_results_category_header_count">
+        <item>0 **{category</item>
+        <item>1 **{category</item>
+        <item>%s **{category</item>
+    </plurals>
+    <plurals name="guild_discovery_search_results_header_count">
+        <item>0 communities</item>
+        <item>1 community</item>
+        <item>%s communities</item>
+    </plurals>
+    <plurals name="guild_folder_tooltip_a11y_label_mentions">
+        <item />
+        <item>, %s unread mention</item>
+        <item>, %s unread mentions</item>
+    </plurals>
+    <plurals name="guild_folder_tooltip_a11y_label_with_expanded_state_mentions">
+        <item />
+        <item>, %s unread mention</item>
+        <item>, %s unread mentions</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_permission_overrides_denied_count">
+        <item>a permission</item>
+        <item>permissions</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_permission_overrides_granted_count">
+        <item>a permission</item>
+        <item>permissions</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_permission_overrides_reset_count">
+        <item>a permission</item>
+        <item>permissions</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_change_newValue">
+        <item>Disabled slowmode</item>
+        <item>Set slowmode to **%s second**</item>
+        <item>Set slowmode to **%s seconds**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_channel_rate_limit_per_user_create_newValue">
+        <item>Set slowmode disabled</item>
+        <item>Set slowmode to **%s second**</item>
+        <item>Set slowmode to **%s seconds**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_integration_expire_grace_period_newValue">
+        <item>a day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_disconnect_count">
+        <item>**a user**</item>
+        <item>**!!%s!! users**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_move_count">
+        <item>**a user**</item>
+        <item>**!!%s!! users**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_prune_count">
+        <item>**a member**</item>
+        <item>**!!%s!! members**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_prune_delete_days_newValue">
+        <item>a day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_roles_add_count">
+        <item>a role</item>
+        <item>some roles</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_member_roles_remove_count">
+        <item>a role</item>
+        <item>some roles</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_message_bulk_delete_count">
+        <item>**a message**</item>
+        <item>**!!%s!! messages**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_message_delete_count">
+        <item>**a message**</item>
+        <item>**!!%s!! messages**</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_role_permissions_denied_count">
+        <item>permission</item>
+        <item>permissions</item>
+    </plurals>
+    <plurals name="guild_settings_audit_log_role_permissions_granted_count">
+        <item>permission</item>
+        <item>permissions</item>
+    </plurals>
+    <plurals name="guild_settings_discovery_checklist_age_description_failing_minimumGuildAge">
+        <item>1 week</item>
+        <item>%s weeks</item>
+    </plurals>
+    <plurals name="guild_settings_discovery_checklist_age_description_minimumGuildAge">
+        <item>1 week</item>
+        <item>%s weeks</item>
+    </plurals>
+    <plurals name="guild_settings_discovery_checklist_change_channel_categories_numCategories">
+        <item>name</item>
+        <item>names</item>
+    </plurals>
+    <plurals name="guild_settings_discovery_checklist_change_channel_names_numChannels">
+        <item>name</item>
+        <item>names</item>
+    </plurals>
+    <plurals name="guild_settings_member_verification_review_pending_applications_count">
+        <item>Pending Application</item>
+        <item>%s Pending Applications</item>
+    </plurals>
+    <plurals name="guild_settings_overview_boost_unlock_boosts">
+        <item>%s boost</item>
+        <item>%s boosts</item>
+    </plurals>
+    <plurals name="guild_settings_partner_checklist_age_description_failing_minimumGuildAge">
+        <item>1 week</item>
+        <item>%s weeks</item>
+    </plurals>
+    <plurals name="guild_settings_partner_checklist_age_description_minimumGuildAge">
+        <item>1 week</item>
+        <item>%s weeks</item>
+    </plurals>
+    <plurals name="guild_settings_premium_guild_close_hint_numLeft">
+        <item>%s more boost</item>
+        <item>%s more boosts</item>
+    </plurals>
+    <plurals name="guild_settings_premium_guild_count_subscribers_count">
+        <item>%s extremely cool person has</item>
+        <item>%s extremely cool people have</item>
+    </plurals>
+    <plurals name="guild_settings_premium_guild_tier_requirement_required">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="guild_settings_premium_upsell_body_perk_no_free_guild_subscriptions_numFreeGuildSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="guild_settings_premium_upsell_body_perk_num_guild_subscriptions_numFreeGuildSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="guild_settings_premium_upsell_heading_tertiary_premium_user_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="guild_sidebar_announcement_channel_a11y_label_with_mentions_mentionCount">
+        <item>%s mention</item>
+        <item>%s mentions</item>
+    </plurals>
+    <plurals name="guild_sidebar_default_channel_a11y_label_with_mentions_mentionCount">
+        <item>%s mention</item>
+        <item>%s mentions</item>
+    </plurals>
+    <plurals name="guild_sidebar_voice_channel_a11y_label_with_users_userCount">
+        <item>1 user</item>
+        <item>%s users</item>
+    </plurals>
+    <plurals name="guild_subscription_purchase_modal_activated_description_generic_guild_guildSubscriptionQuantity">
+        <item>%s time</item>
+        <item>%s times</item>
+    </plurals>
+    <plurals name="guild_subscription_purchase_modal_activated_description_guildSubscriptionQuantity">
+        <item>%s time</item>
+        <item>%s times</item>
+    </plurals>
+    <plurals name="guild_subscription_purchase_modal_activated_description_mobile2_guildSubscriptionQuantity">
+        <item>%s time</item>
+        <item>%s times</item>
+    </plurals>
+    <plurals name="guild_subscription_purchase_modal_activated_description_no_application_guildSubscriptionQuantity">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="guild_subscription_purchase_modal_transferred_description_mobile2_guildSubscriptionQuantity">
+        <item>%s time</item>
+        <item>%s times</item>
+    </plurals>
+    <plurals name="guild_subscription_purchase_modal_unused_slot_notice_slotCount">
+        <item>%s unused Boost</item>
+        <item>%s unused Boosts</item>
+    </plurals>
+    <plurals name="guild_template_usages_by_creator2_usageCount">
+        <item>Be the first to use this template by $[**!!{creator</item>
+        <item>**1** person used this template by $[**!!{creator</item>
+        <item>**%s** people used this template by $[**!!{creator</item>
+    </plurals>
+    <plurals name="guild_template_usages_no_bold_usageCount">
+        <item>Be the first to use this!</item>
+        <item>1 person used this template</item>
+        <item>%s people used this template</item>
+    </plurals>
+    <plurals name="guild_template_usages_usageCount">
+        <item>Be the first to use this!</item>
+        <item>**1** person used this template</item>
+        <item>**%s** people used this template</item>
+    </plurals>
+    <plurals name="guild_tooltip_a11y_label_mentions">
+        <item />
+        <item>%s mention,</item>
+        <item>%s mentions,</item>
+    </plurals>
+    <plurals name="humanize_duration_days_time">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="humanize_duration_hours_time">
+        <item>1 hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="humanize_duration_minutes_time">
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="humanize_duration_seconds_time">
+        <item>1 second</item>
+        <item>%s seconds</item>
+    </plurals>
+    <plurals name="instant_invite_guild_members_total_count">
+        <item>1 Member</item>
+        <item>%s Members</item>
+    </plurals>
+    <plurals name="integrations_channel_following_summary_count">
+        <item>1 channel</item>
+        <item>%s channels</item>
+    </plurals>
+    <plurals name="integrations_twitch_summary_count">
+        <item>1 connected account</item>
+        <item>%s connected accounts</item>
+    </plurals>
+    <plurals name="integrations_webhooks_count_count">
+        <item>1 Webhook</item>
+        <item>%s Webhooks</item>
+    </plurals>
+    <plurals name="integrations_webhooks_summary_count">
+        <item>1 webhook</item>
+        <item>%s webhooks</item>
+    </plurals>
+    <plurals name="integrations_youtube_summary_count">
+        <item>1 connected account</item>
+        <item>%s connected accounts</item>
+    </plurals>
+    <plurals name="invite_embed_num_open_slots_number">
+        <item>slot</item>
+        <item>slots</item>
+    </plurals>
+    <plurals name="invite_expires_days_or_uses_plural_numDays">
+        <item>%s day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="invite_expires_days_or_uses_plural_numUses">
+        <item>%s use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="invite_expires_days_plural_numDays">
+        <item>%s day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="invite_expires_hours_numHours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="invite_expires_hours_or_uses_numHours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="invite_expires_hours_or_uses_numUses">
+        <item>%s use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="invite_expires_minutes_or_uses_numUses">
+        <item>%s use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="invite_expires_uses_numUses">
+        <item>%s use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="last_seen_days">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="live_viewers_viewers">
+        <item>viewer</item>
+    </plurals>
+    <plurals name="marketing_refresh_premium_features_included_guild_subscriptions_subheading_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_label_stickers_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="marketing_refresh_premium_tier_1_cta_description_perks_info_no_premium_guild_subscriptions_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="max_uses_description_mobile_maxUses">
+        <item>unlimited uses</item>
+        <item>1 use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="max_uses_maxUses">
+        <item>No limit</item>
+        <item>1 use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="member_verification_disable_gate_confirm_title_requests">
+        <item>1 application</item>
+        <item>%s applications</item>
+    </plurals>
+    <plurals name="member_verification_num_emojis_emojis">
+        <item>no server emoji</item>
+        <item>%s server emoji</item>
+        <item>%s server emojis</item>
+    </plurals>
+    <plurals name="members_header_members">
+        <item>No Members</item>
+        <item>1 Member</item>
+        <item>%s Members</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item>%d new notification</item>
+        <item>%d new notifications</item>
+    </plurals>
+    <plurals name="n_days_days">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="new_messages_count">
+        <item>1 new message</item>
+        <item>%s new messages</item>
+    </plurals>
+    <plurals name="new_messages_with_date_count">
+        <item>1 new message</item>
+        <item>%s new messages</item>
+    </plurals>
+    <plurals name="notice_premium_grandfathered_ending_numDays">
+        <item>one day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="notice_premium_tier_2_trial_ending_days_days">
+        <item>%s day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="notice_premium_tier_2_trial_ending_hours_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="notice_premium_tier_2_trial_ending_minutes_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="num_active_threads_count">
+        <item>1 active thread</item>
+        <item>%s active threads</item>
+    </plurals>
+    <plurals name="num_channels_num">
+        <item>%s channel</item>
+        <item>%s channels</item>
+    </plurals>
+    <plurals name="num_members_subscribers">
+        <item>**0** members</item>
+        <item>**1** member</item>
+        <item>**%s** members</item>
+    </plurals>
+    <plurals name="num_subscribers_subscribers">
+        <item>**0** subscribers</item>
+        <item>**1** subscriber</item>
+        <item>**%s** subscribers</item>
+    </plurals>
+    <plurals name="num_users_num">
+        <item>1 user</item>
+        <item>%s users</item>
+    </plurals>
+    <plurals name="only_you_can_see_and_delete_these_count">
+        <item>this</item>
+        <item>these</item>
+    </plurals>
+    <plurals name="only_you_can_see_and_delete_these_countMessages">
+        <item>message</item>
+        <item>messages</item>
+    </plurals>
+    <plurals name="partial_outage_a11y_count">
+        <item>1 server is unavailable due to a temporary outage.</item>
+        <item>%s servers are unavailable due to a temporary outage.</item>
+    </plurals>
+    <plurals name="partial_outage_count">
+        <item>**1** other server is unavailable due to a temporary outage.</item>
+        <item>**%s** other servers are unavailable due to a temporary outage.</item>
+    </plurals>
+    <plurals name="premium_chat_perks_description_premium_guild_included_numFreeGuildSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_features_upsell_banner_subscribe_numFreeGuildSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_grace_period_cooldown_numPremiumSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_grace_period_cooldown_soon_numPremiumSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_num_month_guild_subscriptions_num">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_num_year_guild_subscriptions_num">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_perks_modal_header_subscription_count_subscriptions">
+        <item>No Boosts</item>
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_perks_modal_header_user_subscription_count_numSubscriptions">
+        <item>%s time</item>
+        <item>%s times!</item>
+    </plurals>
+    <plurals name="premium_guild_perks_modal_protip_mobile_numFreeGuildSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_perks_modal_protip_numFreeGuildSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_settings_members_subscribed_needed_number">
+        <item>%s more Boost</item>
+        <item>%s more Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_settings_x_of_y_subscriptions_numRequired">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_cancel_warning_canceledCount">
+        <item>This Boost is</item>
+        <item>%s Boosts are</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_confirmation_label_slotCount">
+        <item>Boost</item>
+        <item>Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_confirmation_slotCount">
+        <item>Boost</item>
+        <item>Boost %s times</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_cooldown_warning_days">
+        <item>%s day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_cooldown_warning_slotCount">
+        <item>this Boost</item>
+        <item>these Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_transfer_blurb_guildCount">
+        <item>The current server</item>
+        <item>The current servers</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_transfer_blurb_slotCount">
+        <item>this Server Boost</item>
+        <item>these Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_transfer_from_guild_guildCount">
+        <item>server</item>
+        <item>servers</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_confirm_transfer_to_guild_slotCount">
+        <item>boost</item>
+        <item>boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_label_slotCount">
+        <item>boost</item>
+        <item>boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscribe_transfer_confirm_confirmation_slotCount">
+        <item>Boost</item>
+        <item>Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_available_numSubscriptions">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_cancel_invoice_subscription_cancelled_subscriptionCount">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_duration_months">
+        <item>%s Month</item>
+        <item>%s Months</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_error_rate_limit_days_days">
+        <item>%s day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_error_rate_limit_days_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_error_rate_limit_hours_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_error_rate_limit_hours_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_error_rate_limit_minutes_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_guild_subsription_subtitle_numSubscriptions">
+        <item>%s time</item>
+        <item>%s times</item>
+    </plurals>
+    <plurals name="premium_guild_subscription_subscriber_count_tooltip_subscriberCount">
+        <item>%s Boost</item>
+        <item>%s Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_account_hold_no_price_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_account_hold_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_android_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_no_price_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_android_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_no_price_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_pending_cancelation_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_subscriptions_renewal_info_quantity">
+        <item>Server Boost</item>
+        <item>Server Boosts</item>
+    </plurals>
+    <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_days">
+        <item>%s day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_days_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_hours_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="premium_guild_unsubscribe_confirm_cooldown_warning_minutes_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="premium_marketing_feature_premium_guild_description_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="premium_plan_month_tier_2_trial_months">
+        <item>month</item>
+    </plurals>
+    <plurals name="premium_plan_year_tier_2_trial_months">
+        <item>month</item>
+    </plurals>
+    <plurals name="premium_subscription_credit_count_months_count">
+        <item>%s Month</item>
+        <item>%s Months</item>
+    </plurals>
+    <plurals name="premium_subscription_renewal_footer_trial_days">
+        <item>1 day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="premium_trial_cta_description_expiring_days_days">
+        <item>%s day</item>
+        <item>%s days</item>
+    </plurals>
+    <plurals name="premium_trial_cta_description_expiring_hours_hours">
+        <item>%s hour</item>
+        <item>%s hours</item>
+    </plurals>
+    <plurals name="premium_trial_cta_description_expiring_minutes_minutes">
+        <item>%s minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="premium_upsell_feature_free_guild_subscription_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="private_channel_access_info_members_count">
+        <item>%s Member</item>
+        <item>%s Members</item>
+    </plurals>
+    <plurals name="private_channel_access_info_roles_count">
+        <item>%s Role</item>
+        <item>%s Roles</item>
+    </plurals>
+    <plurals name="private_channel_members_added_toast_msg_count">
+        <item>%s member</item>
+        <item>%s members</item>
+    </plurals>
+    <plurals name="private_channel_roles_added_toast_msg_count">
+        <item>%s role</item>
+        <item>%s roles</item>
+    </plurals>
+    <plurals name="publish_followed_news_fail_body_retryAfter">
+        <item>1 minute</item>
+        <item>%s minutes</item>
+    </plurals>
+    <plurals name="reaction_tooltip_1_n_n">
+        <item>1 other</item>
+        <item>%s others</item>
+    </plurals>
+    <plurals name="reaction_tooltip_2_n_n">
+        <item>1 other</item>
+        <item>%s others</item>
+    </plurals>
+    <plurals name="reaction_tooltip_3_n_n">
+        <item>1 other</item>
+        <item>%s others</item>
+    </plurals>
+    <plurals name="reaction_tooltip_n_n">
+        <item>1 person</item>
+        <item>%s people</item>
+    </plurals>
+    <plurals name="role_member_count_count">
+        <item>%s Member</item>
+        <item>%s Members</item>
+    </plurals>
+    <plurals name="roles_list_numRoles">
+        <item>No Roles</item>
+        <item>Role</item>
+        <item>Roles</item>
+    </plurals>
+    <plurals name="search_hide_blocked_messages_count">
+        <item>%s message</item>
+        <item>%s messages</item>
+    </plurals>
+    <plurals name="search_num_results_blocked_not_shown_count">
+        <item>%s result</item>
+        <item>%s results</item>
+    </plurals>
+    <plurals name="search_still_indexing_hint_count">
+        <item>No results</item>
+        <item>%s result</item>
+        <item>%s results</item>
+    </plurals>
+    <plurals name="spotify_listen_along_title_host_count">
+        <item>Listener</item>
+        <item>Listeners</item>
+    </plurals>
+    <plurals name="sticker_pack_sticker_count_numStickers">
+        <item>%s stickers</item>
+        <item>%s sticker</item>
+        <item>%s stickers</item>
+    </plurals>
+    <plurals name="sticker_premium_tier_2_upsell_alert_perks_guild_subscriptions_numFreeGuildSubscriptions">
+        <item>%s Server Boost</item>
+        <item>%s Server Boosts</item>
+    </plurals>
+    <plurals name="thread_message_count_count">
+        <item>1 Message ›</item>
+        <item>%s Messages ›</item>
+    </plurals>
+    <plurals name="total_results_count">
+        <item>No Results</item>
+        <item>%s Result</item>
+        <item>%s Results</item>
+    </plurals>
+    <plurals name="uploading_files_count">
+        <item>Uploading %s Files</item>
+    </plurals>
+    <plurals name="uploading_files_failed_count">
+        <item>%s Files Uploading Failed</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_end_hours">
+        <item>%s:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_end_minutes">
+        <item>%s:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_end_seconds">
+        <item>%s</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_start_hours">
+        <item>%s:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_start_minutes">
+        <item>%s:</item>
+    </plurals>
+    <plurals name="user_activity_timestamp_start_seconds">
+        <item>%s</item>
+    </plurals>
+    <plurals name="user_activity_user_playing_for_days_time">
+        <item>day</item>
+        <item>days</item>
+    </plurals>
+    <plurals name="user_activity_user_playing_for_hours_time">
+        <item>hour</item>
+        <item>hours</item>
+    </plurals>
+    <plurals name="user_activity_user_playing_for_minutes_time">
+        <item>minute</item>
+        <item>minutes</item>
+    </plurals>
+    <plurals name="user_profile_mutual_friends_count">
+        <item>0 Mutual Friends</item>
+        <item>1 Mutual Friend</item>
+        <item>%s Mutual Friends</item>
+    </plurals>
+    <plurals name="user_profile_mutual_guilds_count">
+        <item>0 Mutual Servers</item>
+        <item>1 Mutual Server</item>
+        <item>%s Mutual Servers</item>
+    </plurals>
+    <plurals name="vanity_url_header_uses_uses">
+        <item>0 uses</item>
+        <item>1 use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="vanity_url_uses_uses">
+        <item>0 uses</item>
+        <item>1 use</item>
+        <item>%s uses</item>
+    </plurals>
+    <plurals name="viewing_as_roles_numRoles">
+        <item>@everyone</item>
+        <item>1 role</item>
+        <item>%s roles</item>
+    </plurals>
+    <plurals name="voice_call_member_list_title_count">
+        <item>%s Person</item>
+        <item>%s People</item>
+    </plurals>
+</resources>

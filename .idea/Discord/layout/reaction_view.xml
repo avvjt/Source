@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="?attr/theme_chat_reaction_background" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="26dp" android:minWidth="40dp">
+    <com.discord.utilities.view.text.SimpleDraweeSpanTextView android:id="@+id/emoji_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2dp"/>
+    <TextSwitcher android:id="@+id/counter_text_switcher" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="2dp">
+        <TextView android:textColor="?attr/theme_chat_reaction_text_color" android:gravity="center_vertical" android:id="@+id/counter_text_1" android:layout_height="match_parent" style="@h/UiKit_TextView_Semibold"/>
+        <TextView android:textColor="?attr/theme_chat_reaction_text_color" android:gravity="center_vertical" android:id="@+id/counter_text_2" android:layout_height="match_parent" style="@h/UiKit_TextView_Semibold"/>
+    </TextSwitcher>
+</LinearLayout>

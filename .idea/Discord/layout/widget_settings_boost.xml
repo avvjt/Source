@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/settings_boost_flipper" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_marginBottom="8dp" android:src="@d/img_poop_dark" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/settings_boost_retry" android:layout_width="wrap_content" android:text="@g/retry" style="@h/UiKit_Material_Button_Secondary"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+            <LinearLayout android:paddingTop="24dp" android:paddingBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <LinearLayout android:id="@+id/settings_boost_subtext_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@g/premium_guild_subscription_subtitle_mobile_1" style="@h/UiKit_TextView"/>
+                    <com.discord.utilities.view.text.LinkifiedTextView android:id="@+id/settings_boost_subtext" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" style="@h/UiKit_TextView"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/settings_boost_recycler" android:layout_marginTop="16dp" style="@h/UiKit_ViewGroup_RecyclerView"/>
+                </LinearLayout>
+                <LinearLayout android:layout_marginTop="24dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <include layout="@layout/view_settings_premium_guild_marketing_header"/>
+                    <include layout="@layout/view_premium_guild_features_user_old"/>
+                    <include layout="@layout/view_premium_guild_features_guild_old"/>
+                    <View android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp" style="@h/UiKit_Divider"/>
+                    <com.discord.views.premiumguild.PremiumGuildSubscriptionUpsellView android:id="@+id/settings_boost_upsell_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/settings_boost_sample_guilds" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_RecyclerView"/>
+                    <include android:id="@+id/no_guilds" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" layout="@layout/view_settings_premium_guild_no_guilds"/>
+                </LinearLayout>
+                <View android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" style="@h/UiKit_Divider"/>
+                <com.discord.views.premiumguild.PremiumSubscriptionMarketingView android:id="@+id/settings_boost_marketing_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

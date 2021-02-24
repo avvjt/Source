@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="gone" android:baselineAligned="false" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <ScrollView android:layout_height="0dp" android:layout_weight="1" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout style="@h/UiKit_Copy_Container">
+            <ImageView android:id="@+id/home_panel_center_nsfw_art" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:src="?attr/img_chat_nsfw" android:scaleType="fitCenter" android:contentDescription="@g/nsfw_title" style="@h/UiKit_ImageView"/>
+            <LinearLayout style="@h/UiKit_Copy">
+                <TextView android:textSize="@dimen/uikit_textsize_xxlarge" android:gravity="center" android:layout_gravity="center" android:id="@+id/home_panel_center_nsfw_title" android:text="@g/nsfw_title" android:fontFamily="@font/whitney_bold" style="@h/UiKit_TextView_H1"/>
+                <com.discord.utilities.view.text.LinkifiedTextView android:gravity="center" android:id="@+id/home_panel_center_nsfw_description" android:layout_marginTop="8dp" android:text="@g/nsfw_description" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/home_panel_center_nsfw_anchor_wrap" style="@h/UiKit_Copy_Anchor">
+        <FrameLayout style="@h/UiKit_Copy_Anchor_Item_Rotatable">
+            <com.google.android.material.button.MaterialButton android:id="@+id/home_panel_center_nsfw_confirm" android:text="@g/nsfw_accept" style="@h/UiKit_Material_Button_Red"/>
+        </FrameLayout>
+        <FrameLayout style="@h/UiKit_Copy_Anchor_Item_Rotatable">
+            <com.google.android.material.button.MaterialButton android:id="@+id/home_panel_center_nsfw_deny" android:text="@g/nsfw_decline" style="@h/UiKit_Material_Button_Secondary"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

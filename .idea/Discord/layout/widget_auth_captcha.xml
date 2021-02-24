@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <include layout="@layout/widget_auth_header"/>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:gravity="center_horizontal" android:padding="16dp" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout_Rotatable">
+            <com.airbnb.lottie.LottieAnimationView style="@h/UiKit_Anim_Verify_By_Phone"/>
+            <LinearLayout android:gravity="center_horizontal" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <com.discord.views.ScreenTitleView android:id="@+id/screen_title" android:layout_width="match_parent" android:layout_height="wrap_content" app:stv_subtitle="@g/verify_by_recaptcha_description" app:stv_title="@g/verify_by_recaptcha"/>
+                <TextView android:textColor="?attr/colorTextLink" android:id="@+id/auth_captcha_help" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:text="@g/captcha_issues" style="@h/UiKit_TextView"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/auth_captcha_verify" android:text="@g/verify" style="@h/UiKit_AuthButton_Material"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

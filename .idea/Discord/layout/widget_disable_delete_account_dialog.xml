@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <LinearLayout android:id="@+id/notice_header_container" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:id="@+id/disable_delete_header" android:padding="16dp" android:text="@g/disable_account" style="@h/UiKit_TextView_H1_Bold"/>
+        <View style="@h/UiKit_Divider"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+        <LinearLayout android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textSize="14dp" android:id="@+id/disable_delete_body" style="@h/UiKit_TextView"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/disable_delete_password_wrap" android:hint="@g/form_label_password" style="@h/UiKit_TextInputLayout_Primary_Password">
+                <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Password"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/disable_delete_code_wrap" android:hint="@g/two_fa_auth_code" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:textColor="?attr/primary_100" android:id="@+id/disable_delete_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent"/>
+        <com.discord.views.LoadingButton android:layout_gravity="center_vertical" android:id="@+id/disable_delete_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" app:lb_background_color="@c/status_red_500" app:lb_progress_color="@c/white" app:lb_text="@g/disable" app:lb_text_color="@d/button_text_color_primary_100"/>
+    </LinearLayout>
+</LinearLayout>

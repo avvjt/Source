@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_menu_mark_unread" android:id="@+id/menu_mark_unread" android:title="@string/menu_mark_unread"/>
+    <item android:icon="@drawable/ic_action_info" android:id="@+id/menu_details" android:title="@string/menu_conversation_details"/>
+    <item android:icon="@drawable/ic_menu_edit" android:id="@+id/menu_set_title" android:title="@string/menu_edit_conversation_title"/>
+    <group android:id="@+id/conversation_group">
+        <item android:icon="@drawable/ic_menu_mute" android:id="@+id/menu_conversation_mute" android:title="@string/menu_mute"/>
+        <item android:icon="@drawable/ic_people_white_24dp" android:id="@+id/menu_conversation_users" android:title="@string/menu_conversation_users"/>
+    </group>
+    <item android:icon="@drawable/ic_menu_todoist_task" android:id="@+id/menu_todoist_task" android:title="@string/menu_todoist_task"/>
+    <item android:icon="@drawable/ic_get_email" android:id="@+id/menu_get_email" android:title="@string/menu_get_conversation_email"/>
+    <item android:icon="@drawable/ic_menu_get_link" android:id="@+id/menu_get_link" android:title="@string/menu_get_conversation_link"/>
+    <group android:id="@+id/archive_group">
+        <item android:icon="@drawable/ic_action_archive" android:id="@+id/menu_archive" android:title="@string/menu_conversation_archive"/>
+    </group>
+</menu>

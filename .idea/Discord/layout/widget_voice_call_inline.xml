@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/voice_call_inline_container" android:background="?attr/colorBackgroundSecondary" android:visibility="gone" android:fitsSystemWindows="true" style="@h/UiKit_ViewGroup_LinearLayout">
+    <com.google.android.material.button.MaterialButton android:id="@+id/voice_connected_ptt" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="4dp" android:layout_marginRight="10dp" android:layout_marginBottom="4dp" android:text="@g/input_mode_ptt" style="@h/UiKit_Material_Button"/>
+</LinearLayout>

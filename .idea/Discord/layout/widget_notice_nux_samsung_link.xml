@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/primary_630_bg" android:layout_width="wrap_content" android:layout_margin="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Rotatable">
+    <ImageView android:layout_width="match_parent" android:src="@d/img_game_presence_nux" android:scaleType="centerCrop" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:textSize="@dimen/uikit_textsize_xxlarge" android:gravity="center" android:paddingBottom="0dp" android:layout_marginTop="24dp" android:text="@g/nux_samsung_game_presence_link_title" android:lineSpacingMultiplier="1" android:textAllCaps="false" style="@h/UiKit_Dialog_Title"/>
+        <TextView android:paddingTop="8dp" android:layout_margin="8dp" android:text="@g/nux_samsung_game_presence_link_description" android:textAlignment="center" style="@h/UiKit_Dialog_Body"/>
+        <LinearLayout android:layout_margin="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.google.android.material.button.MaterialButton android:id="@+id/enable_button" android:text="@g/nux_samsung_game_presence_link_enable" style="@h/UiKit_Material_Button"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/cancel_button" android:text="@g/no_thanks" style="@h/UiKit_Material_Button_Transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

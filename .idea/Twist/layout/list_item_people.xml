@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.twistapp.ui.widgets.avatar.AvatarView android:layout_gravity="center_vertical" android:id="@+id/avatar" android:layout_width="@dimen/standard_list_item_icon_size" android:layout_height="@dimen/standard_list_item_icon_size" android:layout_marginTop="@dimen/standard_spacing" android:layout_marginBottom="@dimen/standard_spacing" android:contentDescription="@string/content_description_avatar" android:layout_marginStart="@dimen/standard_spacing"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing" android:layout_marginBottom="@dimen/standard_spacing" android:layout_marginStart="@dimen/standard_big_horizontal_margin" android:layout_marginEnd="56dp">
+        <TextView android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Twist.List.Title.Increased"/>
+        <TextView android:id="@+id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Twist.List.Description.SingleLine.Think"/>
+        <TextView android:id="@+id/pending" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_label_pending" style="@style/Widget.Twist.List.Chip.Pending"/>
+        <TextView android:id="@+id/time_off" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Twist.List.Chip.TimeOff"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/send_message" android:background="?attr/selectableItemBackground" android:padding="@dimen/standard_spacing" android:layout_width="56dp" android:layout_height="56dp" app:srcCompat="@drawable/ic_message"/>
+</FrameLayout>

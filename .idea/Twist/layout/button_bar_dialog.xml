@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_button_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@+id/btn_negative" android:layout_width="wrap_content" android:layout_height="@dimen/dialog_button_fake_36dp_height" android:text="@string/dialog_button_cancel" android:layout_centerVertical="true" android:layout_toStartOf="@+id/btn_positive" style="@style/Widget.Twist.CustomDialog.Button.Negative"/>
+    <Button android:id="@+id/btn_positive" android:layout_width="wrap_content" android:layout_height="@dimen/dialog_button_fake_36dp_height" android:text="@android:string/ok" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dialog_button_marging_end" android:layout_alignParentEnd="true" style="@style/Widget.Twist.CustomDialog.Button.Positive"/>
+</RelativeLayout>

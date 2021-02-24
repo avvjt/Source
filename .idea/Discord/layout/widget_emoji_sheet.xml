@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <LinearLayout android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/emoji_iv" android:layout_width="48dp" android:layout_height="48dp" android:adjustViewBounds="true" android:layout_marginEnd="16dp" app:actualImageScaleType="2" style="@h/UiKit_ImageView"/>
+        <LinearLayout android:layout_marginBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/name_tv" style="@h/UiKit_TextView_Bold"/>
+            <TextView android:textColor="?attr/colorHeaderSecondary" android:id="@+id/emoji_info_tv" android:layout_marginTop="4dp" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/button_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/join_btn" android:text="@g/nuf_join_server_button" style="@h/UiKit_Material_Button"/>
+        <com.google.android.material.button.MaterialButton android:gravity="center" android:id="@+id/premium_btn" android:text="@g/emoji_popout_premium_cta" app:icon="@d/ic_nitro_badge_white" app:iconGravity="2" app:iconSize="@dimen/uikit_textsize_large" app:iconTint="@c/white" style="@h/UiKit_Material_Button_Green"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/guild_container" android:visibility="gone" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+        <View android:id="@+id/divider" android:background="?attr/colorBackgroundAccent" style="@h/UiKit_Divider"/>
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/bottom_header_tv" android:layout_marginTop="16dp" android:text="@g/emoji_popout_unjoined_guild_emoji_description" android:textAllCaps="true" style="@h/UiKit_TextView_Bold"/>
+        <LinearLayout android:layout_marginTop="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/guild_iv" android:layout_width="32dp" android:layout_height="32dp" android:adjustViewBounds="true" android:layout_marginEnd="16dp" app:actualImageScaleType="2" style="@h/UiKit_ImageView"/>
+            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/guild_name_tv" android:drawablePadding="8dp" style="@h/UiKit_TextView_Bold"/>
+                <TextView android:textColor="?attr/colorHeaderSecondary" android:id="@+id/guild_info_tv" android:layout_marginTop="4dp" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

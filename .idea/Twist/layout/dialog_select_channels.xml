@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_standard_margin" android:layout_marginStart="@dimen/dialog_standard_margin" android:layout_marginEnd="@dimen/dialog_standard_margin" style="@style/Widget.Twist.CustomDialog.Title"/>
+    <View android:background="?attr/dividerDefault" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignBottom="@+id/tv_title"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingBottom="@dimen/dialog_button_bar_height" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_title"/>
+    <View android:background="?attr/dividerDefault" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignTop="@+id/rl_dialog_button_bar"/>
+    <include android:id="@+id/rl_dialog_button_bar" android:layout_width="match_parent" android:layout_height="@dimen/dialog_button_bar_height" android:layout_alignBottom="@+id/recycler" layout="@layout/button_bar_dialog"/>
+</RelativeLayout>

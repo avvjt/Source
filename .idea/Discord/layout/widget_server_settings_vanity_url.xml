@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <RelativeLayout android:paddingLeft="16dp" android:paddingTop="32dp" android:paddingRight="16dp" android:paddingBottom="16dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+                <TextView android:id="@+id/server_settings_vanity_url_header" android:text="@g/vanity_url" android:textAllCaps="true" style="@h/UiKit_TextView_Bold"/>
+                <TextView android:textColor="@c/status_red_500" android:id="@+id/server_settings_vanity_url_remove" android:visibility="gone" android:text="@g/remove" android:layout_alignParentEnd="true" style="@h/UiKit_TextView_Bold"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/server_settings_vanity_url_input_container" android:padding="16dp" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" style="@h/UiKit_ViewGroup_RelativeLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_large" android:id="@+id/server_settings_vanity_url_prefix" android:text="@g/discord_gg" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@h/UiKit_TextView"/>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/server_settings_vanity_input" android:hint="@g/vanity_url_hint_mobile" android:layout_toStartOf="@+id/server_settings_vanity_url_loading_indicator" android:layout_toEndOf="@+id/server_settings_vanity_url_prefix" style="@h/UiKit_TextInputLayout_Primary">
+                    <com.google.android.material.textfield.TextInputEditText android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-" android:inputType="textNoSuggestions" android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <ProgressBar android:id="@+id/server_settings_vanity_url_loading_indicator" android:layout_width="32dp" android:layout_height="32dp" android:indeterminate="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@c/status_red_500" android:id="@+id/server_settings_vanity_url_error_text" android:visibility="gone" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:text="@g/change_vanity_url_error" style="@h/UiKit_TextView"/>
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:text="@g/vanity_url_help" style="@h/UiKit_TextView"/>
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:id="@+id/server_settings_vanity_url_current_url" android:visibility="gone" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:text="@g/vanity_url_help_extended" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/server_settings_vanity_url_save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton_Save"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

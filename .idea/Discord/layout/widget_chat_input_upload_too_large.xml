@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@c/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@d/drawable_overlay_red_upload" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="48dp" android:layout_marginRight="32dp">
+        <TextView android:textSize="18sp" android:textColor="@c/white" android:gravity="center" android:layout_width="match_parent" android:layout_marginTop="100dp" android:text="@g/upload_area_too_large_title" style="@h/UiKit_TextView_Bold"/>
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@c/white_alpha_40" android:gravity="center" android:id="@+id/chat_input_upload_too_large_help" android:layout_width="match_parent" android:layout_marginTop="3dp" android:layout_marginBottom="48dp" style="@h/UiKit_TextView_Bold"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="300dp" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="100dp" android:layout_height="130dp" android:layout_marginTop="10dp" android:src="@d/ic_file_large_document" android:rotation="-28" android:layout_marginEnd="-56dp" android:layout_toStartOf="@+id/chat_input_upload_too_large_center_file"/>
+        <ImageView android:layout_width="100dp" android:layout_height="130dp" android:layout_marginTop="10dp" android:src="@d/ic_file_large_video" android:rotation="28" android:layout_marginStart="-56dp" android:layout_toEndOf="@+id/chat_input_upload_too_large_center_file"/>
+        <ImageView android:id="@+id/chat_input_upload_too_large_center_file" android:layout_width="100dp" android:layout_height="130dp" android:src="@d/ic_file_large_code" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

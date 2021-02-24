@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="@c/white">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@d/drawable_button_grey_disabled"/>
+            <item android:drawable="@d/drawable_button_green_neutral"/>
+        </selector>
+    </item>
+</ripple>

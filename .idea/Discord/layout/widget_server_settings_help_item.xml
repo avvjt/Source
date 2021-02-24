@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.discord.utilities.view.text.LinkifiedTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:id="@+id/server_settings_help_item" android:padding="16dp" android:layout_width="match_parent" android:text="@g/help_roles_description" style="@h/UiKit_TextView_Semibold"/>

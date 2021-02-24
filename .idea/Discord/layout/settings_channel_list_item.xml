@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:paddingTop="12dp" android:paddingBottom="12dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+    <View android:id="@+id/settings_channel_list_item_selected_overlay" android:background="@c/grey_1_alpha_60" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/settings_channel_list_item_hash" android:layout_width="16dp" android:layout_height="16dp" android:src="@d/ic_channel_text" android:layout_centerVertical="true" android:contentDescription="@g/text_channel" android:layout_marginStart="28dp" app:tint="?attr/colorTextNormal" style="@h/UiKit_ImageView"/>
+    <TextView android:id="@+id/settings_channel_list_item_name" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_toStartOf="@+id/settings_channel_list_item_drag" android:layout_toEndOf="@+id/settings_channel_list_item_hash" style="@h/UiKit_TextView"/>
+    <ImageView android:id="@+id/settings_channel_list_item_drag" android:src="?attr/ic_drag_handle" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@h/UiKit_ImageView"/>
+</RelativeLayout>

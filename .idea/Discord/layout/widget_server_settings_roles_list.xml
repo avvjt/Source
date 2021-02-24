@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/server_settings_roles_recycler" android:paddingBottom="@dimen/padding_bottom_fab_screen" android:clipToPadding="false" style="@h/UiKit_ViewGroup_RecyclerView_AppBarScrollingViewBehavior"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/roles_list_add_role_fab" android:src="@d/ic_add_white_24dp" android:contentDescription="@g/add" style="@h/Settings_FloatingActionButton"/>
+    <com.discord.utilities.dimmer.DimmerView style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

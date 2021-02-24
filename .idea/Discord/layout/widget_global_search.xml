@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorPrimary" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout android:background="?attr/primary_630" style="@h/AppTheme_AppBarLayout">
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/global_search_bar" style="@h/UiKit_TextInputLayout_Search_ActionBar_Filter">
+            <com.google.android.material.textfield.TextInputEditText android:hint="@g/quickswitcher_placeholder" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search">
+                <requestFocus/>
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/global_search_guild_list" style="@h/UiKit_GuildsList_Horiz"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/global_search_view_flipper" android:background="?attr/colorBackgroundPrimary" android:inAnimation="@anim/anim_fade_in" android:outAnimation="@anim/anim_fade_out" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/global_search_recycler" android:paddingTop="8dp" android:paddingBottom="64dp" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        <androidx.cardview.widget.CardView android:layout_margin="16dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardElevation="0dp" style="@h/UiKit_ViewGroup">
+            <LinearLayout android:gravity="center_horizontal" android:layout_margin="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <ImageView android:src="@d/img_quick_switcher_empty" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+                <TextView android:layout_margin="16dp" android:text="@g/quickswitcher_tutorial_message_search" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+            <androidx.cardview.widget.CardView android:layout_margin="16dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardElevation="0dp" style="@h/UiKit_ViewGroup">
+                <LinearLayout android:gravity="center_horizontal" android:layout_margin="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <ImageView android:src="?attr/img_empty_search" android:contentDescription="@g/search_no_results" style="@h/UiKit_ImageView_HideInLandscape"/>
+                    <TextView app:drawableTopCompat="@null" style="@h/UiKit_TextView_NoResults"/>
+                    <View android:layout_marginTop="4dp" android:layout_marginBottom="4dp" style="@h/UiKit_Divider"/>
+                    <TextView android:layout_margin="8dp" android:text="@g/other_options" style="@h/UiKit_TextView_H2"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/global_search_add_a_friend_btn" android:text="@g/add_friend" style="@h/UiKit_Material_Button"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/global_search_join_guild_btn" android:text="@g/join_server_button_cta" style="@h/UiKit_Material_Button"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.core.widget.NestedScrollView>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

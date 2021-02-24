@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@c/trash_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@d/trash_wrap_target_zone" android:paddingLeft="@b/bubble_size_default" android:paddingRight="@b/bubble_size_default" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@b/trash_wrap_min_dimen">
+        <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@d/trash_wrap_target_container" android:background="@c/ic_trash_outline" android:layout_width="@b/bubble_size_default" android:layout_height="@b/bubble_size_default" android:layout_marginBottom="48dp" android:cropToPadding="false">
+            <ImageView android:layout_gravity="center" android:id="@d/trash_wrap_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@c/ic_close_24dp" android:importantForAccessibility="no"/>
+        </FrameLayout>
+    </FrameLayout>
+</merge>

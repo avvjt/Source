@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/expander_top_background">
+        <shape android:shape="rectangle">
+            <size android:height="15dp" android:width="1dp"/>
+            <solid android:color="@color/theme_doist_fill_base"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/theme_divider_default" android:top="15dp"/>
+    <item android:top="16dp">
+        <shape android:shape="rectangle">
+            <size android:height="8dp" android:width="1dp"/>
+            <solid android:color="@color/theme_doist_fill_crater"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/theme_divider_default" android:top="24dp"/>
+    <item android:id="@+id/expander_bottom_background" android:top="25dp">
+        <shape android:shape="rectangle">
+            <size android:height="15dp" android:width="1dp"/>
+            <solid android:color="@color/theme_doist_fill_base"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout android:background="?attr/primary_630" style="@h/AppTheme_AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout style="@h/AppTheme_CollapsingToolbarLayout">
+            <LinearLayout android:gravity="center" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="32dp" android:layout_marginTop="?attr/actionBarSize" style="@h/UiKit_ViewGroup_LinearLayout">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/avatar_size_hero" android:layout_height="@dimen/avatar_size_hero" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+                    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/server_settings_server_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:placeholderImage="@c/brand_500" app:roundAsCircle="true" app:roundWithOverlayColor="?attr/primary_630" style="@h/Avatar_Hero"/>
+                    <TextView android:textSize="42sp" android:textColor="@c/primary_100" android:ellipsize="none" android:gravity="center_horizontal" android:id="@+id/server_settings_server_icon_text" android:padding="16dp" android:layout_width="match_parent" android:layout_centerInParent="true" style="@h/UiKit_TextView_Large_SingleLine"/>
+                </RelativeLayout>
+                <TextView android:id="@+id/server_settings_server_name" android:singleLine="true" style="@h/UiKit_TextView_H1"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar android:background="?attr/primary_630" style="@h/AppTheme_Toolbar"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/AppTheme_AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <LinearLayout android:id="@+id/server_settings_section_general_settings" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:text="@g/settings" style="@h/UiKit_Settings_Item_Header"/>
+                <TextView android:id="@+id/server_settings_option_overview" android:text="@g/overview" app:drawableStartCompat="@d/ic_info_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_option_moderation" android:text="@g/moderation" app:drawableStartCompat="@d/ic_privacy_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_option_audit_log" android:text="@g/guild_settings_label_audit_log" app:drawableStartCompat="@d/ic_audit_logs_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_option_channels" android:text="@g/channels" app:drawableStartCompat="@d/ic_channels_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_option_integrations" android:text="@g/integrations" app:drawableStartCompat="@d/ic_controller_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_option_security" android:text="@g/security" app:drawableStartCompat="@d/ic_security_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_option_vanity_url" android:text="@g/vanity_url" app:drawableStartCompat="@d/ic_link_white_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_emojis_option" android:text="@g/emoji" app:drawableStartCompat="@d/ic_emoji_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/server_settings_section_community" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View android:id="@+id/server_settings_section_community_divider" style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/guild_settings_community" style="@h/UiKit_Settings_Item_Header"/>
+                <TextView android:id="@+id/server_settings_community_overview_option" android:text="@g/overview" app:drawableStartCompat="@d/ic_community_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_enable_community_option" android:visibility="gone" android:text="@g/guild_settings_community_enable_community" app:drawableStartCompat="@d/ic_community_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/server_settings_section_user_management" style="@h/UiKit_ViewGroup_LinearLayout">
+                <View android:id="@+id/server_settings_section_user_management_divider" style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/user_management" style="@h/UiKit_Settings_Item_Header"/>
+                <TextView android:id="@+id/server_settings_members_option" android:text="@g/members" app:drawableStartCompat="@d/ic_members_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_roles_option" android:text="@g/roles" app:drawableStartCompat="@d/ic_flag_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_instant_invites_option" android:text="@g/instant_invites" app:drawableStartCompat="@d/ic_diag_link_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+                <TextView android:id="@+id/server_settings_bans_option" android:text="@g/bans" app:drawableStartCompat="@d/ic_hammer_24dp" app:drawableTint="?attr/colorInteractiveNormal" style="@h/UiKit_Settings_Item_Icon"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" style="@h/UiKit_ViewGroup">
+    <TextView android:id="@+id/settings_language_select_item_name_localized" style="@h/UiKit_Settings_Item_Icon"/>
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/settings_language_select_item_name" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@g/locale" android:singleLine="true" style="@h/UiKit_TextView"/>
+</FrameLayout>

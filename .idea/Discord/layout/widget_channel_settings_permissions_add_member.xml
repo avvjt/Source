@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/channel_settings_permissions_add_member_name_search" style="@h/UiKit_TextInputLayout_Search">
+            <com.google.android.material.textfield.TextInputEditText android:hint="@g/members_search_placeholder" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/channel_settings_permissions_add_member_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/channel_settings_permissions_add_member_recycler" android:scrollbars="vertical" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        <TextView android:id="@+id/no_results_text" android:text="@g/guild_members_search_no_result" style="@h/UiKit_TextView_NoResults"/>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

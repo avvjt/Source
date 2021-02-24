@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:id="@+id/view_dialog_confirmation_header" android:padding="16dp" android:text="@g/accessibility_detection_modal_header" style="@h/UiKit_TextView"/>
+    <View style="@h/UiKit_Divider"/>
+    <TextView android:textAppearance="@h/UiKit_TextAppearance" android:id="@+id/accessibility_detection_body_text" android:padding="16dp" android:text="@g/accessibility_detection_modal_body" style="@h/UiKit_TextView"/>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <View style="@h/UiKit_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:id="@+id/accessibility_detection_disable" android:text="@g/accessibility_detection_modal_decline_label" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/accessibility_detection_enable" android:text="@g/accessibility_detection_modal_accept_label" style="@h/UiKit_Material_Button_Fit"/>
+    </LinearLayout>
+</LinearLayout>

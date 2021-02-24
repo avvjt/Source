@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:id="@+id/user_sheet_volume_label" android:text="@g/user_profile_volume" style="@h/UiKit_ListItem"/>
+    <com.discord.views.calls.VolumeSliderView android:id="@+id/user_sheet_volume_slider" android:paddingLeft="16dp" android:paddingRight="16dp" app:vsv_icon_tint="?attr/colorInteractiveNormal" app:vsv_max_volume="100" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal"/>
+    <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/user_sheet_muted" android:text="@g/mute" style="@h/UiKit_ListItem_Switch"/>
+    <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/user_sheet_deafen" android:text="@g/deafen" style="@h/UiKit_ListItem_Switch"/>
+</LinearLayout>

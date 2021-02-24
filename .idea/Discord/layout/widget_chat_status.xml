@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:id="@+id/chat_status_unread_messages" android:background="@c/brand_500" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+    <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="@c/white" android:gravity="center_vertical" android:id="@+id/chat_status_unread_messages_text" android:layout_width="0dp" android:layout_weight="1" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView_Semibold"/>
+    <ImageView android:gravity="center_vertical" android:id="@+id/chat_status_unread_messages_mark" android:layout_height="wrap_content" android:src="@d/ic_close_white_18dp" android:scaleType="center" android:contentDescription="@g/mark_as_read" android:paddingStart="16dp" style="@h/UiKit_ImageView"/>
+</LinearLayout>

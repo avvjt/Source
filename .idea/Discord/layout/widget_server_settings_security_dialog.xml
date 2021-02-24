@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <TextView android:id="@+id/notice_header" android:padding="16dp" android:layout_width="match_parent" android:text="@g/guild_security_req_mfa_label" style="@h/UiKit_TextView_H1_Bold"/>
+    <View style="@h/UiKit_Divider"/>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/server_settings_security_server_mfa_code" android:layout_margin="16dp" android:hint="@g/two_fa_auth_code" style="@h/UiKit_TextInputLayout_Primary">
+        <com.google.android.material.textfield.TextInputEditText android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:id="@+id/server_settings_security_dialog_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/server_settings_security_dialog_confirm" android:background="@d/drawable_button_green" android:text="@g/enable" style="@h/UiKit_Material_Button_Green_Fit"/>
+    </LinearLayout>
+</LinearLayout>

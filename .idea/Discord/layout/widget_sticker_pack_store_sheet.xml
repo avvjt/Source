@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/sticker_pack_store_sheet_container" android:background="?attr/colorBackgroundSecondary" style="@h/UiKit_ViewGroup_Page">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/sticker_pack_view_all_banner" android:background="?attr/colorBackgroundPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:importantForAccessibility="no" app:actualImageScaleType="6" app:viewAspectRatio="4.4" style="@h/UiKit_ImageView"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/sticker_pack_store_sheet_recycler" android:background="?attr/colorBackgroundPrimary" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:layout_height="match_parent" android:layout_above="@+id/sticker_pack_store_sheet_buy_button_container" android:layout_below="@+id/sticker_pack_view_all_banner" style="@h/UiKit_ViewGroup_RecyclerView"/>
+    <FrameLayout android:id="@+id/sticker_pack_store_sheet_buy_button_container" android:background="?attr/colorBackgroundSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/buy" layout="@layout/sticker_picker_store_buy_button"/>
+    </FrameLayout>
+</RelativeLayout>

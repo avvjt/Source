@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:id="@+id/notification_mute_settings_mute_item" android:text="@g/form_label_mute_server" app:drawableEndCompat="?attr/ic_navigate_next" style="@h/UiKit_Settings_Item"/>
+    <TextView android:id="@+id/notification_mute_settings_mute_item_status" style="@h/UiKit_Settings_Item_Addition"/>
+    <TextView android:id="@+id/notification_mute_settings_mute_item_description" style="@h/UiKit_Settings_Item_Addition"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout_Rotatable">
+        <LinearLayout android:layout_width="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_gravity="center" android:layout_marginBottom="32dp" android:src="?attr/img_baddies" android:contentDescription="@g/new_terms_title" style="@h/UiKit_ImageView"/>
+            <TextView android:layout_gravity="center" android:text="@g/verification_title" style="@h/UiKit_TextView_H1"/>
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/verify_account_text_body" android:layout_marginTop="16dp" android:maxWidth="320dp" android:text="@g/verification_body" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+        <LinearLayout android:layout_marginLeft="20dp" android:layout_marginRight="20dp" style="@h/UiKit_Alert_Verify_Account_Method_Wrapper">
+            <RelativeLayout android:id="@+id/verify_account_by_email" style="@h/UiKit_Alert_Verify_Account_Method_Container">
+                <LinearLayout style="@h/UiKit_Alert_Verify_Account_Method">
+                    <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:layout_marginTop="16dp" android:text="@g/verify_by" android:textAllCaps="true" style="@h/UiKit_TextView_Subtext"/>
+                    <TextView android:text="@g/email" android:textAllCaps="true" style="@h/UiKit_TextView_H1"/>
+                </LinearLayout>
+                <ImageView android:src="?attr/img_verify_email" android:layout_centerHorizontal="true" android:contentDescription="@g/email" style="@h/UiKit_ImageView"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/verify_account_by_phone" style="@h/UiKit_Alert_Verify_Account_Method_Container">
+                <LinearLayout style="@h/UiKit_Alert_Verify_Account_Method">
+                    <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:layout_marginTop="16dp" android:text="@g/verify_by" android:textAllCaps="true" style="@h/UiKit_TextView_Subtext"/>
+                    <TextView android:text="@g/phone" android:textAllCaps="true" style="@h/UiKit_TextView_H1"/>
+                </LinearLayout>
+                <ImageView android:src="?attr/img_verify_phone" android:layout_centerHorizontal="true" android:contentDescription="@g/phone" style="@h/UiKit_ImageView"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.discord.utilities.view.text.LinkifiedTextView android:gravity="center" android:id="@+id/verify_account_support" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@h/UiKit_TextView_Subtext"/>
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat_Transparent">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

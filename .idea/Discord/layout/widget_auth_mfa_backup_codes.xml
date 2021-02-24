@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/AppAlertDialog">
+    <TextView android:id="@+id/server_settings_delete_server_header" android:text="@g/two_fa_backup_codes_label" style="@h/AppAlertDialogHeader"/>
+    <LinearLayout style="@h/AppAlertDialogContent">
+        <LinearLayout android:orientation="vertical" android:background="@d/drawable_bg_settings_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11sp" android:textColor="@c/grey_2" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:text="@g/two_fa_backup_code_enter" android:textAllCaps="true" style="@h/UiKit_TextView_Bold"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/widget_auth_mfa_backup_codes_edittext" android:hint="@g/two_fa_backup_code_hint" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Password"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@h/AppAlertDialogFooter">
+        <com.google.android.material.button.MaterialButton android:id="@+id/widget_auth_mfa_backup_codes_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/widget_auth_mfa_backup_codes_send" android:text="@g/send" style="@h/UiKit_Material_Button_Fit"/>
+    </LinearLayout>
+</LinearLayout>

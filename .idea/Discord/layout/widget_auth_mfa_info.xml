@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/AppAlertDialog">
+    <TextView android:id="@+id/server_settings_delete_server_header" android:text="@g/two_fa" style="@h/AppAlertDialogHeader"/>
+    <LinearLayout style="@h/AppAlertDialogContent">
+        <com.discord.utilities.view.text.LinkifiedTextView android:id="@+id/widget_auth_mfa_info_text" android:text="@g/two_fa_download_app_body" style="@h/AppAlertDialogText"/>
+    </LinearLayout>
+    <LinearLayout style="@h/AppAlertDialogFooter">
+        <com.google.android.material.button.MaterialButton android:id="@+id/widget_auth_mfa_info_okay" android:text="@g/okay" style="@h/UiKit_Material_Button_Fit"/>
+    </LinearLayout>
+</LinearLayout>

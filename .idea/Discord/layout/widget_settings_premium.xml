@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/premium_settings_view_flipper" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <ScrollView android:id="@+id/premium_settings_scrollview" android:clipToPadding="false" style="@h/UiKit_ViewGroup_ScrollView">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:background="@d/img_nitro_pattern" android:layout_width="match_parent" android:layout_height="270sp" android:importantForAccessibility="no" app:layout_constraintTop_toTopOf="0"/>
+                <ImageView android:layout_gravity="top" android:background="@d/img_nitro_classic_pattern" android:layout_width="match_parent" android:layout_height="270sp" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="0"/>
+                <LinearLayout android:layout_width="0dp" android:layout_marginTop="24dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintWidth_max="500dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <LinearLayout android:id="@+id/premium_settings_subscription_container" style="@h/UiKit_ViewGroup_LinearLayout">
+                        <androidx.cardview.widget.CardView android:id="@+id/premium_settings_status_notice_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="16dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardCornerRadius="4dp">
+                            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                                <com.google.android.flexbox.FlexboxLayout android:gravity="center_vertical" app:flexWrap="0" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                                    <ImageView android:layout_width="48dp" android:layout_height="28dp" android:layout_marginTop="8dp" android:src="@d/ic_info_24dp" android:importantForAccessibility="no" android:layout_marginStart="8dp"/>
+                                    <TextView android:id="@+id/premium_settings_status_notice_tv" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:paddingStart="4dp" android:paddingEnd="4dp" style="@h/UiKit_TextView"/>
+                                </com.google.android.flexbox.FlexboxLayout>
+                                <Button android:textSize="12sp" android:textColor="@c/white" android:id="@+id/premium_settings_status_notice_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:textAllCaps="false" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:id="@+id/premium_settings_subscriptions_header" android:text="@g/premium_settings_subscriptions_mobile_header" style="@h/UiKit_Settings_Item_Header"/>
+                        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="@c/white" android:id="@+id/premium_settings_grandfathered" android:background="@d/drawable_bg_nitro_gradient" android:padding="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:drawablePadding="8dp" app:drawableStartCompat="@d/ic_nitro_badge_white" style="@h/UiKit_TextView"/>
+                        <com.discord.views.ActiveSubscriptionView android:id="@+id/premium_settings_active_subscription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+                        <com.discord.views.ActiveSubscriptionView android:id="@+id/premium_settings_active_guild_subscription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+                        <TextView android:textColor="?attr/colorHeaderSecondary" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:text="@g/billing_payment_premium_description" style="@h/UiKit_TextView"/>
+                    </LinearLayout>
+                    <include android:id="@+id/payment" layout="@layout/layout_premium_settings_payment"/>
+                    <LinearLayout android:id="@+id/premium_settings_credit_container" android:layout_marginTop="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                        <TextView android:id="@+id/premium_settings_credit_header" android:text="@g/billing_subscription_credit" style="@h/UiKit_Settings_Item_Header"/>
+                        <include android:id="@+id/account_credits" layout="@layout/layout_account_credits_list"/>
+                        <TextView android:textColor="?attr/colorHeaderSecondary" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:text="@g/billing_account_credit_description" style="@h/UiKit_TextView"/>
+                    </LinearLayout>
+                    <include android:id="@+id/premium_tier_2" layout="@layout/view_premium_settings_tier_2"/>
+                    <include android:id="@+id/premium_perks" layout="@layout/view_premium_settings_perks"/>
+                    <include android:id="@+id/premium_tier_1" layout="@layout/view_premium_settings_tier_1"/>
+                    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorTextMuted" android:id="@+id/premium_settings_legalese" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_marginBottom="8dp" android:src="@d/img_poop_dark" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/premium_settings_retry" android:layout_width="wrap_content" android:text="@g/retry" style="@h/UiKit_Material_Button_Secondary"/>
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

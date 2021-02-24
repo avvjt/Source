@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout style="@h/UiKit_ViewGroup_RelativeLayout">
+            <LinearLayout android:padding="16dp" android:layout_toStartOf="@+id/checkboxes_container" android:layout_alignParentStart="true" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/setting_label" android:layout_marginEnd="16dp" style="@h/UiKit_TextView_Large"/>
+                <TextView android:id="@+id/setting_subtext" android:layout_marginTop="5dp" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/checkboxes_container" android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <FrameLayout android:id="@+id/checkable_off_container" android:layout_width="44dp" android:layout_height="32dp">
+                    <com.discord.views.CheckableImageView android:id="@+id/ternary_check_off" android:background="@d/drawable_bg_ternary_off" android:src="@d/drawable_ic_ternary_off" style="@h/UiKit_CheckableImageView"/>
+                    <View android:id="@+id/off_disabled_overlay" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+                <com.discord.views.CheckableImageView android:id="@+id/ternary_check_neutral" android:background="@d/drawable_bg_ternary_neutral" android:src="@d/drawable_ic_ternary_neutral" style="@h/UiKit_CheckableImageView"/>
+                <com.discord.views.CheckableImageView android:id="@+id/ternary_check_on" android:background="@d/drawable_bg_ternary_on" android:src="@d/drawable_ic_ternary_on" style="@h/UiKit_CheckableImageView"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:id="@+id/setting_disabled_overlay" android:background="?attr/ternaryCheckboxDisabledColor" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationContentDescription="@g/close" app:navigationIcon="?attr/ic_action_bar_close" style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:layout_height="match_parent" android:baselineAligned="false" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.discord.views.ScreenTitleView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:stv_subtitle="@g/join_server_description_mobile_refresh" app:stv_title="@g/join_server_title_mobile_refresh"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_join_invite" android:layout_marginBottom="16dp" android:hint="@g/form_label_invite_link" app:endIconMode="2" style="@h/UiKit_TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText android:inputType="textUri" android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText">
+                    <requestFocus/>
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <include layout="@layout/widget_guild_join_invite_examples"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/guild_join_action_btn" android:layout_marginTop="16dp" android:text="@g/nuf_join_server_button" style="@h/UiKit_AuthButton_Material"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_marginBottom="4dp" android:src="?attr/img_wumpus_tophat" android:contentDescription="@g/join_server_button_cta_mobile" style="@h/UiKit_ImageView_HideInLandscape"/>
+    <com.discord.utilities.dimmer.DimmerView style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

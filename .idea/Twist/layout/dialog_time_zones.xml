@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/dialog_min_width">
+    <TextView android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dialog_standard_margin" android:text="@string/pref_profile_time_zone" android:layout_marginStart="@dimen/dialog_standard_margin" android:layout_marginEnd="@dimen/dialog_standard_margin" style="@style/Widget.Twist.CustomDialog.Title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="72dp" android:layout_marginBottom="56dp" android:minHeight="200dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_gravity="center" android:id="@+id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="@dimen/dialog_button_bar_height">
+        <Button android:layout_gravity="end" android:id="@+id/button_negative" android:layout_width="wrap_content" android:layout_height="@dimen/dialog_button_fake_36dp_height" android:text="@string/dialog_button_cancel" android:layout_marginEnd="4dp" style="@style/Widget.Twist.CustomDialog.Button.Negative"/>
+    </FrameLayout>
+</FrameLayout>

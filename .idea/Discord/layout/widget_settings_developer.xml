@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/list_bottom_padding" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:text="Experiments" style="@h/UiKit_Settings_Item_Header"/>
+            <TextView android:text="Not seeing your experiment? Add it to ExperimentRegistry.kt" android:layout_marginStart="16dp" style="@h/UiKit_TextView_Subtext"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/developer_settings_experiments" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" style="@h/UiKit_ViewGroup_RecyclerView"/>
+            <TextView android:text="Notice cache" style="@h/UiKit_Settings_Item_Header"/>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardElevation="@dimen/app_elevation" style="@style/Widget.MaterialComponents.CardView">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/developer_settings_notices" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" style="@h/UiKit_ViewGroup_RecyclerView"/>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:text="Crashes" style="@h/UiKit_Settings_Item_Header"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_kotlin" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Unhandled UI Thread Exception" style="@h/UiKit_Material_Button"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_discord_nonfatal" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Non-fatal Exception" style="@h/UiKit_Material_Button"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/developer_settings_crash_discord_jnibridge" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="libdiscord Crash" style="@h/UiKit_Material_Button"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

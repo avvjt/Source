@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/primary_630" style="@h/UiKit_ViewGroup_ScrollView_Page">
+    <LinearLayout android:paddingBottom="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout style="@h/UiKit_Sheet_Header">
+            <androidx.constraintlayout.widget.Guideline style="@h/UiKit_Sheet_Guideline"/>
+            <FrameLayout style="@h/UiKit_Sheet_Header_Icon">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/channels_list_item_text_actions_icon" style="@h/Avatar_Large"/>
+            </FrameLayout>
+            <TextView android:id="@+id/channels_list_item_text_actions_title" style="@h/UiKit_Sheet_Header_Title"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View style="@h/UiKit_Settings_Divider"/>
+        <TextView android:id="@+id/channels_list_item_text_actions_profile" android:text="@g/profile" app:drawableStartCompat="?attr/ic_account" style="@h/UiKit_Settings_Item_Icon"/>
+        <TextView android:id="@+id/channels_list_item_text_actions_mark_as_read" android:text="@g/mark_as_read" app:drawableStartCompat="?attr/ic_visibility" style="@h/UiKit_Settings_Item_Icon"/>
+        <TextView android:id="@+id/channels_list_item_text_actions_mute" app:drawableStartCompat="?attr/ic_channel_mute" style="@h/UiKit_Settings_Item_Icon"/>
+        <TextView android:id="@+id/channels_list_item_text_actions_channel_settings" app:drawableStartCompat="?attr/ic_settings" style="@h/UiKit_Settings_Item_Icon"/>
+        <TextView android:id="@+id/channels_list_item_text_actions_channel_notifications" android:text="@g/notification_settings" app:drawableStartCompat="?attr/ic_notifications_a60" style="@h/UiKit_Settings_Item_Icon"/>
+        <TextView android:id="@+id/channels_list_item_text_actions_invite" android:text="@g/instant_invite" app:drawableStartCompat="?attr/ic_person_add" style="@h/UiKit_Settings_Item_Icon"/>
+        <View android:id="@+id/channels_list_item_text_actions_developer_divider" style="@h/UiKit_Settings_Divider"/>
+        <TextView android:id="@+id/channels_list_item_text_actions_copy_id" android:text="@g/copy_id" app:drawableStartCompat="?attr/ic_copy" style="@h/UiKit_Settings_Item_Icon"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

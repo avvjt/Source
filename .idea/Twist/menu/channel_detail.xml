@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/menu_mark_all_read" android:title="@string/menu_mark_all_read"/>
+    <item android:id="@+id/menu_information" android:title="@string/menu_channel_info"/>
+    <item android:id="@+id/menu_channel_users" android:title="@string/menu_channel_users"/>
+    <item android:id="@+id/menu_channel_email" android:title="@string/menu_channel_email"/>
+    <item android:id="@+id/menu_channel_link" android:title="@string/menu_channel_link"/>
+    <item android:id="@+id/menu_channel_archive" android:title="@string/menu_channel_archive"/>
+    <item android:id="@+id/menu_channel_leave" android:title="@string/menu_channel_leave"/>
+    <item android:id="@+id/menu_channel_delete" android:title="@string/menu_channel_delete"/>
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/FriendsList_EmptyState">
+    <ImageView android:src="@d/img_wumpus_playing_with_friends" android:importantForAccessibility="no" android:layout_marginStart="32dp" android:layout_marginEnd="32dp" style="@h/FriendsList_EmptyState_Image"/>
+    <TextView android:id="@+id/empty_friends_state_title" android:text="@g/friends_empty_state_all" style="@h/FriendsList_EmptyState_Title"/>
+    <TextView android:text="@g/friends_empty_state_subtitle" style="@h/FriendsList_EmptyState_Subtitle"/>
+    <com.google.android.material.button.MaterialButton android:textSize="@dimen/uikit_textsize_medium" android:id="@+id/empty_friends_state_add_friend" android:text="@g/add_friend" android:singleLine="true" style="@h/UiKit_Material_Button"/>
+</LinearLayout>

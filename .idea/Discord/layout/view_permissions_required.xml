@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" style="@h/UiKit_ViewGroup_LinearLayout">
+    <ImageView android:src="@d/img_permission_prime" android:contentDescription="@g/system_permission_request_files" style="@h/UiKit_ImageView"/>
+    <TextView android:gravity="center" android:id="@e/permissions_required_text" android:padding="16dp" style="@h/UiKit_TextView"/>
+    <com.google.android.material.button.MaterialButton android:id="@e/permissions_required_action_btn" android:text="@g/system_permission_grant" style="@h/UiKit_Material_Button_Fit"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbars="none" style="@h/UiKit_ViewGroup_NestedScrollView">
+    <LinearLayout android:gravity="center" android:id="@+id/friends_add_container" android:background="?attr/colorBackgroundPrimary" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@d/img_save_your_group" android:importantForAccessibility="no"/>
+        <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:textSize="@dimen/uikit_textsize_xxlarge" android:textColor="?attr/colorHeaderPrimary" android:gravity="center" android:layout_gravity="center" android:layout_marginTop="32dp" android:text="@g/add_by_id_title" style="@h/UiKit_TextView"/>
+        <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="?attr/colorHeaderSecondary" android:gravity="center" android:layout_gravity="center" android:layout_marginTop="8dp" android:text="@g/add_by_id_body" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+        <LinearLayout android:layout_marginTop="32dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/friends_add_text_edit_wrap" android:layout_marginBottom="4dp" android:hint="@g/username_and_tag" style="@h/UiKit_TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:layout_gravity="start" android:id="@+id/friend_add_username_indicator" android:layout_marginTop="8dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+        <com.google.android.material.button.MaterialButton android:enabled="false" android:ellipsize="end" android:id="@+id/friends_add_send" android:layout_marginTop="16dp" android:text="@g/add_friend_add_manually" style="@h/FriendsAdd_Button"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

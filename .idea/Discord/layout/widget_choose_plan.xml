@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar android:background="?attr/colorBackgroundSecondary" app:navigationIcon="?attr/ic_action_bar_back" app:title="@g/premium_choose_plan_title" style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:layout_height="match_parent" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/choose_plan_recycler" android:background="?attr/colorBackgroundPrimary" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        <LinearLayout android:gravity="center" android:id="@+id/choose_plan_empty_container" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_height="90dp" android:layout_marginBottom="16dp" android:src="@d/img_clyde_empty" style="@h/UiKit_ImageView"/>
+            <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:textSize="@dimen/uikit_textsize_xxlarge" android:layout_marginBottom="8dp" android:text="@g/premium_no_plans_header" android:textAlignment="center" style="@h/UiKit_TextView_H1"/>
+            <com.discord.utilities.view.text.LinkifiedTextView android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/primary_300" android:id="@+id/choose_plan_empty_description" android:lineSpacingMultiplier="1" android:textAlignment="center" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+    </com.discord.app.AppViewFlipper>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

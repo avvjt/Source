@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/blocked_user_item" style="@h/BlockedUsersList_Item">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/blocked_user_item_avatar" android:layout_centerVertical="true" style="@h/BlockedUsersList_Item_Avatar"/>
+    <TextView android:id="@+id/blocked_user_item_name" android:text="@g/sample_user_name" android:layout_centerVertical="true" android:layout_toStartOf="@+id/unblock_user_button" android:layout_toEndOf="@+id/blocked_user_item_avatar" style="@h/BlockedUsersList_Item_Name"/>
+    <com.google.android.material.button.MaterialButton android:textSize="@dimen/uikit_textsize_medium" android:id="@+id/unblock_user_button" android:text="@g/user_settings_blocked_users_unblockbutton" android:singleLine="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@h/BlockedUsersList_Item_UnblockButton"/>
+</RelativeLayout>

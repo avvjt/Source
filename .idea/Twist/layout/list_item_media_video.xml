@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="@dimen/bottomsheet_media_height" android:foreground="?attr/selectableItemBackground">
+    <ImageView android:id="@+id/image" android:background="?attr/colorControlDimmed" android:layout_width="@dimen/bottomsheet_video_width" android:layout_height="match_parent"/>
+    <TextView android:textColor="?attr/colorOnColoredBackground" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_small_spacing" style="@style/TextAppearance.MaterialComponents.Subtitle2"/>
+    <View android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/overlay" android:background="@drawable/composer_media_overlay" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="@dimen/standard_small_spacing" android:layout_marginEnd="@dimen/standard_small_spacing"/>
+</FrameLayout>

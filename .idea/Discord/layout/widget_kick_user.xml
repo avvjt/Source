@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" style="@h/UiKit_Dialog_Container">
+    <TextView android:id="@+id/kick_user_title" android:text="@g/kick_user_title" style="@h/UiKit_Dialog_Title"/>
+    <View style="@h/UiKit_Divider"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/kick_user_body" android:text="@g/kick_user_body" style="@h/UiKit_Dialog_Body"/>
+            <TextView android:text="@g/form_label_reason_kick" style="@h/UiKit_Dialog_Subtitle"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/kick_user_reason" android:layout_margin="16dp" android:hint="@g/form_label_reason_kick" style="@h/UiKit_TextInputLayout_Primary">
+                <com.google.android.material.textfield.TextInputEditText android:maxLength="512" style="@h/UiKit_TextInputLayout_EditText_MultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:id="@+id/kick_user_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/kick_user_confirm" android:text="@g/confirm" style="@h/UiKit_Material_Button_Red_Fit"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:paddingLeft="24dp" android:paddingTop="24dp" android:paddingRight="24dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout">
+    <ImageView android:id="@+id/premium_upsell_img" android:layout_height="80dp" android:adjustViewBounds="true" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+    <TextView android:textSize="18dp" android:textColor="?attr/colorHeaderPrimary" android:gravity="center_horizontal" android:id="@+id/premium_upsell_header" android:layout_marginTop="16dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+    <TextView android:textSize="14dp" android:textColor="?attr/colorTextNormal" android:gravity="center_horizontal" android:id="@+id/premium_upsell_body" android:layout_marginTop="8dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+</LinearLayout>

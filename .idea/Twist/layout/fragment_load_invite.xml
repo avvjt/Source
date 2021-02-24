@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/toolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+    <ScrollView android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/illustration" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/img_confirm_email_expired" android:scaleType="centerInside"/>
+            <TextView android:layout_gravity="center_horizontal" android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_invite_not_found"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

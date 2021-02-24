@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <RelativeLayout android:id="@e/camera_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <com.otaliastudios.cameraview.CameraView android:id="@e/camera_view" android:layout_width="match_parent" android:layout_height="match_parent" app:cameraAudio="0" app:cameraEngine="1" app:cameraFlash="2" app:cameraGestureTap="1" app:cameraRequestPermissions="false"/>
+        <ImageButton android:id="@e/camera_flash_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@g/flash_off" style="@h/FlexInput_Input_Button_Camera_Flash"/>
+        <ImageButton android:id="@e/camera_facing_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@g/camera_switch" style="@h/FlexInput_Input_Button_Camera_Facing"/>
+        <ImageView android:id="@e/take_photo_btn" android:layout_width="56dp" android:layout_height="56dp" android:contentDescription="@g/take_a_photo" style="@h/FlexInput_Input_Button_Camera_Capture"/>
+        <ImageButton android:id="@e/launch_camera_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@g/camera" style="@h/FlexInput_Input_Button_Camera_Launcher"/>
+    </RelativeLayout>
+    <ViewStub android:id="@e/permissions_view_stub" android:layout="@f/view_permissions_required" android:layout_marginTop="32dp" style="@h/UiKit_ViewGroup"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

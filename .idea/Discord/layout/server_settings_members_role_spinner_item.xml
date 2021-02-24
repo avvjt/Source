@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textColor="@c/primary_500" android:id="@+id/role_spinner_item_textview" android:background="?attr/selectableItemBackground" android:singleLine="true" style="@h/UiKit_TextView"/>

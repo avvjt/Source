@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:elevation="2dp" style="@h/UiKit_ViewGroup">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <RelativeLayout android:id="@+id/integration_header_container" android:background="?attr/selectableItemBackground" android:paddingLeft="16dp" android:paddingTop="4dp" android:paddingRight="16dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/integration_icon" android:layout_margin="8dp" android:layout_centerVertical="true" android:contentDescription="@g/integrations" style="@h/UiKit_ImageView"/>
+            <LinearLayout android:id="@+id/integration_name_container" android:layout_centerVertical="true" android:layout_toStartOf="@+id/integration_settings_icon" android:layout_toEndOf="@+id/integration_icon" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/integration_owner_name" style="@h/UiKit_TextView_H1"/>
+                <TextView android:textColor="?attr/primary_100" android:id="@+id/integration_name" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/integration_settings_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?attr/ic_settings" android:layout_centerVertical="true" android:contentDescription="@g/integration_settings" android:layout_alignParentEnd="true"/>
+            <ProgressBar android:id="@+id/integration_syncing_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_alignTop="@+id/integration_settings_icon" android:layout_alignBottom="@+id/integration_settings_icon" android:layout_centerVertical="true" android:layout_alignStart="@+id/integration_settings_icon" android:layout_alignEnd="@+id/integration_settings_icon"/>
+        </RelativeLayout>
+        <com.discord.views.CheckedSetting android:id="@+id/integration_sync_switch" app:cs_text="@g/sync_this_account" app:cs_text_size="@dimen/uikit_textsize_medium" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+        <View style="@h/UiKit_Settings_Divider"/>
+    </LinearLayout>
+    <View android:id="@+id/integration_header_disabled_overlay" android:background="@c/white_alpha_70" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@g/action_bar_scrolling_view_behavior" style="@h/UiKit_ViewGroup_LinearLayout_Rotatable">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/server_settings_security_label" android:layout_marginTop="32dp" android:text="@g/guild_security_req_mfa_label" style="@h/UiKit_TextView_H2"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/server_settings_security_toggle_mfa_button" android:layout_marginTop="16dp" android:text="@g/guild_security_req_mfa_turn_on" style="@h/UiKit_Material_Button_Green_Fit"/>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="32dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" style="@h/UiKit_ViewGroup_RelativeLayout">
+            <ImageView android:layout_marginBottom="32dp" android:src="@d/asset_security" android:layout_above="@+id/mfa_description_text" android:layout_centerHorizontal="true" android:contentDescription="@g/guild_security_req_mfa_turn_on" style="@h/UiKit_ImageView"/>
+            <TextView android:id="@+id/mfa_description_text" android:text="@g/guild_security_req_mfa_body" android:layout_alignParentBottom="true" style="@h/UiKit_TextView"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

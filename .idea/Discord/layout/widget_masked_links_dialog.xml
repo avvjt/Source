@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <TextView android:id="@+id/view_dialog_confirmation_header" android:padding="16dp" android:layout_width="match_parent" android:text="@g/hold_up" style="@h/UiKit_TextView_H1_Bold"/>
+    <View style="@h/UiKit_Divider"/>
+    <TextView android:id="@+id/masked_links_body_text" style="@h/UiKit_Settings_Item_SubText"/>
+    <TextView android:textColor="?attr/colorTextLink" android:id="@+id/masked_links_trust_domain" android:layout_width="match_parent" android:text="@g/masked_link_trust_this_domain" style="@h/UiKit_Settings_Item_SubText"/>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <View style="@h/UiKit_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:id="@+id/masked_links_cancel" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/masked_links_confirm" android:text="@g/confirm" style="@h/UiKit_Material_Button_Fit"/>
+    </LinearLayout>
+</LinearLayout>

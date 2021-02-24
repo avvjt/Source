@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <FrameLayout android:id="@+id/guild_actions_add_create" android:background="?attr/colorPrimaryBg" android:layout_margin="8dp" android:layout_marginTop="8dp" style="@h/UiKit_ViewGroup">
+        <LinearLayout android:gravity="center_vertical" android:background="?attr/selectableItemBackgroundBorderless" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_weight="1" android:layout_marginStart="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:text="@g/create_server_button_cta" style="@h/UiKit_TextView_H1"/>
+                <TextView android:textColor="?attr/primary_300" android:ellipsize="end" android:layout_marginTop="8dp" android:text="@g/create_server_button_cta_mobile_desc" android:singleLine="true" style="@h/UiKit_TextView_Semibold"/>
+            </LinearLayout>
+            <ImageView android:src="?attr/ic_navigate_next" android:importantForAccessibility="no" android:layout_marginEnd="8dp" style="@h/UiKit_ImageView"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/guild_actions_add_join" android:background="?attr/colorPrimaryBg" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <LinearLayout android:gravity="center_vertical" android:background="?attr/selectableItemBackgroundBorderless" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_weight="1" android:layout_marginStart="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:text="@g/join_server_button_cta" style="@h/UiKit_TextView_H1"/>
+                <TextView android:textColor="?attr/primary_300" android:ellipsize="end" android:layout_marginTop="8dp" android:text="@g/join_server_button_cta_mobile_desc" android:singleLine="true" style="@h/UiKit_TextView_Semibold"/>
+            </LinearLayout>
+            <ImageView android:src="?attr/ic_navigate_next" android:contentDescription="@g/coming_soon" android:importantForAccessibility="no" android:layout_marginEnd="8dp" style="@h/UiKit_ImageView"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

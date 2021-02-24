@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorTabsBackground" style="@h/UiKit_ViewGroup_LinearLayout">
+    <View android:background="?attr/colorTabsDivider" style="@h/UiKit_Divider"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/tabs_host_bottom_nav_tabs_container" android:background="?attr/colorTabsBackground" android:baselineAligned="false" android:weightSum="5" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/tabs_host_bottom_nav_home_item" style="@h/TabsHostBottomNavItemWithNotifications">
+            <ImageView android:id="@+id/tabs_host_bottom_nav_home_icon" android:src="@d/ic_tab_home" android:contentDescription="@g/tabs_home_accessibility_label" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@h/TabsHostBottomNavIcon"/>
+            <TextView android:id="@+id/tabs_host_bottom_nav_home_notifications_badge" app:layout_constraintCircle="@+id/tabs_host_bottom_nav_home_icon" style="@h/TabsHostBottomNavNotificationBadge"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/tabs_host_bottom_nav_friends_item" style="@h/TabsHostBottomNavItemWithNotifications">
+            <ImageView android:id="@+id/tabs_host_bottom_nav_friends_icon" android:src="@d/ic_tab_friends" android:contentDescription="@g/tabs_friends_accessibility_label" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@h/TabsHostBottomNavIcon"/>
+            <TextView android:id="@+id/tabs_host_bottom_nav_friends_notifications_badge" app:layout_constraintCircle="@+id/tabs_host_bottom_nav_friends_icon" style="@h/TabsHostBottomNavNotificationBadge"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout android:id="@+id/tabs_host_bottom_nav_search_item" style="@h/TabsHostBottomNavItem">
+            <ImageView android:id="@+id/tabs_host_bottom_nav_search_icon" android:src="@d/ic_tab_search" android:contentDescription="@g/tabs_search_accessibility_label" style="@h/TabsHostBottomNavIcon"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/tabs_host_bottom_nav_mentions_item" style="@h/TabsHostBottomNavItem">
+            <ImageView android:id="@+id/tabs_host_bottom_nav_mentions_icon" android:src="@d/ic_tab_mentions" android:contentDescription="@g/tabs_mentions_accessibility_label" style="@h/TabsHostBottomNavIcon"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/tabs_host_bottom_nav_user_settings_item" style="@h/TabsHostBottomNavItem">
+            <com.discord.views.user.UserAvatarPresenceView android:layout_gravity="center" android:id="@+id/tabs_host_bottom_nav_user_avatar_presence_view" android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="@g/tabs_settings_accessibility_label" app:user_avatar_background_color="?attr/colorTabsBackground"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/chat_list_item_mention_footer_divider" android:layout_width="match_parent" android:layout_height="0.25dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" style="@h/UiKit_Divider"/>
+    <TextView android:textSize="13.75sp" android:textColor="?attr/colorTextMuted" android:gravity="center" android:id="@+id/chat_list_item_message_header_channel" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:text="@g/no_recent_mentions" style="@h/UiKit_TextView_Semibold"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="198dp" android:layout_marginTop="32dp" android:layout_marginBottom="32dp">
+        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <ImageView android:id="@+id/chat_list_item_mention_footer_hand" android:layout_width="wrap_content" android:layout_height="198dp" android:src="?attr/theme_chat_empty_mentions_hand"/>
+        <View android:id="@+id/tile" android:background="?attr/theme_chat_empty_mentions_arm" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/chat_cell_horizontal_spacing_padding" android:layout_marginRight="@dimen/chat_cell_horizontal_spacing_padding" android:layout_marginBottom="@dimen/chat_cell_horizontal_spacing_padding" android:transitionGroup="true" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardCornerRadius="4dp">
+        <LinearLayout android:padding="8dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textColor="@c/status_green_500" android:gravity="center" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="8dp" android:layout_width="match_parent" android:text="@g/pinned_messages_pro_tip" android:singleLine="true" android:textAllCaps="true" style="@h/UiKit_TextView_Semibold"/>
+            <TextView android:textSize="13.75sp" android:textColor="?attr/colorTextNormal" android:gravity="center" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:text="@g/recent_mentions_pro_tip" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <include layout="@layout/widget_auth_header"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/guild_join_content" android:layout_height="match_parent" android:fillViewport="false" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:gravity="center" style="@h/UiKit_ViewGroup_LinearLayout_Rotatable">
+            <com.discord.views.ScreenTitleView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:stv_subtitle="@g/nux_post_reg_join_server_description" app:stv_title="@g/nux_post_reg_join_server_title"/>
+            <LinearLayout android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_join_invite" android:layout_marginBottom="16dp" android:hint="@g/form_label_invite_link" app:endIconMode="2" style="@h/UiKit_TextInputLayout">
+                    <com.google.android.material.textfield.TextInputEditText android:inputType="textUri" android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <include layout="@layout/widget_guild_join_invite_examples"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/guild_join_action_btn" android:layout_marginTop="16dp" android:text="@g/nux_post_reg_join_server_skip" style="@h/UiKit_AuthButton_Material"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

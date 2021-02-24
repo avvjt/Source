@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" layout="@layout/header_holder"/>
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/loadingIndicator" android:layout_width="match_parent" android:layout_height="4dp" android:layout_marginBottom="8dp" android:indeterminate="true" app:indicatorColor="@color/colorAccent"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.chip.ChipGroup android:id="@+id/badgesLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+    </androidx.core.widget.NestedScrollView>
+    <Space android:id="@+id/emptySpace" android:layout_width="match_parent" android:layout_height="16dp"/>
+</LinearLayout>

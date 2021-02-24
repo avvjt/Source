@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <ScrollView android:layout_gravity="top" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp" android:foregroundGravity="top" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" style="@h/UiKit_ViewGroup_LinearLayout">
+            <LinearLayout style="@h/UiKit_Copy">
+                <TextView android:id="@+id/user_phone_title" android:text="@g/enter_phone_title" style="@h/UiKit_TextView_H1"/>
+                <TextView android:gravity="center" android:id="@+id/user_phone_add_description_note" android:layout_marginTop="16dp" android:text="@g/enter_phone_description" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+            <com.discord.views.phone.PhoneOrEmailInputView android:id="@+id/user_phone_add_number" android:layout_width="match_parent" android:layout_height="wrap_content" app:force_mode="2" app:hint="@g/phone_verification_phone_label"/>
+            <com.google.android.material.button.MaterialButton android:enabled="false" android:id="@+id/user_phone_add_next" android:text="@g/next" style="@h/UiKit_User_Phone_Manage_Confirm"/>
+            <TextView android:textColor="@c/status_red_500" android:gravity="center" android:id="@+id/remove_phone" android:text="@g/user_settings_account_remove_phone_number_button" style="@h/UiKit_Settings_Item"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat_Transparent">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</FrameLayout>

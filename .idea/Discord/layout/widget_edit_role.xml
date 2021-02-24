@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/role_settings_overview_scroll" android:layout_width="match_parent" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/padding_bottom_fab_screen" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:text="@g/form_label_role_name" style="@h/UiKit_Settings_Item_Header"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_role_name" android:hint="@g/form_label_role_name" style="@h/UiKit_TextInputLayout_Primary">
+                    <com.google.android.material.textfield.TextInputEditText android:maxLength="100" android:inputType="textNoSuggestions" style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:id="@+id/role_settings_edit_name_disabled_overlay" android:background="@c/white_alpha_30" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/form_label_role_color" style="@h/UiKit_Settings_Item_Header"/>
+            <RelativeLayout android:id="@+id/role_settings_color_selector_container" android:background="?attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="64dp">
+                <TextView android:layout_margin="16dp" android:text="@g/form_label_role_color" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@h/UiKit_TextView"/>
+                <View android:id="@+id/role_settings_current_color_display" android:background="@d/drawable_circle_purple_brand" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="16dp" android:layout_alignParentEnd="true" android:elevation="2dp"/>
+                <View android:id="@+id/role_settings_color_disabled_overlay" android:background="@c/white_alpha_30" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/form_label_role_settings" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_hoist_checkedsetting" app:cs_text="@g/form_label_hoist_description" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_mentionable_checkedsetting" app:cs_subtext="@g/form_label_mentionable_description" app:cs_text="@g/form_label_mentionable" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/role_permissions_section_general_guild" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_read_messages" app:cs_subtext="@g/role_permissions_view_channel_description" app:cs_text="@g/role_permissions_view_channel" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_manage_channels" app:cs_subtext="@g/role_permissions_manage_channels_description" app:cs_text="@g/manage_channels" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_manage_roles" app:cs_subtext="@g/role_permissions_manage_roles_description" app:cs_text="@g/manage_roles" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_manage_emojis" app:cs_subtext="@g/role_permissions_manage_emojis_description" app:cs_text="@g/manage_emojis" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_view_audit_log" app:cs_subtext="@g/role_permissions_view_audit_log_description" app:cs_text="@g/view_audit_log" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_view_guild_analytics" app:cs_subtext="@g/role_permissions_view_guild_analytics_description" app:cs_text="@g/view_guild_analytics" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_manage_webhooks" app:cs_subtext="@g/role_permissions_manage_webhooks_description" app:cs_text="@g/manage_webhooks" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_manage_server" app:cs_subtext="@g/role_permissions_manage_server_description" app:cs_text="@g/manage_server" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/role_permissions_section_membership" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_create_instant_invite" app:cs_subtext="@g/role_permissions_create_instant_invite_description" app:cs_text="@g/create_instant_invite" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_change_nickname" app:cs_subtext="@g/role_permissions_change_nickname_description" app:cs_text="@g/change_nickname" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_manage_nicknames" app:cs_subtext="@g/role_permissions_manage_nicknames_description" app:cs_text="@g/manage_nicknames" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_kick_members" app:cs_subtext="@g/role_permissions_kick_members_description" app:cs_text="@g/kick_members" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_ban_members" app:cs_subtext="@g/role_permissions_ban_members_description" app:cs_text="@g/ban_members" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/role_permissions_section_text" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_send_messages" app:cs_subtext="@g/role_permissions_send_messages_description" app:cs_text="@g/send_messages" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_embed_links" app:cs_subtext="@g/role_permissions_embed_links_description" app:cs_text="@g/embed_links" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_attach_files" app:cs_subtext="@g/role_permissions_attach_files_description" app:cs_text="@g/attach_files" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_add_reactions" app:cs_subtext="@g/role_permissions_add_reactions_description" app:cs_text="@g/add_reactions" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_use_external_emojis" app:cs_subtext="@g/role_permissions_use_external_emojis_description" app:cs_text="@g/role_permissions_use_external_emojis" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_mention_everyone" app:cs_subtext="@g/role_permissions_mention_everyone_description" app:cs_text="@g/mention_everyone" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_manage_messages" app:cs_subtext="@g/role_permissions_manage_messages_description" app:cs_text="@g/manage_messages" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_read_message_history" app:cs_subtext="@g/role_permissions_read_message_history_description" app:cs_text="@g/read_message_history" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_send_tts_messages" app:cs_subtext="@g/send_tts_messages_description" app:cs_text="@g/send_tts_messages" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/role_permissions_section_voice" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_voice_connect" app:cs_subtext="@g/role_permissions_connect_description" app:cs_text="@g/connect" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_voice_speak" app:cs_subtext="@g/role_permissions_speak_description" app:cs_text="@g/speak" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_voice_video" app:cs_subtext="@g/role_permissions_stream_description" app:cs_text="@g/video" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_voice_use_voice_activity" app:cs_subtext="@g/role_permissions_use_vad_description" app:cs_text="@g/use_vad" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_priority_speaker" app:cs_subtext="@g/role_permissions_priority_speaker_description" app:cs_text="@g/priority_speaker" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_voice_mute_members" app:cs_subtext="@g/role_permissions_mute_members_description" app:cs_text="@g/mute_members" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_voice_deafen_members" app:cs_subtext="@g/role_permissions_deafen_members_description" app:cs_text="@g/deafen_members" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_voice_move_members" app:cs_subtext="@g/role_permissions_move_members_description" app:cs_text="@g/move_members" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/role_permissions_section_advanced" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/role_settings_administrator" app:cs_subtext="@g/role_permissions_administrator_description" app:cs_text="@g/administrator" style="@h/UiKit_CheckedSetting_Themed"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/edit_role_save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton_Save"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

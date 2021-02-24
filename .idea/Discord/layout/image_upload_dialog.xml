@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:padding="16dp" android:layout_width="match_parent" android:text="@g/upload_image" style="@h/UiKit_TextView_H1_Bold"/>
+        <View style="@h/UiKit_Divider"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+        <LinearLayout android:gravity="center" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:gravity="start" android:layout_gravity="start" android:padding="16dp" android:text="@g/upload_image_body" style="@h/UiKit_TextView"/>
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/notice_image" android:layout_width="200dp" android:layout_height="200dp"/>
+            <TextView android:id="@+id/notice_crop" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:text="@g/crop" style="@h/UiKit_TextView_Link"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@h/UiKit_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:textColor="?attr/primary_200" android:id="@widgetnoticedialog/CANCEL_BUTTON" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/notice_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@g/upload" android:layout_marginStart="8dp" style="@h/UiKit_Material_Button"/>
+    </LinearLayout>
+</LinearLayout>

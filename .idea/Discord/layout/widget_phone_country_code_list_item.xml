@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/phone_country_code_item" android:background="?attr/selectableItemBackground" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+    <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/phone_country_code_name" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintStart_toStartOf="0"/>
+    <TextView android:textSize="@dimen/uikit_textsize_medium" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/phone_country_code_code" android:layout_width="wrap_content" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

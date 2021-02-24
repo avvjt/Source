@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <com.google.android.material.button.MaterialButton android:id="@+id/widget_server_settings_emojis_upload" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:text="@g/upload_emoji" style="@h/UiKit_Material_Button"/>
+    <TextView android:id="@+id/widget_server_settings_emojis_upload_description" android:text="@g/guild_settings_emoji_upload_to_server_message" style="@h/UiKit_Settings_Item_SubText"/>
+</LinearLayout>

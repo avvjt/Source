@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_NestedScrollView">
+    <com.discord.app.AppViewFlipper android:id="@+id/guild_profile_sheet_flipper" android:background="?attr/colorBackgroundTertiary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/guild_profile_sheet_constraint_layout" android:background="?attr/colorBackgroundTertiary" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/guild_profile_sheet_banner" android:layout_width="0dp" android:layout_height="wrap_content" app:actualImageScaleType="6" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" app:viewAspectRatio="1.78"/>
+            <androidx.cardview.widget.CardView android:id="@+id/guild_profile_sheet_icon_card" android:layout_width="@dimen/avatar_size_xxlarge" android:layout_height="@dimen/avatar_size_xxlarge" android:layout_marginTop="16dp" android:layout_marginStart="16dp" app:cardBackgroundColor="?attr/colorBackgroundTertiary" app:cardCornerRadius="20dp" app:cardElevation="0dp" app:contentPadding="4dp" app:layout_constraintBottom_toBottomOf="@+id/guild_profile_sheet_banner" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/guild_profile_sheet_banner">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/guild_profile_sheet_icon" android:layout_width="match_parent" android:layout_height="match_parent" app:roundWithOverlayColor="?attr/colorBackgroundTertiary" app:roundedCornerRadius="16dp"/>
+                <TextView android:textColor="@c/primary_100" android:ellipsize="none" android:layout_gravity="center" android:id="@+id/guild_profile_sheet_icon_name" android:padding="4dp" style="@h/UiKit_TextView_Large_SingleLine"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:id="@+id/guild_profile_sheet_content_container" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/guild_profile_sheet_icon_card" style="@h/UiKit_ViewGroup_LinearLayout">
+                <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <ImageView android:layout_gravity="center" android:id="@+id/guild_profile_sheet_guild_verified_premium_icon" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:importantForAccessibility="no" android:layout_marginEnd="8dp"/>
+                    <TextView android:textSize="@dimen/uikit_textsize_xxlarge" android:id="@+id/guild_profile_sheet_name" style="@h/UiKit_TextView_H1_Bold"/>
+                </LinearLayout>
+                <TextView android:id="@+id/guild_profile_sheet_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" style="@h/UiKit_TextView"/>
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_marginTop="8dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <LinearLayout android:gravity="center" android:id="@+id/guild_profile_sheet_online_count" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginEnd="8dp" app:placeholderImage="@c/status_green_500" app:roundAsCircle="true"/>
+                        <TextView android:id="@+id/guild_profile_sheet_online_count_text" android:layout_marginEnd="16dp" style="@h/GuildProfileSheet_DiscoverableGuild_Text"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@+id/guild_profile_sheet_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.facebook.drawee.view.SimpleDraweeView android:layout_width="8dp" android:layout_height="8dp" android:layout_marginEnd="8dp" app:placeholderImage="@c/status_grey_500" app:roundAsCircle="true"/>
+                        <TextView android:id="@+id/guild_profile_sheet_member_count_text" style="@h/GuildProfileSheet_DiscoverableGuild_Text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@+id/guild_profile_sheet_content_container_bottom_divider" android:background="?attr/colorBackgroundModifierAccent" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/guild_profile_sheet_content_container" style="@h/UiKit_Divider"/>
+            <LinearLayout android:id="@+id/guild_profile_sheet_tab_items" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/guild_profile_sheet_content_container_bottom_divider" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <com.google.android.material.button.MaterialButton android:id="@+id/guild_profile_sheet_boosts" android:drawableTop="@d/ic_member_list_boosted_badge_24dp" android:layout_weight="1" style="@h/GuildProfileSheet_TabItems_Button"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/guild_profile_sheet_notifications" android:text="@g/notifications" android:drawableTop="@d/ic_guild_notifications_24dp" android:layout_weight="1" style="@h/GuildProfileSheet_TabItems_Button"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/guild_profile_sheet_settings" android:text="@g/settings" android:drawableTop="@d/ic_guild_settings_24dp" android:layout_weight="1" style="@h/GuildProfileSheet_TabItems_Button"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/guild_profile_sheet_invite" android:text="@g/instant_invite" android:drawableTop="@d/ic_guild_invite_24dp" android:layout_weight="1" style="@h/GuildProfileSheet_TabItems_Button"/>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.Barrier android:id="@+id/guild_profile_sheet_actions_top_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="3" app:constraint_referenced_ids="guild_profile_sheet_tab_items, guild_profile_sheet_content_container"/>
+            <LinearLayout android:id="@+id/guild_profile_sheet_bottom_container" android:background="?attr/colorBackgroundSecondary" android:paddingBottom="16dp" android:layout_width="0dp" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/guild_profile_sheet_actions_top_barrier" style="@h/UiKit_ViewGroup_LinearLayout">
+                <LinearLayout android:id="@+id/guild_profile_sheet_actions" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <androidx.cardview.widget.CardView android:id="@+id/guild_profile_sheet_mark_as_read_action" android:layout_marginTop="16dp" style="@h/GuildProfileSheet_Actions_Card">
+                        <TextView android:id="@+id/guild_profile_sheet_mark_as_read" android:padding="16dp" android:text="@g/mark_as_read" style="@h/GuildProfileSheet_Actions_Title"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@+id/guild_profile_sheet_primary_actions" android:layout_marginTop="16dp" style="@h/GuildProfileSheet_Actions_Card">
+                        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                            <TextView android:id="@+id/guild_profile_sheet_create_channel" android:padding="16dp" android:text="@g/create_channel" style="@h/GuildProfileSheet_Actions_Title"/>
+                            <TextView android:id="@+id/guild_profile_sheet_create_category" android:padding="16dp" android:text="@g/create_category" style="@h/GuildProfileSheet_Actions_Title"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@+id/guild_profile_sheet_secondary_actions" android:layout_marginTop="16dp" style="@h/GuildProfileSheet_Actions_Card">
+                        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                            <LinearLayout android:id="@+id/guild_profile_sheet_change_nickname" android:background="?attr/bg_pressed_highlight" android:padding="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                                <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textSize="@dimen/uikit_textsize_large" android:layout_gravity="center" android:layout_width="match_parent" android:text="@g/change_nickname" style="@h/UiKit_TextView"/>
+                                <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorTextMuted" android:layout_gravity="center" android:id="@+id/guild_profile_sheet_nickname" android:layout_width="match_parent" style="@h/UiKit_TextView"/>
+                            </LinearLayout>
+                            <com.discord.views.CheckedSetting android:id="@+id/guild_profile_sheet_allow_dm" app:cs_subtext="@g/allow_server_dms" app:cs_text="@g/direct_messages" style="@h/GuildProfileSheet_Actions_CheckedSetting"/>
+                            <com.discord.views.CheckedSetting android:id="@+id/guild_profile_sheet_hide_muted_channels" app:cs_text="@g/hide_muted_channels" style="@h/GuildProfileSheet_Actions_CheckedSetting"/>
+                            <TextView android:textColor="@c/status_red_500" android:id="@+id/guild_profile_sheet_leave_server" android:padding="16dp" android:text="@g/leave_server" style="@h/GuildProfileSheet_Actions_Title"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@+id/guild_profile_sheet_developer_actions" android:layout_marginTop="16dp" style="@h/GuildProfileSheet_Actions_Card">
+                        <TextView android:id="@+id/guild_profile_sheet_copy_id" android:padding="16dp" android:text="@g/copy_id" style="@h/GuildProfileSheet_Actions_Title"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/guild_profile_sheet_emojis_count" android:textAllCaps="true" style="@h/UiKit_TextView"/>
+                    <ImageView android:id="@+id/guild_profile_sheet_premium_upsell_dot_separator" android:layout_width="4dp" android:layout_height="4dp" android:src="@d/drawable_circle_white" android:importantForAccessibility="no" android:layout_marginStart="8dp" app:tint="?attr/colorTextMuted"/>
+                    <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textSize="@dimen/uikit_textsize_small" android:textColor="@c/premium_tier_2_purple" android:layout_gravity="center" android:id="@+id/guild_profile_sheet_premium_upsell_text" android:text="@g/game_popout_nitro_upsell" android:drawablePadding="4dp" android:layout_marginStart="8dp" app:drawableStartCompat="@d/ic_nitro_badge_nitro_gradient_16dp" style="@h/UiKit_TextView_SingleLine"/>
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:id="@+id/guild_profile_sheet_emojis_card" android:layout_marginTop="8dp" app:contentPadding="8dp" style="@h/GuildProfileSheet_Actions_Card">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/guild_profile_sheet_emojis" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/guild_profile_sheet_bottom_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <com.google.android.material.button.MaterialButton android:id="@+id/guild_profile_sheet_upload_emoji" android:layout_width="0dp" android:text="@g/upload_emoji" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/guild_profile_sheet_join_server" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@h/UiKit_Material_Button"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/guild_profile_sheet_join_server" android:layout_width="0dp" android:text="@g/guild_profile_join_server_button" android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/guild_profile_sheet_view_server" app:layout_constraintStart_toEndOf="@+id/guild_profile_sheet_upload_emoji" app:layout_constraintTop_toTopOf="0" app:layout_goneMarginStart="0dp" style="@h/UiKit_Material_Button"/>
+                    <com.google.android.material.button.MaterialButton android:id="@+id/guild_profile_sheet_view_server" android:layout_width="0dp" android:text="@g/guild_popout_view_server_button" android:layout_marginStart="8dp" android:backgroundTint="?attr/colorBackgroundAccent" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/guild_profile_sheet_join_server" app:layout_constraintTop_toTopOf="0" app:layout_goneMarginStart="0dp" style="@h/UiKit_Material_Button"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.discord.app.AppViewFlipper>
+</androidx.core.widget.NestedScrollView>

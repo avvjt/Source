@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundPrimary" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:id="@+id/start_call_sheet_voice_item" android:text="@g/start_voice_call" app:drawableStartCompat="@d/ic_call_24dp" style="@h/StartCallSheet_Item"/>
+    <TextView android:id="@+id/start_call_sheet_video_item" android:text="@g/start_video_call" app:drawableStartCompat="@d/ic_videocam_white_24dp" style="@h/StartCallSheet_Item"/>
+</LinearLayout>

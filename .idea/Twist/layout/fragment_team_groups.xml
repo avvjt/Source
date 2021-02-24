@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+    <com.twistapp.ui.widgets.IllustrationEmptyView android:layout_gravity="center" android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/standard_tab_content_empty_view_bottom_margin" app:emptyBodyText="@string/empty_groups_body" app:emptyHelpText="@string/empty_groups_help_link" app:emptyIllustration="@drawable/img_group" app:emptyPrimaryButtonText="@string/empty_groups_button" app:emptyTitleText="@string/empty_groups_title"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:paddingTop="@dimen/standard_small_spacing" android:paddingBottom="@dimen/standard_avoid_fab_spacing" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

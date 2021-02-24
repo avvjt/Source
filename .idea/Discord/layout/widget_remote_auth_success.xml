@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" style="@h/UiKit_ViewGroup_LinearLayout">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:src="@d/img_remote_auth_finished" android:importantForAccessibility="no"/>
+    <TextView android:text="@g/qr_code_login_success" style="@h/UiKit_TextView_H1"/>
+    <TextView android:textColor="?attr/colorHeaderSecondary" android:layout_marginTop="8dp" android:text="@g/qr_code_login_success_flavor" android:textAlignment="center" style="@h/UiKit_TextView"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/remote_auth_finish_button" android:layout_marginTop="24dp" android:text="@g/_continue" style="@h/UiKit_Material_Button"/>
+</LinearLayout>

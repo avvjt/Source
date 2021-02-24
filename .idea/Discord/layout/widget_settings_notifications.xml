@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView style="@h/AppTheme_AppBarScrollingViewBehavior">
+        <LinearLayout android:animateLayoutChanges="true" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:text="@g/form_label_mobile_notifications_inapp_label" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_inapp_notifs_switch" app:cs_text="@g/form_label_mobile_notifications_inapp_desc" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/form_label_mobile_notifications_system_label" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_notifications_enabled" app:cs_text="@g/form_label_mobile_notifications_system_desc" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            <LinearLayout android:id="@+id/settings_notifications_wrap" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:text="@g/form_label_mobile_notifications_behavior" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_notifications_blink" app:cs_text="@g/form_label_mobile_notifications_blink" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_notifications_vibrations" app:cs_text="@g/form_label_mobile_notifications_vibrations" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+                <View style="@h/UiKit_Settings_Divider"/>
+                <TextView android:text="@g/sounds" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_notifications_mute_all" app:cs_text="@g/form_label_mobile_notifications_sound_disable" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

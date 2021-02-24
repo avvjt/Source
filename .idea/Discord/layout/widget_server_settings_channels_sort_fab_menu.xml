@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab_menu_table" android:background="@c/primary_630_alpha_60" style="@h/UiKit_ViewGroup_Page">
+    <TableRow android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/fab_menu_add_category" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:src="@d/ic_category_16dp" android:contentDescription="@g/add_channel_or_category" app:backgroundTint="?attr/primary_100" style="@h/FabMenuMiniIcon"/>
+    </TableRow>
+    <TableRow android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/fab_menu_add_voice" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:src="@d/ic_channel_voice_grey_18dp" android:contentDescription="@g/voice_channel" app:backgroundTint="?attr/primary_100" style="@h/FabMenuMiniIcon"/>
+    </TableRow>
+    <TableRow android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/fab_menu_add_text" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:src="@d/ic_channel_text_grey_18dp" android:contentDescription="@g/text_channel" app:backgroundTint="?attr/primary_100" style="@h/FabMenuMiniIcon"/>
+    </TableRow>
+    <TableRow android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/fab_menu_main" android:focusable="true" android:clickable="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fab_menu_main_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@d/ic_clear_white_24dp" android:layout_column="1" android:contentDescription="@g/cancel" android:elevation="6dp" app:backgroundTint="@c/status_red_500" app:borderWidth="0dp" app:fabSize="0"/>
+    </TableRow>
+</TableLayout>

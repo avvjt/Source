@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:ellipsize="end" android:id="@+id/prune_user_header" android:padding="16dp" android:text="@g/prune_members" android:maxLines="1" style="@h/UiKit_TextView_H1_Bold"/>
+        <View style="@h/UiKit_Divider"/>
+        <TextView android:text="@g/form_label_last_seen" style="@h/UiKit_Settings_Item_Header"/>
+        <com.discord.views.CheckedSetting android:id="@+id/prune_users_history_1_radio" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+        <com.discord.views.CheckedSetting android:id="@+id/prune_users_history_2_radio" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+        <RelativeLayout android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+            <ProgressBar android:id="@+id/prune_users_loading_progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:indeterminate="true" android:layout_alignTop="@+id/prune_users_estimate_text" android:layout_alignBottom="@+id/prune_users_estimate_text" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/uikit_textsize_small" android:id="@+id/prune_users_estimate_text" android:layout_centerInParent="true" style="@h/UiKit_TextView"/>
+        </RelativeLayout>
+        <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+            <com.google.android.material.button.MaterialButton android:id="@+id/prune_user_cancel" android:text="@g/cancel" android:layout_marginEnd="8dp" style="@h/UiKit_Material_Button_Transparent_Fit"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/prune_user_prune" android:text="@g/prune" style="@h/UiKit_Material_Button_Red_Fit"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

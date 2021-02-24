@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/list_item_channel_item_height">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="@dimen/channel_image_size" android:layout_height="@dimen/channel_image_size" android:layout_marginStart="@dimen/standard_spacing"/>
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_big_horizontal_margin" android:layout_marginEnd="@dimen/standard_list_item_icon_size" style="@style/Widget.Twist.List.Title"/>
+    <TextView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/marker" android:layout_width="@dimen/channel_unread_count_size" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/standard_spacing" style="@style/Widget.Twist.List.Marker"/>
+</FrameLayout>

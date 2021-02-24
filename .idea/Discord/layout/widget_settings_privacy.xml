@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/settings_privacy_safe_messaging_header" android:text="@g/user_explicit_content_filter" style="@h/UiKit_Settings_Item_Header"/>
+            <TextView android:textSize="@dimen/uikit_textsize_medium" android:text="@g/user_explicit_content_filter_help" style="@h/UiKit_Settings_Item"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_explicit_2" app:cs_subtext="@g/user_explicit_content_filter_friends_and_non_friends_help" app:cs_text="@g/user_explicit_content_filter_friends_and_non_friends" app:cs_text_color="@c/status_green_500" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_explicit_1" app:cs_subtext="@g/user_explicit_content_filter_non_friends_help" app:cs_text="@g/user_explicit_content_filter_non_friends" app:cs_text_color="@c/status_yellow_500" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_explicit_0" app:cs_subtext="@g/user_explicit_content_filter_disabled_help" app:cs_text="@g/user_explicit_content_filter_disabled" app:cs_text_color="@c/status_red_500" app:cs_view_type="1" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_privacy_defaults_header" android:text="@g/user_dm_settings" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_default_restricted_guilds" app:cs_subtext="@g/user_dm_settings_help" app:cs_text="@g/new_guilds_dm_allowed" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:id="@+id/settings_privacy_friend_source_header" android:text="@g/friend_permitted_source" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_friend_source_0" app:cs_text="@g/friend_permitted_source_all" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_friend_source_1" app:cs_text="@g/friend_permitted_source_mutual_friends" style="@h/UiKit_CheckedSetting_Themed"/>
+            <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_friend_source_2" app:cs_text="@g/friend_permitted_source_mutual_guilds" style="@h/UiKit_CheckedSetting_Themed"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <LinearLayout android:id="@+id/settings_privacy_controls" android:visibility="gone" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/settings_privacy_data_header" android:text="@g/data_privacy_controls" style="@h/UiKit_Settings_Item_Header"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_statistics" app:cs_subtext="@g/data_privacy_controls_usage_statistics_note" app:cs_text="@g/data_privacy_controls_usage_statistics_title" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_personalization" app:cs_subtext="@g/data_privacy_controls_personalization_note_learn_more" app:cs_text="@g/data_privacy_controls_personalization_title" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_screenreader_detection" app:cs_subtext="@g/data_privacy_controls_allow_accessibility_detection_note" app:cs_text="@g/data_privacy_controls_allow_accessibility_detection_title" app:cs_view_type="2" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.discord.views.CheckedSetting android:id="@+id/settings_privacy_basic_service" app:cs_subtext="@g/data_privacy_controls_basic_service_note" app:cs_text="@g/data_privacy_controls_basic_service_title" style="@h/UiKit_CheckedSetting_Themed"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/settings_privacy_request_data" android:text="@g/data_privacy_controls_request_data_download" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@h/UiKit_Material_Button_Outline"/>
+                <TextView android:layout_gravity="center_horizontal" android:id="@+id/request_data_link" android:background="?attr/selectableItemBackground" android:padding="8dp" android:layout_marginBottom="16dp" style="@h/UiKit_TextView"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

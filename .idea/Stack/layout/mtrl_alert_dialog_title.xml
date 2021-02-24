@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@f/P" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@f/O" style="?attr/materialAlertDialogTitlePanelStyle">
+        <ImageView android:id="@android:id/icon" style="?attr/materialAlertDialogTitleIconStyle"/>
+        <androidx.appcompat.widget.DialogTitle android:id="@f/j" style="?attr/materialAlertDialogTitleTextStyle"/>
+    </LinearLayout>
+    <android.widget.Space android:id="@f/N" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/abc_dialog_title_divider_material"/>
+</LinearLayout>

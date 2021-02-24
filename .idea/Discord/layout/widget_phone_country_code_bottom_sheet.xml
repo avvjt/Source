@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/phone_country_code_search" android:padding="8dp" android:hint="@g/search" app:boxBackgroundColor="?attr/colorBackgroundTertiary" style="@h/UiKit_TextInputLayout_Search">
+        <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/phone_country_code_recycler" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

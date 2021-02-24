@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/group_dm_settings_scroll_view" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="@dimen/padding_bottom_fab_screen" style="@h/UiKit_ViewGroup_LinearLayout">
+            <androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" style="@h/UiKit_ViewGroup_ConstraintLayout">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/settings_group_icon" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:placeholderImage="@c/brand_500" app:roundAsCircle="true" style="@h/Avatar_XXLarge"/>
+                <ImageView android:background="@d/drawable_uikit_white_circle" android:layout_width="32dp" android:layout_height="32dp" android:src="@d/ic_upload_image_40dp" android:contentDescription="@g/edit" android:elevation="@dimen/app_elevation" app:layout_constraintEnd_toEndOf="@+id/settings_group_icon" app:layout_constraintRight_toRightOf="@+id/settings_group_icon" app:layout_constraintTop_toTopOf="@+id/settings_group_icon" style="@h/UiKit_ImageView"/>
+                <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textSize="@dimen/uikit_textsize_small" android:gravity="center_horizontal" android:id="@+id/settings_group_icon_label" android:layout_width="wrap_content" android:text="@g/minimum_size" android:maxLines="2" android:layout_centerHorizontal="true" android:textAlignment="center" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="@+id/settings_group_icon" app:layout_constraintLeft_toLeftOf="@+id/settings_group_icon" app:layout_constraintRight_toRightOf="@+id/settings_group_icon" app:layout_constraintStart_toStartOf="@+id/settings_group_icon" app:layout_constraintTop_toBottomOf="@+id/settings_group_icon" style="@h/UiKit_TextView_Subtext"/>
+                <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textColor="@c/brand_500" android:id="@+id/settings_group_icon_remove" android:background="?attr/selectableItemBackground" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:text="@g/remove" android:layout_centerHorizontal="true" app:layout_constraintEnd_toEndOf="@+id/settings_group_icon" app:layout_constraintLeft_toLeftOf="@+id/settings_group_icon" app:layout_constraintRight_toRightOf="@+id/settings_group_icon" app:layout_constraintStart_toStartOf="@+id/settings_group_icon" app:layout_constraintTop_toBottomOf="@+id/settings_group_icon_label" style="@h/UiKit_TextView_Subtext"/>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/channel_settings_edit_name" android:layout_width="0dp" android:hint="@g/form_label_channel_name" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="@+id/settings_group_icon" app:layout_constraintEnd_toEndOf="0" app:layout_constraintLeft_toRightOf="@+id/settings_group_icon" app:layout_constraintRight_toRightOf="0" app:layout_constraintStart_toEndOf="@+id/settings_group_icon" app:layout_constraintTop_toTopOf="0" style="@h/UiKit_TextInputLayout_Primary">
+                    <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View style="@h/UiKit_Settings_Divider"/>
+            <TextView android:text="@g/notification_settings" style="@h/UiKit_Settings_Item_Header"/>
+            <com.discord.widgets.servers.NotificationMuteSettingsView android:id="@+id/group_dm_notifications_mute_settings_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View style="@h/UiKit_Settings_Divider"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/channel_settings_save" android:src="@d/icon_save" android:contentDescription="@g/save_changes" style="@h/Settings_FloatingActionButton"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

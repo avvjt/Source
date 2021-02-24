@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:id="@+id/user_profile_admin_edit_member" android:visibility="gone" android:text="@g/manage_user" app:drawableStartCompat="?attr/ic_settings" style="@h/UiKit_ListItem_Icon"/>
+    <TextView android:id="@+id/user_profile_admin_server_mute" android:visibility="gone" android:text="@g/server_voice_mute" app:drawableStartCompat="?attr/ic_mic_grey" style="@h/UiKit_ListItem_Icon"/>
+    <TextView android:id="@+id/user_profile_admin_server_deafen" android:visibility="gone" android:text="@g/server_deafen" app:drawableStartCompat="?attr/ic_headset_grey" style="@h/UiKit_ListItem_Icon"/>
+    <TextView android:id="@+id/user_profile_admin_server_move" android:visibility="gone" android:text="@g/move_to" app:drawableStartCompat="@d/ic_transfer_red_24dp" style="@h/UiKit_ListItem_Icon"/>
+    <TextView android:id="@+id/user_profile_admin_server_disconnect" android:visibility="gone" android:text="@g/disconnect" app:drawableStartCompat="@d/ic_call_disconnect_24dp" app:drawableTint="@c/status_red" style="@h/UiKit_ListItem_Icon"/>
+    <TextView android:id="@+id/user_profile_admin_kick" android:visibility="gone" android:text="@g/kick" app:drawableStartCompat="@d/ic_remove_friend_red_24dp" style="@h/UiKit_ListItem_Icon"/>
+    <TextView android:id="@+id/user_profile_admin_ban" android:visibility="gone" android:text="@g/ban" app:drawableStartCompat="@d/ic_ban_red_24dp" style="@h/UiKit_ListItem_Icon"/>
+</LinearLayout>

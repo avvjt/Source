@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@c/black" style="@h/UiKit_ViewGroup_Page">
+    <me.dm7.barcodescanner.zxing.ZXingScannerView android:id="@+id/qr_scanner" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.google.android.material.chip.Chip android:textAppearance="@h/UiKit_TextAppearance" android:textColor="@c/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/qr_scanner_chip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@g/qr_code_in_app_scanner_only" app:chipBackgroundColor="@c/brand"/>
+    <com.google.android.material.appbar.AppBarLayout android:layout_gravity="top" style="@h/AppTheme_AppBarLayout_Flat_Transparent">
+        <androidx.appcompat.widget.Toolbar android:background="@c/primary_900_alpha_80" style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+</FrameLayout>

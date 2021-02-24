@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:paddingBottom="64dp" android:focusableInTouchMode="true" style="@h/UiKit_ViewGroup_LinearLayout">
+            <androidx.cardview.widget.CardView android:layout_margin="16dp" app:cardBackgroundColor="?attr/colorBackgroundTertiary" style="@h/UiKit_ViewGroup">
+                <RelativeLayout android:gravity="center_vertical" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                    <FrameLayout android:id="@+id/set_custom_status_emoji_button" android:layout_alignTop="@+id/set_custom_status_text" android:layout_alignBottom="@+id/set_custom_status_text" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ImageView">
+                        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@+id/set_custom_status_emoji" android:layout_width="@dimen/custom_status_emoji_preview_size" android:layout_height="@dimen/custom_status_emoji_preview_size" android:contentDescription="@g/select_emoji" app:actualImageScaleType="2"/>
+                    </FrameLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@+id/set_custom_status_text" android:hint="@g/custom_status_set_custom_status" android:layout_toEndOf="@+id/set_custom_status_emoji_button" app:endIconContentDescription="@g/custom_status_clear_custom_status" app:endIconDrawable="@d/ic_clear_24dp" app:endIconMode="-1" app:endIconTint="?attr/colorInteractiveNormal" style="@h/UiKit_TextInputLayout">
+                        <com.google.android.material.textfield.TextInputEditText android:maxLength="128" android:inputType="none|text|textCapSentences|textAutoCorrect|textAutoComplete" android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText_SingleLine">
+                            <requestFocus/>
+                        </com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <RadioGroup android:id="@+id/set_custom_status_expiration" android:layout_margin="8dp" style="@h/UiKit_ViewGroup">
+                <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/set_custom_status_expiration_never" android:text="@g/custom_status_dont_clear" style="@h/UiKit_ListItem_Icon_Radio"/>
+                <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/set_custom_status_expiration_30_minutes" android:text="@g/custom_status_clear_in_minutes" style="@h/UiKit_ListItem_Icon_Radio"/>
+                <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/set_custom_status_expiration_1_hour" android:text="@g/custom_status_clear_in_hours" style="@h/UiKit_ListItem_Icon_Radio"/>
+                <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/set_custom_status_expiration_4_hours" android:text="@g/custom_status_clear_in_hours" style="@h/UiKit_ListItem_Icon_Radio"/>
+                <com.google.android.material.radiobutton.MaterialRadioButton android:id="@+id/set_custom_status_expiration_tomorrow" android:text="@g/custom_status_clear_tomorrow" style="@h/UiKit_ListItem_Icon_Radio"/>
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@d/img_wumpus_custom_status" android:importantForAccessibility="no" style="@h/UiKit_ImageView_HideInLandscape"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/set_custom_status_save" android:visibility="visible" android:contentDescription="@g/save_changes" style="@h/Settings_FloatingActionButton_Save"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

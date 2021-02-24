@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/colorBackgroundPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.discord.views.CustomAppBarLayout android:id="@+id/app_bar_layout" android:background="?attr/colorBackgroundPrimary" style="@h/AppTheme_AppBarLayout">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="?attr/colorBackgroundPrimary" app:layout_scrollFlags="3">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/community_gating_banner_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="36dp" app:placeholderImage="@d/drawable_default_invite_splash" app:viewAspectRatio="1.77"/>
+                <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:cardBackgroundColor="?attr/colorBackgroundPrimary" app:cardCornerRadius="20dp" app:cardElevation="0dp" app:contentPadding="6dp">
+                    <com.discord.views.CommunityGatingAvatarView android:id="@+id/community_gating_guild_icon" android:layout_width="64dp" android:layout_height="64dp"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <androidx.appcompat.widget.Toolbar android:background="@d/drawable_black_underlay_gradient" app:navigationContentDescription="@g/back" app:navigationIcon="?attr/ic_action_bar_back" style="@h/AppTheme_Toolbar"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.discord.views.CustomAppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/community_gating_scrollview" android:visibility="gone" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <LinearLayout android:layout_below="@+id/app_bar_layout" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:textColor="?attr/colorInteractiveActive" android:layout_width="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="18dp" android:layout_marginRight="16dp" android:text="@g/member_verification_modal_title" style="@h/FriendsList_EmptyState_Title"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:text="@g/member_verification_modal_subtitle" style="@h/UiKit_TextView_Medium"/>
+            <View android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" style="@h/UiKit_Settings_Divider"/>
+            <com.discord.widgets.servers.gating.CommunityGatingVerificationView android:id="@+id/community_gating_verification_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/community_gating_rules_recycler" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@h/UiKit_ViewGroup_RecyclerView"/>
+            <com.discord.views.LoadingButton android:id="@+id/community_gating_rules_confirm" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" app:lb_progress_color="@c/white" app:lb_text="@g/member_verification_notice_cta" style="@h/UiKit_Material_Button"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

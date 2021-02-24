@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/indicator" android:background="@c/status_green" android:visibility="gone" android:paddingStart="16dp" android:paddingEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+    <LinearLayout android:gravity="center" android:id="@+id/indicator_content" android:paddingTop="4dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <ImageView android:id="@+id/indicator_icon" android:layout_marginEnd="8dp" style="@h/UiKit_ImageView"/>
+        <TextView android:textAppearance="@h/UiKit_TextAppearance_Semibold" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/indicator_text" style="@h/UiKit_TextView_SingleLine"/>
+    </LinearLayout>
+</LinearLayout>

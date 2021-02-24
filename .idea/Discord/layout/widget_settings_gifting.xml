@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationIcon="?attr/ic_action_bar_back" app:subtitle="@g/user_settings" app:title="@g/premium_gifting_title" style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/settings_gifting_flipper" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_marginBottom="8dp" android:src="@d/img_poop_dark" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/settings_gifting_retry" android:layout_width="wrap_content" android:text="@g/retry" style="@h/UiKit_Material_Button_Secondary"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:id="@+id/settings_gifting_redeem_codes_header" android:paddingBottom="8dp" android:text="@g/gift_inventory_redeem_codes" style="@h/UiKit_Settings_Item_Header"/>
+                <TextView android:paddingTop="0dp" android:paddingBottom="0dp" android:text="@g/application_entitlement_code_redemption_prompt" style="@h/UiKit_Settings_Item_SubText"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                    <ProgressBar android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/settings_gifting_gift_code_input_progress" android:visibility="gone" android:layout_width="20sp" android:layout_height="20sp" android:layout_marginEnd="16dp"/>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@+id/settings_gifting_gift_code_input_wrap" android:hint="@g/gift_code_hint" style="@h/UiKit_TextInputLayout_Primary">
+                        <com.google.android.material.textfield.TextInputEditText android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </FrameLayout>
+                <TextView android:id="@+id/settings_gifting_gift_inventory_header" android:paddingBottom="0dp" android:layout_marginTop="8dp" android:text="@g/application_library_inventory" style="@h/UiKit_Settings_Item_Header"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/settings_giftting_inventory_recycler" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:animateLayoutChanges="false" style="@h/UiKit_ViewGroup_RecyclerView"/>
+                <LinearLayout android:id="@+id/settings_gifting_purchase_gift_section" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:id="@+id/settings_gifting_select_gift_header" android:paddingBottom="8dp" android:layout_marginTop="8dp" android:text="@g/gift_inventory_select_nitro_gift" style="@h/UiKit_Settings_Item_Header"/>
+                    <com.discord.utilities.view.text.LinkifiedTextView android:id="@+id/premium_tier_2_gift_learn_more" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+                    <com.discord.views.premium.GiftSelectView android:id="@+id/gift_select_premium_tier_2_year" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.discord.views.premium.GiftSelectView android:id="@+id/gift_select_premium_tier_2_month" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+                    <TextView android:textSize="@dimen/uikit_textsize_small" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@g/gift_purchase_google_play_notice" style="@h/UiKit_TextView"/>
+                    <TextView android:id="@+id/settings_gifting_select_classic_gift_header" android:paddingBottom="8dp" android:layout_marginTop="8dp" android:text="@g/gift_inventory_select_nitro_classic_gift" style="@h/UiKit_Settings_Item_Header"/>
+                    <com.discord.utilities.view.text.LinkifiedTextView android:id="@+id/premium_tier_1_gift_learn_more" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView"/>
+                    <com.discord.views.premium.GiftSelectView android:id="@+id/gift_select_premium_tier_1_year" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.discord.views.premium.GiftSelectView android:id="@+id/gift_select_premium_tier_1_month" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+                    <TextView android:textSize="@dimen/uikit_textsize_small" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="@g/gift_purchase_google_play_notice" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.discord.app.AppViewFlipper>
+    <com.discord.utilities.dimmer.DimmerView android:id="@e/dimmer_view" style="@h/UiKit_DimmerView"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

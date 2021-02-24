@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:paddingTop="@dimen/dialog_standard_margin" android:paddingBottom="@dimen/standard_small_spacing" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_button_bar_height">
+        <EditText android:id="@+id/content" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="flagNoFullscreen" android:layout_marginStart="@dimen/dialog_fake_edit_text_standard_margin" android:layout_marginEnd="@dimen/dialog_fake_edit_text_standard_margin" android:importantForAutofill="2" style="@style/Widget.Twist.CustomDialog.EditText"/>
+    </ScrollView>
+    <include android:layout_gravity="bottom" android:id="@+id/rl_dialog_button_bar" android:layout_width="match_parent" android:layout_height="@dimen/dialog_button_bar_height" layout="@layout/button_bar_dialog"/>
+</FrameLayout>

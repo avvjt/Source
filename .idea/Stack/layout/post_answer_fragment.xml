@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:background="?attr/viewBackgroundColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_app_bar_elevation" app:tabIndicatorColor="@color/colorAccent" app:tabIndicatorFullWidth="false" app:tabSelectedTextColor="?android:attr/textColorPrimary" app:tabTextAppearance="@style/TabTextAppearance" app:tabTextColor="?android:attr/textColorSecondary">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/markdown"/>
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preview"/>
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:id="@f/w" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                    <com.google.android.material.textfield.TextInputLayout android:id="@+id/markdownInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" app:boxStrokeColor="@color/text_input_box_color" app:hintTextColor="@color/text_input_box_color" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        <com.google.android.material.textfield.TextInputEditText android:theme="@style/TextInputEditTextStyle" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/markdownEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/body_height" android:imeOptions="flagNoExtractUi"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <me.tylerbwong.stack.markdown.MarkdownTextView android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/previewText" android:background="@drawable/answer_preview_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:minHeight="@dimen/body_height"/>
+                </FrameLayout>
+                <com.google.android.material.checkbox.MaterialCheckBox android:id="@+id/debugPreview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="80dp" android:checked="true" android:text="@string/post_preview" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:textColor="@color/colorTextPrimaryDark" android:id="@+id/postAnswerButton" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/post" android:textAllCaps="false" app:backgroundTint="?attr/colorAccent" app:icon="@drawable/ic_send" app:iconTint="@color/colorTextPrimaryDark" app:layout_anchor="@f/w" app:layout_anchorGravity="800055"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

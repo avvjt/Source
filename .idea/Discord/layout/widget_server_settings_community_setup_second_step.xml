@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/community_first_step_scroll" android:layout_width="wrap_content" style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+    <LinearLayout android:focusableInTouchMode="true" style="@h/UiKit_ViewGroup_LinearLayout">
+        <ImageView android:id="@+id/community_get_started_header_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="?attr/drawable_community_setup_second_step" android:importantForAccessibility="no"/>
+        <com.discord.views.ScreenTitleView android:id="@+id/community_step_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="40dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" app:stv_subtitle="@g/enable_community_modal_step_2_body" app:stv_title="@g/enable_community_modal_step_2_title"/>
+        <com.discord.widgets.servers.community.CommunitySelectorView android:id="@+id/community_guidelines_channel" app:csv_description_text="@g/guild_settings_community_rules_channel_help_mobile" app:csv_subtitle_text="@g/guild_template_name_announcements" app:csv_title_text="@g/form_label_discovery_rules_channel" style="@h/UiKit_ViewGroup_LinearLayout"/>
+        <View style="@h/UiKit_Settings_Divider"/>
+        <com.discord.widgets.servers.community.CommunitySelectorView android:id="@+id/community_updates_channel" app:csv_description_text="@g/guild_settings_community_mod_channel_help_mobile" app:csv_subtitle_text="@g/public_updates_channel_title" app:csv_title_text="@g/guild_settings_community_mod_channel_title" style="@h/UiKit_ViewGroup_LinearLayout"/>
+        <View style="@h/UiKit_Settings_Divider"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" style="@h/UiKit_ViewGroup_LinearLayout">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:src="@d/img_remote_auth_loaded" android:importantForAccessibility="no"/>
+    <TextView android:gravity="center" android:text="@g/qr_code_login_confirm" style="@h/UiKit_TextView_H1"/>
+    <TextView android:textColor="@c/status_red_500" android:layout_marginTop="8dp" android:text="@g/confirm_qr_description" android:textAlignment="center" style="@h/UiKit_TextView"/>
+    <androidx.cardview.widget.CardView android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardCornerRadius="4dp" app:cardElevation="0dp">
+        <com.google.android.material.switchmaterial.SwitchMaterial android:textColor="?attr/colorHeaderPrimary" android:id="@+id/remote_auth_temporary_switch" android:text="@g/confirm_qr_keep_me_signed_in" style="@h/UiKit_ListItem_Switch"/>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.button.MaterialButton android:id="@+id/remote_auth_login_button" android:layout_marginTop="24dp" android:layout_marginBottom="8dp" android:text="@g/confirm_qr_login_on_computer" style="@h/UiKit_Material_Button"/>
+    <com.google.android.material.button.MaterialButton android:textColor="?attr/colorHeaderPrimary" android:id="@+id/remote_auth_cancel_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/cancel" style="@h/UiKit_Material_Button_Transparent"/>
+</LinearLayout>

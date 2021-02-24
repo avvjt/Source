@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/relativeLayout2" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/reference_popup_list_item_height_channel">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="@dimen/standard_icon_size_small" android:layout_height="@dimen/standard_icon_size_small" android:contentDescription="@string/content_description_icon" android:layout_marginStart="@dimen/standard_spacing"/>
+    <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="56dp" android:layout_marginEnd="@dimen/standard_spacing" style="@style/Widget.Twist.List.Title"/>
+</FrameLayout>

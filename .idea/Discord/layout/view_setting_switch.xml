@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup">
+    <RelativeLayout android:id="@+id/setting_container" android:background="?attr/selectableItemBackground" android:padding="16dp" android:focusable="true" android:clickable="true" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <LinearLayout android:layout_centerVertical="true" android:layout_toStartOf="@+id/setting_button" android:layout_alignParentStart="true" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:id="@+id/setting_label" style="@h/UiKit_TextView"/>
+            <TextView android:id="@+id/setting_subtext" android:layout_marginTop="4dp" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/setting_button" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:importantForAccessibility="no" android:layout_marginStart="16dp" android:layout_alignParentEnd="true" app:thumbTint="@c/switch_thumb_color" app:useMaterialThemeColors="true"/>
+    </RelativeLayout>
+</merge>

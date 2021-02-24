@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp">
+    <View android:id="@+id/server_settings_role_item_drag_overlay" android:background="@c/black_alpha_05" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/server_settings_role_item_divider_targeted" android:background="@c/purple_brand" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="3dp" android:layout_alignParentTop="true"/>
+    <FrameLayout android:gravity="center_vertical" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_marginEnd="16dp" style="@h/UiKit_ViewGroup">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/server_settings_role_item_lock_indicator" android:src="?attr/ic_lock" android:contentDescription="@g/help_role_locked" android:layout_marginStart="8dp" style="@h/UiKit_ImageView"/>
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/server_settings_role_item_name" android:singleLine="true" android:layout_marginStart="64dp" style="@h/UiKit_TextView_Semibold"/>
+    </FrameLayout>
+    <View android:id="@+id/server_settings_role_item_bottom_divider" android:layout_alignParentBottom="true" style="@h/UiKit_Settings_Divider"/>
+</RelativeLayout>

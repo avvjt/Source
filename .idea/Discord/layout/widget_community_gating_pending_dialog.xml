@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/colorBackgroundSecondary" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+        <LinearLayout android:layout_gravity="center" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="24dp" android:layout_width="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/community_gating_pending_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:importantForAccessibility="no"/>
+            <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:textColor="?attr/colorInteractiveActive" android:gravity="center" android:id="@+id/pending_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:lineSpacingMultiplier="1" style="@h/UiKit_TextView_Bold"/>
+            <TextView android:gravity="center" android:id="@+id/pending_dialog_desc" android:layout_width="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="24dp" style="@h/UiKit_TextView_Medium"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/community_gating_primary_btn" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:insetTop="0dp" android:insetBottom="0dp" style="@h/UiKit_Material_Button"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/community_gating_secondary_btn" android:paddingLeft="0dp" android:paddingRight="0dp" android:insetTop="0dp" android:insetBottom="0dp" android:backgroundTint="?attr/primary_500" style="@h/UiKit_Material_Button"/>
+            <TextView android:textColor="?attr/colorHeaderSecondary" android:gravity="center" android:id="@+id/community_gating_tertiary_btn" android:background="?attr/colorBackgroundSecondary" android:paddingLeft="0dp" android:paddingTop="20dp" android:paddingRight="0dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@g/leave_server" style="@h/UiKit_TextAppearance_Button"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

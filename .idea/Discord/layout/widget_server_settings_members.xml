@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_CoordinatorLayout_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+        <androidx.cardview.widget.CardView android:layout_margin="8dp" app:cardBackgroundColor="?attr/colorBackgroundTertiary" style="@h/UiKit_ViewGroup">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/server_settings_members_header_container" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/server_settings_members_name_search" android:layout_width="0dp" android:layout_margin="0dp" android:hint="@g/members_search_placeholder" android:layout_weight="2" app:boxBackgroundColor="?attr/colorBackgroundTertiary" style="@h/UiKit_TextInputLayout_Search">
+                    <com.google.android.material.textfield.TextInputEditText style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <Spinner android:gravity="center" android:id="@+id/server_settings_members_roles_spinner" android:background="?attr/colorBackgroundTertiary" android:layout_width="0dp" android:layout_height="match_parent" android:popupBackground="?attr/colorBackgroundTertiary" android:layout_weight="1"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/server_settings_members_view_flipper" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/server_settings_members_recycler" android:scrollbars="vertical" android:clipToPadding="false" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RecyclerView"/>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:clipToPadding="false" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+            <ImageView android:src="?attr/img_empty_search" android:layout_above="@+id/no_results_text" android:layout_centerHorizontal="true" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+            <TextView android:gravity="center" android:id="@+id/no_results_text" android:layout_marginTop="10dp" android:text="@g/guild_members_search_no_result" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@h/UiKit_TextView_Large"/>
+        </RelativeLayout>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

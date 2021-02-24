@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="12dp" style="@h/UiKit_ViewGroup_LinearLayout">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/sticker_store_header_item_expiring" android:visibility="gone" android:layout_width="16sp" android:layout_height="16sp" android:src="@d/ic_warning_circle_24dp" android:contentDescription="@g/sticker_picker_pack_expiring_soon" android:layout_marginEnd="4dp"/>
+        <com.google.android.material.chip.Chip android:textColor="@c/white" android:layout_gravity="center_vertical" android:id="@+id/sticker_store_header_item_new" android:visibility="gone" android:text="@g/_new" android:layout_marginEnd="4dp" style="@h/UiKit_Chip_New"/>
+        <TextView android:textAppearance="@h/UiKit_TextAppearance_Bold" android:textSize="@dimen/uikit_textsize_large" android:textColor="?attr/colorHeaderPrimary" android:id="@+id/sticker_store_header_item_title" style="@h/UiKit_TextView"/>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/sticker_store_header_item_container" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="wrap_content" style="@h/UiKit_ViewGroup_RelativeLayout">
+            <FrameLayout android:id="@+id/sticker_store_header_item_animated" android:background="?attr/primary_200_circle" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_centerVertical="true" android:layout_alignParentStart="true" android:backgroundTint="?attr/colorBackgroundModifierAccent">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@d/ic_play_arrow_24dp" app:tint="?attr/primary_300"/>
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/sticker_store_header_item_premium" android:background="?attr/primary_200_circle" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_centerVertical="true" android:layout_marginStart="8dp" android:layout_toEndOf="@+id/sticker_store_header_item_animated" android:backgroundTint="?attr/colorBackgroundModifierAccent">
+                <ImageView android:padding="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@d/ic_nitro_badge_white" app:tint="?attr/primary_300"/>
+            </FrameLayout>
+            <com.google.android.material.chip.Chip android:id="@+id/sticker_store_header_item_limited" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@h/UiKit_Chip_Limited"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/uikit_textsize_small" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/sticker_store_header_item_subtitle" style="@h/UiKit_TextView"/>
+</LinearLayout>

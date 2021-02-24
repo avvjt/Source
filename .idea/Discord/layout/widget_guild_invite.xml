@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <RelativeLayout android:layout_height="match_parent" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/gradient_invite_splash" android:layout_alignParentTop="true">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/guild_invite_splash" android:layout_width="match_parent" android:layout_height="wrap_content" app:actualImageScaleType="2" app:placeholderImage="@d/drawable_default_invite_splash" app:placeholderImageScaleType="2" app:viewAspectRatio="1.78"/>
+        </FrameLayout>
+        <androidx.core.widget.NestedScrollView android:layout_height="match_parent" android:layout_above="@+id/guild_invite_actions" style="@h/UiKit_ViewGroup_ScrollView">
+            <com.discord.widgets.guilds.invite.WidgetInviteInfo android:gravity="center" android:layout_gravity="center" android:id="@+id/guild_invite_info" style="@h/UiKit_ViewGroup_LinearLayout"/>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:id="@+id/guild_invite_actions" style="@h/UiKit_Copy_Anchor">
+            <com.google.android.material.button.MaterialButton android:id="@+id/guild_invite_cancel" android:visibility="visible" android:text="@g/cancel" style="@h/UiKit_Material_Button_Secondary"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/guild_invite_accept" android:visibility="gone" android:text="@g/instant_invite_accept" style="@h/UiKit_Material_Button"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat_Transparent">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

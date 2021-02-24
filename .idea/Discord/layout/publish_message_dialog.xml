@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <LinearLayout android:id="@+id/notice_header_container" android:layout_width="match_parent" android:layout_height="wrap_content" style="@h/UiKit_ViewGroup_LinearLayout">
+        <TextView android:id="@+id/notice_header" android:padding="16dp" android:layout_width="match_parent" style="@h/UiKit_TextView_H1_Bold"/>
+        <View style="@h/UiKit_Divider"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView">
+        <LinearLayout android:gravity="center" android:id="@+id/notice_body_container" style="@h/UiKit_ViewGroup_LinearLayout">
+            <TextView android:layout_gravity="start" android:id="@+id/notice_body_text" android:padding="16dp" android:layout_width="match_parent" android:textAlignment="textStart" style="@h/UiKit_TextView"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View style="@h/UiKit_Settings_Divider"/>
+    <LinearLayout style="@h/UiKit_Dialog_ButtonContainer">
+        <com.google.android.material.button.MaterialButton android:id="@widgetnoticedialog/CANCEL_BUTTON" android:text="@g/cancel" style="?attr/buttonBarNegativeButtonStyle"/>
+        <com.google.android.material.button.MaterialButton android:id="@widgetnoticedialog/OK_BUTTON" android:text="@g/okay" android:layout_marginStart="8dp" style="?attr/buttonBarPositiveButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

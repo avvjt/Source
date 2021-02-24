@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@h/AppTheme_Dark" android:orientation="vertical" android:layout_width="240dp" android:layout_height="match_parent">
+    <include android:id="@+id/content" layout="@layout/view_overlay_menu_content"/>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:cardBackgroundColor="@c/primary_700" app:cardCornerRadius="8dp" app:cardElevation="8dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/src_toggle" android:padding="16dp" android:src="@d/ic_audio_output_white_24dp" android:layout_weight="1" android:contentDescription="@g/use_speaker" style="@h/UiKit_ImageView_Clickable"/>
+            <ImageView android:id="@+id/mute_toggle" android:padding="16dp" android:src="@d/ic_mic_state_dark" android:layout_weight="1" android:contentDescription="@g/mute" style="@h/UiKit_ImageView_Clickable"/>
+            <ImageView android:id="@+id/disconnect_btn" android:padding="16dp" android:src="@d/ic_call_disconnect_24dp" android:layout_weight="1" android:contentDescription="@g/disconnect_from_voice" app:tint="@c/status_red_500" style="@h/UiKit_ImageView_Clickable"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

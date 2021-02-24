@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@style/ThemeOverlay.Twist.Alert" android:id="@+id/conversation_archive_button" android:background="?attr/selectableItemBackground" android:padding="@dimen/standard_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/icon" android:layout_width="@dimen/standard_list_item_icon_size" android:layout_height="wrap_content" android:scaleType="centerInside"/>
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_avatar_item_height" style="@style/Widget.Twist.List.Title"/>
+</FrameLayout>

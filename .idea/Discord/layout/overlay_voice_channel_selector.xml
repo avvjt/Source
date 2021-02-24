@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:theme="@h/AppTheme_Dark" android:layout_gravity="center" android:id="@+id/dialog_card" android:layout_margin="16dp" app:cardElevation="8dp" style="@h/Overlay_Dialog_Constrained">
+    <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+        <LinearLayout android:gravity="center_vertical" android:background="@c/primary_700" android:focusable="true" android:clickable="true" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <ImageView android:padding="16dp" android:src="@d/ic_volume_up_white_24dp" android:importantForAccessibility="no" app:tint="@c/white" style="@h/UiKit_ImageView"/>
+            <TextView android:textSize="@dimen/uikit_textsize_large" android:textColor="@c/white" android:id="@+id/test" android:layout_width="0dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@g/channel_select" android:layout_weight="1" style="@h/UiKit_TextView_Semibold"/>
+            <ImageView android:id="@+id/close" android:background="?attr/selectableItemBackground" android:padding="16dp" android:src="@c/ic_close_24dp" android:contentDescription="@g/close_window" app:tint="@c/white" style="@h/UiKit_ImageView"/>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/overlay_channel_search" app:boxBackgroundColor="@c/primary_dark_700" style="@h/UiKit_TextInputLayout_Search">
+            <com.google.android.material.textfield.TextInputEditText android:hint="@g/search_channels" style="@h/UiKit_TextInputLayout_EditText_SingleLine_Search"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:textColor="@c/white" android:gravity="center" android:id="@+id/empty_results" android:visibility="gone" android:layout_width="match_parent" android:layout_marginLeft="32dp" android:layout_marginTop="64dp" android:layout_marginRight="32dp" android:text="@g/overlay_no_results" android:drawablePadding="8dp" android:layout_weight="1" android:textAlignment="center" app:autoSizeMinTextSize="8sp" app:autoSizeTextType="1" app:drawableBottomCompat="@d/img_quick_switcher_empty" style="@h/UiKit_TextView_Large"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/results_rv" android:padding="8dp" android:clipToPadding="false" android:layout_weight="1" style="@h/UiKit_ViewGroup_RecyclerView"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

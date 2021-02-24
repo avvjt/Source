@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar style="@h/AppTheme_Toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView app:layout_behavior="@g/action_bar_scrolling_view_behavior" style="@h/UiKit_ViewGroup_ScrollView">
+        <LinearLayout android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+            <RelativeLayout style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_account_username_wrap" android:hint="@g/username" android:layout_toStartOf="@+id/edit_account_tag_layout_container" style="@h/UiKit_TextInputLayout_Primary">
+                    <com.google.android.material.textfield.TextInputEditText android:inputType="textPersonName" style="@h/UiKit_TextInputLayout_EditText">
+                        <requestFocus/>
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <RelativeLayout android:id="@+id/edit_account_tag_layout_container" android:layout_width="80sp" android:layout_alignParentEnd="true" style="@h/UiKit_ViewGroup">
+                    <TextView android:id="@+id/dtddd" android:layout_marginTop="24dp" android:text="#" style="@h/UiKit_TextView_H1"/>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@+id/edit_account_discriminator_wrap" android:hint="@g/user_settings_edit_account_tag" android:layout_toEndOf="@+id/dtddd" app:errorIconDrawable="@null" style="@h/UiKit_TextInputLayout_Primary">
+                        <com.google.android.material.textfield.TextInputEditText android:gravity="center_horizontal" android:maxLength="4" android:inputType="number" android:imeOptions="actionDone" style="@h/UiKit_TextInputLayout_EditText"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/settings_account_save" android:contentDescription="@g/save" style="@h/Settings_FloatingActionButton_Save"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

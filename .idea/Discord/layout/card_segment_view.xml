@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="center" android:layout_centerVertical="true" android:paddingStart="8dp" android:paddingEnd="4dp" android:layout_alignParentEnd="true" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+        <TextView android:id="@+id/card_segment_text" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:paddingStart="0dp" android:paddingEnd="4dp" style="@h/SegmentedControlTab"/>
+        <TextView android:id="@+id/card_segment_badge" android:background="@d/drawable_overlay_mentions" android:visibility="gone" android:layout_marginEnd="4dp" style="@h/Icon_Mentions"/>
+    </LinearLayout>
+</merge>

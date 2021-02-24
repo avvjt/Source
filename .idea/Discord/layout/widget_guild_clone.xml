@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationContentDescription="@g/close" app:navigationIcon="?attr/ic_action_bar_close" style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView style="@h/UiKit_ViewGroup_NestedScrollView_AppBarScrollingViewBehavior">
+        <com.discord.app.AppViewFlipper android:id="@+id/guild_create_flipper" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+            <LinearLayout android:gravity="center_horizontal" android:visibility="gone" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:layout_marginBottom="8dp" android:text="@g/guild_template_resolving_title" style="@h/UiKit_TextView_H2"/>
+                <ProgressBar android:id="@+id/loading_button_progress" android:layout_width="30dp" android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:visibility="gone" android:layout_height="match_parent" style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:layout_marginBottom="8dp" android:text="@g/guild_template_invalid_title" style="@h/UiKit_TextView_H2"/>
+                <TextView android:layout_marginBottom="8dp" android:text="@g/guild_template_invalid_subtitle" style="@h/UiKit_TextView_Subtext"/>
+            </LinearLayout>
+            <LinearLayout style="@h/UiKit_ViewGroup_LinearLayout">
+                <TextView android:textSize="@dimen/uikit_textsize_xxlarge" android:textColor="?attr/colorHeaderPrimary" android:gravity="center" android:layout_width="match_parent" android:layout_marginBottom="8dp" android:text="@g/guild_template_modal_title" style="@h/UiKit_TextView_Bold"/>
+                <TextView android:textSize="@dimen/uikit_textsize_xlarge" android:textColor="?attr/colorHeaderSecondary" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/guild_template_name" android:layout_width="wrap_content" android:text="@g/sample_server_name" android:drawablePadding="8dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:drawableStartCompat="@d/ic_template_32dp" style="@h/UiKit_TextView_Large_SingleLine"/>
+                <include android:layout_gravity="center" android:id="@+id/guild_create_icon_uploader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" layout="@layout/layout_icon_uploader"/>
+                <LinearLayout android:padding="16dp" style="@h/UiKit_Copy">
+                    <TextView android:textSize="12sp" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_marginBottom="8dp" android:text="@g/form_label_server_name" android:textAllCaps="true" android:fontFamily="@font/whitney_bold" style="@h/UiKit_Form_Label"/>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@+id/guild_create_name" android:hint="@g/form_placeholder_server_name" style="@h/UiKit_TextInputLayout">
+                        <com.google.android.material.textfield.TextInputEditText android:layout_marginBottom="8dp" style="@h/UiKit_TextInputLayout_EditText_SingleLine"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.discord.utilities.view.text.LinkifiedTextView android:layout_gravity="start" android:id="@+id/guild_create_guidelines" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginBottom="8dp" style="@h/UiKit_TextView_Subtext"/>
+                    <com.discord.views.LoadingButton android:id="@+id/guild_create_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:lb_background_color="@c/uikit_btn_bg_color_selector_green" app:lb_progress_color="@c/white" app:lb_text="@g/create" app:lb_text_color="@d/button_text_color_primary_100"/>
+                    <TextView android:textSize="12sp" android:textColor="?attr/colorHeaderSecondary" android:id="@+id/guild_create_protip" style="@h/UiKit_TextView"/>
+                </LinearLayout>
+                <LinearLayout android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <View android:background="?attr/colorBackgroundModifierAccent" android:layout_marginTop="16dp" android:layout_marginBottom="@dimen/uikit_textsize_xxlarge" style="@h/UiKit_Divider"/>
+                    <TextView android:text="@g/channels" style="@h/UiKit_TextView_H1_Bold"/>
+                    <TextView android:textColor="?attr/colorTextNormal" android:text="@g/guild_template_modal_channels_descriptions" style="@h/UiKit_TextView_Subtext"/>
+                    <LinearLayout android:background="@d/drawable_rect_rounded_white_corner_radius_8dp" android:paddingBottom="8dp" android:layout_marginTop="8dp" android:paddingStart="8dp" android:paddingEnd="8dp" android:backgroundTint="?attr/colorBackgroundSecondary" style="@h/UiKit_ViewGroup_LinearLayout">
+                        <com.discord.widgets.guilds.create.GuildTemplateChannelsView android:id="@+id/guild_template_preview_channels" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/guild_template_preview_roles_layout" android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@h/UiKit_ViewGroup_LinearLayout">
+                    <TextView android:text="@g/guild_template_modal_roles_header" style="@h/UiKit_TextView_H1_Bold"/>
+                    <TextView android:textColor="?attr/colorTextNormal" android:text="@g/guild_template_modal_roles_description" style="@h/UiKit_TextView_Subtext"/>
+                    <LinearLayout android:background="@d/drawable_rect_rounded_white_corner_radius_8dp" android:paddingBottom="8dp" android:layout_marginTop="8dp" android:paddingStart="8dp" android:paddingEnd="8dp" android:backgroundTint="?attr/colorBackgroundSecondary" style="@h/UiKit_ViewGroup_LinearLayout">
+                        <com.discord.widgets.roles.RolesListView android:id="@+id/guild_template_preview_roles" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.discord.app.AppViewFlipper>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

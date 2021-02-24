@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_user_detail_action_message" android:id="@+id/menu_conversation" android:title="@string/menu_conversation" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_user_detail_action_edit" android:id="@+id/menu_edit_profile" android:title="@string/content_description_edit_profile" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_get_link" android:title="@string/menu_get_link" app:showAsAction="never"/>
+    <item android:id="@+id/menu_workspace_leave" android:title="@string/menu_workspace_leave" app:showAsAction="never"/>
+    <item android:id="@+id/menu_remove_from_workspace" android:title="@string/menu_remove_from_workspace" app:showAsAction="never"/>
+</menu>

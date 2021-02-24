@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:clipChildren="false" style="@h/UiKit_ViewGroup_Page_LinearLayout">
+    <RelativeLayout android:layout_marginBottom="32dp" style="@h/UiKit_ViewGroup_RelativeLayout">
+        <ImageView android:background="@d/bg_premium_bundle_header" android:layout_height="100dp" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+        <ImageView android:layout_marginTop="16dp" android:src="@d/img_logo_discord_nitro_and_boost" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:importantForAccessibility="no" android:layout_marginStart="16dp" style="@h/UiKit_ImageView"/>
+        <ImageView android:layout_height="90dp" android:src="@d/img_premium_and_premium_guild_subscription_header" android:layout_centerInParent="true" android:translationX="-15dp" android:translationY="16dp" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_height="40dp" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="32dp" android:src="?attr/img_plan_activated" android:importantForAccessibility="no" style="@h/UiKit_ImageView"/>
+    <TextView android:gravity="center" android:id="@+id/premium_and_premium_guild_activated_text" android:layout_width="match_parent" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="32dp" style="@h/UiKit_TextView"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/premium_activated_confirm" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="32dp" android:text="@g/premium_upgrade_done_button" style="@h/UiKit_Material_Button"/>
+</LinearLayout>

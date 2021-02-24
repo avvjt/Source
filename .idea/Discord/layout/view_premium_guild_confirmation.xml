@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_vertical" android:id="@+id/premium_guild_confirmation_avatar" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0" style="@h/Avatar_Large"/>
+        <TextView android:textColor="?attr/colorInteractiveActive" android:ellipsize="end" android:id="@+id/premium_guild_confirmation_guild_name" android:layout_width="0dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:maxLines="1" app:layout_constraintLeft_toRightOf="@+id/premium_guild_confirmation_avatar" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@h/UiKit_TextView_Semibold"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" app:layout_constraintLeft_toRightOf="@+id/premium_guild_confirmation_avatar" app:layout_constraintTop_toBottomOf="@+id/premium_guild_confirmation_guild_name" style="@h/UiKit_ViewGroup_LinearLayout_Horizontal">
+            <com.google.android.material.chip.Chip android:id="@+id/premium_guild_confirmation_level_info_previous" app:chipIcon="@d/ic_guild_badge_premium_tier_1_banner" style="@h/UiKit_PremiumGuild_Confirmation_Chip"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/premium_guild_confirmation_upgrade_arrow" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@d/ic_double_carot_right_16dp" android:importantForAccessibility="no" app:tint="@c/status_red_500" style="@h/UiKit_ImageView"/>
+            <com.google.android.material.chip.Chip android:id="@+id/premium_guild_confirmation_level_info_upgrade" app:chipIcon="@d/ic_guild_badge_premium_tier_1_banner" style="@h/UiKit_PremiumGuild_Confirmation_Chip"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

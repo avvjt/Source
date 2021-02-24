@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" style="@h/UiKit_ViewGroup_Page">
+    <com.google.android.material.appbar.AppBarLayout style="@h/AppTheme_AppBarLayout_Flat">
+        <androidx.appcompat.widget.Toolbar app:navigationIcon="?attr/ic_action_bar_back" style="@h/AppTheme_Toolbar_Transparent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.discord.app.AppViewFlipper android:id="@+id/age_verify_view_flipper" android:inAnimation="@anim/activity_slide_horizontal_open_in" android:outAnimation="@anim/activity_slide_horizontal_open_out" style="@h/UiKit_ViewGroup_AppViewFlipper_InCoordinatorLayout">
+        <include android:id="@+id/verify" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_age_verify"/>
+        <include android:id="@+id/confirm" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_age_verify_confirm"/>
+        <include android:id="@+id/underage" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_age_verify_underage"/>
+    </com.discord.app.AppViewFlipper>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

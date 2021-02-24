@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@h/UiKit_ViewGroup_LinearLayout">
+    <TextView android:id="@+id/widget_server_settings_emojis_section" android:text="@g/sample_channel_name" style="@h/UiKit_Settings_Item_Header"/>
+</LinearLayout>

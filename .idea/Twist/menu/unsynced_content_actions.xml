@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_menu_try_again" android:id="@+id/menu_try_again" android:title="@string/menu_try_again"/>
+    <item android:icon="@drawable/ic_menu_copy" android:id="@+id/menu_copy_text" android:title="@string/menu_copy_text"/>
+    <item android:icon="@drawable/ic_menu_delete" android:id="@+id/menu_delete" android:title="@string/menu_delete"/>
+</menu>
