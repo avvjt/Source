@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="72dp">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/avatar" android:background="?attr/textColorPrimaryTint" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:scaleType="center" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:id="@+id/add_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/ic_svg_add_project"/>
+        </FrameLayout>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="center_vertical" android:id="@+id/sn" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/delete_btn" android:visibility="gone" android:layout_width="48dp" android:layout_height="match_parent" android:text="@string/ic_svg_special_trash"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="9dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_alignParentBottom="true" style="?attr/tt_divider"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/margin_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginLeft="72dp" style="?attr/tt_divider"/>
+</LinearLayout>

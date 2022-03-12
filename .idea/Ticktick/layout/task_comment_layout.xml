@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/task_comment_layout" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/comment_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/input_layout" android:layout_below="@+id/toolbar">
+        <com.ticktick.task.view.selectableview.SelectableListView android:id="@+id/task_comment_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:transcriptMode="normal" android:divider="@null" android:dividerHeight="0dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/empty_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/emptyView_img" android:background="@drawable/empty_view_bg_light" android:layout_width="156dp" android:layout_height="156dp" android:layout_marginTop="70dp" android:src="@drawable/empty_view_comment_list_light" android:scaleType="center"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/emptyView_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/agd"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_horizontal" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hs"/>
+    </LinearLayout>
+    <View android:id="@+id/touchable_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/input_layout"/>
+    <View android:id="@+id/bottom_shadow" android:background="@drawable/shadow_corners_8" android:layout_width="match_parent" android:layout_height="10dp" android:layout_marginBottom="-8dp" android:layout_above="@+id/input_layout"/>
+    <com.ticktick.task.view.CustomInputView android:id="@+id/input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/c" android:layout_alignParentBottom="true"/>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

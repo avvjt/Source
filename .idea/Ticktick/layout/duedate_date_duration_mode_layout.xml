@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/duedate_date_duration_layout" android:background="?attr/activity_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_layout">
+    <com.ticktick.task.view.CalendarScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+                <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:paddingLeft="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/ux" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_all_day" android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="match_parent" app:theme="@style/switch_color"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/date_span_header_view" android:layout_width="match_parent" android:layout_height="104dp">
+                <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/left_span_layout" android:paddingLeft="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="135">
+                    <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:id="@+id/left_span_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ayf"/>
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/ej" android:id="@+id/left_span_content" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/left_span_summary" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+                <ImageView android:layout_width="@dimen/divider_1" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" style="?attr/tt_divider"/>
+                <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/right_span_layout" android:paddingLeft="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="224">
+                    <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:id="@+id/right_span_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qe"/>
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/ej" android:id="@+id/right_span_content" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/right_span_summary" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/date_duration_header_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="104dp">
+                <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/left_duration_layout" android:paddingLeft="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:id="@+id/left_duration_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ayf"/>
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/ej" android:id="@+id/left_duration_content" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/left_duration_summary" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+                <com.ticktick.task.view.IconTextView android:textSize="64sp" android:textColor="?attr/editTextUnderlineColor" android:gravity="center" android:layout_width="24dp" android:layout_height="match_parent" android:text="@string/ic_svg_date_duration_right_arraw"/>
+                <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/right_duration_layout" android:paddingLeft="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:id="@+id/right_duration_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qe"/>
+                    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="?attr/ej" android:id="@+id/right_duration_content" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/right_duration_summary" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+            </LinearLayout>
+            <include android:id="@+id/reminder_set_layout" android:layout_width="match_parent" android:layout_height="56dp" layout="@layout/reminder_set_layout"/>
+            <include android:id="@+id/repeat_item_layout" android:layout_width="match_parent" android:layout_height="56dp" layout="@layout/repeat_set_item_layout"/>
+            <include android:id="@+id/repeat_end_item_layout" android:layout_width="match_parent" android:layout_height="56dp" layout="@layout/repeat_end_item_layout"/>
+        </LinearLayout>
+    </com.ticktick.task.view.CalendarScrollView>
+</LinearLayout>

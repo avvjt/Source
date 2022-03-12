@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/upgrade_and_renewals_success_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:id="@+id/close" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginTop="40dp" android:layout_marginRight="16dp" android:text="@string/ic_svg_clear" android:layout_alignParentRight="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="80dp" android:layout_alignParentTop="true">
+        <TextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asp"/>
+        <TextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:id="@+id/tv_renewal_suc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/aso"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white_alpha_100" android:id="@+id/tv_accomplish_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="@color/upgrade_and_renewals_success_btn_text_color" android:gravity="center" android:id="@+id/tv_learn_pro_skill" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:layout_marginBottom="20dp" android:text="@string/learn_pro_skill"/>
+    </RelativeLayout>
+    <ImageView android:layout_width="241dp" android:layout_height="166dp" android:layout_marginRight="16dp" android:layout_marginBottom="72dp" android:src="@drawable/ic_yellow_pro" android:scaleType="fitCenter" android:layout_above="@+id/bottom_layout" android:layout_alignParentRight="true"/>
+</RelativeLayout>

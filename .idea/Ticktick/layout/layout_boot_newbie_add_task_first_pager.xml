@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="176dp">
+        <com.ticktick.task.view.BootNewbieTextLineView android:layout_gravity="bottom|center_horizontal" android:id="@+id/text_line_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.ticktick.task.view.BootNewbieTextLineView android:layout_gravity="bottom|center_horizontal" android:id="@+id/text_line_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.ticktick.task.view.BootNewbieTextLineView android:layout_gravity="bottom|center_horizontal" android:id="@+id/text_line_3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="200dp">
+        <com.ticktick.task.view.BootNewbieTaskSampleView android:layout_gravity="start" android:id="@+id/task_sample_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50dp" app:tIconSrc="@drawable/ic_have_dinner" app:tTaskTitle="@string/ev"/>
+        <com.ticktick.task.view.BootNewbieTaskSampleView android:layout_gravity="end" android:id="@+id/task_sample_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" app:tArrowLocation="1" app:tIconSrc="@drawable/ic_weekly_publication" app:tTaskTitle="@string/ew"/>
+        <com.ticktick.task.view.BootNewbieTaskSampleView android:layout_gravity="start" android:id="@+id/task_sample_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" app:tIconSrc="@drawable/ic_meeting" app:tTaskTitle="@string/ex"/>
+        <com.ticktick.task.view.BootNewbieTaskSampleView android:layout_gravity="end" android:id="@+id/task_sample_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="58dp" app:tArrowLocation="1" app:tIconSrc="@drawable/ic_take_out" app:tTaskTitle="@string/ey"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="end|bottom" android:id="@+id/fl_add_task_indicator" android:layout_width="67dp" android:layout_height="67dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp">
+        <com.ticktick.task.view.ShiningCircleButton android:id="@+id/shining_circle_btn" android:visibility="gone" android:layout_width="67dp" android:layout_height="67dp" app:tAnimationScale="0.6" app:tColor="@color/primary_blue_100" app:tEndAlpha="0.24" app:tStartAlpha="0.24"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ib_add_task" android:visibility="gone" android:layout_width="51dp" android:layout_height="51dp" android:src="@drawable/ic_add" android:scaleType="fitCenter"/>
+    </FrameLayout>
+</FrameLayout>

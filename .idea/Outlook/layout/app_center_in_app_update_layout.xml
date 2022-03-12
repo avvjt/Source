@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+    <ImageView android:importantForAccessibility="no" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <TextView android:textColor="@color/outlook_app_primary_text" android:id="@+id/app_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/app_name" style="@style/TextAppearance.Outlook.Title2"/>
+    <TextView android:textColor="@color/outlook_app_secondary_text" android:id="@+id/app_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" style="@style/TextAppearance.Outlook.Heading1"/>
+    <TextView android:textColor="@color/outlook_app_secondary_text" android:id="@+id/app_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="24dp" style="@style/TextAppearance.Outlook.Heading1"/>
+    <com.microsoft.office.outlook.inappupdate.appcenter.ReleaseNotesNestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:maxHeight="200dp">
+        <TextView android:textColor="@color/outlook_app_secondary_text" android:id="@+id/release_notes" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Outlook.SubHeading"/>
+    </com.microsoft.office.outlook.inappupdate.appcenter.ReleaseNotesNestedScrollView>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_update" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginBottom="24dp" android:text="@string/in_app_update_button" app:cornerRadius="@dimen/no_account_bottom_sheet_button_corner_radius" style="@style/Widget.Outlook.Button.Accent"/>
+</LinearLayout>

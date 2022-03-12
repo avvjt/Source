@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.authentication.internal.HomeRealmDiscoveryView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/hrd_completeview" style="@style/oneauth_root_view_style">
+    <include layout="@layout/progress_common"/>
+    <ScrollView android:gravity="top" android:layout_gravity="top" android:id="@+id/oneauth_hrd_scrollview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/oneauth_hrd_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/oneauth_microsoft_logo" style="@style/oneauth_microsoft_logo_style"/>
+            <TextView android:id="@+id/oneauth_signin_label" style="@style/oneauth_heading_text_style"/>
+            <TextView android:id="@+id/oneauth_signin_instruction" android:layout_marginTop="12dp" style="@style/oneauth_textview_default_style"/>
+            <TextView android:textColor="@color/oneauth_error_color" android:id="@+id/oneauth_account_hint_error_message" android:visibility="gone" android:layout_marginTop="12dp" style="@style/oneauth_textview_default_style"/>
+            <EditText android:id="@+id/oneauth_username" android:layout_marginTop="12dp" android:inputType="textEmailAddress" android:imeOptions="flagNoExtractUi|actionGo" style="@style/oneauth_edittext_default_style"/>
+            <Button android:layout_gravity="end" android:id="@+id/oneauth_hrd_next_button" android:layout_marginTop="20dp" style="@style/oneauth_primary_button_style"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/copyright_privacy_common"/>
+</com.microsoft.authentication.internal.HomeRealmDiscoveryView>

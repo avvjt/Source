@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <TextView android:id="@+id/tips_text2" android:text="@string/arq" style="@style/TextView_Multiline_Message_Preference"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/system_secure_app_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tips_text3" android:text="@string/azl" style="@style/TextView_ListSeparator_Preference"/>
+            <com.ticktick.task.view.selectableview.SelectableLinearLayout android:id="@+id/system_secure_app" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/system_secure_icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:scaleType="fitXY"/>
+                <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="marquee" android:gravity="start" android:layout_gravity="center_vertical" android:id="@+id/system_secure_title" android:paddingRight="24dp" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:singleLine="true"/>
+            </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+            <com.ticktick.task.view.selectableview.SelectableLinearLayout android:id="@+id/system_secure_app_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/system_secure_icon_2" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:scaleType="fitXY"/>
+                <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="marquee" android:gravity="start" android:layout_gravity="center_vertical" android:id="@+id/system_secure_title_2" android:paddingRight="24dp" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:singleLine="true"/>
+            </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+            <com.ticktick.task.view.selectableview.SelectableLinearLayout android:id="@+id/system_secure_app_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/system_secure_icon_3" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:scaleType="fitXY"/>
+                <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="marquee" android:gravity="start" android:layout_gravity="center_vertical" android:id="@+id/system_secure_title_3" android:paddingRight="24dp" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:singleLine="true"/>
+            </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tips_system_secure_app" android:text="@string/au8" style="@style/TextView_ListSeparator_Preference"/>
+            <com.ticktick.task.view.selectableview.SelectableListView android:id="@+id/tips_list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

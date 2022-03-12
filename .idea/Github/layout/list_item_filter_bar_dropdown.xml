@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/filter_container" android:tag="layout/list_item_filter_bar_dropdown_0" android:layout_width="wrap_content" android:layout_height="match_parent" style="@style/FilterBarCell">
+    <ImageView android:layout_gravity="center_vertical" android:tag="binding_1" android:layout_width="@dimen/avatar_16" android:layout_height="@dimen/avatar_16" android:layout_marginEnd="@dimen/default_margin_quarter" app:tint="@drawable/filter_bar_item_icon_foreground"/>
+    <TextView android:textSize="12sp" android:textColor="@color/filterBarCellBackgroundActive" android:gravity="center" android:layout_gravity="center_vertical" android:tag="binding_2" android:background="@drawable/filter_bar_item_active_filter_count_background" android:layout_width="@dimen/avatar_16" android:layout_height="@dimen/avatar_16" android:layout_marginEnd="@dimen/default_margin_quarter" style="@style/Monospace.ExtraSmall"/>
+    <TextView android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/default_margin_quarter" app:drawableEndCompat="@drawable/ic_chevron_down_16" style="@style/FilterBarCellLabel"/>
+</LinearLayout>

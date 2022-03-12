@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/list_item_code_options_preview_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</HorizontalScrollView>

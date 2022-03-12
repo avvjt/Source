@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:statusBarBackground="?attr/colorPrimaryDark">
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:statusBarBackground="?attr/colorPrimaryDark">
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
         <FrameLayout android:id="@+id/settings_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/actionBarSize"/>
         <androidx.appcompat.widget.Toolbar android:theme="?attr/toolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="?attr/toolbarPopupTheme"/>

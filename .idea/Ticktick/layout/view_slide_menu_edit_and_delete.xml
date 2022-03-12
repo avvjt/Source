@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/black_alpha_36_light" android:id="@+id/icon_edit" android:background="?attr/i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_slide_edit"/>
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/black_alpha_36_light" android:id="@+id/icon_delete" android:background="?attr/i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/ic_svg_slide_delete"/>
+</LinearLayout>

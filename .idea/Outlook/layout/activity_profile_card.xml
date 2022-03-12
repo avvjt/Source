@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/profile_card_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/profile_card_app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/profile_card_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1" app:navigationIcon="@drawable/ic_fluent_arrow_left_24_regular">
+            <TextView android:textAppearance="@style/ProfileCardCollapsedHeader" android:ellipsize="end" android:id="@+id/profile_card_toolbar_text" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:paddingEnd="@dimen/outlook_content_inset"/>
+        </com.microsoft.office.outlook.uikit.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/profile_card_scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@+id/profile_card_scroll_view_layout" android:paddingBottom="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/profile_card_header_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/profile_card_avatar_height" android:layout_marginTop="@dimen/profile_card_header_margin_top" android:layout_marginBottom="@dimen/profile_card_header_margin_bottom">
+                    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:textSize="@dimen/profile_card_avatar_text_size" android:id="@+id/profile_card_avatar" android:layout_width="@dimen/profile_card_avatar_width" android:layout_height="@dimen/profile_card_avatar_height" android:layout_marginLeft="@dimen/outlook_content_inset" android:layout_marginRight="@dimen/outlook_content_inset" android:importantForAccessibility="no" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset"/>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Title2" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/profile_card_name" android:paddingRight="@dimen/profile_card_header_text_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:paddingEnd="@dimen/profile_card_header_text_padding_right"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/profile_card_position" android:paddingRight="@dimen/profile_card_header_text_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:paddingEnd="@dimen/profile_card_header_text_padding_right"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/profile_card_company" android:paddingRight="@dimen/profile_card_header_text_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:paddingEnd="@dimen/profile_card_header_text_padding_right"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/profile_card_condensed_contact_details_email_parent" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+                    <ImageView android:src="@drawable/ic_fluent_mail_24_regular" android:tint="@color/outlook_app_icon_tint" style="@style/ListItem.Icon"/>
+                    <TextView android:id="@+id/profile_card_condensed_contact_details_email" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/profile_card_condensed_contact_details_phone_parent" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+                    <ImageView android:src="@drawable/ic_fluent_phone_24_regular" android:tint="@color/outlook_app_icon_tint" style="@style/ListItem.Icon"/>
+                    <TextView android:id="@+id/profile_card_condensed_contact_details_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/profile_card_condensed_contact_details_skype_parent" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+                    <ImageView android:src="@drawable/ic_fluent_office_skype_24_mono" android:tint="@color/outlook_app_icon_tint" style="@style/ListItem.Icon"/>
+                    <TextView android:id="@+id/profile_card_condensed_contact_details_skype" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/profile_card_condensed_contact_details_office_parent" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+                    <ImageView android:src="@drawable/ic_fluent_location_24_regular" android:tint="@color/outlook_app_icon_tint" style="@style/ListItem.Icon"/>
+                    <TextView android:id="@+id/profile_card_condensed_contact_details_office" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+                </LinearLayout>
+                <Button android:textSize="@dimen/outlook_text_size_subheading" android:textStyle="normal" android:id="@+id/profile_card_more_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:text="@string/more_info" android:fontFamily="sans-serif" android:layout_marginStart="56dp" app:textAllCaps="false" style="@style/Widget.Outlook.Button.Borderless.Accent"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/profile_card_messages_layout"/>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/profile_card_files_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/profile_card_file_margin_bottom">
+                            <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/profile_card_divider_height" android:layout_marginTop="@dimen/profile_card_divider_margin_top"/>
+                            <androidx.appcompat.widget.AppCompatButton android:id="@+id/profile_card_see_all_files" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/attachments" style="@style/Widget.Outlook.Button.Header"/>
+                            <FrameLayout android:id="@+id/profile_card_files_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/profile_card_events_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/profile_card_divider_height" android:layout_marginTop="@dimen/profile_card_divider_margin_top"/>
+                        <androidx.appcompat.widget.AppCompatButton android:id="@+id/profile_card_see_all_events" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/people_events_tab_name" style="@style/Widget.Outlook.Button.Header"/>
+                        <FrameLayout android:id="@+id/profile_card_events_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/profile_card_full_contact_details_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                        <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/profile_card_divider_height" android:layout_marginTop="@dimen/profile_card_divider_margin_top"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body2" android:textColor="?attr/colorAccent" android:paddingLeft="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_card_section_header_margin_top" android:text="@string/contact_details" android:paddingStart="@dimen/outlook_content_inset"/>
+                        <FrameLayout android:id="@+id/profile_card_full_contact_details_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/profile_card_add_contact_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/profile_card_divider_height" android:layout_marginTop="@dimen/profile_card_divider_margin_top"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_header_min_height" style="@style/ListItem.Row">
+                            <ProgressBar android:id="@+id/profile_card_sync_contact_progressbar" android:visibility="gone" style="@style/ListItem.Icon"/>
+                            <ImageView android:id="@+id/profile_card_add_contact_icon" android:src="@drawable/ic_fluent_add_24_regular" android:tint="?attr/colorAccent" style="@style/ListItem.Icon"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:id="@+id/profile_card_add_contact_text" android:text="@string/profile_add_contact" style="@style/ListItem.Title.Action"/>
+                                <TextView android:id="@+id/profile_card_message_to_user" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_not_allowed" style="@style/ListItem.Summary"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/profile_card_delete_button" android:background="@drawable/item_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_header_min_height" style="@style/ListItem.Row">
+                        <ImageView android:src="@drawable/ic_fluent_delete_24_regular" android:tint="?attr/dangerPrimary" style="@style/ListItem.Icon"/>
+                        <TextView android:textColor="?attr/dangerPrimary" android:text="@string/action_delete" style="@style/ListItem.Title.Action"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/profile_card_progress_bar_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_card_divider_margin_top">
+                    <ProgressBar android:background="?attr/colorAccentHighlighted" android:layout_width="match_parent" android:layout_height="4dp" android:layout_marginTop="@dimen/profile_card_divider_height" android:indeterminate="true" android:progressDrawable="@drawable/thread_loading_progress" style="?android:attr/progressBarStyleHorizontal"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:visibility="gone" layout="@layout/loading_state"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

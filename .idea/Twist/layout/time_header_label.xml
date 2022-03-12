@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/time_header" android:padding="@dimen/timepicker_separator_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/time_header" android:padding="@dimen/timepicker_separator_padding" android:layout_width="match_parent" android:layout_height="match_parent">
     <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
         <TextView android:gravity="end" android:id="@+id/hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="locale"/>
         <TextView android:id="@+id/separator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timepicker_separator_padding" android:layout_marginRight="@dimen/timepicker_separator_padding" android:importantForAccessibility="no" android:layoutDirection="locale"/>

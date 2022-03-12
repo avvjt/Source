@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.views.NumberCountButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:textSize="@dimen/text_size_large" android:textColor="?attr/colorAccent" android:ellipsize="none" android:background="@drawable/facepile_view_more_selector" android:padding="4dp" android:layout_width="@dimen/design_fab_size_normal" android:layout_height="@dimen/design_fab_size_normal" android:maxLines="1" android:singleLine="true" app:minTextSize="11sp"/>

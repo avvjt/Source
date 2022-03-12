@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="0dp" android:bottom="0dp" android:start="@dimen/lenshvc_gallery_tab_pill_margin_horizontal" android:end="@dimen/lenshvc_gallery_tab_pill_margin_horizontal">
+        <shape>
+            <solid android:color="@color/lenshvc_gallery_tab_inactive_bg"/>
+            <corners android:radius="@dimen/lenshvc_gallery_tab_radius"/>
+            <padding android:left="@dimen/lenshvc_gallery_tab_pill_padding_horizontal" android:top="@dimen/lenshvc_gallery_tab_pill_padding_vertical" android:right="@dimen/lenshvc_gallery_tab_pill_padding_horizontal" android:bottom="@dimen/lenshvc_gallery_tab_pill_padding_vertical"/>
+        </shape>
+    </item>
+</layer-list>

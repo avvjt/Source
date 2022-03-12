@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/lenshvc_image_count_background"/>
+    <stroke android:width="@dimen/lenshvc_gallery_serial_number_box_border_width" android:color="@color/lenshvc_gallery_serial_number_box_border_color"/>
+    <corners android:radius="@dimen/lenshvc_mini_gallery_serial_number_background_radius"/>
+</shape>

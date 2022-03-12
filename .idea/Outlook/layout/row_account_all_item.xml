@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uiappcomponent.widget.account.AccountButton xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/btn_all_account" android:background="@drawable/btn_all_account_background" android:layout_width="@dimen/account_btn_size" android:layout_height="@dimen/account_btn_size" android:layout_marginTop="@dimen/account_btn_margin_vertical" android:src="@drawable/ic_fluent_home_24_filled" android:contentDescription="@string/all_accounts_name"/>

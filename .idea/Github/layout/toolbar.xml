@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.android.views.ScrollableTitleToolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:id="@+id/toolbar" android:tag="layout/toolbar_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/toolbar_height" app:contentInsetStart="@dimen/toolbar_inset_start" app:contentInsetStartWithNavigation="@dimen/toolbar_inset_start" app:popupTheme="@style/ToolbarPopupMenu">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/toolbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin_half">
+        <TextView android:ellipsize="start" android:id="@+id/toolbar_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/Tertiary.Small"/>
+        <TextView android:textSize="@dimen/toolbar_title_text_size" android:ellipsize="start" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/inter_bold"/>
+    </LinearLayout>
+</com.github.android.views.ScrollableTitleToolbar>

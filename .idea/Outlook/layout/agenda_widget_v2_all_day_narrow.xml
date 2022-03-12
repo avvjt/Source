@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/agenda_widget_v2_all_day_root" style="@style/AgendaWidgetV2AllDayNarrowRootItem">
+    <TextView android:textSize="@dimen/agenda_widget_v2_all_day_cell_narrow_text_size" android:id="@+id/all_day_prefix" style="@style/AgendaWidgetAllDayPrefixText"/>
+    <TextView android:textSize="@dimen/agenda_widget_v2_all_day_cell_narrow_text_size" style="@style/AgendaWidgetAllDayColonText"/>
+    <TextView android:textSize="@dimen/agenda_widget_v2_all_day_cell_narrow_text_size" style="@style/AgendaWidgetAllDaySpaceText"/>
+    <TextView android:textSize="@dimen/agenda_widget_v2_all_day_cell_narrow_text_size" android:id="@+id/allDayJoinedText" style="@style/AgendaWidgetAllDayJoinedText"/>
+</LinearLayout>

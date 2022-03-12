@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:layout_width="64dp" android:layout_height="64dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="30dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="24sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:text="Alice Default" android:layout_weight="1"/>
+        <TextView android:textSize="20sp" android:textColor="?attr/grey300" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:text="Microsoft" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

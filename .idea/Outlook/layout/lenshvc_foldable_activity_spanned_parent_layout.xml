@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/lenshvc_foldable_activity_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/lenshvc_spanned_stub" android:visibility="gone" android:layout="@layout/lenshvc_foldable_spanned_view" android:inflatedId="@+id/spanned_stub_inflated" android:layout_width="0dp" android:layout_height="0dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_fluent_resize_image_24_regular" android:id="@+id/txt_compressed" android:title="@string/compress_attachment"/>
+    <item android:icon="@drawable/ic_fluent_image_24_regular" android:id="@+id/txt_original" android:title="@string/compress_attachment_original"/>
+</menu>

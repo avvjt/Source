@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="156dp" android:width="156dp" android:autoMirrored="true" android:viewportWidth="156" android:viewportHeight="156">
+    <path android:fillColor="@color/lenshvc_reorder_empty_image" android:pathData="M0,0h156v156h-156z"/>
+</vector>

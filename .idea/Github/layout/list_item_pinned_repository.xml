@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_pinned_repository_0" android:background="@drawable/pinned_item_background_with_outline" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="152sp" android:layout_marginStart="@dimen/default_margin">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:tag="binding_1" android:layout_width="@dimen/avatar_16" android:layout_height="@dimen/avatar_16" android:layout_marginEnd="@dimen/default_margin_half"/>
+        <TextView android:layout_gravity="center_vertical" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Tertiary"/>
+    </LinearLayout>
+    <TextView android:ellipsize="end" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Header.Section"/>
+    <TextView android:ellipsize="end" android:id="@+id/pinned_repo_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@+id/pinned_repo_followers" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/default_margin_half" app:drawableStartCompat="@drawable/ic_star_fill_16" style="@style/Tertiary"/>
+        <TextView android:id="@+id/pinned_repo_language" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/default_margin_half" android:layout_marginStart="@dimen/default_margin_half" android:layout_marginEnd="@dimen/default_margin_half" app:drawableStartCompat="@drawable/ic_dot_fill_16" style="@style/Tertiary"/>
+    </LinearLayout>
+</LinearLayout>

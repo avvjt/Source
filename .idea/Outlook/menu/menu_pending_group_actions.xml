@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_arrow_counterclockwise_24_regular" android:id="@+id/pending_create_group_retry" android:title="@string/retry_create_group" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_delete_24_regular" android:id="@+id/pending_create_group_discard" android:title="@string/remove_draft_group" outlook:showAsAction="always"/>
+</menu>

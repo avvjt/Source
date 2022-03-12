@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="?attr/sheet_top_shadow" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.ticktick.task.view.selectableview.SelectableRelativeLayout android:id="@+id/agenda_area" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="56dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/already_join_agenda_users" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:layout_gravity="center_vertical" android:id="@+id/attendee_user_count" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.ticktick.task.view.selectableview.SelectableRelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tips_task_attend_no_permission" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+        <com.ticktick.task.view.IconTextView android:textSize="16sp" android:textColor="?attr/iconColorTertiary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_task_attend_no_permission"/>
+        <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/azv"/>
+    </LinearLayout>
+</LinearLayout>

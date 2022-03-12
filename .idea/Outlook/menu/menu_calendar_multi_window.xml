@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_calendar_empty_24_regular" android:id="@+id/menu_open_calendar" android:title="@string/open_calendar" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_dual_screen_24_regular" android:id="@+id/menu_open_calendar_in_new_window" android:title="@string/open_calendar_in_new_window" outlook:showAsAction="always"/>
+</menu>

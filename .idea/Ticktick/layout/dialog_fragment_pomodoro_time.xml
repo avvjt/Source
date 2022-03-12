@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="start|center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/qo"/>
+        <FrameLayout android:layout_gravity="end|center_vertical" android:id="@+id/layout_estimate_pomo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22dp">
+            <androidx.appcompat.widget.AppCompatSpinner android:layout_gravity="end" android:id="@+id/spinner_estimate_pomo" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AppSpinnerUnderlined"/>
+            <View android:id="@+id/view_goto_upgrade" android:layout_width="100dp" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="end|center_vertical" android:id="@+id/tv_estimate_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="start|center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/b4t"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="end|center_vertical" android:id="@+id/tv_total_pomo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="start|center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/b4s"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="end|center_vertical" android:id="@+id/tv_total_focused" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/layout_start_pomo" android:focusable="true" android:clickable="true" android:layout_width="@dimen/pomodoro_btn_width" android:layout_height="@dimen/pomodoro_btn_height" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+        <RelativeLayout android:background="?attr/i" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="16sp" android:textColor="@color/white_alpha_100" android:id="@+id/main_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/ayi" android:layout_centerInParent="true"/>
+            <com.ticktick.task.view.IconTextView android:textSize="10sp" android:textColor="@color/white_alpha_100" android:id="@+id/main_btn_small_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:text="@string/ic_svg_btn_start_pomo" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

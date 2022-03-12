@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.youtube.common.ui.RoundedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/text_badge_horizontal_padding" android:paddingEnd="@dimen/text_badge_horizontal_padding" yt:corners="@dimen/text_badge_corner_radius">
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmCaption03" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.google.android.libraries.youtube.common.ui.RoundedFrameLayout>

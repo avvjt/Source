@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/horizontal_divider" android:showDividers="middle">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <ViewStub android:id="@+id/stub" android:inflatedId="@+id/page_add_account_grid" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_add_account_support" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/onboarding_contact_support" outlook:textAllCaps="false"/>
+</LinearLayout>

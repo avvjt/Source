@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.RecyclerViewEmptySupport android:id="@+id/list" android:scrollbars="vertical" android:fadingEdge="none" android:fadingEdgeLength="0sp" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp" android:smoothScrollbar="true"/>
+    <include android:id="@+id/empty_view_one_pane" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/project_list_view_empty_layout_one_pane"/>
+</RelativeLayout>

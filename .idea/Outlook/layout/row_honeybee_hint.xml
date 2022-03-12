@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/row_hint_root" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:showDividers="none" style="@style/ListItem.Row">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@+id/text_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale"/>
+</LinearLayout>

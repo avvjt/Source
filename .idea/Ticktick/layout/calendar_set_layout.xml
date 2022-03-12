@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.CalendarSetLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/calendar_set_main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/calendar_header_view_layout"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ticktick.task.view.selectableview.SelectableLinearLayout android:orientation="horizontal" android:id="@+id/month_layout" android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="46dp">
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_month" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="2dp" android:singleLine="true"/>
+            <com.ticktick.task.view.IconTextView android:textColor="?attr/iconColorSecondary" android:layout_gravity="center_vertical" android:id="@+id/ic_spinner_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:text="@string/ic_svg_go_to_today"/>
+        </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+    </LinearLayout>
+    <com.ticktick.task.view.CalendarViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ticktick.task.view.CalendarSetLayout>

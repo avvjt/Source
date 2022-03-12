@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
     <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
     <androidx.appcompat.widget.Toolbar android:theme="?attr/toolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
     <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize">
         <LinearLayout android:orientation="vertical" android:id="@+id/check_email_exists_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
-            <TextView android:textAppearance="@style/TextAppearance.Twist.Onboarding.Title" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/form_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_spacing" android:text="@string/user_email_title" android:textAlignment="gravity"/>
+            <TextView android:textAppearance="@style/TextAppearance.Twist.Onboarding.Title" android:gravity="start|center_vertical" android:id="@+id/form_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_spacing" android:text="@string/user_email_title" android:textAlignment="gravity"/>
             <com.google.android.material.textfield.TextInputLayout android:id="@+id/email_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_spacing" android:hint="@string/email">
                 <com.twistapp.ui.widgets.input.TextInputAutoCompleteTextView android:id="@+id/email_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="textEmailAddress" android:imeOptions="flagNoExtractUi"/>
             </com.google.android.material.textfield.TextInputLayout>

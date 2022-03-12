@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:tag="layout/list_item_commit_author_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItemCommit">
+    <ImageView android:tag="binding_1" android:layout_width="@dimen/avatar_32" android:layout_height="@dimen/avatar_32" android:layout_marginEnd="@dimen/default_margin"/>
+    <TextView android:layout_gravity="center_vertical" android:tag="binding_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="?attr/activityBackgroundColor" android:paddingLeft="@dimen/browser_spacing_double" android:paddingRight="@dimen/browser_spacing_double" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/search_error_no_result_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/search_error_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/browser_illustration_moon_error" android:contentDescription="@string/browser_error_common_title"/>
+        <TextView android:textSize="18sp" android:textColor="?attr/errorTitleTextColor" android:gravity="center" android:id="@+id/search_error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/browser_error_common_title" android:textAllCaps="false" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/overflowMenuTextColor" android:gravity="center" android:id="@+id/search_error_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="30dp" android:text="@string/browser_error_comment_description" android:fontFamily="sans-serif"/>
+        <Button android:textSize="14sp" android:id="@+id/search_error_retry" android:text="@string/browser_error_common_action" android:fontFamily="sans-serif-medium" style="@style/BrowserButton"/>
+    </LinearLayout>
+</LinearLayout>

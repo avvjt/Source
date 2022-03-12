@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:icon="@drawable/ic_action_person_add" android:id="@+id/menu_add_user" android:title="@string/menu_add_member" app:showAsAction="ifRoom"/>
     <item android:id="@+id/menu_todoist_task" android:title="@string/menu_todoist_task" app:showAsAction="never"/>
     <item android:id="@+id/menu_get_email" android:title="@string/menu_get_conversation_email" app:showAsAction="never"/>

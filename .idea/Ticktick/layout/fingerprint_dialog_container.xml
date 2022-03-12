@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ticktick.task.view.IconTextView android:textSize="60sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/fingerprint_icon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="30dp" android:layout_centerInParent="true"/>
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:textColor="@color/colorPrimary_light" android:gravity="center" android:id="@+id/f3" android:background="@drawable/action_bar_item_background_inverse" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/ic_svg_clear" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <TextView android:textColor="?android:attr/textColorPrimary" android:layout_gravity="center_horizontal" android:id="@+id/fingerprint_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="@string/tb" style="@android:style/TextAppearance.Material.Body1"/>
+    <TextView android:textAppearance="@android:style/TextAppearance.Material.Subhead" android:textColor="?android:attr/textColorSecondary" android:layout_gravity="center_horizontal" android:id="@+id/fingerprint_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="30dp" android:text="@string/ta"/>
+</LinearLayout>

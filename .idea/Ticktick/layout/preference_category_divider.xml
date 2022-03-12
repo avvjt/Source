@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="32dp">
+    <View android:layout_marginLeft="@dimen/preference_margin" android:layout_centerVertical="true" style="?attr/tt_divider"/>
+</RelativeLayout>

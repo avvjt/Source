@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.SwitchCompat xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mute_notifications_switch" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mute_notifications" android:drawableStart="@drawable/ic_fluent_alert_snooze_24_regular" style="@style/DraftEventSwitch"/>

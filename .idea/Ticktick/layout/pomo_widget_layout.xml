@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="272dp" android:layout_height="56dp" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/widget_bg_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/content_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="22sp" android:id="@+id/pomo_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp"/>
+                <TextView android:textSize="10sp" android:ellipsize="end" android:id="@+id/pomo_task_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:maxLines="1"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/start_pomo" android:background="@drawable/action_bar_item_background_holo_dark" android:layout_width="38dp" android:layout_height="match_parent" android:src="@drawable/ic_pomo_widget_start" android:scaleType="center"/>
+            <ImageView android:id="@+id/exit_pomo" android:background="@drawable/action_bar_item_background_holo_dark" android:layout_width="38dp" android:layout_height="match_parent" android:src="@drawable/ic_pomo_widget_stop" android:scaleType="center"/>
+            <ImageView android:id="@+id/skip_pomo" android:background="@drawable/action_bar_item_background_holo_dark" android:visibility="gone" android:layout_width="38dp" android:layout_height="match_parent" android:src="@drawable/ic_pomo_widget_skip" android:scaleType="center"/>
+            <ImageView android:id="@+id/setting" android:background="@drawable/action_bar_item_background_holo_dark" android:paddingRight="3dp" android:layout_width="38dp" android:layout_height="match_parent" android:src="@drawable/ic_pomo_widget_setting" android:scaleType="center"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/work_pomo_progress" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/widget_pomo_work_progress_bar" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+        <ProgressBar android:id="@+id/relax_pomo_progress" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/widget_relax_work_progress_bar" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+    </RelativeLayout>
+</RelativeLayout>

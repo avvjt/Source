@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fl_load_more" android:background="?attr/expanderLineBackground" android:layout_width="match_parent" android:layout_height="@dimen/standard_list_item_icon_size">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_load_more" android:background="?attr/expanderLineBackground" android:layout_width="match_parent" android:layout_height="@dimen/standard_list_item_icon_size">
     <TextView android:id="@+id/tv_text" android:layout_width="@dimen/standard_list_item_icon_size" android:layout_height="@dimen/standard_list_item_icon_size" android:layout_marginStart="@dimen/standard_spacing" style="@style/Widget.Twist.List.ExpanderText.Round"/>
     <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/pb_progress" android:layout_width="@dimen/pb_load_more_size" android:layout_height="@dimen/pb_load_more_size" android:indeterminate="true" android:layout_marginStart="20dp"/>
 </FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/sliding_container" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.outlook.uikit.view.OMSwipeRefreshLayout android:id="@+id/swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.microsoft.office.outlook.uikit.view.OMRecyclerView android:id="@+id/interesting_calendar_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.microsoft.office.outlook.uikit.view.OMSwipeRefreshLayout>
+    <com.microsoft.office.outlook.illustration.IllustrationStateView android:id="@+id/interesting_calendar_empty_state" android:layout_width="match_parent" android:layout_height="match_parent" app:buttonText="@string/refresh_action" app:illustration="@drawable/illustration_calendar" app:shouldShowButton="true" app:shouldShowSubtitle="false"/>
+</FrameLayout>

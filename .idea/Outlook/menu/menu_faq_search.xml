@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_faq_refresh" android:visible="true" android:title="@string/loading_messages" outlook:actionLayout="@layout/toolbar_indeterminate_progress" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_chevron_left_24_selector" android:id="@+id/menu_back" android:visible="true" android:title="@string/back" outlook:iconTint="@color/icon_white_selector" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_chevron_right_24_selector" android:id="@+id/menu_forward" android:title="@string/forward" outlook:iconTint="@color/icon_white_selector" outlook:showAsAction="always"/>
+</menu>

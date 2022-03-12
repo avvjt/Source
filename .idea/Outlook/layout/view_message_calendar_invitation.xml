@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/message_calendar_invitation_icon" android:background="@drawable/extra_action_circle_background" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_calendar_default" android:scaleType="centerInside" android:tint="?android:attr/colorBackground" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/message_calendar_invitation_calendar_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1"/>
+    <FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/message_calendar_invitation_action_progress_bar" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" style="@style/Widget.Outlook.ProgressBar.Accent"/>
+        <Button android:textColor="@color/blue_text_selector" android:gravity="center_vertical" android:id="@+id/message_calendar_invitation_accept_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48dp" android:minHeight="48dp" android:layout_marginEnd="8dp" style="?attr/outlookAccentBorderlessButtonStyle"/>
+    </FrameLayout>
+</merge>

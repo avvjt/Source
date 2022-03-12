@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/project_next_title" android:tag="layout/list_item_project_next_0" android:background="@color/listItemBackground" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" android:elevation="@dimen/default_elevation"/>

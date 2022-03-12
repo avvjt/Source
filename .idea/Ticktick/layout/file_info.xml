@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="#ff6699ff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/t2"/>
+    <TextView android:id="@+id/file_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textColor="#ff6699ff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/t8"/>
+    <TextView android:id="@+id/file_size" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textColor="#ff6699ff" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/t1"/>
+    <TextView android:id="@+id/file_lastmodified" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    <TextView android:textColor="#ff6699ff" android:id="@+id/file_contents_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sx"/>
+    <TextView android:id="@+id/file_contents" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+</LinearLayout>

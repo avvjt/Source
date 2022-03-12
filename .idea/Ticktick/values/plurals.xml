@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="a">
+        <item quantity="one">Still have %1$s task without due date, set up now?</item>
+        <item quantity="other">Still have %1$s tasks without due date, set up now?</item>
+    </plurals>
+    <plurals name="b">
+        <item quantity="one">%1$d Day Left</item>
+        <item quantity="other">%1$d Days Left</item>
+    </plurals>
+    <plurals name="c">
+        <item quantity="one">%1$d Day Overdue</item>
+        <item quantity="other">%1$d Days Overdue</item>
+    </plurals>
+    <plurals name="d">
+        <item quantity="one">%1$d Day Past</item>
+        <item quantity="other">%1$d Days Past</item>
+    </plurals>
+    <plurals name="e">
+        <item quantity="one">%1$d D</item>
+        <item quantity="other">%1$d D</item>
+    </plurals>
+    <plurals name="f">
+        <item quantity="one">%1$d Hour Left</item>
+        <item quantity="other">%1$d Hours Left</item>
+    </plurals>
+    <plurals name="g">
+        <item quantity="one">%1$d Hour Overdue</item>
+        <item quantity="other">%1$d Hours Overdue</item>
+    </plurals>
+    <plurals name="h">
+        <item quantity="one">%1$d Hour Past</item>
+        <item quantity="other">%1$d Hours Past</item>
+    </plurals>
+    <plurals name="i">
+        <item quantity="one">%1$d Day Left</item>
+        <item quantity="other">%1$d Days Left</item>
+    </plurals>
+    <plurals name="j">
+        <item quantity="one">%1$d Min Left</item>
+        <item quantity="other">%1$d Mins Left</item>
+    </plurals>
+    <plurals name="k">
+        <item quantity="one">%1$d Min Overdue</item>
+        <item quantity="other">%1$d Mins Overdue</item>
+    </plurals>
+    <plurals name="l">
+        <item quantity="one">%1$d Min Past</item>
+        <item quantity="other">%1$d Mins Past</item>
+    </plurals>
+    <plurals name="m">
+        <item quantity="one">%1$d Day Overdue</item>
+        <item quantity="other">%1$d Days Overdue</item>
+    </plurals>
+    <plurals name="n">
+        <item quantity="one">%1$d Day Past</item>
+        <item quantity="other">%1$d Days Past</item>
+    </plurals>
+    <plurals name="o">
+        <item quantity="one">%1$d task</item>
+        <item quantity="other">%1$d tasks</item>
+    </plurals>
+    <plurals name="p">
+        <item quantity="one">%1$s, 1 day ago</item>
+        <item quantity="other">%1$s, %2$s days ago</item>
+    </plurals>
+    <plurals name="q">
+        <item quantity="one">%1$s, 1 day later</item>
+        <item quantity="other">%1$s, %2$s days later</item>
+    </plurals>
+    <plurals name="r">
+        <item quantity="one">%1$s, 1 hour ago</item>
+        <item quantity="other">%1$s, %2$s hours ago</item>
+    </plurals>
+    <plurals name="s">
+        <item quantity="one">%1$s, 1 hour later</item>
+        <item quantity="other">%1$s, %2$s hours later</item>
+    </plurals>
+    <plurals name="t">
+        <item quantity="one">%1$s, 1 minute ago</item>
+        <item quantity="other">%1$s, %2$s minutes ago</item>
+    </plurals>
+    <plurals name="u">
+        <item quantity="one">%1$s, 1 minute later</item>
+        <item quantity="other">%1$s, %2$s minutes later</item>
+    </plurals>
+    <plurals name="v">
+        <item quantity="one">1 day ago</item>
+        <item quantity="other">%1$s days ago</item>
+    </plurals>
+    <plurals name="w">
+        <item quantity="one">Day</item>
+        <item quantity="other">Days</item>
+    </plurals>
+    <plurals name="x">
+        <item quantity="one">%1$d day left of Premium</item>
+        <item quantity="other">%1$d days left of Premium</item>
+    </plurals>
+    <plurals name="y">
+        <item quantity="one">1 hour ago</item>
+        <item quantity="other">%1$s hours ago</item>
+    </plurals>
+    <plurals name="z">
+        <item quantity="one">1 hour later</item>
+        <item quantity="other">%1$s hours later</item>
+    </plurals>
+    <plurals name="a0">
+        <item quantity="one">Total Day</item>
+        <item quantity="other">Total Days</item>
+    </plurals>
+    <plurals name="a1">
+        <item quantity="one">a min ago</item>
+        <item quantity="other">%1$s mins ago</item>
+    </plurals>
+    <plurals name="a2">
+        <item quantity="one">1 minute later</item>
+        <item quantity="other">%1$s minutes later</item>
+    </plurals>
+    <plurals name="a3">
+        <item quantity="one">%1$s Day Later</item>
+        <item quantity="other">%1$s Days Later</item>
+    </plurals>
+    <plurals name="a4">
+        <item quantity="one">Next %1$s Day</item>
+        <item quantity="other">Next %1$s Days</item>
+    </plurals>
+    <plurals name="a5">
+        <item quantity="one">%1$d task due today</item>
+        <item quantity="other">%1$d tasks due today</item>
+    </plurals>
+    <plurals name="a6">
+        <item quantity="one">%1$d task over due</item>
+        <item quantity="other">%1$d tasks over due</item>
+    </plurals>
+    <plurals name="a7">
+        <item quantity="one">%1$d task</item>
+        <item quantity="other">%1$d tasks</item>
+    </plurals>
+    <plurals name="a8">
+        <item quantity="one">The number of sharing members in %1$d list has exceeded 2</item>
+        <item quantity="other">The number of sharing members in %1$d lists has exceeded 2</item>
+    </plurals>
+    <plurals name="a9">
+        <item quantity="one">The number of tasks in %1$d list has exceeded 99</item>
+        <item quantity="other">The number of tasks in %1$d lists has exceeded 99</item>
+    </plurals>
+    <plurals name="a_">
+        <item quantity="one">Congratulations, redeem successfully for %1$d month premium account and your premium will expire on %2$s.</item>
+        <item quantity="other">Congratulations, redeem successfully for %1$d months premium account and your premium will expire on %2$s.</item>
+    </plurals>
+    <plurals name="aa">
+        <item quantity="one">Congratulations, redeem successfully for %1$d year premium account and your premium will expire on %2$s.</item>
+        <item quantity="other">Congratulations, redeem successfully for %1$d years premium account and your premium will expire on %2$s.</item>
+    </plurals>
+    <plurals name="ab">
+        <item quantity="one">%d day early</item>
+        <item quantity="other">%d days early</item>
+    </plurals>
+    <plurals name="ac">
+        <item quantity="one">%d hour early</item>
+        <item quantity="other">%d hours early</item>
+    </plurals>
+    <plurals name="ad">
+        <item quantity="one">%d minute early</item>
+        <item quantity="other">%d minutes early</item>
+    </plurals>
+    <plurals name="ae">
+        <item quantity="one">%d week early</item>
+        <item quantity="other">%d weeks early</item>
+    </plurals>
+    <plurals name="af">
+        <item quantity="one">in 1 time</item>
+        <item quantity="other">in %1$s times</item>
+    </plurals>
+    <plurals name="ag">
+        <item quantity="one">Ends in 1 time</item>
+        <item quantity="other">Ends in %1$s times</item>
+    </plurals>
+    <plurals name="ah">
+        <item quantity="one">%1$d day after completion</item>
+        <item quantity="other">%1$d days after completion</item>
+    </plurals>
+    <plurals name="ai">
+        <item quantity="one">%1$d month after completion</item>
+        <item quantity="other">%1$d months after completion</item>
+    </plurals>
+    <plurals name="aj">
+        <item quantity="one">%1$d week after completion</item>
+        <item quantity="other">%1$d weeks after completion</item>
+    </plurals>
+    <plurals name="ak">
+        <item quantity="one">%1$d year after completion</item>
+        <item quantity="other">%1$d years after completion</item>
+    </plurals>
+    <plurals name="al">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="repeat_week_n_day">
+        <item quantity="one">1 day a week</item>
+        <item quantity="other">%1$d days a week</item>
+    </plurals>
+    <plurals name="an">
+        <item quantity="one">%1$s search result</item>
+        <item quantity="other">%1$s search results</item>
+    </plurals>
+    <plurals name="ao">
+        <item quantity="other">Just now</item>
+    </plurals>
+    <plurals name="ap">
+        <item quantity="one">%1$s member</item>
+        <item quantity="other">%1$s members</item>
+    </plurals>
+    <plurals name="aq">
+        <item quantity="one">%1$d task</item>
+        <item quantity="other">%1$d tasks</item>
+    </plurals>
+    <plurals name="ar">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="as">
+        <item quantity="one"> Day</item>
+        <item quantity="other"> Days</item>
+    </plurals>
+    <plurals name="at">
+        <item quantity="one">%d day </item>
+        <item quantity="other">%d days </item>
+    </plurals>
+    <plurals name="au">
+        <item quantity="one">hr</item>
+        <item quantity="other">hrs</item>
+    </plurals>
+    <plurals name="av">
+        <item quantity="one">%d hr </item>
+        <item quantity="other">%d hrs </item>
+    </plurals>
+    <plurals name="aw">
+        <item quantity="one">min</item>
+        <item quantity="other">mins</item>
+    </plurals>
+    <plurals name="ax">
+        <item quantity="one">%d min </item>
+        <item quantity="other">%d mins </item>
+    </plurals>
+    <plurals name="ay">
+        <item quantity="one">%1$d Task Deleted</item>
+        <item quantity="other">%1$d Tasks Deleted</item>
+    </plurals>
+    <plurals name="az">
+        <item quantity="one">Your password is incorrect. %1$s time left.</item>
+        <item quantity="other">Your password is incorrect. %1$s times left.</item>
+    </plurals>
+    <plurals name="you_become_owner_of_project">
+        <item quantity="one">%1$s has transferred %3$d list in team &quot;%2$s&quot; to you.</item>
+        <item quantity="other">%1$s has transferred %3$d lists in team &quot;%2$s&quot; to you.</item>
+    </plurals>
+    <plurals name="you_become_owner_of_project_with_admin">
+        <item quantity="one">Admin %1$s has transferred %3$d list in team &quot;%2$s&quot; to you.</item>
+        <item quantity="other">Admin %1$s has transferred %3$d lists in team &quot;%2$s&quot; to you.</item>
+    </plurals>
+</resources>

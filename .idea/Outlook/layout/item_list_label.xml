@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="?attr/colorAccent" android:gravity="center_vertical" android:id="@+id/list_label" android:paddingTop="@dimen/list_item_row_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recent" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>

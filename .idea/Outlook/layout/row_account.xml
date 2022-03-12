@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/menu_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@string/account_office365" android:layout_marginEnd="@dimen/outlook_content_inset"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.PopupMenuLarge" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/menu_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/menu_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/lock" android:visibility="gone" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/ic_fluent_lock_shield_24_regular" android:scaleType="center" android:importantForAccessibility="no"/>
+</LinearLayout>

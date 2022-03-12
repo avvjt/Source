@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white_alpha_100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp">
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:textColor="@color/pro_yellow" android:gravity="center" android:id="@+id/close" android:layout_width="56dp" android:layout_height="56dp" android:text="@string/ic_svg_clear" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20sp" android:textColor="@color/pro_yellow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginRight="56dp" android:text="@string/b5q" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fragment_placeholder" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="59dp" android:layout_marginBottom="74dp" android:layout_alignParentTop="true"/>
+    <View android:background="?attr/quickbar_top_shadow" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_shadow_height" android:layout_above="@+id/layout_bottom"/>
+    <RelativeLayout android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/white_alpha_100" android:id="@+id/upgrade_now" android:background="@drawable/selector_positive_button" android:text="@string/b5j" style="@style/BottomBtn"/>
+    </RelativeLayout>
+</RelativeLayout>

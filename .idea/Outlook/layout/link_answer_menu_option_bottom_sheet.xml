@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:importantForAccessibility="no" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Title2" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/link_action_sheet_header" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_answer_link_bottom_sheet_header_height" android:maxLines="1"/>
+    <Button android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/link_action_sheet_open_uri" android:text="@string/action_open" android:drawableStart="@drawable/ic_fluent_open_24_regular" style="@style/TextAppearance_Outlook_ActionSheet"/>
+    <Button android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/link_action_sheet_copy" android:text="@string/action_copy_link" android:drawableStart="@drawable/ic_fluent_copy_24_regular" style="@style/TextAppearance_Outlook_ActionSheet"/>
+    <Button android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/link_action_sheet_view_in_source" android:text="@string/action_view_in_source" android:drawableStart="@drawable/ic_fluent_mail_24_regular" style="@style/TextAppearance_Outlook_ActionSheet"/>
+    <Button android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/link_action_sheet_share_uri" android:text="@string/menu_action_share" android:drawableStart="@drawable/ic_fluent_share_android_24_regular" style="@style/TextAppearance_Outlook_ActionSheet"/>
+</LinearLayout>

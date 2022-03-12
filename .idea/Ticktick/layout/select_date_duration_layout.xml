@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <include android:id="@+id/span_layout" layout="@layout/set_span_layout"/>
+        <include android:id="@+id/wheel_layout" android:visibility="gone" layout="@layout/set_span_wheel_layout"/>
+    </FrameLayout>
+    <include android:id="@+id/buttonPanelLayout" layout="@layout/tt_alert_dialog_button_bar_material"/>
+</LinearLayout>

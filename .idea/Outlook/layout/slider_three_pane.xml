@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.views.SliderLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:acompli="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/slider_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="start" android:layout_width="@dimen/drawer_width_open" android:layout_height="match_parent">
+        <com.acompli.acompli.views.DrawerContentLayout android:id="@+id/drawer_content" android:background="@color/three_pane_drawer_content_background" android:layout_width="@dimen/drawer_width_open" android:layout_height="match_parent" acompli:drawBottomInsetForeground="false" acompli:drawTopInsetForeground="false"/>
+        <View android:layout_gravity="end" android:background="@drawable/vertical_divider" android:layout_width="@dimen/outlook_divider_width" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.acompli.acompli.views.AcompliDualFragmentContainer android:id="@+id/fragments_holder" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" acompli:divider="@drawable/vertical_divider" acompli:dualFragmentMode="fixed" acompli:modalElevation="75dp" acompli:modalMarginBottom="50dp" acompli:modalMarginLeft="120dp" acompli:modalMarginRight="120dp" acompli:modalMarginTop="50dp">
+        <FrameLayout android:id="@+id/main_fragment_container" android:layout_width="0dp" android:layout_height="match_parent"/>
+        <com.acompli.acompli.views.AcompliFragmentContainer android:id="@+id/secondary_fragment_container" android:layout_width="0dp" android:layout_height="match_parent"/>
+    </com.acompli.acompli.views.AcompliDualFragmentContainer>
+</com.acompli.acompli.views.SliderLayout>

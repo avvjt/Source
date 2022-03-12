@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:importantForAccessibility="noHideDescendants" android:paddingStart="12dp" android:paddingEnd="12dp" style="?attr/actionButtonStyle">
+    <ImageView android:id="@+id/icon" android:duplicateParentState="true" android:layout_width="24dp" android:layout_height="match_parent" android:tint="@color/search_icon_tint_color_tablet_selector"/>
+    <ImageView android:id="@+id/icon_drop_down" android:duplicateParentState="true" android:layout_width="20dp" android:layout_height="match_parent" android:src="@drawable/ic_fluent_chevron_down_20_filled" android:tint="@color/search_icon_tint_color_tablet_selector"/>
+</LinearLayout>

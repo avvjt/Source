@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ad8" android:layout_width="match_parent" android:layout_height="128dp">
+    <ImageView android:id="@+id/qu" android:layout_width="128dp" android:layout_height="128dp" android:scaleType="centerCrop"/>
+    <include android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_alignParentRight="true" layout="@layout/kg"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/a2i" android:paddingTop="@dimen/k5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="128dp" android:minHeight="@dimen/k3" android:layout_toLeftOf="@+id/f1">
+        <FrameLayout android:id="@+id/a2h" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k6" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_weight="1"/>
+        <FrameLayout android:id="@+id/a8s" android:paddingTop="@dimen/k9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp">
+            <DateTimeView android:textAppearance="@style/k0" android:layout_gravity="end|top" android:id="@+id/ahc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <Chronometer android:textAppearance="@style/k0" android:layout_gravity="end|top" android:id="@+id/g8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textAppearance="@style/jv" android:layout_gravity="end|bottom" android:id="@+id/sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:singleLine="true"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/a02" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_toRightOf="@+id/qu" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/af" android:background="?android:attr/dividerHorizontal" android:layout_width="match_parent" android:layout_height="1dp" android:layout_toRightOf="@+id/qu" android:layout_above="@+id/a02"/>
+</RelativeLayout>

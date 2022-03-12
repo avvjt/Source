@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/merge_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_below="@+id/toolbar"/>
+    <RelativeLayout android:id="@+id/task_view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="72dp" android:layout_below="@+id/merge_hint"/>
+    <RelativeLayout android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="?android:attr/textColorPrimaryInverse" android:id="@+id/merge_task" android:background="@drawable/selector_positive_button" android:text="@string/aei" style="@style/BottomBtn"/>
+    </RelativeLayout>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

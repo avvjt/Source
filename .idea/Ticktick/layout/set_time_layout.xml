@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/date_picker_height" app:layout_behavior="@string/co">
+            <FrameLayout android:id="@+id/hg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <include android:id="@+id/bottom_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divider_1" layout="@layout/preference_divider"/>
+        <include layout="@layout/tt_alert_dialog_button_bar_material"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/context_container" android:tag="layout/list_item_file_context_0" android:background="@color/collapsedDiffBackground" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <TextView android:textColor="@color/textTertiary" android:id="@+id/file_status" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Secondary.Small"/>
+    <TextView android:textStyle="bold" android:textColor="@color/systemBlue" android:id="@+id/context_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/files_context_load_diff" style="@style/BodyText.Small"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/hover_popup_list_item_spacing_divider" android:showDividers="middle">
+    <com.microsoft.office.outlook.uiappcomponent.hover.internal.HoverLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hover_popup_contact_info_email_row" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fluent_mail_24_regular" android:scaleType="centerInside"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/hover_popup_contact_info_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:maxLines="1" android:singleLine="true"/>
+    </com.microsoft.office.outlook.uiappcomponent.hover.internal.HoverLinearLayout>
+    <com.microsoft.office.outlook.uiappcomponent.hover.internal.HoverLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hover_popup_contact_info_phone_row" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fluent_phone_24_regular" android:scaleType="centerInside"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/hover_popup_contact_info_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:maxLines="1" android:singleLine="true"/>
+    </com.microsoft.office.outlook.uiappcomponent.hover.internal.HoverLinearLayout>
+    <com.microsoft.office.outlook.uiappcomponent.hover.internal.HoverLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/hover_popup_contact_info_message_row" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_fluent_chat_24_regular" android:scaleType="centerInside"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/hover_popup_contact_info_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:maxLines="1" android:singleLine="true"/>
+    </com.microsoft.office.outlook.uiappcomponent.hover.internal.HoverLinearLayout>
+</LinearLayout>

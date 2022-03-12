@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="start" android:id="@+id/file_item_icon" android:src="@drawable/ic_file_blank" android:scaleType="fitCenter" style="@style/ListItem.Icon"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:ellipsize="end" android:id="@+id/file_item_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="1" android:singleLine="true" android:textDirection="locale" android:paddingEnd="8dp"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/file_item_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:textDirection="locale" android:paddingEnd="8dp"/>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider_with_left_content_margin" android:showDividers="middle">
+    <androidx.appcompat.widget.SwitchCompat android:textColor="?android:attr/textColorPrimary" android:id="@+id/scheduling_pick_a_time_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ids_pick_a_time_switch" android:drawableStart="@drawable/ic_fluent_calendar_assistant_24_regular" style="@style/DraftEventSwitch"/>
+    <include android:id="@+id/scheduling_specification_preferences" android:visibility="gone" layout="@layout/find_time_preferences"/>
+    <androidx.appcompat.widget.SwitchCompat android:textColor="?android:attr/textColorPrimary" android:id="@+id/meeting_all_day_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/all_day_meeting" android:drawableStart="@drawable/ic_fluent_clock_24_regular" style="@style/DraftEventSwitch"/>
+    <com.microsoft.office.outlook.calendar.intentbased.ui.MeetingTimesSuggestionView android:id="@+id/meeting_suggestion_view" android:paddingTop="@dimen/outlook_content_inset" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/date_time_controls" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/date_time_container_legacy" layout="@layout/date_time_container_legacy"/>
+        <include android:id="@+id/date_time_container" layout="@layout/date_time_container"/>
+        <TextView android:textAppearance="@style/EventDetailsRecurrenceHint" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/recurrence_rule_description" android:paddingBottom="@dimen/outlook_content_inset" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:drawablePadding="4dp" android:drawableStart="@drawable/ic_fluent_arrow_repeat_all_16_regular" android:textDirection="locale" android:paddingStart="@dimen/outlook_content_keyline_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+    </LinearLayout>
+</merge>

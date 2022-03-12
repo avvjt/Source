@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/widget_title_layout" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="@dimen/widget_titlebar_height" android:minHeight="@dimen/widget_titlebar_height">
+        <ImageView android:id="@+id/widget_title_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_title_background" android:scaleType="fitXY"/>
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/widget_title_text" android:paddingLeft="13dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="160dp" android:maxLines="1"/>
+        <ImageView android:id="@+id/widget_title_spinner" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_widget_folded_spinner" android:scaleType="center" android:layout_toRightOf="@+id/widget_title_text"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/click_to_main_area" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/widget_title_add" android:layout_toRightOf="@+id/widget_title_spinner"/>
+        <ImageView android:id="@+id/widget_title_add" android:layout_width="@dimen/widget_title_icon_width" android:layout_height="match_parent" android:src="@drawable/ic_widget_add" android:scaleType="center" android:minHeight="@dimen/widget_titlebar_height" android:layout_toLeftOf="@+id/widget_title_setting"/>
+        <ImageView android:id="@+id/widget_title_setting" android:layout_width="@dimen/widget_title_icon_width" android:layout_height="match_parent" android:layout_marginRight="3dp" android:src="@drawable/ic_widget_settings" android:scaleType="center" android:minHeight="@dimen/widget_titlebar_height" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</merge>

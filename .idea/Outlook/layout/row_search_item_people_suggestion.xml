@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.acompli.acompli.ui.search.SearchToolbarIconAnchor android:id="@+id/start_button_anchor" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:layout_gravity="center" android:id="@+id/people_list_item_avatar" android:layout_width="@dimen/search_suggestion_avatar_size" android:layout_height="@dimen/search_suggestion_avatar_size" android:layout_marginTop="@dimen/combined_search_item_padding_vertical" android:layout_marginBottom="@dimen/combined_search_item_padding_vertical" android:importantForAccessibility="no" style="@style/Widget.Outlook.PersonAvatar"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/lyt_person_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:ellipsize="end" android:id="@+id/people_suggestion_title" android:paddingTop="@dimen/list_item_row_padding_top" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/people_suggestion_subtitle" android:paddingBottom="@dimen/list_item_row_padding_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+    </LinearLayout>
+</LinearLayout>

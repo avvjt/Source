@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/view_expanded_date_start"/>
+    <com.twistapp.ui.widgets.WrapWidthTextView android:gravity="center_vertical" android:layout_gravity="start" android:id="@+id/content" android:background="?attr/messageBackgroundStartOld" android:padding="@dimen/standard_small_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_big_horizontal_margin" android:layout_marginEnd="@dimen/standard_spacing" style="@style/Widget.Twist.List.Content"/>
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_micro_spacing" android:layout_marginBottom="@dimen/standard_nano_spacing" android:layout_marginStart="@dimen/standard_big_horizontal_margin" android:layout_marginEnd="@dimen/standard_spacing" layout="@layout/view_reactions_old"/>
+</LinearLayout>

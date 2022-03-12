@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/detail_page_app_bar" android:background="@color/music_full_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:stateListAnimator="@null" yt:layout_behavior="com.google.android.apps.youtube.music.ui.appchrome.appbar.MusicAppBarBehavior">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/detail_page_collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" yt:layout_scrollFlags="0x3" yt:titleEnabled="false">
+            <com.google.android.apps.youtube.music.ui.components.toolbar.TouchPassThroughToolbar android:theme="@style/ToolbarMenuItemStyle" android:id="@+id/detail_page_toolbar" android:paddingTop="1px" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginTop="-1px" android:paddingEnd="@dimen/item_extra_small_spacing" yt:layout_collapseMode="1" yt:navigationIcon="@drawable/yt_outline_arrow_left_white_24">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textAppearance="@style/TextAppearance_AppCompat_Widget_ActionBar_Title" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/title_place_holder" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_toStartOf="@+id/menu_layout" android:layout_alignParentStart="true"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/menu_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                        <android.support.v7.widget.RecyclerView android:id="@+id/toolbar_top_level_menu_buttons_anchor" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                        <include android:layout_gravity="center_vertical" android:id="@+id/toolbar_contextual_menu_anchor" android:padding="@dimen/item_medium_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/contextual_menu_anchor"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.apps.youtube.music.ui.components.toolbar.TouchPassThroughToolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <include android:id="@+id/toolbar_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" yt:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:id="@+id/landscape_header_container" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="40"/>
+        <View android:id="@+id/landscape_header_divider" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+        <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@+id/results_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="58">
+            <android.support.v7.widget.RecyclerView android:id="@+id/results_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.google.android.libraries.quantum.fab.FloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/floating_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:tint="@color/ytm_black4" android:contentDescription="@null"/>
+        </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

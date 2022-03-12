@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search_24" android:id="@+id/search_item" android:title="@string/menu_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:iconTint="@color/colorAccent" app:showAsAction="collapseActionView|always"/>
+    <item android:icon="@drawable/ic_plus_circle_24" android:id="@+id/issue_create" android:title="@string/menu_option_create_issue" app:iconTint="@color/colorAccent" app:showAsAction="always"/>
+</menu>

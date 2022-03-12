@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|left" android:orientation="vertical" android:id="@+id/lenshvc_tooltip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/lenshvc_top_arrow" android:visibility="gone" android:layout_width="@dimen/lenshvc_coachmark_width" android:layout_height="@dimen/lenshvc_coachmark_height" android:src="@drawable/lenshvc_tooltip_up_arrow" android:scaleType="fitXY" android:tint="?attr/lenshvc_theme_color" android:elevation="5dp" android:backgroundTint="?attr/lenshvc_theme_color"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/lenshvc_coach_mark_content" android:layout_width="@dimen/lenshvc_teaching_ui_width" android:layout_height="wrap_content" android:elevation="5dp"/>
+    <ImageView android:id="@+id/lenshvc_bottom_arrow" android:layout_width="@dimen/lenshvc_coachmark_width" android:layout_height="@dimen/lenshvc_coachmark_height" android:src="@drawable/lenshvc_tooltip_down_arrow" android:scaleType="fitXY" android:tint="?attr/lenshvc_theme_color" android:layout_marginStart="@dimen/lenshvc_coachmark_margin_start" android:elevation="5dp" android:backgroundTint="?attr/lenshvc_theme_color"/>
+</LinearLayout>

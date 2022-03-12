@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/diff_line_layout" android:tag="layout/list_item_diff_line_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <TextView android:gravity="end" android:id="@+id/line_number" android:tag="binding_1" android:paddingTop="1dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="@dimen/default_margin_2x" android:paddingStart="@dimen/default_margin_half" android:paddingEnd="@dimen/default_margin_quarter" style="@style/Monospace.ExtraSmall"/>
+    <TextView android:id="@+id/diff_line" android:tag="binding_2" android:paddingBottom="@dimen/default_margin_quarter" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:lineSpacingExtra="5sp" android:paddingStart="@dimen/default_margin_half" android:paddingEnd="@dimen/default_margin_half" style="@style/Monospace.Small"/>
+</LinearLayout>

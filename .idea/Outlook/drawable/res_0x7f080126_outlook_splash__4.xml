@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f080131_outlook_splash__5" android:duration="267" android:startOffset="0" android:propertyName="translateXY" android:pathData="M 60,51.102C 60,52.934999999999995 60,51.102 60,51.102" android:propertyXName="translateX" android:propertyYName="translateY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f08013c_outlook_splash__6" android:duration="100" android:startOffset="267" android:propertyName="translateXY" android:pathData="M 60,51.102C 60,52.934999999999995 60,62.102 60,62.102" android:propertyXName="translateX" android:propertyYName="translateY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080147_outlook_splash__7" android:duration="200" android:startOffset="367" android:propertyName="translateXY" android:pathData="M 60,62.102C 60,62.102 60,52.934999999999995 60,51.102" android:propertyXName="translateX" android:propertyYName="translateY"/>
+</set>

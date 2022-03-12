@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.ui.drawer.view.AddButton xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/btn_add_account" android:padding="4dp" android:layout_width="@dimen/account_btn_size" android:layout_height="@dimen/account_btn_size" android:layout_marginTop="@dimen/account_btn_margin_vertical" android:src="@drawable/ic_fluent_mail_24_filled" android:contentDescription="@string/settings_add_account"/>

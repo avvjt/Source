@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/assign_avatar_layout">
+        <RelativeLayout android:layout_width="48dp" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/checkbox_layout" android:layout_width="48dp" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+                <ImageView android:id="@+id/ft" android:paddingTop="5dp" android:layout_width="48dp" android:layout_height="wrap_content" android:src="@drawable/btn_check_buttonless_off_dark"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/project_color" android:layout_width="3dp" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="4dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/ai6" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1"/>
+                <LinearLayout android:id="@+id/assign_avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="16dp">
+                    <ImageView android:id="@+id/assign_avatar" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_marginRight="14dp" android:src="@drawable/default_photo_light"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:ellipsize="end" android:id="@+id/hh" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/tag_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/pomo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_small_task_detail_pomo"/>
+                    <TextView android:textSize="10sp" android:layout_gravity="center_vertical" android:id="@+id/pomo_text" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/reminder_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reminder_small_icon"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/repeat_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/repeat_small_icon"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/attachment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_small_attachment"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/comment_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_small_comment"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_small_icon"/>
+                    <com.ticktick.task.view.SectorProgressView android:layout_gravity="center_vertical" android:id="@+id/ic_progress" android:layout_width="12dp" android:layout_height="12dp"/>
+                    <TextView android:textSize="10sp" android:layout_gravity="center_vertical" android:id="@+id/progress_text" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="2dp" android:minWidth="6dp" android:layout_weight="1"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/project_color_right" android:layout_width="9dp" android:layout_height="9dp"/>
+                    <TextView android:textSize="10sp" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/project_name" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/divider" style="@style/widget_item_line_4x4"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

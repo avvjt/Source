@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/layout" android:background="?attr/itemForeground" android:layout_width="match_parent" android:layout_height="56dp">
+    <include android:id="@+id/photo_layout" android:layout_width="56dp" android:layout_height="56dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" layout="@layout/rounded_image_view_layout"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/right_layout" android:layout_toRightOf="@+id/photo_layout">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:singleLine="true"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/status" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/avb" android:singleLine="true"/>
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/delete_btn" android:layout_width="48dp" android:layout_height="match_parent" android:text="@string/ic_svg_special_trash"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/bottom_divider_full" android:visibility="gone" android:layout_alignParentBottom="true" style="?attr/tt_divider"/>
+    <ImageView android:id="@+id/bottom_divider_not_full" android:visibility="gone" android:layout_marginLeft="56dp" android:layout_alignParentBottom="true" style="?attr/tt_divider"/>
+</RelativeLayout>

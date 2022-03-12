@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/all_voice_commands_layout" android:background="@drawable/voice_settings_row_background" android:paddingLeft="@dimen/padding_16dp" android:paddingTop="@dimen/padding_12dp" android:paddingBottom="@dimen/padding_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/command_section" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginEnd="@dimen/margin_24dp">
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/vhvc_grey13" android:id="@+id/command_section_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/line_spacing_2sp"/>
+            <ImageView android:id="@+id/command_section_arrow" android:layout_width="@dimen/width_20dp" android:layout_height="@dimen/height_20dp" android:src="@drawable/help_view_commands_click_downarrow" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/command_section_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_16dp" android:layout_marginStart="@dimen/margin_10dp" android:layout_marginEnd="@dimen/margin_59dp">
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/vhvc_grey24" android:id="@+id/commands_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

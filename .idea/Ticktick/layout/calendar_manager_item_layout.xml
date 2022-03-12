@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/left_layout" android:layout_width="56dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/ww" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/preference_margin" android:layout_width="match_parent" android:layout_height="?android:attr/listPreferredItemHeight" android:layout_toLeftOf="@+id/account_error" android:layout_toRightOf="@+id/left_layout">
+        <TextView android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextTitle"/>
+        <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="middle" android:id="@+id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/account_error" android:visibility="visible" android:layout_width="52dp" android:layout_height="?android:attr/listPreferredItemHeight" android:text="@string/ic_svg_error" android:layout_alignParentRight="true"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

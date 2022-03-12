@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/filter_container_item_style_base">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ticktick.task.view.selectableview.SelectableTextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:gravity="center" android:id="@+id/tv_have_problem" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/atm" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

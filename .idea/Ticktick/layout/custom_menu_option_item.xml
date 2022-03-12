@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="?attr/custom_menu_background" android:layout_width="match_parent" android:layout_height="48dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/custom_menu_option_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="@mipmap/ic_launcher" android:scaleType="center"/>
+        <TextView android:textSize="@dimen/custom_menu_item_text_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/custom_menu_option_name" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/item_divider" android:layout_width="match_parent" android:layout_height="@dimen/listview_divider_height" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="?attr/custom_menu_option_item_divider_color"/>
+</LinearLayout>

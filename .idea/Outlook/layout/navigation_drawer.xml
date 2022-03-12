@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.views.DrawerContentLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="start" android:id="@+id/drawer_content" android:background="@color/outlook_app_drawer_content" android:fitsSystemWindows="true" android:layout_width="@dimen/left_drawer_width" android:layout_height="match_parent" android:elevation="16dp"/>

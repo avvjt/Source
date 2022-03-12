@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="56dp" android:layout_height="56dp">
+    <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/photo" android:background="?attr/colorHighlight" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/default_photo_light" android:scaleType="fitXY" android:layout_centerInParent="true" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+</RelativeLayout>

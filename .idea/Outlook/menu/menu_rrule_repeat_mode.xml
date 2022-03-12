@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_rrule_repeat_never" android:title="@string/repeat_never"/>
+    <item android:id="@+id/menu_rrule_repeat_daily" android:title="@string/repeat_daily"/>
+    <item android:id="@+id/menu_rrule_repeat_weekly" android:title="@string/repeat_weekly"/>
+    <item android:id="@+id/menu_rrule_repeat_monthly" android:title="@string/repeat_monthly"/>
+    <item android:id="@+id/menu_rrule_repeat_yearly" android:title="@string/repeat_yearly"/>
+</menu>

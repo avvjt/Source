@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_dash_box" android:layout_width="@dimen/quick_date_basic_box_item_width" android:layout_height="@dimen/quick_date_basic_box_item_height">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="48dp">
+            <com.ticktick.task.view.IconTextView android:textSize="48sp" android:textColor="?attr/ej" android:layout_gravity="center" android:id="@+id/icon_type" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="?attr/ej" android:layout_gravity="center" android:id="@+id/tv_icon_value" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

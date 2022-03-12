@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/task_item_height_normal">
+        <ProgressBar android:id="@+id/sync_progress_bar" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="16dp" android:layout_marginRight="12dp"/>
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/sync_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/azi"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@+id/gta_listitem_divier" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" style="?attr/tt_divider"/>
+</com.ticktick.task.view.selectableview.SelectableLinearLayout>

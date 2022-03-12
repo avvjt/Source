@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_fluent_arrow_reply_all_24_regular" android:left="@dimen/hover_popup_action_icon_padding" android:top="@dimen/hover_popup_action_icon_padding" android:right="@dimen/hover_popup_action_icon_padding" android:bottom="@dimen/hover_popup_action_icon_padding"/>
+</layer-list>

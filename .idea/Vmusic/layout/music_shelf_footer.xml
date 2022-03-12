@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmCaption02" android:id="@+id/disclaimer_text" android:paddingTop="@dimen/item_small_spacing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/item_extra_large_spacing" android:paddingEnd="@dimen/item_medium_spacing"/>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/bottom_button_container" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/music_shelf_bottom_command_width" style="@style/Widget.GreyBorderTransparentButton">
+        <com.google.android.libraries.youtube.common.ui.YouTubeButton android:textAppearance="@style/TextAppearance.YouTubeMusic.Button1" android:gravity="center" android:layout_gravity="center" android:id="@+id/bottom_button" android:background="@null" android:paddingTop="@dimen/item_small_spacing" android:paddingBottom="@dimen/item_small_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/item_small_spacing"/>
+    </FrameLayout>
+</LinearLayout>

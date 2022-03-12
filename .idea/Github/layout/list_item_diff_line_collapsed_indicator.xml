@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/list_item_diff_line_collapsed_indicator_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include layout="@layout/list_item_divider"/>
+    <TextView android:textColor="@color/textTertiary" android:gravity="center" android:id="@+id/diff_line_collapsed_indicator_text" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="28dp" android:lineSpacingExtra="5sp" android:paddingStart="@dimen/default_margin_half" android:paddingEnd="@dimen/default_margin_half" style="@style/Tertiary.Small"/>
+    <include layout="@layout/list_item_divider"/>
+</LinearLayout>

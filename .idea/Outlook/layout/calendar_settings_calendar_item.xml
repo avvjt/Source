@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/settings_title_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_weight="1" android:layout_marginEnd="8dp">
+        <TextView android:id="@+id/settings_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+        <TextView android:id="@+id/settings_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/default_calendar" style="@style/ListItem.Summary"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/settings_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

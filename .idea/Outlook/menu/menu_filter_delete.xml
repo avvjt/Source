@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_delete_dismiss_24_regular" android:id="@+id/action_empty_trash" android:title="@string/empty_trash" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_delete_dismiss_24_regular" android:id="@+id/action_empty_spam" android:title="@string/empty_spam" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_filter_24_filled" android:id="@+id/action_filter" android:title="@string/filter" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="always"/>
+</menu>

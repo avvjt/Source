@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lenshvc_image_download_failed" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18sp" android:textColor="@color/lenshvc_color_white" android:gravity="center" android:id="@+id/download_failed_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:textAlignment="center" android:lineHeight="24sp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="?attr/lenshvc_theme_color" android:id="@+id/lenshvc_discard_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lenshvc_discard_image_dialog_discard" android:layout_marginEnd="40dp"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/lenshvc_theme_color" android:id="@+id/lenshvc_retry_download_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lenshvc_retry_image_download"/>
+    </LinearLayout>
+</LinearLayout>

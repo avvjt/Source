@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/list_item_notification_summary_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <Space android:layout_width="@dimen/notification_icon_size" android:layout_height="@dimen/notification_icon_size"/>
+    <ImageView android:id="@+id/notification_avatar" android:tag="binding_1" android:layout_width="@dimen/avatar_16" android:layout_height="@dimen/avatar_16" android:layout_marginStart="@dimen/default_margin_0_75x"/>
+    <TextView android:ellipsize="end" android:tag="binding_2" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="@dimen/default_margin_quarter" android:layout_marginEnd="@dimen/default_margin_quarter" style="@style/Tertiary"/>
+    <ImageView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_notification_saved" android:contentDescription="@string/notifications_filter_saved" app:tint="@color/orange_500"/>
+</LinearLayout>

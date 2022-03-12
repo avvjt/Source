@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="@dimen/outlook_content_keyline_inset" android:insetRight="@dimen/outlook_content_inset">
+    <shape>
+        <size android:height="@dimen/outlook_divider_height"/>
+        <solid android:color="@color/outlook_app_divider"/>
+    </shape>
+</inset>

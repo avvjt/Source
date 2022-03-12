@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="4dp">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_radio_button_24_regular" android:importantForAccessibility="no"/>
+    <EditText android:textSize="16sp" android:id="@+id/create_task_input" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/create_task_input_hint" android:maxLength="@integer/todo_task_name_max_length" android:layout_weight="1" android:imeOptions="flagNoExtractUi|actionDone" android:imeActionLabel="@string/create_task_submit_button" android:layout_marginStart="12dp" android:importantForAutofill="no"/>
+    <ImageButton android:id="@+id/create_task_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_todo_button_selector" android:minWidth="48dp" android:contentDescription="@string/create_task_submit_button" style="@style/Widget.AppCompat.Button.Borderless"/>
+</LinearLayout>

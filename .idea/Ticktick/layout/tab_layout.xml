@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.tabs.TabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="?attr/k" app:tabBackground="?attr/activity_background" app:tabGravity="0" app:tabIndicatorColor="?attr/ej" app:tabIndicatorHeight="2dp" app:tabMaxWidth="0dp" app:tabMode="1" app:tabSelectedTextColor="?android:attr/textColorPrimary" app:tabTextColor="?android:attr/textColorSecondary"/>

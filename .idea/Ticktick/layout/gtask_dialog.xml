@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="0dp" android:minHeight="48dp" android:layout_weight="1">
+        <TextView android:gravity="center_vertical" android:id="@+id/dialog_message" android:paddingLeft="?attr/go" android:paddingTop="@dimen/aa" android:paddingRight="?attr/go" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:lineSpacingMultiplier="1.4" style="@style/ai"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dialog_setview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/list_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp">
+            <com.ticktick.task.view.selectableview.SelectableListView android:id="@android:id/list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="8dp" android:drawSelectorOnTop="false" android:dividerHeight="@dimen/divider_height" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/tt_alert_dialog_button_bar_material"/>
+</LinearLayout>

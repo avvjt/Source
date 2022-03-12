@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <set>
+            <objectAnimator android:duration="@integer/q" android:valueTo="@dimen/j4" android:valueType="floatType" android:propertyName="translationZ"/>
+            <objectAnimator android:duration="0" android:valueTo="@dimen/it" android:valueType="floatType" android:propertyName="elevation"/>
+        </set>
+    </item>
+    <item android:state_enabled="true" android:state_hovered="true">
+        <set>
+            <objectAnimator android:duration="@integer/q" android:valueTo="@dimen/iv" android:valueType="floatType" android:propertyName="translationZ"/>
+            <objectAnimator android:duration="0" android:valueTo="@dimen/it" android:valueType="floatType" android:propertyName="elevation"/>
+        </set>
+    </item>
+    <item android:state_focused="true" android:state_enabled="true">
+        <set>
+            <objectAnimator android:duration="@integer/q" android:valueTo="@dimen/iu" android:valueType="floatType" android:propertyName="translationZ"/>
+            <objectAnimator android:duration="0" android:valueTo="@dimen/it" android:valueType="floatType" android:propertyName="elevation"/>
+        </set>
+    </item>
+    <item android:state_enabled="true">
+        <set>
+            <objectAnimator android:duration="@integer/q" android:valueTo="@dimen/j_" android:valueType="floatType" android:propertyName="translationZ"/>
+            <objectAnimator android:duration="0" android:valueTo="@dimen/it" android:valueType="floatType" android:propertyName="elevation"/>
+        </set>
+    </item>
+    <item>
+        <set>
+            <objectAnimator android:duration="0" android:valueTo="@dimen/is" android:valueType="floatType" android:propertyName="translationZ"/>
+            <objectAnimator android:duration="0" android:valueTo="@dimen/ir" android:valueType="floatType" android:propertyName="elevation"/>
+        </set>
+    </item>
+</selector>

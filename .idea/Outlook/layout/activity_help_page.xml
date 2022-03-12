@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:navigationContentDescription="@string/ar" app:title="@string/ew"/>
+    <ScrollView android:id="@+id/helpScrollView" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/helpMainLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/vhvc_black1" android:id="@+id/helpHeading1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_22dp" android:text="@string/ex" android:layout_marginStart="@dimen/margin_16dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="@dimen/text_size_14sp" android:id="@+id/dictationHelpSupportPreText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_25dp" android:text="@string/fj" android:layout_marginStart="@dimen/margin_16dp" app:layout_constraintBottom_toBottomOf="@+id/helpMainLayout" app:layout_constraintStart_toStartOf="0"/>
+            <TextView android:textSize="@dimen/text_size_14sp" android:id="@+id/dictationHelpSupportLinkText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_25dp" android:text="@string/ga" android:layout_marginStart="@dimen/margin_5dp" app:layout_constraintBaseline_toBaselineOf="@+id/dictationHelpSupportPreText" app:layout_constraintBottom_toBottomOf="@+id/helpMainLayout" app:layout_constraintStart_toEndOf="@+id/dictationHelpSupportPreText"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <WebView android:id="@+id/helpAndSupportView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/photo_layout" android:layout_width="56dp" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/avatar" android:background="?attr/colorHighlight" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/default_photo_light" android:scaleType="fitXY" android:layout_centerInParent="true" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/right_layout" android:layout_toRightOf="@+id/photo_layout" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="8dp">
+                <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/username_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/modify_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:singleLine="true"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true">
+            <com.ticktick.task.view.IconTextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_gravity="center" android:id="@+id/comment_count_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="6dp" android:text="@string/ic_svg_comment_small" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/comment_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/comment_count_icon" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp">
+        <TextView android:textSize="16sp" android:id="@+id/alias" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cert_alias" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/alias_value" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:id="@+id/name" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cert_name" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/name_value" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:id="@+id/subject" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/subject_name" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/subject_value" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:id="@+id/verification" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verification" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/verification_value" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:id="@+id/key_usage" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/key_usage" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/key_usage_value" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:id="@+id/validity" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/validity_correct" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/issued_on" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/expires_on" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/detail_coordinatorlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/content_section" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <LinearLayout android:orientation="horizontal" style="@style/GroupCard_Row">
+                    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:layout_gravity="top" android:id="@+id/group_avatar" android:layout_width="@dimen/group_card_avatar_width" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Widget.Outlook.PersonAvatar"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/group_card_details_section_margin_left" android:layout_marginStart="@dimen/group_card_details_section_margin_left">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Title2" android:gravity="center_vertical" android:id="@+id/group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/group_privacy" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/group_description_block" android:visibility="gone" style="@style/GroupCard_Row">
+                        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="@dimen/group_card_icon_size" android:layout_height="@dimen/group_card_icon_size" android:src="@drawable/ic_fluent_text_description_24_regular" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/group_card_icon_margin_right"/>
+                            <TextView android:id="@+id/group_description" style="@style/GroupCard_Title"/>
+                        </LinearLayout>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?attr/colorAccent" android:gravity="center_horizontal" android:id="@+id/group_description_expansion_control_text" android:paddingTop="@dimen/group_card_group_description_expansion_control_text_padding_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:textAllCaps="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/group_follow_block" android:visibility="gone" style="@style/GroupCard_ActionRow">
+                        <TextView android:text="@string/settings_group_follow_in_inbox" android:drawableStart="@drawable/ic_fluent_mail_inbox_24_regular" style="@style/GroupCard_Title"/>
+                        <androidx.appcompat.widget.SwitchCompat android:textAppearance="?android:attr/textAppearanceSmall" android:layout_gravity="end" android:id="@+id/follow_in_inbox_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/settings_group_follow_in_inbox"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ProgressBar android:id="@+id/progress_bar" android:background="?attr/colorAccentHighlighted" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/group_card_progress_bar_height" android:layout_marginTop="@dimen/profile_card_divider_margin_top" android:indeterminate="true" android:progressDrawable="@drawable/thread_loading_progress" style="?android:attr/progressBarStyleHorizontal"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/preview_members_section" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="beginning">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/group_card_members_section_header" style="@style/ListItem.Header"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/members_listview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <include android:visibility="gone" layout="@layout/profile_card_messages_layout"/>
+                <FrameLayout android:id="@+id/group_card_events_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <FrameLayout android:id="@+id/recent_files_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:id="@+id/one_note_layout" android:visibility="gone" style="@style/GroupCard_ClickableRow">
+                    <com.microsoft.office.outlook.uikit.widget.OMTextView android:textColor="?attr/colorAccent" android:id="@+id/one_note_link" android:text="@string/launch_onenote" android:drawableStart="@drawable/filetype_one_24" style="@style/GroupCard_ClickableRowTriggerText"/>
+                </LinearLayout>
+                <LinearLayout style="@style/GroupCard_ClickableRow">
+                    <com.microsoft.office.outlook.uikit.widget.OMTextView android:textColor="?attr/dangerPrimary" android:id="@+id/leave_group_trigger_text_view" android:background="@drawable/item_background" android:visibility="gone" android:text="@string/leave_group" android:drawableStart="@drawable/ic_fluent_sign_out_24_regular" outlook:drawableTint="?attr/dangerPrimary" style="@style/GroupCard_ClickableRowTriggerText"/>
+                    <com.microsoft.office.outlook.uikit.widget.OMTextView android:textColor="?attr/colorAccent" android:id="@+id/join_group_trigger_text_view" android:background="@drawable/item_background" android:visibility="gone" android:drawableStart="@drawable/ic_fluent_people_add_24_regular" outlook:drawableTint="?attr/colorAccent" style="@style/GroupCard_ClickableRowTriggerText"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/managed_membership_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dynamic_group_membership_message"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.acompli.acompli.views.ErrorView android:id="@+id/error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

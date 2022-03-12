@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/browser_menu_item_root" android:background="?android:attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="@dimen/browser_overflow_item_height">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/browser_menu_item_icon" android:padding="10dp" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_fluent_mail_add_24_regular" android:scaleType="centerCrop" app:tint="?attr/iconTintColor"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/overflowMenuTextColor" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/browser_menu_item_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/browser_spacing_small" android:lines="2" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</RelativeLayout>

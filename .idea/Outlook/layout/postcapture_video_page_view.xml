@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.lens.lenspostcapture.ui.video.VideoPageLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:id="@+id/videoPageViewRoot" android:background="@color/lenshvc_black" android:paddingLeft="8dp" android:paddingRight="8dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="8dp"/>

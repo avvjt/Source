@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/widget_item_layout" android:background="@drawable/item_background_holo_dark" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="@dimen/widget_item_height">
+        <ImageView android:id="@+id/widget_color" style="@style/widget_item_color"/>
+        <ImageView android:id="@+id/widget_item_check" android:layout_width="42dp" android:layout_height="match_parent" android:src="@null" style="@style/widget_item_check_4x4"/>
+        <TextView android:id="@+id/widget_item_text" style="@style/widget_item_text_4x4"/>
+        <TextView android:id="@+id/widget_item_date" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" style="@style/widget_item_date_4x4"/>
+        <ImageView android:id="@+id/widget_assign_photo" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="9dp"/>
+    </LinearLayout>
+</LinearLayout>

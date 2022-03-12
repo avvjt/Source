@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/provider_accessor_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/qu" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="16dp" android:src="@mipmap/ic_launcher" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/content_layout" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="64dp" android:layout_toLeftOf="@+id/access_toggle" android:layout_toRightOf="@+id/qu" android:layout_centerVertical="true">
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/name" android:paddingLeft="8dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TickTick" android:singleLine="true"/>
+        <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/access_time" android:paddingLeft="8dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat android:id="@+id/access_toggle" app:theme="@style/switch_color" style="@style/Switch_Preference"/>
+    <ImageView android:id="@+id/gta_listitem_divier" android:layout_alignParentBottom="true" style="?attr/tt_divider"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

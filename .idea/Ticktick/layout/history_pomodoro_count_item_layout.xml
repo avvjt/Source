@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="16dp" android:text="@string/ja" android:layout_alignParentLeft="true"/>
+    <com.ticktick.task.view.CompareChartView android:id="@+id/charts" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ai6"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/history_pomo_chart_bottom_layout_height" android:layout_below="@+id/charts" layout="@layout/history_pomo_compare_chart_bottom"/>
+</RelativeLayout>

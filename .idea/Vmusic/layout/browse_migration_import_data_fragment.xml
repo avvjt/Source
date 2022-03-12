@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" yt:elevation="0dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" yt:layout_scrollFlags="0x3" yt:titleEnabled="false">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+                <FrameLayout android:id="@+id/header_anchor" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <include android:id="@+id/toolbar_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@+id/browse_content_container" android:layout_width="match_parent" android:layout_height="wrap_content" yt:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@+id/tabbed_view" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" yt:deselectedIconAlpha="0.6" yt:tabHeaderBackground="?attr/tabHeaderColor"/>
+    </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/footer_anchor" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_qr_code" android:title="@string/qr_connect_scan_code_cta" android:contentDescription="@string/qr_connect_accessibility_button" outlook:showAsAction="always"/>
+    <item android:id="@+id/menu_help" android:title="@string/help" android:contentDescription="@string/accessibility_clp_help_button" outlook:showAsAction="always"/>
+    <item android:id="@+id/menu_continue" android:title="@string/label_continue" android:contentDescription="@string/accessibility_add_account_continue" outlook:showAsAction="always"/>
+</menu>

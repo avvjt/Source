@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/list_item_list_header_0" android:background="@color/backgroundElevatedSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:elevation="@dimen/default_elevation">
+    <TextView android:tag="binding_1" android:paddingLeft="@dimen/default_margin" android:paddingTop="@dimen/default_margin" android:paddingRight="@dimen/default_margin" android:paddingBottom="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/default_margin" android:paddingVertical="@dimen/default_margin" style="@style/Tertiary"/>
+</LinearLayout>

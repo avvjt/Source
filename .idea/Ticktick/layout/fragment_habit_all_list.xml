@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.RecyclerViewEmptySupport android:id="@+id/rv_habits" android:background="?attr/activity_background" android:scrollbars="vertical" android:fadingEdge="none" android:fadingEdgeLength="0sp" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp" android:smoothScrollbar="true"/>
+    <com.ticktick.task.view.EmptyViewLayout android:id="@+id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:layout_gravity="center" android:background="?attr/empty_view_bg" android:layout_width="146dp" android:layout_height="146dp"/>
+                <ImageView android:id="@+id/emptyView_img_lower" android:layout_width="200dp" android:layout_height="200dp" android:src="@drawable/icon_empty_habit_lower" android:scaleType="center"/>
+                <com.ticktick.task.view.IconTextView android:textSize="200sp" android:textColor="?attr/ej" android:id="@+id/emptyView_img_upper" android:layout_width="200dp" android:layout_height="200dp" android:text="@string/ic_svg_empty_habit_upper"/>
+            </FrameLayout>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/emptyView_title" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b1t" android:lineSpacingMultiplier="1.4"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_horizontal" android:id="@+id/emptyView_summary" android:paddingLeft="50dp" android:paddingTop="5dp" android:paddingRight="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b1u" android:lineSpacingMultiplier="1.4"/>
+        </LinearLayout>
+    </com.ticktick.task.view.EmptyViewLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/add_habit_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="48dp" android:src="@drawable/ic_add_key_inside" android:tint="@color/white_alpha_100" app:backgroundTint="?attr/colorAccentFab"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

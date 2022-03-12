@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="end|top" android:id="@+id/lenshvc_gallery_serial_number" android:background="@drawable/lenshvc_gallery_selection_marker_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/lenshvc_mini_gallery_serial_number_box_margin" android:minWidth="@dimen/lenshvc_mini_gallery_serial_number_box_height" android:minHeight="@dimen/lenshvc_mini_gallery_serial_number_box_height" android:importantForAccessibility="no" android:textAlignment="center" android:paddingStart="@dimen/lenshvc_mini_gallery_serial_number_box_padding" android:paddingEnd="@dimen/lenshvc_mini_gallery_serial_number_box_padding"/>
+</merge>

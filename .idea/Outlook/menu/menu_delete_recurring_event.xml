@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_calendar_empty_24_regular" android:id="@+id/action_occurrence" android:title="@string/this_event_only" outlook:iconTint="@color/danger_primary" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_calendar_multiple_24_regular" android:id="@+id/action_series" android:title="@string/all_events_in_series" outlook:iconTint="@color/danger_primary" outlook:showAsAction="always"/>
+</menu>

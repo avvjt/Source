@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/tastebuilder_header_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmDisplay01" android:gravity="bottom|center_horizontal" android:id="@+id/title" android:paddingTop="@dimen/tastebuilder_title_text_padding" android:paddingBottom="@dimen/tastebuilder_title_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmBody04" android:gravity="bottom|center_horizontal" android:id="@+id/subtitle" android:paddingBottom="@dimen/tastebuilder_subtitle_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

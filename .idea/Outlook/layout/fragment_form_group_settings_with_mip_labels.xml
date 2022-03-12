@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/content_section" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+                <LinearLayout android:orientation="horizontal" style="@style/GroupCard_Row">
+                    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:layout_gravity="top" android:id="@+id/group_avatar" android:layout_width="@dimen/group_card_avatar_width" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Widget.Outlook.PersonAvatar"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/group_card_details_section_margin_left" android:layout_marginStart="@dimen/group_card_details_section_margin_left">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Title2" android:gravity="center_vertical" android:id="@+id/group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/group_email_address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                            <include android:id="@+id/group_privacy_label" layout="@layout/label_item"/>
+                            <include android:id="@+id/guest_members_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" layout="@layout/label_item"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/group_settings_block" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="beginning">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/settings_recycler_view" android:background="@drawable/layout_content_background" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:background="@color/outlook_app_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+                <include layout="@layout/group_usage_guideline"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

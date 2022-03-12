@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/usage_guidelines_layout" android:visibility="gone" style="@style/BottomPinnedBar">
+    <TextView android:id="@+id/usage_guidelines_text" android:text="@string/group_usage_guidelines" style="@style/BottomPinnedBarText"/>
+    <ImageView android:src="@drawable/ic_fluent_info_24_regular" android:importantForAccessibility="no" android:layout_toStartOf="@+id/usage_guidelines_text" app:tint="?attr/colorAccent" style="@style/BottomPinnedBarIcon"/>
+</RelativeLayout>

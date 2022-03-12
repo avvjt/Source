@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/paywall_toolbar_background" android:layout_width="match_parent" android:layout_height="@dimen/paywall_toolbar_size" android:elevation="@dimen/paywall_toolbar_elevation">
+    <ImageButton android:id="@+id/back_button" android:background="?android:attr/actionBarItemBackground" android:layout_width="?android:attr/actionBarSize" android:layout_height="match_parent" android:src="@drawable/pw_back" android:tint="@color/paywall_toolbar_text_color"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/user_image" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/paywall_toolbar_user_image_layout_width" android:layout_height="@dimen/paywall_toolbar_user_image_layout_height" android:scaleType="fitCenter"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/paywall_toolbar_text_view_layout_margin_start" android:layout_marginEnd="@dimen/paywall_toolbar_text_view_layout_margin_end">
+        <TextView android:textAppearance="@style/TextAppearance.Paywall.Headline6" android:textColor="@color/paywall_toolbar_text_color" android:id="@+id/action_bar_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textAppearance="@style/TextAppearance.Paywall.Caption" android:textColor="@color/paywall_toolbar_text_color" android:id="@+id/active_email_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</merge>

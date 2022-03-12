@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/scroll_view" android:tag="layout/fragment_watch_settings_0" android:background="@color/backgroundElevatedPrimary" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.motion.widget.MotionLayout android:id="@+id/motion_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin_2x" app:layoutDescription="@xml/custom_watch_options_expansion_scene">
+        <LinearLayout android:orientation="vertical" android:id="@+id/options_main" android:tag="binding_1" android:background="@color/backgroundSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin_2x" android:elevation="@dimen/default_elevation" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <include android:id="@+id/participating" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting"/>
+            <include android:id="@+id/all" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting"/>
+            <include android:id="@+id/ignore" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting"/>
+            <include android:id="@+id/custom" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting_custom_header"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/options_custom" android:tag="binding_2" android:background="@color/backgroundSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/options_main">
+            <include android:id="@+id/custom_issues" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting_custom"/>
+            <include android:id="@+id/custom_pullrequests" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting_custom"/>
+            <include android:id="@+id/custom_releases" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting_custom"/>
+            <include android:id="@+id/custom_discussions" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting_custom"/>
+            <include android:id="@+id/custom_security_alerts" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/watch_setting_custom"/>
+        </LinearLayout>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:icon="@drawable/ic_menu_mark_unread" android:id="@+id/menu_mark_unread" android:title="@string/menu_mark_unread"/>
     <item android:icon="@drawable/ic_action_info" android:id="@+id/menu_details" android:title="@string/menu_conversation_details"/>
     <item android:icon="@drawable/ic_menu_edit" android:id="@+id/menu_set_title" android:title="@string/menu_edit_conversation_title"/>

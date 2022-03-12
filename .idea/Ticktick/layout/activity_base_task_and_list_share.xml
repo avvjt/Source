@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="@dimen/task_and_list_share_activity_tab_layout_height" layout="@layout/tab_layout"/>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/vp_share_fragment_container" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/choose_share_app_view" android:layout_below="@+id/tabs" android:overScrollMode="never"/>
+    <ProgressBar android:id="@+id/pb_making_image" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="14dp" android:layout_marginTop="12dp" android:layout_marginRight="14dp" android:indeterminateDrawable="@drawable/progress_medium_holo" android:layout_alignParentRight="true"/>
+    <com.ticktick.task.view.ChooseShareAppView android:id="@+id/choose_share_app_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginTop="-1dp" android:layout_below="@+id/tab_layout" layout="@layout/toolbar_divider"/>
+    <View android:background="@drawable/ab_solid_shadow_holo_inverse" android:layout_width="match_parent" android:layout_height="5dp" android:layout_above="@+id/choose_share_app_view"/>
+</RelativeLayout>

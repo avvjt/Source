@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+        <com.ticktick.task.view.TTSwipeRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+            <FrameLayout android:id="@+id/list_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.ticktick.task.view.TTSwipeRefreshLayout>
+        <include android:id="@+id/toolbar_shadow" layout="@layout/toolbar_shadow"/>
+        <ImageView android:id="@+id/top_divider" android:visibility="gone" android:layout_below="@+id/toolbar" style="?attr/tt_divider"/>
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/add_task_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_add_key_inside" android:tint="@color/white_alpha_100" app:backgroundTint="?attr/colorAccentFab"/>
+    <com.ticktick.task.view.UndoFloatingActionButton android:layout_gravity="start|bottom" android:id="@+id/undo_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_undo" android:tint="@color/white_alpha_100" app:backgroundTint="@color/special_bg_color" app:fabCustomSize="48dp" app:maxImageSize="24dp"/>
+    <ViewStub android:id="@+id/achievement_level_up_view_stub" android:layout="@layout/achievement_level_up_snackbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="62dp" android:layout_marginRight="6dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="top|center_horizontal" android:top="@dimen/bottom_sheet_handle_margin">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp"/>
+            <size android:height="4dp" android:width="40dp"/>
+            <solid android:color="?attr/yt10PercentLayer"/>
+        </shape>
+    </item>
+</layer-list>

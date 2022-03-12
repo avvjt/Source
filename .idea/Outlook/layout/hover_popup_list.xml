@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/hover_popup_list_item_spacing_divider" android:showDividers="middle">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?android:attr/textColorSecondary" android:id="@+id/hover_popup_list_remainder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

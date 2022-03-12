@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/review_container" android:tag="layout/fragment_environment_approval_review_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.github.android.views.AutoCompleteView android:id="@+id/autocomplete_view" android:background="@color/listItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="112dp" android:elevation="1dp" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/environment_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/autocomplete_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

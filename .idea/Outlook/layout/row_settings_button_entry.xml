@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <ImageView android:id="@+id/settings_icon" style="@style/ListItem.Icon"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/settings_title_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:id="@+id/settings_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+            <TextView android:id="@+id/settings_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Summary"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.microsoft.office.outlook.uikit.widget.TextActionButton android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?attr/colorAccent" android:id="@+id/settings_button" android:background="?attr/selectableItemBackgroundBorderless" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="8dp" outlook:minimumTextSize="@dimen/outlook_text_size_caption" outlook:textAllCaps="true"/>
+</LinearLayout>

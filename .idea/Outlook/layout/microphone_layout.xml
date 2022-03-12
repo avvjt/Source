@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.moderninput.voiceactivity.customviews.MicrophoneView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:id="@+id/microphone_view" android:layout_width="@dimen/width_100dp" android:layout_height="@dimen/height_100dp">
+    <ImageView android:id="@+id/mic_animation_background_outer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:elevation="@dimen/elevation_4dp"/>
+    <ImageView android:id="@+id/mic_animation_background_inner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:elevation="@dimen/elevation_4dp"/>
+    <ImageView android:id="@+id/white_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mic_background_white" android:layout_centerInParent="true" android:elevation="@dimen/elevation_4dp"/>
+    <ImageView android:id="@+id/mic_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:elevation="@dimen/elevation_4dp"/>
+    <ProgressBar android:id="@+id/loading_progress_bar" android:visibility="gone" android:layout_width="@dimen/height_56dp" android:layout_height="@dimen/height_56dp" android:indeterminate="true" android:layout_centerInParent="true" android:elevation="@dimen/elevation_4dp"/>
+    <ImageView android:id="@+id/mic_button" android:padding="@dimen/padding_14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@string/cf" android:elevation="@dimen/elevation_4dp"/>
+</com.microsoft.moderninput.voiceactivity.customviews.MicrophoneView>

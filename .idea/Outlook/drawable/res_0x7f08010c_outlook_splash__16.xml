@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f08010d_outlook_splash__17" android:duration="267" android:startOffset="0" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f08010e_outlook_splash__18" android:duration="267" android:startOffset="0" android:valueFrom="0.26" android:valueTo="0.26" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f08010f_outlook_splash__19" android:duration="333" android:startOffset="267" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080111_outlook_splash__20" android:duration="333" android:startOffset="267" android:valueFrom="0.26" android:valueTo="0.63" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080112_outlook_splash__21" android:duration="433" android:startOffset="600" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080113_outlook_splash__22" android:duration="433" android:startOffset="600" android:valueFrom="0.63" android:valueTo="1.09" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080114_outlook_splash__23" android:duration="233" android:startOffset="1033" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080115_outlook_splash__24" android:duration="233" android:startOffset="1033" android:valueFrom="1.09" android:valueTo="0.94" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080116_outlook_splash__25" android:duration="233" android:startOffset="1267" android:valueFrom="1" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080117_outlook_splash__26" android:duration="233" android:startOffset="1267" android:valueFrom="0.94" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY"/>
+</set>

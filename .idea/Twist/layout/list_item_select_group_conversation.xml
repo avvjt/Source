@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/standard_avatar_item_height">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/standard_avatar_item_height">
     <com.twistapp.ui.widgets.avatar.DoubleAvatarView android:layout_gravity="center_vertical" android:id="@+id/avatar" android:layout_width="@dimen/standard_list_item_icon_size" android:layout_height="@dimen/standard_list_item_icon_size" android:contentDescription="@string/content_description_avatar" android:layout_marginStart="@dimen/standard_spacing"/>
     <TextView android:layout_gravity="center_vertical" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/standard_big_horizontal_margin" android:layout_marginEnd="@dimen/standard_spacing" style="@style/Widget.Twist.List.Title"/>
 </FrameLayout>

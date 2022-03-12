@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="68dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/pick_today_layout" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/daily_reminder_bottom_date_margin_top">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:layout_marginTop="0dp" android:text="@string/ic_svg_daily_reminder_today" android:layout_centerInParent="true" style="@style/daily_reminder_detail_imageview"/>
+            <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="?attr/colorHighlight" android:id="@+id/today_detail_text" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:text="@string/ajn" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pick_today_some_time_layout" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textStyle="bold" android:textColor="?attr/colorHighlight" android:text="@string/ic_svg_daily_reminder_sometime" style="@style/daily_reminder_detail_imageview"/>
+        <TextView android:text="@string/kp" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/smart_date_1" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:id="@+id/smart_date_1_icon" android:text="@string/ic_svg_daily_reminder_morning" style="@style/daily_reminder_detail_imageview"/>
+        <TextView android:id="@+id/smart_date_1_summary" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/smart_date_2" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:id="@+id/smart_date_2_icon" android:text="@string/ic_svg_daily_reminder_afternoon" style="@style/daily_reminder_detail_imageview"/>
+        <TextView android:id="@+id/smart_date_2_summary" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+</LinearLayout>

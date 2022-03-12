@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_fluent_flag_24_selector" android:left="@dimen/menu_icon_padding" android:top="@dimen/menu_icon_padding" android:right="@dimen/menu_icon_padding" android:bottom="@dimen/menu_icon_padding"/>
+</layer-list>

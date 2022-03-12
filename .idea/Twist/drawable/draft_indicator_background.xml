@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<inset xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/draft_indicator_background_raw" android:insetTop="1dp" android:insetBottom="1dp"/>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/draft_indicator_background_raw" android:insetTop="1dp" android:insetBottom="1dp"/>

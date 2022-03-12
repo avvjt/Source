@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_hover_menu_action_rsvp_accepted_green" android:id="@+id/action_rsvp_accept" android:title="@string/accept" app:iconTint="?attr/successPrimary" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_hover_menu_action_rsvp_tentative" android:id="@+id/action_rsvp_tentative" android:title="@string/tentative" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_hover_menu_action_rsvp_declined_red" android:id="@+id/action_rsvp_decline" android:title="@string/decline" app:iconTint="?attr/dangerPrimary"/>
+</menu>

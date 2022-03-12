@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <ImageView android:id="@+id/settings_icon" android:visibility="gone" android:tint="?attr/colorAccent" style="@style/ListItem.Icon"/>
+    <com.microsoft.office.outlook.uikit.widget.OMTextView android:id="@+id/settings_title" android:layout_width="match_parent" outlook:minimumTextSize="@dimen/outlook_text_size_caption" style="@style/ListItem.Title.Action"/>
+</LinearLayout>

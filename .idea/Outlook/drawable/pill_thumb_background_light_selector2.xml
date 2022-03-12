@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/item_ripple_color">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/pill_thumb_background_light_disabled"/>
+            <item android:drawable="@drawable/pill_thumb_background_light2"/>
+        </selector>
+    </item>
+</ripple>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/vertical_divider" android:showDividers="middle">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/left_menu" android:background="@color/outlook_app_drawer_sidebar" android:paddingBottom="12dp" android:layout_width="72dp" android:layout_height="match_parent">
+        <com.acompli.acompli.ui.drawer.view.AddButton android:id="@+id/btn_add_calendar" android:padding="4dp" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="6dp" android:src="@drawable/ic_fluent_calendar_empty_24_filled" android:contentDescription="@string/settings_add_account"/>
+        <android.widget.Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.microsoft.office.outlook.uikit.widget.MenuView android:gravity="center" android:orientation="vertical" android:id="@+id/drawer_menu_view" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:inflationDelegateClass="com.microsoft.office.outlook.uikit.widget.MenuView$ButtonItemInflationDelegate" outlook:menu="@menu/menu_drawer"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/right_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/drawer_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/no_account_upsell" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:layout_constraintBottom_toBottomOf="0" outlook:layout_constraintEnd_toEndOf="0" outlook:layout_constraintStart_toStartOf="0" outlook:layout_constraintTop_toTopOf="0" layout="@layout/no_account_calendar_drawer_upsell"/>
+        <FrameLayout android:id="@+id/drawer_calendar_selection_filter_container" android:visibility="gone" android:layout_width="@dimen/menu_view_item_min_width" android:layout_height="@dimen/list_item_row_double_min_height" outlook:layout_constraintEnd_toEndOf="0" outlook:layout_constraintTop_toTopOf="0">
+            <ImageView android:layout_gravity="center" android:id="@+id/drawer_calendar_selection_filter" android:background="@drawable/item_background_circular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_filter_24_filled" android:contentDescription="@string/filter"/>
+        </FrameLayout>
+        <include android:id="@+id/layout_search_calendar" android:visibility="gone" outlook:layout_constraintEnd_toEndOf="0" outlook:layout_constraintStart_toStartOf="0" outlook:layout_constraintTop_toTopOf="0" layout="@layout/calendar_search_layout"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

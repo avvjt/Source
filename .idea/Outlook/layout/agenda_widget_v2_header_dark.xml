@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_widget_header_bar_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/agenda_widget_v2_main_banner_height">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:id="@+id/agenda_widget_v2_header_date_section" android:background="@drawable/item_background" android:paddingTop="@dimen/agenda_widget_v2_date_header_vertical_padding" android:paddingBottom="@dimen/agenda_widget_v2_date_header_vertical_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/agenda_widget_v2_event_cell_root_padding">
+        <TextView android:textSize="@dimen/agenda_widget_v2_friendly_date_title_text_size" android:id="@+id/agenda_widget_v2_friendly_date_title" style="@style/AgendaWidgetV2HeaderFriendlyDateTitle"/>
+        <TextView android:textSize="@dimen/agenda_widget_v2_date_subtitle_text_size" android:id="@+id/agenda_widget_v2_date_subtitle" style="@style/AgendaWidgetV2HeaderDateSubTitle_Dark"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/agenda_new_event_button" android:background="@drawable/item_background" style="@style/AgendaWidgetV2NewEventButtonWide"/>
+</LinearLayout>

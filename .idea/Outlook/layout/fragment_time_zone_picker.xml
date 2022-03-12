@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColorHint="?android:attr/textColorSecondary" android:gravity="start|center_vertical" android:id="@+id/search_time_zone" android:background="@null" android:layout_width="match_parent" android:layout_height="56dp" android:hint="@string/timezone_search" android:maxLines="1" android:scrollHorizontally="true" android:singleLine="true" android:inputType="textAutoCorrect" android:imeOptions="flagNoExtractUi|actionDone" android:textDirection="locale" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+    <include layout="@layout/outlook_divider"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:paddingTop="8dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

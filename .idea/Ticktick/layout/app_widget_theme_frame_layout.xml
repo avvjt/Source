@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layout_toolbar" layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/preview_layout" android:layout_width="match_parent" android:layout_height="388dp">
+                <ImageView android:id="@+id/wallpaper" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <ImageView android:id="@+id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignLeft="@+id/foreground" android:layout_alignTop="@+id/foreground" android:layout_alignRight="@+id/foreground" android:layout_alignBottom="@+id/foreground"/>
+                <ImageView android:id="@+id/title_background" android:layout_width="match_parent" android:layout_height="48dp" android:src="@drawable/widget_title_background" android:scaleType="fitXY" android:layout_alignLeft="@+id/foreground" android:layout_alignTop="@+id/foreground" android:layout_alignRight="@+id/foreground"/>
+                <ImageView android:id="@+id/foreground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+                <ProgressBar android:id="@+id/progress" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:max="10000" android:layout_centerInParent="true" style="?android:attr/progressBarStyle"/>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/preference_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

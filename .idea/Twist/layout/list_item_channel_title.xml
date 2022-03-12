@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/standard_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height">
+    <TextView android:id="@+id/channel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Twist.List.ChannelTitle"/>
+    <TextView android:id="@+id/channel_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Twist.List.Description"/>
+</LinearLayout>

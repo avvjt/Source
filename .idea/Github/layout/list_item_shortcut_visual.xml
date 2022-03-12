@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container" android:tag="layout/list_item_shortcut_visual_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_margin="@dimen/default_margin_0_25x" android:scaleType="center" android:importantForAccessibility="no"/>
+    <View android:layout_gravity="center" android:id="@+id/rippleLayer" android:background="@drawable/shortcut_visual_ripple_layer" android:focusable="true" android:clickable="true" android:layout_width="32dp" android:layout_height="32dp" android:importantForAccessibility="no"/>
+</FrameLayout>

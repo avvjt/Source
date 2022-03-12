@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<io.doist.datetimepicker.date.TextViewWithCircularIndicator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:id="@+id/month_text_view" android:layout_width="match_parent" android:layout_height="@dimen/datepicker_year_label_height"/>
+<io.doist.datetimepicker.date.TextViewWithCircularIndicator xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:id="@+id/month_text_view" android:layout_width="match_parent" android:layout_height="@dimen/datepicker_year_label_height"/>

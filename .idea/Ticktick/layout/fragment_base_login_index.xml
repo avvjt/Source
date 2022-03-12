@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/hh" android:background="@color/white_alpha_100" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_logo" android:layout_width="116dp" android:layout_height="116dp" android:layout_marginTop="108dp" android:src="?attr/login_logo"/>
+        <FrameLayout android:layout_gravity="bottom|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="76dp">
+            <TextView android:textSize="14sp" android:textColor="@color/black_alpha_54_black" android:id="@+id/tv_more" android:background="?attr/i" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/af0"/>
+        </FrameLayout>
+        <com.ticktick.task.view.LinearLayoutWithState android:gravity="center" android:layout_gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/ll_other_login" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginRight="36dp" android:layout_marginBottom="136dp">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:id="@+id/icon_other_login" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/text_size_16" android:id="@+id/tv_other_login_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        </com.ticktick.task.view.LinearLayoutWithState>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/ll_email_login" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginRight="36dp" android:layout_marginBottom="196dp">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:id="@+id/icon_email_login" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white_alpha_100" android:id="@+id/tv_email_login_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/ll_more_login_choice" android:layout_width="match_parent" android:layout_height="wrap_content" android:translationY="85dp">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/tv_more_login_choice" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="85dp" android:overScrollMode="never"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

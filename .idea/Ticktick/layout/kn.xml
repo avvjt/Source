@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/a2a" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/qu" android:layout_width="@dimen/k4" android:layout_height="@dimen/k3" android:scaleType="center"/>
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/a2i" android:paddingTop="@dimen/k5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k4" android:minHeight="@dimen/k3">
+            <FrameLayout android:id="@+id/a2h" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k2" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_weight="1"/>
+            <FrameLayout android:id="@+id/a8s" android:paddingTop="@dimen/k9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp">
+                <ViewStub android:layout_gravity="end|top" android:id="@+id/ahc" android:visibility="gone" android:layout="@layout/kt" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <ViewStub android:layout_gravity="end|top" android:id="@+id/g8" android:visibility="gone" android:layout="@layout/ks" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:layout_gravity="end|bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textAppearance="@style/ju" android:id="@+id/sn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/a8j" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="8dp" android:scaleType="centerInside" android:alpha="0.6"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/af" android:background="?android:attr/dividerHorizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/k4"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/aq" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k4" android:divider="?android:attr/listDivider" android:showDividers="middle" android:dividerPadding="12dp"/>
+    </LinearLayout>
+</FrameLayout>

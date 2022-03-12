@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_dot_24" android:id="@+id/mark_as_read" android:title="@string/notifications_bulk_mark_as_read" app:iconTint="@android:color/white" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_dot_fill_24" android:id="@+id/mark_as_unread" android:title="@string/notifications_bulk_mark_as_unread" app:iconTint="@android:color/white" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_check_24" android:id="@+id/mark_as_done" android:title="@string/notifications_bulk_mark_as_done" app:iconTint="@android:color/white" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_inbox_24" android:id="@+id/mark_as_undone" android:title="@string/notifications_bulk_move_to_inbox" app:iconTint="@android:color/white" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_check_circle_fill_24" android:id="@+id/select_all" android:title="@string/notifications_bulk_select_all" app:iconTint="@android:color/white" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_check_circle_24" android:id="@+id/deselect_all" android:title="@string/notifications_bulk_deselect_all" app:iconTint="@android:color/white" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_share_image_container" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@drawable/shadow_rectangle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/fl_bg_container" android:translationY="30dp"/>
+        <FrameLayout android:id="@+id/fl_bg_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+            <ImageView android:id="@+id/iv_beam_bg" android:layout_width="match_parent" android:layout_height="233dp" android:scaleType="fitXY"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                <ImageView android:id="@+id/iv_medal" android:layout_width="120dp" android:layout_height="120dp"/>
+                <com.ticktick.task.view.UnScalableTextView android:textSize="20sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:id="@+id/tv_achievement_name" android:background="@drawable/ic_achieve_name_bg_grade_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_star_1" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="68dp" android:layout_marginTop="37dp" android:src="@drawable/ic_star"/>
+            <ImageView android:id="@+id/iv_star_2" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginLeft="83dp" android:layout_marginTop="97dp" android:src="@drawable/ic_star"/>
+            <ImageView android:layout_gravity="end" android:id="@+id/iv_star_3" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="26dp" android:layout_marginRight="67dp" android:src="@drawable/ic_star"/>
+            <FrameLayout android:background="@drawable/bg_achievement_share_arc" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="207dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="26dp">
+                    <com.ticktick.task.view.UnScalableTextView android:textSize="56sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_scores" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp"/>
+                    <com.ticktick.task.activity.statistics.view.AchievementLevelProgressView android:id="@+id/achievement_level_progress_view" android:layout_width="match_parent" android:layout_height="22dp" android:layout_marginLeft="32dp" android:layout_marginRight="32dp"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginBottom="26dp">
+                        <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textColor="@color/black_alpha_90_light" android:id="@+id/tv_strive" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textColor="@color/black_alpha_90_light" android:id="@+id/tv_completed_tasks" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textColor="@color/black_alpha_90_light" android:id="@+id/tv_more_diligent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="48dp" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/iv_ticktick_icon" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_circle_ticktick" android:scaleType="fitXY"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/iv_qr_code" android:layout_toRightOf="@+id/iv_ticktick_icon" android:layout_centerVertical="true">
+                <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black_alpha_90_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b17"/>
+                <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="@color/black_alpha_54_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ax3"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_qr_code" android:layout_width="48dp" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.ticktick.task.view.ChooseShareAppView android:layout_gravity="bottom" android:id="@+id/choose_share_app_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

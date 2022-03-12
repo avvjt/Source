@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/map_main" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.ticktick.task.location.GoogleMapFragmentWithCustomView" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/map_layout"/>
+    <FrameLayout android:id="@+id/map_search_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/search_layout_animator_background" android:background="?attr/activity_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="96dp" android:src="?attr/divider_color"/>
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/material_normal_padding" app:elevation="@dimen/action_bar_shadow_height">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="?attr/k" android:layout_alignParentTop="true" app:contentInsetEnd="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:popupTheme="?attr/TT_Toolbar_Pop" app:theme="?attr/TT_Toolbar" app:titleMarginStart="0dp" app:titleTextColor="?android:attr/textColorPrimary"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <ImageView style="?attr/tt_divider"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/map_layout" android:background="?attr/activity_background" android:paddingTop="@dimen/material_normal_padding" android:paddingBottom="@dimen/material_normal_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/address_display_layout">
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spinner_interval" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="52dp" style="@style/AppSpinnerUnderlined"/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/material_normal_padding" android:layout_marginTop="-26dp" android:layout_marginRight="@dimen/material_normal_padding" android:src="@drawable/ic_float_btn_send" android:layout_alignTop="@+id/map_layout" android:layout_alignParentRight="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/address_display_layout" android:background="?attr/activity_background" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/icon_star" android:layout_width="56dp" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="start|center_vertical" android:orientation="vertical" android:id="@+id/address_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/alias_view" android:background="@null" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/address_view" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/list_view_layout" android:background="?attr/activity_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/map_search_layout">
+        <FrameLayout android:background="?attr/divider_color" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/map_list" android:background="?attr/activity_background" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/material_normal_padding" android:layout_marginRight="@dimen/material_normal_padding" android:listSelector="@android:color/transparent" android:divider="?attr/divider_color" android:dividerHeight="0dp"/>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

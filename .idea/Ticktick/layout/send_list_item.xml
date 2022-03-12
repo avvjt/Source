@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="48dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/share_item_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/qu" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:scaleType="centerInside"/>
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/ag9" android:paddingLeft="4dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:maxLines="2" android:minLines="2"/>
+    </LinearLayout>
+</com.ticktick.task.view.selectableview.SelectableLinearLayout>

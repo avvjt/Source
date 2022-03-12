@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="?attr/actionBarSize" android:layout_marginBottom="@dimen/bottom_pinned_bar_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/outlook_content_inset">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/edited_group_avatar" android:layout_width="@dimen/group_edit_avatar_size" android:layout_height="@dimen/group_edit_avatar_size" android:importantForAccessibility="no"/>
+                <ImageButton android:id="@+id/edit_group_avatar_layout" android:background="@drawable/edit_avatar_background" android:layout_width="@dimen/group_edit_avatar_size" android:layout_height="@dimen/group_edit_avatar_size" android:src="@drawable/ic_fluent_camera_24_regular" android:scaleType="centerInside" android:contentDescription="@string/accessibility_edit_group_photo" app:tint="@color/outlook_app_on_primary"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/outlook_content_inset" android:minHeight="@dimen/create_group_name_field_min_height">
+                <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?attr/colorAccent" android:id="@+id/group_name_display" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_group_name" android:layout_marginStart="@dimen/create_group_name_margin" android:layout_marginEnd="@dimen/create_group_name_margin" android:labelFor="@+id/edit_text_group_name"/>
+                <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/create_group_name_text_input_margin_small" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset" app:hintEnabled="false">
+                    <EditText android:id="@+id/edit_text_group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_group_name" android:inputType="textCapWords" android:textDirection="locale" android:accessibilityTraversalAfter="@+id/group_name_display" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/outlook_content_inset" android:divider="@drawable/horizontal_divider">
+                <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_add_members_consumer_group" android:layout_marginStart="@dimen/create_group_name_margin" android:layout_marginEnd="@dimen/create_group_name_margin"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ConsumerGroup_AddMembersLayout">
+                    <com.microsoft.office.outlook.uiappcomponent.widget.contact.ContactPickerView android:id="@+id/add_members_field" android:background="?attr/editTextBackground" android:paddingTop="12dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/create_consumer_group_members_layout_margin" android:hint="@string/contact_picker_hint" style="@style/ConsumerGroup_ContactPickerView"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

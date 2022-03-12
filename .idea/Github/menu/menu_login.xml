@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_question_24" android:id="@+id/help" android:title="@string/menu_option_login_help" app:iconTint="@color/textPrimary" app:showAsAction="always"/>
+</menu>

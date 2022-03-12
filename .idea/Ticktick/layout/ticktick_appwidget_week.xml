@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/widget_bg_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/ticktick_appwidget_schedule_title_layout"/>
+        <ImageView android:id="@+id/title_content_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/widget_week_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="vertical" android:id="@+id/widget_layout_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/widget_week_1" style="@style/WidgetWeek"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/widget_day_bg_1" style="@style/WidgetWeekDayBG"/>
+                    <LinearLayout style="@style/WidgetWeekDayBG">
+                        <TextView android:id="@+id/widget_day_1" style="@style/WidgetWeekDay"/>
+                        <TextView android:id="@+id/widget_day_lunar_1" style="@style/WidgetWeekDayLunar"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/task_count_mark_1" style="@style/widget_week_day_task_count_icon"/>
+                    <ImageView android:layout_gravity="end|top" android:id="@+id/rest_or_work_day_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/widget_layout_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/widget_week_2" style="@style/WidgetWeek"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/widget_day_bg_2" style="@style/WidgetWeekDayBG"/>
+                    <LinearLayout style="@style/WidgetWeekDayBG">
+                        <TextView android:id="@+id/widget_day_2" style="@style/WidgetWeekDay"/>
+                        <TextView android:id="@+id/widget_day_lunar_2" style="@style/WidgetWeekDayLunar"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/task_count_mark_2" style="@style/widget_week_day_task_count_icon"/>
+                    <ImageView android:layout_gravity="end|top" android:id="@+id/rest_or_work_day_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/widget_layout_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/widget_week_3" style="@style/WidgetWeek"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/widget_day_bg_3" style="@style/WidgetWeekDayBG"/>
+                    <LinearLayout style="@style/WidgetWeekDayBG">
+                        <TextView android:id="@+id/widget_day_3" style="@style/WidgetWeekDay"/>
+                        <TextView android:id="@+id/widget_day_lunar_3" style="@style/WidgetWeekDayLunar"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/task_count_mark_3" style="@style/widget_week_day_task_count_icon"/>
+                    <ImageView android:layout_gravity="end|top" android:id="@+id/rest_or_work_day_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/widget_layout_4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/widget_week_4" style="@style/WidgetWeek"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/widget_day_bg_4" style="@style/WidgetWeekDayBG"/>
+                    <LinearLayout style="@style/WidgetWeekDayBG">
+                        <TextView android:id="@+id/widget_day_4" style="@style/WidgetWeekDay"/>
+                        <TextView android:id="@+id/widget_day_lunar_4" style="@style/WidgetWeekDayLunar"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/task_count_mark_4" style="@style/widget_week_day_task_count_icon"/>
+                    <ImageView android:layout_gravity="end|top" android:id="@+id/rest_or_work_day_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/widget_layout_5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/widget_week_5" style="@style/WidgetWeek"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/widget_day_bg_5" style="@style/WidgetWeekDayBG"/>
+                    <LinearLayout style="@style/WidgetWeekDayBG">
+                        <TextView android:id="@+id/widget_day_5" style="@style/WidgetWeekDay"/>
+                        <TextView android:id="@+id/widget_day_lunar_5" style="@style/WidgetWeekDayLunar"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/task_count_mark_5" style="@style/widget_week_day_task_count_icon"/>
+                    <ImageView android:layout_gravity="end|top" android:id="@+id/rest_or_work_day_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/widget_layout_6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/widget_week_6" style="@style/WidgetWeek"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/widget_day_bg_6" style="@style/WidgetWeekDayBG"/>
+                    <LinearLayout style="@style/WidgetWeekDayBG">
+                        <TextView android:id="@+id/widget_day_6" style="@style/WidgetWeekDay"/>
+                        <TextView android:id="@+id/widget_day_lunar_6" style="@style/WidgetWeekDayLunar"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/task_count_mark_6" style="@style/widget_week_day_task_count_icon"/>
+                    <ImageView android:layout_gravity="end|top" android:id="@+id/rest_or_work_day_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/widget_layout_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/widget_week_7" style="@style/WidgetWeek"/>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/widget_day_bg_7" style="@style/WidgetWeekDayBG"/>
+                    <LinearLayout style="@style/WidgetWeekDayBG">
+                        <TextView android:id="@+id/widget_day_7" style="@style/WidgetWeekDay"/>
+                        <TextView android:id="@+id/widget_day_lunar_7" style="@style/WidgetWeekDayLunar"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/task_count_mark_7" style="@style/widget_week_day_task_count_icon"/>
+                    <ImageView android:layout_gravity="end|top" android:id="@+id/rest_or_work_day_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="2dp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/week_day_content_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <ListView android:id="@+id/widget_week_listview_id" android:fadingEdge="none" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="6dp" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+        <include layout="@layout/widget_empty_view"/>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/widget_error_tip" android:padding="@dimen/material_normal_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/b7x"/>
+</RelativeLayout>

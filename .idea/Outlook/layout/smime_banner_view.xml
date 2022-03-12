@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/smime_banner_layout" android:background="@color/compose_v2_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+        <ImageView android:id="@+id/smime_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_fluent_lock_closed_24_regular" android:layout_marginEnd="17dp" app:tint="?attr/colorAccent" style="@style/ListItem.Icon"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:gravity="center_vertical" android:id="@+id/smime_banner_label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:importantForAccessibility="no"/>
+        <ImageButton android:id="@+id/smime_banner_remove" android:background="?attr/selectableItemBackground" android:visibility="visible" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="8dp" android:src="@drawable/ic_fluent_dismiss_24_regular" android:adjustViewBounds="true" android:contentDescription="@string/remove" android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+</LinearLayout>

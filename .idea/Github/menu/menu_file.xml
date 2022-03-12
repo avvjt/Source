@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_share_24" android:id="@+id/share_item" android:title="@string/menu_option_share" app:iconTint="@color/colorAccent" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_settings_24" android:id="@+id/code_options" android:title="@string/settings_code_options_title" app:iconTint="@color/colorAccent" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/view_raw" android:visible="false" android:title="@string/menu_option_view_raw" app:showAsAction="never"/>
+    <item android:id="@+id/view_html" android:visible="false" android:title="@string/menu_option_view_html" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.TaskDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ticktick.task.view.TwoPaneLayout android:id="@+id/two_pane" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bottom_navigation_height" android:splitMotionEvents="true">
+            <RelativeLayout android:layout_gravity="left" android:id="@+id/main_pane" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.ticktick.task.view.navigation.UntouchableViewPager android:id="@+id/viewPager" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <View android:layout_gravity="left" android:id="@+id/cover_view" android:background="?attr/activity_background" android:visibility="gone" android:layout_width="@dimen/over_pane_width" android:layout_height="match_parent" android:layout_marginTop="?attr/k"/>
+            <com.ticktick.task.view.SwipeRelativeLayout android:layout_gravity="left" android:id="@+id/over_pane" android:background="?attr/over_pane_bg" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="?attr/k"/>
+            <com.ticktick.task.view.TaskDetailViewCopy android:layout_gravity="left" android:id="@+id/task_copy" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="?attr/k"/>
+        </com.ticktick.task.view.TwoPaneLayout>
+        <com.ticktick.task.view.navigation.FragmentPageNavigationView android:id="@+id/page_navigation_layout" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navigation_height" android:layout_alignParentBottom="true"/>
+        <View android:id="@+id/navigation_shadow_top" android:background="?attr/quickbar_top_shadow" android:layout_width="match_parent" android:layout_height="4dp" android:layout_above="@+id/page_navigation_layout" android:alpha="0.4"/>
+        <View android:id="@+id/tooltip_anchor" android:src="?attr/activity_background" style="@style/show_detail_tool_tip_anchor_style"/>
+        <include layout="@layout/dnd_overlay"/>
+    </RelativeLayout>
+    <com.ticktick.task.view.SlideNavView android:layout_gravity="start" android:id="@+id/nav_view" android:background="?attr/activity_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:includeStatusBar="true">
+        <FrameLayout android:id="@+id/menu_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ticktick.task.view.SlideNavView>
+</com.ticktick.task.view.TaskDrawerLayout>

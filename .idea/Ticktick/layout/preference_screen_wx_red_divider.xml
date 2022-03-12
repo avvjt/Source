@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="56dp">
+    <RelativeLayout android:gravity="center_vertical" android:paddingRight="?android:attr/scrollbarSize" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorSecondary" android:gravity="center" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/preference_margin" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="6dp" android:layout_height="6dp" android:layout_marginLeft="-1dp" android:layout_marginTop="-1dp" android:layout_marginRight="-1dp" android:src="@drawable/wechat_red_circle" android:layout_alignTop="@android:id/summary" android:layout_alignRight="@android:id/summary"/>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/hh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/preference_margin" android:layout_marginRight="@dimen/preference_margin" android:layout_toLeftOf="@android:id/widget_frame" android:layout_toRightOf="@android:id/summary" android:layout_centerVertical="true">
+            <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextTitle"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:paddingLeft="@dimen/preference_margin" android:paddingRight="@dimen/preference_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <include android:layout_gravity="bottom" android:id="@+id/bottom_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginLeft="56dp" layout="@layout/preference_divider"/>
+</FrameLayout>

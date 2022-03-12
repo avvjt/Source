@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/empty_state" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_state_message" android:paddingLeft="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:fontFamily="sans-serif-medium" android:accessibilityLiveRegion="assertive"/>
+</FrameLayout>

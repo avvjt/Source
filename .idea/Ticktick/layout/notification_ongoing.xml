@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/notificationbg" android:layout_width="match_parent" android:layout_height="64dp">
+    <ImageView android:gravity="center" android:id="@+id/notification_icon" android:layout_width="54dp" android:layout_height="54dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:scaleType="center"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14sp" android:ellipsize="marquee" android:layout_gravity="start" android:id="@+id/notification_title" android:focusable="true" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="14sp" android:ellipsize="marquee" android:layout_gravity="start" android:id="@+id/notification_date" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/notification_next" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="48dp" android:layout_height="64dp" android:scaleType="center" android:layout_weight="0"/>
+    <ImageView android:id="@+id/notification_add" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="48dp" android:layout_height="64dp" android:scaleType="center" android:layout_weight="0"/>
+</LinearLayout>

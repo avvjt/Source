@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" yt:elevation="0dp">
+        <com.google.android.apps.youtube.music.ui.appchrome.insets.InsetAdjustingToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" yt:titleTextAppearance="@style/Theme.YouTubeMusic.Toolbar.TitleText"/>
+        <include android:id="@+id/toolbar_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@+id/browse_content" android:layout_width="match_parent" android:layout_height="match_parent" yt:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@+id/tabbed_view_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@+id/tabbed_view" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" yt:deselectedIconAlpha="0.6" yt:tabHeaderBackground="?attr/tabHeaderColor"/>
+        </LinearLayout>
+    </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

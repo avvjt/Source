@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+    <ImageView android:id="@+id/settings_icon" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_marginStart="@dimen/outlook_content_inset"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/settings_title_container" android:paddingTop="@dimen/list_item_row_padding_top" android:paddingBottom="@dimen/list_item_row_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset" android:layout_toEndOf="@+id/settings_icon">
+        <TextView android:id="@+id/settings_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/ListItem.Title"/>
+        <TextView android:id="@+id/settings_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:includeFontPadding="false" style="@style/ListItem.Summary"/>
+    </LinearLayout>
+    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_min_size" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

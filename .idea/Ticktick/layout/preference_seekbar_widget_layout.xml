@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:paddingRight="?android:attr/scrollbarSize" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="56dp" android:minHeight="56dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="1dp" android:layout_height="wrap_content" android:scaleType="center"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/preference_margin" android:layout_centerVertical="true" style="@style/PreferenceTextTitle"/>
+        <TextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextSummary"/>
+        <androidx.preference.UnPressableLinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@android:id/title" android:layout_centerVertical="true">
+            <androidx.appcompat.widget.AppCompatSeekBar android:layout_gravity="center_vertical" android:id="@+id/a_q" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:layout_weight="1" android:foregroundGravity="center_vertical"/>
+            <TextView android:ellipsize="marquee" android:gravity="center" android:id="@+id/a_r" android:scrollbars="none" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/preference_margin" android:singleLine="true" style="@style/WidgetPreferenceListViewTextSmall"/>
+        </androidx.preference.UnPressableLinearLayout>
+    </RelativeLayout>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_alignParentBottom="true" layout="@layout/preference_divider"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_width="@dimen/task_and_list_share_activity_item_send_app_horizontal" android:layout_height="@dimen/task_and_list_share_activity_item_send_app_vertical">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?attr/i" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/im_send_app" android:layout_width="32dp" android:layout_height="32dp"/>
+                <com.ticktick.task.view.IconTextView android:textSize="32sp" android:id="@+id/icon_send_app" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/tv_send_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

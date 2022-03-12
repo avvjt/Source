@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/account_picker_content_mode_height" android:paddingEnd="@dimen/outlook_content_inset">
+    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/person_avatar" android:visibility="gone" android:layout_width="@dimen/group_list_avatar_width" android:layout_height="@dimen/group_list_avatar_width" android:importantForAccessibility="no" android:layout_marginEnd="16dp" style="@style/Widget.Outlook.PersonAvatar"/>
+    <ImageView android:id="@+id/icon" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerInside" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="16dp" android:elevation="2dp"/>
+    <LinearLayout android:gravity="start|center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/chevron" android:layout_width="@dimen/outlook_icon_size" android:layout_height="@dimen/outlook_icon_size" android:src="@drawable/ic_fluent_chevron_down_20_filled" android:scaleType="centerInside"/>
+</LinearLayout>

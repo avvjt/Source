@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/listSeparator" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="24dp">
+    <TextView android:gravity="center_vertical" android:id="@+id/ag9" android:layout_marginTop="8dp" android:textIsSelectable="false" style="@style/TextView_ListSeparator_Preference"/>
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:id="@+id/tv_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/material_normal_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/menu_workspace_edit_name" android:title="@string/menu_workspace_edit_name" app:showAsAction="never"/>
     <item android:id="@+id/menu_workspace_leave" android:title="@string/menu_workspace_leave" app:showAsAction="never"/>
 </menu>

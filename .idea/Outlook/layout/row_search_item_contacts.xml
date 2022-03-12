@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/search_item_background" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:layout_gravity="center_vertical" android:id="@+id/people_list_item_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="@dimen/combined_search_item_padding_vertical" android:layout_marginBottom="@dimen/combined_search_item_padding_vertical" android:importantForAccessibility="no" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" style="@style/Widget.Outlook.PersonAvatar"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/lyt_person_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="16dp">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:ellipsize="end" android:id="@+id/people_list_item_name" android:layout_width="match_parent" android:layout_height="0dp" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/people_list_item_email" android:layout_width="match_parent" android:layout_height="0dp" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

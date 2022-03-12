@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/text_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:boxStrokeColor="@color/text_input_box_stroke_color" outlook:helperTextTextColor="@color/danger_primary" outlook:hintTextColor="@color/text_input_box_stroke_color" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <AutoCompleteTextView android:id="@+id/dropdown_auto_complete_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

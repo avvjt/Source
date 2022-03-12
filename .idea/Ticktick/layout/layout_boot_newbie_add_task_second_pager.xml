@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="176dp">
+        <com.ticktick.task.view.BootNewbieTextLineView android:layout_gravity="bottom|center_horizontal" android:id="@+id/text_line_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.ticktick.task.view.BootNewbieTextLineView android:layout_gravity="bottom|center_horizontal" android:id="@+id/text_line_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <androidx.cardview.widget.CardView android:layout_gravity="bottom|center_horizontal" android:id="@+id/cv_input_and_keyboard" android:visibility="gone" android:layout_width="320dp" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="200dp" android:layout_marginRight="24dp" android:layout_marginBottom="65dp" app:cardCornerRadius="@dimen/corners_radius_card" app:cardElevation="4dp">
+        <FrameLayout android:id="@+id/fl_title_input" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="48dp">
+            <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/pure_black_alpha_85" android:layout_gravity="center_vertical" android:id="@+id/tv_task_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/f3"/>
+            <View android:id="@+id/view_cover_task_title" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="14dp"/>
+        </FrameLayout>
+        <RelativeLayout android:background="@color/pure_black_alpha_6" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginTop="48dp">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/pure_black_alpha_36" android:id="@+id/icon_choose_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/ic_svg_special_calendar" android:layout_centerVertical="true"/>
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/pure_black_alpha_36" android:id="@+id/icon_priority" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/ic_svg_priority_high" android:layout_toRightOf="@+id/icon_choose_date" android:layout_centerVertical="true"/>
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/pure_black_alpha_36" android:id="@+id/icon_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/ic_svg_special_tag" android:layout_toRightOf="@+id/icon_priority" android:layout_centerVertical="true"/>
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/pure_black_alpha_36" android:id="@+id/icon_inbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/ic_svg_inbox" android:layout_toRightOf="@+id/icon_tag" android:layout_centerVertical="true"/>
+            <TextView android:textSize="14sp" android:textColor="@color/pure_black_alpha_24" android:id="@+id/tv_inbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/aps" android:layout_toRightOf="@+id/icon_inbox" android:layout_centerVertical="true"/>
+            <FrameLayout android:layout_width="38dp" android:layout_height="38dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.ticktick.task.view.ShiningCircleButton android:id="@+id/shining_circle_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:tAnimationScale="0.6" app:tColor="@color/primary_blue_100" app:tEndAlpha="0.24" app:tStartAlpha="0.24"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_send" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_send" android:scaleType="fitCenter"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:background="@color/pure_black_alpha_6" android:layout_width="320dp" android:layout_height="196dp" android:layout_marginTop="90dp" android:src="@drawable/ic_keyboard" android:scaleType="fitXY"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

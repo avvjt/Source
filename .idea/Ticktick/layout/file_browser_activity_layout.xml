@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <com.ticktick.task.view.selectableview.SelectableListView android:id="@android:id/list" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp" android:layout_above="@+id/a5" android:layout_below="@+id/toolbar"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/a5" android:background="?attr/activity_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true">
+        <com.ticktick.task.view.selectableview.SelectableButton android:textColor="?android:attr/textColorPrimary" android:id="@+id/btn_select" android:layout_width="0dp" android:layout_height="match_parent" android:text="@android:string/cancel" android:layout_weight="1"/>
+        <ImageView android:layout_width="@dimen/gta_dialog_divider_width" android:layout_height="match_parent" style="?attr/tt_divider"/>
+        <com.ticktick.task.view.selectableview.SelectableButton android:textColor="?android:attr/textColorPrimary" android:id="@+id/btn_confirm" android:layout_width="0dp" android:layout_height="match_parent" android:text="@android:string/ok" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

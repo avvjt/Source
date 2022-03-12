@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.ResizableVerticalLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:id="@+id/root_calendar_views_container" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/hidden_calendars_stub" android:layout="@layout/layout_hidden_calendars_view" android:inflatedId="@+id/hidden_calendars_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.acompli.acompli.ui.event.list.calendar.CalendarView android:id="@+id/calendar_view" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:showCalendarHandle="true"/>
+    <include android:visibility="gone" layout="@layout/weather_feature_onboarding_card"/>
+    <FrameLayout android:id="@+id/in_place_card_container_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/divider_calendar_bottom"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/two_mode_calendar_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.acompli.acompli.ui.event.list.agenda.AgendaView android:id="@+id/agenda_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.acompli.acompli.ui.event.list.multiday.MultiDayView android:id="@+id/multiday_view" android:layout_width="match_parent" android:layout_height="match_parent" outlook:alldaySectionBackgroundColor="@color/outlook_app_surface_primary"/>
+        <com.acompli.acompli.ui.event.list.month.MonthView android:id="@+id/month_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/calendar_fab_container" layout="@layout/calendar_fab"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.microsoft.office.outlook.uikit.widget.ResizableVerticalLinearLayout>

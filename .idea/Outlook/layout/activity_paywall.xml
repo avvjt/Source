@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_sheet_fragment_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_hideable="true" app:layout_behavior="com.google.android.material.bottomsheet.PaywallBottomSheetBehavior">
+        <com.google.android.material.chip.Chip android:theme="@style/Theme.MaterialComponents.DayNight" android:layout_gravity="center_horizontal" android:id="@+id/email_chip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/pw_v2_email_chip_margin" android:elevation="@dimen/pw_v2_email_chip_elevation" app:rippleColor="@null" style="@style/Widget.Paywall.Chip.Email"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

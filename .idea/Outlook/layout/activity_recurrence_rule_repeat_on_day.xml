@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/repeat_on_day_root" android:background="@color/calendar_picker_background_color" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_no_tint_navigation"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/repeat_on_day_scroll_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end|middle">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/repeat_on_day_same_day_each_month" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="?attr/listPreferredItemHeightSmall" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+                    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:ellipsize="end" android:gravity="start|center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/repeat_on_day_same_day_each_month" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:layout_gravity="center_vertical" android:id="@+id/repeat_on_day_same_day_each_month_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/repeat_on_day_same_week_each_month" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="?attr/listPreferredItemHeightSmall" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+                    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/repeat_on_day_same_week_text" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/repeat_on_day_same_week_each_month" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatRadioButton android:layout_gravity="center_vertical" android:id="@+id/repeat_on_day_same_week_each_month_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.acompli.acompli.ui.event.recurrence.view.DayOfMonthPickerView android:layout_gravity="center_horizontal" android:id="@+id/repeat_on_day_day_of_month_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.acompli.acompli.ui.event.recurrence.view.WeekOfMonthPickerView android:id="@+id/repeat_on_day_week_of_month_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/lenshvc_camera_access_error" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/lenshvc_permission_view_padding" android:paddingEnd="@dimen/lenshvc_permission_view_padding">
+    <ImageView android:id="@+id/lenshvc_camera_icon" android:layout_width="@dimen/lenshvc_permission_view_image_width" android:layout_height="@dimen/lenshvc_permission_view_image_height" android:importantForAccessibility="no"/>
+    <TextView android:textSize="16sp" android:id="@+id/lenshvc_camera_error_title" android:layout_marginTop="16dp" style="@style/permissionViewTextStyle"/>
+    <TextView android:textSize="14sp" android:id="@+id/lenshvc_camera_error_summary" android:layout_marginTop="19dp" style="@style/permissionViewTextStyle"/>
+</LinearLayout>

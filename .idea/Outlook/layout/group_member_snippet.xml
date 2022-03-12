@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:padding="@dimen/group_member_snippet_padding_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/group_member_snippet_avatar" style="@style/Groups_PersonAvatar"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/group_member_snippet_name_section_margin_left" android:layout_weight="1" android:layout_marginStart="@dimen/group_member_snippet_name_section_margin_left">
+        <TextView android:id="@+id/group_member_snippet_name" style="@style/Groups_PrimaryListItem"/>
+        <TextView android:id="@+id/group_member_snippet_email" style="@style/Groups_SecondaryListItem"/>
+    </LinearLayout>
+    <ImageButton android:id="@+id/member_actions_button" style="@style/Groups_MemberActionsButton"/>
+</LinearLayout>

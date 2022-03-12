@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@+id/oaf_main_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:navigationContentDescription="@string/oaf_cancel" app:navigationIcon="@drawable/oaf_close" app:title="@string/oaf_heading"/>

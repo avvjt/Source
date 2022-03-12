@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" style="@style/AgendaWidgetV2SeparatorNarrowRootItem_Dark">
+    <TextView android:textSize="@dimen/agenda_widget_v2_separator_cell_narrow_text_size" android:id="@+id/separatorText" style="@style/AgendaWidgetV2DaySeparatorLabel_Dark"/>
+</LinearLayout>

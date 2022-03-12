@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:background="@color/grey900" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" outlook:popupTheme="@style/ThemeOverlay.Outlook.Popup" style="?attr/toolbarStyle"/>
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@+id/scaleImageView" android:background="@color/grey900" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

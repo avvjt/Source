@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.view.internal.GridMenuItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:autoTintIconColor="?attr/colorAccent">
+    <Button android:textAppearance="@style/TextAppearance.Outlook.Caption" android:ellipsize="end" android:id="@+id/title" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="96dp" android:text="@string/more_add_ins" android:maxLines="2" android:drawableTop="@drawable/ic_fluent_apps_add_in_24_regular" android:drawablePadding="8dp" android:paddingStart="8dp" android:paddingEnd="8dp" outlook:textAllCaps="false"/>
+</com.microsoft.office.outlook.uikit.view.internal.GridMenuItemView>

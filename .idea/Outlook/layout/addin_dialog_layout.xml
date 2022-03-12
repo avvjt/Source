@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/TextAppearance.Widget.Outlook.ToolBar.Title.Dialog" android:gravity="center_vertical" android:paddingLeft="@dimen/addin_title_padding" android:paddingRight="@dimen/addin_title_padding" android:layout_width="match_parent" android:layout_height="@dimen/addin_title_height" android:text="@string/dialog_title_addins" android:paddingStart="@dimen/addin_title_padding" android:paddingEnd="@dimen/addin_title_padding"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/addins_list_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/vhvc_grey15" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16dp" android:layout_marginTop="@dimen/margin_20dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_14dp" android:textStyle="normal" android:textColor="@color/vhvc_grey13" android:gravity="left" android:id="@+id/help_support_header_voice_cmd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dy" android:lineSpacingExtra="@dimen/line_spacing_2sp" android:fontFamily="sans-serif"/>
+            <TextView android:textSize="@dimen/text_size_12dp" android:textStyle="normal" android:textColor="@color/vhvc_grey13" android:gravity="left" android:id="@+id/help_support_header_how_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4dp" android:text="@string/dz" android:lineSpacingExtra="@dimen/line_spacing_2sp" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_13dp">
+            <LinearLayout android:id="@+id/go_to_all_voice_commands_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_12dp" android:textStyle="normal" android:textColor="@color/vhvc_blue3" android:id="@+id/go_all_voice_commands_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ea" android:lineSpacingExtra="@dimen/line_spacing_2sp" android:contentDescription="@string/eq" android:fontFamily="sans-serif"/>
+                <ImageView android:id="@+id/go_to_all_voice_commands" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_8dp" android:src="@drawable/go_to_all_voice_commands"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recview_static_cards" android:paddingLeft="@dimen/padding_8dp" android:paddingRight="@dimen/padding_8dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/empty_view_layout" android:background="?attr/activity_background" android:paddingTop="24dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="0dp" android:layout_height="?attr/k"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/welcome_icon" android:background="@drawable/empty_view_bg_light" android:layout_width="156dp" android:layout_height="156dp" android:layout_marginTop="70dp" android:src="@drawable/daily_reminder_all_task_done" android:scaleType="center"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/text_size_16" android:textColor="@color/textColorSecondary_light" android:gravity="center_horizontal" android:id="@+id/date_text" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:lineSpacingMultiplier="1.4"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="24sp" android:textColor="?attr/ej" android:gravity="center_horizontal" android:id="@+id/welcome_text" android:paddingLeft="50dp" android:paddingTop="5dp" android:paddingRight="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.4"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/newbie_welcome_view" android:paddingTop="24dp" android:layout="@layout/daily_reminder_newbie_introduce_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/today_task_done_tips_view" android:paddingTop="24dp" android:layout="@layout/today_task_done_tips_view_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/task_detail_view" android:background="?attr/activity_background" android:paddingTop="24dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/head_layout" android:layout_width="match_parent" android:layout_height="?attr/k" android:layout_alignParentTop="true">
+            <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:gravity="center" android:id="@+id/task_count" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorTertiary" android:gravity="center" android:id="@+id/delete_btn" android:background="?attr/i" android:layout_width="56dp" android:layout_height="match_parent" android:text="@string/ic_svg_clear"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/task_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_layout">
+            <LinearLayout android:orientation="vertical" android:id="@+id/task_view" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/daily_task_detail_padding_top">
+                    <TextView android:textSize="14sp" android:id="@+id/duedate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="16sp" android:id="@+id/changed_duedate_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="16sp" android:textColor="?attr/textColorTertiary" android:ellipsize="end" android:id="@+id/project_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:maxLines="1" android:layout_toRightOf="@+id/duedate" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <FrameLayout android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/a6r" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <View android:id="@+id/space_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/animator_task_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/daily_task_detail_padding_top">
+                    <TextView android:textSize="14sp" android:id="@+id/animator_duedate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="14sp" android:id="@+id/animator_changed_duedate_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:ellipsize="end" android:id="@+id/animator_project_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:maxLines="1" android:layout_toRightOf="@+id/animator_duedate" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <FrameLayout android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/animator_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <View android:id="@+id/animator_space_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView style="?attr/tt_divider"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="68dp">
+                <ViewStub android:id="@+id/daily_reminder_bottom_today_detail_layout" android:layout="@layout/daily_reminder_bottom_today_detail_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ViewStub android:id="@+id/daily_reminder_bottom_later_detail_layout" android:layout="@layout/daily_reminder_bottom_later_detail_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <include android:id="@+id/set_date_main_layout" layout="@layout/daily_reminder_bottom_main_layout"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

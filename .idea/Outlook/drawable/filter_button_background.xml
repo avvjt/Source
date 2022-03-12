@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/white_with_opacity_80">
+    <item>
+        <shape>
+            <corners android:radius="16dp"/>
+            <solid android:color="@color/pill_switch_track"/>
+            <size android:height="32dp"/>
+        </shape>
+    </item>
+</ripple>

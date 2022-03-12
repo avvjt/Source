@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/profile_card_detail_info_item_icon" android:tint="@color/outlook_app_icon_tint" style="@style/ListItem.Icon"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/profile_card_detail_info_item_main_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" style="@style/ListItem.Title"/>
+        <TextView android:id="@+id/profile_card_detail_info_item_secondary_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" style="@style/ListItem.Summary"/>
+        <com.microsoft.office.outlook.uikit.widget.CustomEllipsisTextView android:autoLink="none" android:id="@+id/profile_card_detail_info_item_ellipsis_view" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:ellipsisText="@string/meeting_description_ellipsis_read_more" outlook:ellipsisTextColor="?android:attr/textColorSecondary" outlook:ellipsisTextSize="@dimen/outlook_text_size_caption" style="@style/ListItem.Summary"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/profile_card_detail_contact_restriction_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_shield_20_regular"/>
+</LinearLayout>

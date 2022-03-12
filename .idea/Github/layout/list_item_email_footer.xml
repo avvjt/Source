@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/textSecondary" android:gravity="center_vertical" android:id="@+id/email_textview" android:tag="layout/list_item_email_footer_0" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/triage_merge_commit_email_footer_hint" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/BodyText.Small"/>

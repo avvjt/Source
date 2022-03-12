@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/reviewer_option_view_review" android:title="@string/issue_pr_view_review"/>
+    <item android:id="@+id/reviewer_option_re_request" android:title="@string/issue_pr_re_request_review"/>
+    <item android:id="@+id/reviewer_option_dismiss" android:title="@string/issue_pr_dismiss_review"/>
+</menu>

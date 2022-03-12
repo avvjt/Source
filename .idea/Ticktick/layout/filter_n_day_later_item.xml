@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <FrameLayout android:id="@+id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/textColorTertiary" android:layout_gravity="center" android:id="@+id/ww" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_special_today"/>
+            <TextView android:textColor="?attr/go_today_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N+" style="@style/date_icon_text_style"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spinner_count" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="32dp" style="@style/AppSpinnerUnderlined"/>
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/text_day" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_toRightOf="@+id/spinner_count" android:layout_alignWithParentIfMissing="true" android:marqueeRepeatLimit="10"/>
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/l7" android:singleLine="true" android:layout_toRightOf="@+id/text_day" android:layout_alignWithParentIfMissing="true" android:marqueeRepeatLimit="10"/>
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/selection_checkbox" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.ticktick.task.view.selectableview.SelectableFrameLayout>

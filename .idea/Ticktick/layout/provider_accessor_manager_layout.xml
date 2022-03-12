@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:layout_below="@+id/toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@android:id/empty" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/emptyView_img" android:background="@drawable/empty_view_bg_light" android:layout_width="156dp" android:layout_height="156dp" android:layout_marginTop="70dp" android:src="@drawable/empty_view_access_light" android:scaleType="center"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/empty_title" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/aeo"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_horizontal" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/aep"/>
+    </LinearLayout>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

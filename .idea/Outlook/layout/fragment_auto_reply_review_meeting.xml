@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar_layout" layout="@layout/toolbar"/>
+    <TextView android:textSize="@dimen/outlook_text_size_heading" android:textColor="@color/agenda_widget_no_event_text_color" android:gravity="center" android:id="@+id/empty_state" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_event"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/meetings_recycler_view" android:tag="@string/tag_edge_to_edge" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/minor_addins_error_page" android:paddingTop="@dimen/gdpr_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/illustration_generic_error" android:contentDescription="@string/no_addins"/>
+    <TextView android:textSize="@dimen/gdpr_first_text_size" android:textStyle="normal" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_addins" android:fontFamily="sans-serif-medium"/>
+    <TextView android:textSize="@dimen/gdpr_second_text_size" android:textStyle="normal" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/add_in_store_error_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/minor_account_cannot_install_addins" android:lineSpacingExtra="@dimen/gdpr_line_spacing" android:fontFamily="sans-serif" android:paddingStart="@dimen/gdpr_padding" android:paddingEnd="@dimen/gdpr_padding"/>
+</LinearLayout>

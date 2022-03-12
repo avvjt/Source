@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_cover" android:layout_width="48dp" android:layout_height="48dp" android:layout_margin="12dp" android:src="@mipmap/default_image" android:scaleType="centerCrop"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/tv_folder_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/c6"/>
+        <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:id="@+id/tv_image_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/iv_folder_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/material_normal_padding">
+        <com.ticktick.task.view.RoundImage.RoundedImageView android:layout_gravity="end|top" android:id="@+id/cb_bg" android:layout_width="20dp" android:layout_height="20dp" android:scaleType="center" roundedImageView:corner_radius="10dp" roundedImageView:mutate_background="true" roundedImageView:oval="false"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkbox_normal"/>
+    </FrameLayout>
+</LinearLayout>

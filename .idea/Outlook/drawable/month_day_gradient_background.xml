@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="right">
+        <shape>
+            <size android:width="@dimen/month_view_day_gradient_width"/>
+            <gradient android:startColor="@color/month_day_gradient_start_color" android:endColor="@color/month_day_gradient_end_color" android:angle="180"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <WebView android:id="@+id/onerm_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/one_rm_empty_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:id="@+id/one_rm_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/illustration_generic_error" android:drawablePadding="@dimen/illustration_state_drawable_padding" android:textAlignment="center"/>
+        <Button android:textColor="?attr/colorAccent" android:id="@+id/btn_try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/try_again" style="@style/TextAppearance.Outlook.Button.Borderless"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.ui.conversation.v3.views.MessageCardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/message_margin" android:layout_marginStart="@dimen/message_thread_margin" android:layout_marginEnd="@dimen/message_thread_margin">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="4dp">
+            <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:layout_gravity="top|center_horizontal" android:id="@+id/draft_message_snippet_avatar" android:layout_width="40dp" android:layout_height="wrap_content" android:foreground="@drawable/color_circle_foreground" android:importantForAccessibility="no" style="@style/Widget.Outlook.PersonAvatar"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/draft_message_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.microsoft.office.outlook.uikit.widget.RelevantEllipsisTextView android:textColor="?attr/dangerPrimary" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/draft_message_snippet_sender" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/conversation_draft_prefix" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:importantForAccessibility="yes" android:fontFamily="sans-serif-medium" style="@style/TextAppearance.Outlook.SubHeading"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.microsoft.office.outlook.uikit.widget.RelevantEllipsisTextView android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/draft_message_snippet_body" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:importantForAccessibility="yes" style="@style/TextAppearance.Outlook.Body1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/draft_delete" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/account_btn_default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_delete_24_regular" android:contentDescription="@string/accessibility_draft_discarded"/>
+    </LinearLayout>
+</com.acompli.acompli.ui.conversation.v3.views.MessageCardView>

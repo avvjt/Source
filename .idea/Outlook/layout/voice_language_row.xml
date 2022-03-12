@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/height_50dp">
+    <TextView android:textColor="@color/vhvc_black1" android:gravity="center_vertical" android:id="@+id/voice_language_item_row" android:background="@drawable/voice_language_list_row_background" android:paddingLeft="@dimen/padding_44dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.cardview.widget.CardView>

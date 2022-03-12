@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_fluent_scan_dash_24_regular" android:id="@+id/scan_qr_code" android:title="@string/scan_qr_code"/>
+    <item android:icon="@drawable/ic_fluent_video_24_regular" android:id="@+id/meet_now" android:title="@string/meet_now"/>
+    <item android:icon="@drawable/ic_fluent_people_community_24_regular" android:id="@+id/book_workspace" android:title="@string/book_a_workspace"/>
+    <item android:icon="@drawable/ic_fluent_compose_24_regular" android:id="@+id/new_message" android:title="@string/compose_option_compose_here"/>
+    <item android:icon="@drawable/ic_fluent_calendar_add_24_regular" android:id="@+id/new_event" android:title="@string/create_event"/>
+    <item android:icon="@drawable/ic_fluent_lightbulb_24_regular" android:id="@+id/focus_time" android:title="@string/add_focus_time"/>
+</menu>

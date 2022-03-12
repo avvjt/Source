@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.ui.txp.view.TxPCardFlightDetails xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/txp_card_flight_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/txp_card_detail_spacer_divider" android:showDividers="middle" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Headline1" android:gravity="center_vertical" android:id="@+id/txp_card_flight_departure_city_short" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginEnd="12dp"/>
+        <com.acompli.acompli.ui.txp.view.FlightProgress android:textSize="@dimen/outlook_text_size_subheading" android:textColor="?android:attr/textColorSecondary" android:id="@+id/txp_card_flight_progress" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" outlook:durationBackground="@color/txp_card_flight_duration_background" outlook:lineGap="@dimen/txp_plane_progress_line_gap" outlook:planeDrawable="@drawable/ic_fluent_airplane_24_filled" outlook:progressLineColor="@color/txp_card_flight_progress_line_color" outlook:progressLineThickness="1dp"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Headline1" android:gravity="center_vertical" android:id="@+id/txp_card_flight_arrival_city_short" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="start" android:id="@+id/txp_card_flight_departure_city" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="end" android:id="@+id/txp_card_flight_arrival_city" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="start" android:id="@+id/txp_card_flight_departure_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="end" android:id="@+id/txp_card_flight_arrival_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/txp_card_flight_departure_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:gravity="end" android:id="@+id/txp_card_flight_arrival_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</com.acompli.acompli.ui.txp.view.TxPCardFlightDetails>

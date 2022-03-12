@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end">
+    <CheckedTextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:gravity="center_vertical" android:id="@+id/compose_new_window" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/quick_reply_option_compose_in_new_window" android:drawablePadding="@dimen/list_item_icon_margin_end" android:drawableStart="@drawable/ic_fluent_checkbox_24_selector" style="@style/ListItem.Row"/>
+</LinearLayout>

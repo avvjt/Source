@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/no_account_state_root" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <TextView android:textSize="@dimen/agenda_widget_v2_no_accounts_state_text_size" android:textColor="@color/grey900" android:id="@+id/no_account_state_title" android:paddingTop="@dimen/agenda_widget_v2_empty_state_padding_top" android:paddingBottom="@dimen/agenda_widget_v2_empty_state_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_accounts_found" android:drawableTop="@drawable/illustration_people" android:drawablePadding="@dimen/agenda_widget_v2_empty_state_drawable_padding" android:textAlignment="center" style="@style/TextAppearance.Outlook.Caption.Medium"/>
+</LinearLayout>

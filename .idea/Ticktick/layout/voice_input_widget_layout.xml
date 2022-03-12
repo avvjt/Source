@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/dialog_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" app:cardBackgroundColor="?attr/dialog_bg_color" app:cardCornerRadius="@dimen/corners_radius_dialog">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="?attr/colorHighlight" android:id="@+id/ai6" android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/b6y" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:id="@+id/action_summary" android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b6x" android:layout_below="@+id/ai6"/>
+        <ImageView android:id="@+id/outer_circle" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="-5dp" android:layout_marginBottom="-5dp" android:src="@drawable/voice_input_outer_circle" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="-5dp" android:layout_marginBottom="-5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/inner_circle" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/voice_input_first_circle" android:tint="?attr/colorHighlight"/>
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:id="@+id/ic_voice" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/ic_svg_audio_record"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/finish_check" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="-5dp" android:layout_marginBottom="-5dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:alpha="0">
+            <ImageView android:id="@+id/finish_circle" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/voice_input_finish_circle" android:layout_centerInParent="true"/>
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:id="@+id/ic_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_check" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <ProgressBar android:id="@+id/a5k" android:visibility="gone" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginRight="-10dp" android:layout_marginBottom="-10dp" android:indeterminateDrawable="@drawable/voice_input_widget_progress_bar" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

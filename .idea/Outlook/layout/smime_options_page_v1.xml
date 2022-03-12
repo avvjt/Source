@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/progress" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Outlook.ProgressBar"/>
+    </FrameLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/parent_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.acompli.acompli.views.SmimeOptionView android:id="@+id/sign_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+            <com.acompli.acompli.views.SmimeOptionView android:id="@+id/encrypt_option" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:id="@+id/divider" android:background="@color/outlook_app_divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/content_inset" outlook:layout_constraintStart_toStartOf="0" outlook:layout_constraintTop_toBottomOf="@+id/encrypt_option"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/row_download_certificate" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/content_inset" android:paddingStart="@dimen/content_inset" android:paddingEnd="@dimen/content_inset">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_arrow_download_24_regular" outlook:tint="?attr/colorAccent"/>
+                <TextView android:textSize="16sp" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_certificates" android:fontFamily="sans-serif-medium" android:paddingStart="34dp" outlook:textAllCaps="true"/>
+            </LinearLayout>
+            <TextView android:id="@+id/guide_info" android:padding="@dimen/content_inset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smime_guide_info" android:maxLines="5" android:importantForAccessibility="yes" outlook:layout_constraintEnd_toEndOf="0" outlook:layout_constraintStart_toStartOf="0" outlook:layout_constraintTop_toBottomOf="@+id/divider" style="@style/ListItem.Summary"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

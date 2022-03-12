@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/list_view_item_height_high">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/left_layout" android:layout_width="56dp" android:layout_height="@dimen/list_view_item_height_high" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/ww" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ic_svg_calendar_local"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/cal_edit_add_subscribe" android:paddingRight="@dimen/preference_margin" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="?android:attr/listPreferredItemHeight" android:minHeight="?android:attr/listPreferredItemHeight" android:text="@string/act" android:singleLine="true" android:layout_toRightOf="@+id/left_layout" android:layout_centerVertical="true"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

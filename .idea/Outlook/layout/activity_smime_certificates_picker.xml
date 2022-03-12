@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/layout_root_background" android:layout_width="match_parent" android:layout_height="match_parent" outlook:spaceMode="1">
+    <include android:id="@+id/include" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/cert_group_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/cert_group" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/active_certificate" android:paddingTop="24dp" android:paddingBottom="16dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/active_certificate" style="@style/ListItem.Header"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/cert_group_list_active" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <LinearLayout android:id="@+id/reset_to_default" android:background="?attr/selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/reset_to_default_cert" style="@style/ListItem.Title"/>
+            </LinearLayout>
+            <TextView android:id="@+id/other_certificate" android:paddingTop="24dp" android:paddingBottom="16dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/other_certificates" style="@style/ListItem.Header"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/cert_group_list_other" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

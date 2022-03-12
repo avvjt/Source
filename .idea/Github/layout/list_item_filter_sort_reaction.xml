@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="24sp" android:gravity="center" android:id="@+id/emoji" android:tag="layout/list_item_filter_sort_reaction_0" android:background="@drawable/sort_filter_reaction_background" android:padding="@dimen/default_margin_0_75x" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>

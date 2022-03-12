@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.VerticalScrollCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/vertical_scroll_coordinator_layout" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fragment_habit_check_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/fragment_habit_statistics_container" android:layout_width="match_parent" android:layout_height="900dp" app:layout_behavior="@string/behavior_habit_detail"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/top_layout" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/status_bar_placeholder" android:layout_width="match_parent" android:layout_height="28dp"/>
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="#00ffffff" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="?attr/k" app:contentInsetEnd="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:navigationIcon="@drawable/abc_ic_ab_back_mtrl_am_alpha" app:popupTheme="?attr/TT_Toolbar_Pop" app:theme="?attr/TT_Toolbar_Inverse" app:titleMarginStart="0dp"/>
+    </LinearLayout>
+</com.ticktick.task.view.VerticalScrollCoordinatorLayout>

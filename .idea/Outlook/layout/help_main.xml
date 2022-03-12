@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/voice_settings_heading_background" android:layout_width="match_parent" android:layout_height="@dimen/height_45dp">
+        <ImageView android:id="@+id/all_voice_commands_back_button" android:padding="@dimen/padding_14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_all_voice_commands_back_icon_slice" android:contentDescription="@string/ar"/>
+        <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/vhvc_blue2" android:gravity="center" android:id="@+id/all_voice_command_help_header" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="@dimen/margin_59dp"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/help_all_commands" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/help_and_support" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

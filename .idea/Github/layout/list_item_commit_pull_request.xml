@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/pull_request_text" android:tag="layout/list_item_commit_pull_request_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/default_margin_half" app:drawableStartCompat="@drawable/ic_git_pull_request_16" style="@style/ListItemCommit"/>

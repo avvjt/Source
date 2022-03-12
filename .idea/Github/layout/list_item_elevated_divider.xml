@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/divider_background" android:tag="layout/list_item_elevated_divider_0" android:background="@color/listItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include android:id="@+id/divider" layout="@layout/list_item_divider"/>
+</FrameLayout>

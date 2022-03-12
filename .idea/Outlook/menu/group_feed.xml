@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_info_24_regular" android:id="@+id/action_open_group_card" android:orderInCategory="10000" android:title="@string/group_details_menu_title" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="always"/>
+</menu>

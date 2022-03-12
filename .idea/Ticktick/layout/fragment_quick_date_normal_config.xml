@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.UnScalableTextView android:textSize="14sp" android:textColor="?attr/ej" android:layout_gravity="center_horizontal" android:id="@+id/tv_switch_mode" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aqg"/>
+    <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100dp" android:minHeight="100dp" app:cardBackgroundColor="?attr/activity_background" app:cardCornerRadius="@dimen/corners_radius_card" app:cardElevation="8dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_quick_dates_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:overScrollMode="never"/>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:id="@+id/today_tips_icon" android:background="@drawable/empty_view_bg_light" android:layout_width="156dp" android:layout_height="156dp" android:src="@drawable/daily_reminder_today_task_done" android:scaleType="center" android:layout_above="@+id/plan_your_day" android:layout_centerHorizontal="true"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:gravity="center_horizontal" android:id="@+id/plan_your_day" android:padding="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/b4l" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_horizontal" android:id="@+id/text_summary" android:padding="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48dp">
+            <Button android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="16sp" android:textColor="@color/white_alpha_100" android:id="@+id/start_btn" android:background="@drawable/selector_positive_button" android:layout_width="288dp" android:layout_height="40dp" android:text="@string/ki"/>
+        </LinearLayout>
+        <com.ticktick.task.view.selectableview.SelectableTextView android:textSize="16sp" android:textColor="?attr/colorHighlight" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/finish_btn" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:text="@string/ah5"/>
+    </LinearLayout>
+</LinearLayout>

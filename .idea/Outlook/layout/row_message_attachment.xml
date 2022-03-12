@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:id="@+id/parent" android:background="@drawable/item_background_border" android:paddingTop="4dp" android:paddingBottom="4dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8dp" android:paddingEnd="4dp">
+    <FrameLayout android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/attachment_file_icon" android:layout_width="24dp" android:layout_height="24dp"/>
+        <ViewStub android:id="@+id/attachment_file_progress_stub" android:layout="@layout/progressbar_attachment" android:inflatedId="@+id/attachment_file_progress" android:layout_width="24dp" android:layout_height="24dp"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="4dp">
+        <TextView android:textAppearance="@style/TextAppearance_Outlook_Message_AttachmentFilename" android:ellipsize="end" android:id="@+id/attachment_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250dp" android:lines="1" android:layout_marginStart="10dp" outlook:layout_column="1" outlook:layout_row="0"/>
+        <TextView android:textAppearance="@style/TextAppearance_Outlook_Message_AttachmentFileInfo" android:id="@+id/attachment_file_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10dp" outlook:layout_column="1" outlook:layout_row="1"/>
+    </LinearLayout>
+    <com.microsoft.office.outlook.uikit.widget.MenuView android:gravity="center" android:layout_gravity="center" android:id="@+id/menu_more" android:layout_width="24dp" android:layout_height="24dp" outlook:menu="@menu/menu_file_combined_file"/>
+</LinearLayout>

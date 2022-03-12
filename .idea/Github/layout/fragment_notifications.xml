@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:tag="layout/fragment_notifications_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.motion.widget.MotionLayout android:id="@+id/motion_layout" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutDescription="@xml/fragment_notifications_scene" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include android:id="@+id/divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:elevation="2dp" android:outlineProvider="none" app:layout_constraintTop_toTopOf="0" layout="@layout/list_item_divider"/>
+        <include android:id="@+id/notifications_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/divider" layout="@layout/notifications_banner_layout"/>
+        <Space android:id="@+id/space" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp" app:layout_constraintTop_toBottomOf="@+id/notifications_banner"/>
+        <com.github.android.views.LoadingViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintTop_toBottomOf="@+id/space"/>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+    <com.google.android.material.appbar.AppBarLayout android:gravity="center_vertical" android:id="@+id/app_bar_layout" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/app_bar_elevation">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+        <androidx.constraintlayout.motion.widget.MotionLayout android:id="@+id/motion_layout_filter_bar" android:layout_width="match_parent" android:layout_height="@dimen/filter_bar_filter_default_height" app:layoutDescription="@xml/notifications_filter_bar_scene">
+            <androidx.fragment.app.FragmentContainerView android:id="@+id/filter_bar_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0"/>
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

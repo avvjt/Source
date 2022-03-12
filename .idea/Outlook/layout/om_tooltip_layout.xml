@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+    <com.microsoft.office.outlook.uikit.view.ArrowView android:id="@+id/tooltip_arrow" android:layout_width="@dimen/tooltip_arrow_width" android:layout_height="@dimen/tooltip_arrow_height"/>
+    <FrameLayout android:id="@+id/layout_text_container" android:background="@drawable/tooltip_background" android:paddingTop="@dimen/tooltip_container_padding_vertical" android:paddingBottom="@dimen/tooltip_container_padding_vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:paddingStart="@dimen/tooltip_container_padding_horizontal" android:paddingEnd="@dimen/tooltip_container_padding_horizontal">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Tooltip" android:textColor="@color/tooltip_text_color" android:gravity="start|center_vertical" android:id="@+id/tooltip_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

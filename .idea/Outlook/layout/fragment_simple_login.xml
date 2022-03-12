@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/horizontal_divider" android:showDividers="middle">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/text_input_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/simple_login_hint_email" style="@style/Widget.Outlook.TextInputLayout.Large">
+                <EditText android:id="@+id/edit_text_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:contentDescription="@string/simple_login_hint_email" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/text_input_server" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/simple_login_hint_server" style="@style/Widget.Outlook.TextInputLayout.Large">
+                <EditText android:id="@+id/edit_text_server" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/text_input_domain_username" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/simple_login_hint_domain_username" style="@style/Widget.Outlook.TextInputLayout.Large">
+                <EditText android:id="@+id/edit_text_domain_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.microsoft.office.outlook.uikit.widget.PasswordTextInputLayout android:id="@+id/text_input_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" outlook:password_hint_text="@string/simple_login_hint_password" outlook:text_input_style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/text_input_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/simple_login_hint_description" style="@style/Widget.Outlook.TextInputLayout.Large">
+                <EditText android:id="@+id/edit_text_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/simple_login_hint_description" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Switch android:textColor="?android:attr/textColorTertiary" android:gravity="start|center_vertical" android:id="@+id/btn_show_advanced" android:background="?attr/selectableItemBackground" android:paddingLeft="20dp" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/simple_login_advanced_settings" android:paddingStart="20dp" android:paddingEnd="@dimen/outlook_content_inset" style="?attr/outlookAccentBorderlessButtonStyle"/>
+</LinearLayout>

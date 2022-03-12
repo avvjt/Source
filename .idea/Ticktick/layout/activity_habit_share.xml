@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/status_bar_placeholder" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/card_view_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/habit_share_image_top_margin" android:layout_centerHorizontal="true">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8dp" app:cardCornerRadius="8dp" app:cardElevation="4dp">
+            <com.ticktick.task.view.CornerFrameLayout android:layout_gravity="center_horizontal" android:id="@+id/corner_frame_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp">
+                <RelativeLayout android:id="@+id/ll_share_image" android:background="@color/white_alpha_100" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/lottie_animation_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                    <ImageView android:layout_gravity="bottom|center_horizontal" android:id="@+id/iv_other_background" android:layout_width="@dimen/habit_share_bg_image_base_size" android:layout_height="@dimen/habit_share_bg_image_base_size"/>
+                    <TextView android:textSize="76sp" android:textColor="@color/white_alpha_100" android:gravity="bottom" android:id="@+id/tv_total_check_ins" android:layout_width="wrap_content" android:layout_height="132dp" android:layout_marginLeft="16dp"/>
+                    <TextView android:textSize="32sp" android:textColor="@color/white_alpha_100" android:ellipsize="end" android:gravity="bottom" android:id="@+id/tv_days" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="132dp" android:maxLines="3" android:layout_toRightOf="@+id/tv_total_check_ins"/>
+                    <TextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:ellipsize="end" android:id="@+id/tv_habit_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="3" android:layout_below="@+id/tv_total_check_ins"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/white_alpha_54" android:id="@+id/tv_share_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <com.ticktick.task.view.HabitShareSawtoothView android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </com.ticktick.task.view.CornerFrameLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="72dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                <ImageView android:id="@+id/iv_ticktick_icon" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/ic_circle_ticktick" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/iv_qr_code" android:layout_toRightOf="@+id/iv_ticktick_icon" android:layout_centerVertical="true">
+                    <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black_alpha_90_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b17"/>
+                    <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="@color/black_alpha_54_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ax3"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_qr_code" android:layout_width="48dp" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <com.ticktick.task.view.ChooseShareAppView android:id="@+id/choose_share_app_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <View android:background="@drawable/ab_solid_shadow_holo_inverse" android:layout_width="match_parent" android:layout_height="5dp" android:layout_above="@+id/choose_share_app_view"/>
+</RelativeLayout>

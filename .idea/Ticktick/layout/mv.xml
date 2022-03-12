@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:paddingLeft="?android:attr/listPreferredItemPaddingLeft" android:paddingRight="?android:attr/listPreferredItemPaddingRight" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeight">
+    <LinearLayout android:gravity="start|center_vertical" android:orientation="horizontal" android:id="@+id/r_" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-4dp" android:minWidth="60dp">
+        <androidx.preference.internal.PreferenceImageView android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:maxHeight="48dp" app:maxWidth="48dp"/>
+    </LinearLayout>
+    <RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="6dp" android:layout_weight="1">
+        <TextView android:textAppearance="@style/gi" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="?android:attr/textColorSecondary" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_below="@android:id/title"/>
+        <androidx.preference.UnPressableLinearLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@android:id/summary">
+            <SeekBar android:id="@+id/a_q" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textAppearance="@style/gi" android:ellipsize="marquee" android:gravity="center" android:id="@+id/a_r" android:scrollbars="none" android:fadingEdge="horizontal" android:layout_width="@dimen/preference_seekbar_value_width" android:layout_height="match_parent" android:singleLine="true" android:fontFamily="sans-serif-condensed"/>
+        </androidx.preference.UnPressableLinearLayout>
+    </RelativeLayout>
+</LinearLayout>

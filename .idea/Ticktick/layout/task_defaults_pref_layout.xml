@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <FrameLayout android:id="@+id/tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/azz" android:maxLines="4" android:lineSpacingMultiplier="1.2"/>
+    </FrameLayout>
+    <com.ticktick.task.view.selectableview.SelectableListView android:id="@android:id/list" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="?attr/divider_color" android:dividerHeight="@dimen/divider_1" android:layout_below="@+id/tips"/>
+    <Button android:textColor="?attr/ej" android:id="@+id/reset_button" android:text="@string/fy" android:layout_alignParentBottom="true" style="@style/BottomBtn"/>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

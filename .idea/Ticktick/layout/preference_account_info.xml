@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="56dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/preference_margin" android:layout_marginRight="@dimen/preference_margin" style="@style/PreferenceTextTitle"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/account_pro_icon" android:layout_width="30dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/preference_margin" android:layout_marginRight="@dimen/preference_margin" android:scaleType="centerInside"/>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/photo_layout" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+            <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/photo" android:background="?attr/colorHighlight" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/default_photo_light" android:layout_centerInParent="true" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

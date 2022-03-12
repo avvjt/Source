@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/pill_track_background_light_disabled"/>
+    <item>
+        <shape>
+            <corners android:radius="16dp"/>
+            <solid android:color="@color/pill_switch_light_duotablet_track"/>
+            <size android:height="32dp"/>
+        </shape>
+    </item>
+</selector>

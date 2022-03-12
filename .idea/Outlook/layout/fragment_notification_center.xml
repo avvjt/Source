@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/notifications_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/notifications_list" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include android:id="@+id/notifications_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/empty_notifications"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/send_availability_date_block_divider"/>
+    </item>
+    <item android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <padding android:top="8dp" android:bottom="8dp"/>
+            <solid android:color="@color/outlook_app_surface_primary"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="12dp" android:paddingRight="8dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="?android:attr/textColorSecondary" android:id="@+id/delete_confirm_checkbox" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/p6"/>
+</LinearLayout>

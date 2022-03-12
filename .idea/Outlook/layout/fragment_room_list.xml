@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_no_tint_navigation"/>
+    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/room_list" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <ViewStub android:id="@+id/empty_view" android:layout="@layout/empty_search" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/error_view" android:layout="@layout/room_error_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout>

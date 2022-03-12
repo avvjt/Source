@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/bottom_sheet_tab_viewpager_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:gravity="center_vertical" android:id="@+id/app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:translationZ="@dimen/default_elevation" android:elevation="@dimen/default_elevation">
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/tab_bar_height" app:tabMode="0" app:tabPaddingEnd="@dimen/default_margin" app:tabPaddingStart="@dimen/default_margin" app:tabTextAppearance="@style/TabButton"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.github.android.views.BottomSheetViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

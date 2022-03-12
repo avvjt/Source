@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/preference_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ft" android:layout_alignParentLeft="true">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apm" style="@style/PreferenceTextTitle"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apn" style="@style/PreferenceTextSummary"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/ft" android:checked="true" android:layout_alignParentRight="true" app:theme="@style/switch_color" style="@style/Switch_Preference"/>
+    </RelativeLayout>
+</merge>

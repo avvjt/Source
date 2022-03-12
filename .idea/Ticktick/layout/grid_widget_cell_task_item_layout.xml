@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/task_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/widget_grid_item_bg_shape" android:layout_alignLeft="@+id/title_text" android:layout_alignTop="@+id/title_text" android:layout_alignRight="@+id/title_text" android:layout_alignBottom="@+id/title_text"/>
+    <TextView android:textSize="9sp" android:ellipsize="none" android:gravity="center_vertical" android:id="@+id/title_text" android:background="@android:color/transparent" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="@dimen/grid_widget_cell_task_item_height" android:layout_marginLeft="@dimen/grid_widget_cell_task_item_margin_bottom" android:layout_marginRight="@dimen/grid_widget_cell_task_item_margin_bottom" android:layout_marginBottom="@dimen/grid_widget_cell_task_item_margin_bottom" android:singleLine="true"/>
+</RelativeLayout>

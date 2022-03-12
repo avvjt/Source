@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/choose_calendar_mode_height">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/choose_list_layout" android:background="?attr/toolbar_background" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="match_parent" android:layout_height="@dimen/choose_calendar_mode_height" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/choose_list" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_calendar_view_list"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/iconColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/att"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/choose_month" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_calendar_view_month"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/iconColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ut"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/choose_one_days" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_calendar_one_day"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/iconColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l5"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/choose_three_days" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_calendar_view_three_days"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/iconColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b14"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/choose_seven_days" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_calendar_seven_day"/>
+            <TextView android:textSize="12sp" android:textColor="?attr/iconColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aus"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/calendar_mode_shadow" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true" style="?attr/tt_divider"/>
+</RelativeLayout>

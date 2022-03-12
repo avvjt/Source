@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/layout_root_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/layout_content_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/outlook_content_inset" android:minHeight="100dp">
+            <TextView android:id="@+id/group_name_display" android:text="@string/label_group_name" android:labelFor="@+id/edit_text_group_name" style="@style/InputTextLayoutLabel"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_group_name" app:hintEnabled="false" style="@style/GroupFormTextInputLayout">
+                <EditText android:id="@+id/edit_text_group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_group_name" android:inputType="textCapWords" android:imeOptions="actionDone" android:accessibilityTraversalAfter="@+id/group_name_display" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+                <TextView android:textColor="@color/grey300" android:ellipsize="end" android:id="@+id/decorated_group_name" android:padding="@dimen/decorated_group_name_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:accessibilityTraversalAfter="@+id/edit_text_group_name"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ProgressBar android:id="@+id/progress_bar_group_name" style="@style/Widget.Outlook.ProgressBar.Blue.TextInputLayout"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/container_group_email" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/outlook_content_inset">
+            <TextView android:id="@+id/group_email_address" android:text="@string/label_group_email" android:labelFor="@+id/edit_text_group_email" android:accessibilityTraversalBefore="@+id/input_layout_group_email" android:accessibilityTraversalAfter="@+id/edit_text_group_name" style="@style/InputTextLayoutLabel"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_group_email" app:hintEnabled="false" style="@style/GroupFormTextInputLayout">
+                <com.acompli.acompli.views.SuffixEditText android:id="@+id/edit_text_group_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_group_email" android:inputType="textEmailAddress" android:imeOptions="actionDone" android:accessibilityTraversalAfter="@+id/group_email_address" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+                <TextView android:textColor="@color/grey300" android:ellipsize="end" android:id="@+id/decorated_group_alias" android:padding="@dimen/decorated_group_name_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:accessibilityTraversalAfter="@+id/edit_text_group_email"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ProgressBar android:id="@+id/progress_bar_group_email" style="@style/Widget.Outlook.ProgressBar.Blue.TextInputLayout"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

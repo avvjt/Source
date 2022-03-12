@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:tag="layout/activity_discussion_comment_reply_thread_0" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.android.views.LoadingViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="match_parent" app:contentPaddingBottom="@dimen/bar_of_actions_list_footer_padding" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include android:id="@+id/app_bar_layout" layout="@layout/app_bar_layout"/>
+    <com.github.android.views.BarOfActionsView android:layout_gravity="bottom" android:id="@+id/bar_of_actions" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin">
+        <com.google.android.material.button.MaterialButton android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/discussions_reply_comment" android:contentDescription="@string/discussions_reply_comment" app:icon="@drawable/ic_reply_16" app:iconGravity="0x2" style="@style/BarOfActionButton"/>
+    </com.github.android.views.BarOfActionsView>
+    <include android:id="@+id/bottom_sheet_triage" layout="@layout/bottom_sheet_triage"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

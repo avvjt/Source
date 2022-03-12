@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="PlayEmailQueries">
+        <item>@string/play_email_assistant_query_1</item>
+        <item>@string/play_email_assistant_query_2</item>
+        <item>@string/play_email_assistant_query_3</item>
+        <item>@string/play_email_assistant_query_4</item>
+    </array>
+    <array name="agendaCalendarView">
+        <item>@string/agenda_calendar_view_query_1</item>
+    </array>
+    <array name="alertTimeChoices">
+        <item>@string/none</item>
+        <item>@string/at_start</item>
+        <item>@string/alert_5_minutes_before</item>
+        <item>@string/alert_10_minutes_before</item>
+        <item>@string/alert_15_minutes_before</item>
+        <item>@string/alert_30_minutes_before</item>
+        <item>@string/alert_1_hour_before</item>
+        <item>@string/alert_2_hours_before</item>
+        <item>@string/alert_1_day_before</item>
+        <item>@string/alert_1_week_before</item>
+    </array>
+    <array name="alertTimeValues">
+        <item>-1</item>
+        <item>@null</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>1440</item>
+        <item>10080</item>
+    </array>
+    <array name="all_day_alert_time_titles">
+        <item>@string/none</item>
+        <item>@string/alert_same_day_9am</item>
+        <item>@string/alert_one_day_before_9am</item>
+        <item>@string/alert_one_week_before</item>
+    </array>
+    <array name="all_day_alert_time_values">
+        <item>-1</item>
+        <item>@null</item>
+        <item>900</item>
+        <item>9540</item>
+    </array>
+    <array name="android_wear_capabilities">
+        <item>watch_core</item>
+    </array>
+    <array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="avatar_background_colors">
+        <item>#ff3298db</item>
+        <item>#ff50bbc4</item>
+        <item>#ff32c270</item>
+        <item>#fff07e21</item>
+        <item>#ffe6463c</item>
+        <item>#fff0ce0e</item>
+        <item>#fff069b1</item>
+        <item>#ff9e75db</item>
+        <item>#ffac735f</item>
+        <item>#ffa5a5ab</item>
+    </array>
+    <array name="avatar_background_colors_hcc">
+        <item>#ff0e5c8f</item>
+        <item>#ff0a585e</item>
+        <item>#ff095c2d</item>
+        <item>#ff8a3e00</item>
+        <item>#ff992018</item>
+        <item>#ff574a00</item>
+        <item>#ff8a2159</item>
+        <item>#ff4d3275</item>
+        <item>#ff784736</item>
+        <item>#ff414145</item>
+    </array>
+    <array name="bing">
+        <item>ac:46:ab:a9:23:6e:bd:5a:ed:35:99:4e:9e:88:ee:75:d1:d6:b5:10:e1:d5:f1:41:b7:19:da:62:dc:35:86:fa</item>
+    </array>
+    <array name="bing_chain">
+        <item>ac:46:ab:a9:23:6e:bd:5a:ed:35:99:4e:9e:88:ee:75:d1:d6:b5:10:e1:d5:f1:41:b7:19:da:62:dc:35:86:fa</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="bingapps">
+        <item>db:61:ae:44:73:3e:d9:a1:99:e5:38:e7:bc:23:12:b1:ca:00:d0:83:d8:12:76:5c:14:f7:13:60:2d:e8:94:c2</item>
+    </array>
+    <array name="bingapps_chain">
+        <item>db:61:ae:44:73:3e:d9:a1:99:e5:38:e7:bc:23:12:b1:ca:00:d0:83:d8:12:76:5c:14:f7:13:60:2d:e8:94:c2</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="browser_as_default_queries">
+        <item>weather</item>
+        <item>top news</item>
+        <item>today in history</item>
+        <item>new movies</item>
+    </array>
+    <array name="calendarViewQueries">
+        <item>@string/calendar_view_query_1</item>
+    </array>
+    <array name="calendar_color_names_accessibility">
+        <item>red</item>
+        <item>orange</item>
+        <item>yellow</item>
+        <item>light green</item>
+        <item>dark green</item>
+        <item>light sea green</item>
+        <item>light blue</item>
+        <item>dark blue</item>
+        <item>dark purple</item>
+        <item>light purple</item>
+        <item>pink</item>
+        <item>gray</item>
+    </array>
+    <array name="calendar_colors">
+        <item>@color/calendar_red</item>
+        <item>@color/calendar_orange</item>
+        <item>@color/calendar_yellow</item>
+        <item>@color/calendar_green</item>
+        <item>@color/calendar_dark_green</item>
+        <item>@color/calendar_cyan</item>
+        <item>@color/calendar_blue</item>
+        <item>@color/calendar_dark_blue</item>
+        <item>@color/calendar_dark_purple</item>
+        <item>@color/calendar_purple</item>
+        <item>@color/calendar_pink</item>
+        <item>@color/calendar_grey</item>
+    </array>
+    <array name="calendar_icons_dynamic">
+        <item>@mipmap/ic_launcher_calendar_1</item>
+        <item>@mipmap/ic_launcher_calendar_2</item>
+        <item>@mipmap/ic_launcher_calendar_3</item>
+        <item>@mipmap/ic_launcher_calendar_4</item>
+        <item>@mipmap/ic_launcher_calendar_5</item>
+        <item>@mipmap/ic_launcher_calendar_6</item>
+        <item>@mipmap/ic_launcher_calendar_7</item>
+        <item>@mipmap/ic_launcher_calendar_8</item>
+        <item>@mipmap/ic_launcher_calendar_9</item>
+        <item>@mipmap/ic_launcher_calendar_10</item>
+        <item>@mipmap/ic_launcher_calendar_11</item>
+        <item>@mipmap/ic_launcher_calendar_12</item>
+        <item>@mipmap/ic_launcher_calendar_13</item>
+        <item>@mipmap/ic_launcher_calendar_14</item>
+        <item>@mipmap/ic_launcher_calendar_15</item>
+        <item>@mipmap/ic_launcher_calendar_16</item>
+        <item>@mipmap/ic_launcher_calendar_17</item>
+        <item>@mipmap/ic_launcher_calendar_18</item>
+        <item>@mipmap/ic_launcher_calendar_19</item>
+        <item>@mipmap/ic_launcher_calendar_20</item>
+        <item>@mipmap/ic_launcher_calendar_21</item>
+        <item>@mipmap/ic_launcher_calendar_22</item>
+        <item>@mipmap/ic_launcher_calendar_23</item>
+        <item>@mipmap/ic_launcher_calendar_24</item>
+        <item>@mipmap/ic_launcher_calendar_25</item>
+        <item>@mipmap/ic_launcher_calendar_26</item>
+        <item>@mipmap/ic_launcher_calendar_27</item>
+        <item>@mipmap/ic_launcher_calendar_28</item>
+        <item>@mipmap/ic_launcher_calendar_29</item>
+        <item>@mipmap/ic_launcher_calendar_30</item>
+        <item>@mipmap/ic_launcher_calendar_31</item>
+    </array>
+    <array name="cheshire">
+        <item>5f:a5:e6:be:06:d6:fb:98:3f:26:2e:ce:61:34:c5:26:08:45:0c:b1:1d:c3:06:12:f7:80:59:d8:e7:69:ac:a1</item>
+    </array>
+    <array name="cheshire_chain">
+        <item>5f:a5:e6:be:06:d6:fb:98:3f:26:2e:ce:61:34:c5:26:08:45:0c:b1:1d:c3:06:12:f7:80:59:d8:e7:69:ac:a1</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="choices_forward_event_dialog">
+        <item>@string/this_event_only</item>
+        <item>@string/all_events_in_series</item>
+    </array>
+    <array name="connections">
+        <item>7b:f2:85:af:b5:43:7d:bb:90:e0:14:b8:dd:d4:77:0d:e0:c7:4a:40:83:2f:3a:e0:6e:4a:0c:4d:40:53:82:33</item>
+    </array>
+    <array name="connections_chain">
+        <item>7b:f2:85:af:b5:43:7d:bb:90:e0:14:b8:dd:d4:77:0d:e0:c7:4a:40:83:2f:3a:e0:6e:4a:0c:4d:40:53:82:33</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="controls_next_options">
+        <item>@string/next_email</item>
+        <item>@string/invoke_cortana</item>
+    </array>
+    <array name="controls_previous_options">
+        <item>@string/previous_email</item>
+        <item>@string/invoke_cortana</item>
+    </array>
+    <array name="cortana">
+        <item>83:66:fa:f7:27:dc:48:31:7a:2f:3a:0c:37:fa:12:7f:3f:35:61:94:cf:bb:2f:4b:62:8e:c7:e6:a1:a7:5c:0f</item>
+    </array>
+    <array name="cortana_chain">
+        <item>83:66:fa:f7:27:dc:48:31:7a:2f:3a:0c:37:fa:12:7f:3f:35:61:94:cf:bb:2f:4b:62:8e:c7:e6:a1:a7:5c:0f</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="cortana_voice_options">
+        <item>@string/female_voice</item>
+        <item>@string/male_voice</item>
+        <item>@string/female_rus_voice</item>
+    </array>
+    <array name="cortana_voice_speed_options">
+        <item>@string/cortana_voice_speed_slowest</item>
+        <item>@string/cortana_voice_speed_slower</item>
+        <item>@string/cortana_voice_speed_slow</item>
+        <item>@string/cortana_voice_speed_normal</item>
+        <item>@string/cortana_voice_speed_fast</item>
+        <item>@string/cortana_voice_speed_faster</item>
+        <item>@string/cortana_voice_speed_fastest</item>
+    </array>
+    <array name="cortini_hints_email">
+        <item>@string/cortini_hint_find_emails_from_person</item>
+        <item>@string/cortini_hint_show_emails_from_person</item>
+        <item>@string/cortini_hint_what_last_email_from_person</item>
+        <item>@string/cortini_hint_show_last_email_from_person</item>
+    </array>
+    <array name="cortini_hints_events">
+        <item>@string/cortini_hint_next_meeting</item>
+        <item>@string/cortini_hint_next_event</item>
+        <item>@string/cortini_hint_next_appointment</item>
+        <item>@string/cortini_hint_show_next_meeting</item>
+        <item>@string/cortini_hint_show_next_event</item>
+        <item>@string/cortini_hint_show_next_appointment</item>
+    </array>
+    <array name="cortini_hints_file">
+        <item>@string/cortini_hint_what_the_last_attachment_from_person</item>
+        <item>@string/cortini_hint_what_the_last_file_from_person</item>
+        <item>@string/cortini_hint_what_the_last_document_from_person</item>
+        <item>@string/cortini_hint_what_the_last_presentation_from_person</item>
+    </array>
+    <array name="cortini_hints_files">
+        <item>@string/cortini_hint_find_files_from_person</item>
+        <item>@string/cortini_hint_find_docs_from_person</item>
+        <item>@string/cortini_hint_find_attachments_from_person</item>
+        <item>@string/cortini_hint_find_presentations_from_person</item>
+        <item>@string/cortini_hint_show_files_that_person_sent_me</item>
+        <item>@string/cortini_hint_show_attachments_that_person_sent_me</item>
+        <item>@string/cortini_hint_show_presentations_that_person_sent_me</item>
+        <item>@string/cortini_hint_show_docs_that_person_sent_me</item>
+        <item>@string/cortini_hint_what_the_last_files_from_person</item>
+        <item>@string/cortini_hint_what_the_last_docs_from_person</item>
+        <item>@string/cortini_hint_what_the_last_presentations_from_person</item>
+        <item>@string/cortini_hint_show_files_from_person</item>
+        <item>@string/cortini_hint_show_attachments_from_person</item>
+        <item>@string/cortini_hint_show_docs_from_person</item>
+        <item>@string/cortini_hint_show_presentations_from_person</item>
+        <item>@string/cortini_hint_show_recent_files</item>
+        <item>@string/cortini_hint_show_recent_attachments</item>
+        <item>@string/cortini_hint_show_recent_docs</item>
+        <item>@string/cortini_hint_show_recent_presentations</item>
+    </array>
+    <array name="cortini_hints_files_possessive">
+        <item>@string/cortini_hint_find_person_files_from_last_month</item>
+        <item>@string/cortini_hint_find_person_attachments_from_last_month</item>
+        <item>@string/cortini_hint_find_person_docs_from_last_month</item>
+        <item>@string/cortini_hint_find_person_presentations_from_last_month</item>
+    </array>
+    <array name="cortini_hints_people">
+        <item>@string/cortini_hint_find_person</item>
+    </array>
+    <array name="cortini_hints_people_possessive">
+        <item>@string/cortini_hint_find_person_contact_info</item>
+        <item>@string/cortini_hint_what_person_email</item>
+        <item>@string/cortini_hint_what_person_phone</item>
+    </array>
+    <array name="create_focus_rule_options">
+        <item>Move this message only</item>
+        <item>Move this and all future messages</item>
+    </array>
+    <array name="create_new_event_or_edit_existing">
+        <item>@string/create_new_event</item>
+        <item>@string/edit_existing_event</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="dayCalendarView">
+        <item>@string/day_calendar_view_query_1</item>
+    </array>
+    <array name="default_available_languages">
+        <item>@string/en_US</item>
+        <item>@string/es_ES</item>
+        <item>@string/zh_CN</item>
+        <item>@string/en_CA</item>
+        <item>@string/es_MX</item>
+        <item>@string/fr_FR</item>
+        <item>@string/en_GB</item>
+        <item>@string/de_DE</item>
+        <item>@string/it_IT</item>
+    </array>
+    <array name="default_preview_languages">
+        <item>@string/en_AU</item>
+        <item>@string/en_IN</item>
+        <item>@string/fr_CA</item>
+        <item>@string/pt_BR</item>
+        <item>@string/ja_JP</item>
+        <item>@string/nb_NO</item>
+        <item>@string/da_DK</item>
+        <item>@string/sv_SE</item>
+        <item>@string/fi_FI</item>
+        <item>@string/nl_NL</item>
+        <item>@string/pl_PL</item>
+        <item>@string/hi_IN</item>
+        <item>@string/ko_KR</item>
+        <item>@string/pt_PT</item>
+        <item>@string/ru_RU</item>
+        <item>@string/th_TH</item>
+        <item>@string/zh_TW</item>
+    </array>
+    <array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="delve_in_prod">
+        <item>43:5d:02:eb:b7:d2:30:bb:7c:27:a8:72:53:eb:3a:73:ab:42:4a:d6:00:55:62:bc:cb:2b:85:06:c6:8f:87:f5</item>
+    </array>
+    <array name="density_options">
+        <item>@string/density_option_compact</item>
+        <item>@string/density_option_medium</item>
+        <item>@string/density_option_comfortable</item>
+    </array>
+    <array name="do_not_disturb_accessibility_options">
+        <item>@string/do_not_disturb_start_time_accessibility_option</item>
+        <item>@string/do_not_disturb_end_time_accessibility_option</item>
+        <item>@string/do_not_disturb_days_of_week_accessibility_option</item>
+    </array>
+    <array name="drawing_color_list">
+        <item>#FFFED430</item>
+        <item>#FFFBAE17</item>
+        <item>#FFF36323</item>
+        <item>#FFE3182D</item>
+        <item>#FF5B318D</item>
+        <item>#FF914BB8</item>
+        <item>#FFCF1278</item>
+        <item>#FFC10051</item>
+        <item>#FF3ECCFD</item>
+        <item>#FF0078D7</item>
+        <item>#FF7EC400</item>
+        <item>#FF00B44B</item>
+        <item>#FFEAE8E6</item>
+        <item>#FFEBEBEB</item>
+        <item>#FFB6B6B6</item>
+        <item>#FF1F1F1F</item>
+    </array>
+    <array name="drawing_color_names">
+        <item>Dark Yellow</item>
+        <item>Light Orange</item>
+        <item>Orange</item>
+        <item>Red</item>
+        <item>Dark Purple</item>
+        <item>Purple</item>
+        <item>Magenta</item>
+        <item>Dark Red</item>
+        <item>Light Blue</item>
+        <item>Blue</item>
+        <item>Light Green</item>
+        <item>Green</item>
+        <item>White</item>
+        <item>Light Gray</item>
+        <item>Gray</item>
+        <item>Black</item>
+    </array>
+    <array name="edge_local_and_rolling">
+        <item>32:a2:fc:74:d7:31:10:58:59:e5:a8:5d:f1:6d:95:f1:02:d8:5b:22:09:9b:80:64:c5:d8:91:5c:61:da:d1:e0</item>
+    </array>
+    <array name="ei">
+        <item>Files from last week</item>
+        <item>Documents from yesterday</item>
+        <item>PPTs shared last month</item>
+    </array>
+    <array name="eventNextQueries">
+        <item>@string/event_next_query_1</item>
+    </array>
+    <array name="excel_word_powerpoint_outlook_lync_defender">
+        <item>b9:25:13:6f:3e:a7:c0:a1:95:16:90:a1:ab:31:39:10:da:81:f4:09:94:a8:53:42:ec:62:28:88:f1:28:70:51</item>
+    </array>
+    <array name="flow">
+        <item>e3:39:5d:f8:57:db:4b:94:f4:8a:79:5e:22:db:1f:08:a6:be:d4:90:9a:45:e4:ed:c1:87:18:e8:aa:17:b6:fb</item>
+    </array>
+    <array name="focusedInboxSynonyms">
+        <item>@string/focus_inbox_assistant_query_1</item>
+    </array>
+    <array name="folder_type_names">
+        <item>@string/folder_root</item>
+        <item>@string/folder_inbox</item>
+        <item>@string/folder_drafts</item>
+        <item>@string/folder_trash</item>
+        <item>@string/folder_sent</item>
+        <item>@string/folder_outbox</item>
+        <item>@string/folder_tasks</item>
+        <item>@string/folder_calendar</item>
+        <item>@string/folder_contacts</item>
+        <item>@string/folder_notes</item>
+        <item>@string/folder_journal</item>
+        <item>@string/folder_spam</item>
+        <item>@string/folder_archive</item>
+        <item>@string/folder_scheduled</item>
+        <item>@string/folder_groupMail</item>
+        <item>@string/folder_nonSystem</item>
+        <item>@string/folder_people</item>
+    </array>
+    <array name="help_sample_names">
+        <item>Nathan</item>
+        <item>Nicole</item>
+        <item>Wesley</item>
+        <item>Vance</item>
+        <item>Mateo</item>
+        <item>Miguel</item>
+        <item>Joseph</item>
+        <item>Quincy</item>
+        <item>Renata</item>
+        <item>Henry</item>
+        <item>Shawn</item>
+        <item>Preston</item>
+        <item>Adrian</item>
+        <item>Graham</item>
+        <item>Remy</item>
+        <item>Omar</item>
+        <item>Christopher</item>
+        <item>Elizabeth</item>
+        <item>Ashley</item>
+        <item>Kendall</item>
+        <item>Hannah</item>
+        <item>Jordan</item>
+        <item>Riley</item>
+        <item>Kayla</item>
+        <item>Reed</item>
+        <item>Jacob</item>
+        <item>Hailey</item>
+        <item>Ellis</item>
+        <item>Jamie</item>
+        <item>Parker</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </array>
+    <array name="invoice">
+        <item>8a:09:c5:1b:3f:80:0f:bc:26:b5:2d:b6:2c:99:cc:8c:2e:04:e1:ad:4a:92:19:bc:a3:2b:81:20:c8:e5:6c:cd</item>
+    </array>
+    <array name="invoice_chain">
+        <item>8a:09:c5:1b:3f:80:0f:bc:26:b5:2d:b6:2c:99:cc:8c:2e:04:e1:ad:4a:92:19:bc:a3:2b:81:20:c8:e5:6c:cd</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="kaizala">
+        <item>3c:40:49:cd:cb:f1:98:a6:dd:4c:5b:95:69:63:e3:6c:48:c8:07:b3:c2:9e:2e:2c:61:d4:45:13:f4:c1:e8:40</item>
+    </array>
+    <array name="languages">
+        <item>af=Afrikaans</item>
+        <item>am=አማርኛ</item>
+        <item>ar=العربية</item>
+        <item>az=azərbaycan dili</item>
+        <item>be=беларуская мова</item>
+        <item>bg=български език</item>
+        <item>bn-BD=বাংলা-BD</item>
+        <item>bn-BA=বাংলা-BA</item>
+        <item>ca=català</item>
+        <item>cs=čeština</item>
+        <item>da=dansk</item>
+        <item>de=Deutsch</item>
+        <item>el=ελληνικά</item>
+        <item>en=English</item>
+        <item>en-US=English-US</item>
+        <item>en-AU=English-AU</item>
+        <item>en-GB=English-GB</item>
+        <item>es=Español</item>
+        <item>es-MX=Español-MX</item>
+        <item>et=eesti</item>
+        <item>eu=euskara</item>
+        <item>fa=فارسی</item>
+        <item>fi=suomi</item>
+        <item>fil=Pilipino</item>
+        <item>fr=français</item>
+        <item>fr-FR=français-FR</item>
+        <item>fr-CA=français-CA</item>
+        <item>ga=Gaeilge</item>
+        <item>gl=Galego</item>
+        <item>gu=ગુજરાતી</item>
+        <item>ha-NG=هَوُسَ</item>
+        <item>hi=हिन्दी</item>
+        <item>hr=hrvatski jezik</item>
+        <item>hu=magyar</item>
+        <item>is=Íslenska</item>
+        <item>it=Italiano</item>
+        <item>ja=日本語</item>
+        <item>kk=қазақ тілі</item>
+        <item>km=ខ្មែរ</item>
+        <item>kn=ಕನ್ನಡ</item>
+        <item>ko=한국어</item>
+        <item>lo=ພາສາລາວ</item>
+        <item>lt=lietuvių kalba</item>
+        <item>lv=latviešu valoda</item>
+        <item>mk=македонски јазик</item>
+        <item>ml=മലയാളം</item>
+        <item>mr=मराठी</item>
+        <item>nb=Norsk Bokmål</item>
+        <item>nl=Nederlands</item>
+        <item>nn=Norsk Nynorsk</item>
+        <item>pl=język polski</item>
+        <item>pt-BR=Português-BR</item>
+        <item>pt-PT=Português-PT</item>
+        <item>ro=Română</item>
+        <item>ru=русский</item>
+        <item>sk=Slovenčina</item>
+        <item>sl=Slovenski Jezik</item>
+        <item>sq=Shqip</item>
+        <item>sr=српски језик</item>
+        <item>sr-RS=српски језик-RS</item>
+        <item>sv=Svenska</item>
+        <item>sw=Kiswahili</item>
+        <item>ta=தமிழ்</item>
+        <item>te=తెలుగు</item>
+        <item>th=ไทย</item>
+        <item>tr=Türkçe</item>
+        <item>uk=Українська</item>
+        <item>ur-PK=اردو-PK</item>
+        <item>uz-UZ=Oʻzbek-UZ</item>
+        <item>vi=Tiếng Việt</item>
+        <item>zh-CN=简体中文</item>
+        <item>zh-HK=繁體中文-HK</item>
+        <item>zh-TW=繁體中文-TW</item>
+        <item>zu=isiZulu</item>
+    </array>
+    <array name="launcher">
+        <item>e8:43:ee:3d:a1:19:5d:6a:fb:89:ca:a3:ce:74:27:b0:8f:c0:1f:d8:78:a2:4f:a5:6e:96:2c:35:c7:1d:5e:70</item>
+    </array>
+    <array name="launcher_chain">
+        <item>e8:43:ee:3d:a1:19:5d:6a:fb:89:ca:a3:ce:74:27:b0:8f:c0:1f:d8:78:a2:4f:a5:6e:96:2c:35:c7:1d:5e:70</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="main_menu_choices">
+        <item>@string/mail_tab_name</item>
+        <item>@string/calendar_tab_name</item>
+        <item>@string/files_tab_name</item>
+        <item>@string/people_tab_name</item>
+        <item>@string/settings_tab_name</item>
+    </array>
+    <array name="meeting_reply_options">
+        <item>@string/running_late</item>
+        <item>@string/send_note</item>
+        <item>@string/action_name_cancel</item>
+    </array>
+    <array name="message_body_skeleton_row_percentages">
+        <item>96</item>
+        <item>100</item>
+        <item>60</item>
+    </array>
+    <array name="message_header_skeleton_row_percentages">
+        <item>30</item>
+        <item>40</item>
+    </array>
+    <array name="mmx">
+        <item>2d:de:c9:42:b6:8e:4c:7c:a5:4a:5e:36:78:80:ef:4d:a5:95:48:17:30:a0:52:34:62:12:ac:c3:98:5c:aa:af</item>
+    </array>
+    <array name="mmx2">
+        <item>01:e1:99:97:10:a8:2c:27:49:b4:d5:0c:44:5d:c8:5d:67:0b:61:36:08:9d:0a:76:6a:73:82:7c:82:a1:ea:c9</item>
+    </array>
+    <array name="mmx2_chain">
+        <item>01:e1:99:97:10:a8:2c:27:49:b4:d5:0c:44:5d:c8:5d:67:0b:61:36:08:9d:0a:76:6a:73:82:7c:82:a1:ea:c9</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="monthCalendarView">
+        <item>@string/month_calendar_view_query_1</item>
+    </array>
+    <array name="oneauth_testapp">
+        <item>b9:25:13:6f:3e:a7:c0:a1:95:16:90:a1:ab:31:39:10:da:81:f4:09:94:a8:53:42:ec:62:28:88:f1:28:70:51</item>
+    </array>
+    <array name="otherInboxSynonyms">
+        <item>@string/other_inbox_assistant_query_1</item>
+    </array>
+    <array name="outlook_stories_subtitle">
+        <item>@string/onboarding_subtitle_welcome_to_outlook</item>
+        <item>@string/onboarding_subtitle_one_calendar_for_everything</item>
+        <item>@string/onboarding_subtitle_connected_and_protected</item>
+        <item>@string/onboarding_subtitle_add_your_email_accounts</item>
+    </array>
+    <array name="outlook_stories_title">
+        <item>@string/onboarding_welcome_to_outlook</item>
+        <item>@string/onboarding_one_calendar_for_everything</item>
+        <item>@string/onboarding_connected_and_protected</item>
+        <item>@string/onboarding_add_your_email_accounts</item>
+    </array>
+    <array name="powerapp">
+        <item>3d:00:0d:8a:1e:21:50:db:28:5f:9c:a8:6b:90:ad:64:87:84:0b:b1:04:8c:d9:f7:b3:70:66:56:2d:f5:ed:6c</item>
+    </array>
+    <array name="pride_colors_bisexual">
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_blue</item>
+    </array>
+    <array name="pride_colors_bisexual_divider">
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_blue</item>
+    </array>
+    <array name="pride_colors_bisexual_gradient_points">
+        <item>0.12</item>
+        <item>0.25</item>
+        <item>0.37</item>
+        <item>0.75</item>
+    </array>
+    <array name="pride_colors_bisexual_pill_background">
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_light_pink</item>
+    </array>
+    <array name="pride_colors_bisexual_secondary">
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_light_pink</item>
+    </array>
+    <array name="pride_colors_bisexual_toolbar">
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_purple</item>
+    </array>
+    <array name="pride_colors_lesbian">
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_pink</item>
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_light_pink</item>
+    </array>
+    <array name="pride_colors_lesbian_divider">
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_pink</item>
+    </array>
+    <array name="pride_colors_lesbian_gradient_points">
+        <item>0.05</item>
+        <item>0.12</item>
+        <item>0.25</item>
+        <item>0.37</item>
+        <item>0.42</item>
+        <item>0.75</item>
+    </array>
+    <array name="pride_colors_lesbian_pill_background">
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_pink</item>
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_light_pink</item>
+    </array>
+    <array name="pride_colors_lesbian_secondary">
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_pink</item>
+        <item>@color/pride_v2_red</item>
+    </array>
+    <array name="pride_colors_lesbian_toolbar">
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_dark_pink</item>
+        <item>@color/pride_v2_red</item>
+    </array>
+    <array name="pride_colors_non_binary">
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_black</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_yellow</item>
+    </array>
+    <array name="pride_colors_non_binary_divider">
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_black</item>
+        <item>@color/pride_v2_purple</item>
+    </array>
+    <array name="pride_colors_non_binary_gradient_points">
+        <item>0.05</item>
+        <item>0.15</item>
+        <item>0.35</item>
+        <item>0.42</item>
+        <item>0.75</item>
+    </array>
+    <array name="pride_colors_non_binary_pill_background">
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_black</item>
+        <item>@color/pride_v2_purple</item>
+    </array>
+    <array name="pride_colors_non_binary_secondary">
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_black</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_yellow</item>
+    </array>
+    <array name="pride_colors_non_binary_toolbar">
+        <item>@color/pride_v2_black</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_black</item>
+    </array>
+    <array name="pride_colors_transgender">
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_light_pink</item>
+    </array>
+    <array name="pride_colors_transgender_divider">
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_light_pink</item>
+    </array>
+    <array name="pride_colors_transgender_gradient_points">
+        <item>0.12</item>
+        <item>0.2</item>
+        <item>0.45</item>
+        <item>1</item>
+    </array>
+    <array name="pride_colors_transgender_pill_background">
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_light_blue</item>
+    </array>
+    <array name="pride_colors_transgender_secondary">
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_light_blue</item>
+    </array>
+    <array name="pride_colors_transgender_toolbar">
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_white</item>
+        <item>@color/pride_v2_light_pink</item>
+        <item>@color/pride_v2_light_blue</item>
+    </array>
+    <array name="pride_colors_v2">
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_black</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_green</item>
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_orange</item>
+    </array>
+    <array name="pride_colors_v2_divider">
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_green</item>
+    </array>
+    <array name="pride_colors_v2_gradient_points">
+        <item>@null</item>
+        <item>0.075</item>
+        <item>0.15</item>
+        <item>0.225</item>
+        <item>0.3</item>
+        <item>0.375</item>
+        <item>0.45</item>
+        <item>0.525</item>
+        <item>0.6</item>
+    </array>
+    <array name="pride_colors_v2_pill_background">
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_green</item>
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_dark_blue</item>
+    </array>
+    <array name="pride_colors_v2_toolbar">
+        <item>@color/pride_v2_black</item>
+        <item>@color/pride_v2_purple</item>
+        <item>@color/pride_v2_dark_blue</item>
+        <item>@color/pride_v2_light_blue</item>
+        <item>@color/pride_v2_green</item>
+        <item>@color/pride_v2_yellow</item>
+        <item>@color/pride_v2_orange</item>
+        <item>@color/pride_v2_red</item>
+        <item>@color/pride_v2_black</item>
+    </array>
+    <array name="ref_onboarding_add_account_options">
+        <item>@string/add_email_account</item>
+        <item>@string/add_shared_mailbox_account</item>
+        <item>@string/add_storage_account</item>
+    </array>
+    <array name="ref_org_allowed_onboarding_add_account_options">
+        <item>@string/add_email_account</item>
+        <item>@string/add_shared_mailbox_account</item>
+        <item>@string/add_onedrive_account</item>
+    </array>
+    <array name="ruby">
+        <item>c1:04:9c:99:32:70:48:a6:30:ea:09:ac:ff:36:f9:14:ae:a2:d0:4f:09:34:4b:35:4e:a2:d2:db:a9:df:a1:eb</item>
+    </array>
+    <array name="search_result_tabs">
+        <item>@string/all</item>
+        <item>@string/mail_tab_name</item>
+        <item>@string/contacts_tab_name</item>
+        <item>@string/events_tab_name</item>
+    </array>
+    <array name="settings_notification_action_options_notification_card_skeleton_percentages">
+        <item>30</item>
+        <item>100</item>
+        <item>80</item>
+    </array>
+    <array name="settings_remove_account_options_all">
+        <item>Delete from this device</item>
+        <item>Delete from all mobile devices</item>
+    </array>
+    <array name="shiftr_df">
+        <item>f7:c1:a7:02:ea:37:7c:b6:f3:36:76:f4:e3:cd:a6:d9:2d:62:8c:91:e8:a5:48:29:13:4d:92:86:12:b7:4a:06</item>
+    </array>
+    <array name="signatureModes">
+        <item>@string/signature_global_mode</item>
+        <item>@string/signature_per_account_mode</item>
+    </array>
+    <array name="skydrive">
+        <item>a0:79:42:15:27:8a:56:7e:88:7a:f6:cd:e0:15:a5:e8:84:14:ef:64:0f:7d:ab:38:55:a3:e7:79:65:8b:e7:78</item>
+    </array>
+    <array name="skydrive_certificate_chain">
+        <item>a0:79:42:15:27:8a:56:7e:88:7a:f6:cd:e0:15:a5:e8:84:14:ef:64:0f:7d:ab:38:55:a3:e7:79:65:8b:e7:78</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+    <array name="skype">
+        <item>7d:53:93:51:ca:39:c2:7c:a7:06:40:9e:5a:9b:6b:06:2d:b9:bf:8d:c3:d8:ca:a6:13:70:67:ae:7f:68:b5:e7</item>
+        <item>6e:d5:a3:29:35:84:48:1c:ea:5a:0b:17:4f:a4:6a:85:b0:39:b5:b3:98:92:9a:26:4b:62:34:27:b2:37:d5:e3</item>
+    </array>
+    <array name="speedy_meeting_settings_clip_type_values">
+        <item>None</item>
+        <item>Start late</item>
+        <item>End early</item>
+    </array>
+    <array name="spotlight_feedback_options">
+        <item>@string/spotlight_dislike_feedback_1</item>
+        <item>@string/spotlight_dislike_feedback_2</item>
+        <item>@string/spotlight_dislike_feedback_3</item>
+        <item>@string/spotlight_dislike_feedback_4</item>
+        <item>@string/spotlight_dislike_feedback_5</item>
+    </array>
+    <array name="suggested_search_keywords_email_templates">
+        <item>@string/suggested_search_keywords_email_template_1</item>
+        <item>@string/suggested_search_keywords_email_template_2</item>
+        <item>@string/suggested_search_keywords_email_template_3</item>
+    </array>
+    <array name="suggested_search_keywords_event_templates">
+        <item>@string/suggested_search_keywords_event_template_1</item>
+        <item>@string/suggested_search_keywords_event_template_2</item>
+        <item>@string/suggested_search_keywords_event_template_3</item>
+    </array>
+    <array name="suggested_search_keywords_file_templates">
+        <item>@string/suggested_search_keywords_file_template_1</item>
+        <item>@string/suggested_search_keywords_file_template_2</item>
+        <item>@string/suggested_search_keywords_file_template_3</item>
+    </array>
+    <array name="suggested_search_people_templates">
+        <item>@string/suggested_search_people_template_1</item>
+        <item>@string/suggested_search_people_template_2</item>
+        <item>@string/suggested_search_people_template_3</item>
+    </array>
+    <array name="surface_duo_msa_sign_in_prod">
+        <item>8a:55:15:47:02:ae:62:d9:d4:7b:b4:4f:8c:6c:95:08:29:f6:d8:6a:22:2b:dc:cc:7c:f3:6d:c2:92:05:a3:bf</item>
+    </array>
+    <array name="surface_duo_msa_sign_in_self_host">
+        <item>a5:26:02:05:ac:b6:6a:a0:87:0e:3a:e3:71:d1:78:31:78:bc:7f:45:78:f3:8c:09:e5:72:2f:cf:d5:46:65:be</item>
+    </array>
+    <array name="swiftkey">
+        <item>0a:d0:08:8d:fb:34:7a:8a:51:5f:2d:13:b1:7a:56:1d:5c:3f:97:73:43:8a:20:72:41:ba:e7:48:3c:99:b7:6f</item>
+    </array>
+    <array name="theme_choices">
+        <item>@string/theme_option_light</item>
+        <item>@string/theme_option_dark</item>
+        <item>@string/theme_option_battery_saver</item>
+    </array>
+    <array name="tips_email_action">
+        <item>Email %1$s</item>
+        <item>Forward this to %1$s</item>
+        <item>Set up time with %1$s</item>
+        <item>Call %1$s</item>
+    </array>
+    <array name="tips_email_triage">
+        <item>Flag this</item>
+        <item>Mark as Unread</item>
+        <item>Who is %1$s</item>
+    </array>
+    <array name="tips_generic">
+        <item>What can I ask?</item>
+        <item>What can I do?</item>
+        <item>What can you do?</item>
+        <item>What can I say?</item>
+    </array>
+    <array name="tips_global_email_command">
+        <item>Send email to %1$s</item>
+        <item>Email %1$s</item>
+        <item>Email %1$s, I&apos;ll be late</item>
+    </array>
+    <array name="tips_global_meeting_command">
+        <item>Find time with %1$s</item>
+        <item>Book a meeting with %1$s</item>
+        <item>When can I meet with %1$s?</item>
+        <item>Set up time with %1$s</item>
+        <item>Schedule with %1$s on Friday</item>
+    </array>
+    <array name="tips_meeting_participate">
+        <item>Join this meeting</item>
+        <item>Email %1$s I&apos;m running late</item>
+    </array>
+    <array name="tips_meeting_query">
+        <item>Who&apos;s in my next meeting?</item>
+        <item>What do I have next?</item>
+        <item>What do I have Friday?</item>
+    </array>
+    <array name="tips_meeting_triage">
+        <item>Forward this to %1$s</item>
+        <item>Who is %1$s?</item>
+    </array>
+    <array name="tips_people_query">
+        <item>@string/cortini_hint_what_person_email</item>
+        <item>@string/cortini_hint_what_person_phone</item>
+    </array>
+    <array name="tips_play_my_emails">
+        <item>Play my emails</item>
+        <item>Read my emails</item>
+        <item>Listen to my emails</item>
+    </array>
+    <array name="tokenshare_package_names">
+        <item>com.microsoft.skydrive</item>
+        <item>com.microsoft.office.word</item>
+        <item>com.microsoft.office.excel</item>
+        <item>com.microsoft.office.powerpoint</item>
+        <item>com.microsoft.office.outlook</item>
+        <item>com.microsoft.office.onenote</item>
+        <item>com.skype.raider</item>
+        <item>com.skype.insiders</item>
+        <item>com.microsoft.skype.android.s4l.df</item>
+        <item>com.skype.m2</item>
+        <item>com.microsoft.office.lync15</item>
+        <item>ols.microsoft.com.shiftr</item>
+        <item>ols.microsoft.com.shiftr.df</item>
+        <item>com.microsoft.cortana</item>
+        <item>com.microsoft.cortana.daily</item>
+        <item>com.microsoft.cortana.samsung</item>
+        <item>com.microsoft.launcher</item>
+        <item>com.microsoft.launcher.zan</item>
+        <item>com.microsoft.launcher.dev</item>
+        <item>com.microsoft.launcher.daily</item>
+        <item>com.microsoft.launcher.selfhost</item>
+        <item>com.microsoft.launcher.rc</item>
+        <item>com.microsoft.launcher.debug</item>
+        <item>com.microsoft.launcher.preview</item>
+        <item>com.microsoft.msapps</item>
+        <item>com.microsoft.bing</item>
+        <item>com.microsoft.bingdogfood</item>
+        <item>com.microsoft.todos</item>
+        <item>com.microsoft.todos.weekly</item>
+        <item>com.microsoft.next</item>
+        <item>com.microsoft.outlookgroups</item>
+        <item>com.microsoft.skype.teams</item>
+        <item>com.microsoft.skype.teams.integration</item>
+        <item>com.microsoft.skype.teams.dev</item>
+        <item>com.microsoft.skype.teams.prealpha</item>
+        <item>com.microsoft.skype.teams.alpha</item>
+        <item>com.microsoft.teams</item>
+        <item>com.microsoft.amp.apps.bingfinance</item>
+        <item>com.microsoft.amp.apps.bingnews</item>
+        <item>com.microsoft.amp.apps.bingsports</item>
+        <item>com.microsoft.amp.apps.bingweather</item>
+        <item>com.yammer.v1</item>
+        <item>com.yammer.v1.nightly</item>
+        <item>com.microsoft.o365smb.connections</item>
+        <item>com.microsoft.ruby.local</item>
+        <item>com.microsoft.ruby.daily</item>
+        <item>com.microsoft.internet</item>
+        <item>com.microsoft.ruby</item>
+        <item>com.microsoft.edge</item>
+        <item>com.microsoft.mmx.sdkdemo</item>
+        <item>com.microsoft.emmx</item>
+        <item>com.microsoft.emmx.daily</item>
+        <item>com.microsoft.emmx.selfhost</item>
+        <item>com.microsoft.emmx.development</item>
+        <item>com.microsoft.emmx.beta</item>
+        <item>com.microsoft.emmx.dev</item>
+        <item>com.microsoft.emmx.canary</item>
+        <item>com.microsoft.emmx.rolling</item>
+        <item>com.microsoft.emmx.local</item>
+        <item>com.microsoft.flow</item>
+        <item>com.touchtype.swiftkey</item>
+        <item>com.touchtype.swiftkey.beta</item>
+        <item>com.touchtype.swiftkey.cesar</item>
+        <item>com.microsoft.appmanager</item>
+        <item>com.microsoft.mobile.polymer</item>
+        <item>com.microsoft.dynamics.invoice</item>
+        <item>com.microsoft.planner</item>
+        <item>com.microsoft.oneauth.testapp</item>
+        <item>com.oema0.msasignin</item>
+        <item>com.microsoft.delvemobile</item>
+        <item>com.microsoft.surface.msasignin</item>
+        <item>com.surface.feedbackapp</item>
+        <item>com.microsoft.scmx</item>
+    </array>
+    <array name="tokenshare_signatures">
+        <item>@array/skydrive</item>
+        <item>@array/skydrive_certificate_chain</item>
+        <item>@array/excel_word_powerpoint_outlook_lync_defender</item>
+        <item>@array/skype</item>
+        <item>@array/wunderlist</item>
+        <item>@array/shiftr_df</item>
+        <item>@array/cortana</item>
+        <item>@array/cortana_chain</item>
+        <item>@array/launcher</item>
+        <item>@array/launcher_chain</item>
+        <item>@array/powerapp</item>
+        <item>@array/bing</item>
+        <item>@array/bing_chain</item>
+        <item>@array/cheshire</item>
+        <item>@array/cheshire_chain</item>
+        <item>@array/bingapps</item>
+        <item>@array/bingapps_chain</item>
+        <item>@array/yammer</item>
+        <item>@array/yammer_chain</item>
+        <item>@array/connections</item>
+        <item>@array/connections_chain</item>
+        <item>@array/ruby</item>
+        <item>@array/flow</item>
+        <item>@array/mmx</item>
+        <item>@array/mmx2</item>
+        <item>@array/mmx2_chain</item>
+        <item>@array/edge_local_and_rolling</item>
+        <item>@array/swiftkey</item>
+        <item>@array/kaizala</item>
+        <item>@array/invoice</item>
+        <item>@array/invoice_chain</item>
+        <item>@array/oneauth_testapp</item>
+        <item>@array/surface_duo_msa_sign_in_self_host</item>
+        <item>@array/surface_duo_msa_sign_in_prod</item>
+        <item>@array/delve_in_prod</item>
+    </array>
+    <array name="weather_unit_entries">
+        <item>@string/weather_fahrenheit</item>
+        <item>@string/weather_celsius</item>
+    </array>
+    <array name="weather_unit_values">
+        <item>F</item>
+        <item>C</item>
+    </array>
+    <array name="weekday">
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+        <item>@string/sunday</item>
+    </array>
+    <array name="weekday_3_letter">
+        <item>@string/monday_3_letter</item>
+        <item>@string/tuesday_3_letter</item>
+        <item>@string/wednesday_3_letter</item>
+        <item>@string/thursday_3_letter</item>
+        <item>@string/friday_3_letter</item>
+        <item>@string/saturday_3_letter</item>
+        <item>@string/sunday_3_letter</item>
+    </array>
+    <array name="weekday_initial">
+        <item>@string/monday_initial</item>
+        <item>@string/tuesday_initial</item>
+        <item>@string/wednesday_initial</item>
+        <item>@string/thursday_initial</item>
+        <item>@string/friday_initial</item>
+        <item>@string/saturday_initial</item>
+        <item>@string/sunday_initial</item>
+    </array>
+    <array name="wunderlist">
+        <item>b5:b1:e4:6d:5d:0d:bf:96:88:30:98:7e:92:03:50:cc:ea:d8:27:36:05:12:b3:1f:cb:98:7a:99:59:a1:5a:85</item>
+    </array>
+    <array name="yahoo_oauth_error_options">
+        <item>Try Traditional Login</item>
+        <item>Contact Support</item>
+        <item>Try again</item>
+    </array>
+    <array name="yammer">
+        <item>52:56:fe:b4:f7:c5:aa:68:61:9b:8a:f5:6f:98:69:1d:56:8e:c0:44:35:08:b5:ab:8a:01:48:94:2e:fb:e2:0a</item>
+    </array>
+    <array name="yammer_chain">
+        <item>52:56:fe:b4:f7:c5:aa:68:61:9b:8a:f5:6f:98:69:1d:56:8e:c0:44:35:08:b5:ab:8a:01:48:94:2e:fb:e2:0a</item>
+        <item>b1:7e:82:01:b1:28:e1:e7:4c:c0:23:51:0a:b7:ea:03:ac:27:dd:e5:0d:32:d8:10:ea:15:77:75:8f:1c:c0:98</item>
+        <item>28:48:36:1a:9c:1e:32:df:1d:3e:2e:d6:a7:b9:e6:7a:52:5c:f8:a1:3b:16:4f:80:06:c9:47:95:78:f7:46:de</item>
+    </array>
+</resources>

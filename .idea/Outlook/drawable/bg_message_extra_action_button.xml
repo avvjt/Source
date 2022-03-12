@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/message_extra_action_rsvp_button_background"/>
+    <corners android:radius="@dimen/message_extra_action_bg_corner_radius"/>
+    <padding android:left="@dimen/message_extra_action_bg_padding" android:top="@dimen/message_extra_action_bg_padding" android:right="@dimen/message_extra_action_bg_padding" android:bottom="@dimen/message_extra_action_bg_padding"/>
+</shape>

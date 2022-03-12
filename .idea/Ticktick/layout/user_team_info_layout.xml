@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/team_info_item" android:background="?attr/itemForeground" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="72dp">
+    <TextView android:textColor="@color/bright_yellow" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/using_team_edition" android:layout_alignParentLeft="false" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/PreferenceTextTitle"/>
+</RelativeLayout>

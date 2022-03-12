@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.conversation.v3.views.ReactionCountView android:id="@+id/message_open_reaction_bottomsheet" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="26dp" android:layout_marginTop="8dp" android:layout_toStartOf="@+id/message_open_reaction_picker"/>
+    <ImageButton android:id="@+id/message_open_reaction_picker" android:background="@drawable/btn_pill_border" android:visibility="gone" android:layout_width="28dp" android:layout_height="26dp" android:layout_marginTop="12dp" android:layout_marginBottom="16dp" android:src="@drawable/ic_fluent_emoji_16_regular" android:scaleType="centerInside" android:contentDescription="@string/accessibility_message_open_reaction_picker" android:layout_marginStart="8dp" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:tint="@color/outlook_app_icon_tint"/>
+</merge>

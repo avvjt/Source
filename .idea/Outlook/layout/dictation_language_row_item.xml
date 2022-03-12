@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="?android:attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="@dimen/language_item_height" android:layout_marginLeft="@dimen/language_item_padding" android:layout_marginRight="@dimen/language_item_padding">
+    <TextView android:textSize="@dimen/language_item_text_size" android:layout_gravity="center_vertical" android:id="@+id/language_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</FrameLayout>

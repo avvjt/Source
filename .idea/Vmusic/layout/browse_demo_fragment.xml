@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" yt:layout_scrollFlags="0x15"/>
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" yt:tabGravity="0" yt:tabIndicatorColor="@color/ytm_color_control_active" yt:tabIndicatorHeight="@dimen/tabs_highlight_height" yt:tabMaxWidth="0dp" yt:tabMode="1" yt:tabSelectedTextColor="#ffe1e1e1" yt:tabTextColor="#99e1e1e1"/>
+        <include android:id="@+id/toolbar_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" yt:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@+id/browse_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@+id/tabbed_view" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" yt:deselectedIconAlpha="0.6" yt:tabHeaderBackground="?attr/tabHeaderColor"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="260dp">
+                <View android:background="?attr/ytSeparator" android:layout_width="360dp" android:layout_height="1dp"/>
+                <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Display1" android:textSize="32sp" android:gravity="center_horizontal" android:id="@+id/retail_mode_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="30dp" android:text="@string/retail_mode_intro" android:maxLines="2"/>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" yt:cardBackgroundColor="@color/ytm_color_grey_12" yt:cardCornerRadius="8dp" yt:cardElevation="12dp" yt:cardUseCompatPadding="true">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/demo_album" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null"/>
+                        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Display2" android:textSize="24sp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retail_mode_albums_header" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:letterSpacing="0.02"/>
+                        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Subtitle1" android:textSize="16sp" android:paddingTop="6dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retail_mode_albums_subtext" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" yt:cardBackgroundColor="@color/ytm_color_grey_12" yt:cardCornerRadius="6dp" yt:cardElevation="12dp" yt:cardUseCompatPadding="true">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/demo_recommendation" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null"/>
+                        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Display2" android:textSize="24sp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retail_mode_recommendations_header" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:letterSpacing="0.02"/>
+                        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Subtitle1" android:textSize="16sp" android:paddingTop="6dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retail_mode_recommendations_subtext" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" yt:cardBackgroundColor="@color/ytm_color_grey_12" yt:cardCornerRadius="6dp" yt:cardElevation="12dp" yt:cardUseCompatPadding="true">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/demo_catalog" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null"/>
+                        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Display2" android:textSize="24sp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retail_mode_catalog_header" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:letterSpacing="0.02"/>
+                        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Subtitle1" android:textSize="16sp" android:paddingTop="6dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/retail_mode_catalog_subtext" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

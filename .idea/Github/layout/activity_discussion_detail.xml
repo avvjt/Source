@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:tag="layout/activity_discussion_detail_0" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.android.views.LoadingViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="match_parent" app:contentPaddingBottom="@dimen/bar_of_actions_list_footer_padding" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include android:id="@+id/app_bar_layout" layout="@layout/app_bar_layout"/>
+    <com.github.android.views.BarOfActionsView android:gravity="end" android:layout_gravity="bottom" android:id="@+id/bar_of_actions" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin">
+        <com.google.android.material.button.MaterialButton android:id="@+id/replyButton" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:icon="@drawable/ic_comment_16" app:iconGravity="0x2" style="@style/BarOfActionButton"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/infoButton" android:tag="info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/screenreader_more_information" android:layout_marginStart="@dimen/default_margin_half" app:icon="@drawable/ic_info_16" style="@style/BarOfActionButton.Icon"/>
+    </com.github.android.views.BarOfActionsView>
+    <include android:id="@+id/bottom_sheet_triage" layout="@layout/bottom_sheet_triage"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/list_item_triage_sheet_milestone_section_0" android:paddingLeft="@dimen/default_margin" android:paddingTop="@dimen/default_margin_half" android:paddingRight="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/default_margin">
+    <include android:id="@+id/milestone_card" layout="@layout/list_item_triage_sheet_progress"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_layout" android:background="@color/black_alpha_10" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/hg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/task_popup_window_horizontal_margin" android:layout_marginRight="@dimen/task_popup_window_horizontal_margin" android:layout_alignParentBottom="true">
+        <include android:id="@+id/snooze_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/reminder_snooze_time_layout_height" layout="@layout/reminder_snooze_time_layout"/>
+    </FrameLayout>
+</RelativeLayout>

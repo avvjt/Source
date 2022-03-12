@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/list_item_email_0" android:background="@color/backgroundElevatedSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <TextView android:textColor="@color/textPrimary" android:gravity="center_vertical" android:id="@+id/email_textview" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="48dp" android:foreground="?android:attr/selectableItemBackground" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" style="@style/BodyText.Small"/>
+    <include layout="@layout/list_item_divider"/>
+</LinearLayout>

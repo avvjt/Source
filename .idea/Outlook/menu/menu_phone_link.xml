@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_fluent_copy_24_regular" android:id="@+id/menu_copy" android:title="@string/phone_link_copy"/>
+    <item android:icon="@drawable/ic_fluent_phone_24_regular" android:id="@+id/menu_call" android:title="@string/phone_link_call"/>
+</menu>

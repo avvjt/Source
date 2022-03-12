@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <com.acompli.acompli.views.ObservableScrollView android:id="@+id/scroll_view" android:background="@color/outlook_app_surface_under_page" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1" android:overScrollMode="never">
+        <ViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="28dp">
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Outlook.ProgressBar"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/background_color" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.microsoft.office.outlook.uikit.widget.ColorCircleView android:id="@+id/event_icon" android:background="@null" android:layout_width="@dimen/event_icon_size" android:layout_height="@dimen/event_icon_size" android:contentDescription="@string/event_icon_picker_default_content_description" app:circleSize="@dimen/event_icon_size" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/subject" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/event_icon" app:layout_constraintTop_toTopOf="0"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:id="@+id/urgency_duration" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="@+id/subject" app:layout_constraintTop_toBottomOf="@+id/subject"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/proposed_times_container" android:background="@color/background_color" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:layout_marginBottom="28dp" android:divider="@drawable/horizontal_divider_with_content_inset" android:showDividers="middle">
+                    <LinearLayout android:orientation="vertical" android:background="@color/background_color" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ids_proposed_times"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/ids_proposed_times_desc"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/action_container" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:background="@color/background_color" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:layout_gravity="center_vertical" android:id="@+id/waiting_attendees_count" android:padding="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <Button android:id="@+id/send_reminder_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/ids_send_reminder" style="@style/Widget.Outlook.Button.AccentBorder"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton android:layout_gravity="center" android:id="@+id/finalize_button" android:background="@color/background_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:foreground="?attr/selectableItemBackground" android:text="@string/ids_finalize_meeting_time" app:textAllCaps="false" style="@style/Widget.Outlook.Button.Borderless.Accent"/>
+                    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+                    <androidx.appcompat.widget.AppCompatButton android:layout_gravity="center" android:id="@+id/cancel_button" android:background="@color/background_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="28dp" android:foreground="?attr/selectableItemBackground" android:text="@string/ids_cancel_request" app:textAllCaps="false" style="@style/Widget.Outlook.Button.Borderless.Red"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ViewFlipper>
+    </com.acompli.acompli.views.ObservableScrollView>
+</com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout>

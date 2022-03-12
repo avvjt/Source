@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_warning_24_regular" android:id="@+id/report_concern" android:title="@string/report_concern_title"/>
+    <item android:icon="@drawable/ic_fluent_mail_unread_24_regular" android:id="@+id/unread" android:title="@string/action_unread"/>
+    <item android:icon="@drawable/ic_fluent_mail_read_24_regular" android:id="@+id/read" android:title="@string/action_mark_read"/>
+    <item android:icon="@drawable/ic_fluent_flag_24_regular" android:id="@+id/flag" android:title="@string/action_flag"/>
+    <item android:icon="@drawable/ic_fluent_flag_off_24_regular" android:id="@+id/unflag" android:title="@string/action_unflag"/>
+    <item android:icon="@drawable/ic_fluent_arrow_reply_24_regular" android:id="@+id/reply" android:title="@string/message_header_overflow_reply_to"/>
+    <item android:icon="@drawable/ic_fluent_arrow_reply_all_24_regular" android:id="@+id/reply_all" android:title="@string/message_header_overflow_reply_all"/>
+    <item android:icon="@drawable/ic_fluent_arrow_forward_24_regular" android:id="@+id/forward" android:title="@string/message_header_overflow_forward"/>
+    <item android:icon="@drawable/ic_fluent_print_24_regular" android:id="@+id/print" android:visible="false" android:title="@string/message_header_overflow_print"/>
+    <item android:icon="@drawable/ic_fluent_delete_24_regular" android:id="@+id/delete" android:title="@string/message_header_overflow_delete" outlook:iconTint="?attr/dangerPrimary"/>
+</menu>

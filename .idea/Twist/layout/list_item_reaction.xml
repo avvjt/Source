@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/reaction" android:layout_width="@dimen/reaction_size" android:layout_height="@dimen/reaction_size" android:layout_margin="@dimen/standard_small_spacing" style="@style/reaction_big"/>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/reaction" android:layout_width="@dimen/reaction_size" android:layout_height="@dimen/reaction_size" android:layout_margin="@dimen/standard_small_spacing" style="@style/reaction_big"/>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/layout_container" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp">
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/tv_task_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/ej" android:id="@+id/tv_edit_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b74"/>
+    </LinearLayout>
+    <com.ticktick.task.view.ResizeFloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/voice_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginBottom="56dp" android:src="@drawable/ticktick_horizontai_delete" android:scaleType="center" android:tint="@color/white_alpha_100" app:backgroundTint="@color/primary_red" app:elevation="0dp" app:fabSize="1"/>
+    <RelativeLayout android:layout_gravity="end|bottom" android:id="@+id/voice_done_layout" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="-5dp" android:layout_marginBottom="-5dp">
+        <com.ticktick.task.view.ResizeFloatingActionButton android:id="@+id/voice_done_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_selected" android:scaleType="center" android:tint="@color/white_alpha_100" android:layout_centerInParent="true" app:backgroundTint="@color/primary_green" app:elevation="0dp" app:fabSize="1"/>
+        <com.ticktick.task.view.CircleProgressBar android:id="@+id/voice_done_progress" android:layout_width="44dp" android:layout_height="44dp" android:layout_centerInParent="true" app:progressBarThickness="2dp" app:progressbarColor="@color/primary_green_36"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="end|bottom" android:id="@+id/voice_fake_layout" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="-5dp" android:layout_marginBottom="-5dp">
+        <com.ticktick.task.view.ResizeFloatingActionButton android:id="@+id/voice_fake_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_selected" android:scaleType="center" android:tint="@color/white_alpha_100" android:layout_centerInParent="true" app:backgroundTint="@color/primary_green" app:elevation="0dp" app:fabSize="1"/>
+        <com.ticktick.task.view.CircleProgressBar android:id="@+id/voice_done_progress" android:layout_width="44dp" android:layout_height="44dp" android:layout_centerInParent="true" app:progressBarThickness="2dp" app:progressbarColor="@color/primary_green_36"/>
+    </RelativeLayout>
+</FrameLayout>

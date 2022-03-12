@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <ImageView android:id="@+id/app_icon" style="@style/ListItem.Icon"/>
+    <TextView android:id="@+id/app_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" style="@style/ListItem.Title"/>
+    <ImageButton android:id="@+id/grab_handle" android:background="@drawable/item_background_circular" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_fluent_re_order_24_regular" android:contentDescription="@string/content_description_reorder_favorite_handle"/>
+</LinearLayout>

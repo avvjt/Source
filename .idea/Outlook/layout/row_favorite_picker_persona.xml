@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/favorite_picker_person_avatar" style="@style/FavoritePicker_PersonAvatar"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/favorite_picker_item_name_section_margin_left">
+        <TextView android:id="@+id/persona_name" style="@style/FavoritePicker_PrimaryListItem"/>
+        <TextView android:id="@+id/persona_email" style="@style/FavoritePicker_SecondaryListItem"/>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/favorite_status_icon" android:background="@drawable/item_background_circular" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_star_24_filled" android:scaleType="centerInside"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/conversation_details_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/message_loading_state"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/quick_reply_shimmer" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="@dimen/quick_reply_bottom_bar_height">
+        <View android:layout_gravity="top" android:background="@color/outlook_app_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    </LinearLayout>
+    <com.microsoft.office.outlook.uikit.view.OMFragmentPager android:id="@+id/conversations_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.acompli.acompli.ui.conversation.v3.behavior.HeightAdjustmentBehavior"/>
+    <LinearLayout android:id="@+id/error_loading_message" android:background="?android:attr/windowBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error_loading_message" android:drawableTop="@drawable/illustration_generic_error" android:drawablePadding="16dp"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

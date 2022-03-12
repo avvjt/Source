@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/root" android:tag="layout/fragment_generic_bottom_sheet_dialog_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:translationZ="@dimen/default_elevation" android:elevation="@dimen/bottom_sheet_elevation" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <ImageView android:layout_gravity="center" android:paddingTop="@dimen/default_margin_half" android:paddingBottom="@dimen/default_margin_half" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/ic_handle" android:contentDescription="@string/screenreader_bottom_sheet_drag_bar" app:elevation="@dimen/default_elevation" app:tint="@color/border"/>
+    <com.google.android.material.appbar.AppBarLayout android:gravity="center_vertical" android:id="@+id/bottom_sheet_app_bar" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="@dimen/default_elevation">
+        <include android:id="@+id/bottom_sheet_toolbar" layout="@layout/toolbar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/fragment_container" android:background="@color/backgroundPrimary" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

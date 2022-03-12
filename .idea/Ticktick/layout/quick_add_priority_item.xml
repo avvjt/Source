@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/custom_menu_background" android:layout_width="match_parent" android:layout_height="@dimen/quick_add_priority_item_height">
+    <ImageView android:id="@+id/index_icon" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="center"/>
+    <TextView android:textSize="17sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/option_name" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    <ImageView android:id="@+id/item_divider" android:layout_width="match_parent" android:layout_height="@dimen/listview_divider_height" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="?attr/custom_menu_option_item_divider_color"/>
+</LinearLayout>

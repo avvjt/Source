@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/init_logic_background" android:layout_marginTop="3dp" style="@style/filter_container_item_style">
+    <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:textColor="?attr/textColorDoneTint" android:gravity="center" android:id="@+id/tv_have_problem" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/ic_svg_add_project"/>
+</RelativeLayout>

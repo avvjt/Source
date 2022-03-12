@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.uikit.widget.NumberPicker android:id="@+id/week_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" outlook:internalMinWidth="144dp" style="@style/Widget_Outlook_WeekOfMonthPicker"/>
+    <com.microsoft.office.outlook.uikit.widget.NumberPicker android:id="@+id/day_of_week_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" outlook:internalMinWidth="144dp" style="@style/Widget_Outlook_WeekOfMonthPicker"/>
+</merge>

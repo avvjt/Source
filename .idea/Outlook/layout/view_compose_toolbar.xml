@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.uikit.widget.MenuView android:id="@+id/compose_toolbar_main_menu" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" outlook:actionViewGravity="1"/>
+    <com.microsoft.office.outlook.compose.view.EditorFormattingToolbar android:id="@+id/compose_toolbar_formatting" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</merge>

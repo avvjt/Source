@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_block_switch_0" android:background="@color/listItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include layout="@layout/list_item_divider"/>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/switch_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/block_from_org_hide_comments_switch" android:layout_weight="1"/>
+        <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/switch_toggle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

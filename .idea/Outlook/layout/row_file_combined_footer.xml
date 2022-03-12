@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_row_min_height" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+    <View style="@style/ListItem.Icon"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Button.Borderless" android:textColor="@color/outlook_accent_text_selector" android:ellipsize="end" android:gravity="start|center_vertical" android:layout_gravity="center_vertical" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/file_see_more" android:maxLines="1" android:singleLine="true"/>
+</LinearLayout>

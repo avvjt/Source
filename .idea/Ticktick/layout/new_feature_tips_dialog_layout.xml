@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/feature_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+        <com.ticktick.task.view.IconTextView android:textSize="32sp" android:textColor="?attr/iconColorSecondary" android:gravity="center" android:layout_gravity="end|top" android:id="@+id/dismiss" android:background="?attr/i" android:layout_width="46dp" android:layout_height="46dp" android:text="@string/ic_svg_clear_min"/>
+    </FrameLayout>
+    <TextView android:textSize="20sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/feature_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    <TextView android:textSize="15sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/feature_description" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="72dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+        <Button android:textSize="16sp" android:textColor="@color/white_alpha_100" android:layout_gravity="top|center_horizontal" android:id="@+id/ed" android:background="@drawable/selector_positive_button" android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginTop="30dp" android:layout_marginBottom="8dp" android:minWidth="120dp" android:text="@string/fo"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/learn_more" android:background="?attr/sl" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aca"/>
+    </LinearLayout>
+</LinearLayout>

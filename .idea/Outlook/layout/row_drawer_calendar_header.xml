@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/calendar_item_header" android:background="@drawable/drawer_header_background" android:paddingLeft="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_row_double_min_height" android:importantForAccessibility="yes">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/drawer_header_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+        <TextView android:id="@+id/drawer_header_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="20dp" android:maxLines="1" style="@style/ListItem.Summary"/>
+    </LinearLayout>
+    <ImageButton android:id="@+id/drawer_header_sync_error" android:background="?attr/selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_error_circle_24_regular" android:contentDescription="@string/account_sync_error_content_description" android:layout_marginStart="8dp" app:tint="@color/danger_primary"/>
+</LinearLayout>

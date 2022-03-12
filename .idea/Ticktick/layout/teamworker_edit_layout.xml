@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/teamworks_list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:layout_above="@+id/bottom_layout" android:layout_below="@+id/toolbar"/>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

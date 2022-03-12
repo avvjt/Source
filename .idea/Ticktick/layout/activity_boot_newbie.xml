@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_container" android:background="@color/black_alpha_4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.UnScalableTextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/pure_black_alpha_36" android:layout_gravity="bottom|center_horizontal" android:id="@+id/tv_skip_boot_newbie" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

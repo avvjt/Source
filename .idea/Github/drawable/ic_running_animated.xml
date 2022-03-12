@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f080058_ic_running_animated__0">
+    <target android:name="group" android:animation="@drawable/res_0x7f080059_ic_running_animated__1"/>
+</animated-vector>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.reminder.popup.TaskReminderPopupView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:orientation="vertical" android:id="@+id/reminder_layout" android:background="?attr/task_popup_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/date_layout" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_alignParentTop="true">
+        <com.ticktick.task.view.IconTextView android:textSize="16sp" android:gravity="center" android:id="@+id/tv_priority" android:layout_width="wrap_content" android:layout_height="46dp" android:layout_marginRight="8dp" android:text="@string/ic_svg_priority_high"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/task_popup_color_primary_1" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/reminder_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12dp"/>
+        <com.ticktick.task.view.IconTextView android:textSize="14sp" android:textColor="?attr/task_popup_text_color_secondary" android:gravity="center" android:id="@+id/tv_repeat" android:layout_width="wrap_content" android:layout_height="46dp" android:layout_marginRight="8dp" android:text="@string/ic_svg_repeat"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/task_popup_text_color_secondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/project_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="100dp" android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/alert_content_view" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="110dp" android:layout_below="@+id/date_layout">
+        <com.ticktick.task.view.PopupRecyclerView android:id="@+id/task_content_recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/location_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp">
+            <com.ticktick.task.view.IconTextView android:textSize="16sp" android:textColor="?attr/textColorTertiary" android:gravity="center" android:id="@+id/location_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ic_svg_location"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/location_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.ticktick.task.view.GestureDetectorLinearLayout android:orientation="horizontal" android:id="@+id/pop_bottom_layout" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/reminder_popup_bottom_height" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:baselineAligned="false" android:layout_below="@+id/alert_content_view">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/dismiss" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:layout_width="48dp" android:layout_height="48dp">
+                <com.ticktick.task.view.TickTickCircleRingView android:layout_width="42dp" android:layout_height="42dp" android:layout_centerInParent="true" app:circle_color="?attr/task_popup_color_primary_2"/>
+                <com.ticktick.task.view.IconTextView android:background="?attr/i" android:padding="5dp" android:text="@string/ic_svg_popup_dismiss" android:layout_centerInParent="true" style="@style/task_popup_action_icon"/>
+            </RelativeLayout>
+            <TextView android:text="@string/fq" style="@style/task_popup_action_text"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/view" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/left_icon_view_bg" android:layout_width="48dp" android:layout_height="48dp">
+                <com.ticktick.task.view.TickTickCircleRingView android:layout_width="42dp" android:layout_height="42dp" android:layout_centerInParent="true" app:circle_color="?attr/task_popup_color_primary_2"/>
+                <com.ticktick.task.view.IconTextView android:id="@+id/icon_view" android:background="?attr/i" android:padding="5dp" android:text="@string/ic_svg_view" android:layout_centerInParent="true" style="@style/task_popup_action_icon"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/tv_view" android:text="@string/b6o" style="@style/task_popup_action_text"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/markdone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/middle_icon_view_bg" android:layout_width="48dp" android:layout_height="48dp">
+                <com.ticktick.task.view.TickTickCircleRingView android:layout_width="42dp" android:layout_height="42dp" android:layout_centerInParent="true" app:circle_color="?attr/task_popup_color_primary_2"/>
+                <com.ticktick.task.view.IconTextView android:id="@+id/ic_svg_popup_complete" android:background="?attr/i" android:padding="5dp" android:text="@string/ic_svg_popup_complete" android:layout_centerInParent="true" style="@style/task_popup_action_icon"/>
+            </RelativeLayout>
+            <TextView android:id="@+id/pop_complete_text" android:text="@string/j2" style="@style/task_popup_action_text"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/snooze" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/right_icon_view_bg" android:layout_width="48dp" android:layout_height="48dp">
+                <com.ticktick.task.view.TickTickCircleRingView android:layout_width="42dp" android:layout_height="42dp" android:layout_centerInParent="true" app:circle_color="?attr/task_popup_color_primary_2"/>
+                <com.ticktick.task.view.IconTextView android:background="?attr/i" android:padding="5dp" android:text="@string/ic_svg_snooze" android:layout_centerInParent="true" style="@style/task_popup_action_icon"/>
+            </RelativeLayout>
+            <TextView android:text="@string/tr" style="@style/task_popup_action_text"/>
+        </LinearLayout>
+    </com.ticktick.task.view.GestureDetectorLinearLayout>
+    <View android:id="@+id/gradient_view" android:layout_width="match_parent" android:layout_height="16dp" android:layout_above="@+id/pop_bottom_layout"/>
+</com.ticktick.task.reminder.popup.TaskReminderPopupView>

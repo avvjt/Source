@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:importantForAccessibility="no" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorTertiary" android:ellipsize="end" android:gravity="center" android:id="@+id/txt_bookmark_action_sheet_header" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/bottom_sheet_item_height" android:maxLines="1" android:lineHeight="16dp"/>
+    <View android:background="@color/search_answer_divider" android:layout_width="match_parent" android:layout_height="@dimen/search_answer_item_card_divider_size"/>
+    <Button android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/txt_bookmark_action_sheet_share_uri" android:text="@string/menu_action_share" android:drawableStart="@drawable/ic_fluent_share_android_24_regular" android:lineHeight="24dp" style="@style/TextAppearance_Outlook_ActionSheet"/>
+    <Button android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/txt_bookmark_action_sheet_copy" android:text="@string/action_copy_link" android:drawableStart="@drawable/ic_fluent_copy_24_regular" android:lineHeight="24dp" style="@style/TextAppearance_Outlook_ActionSheet"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/item_group" android:visible="true">
+        <item android:icon="@drawable/ic_search_24" android:id="@+id/search_item" android:title="@string/menu_search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:iconTint="@color/colorAccent" app:showAsAction="collapseActionView|always"/>
+        <item android:icon="@drawable/ic_pencil_16_padded" android:id="@+id/edit_item" android:title="@string/shortcut_menu_edit" app:iconTint="@color/iconPrimary" app:showAsAction="never"/>
+        <item android:icon="@drawable/ic_trash_16_padded" android:id="@+id/delete_item" android:title="@string/shortcut_menu_delete" app:iconTint="@color/systemRed" app:showAsAction="never"/>
+    </group>
+    <group android:id="@+id/progress_group" android:visible="false">
+        <item app:actionViewClass="com.github.android.views.ProgressActionView" app:showAsAction="always"/>
+    </group>
+</menu>

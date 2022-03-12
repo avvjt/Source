@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="176dp">
+        <com.ticktick.task.view.BootNewbieTextLineView android:layout_gravity="bottom|center_horizontal" android:id="@+id/text_line_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.ticktick.task.view.BootNewbieTextLineView android:layout_gravity="bottom|center_horizontal" android:id="@+id/text_line_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:id="@+id/cv_box_with_uncheck" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="302dp" app:cardCornerRadius="@dimen/corners_radius_card" app:cardElevation="2dp">
+        <FrameLayout android:layout_gravity="top" android:id="@+id/fl_task_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:alpha="0">
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="10dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_checkbox" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/ic_checkbox_gray" android:scaleType="fitXY"/>
+                <com.ticktick.task.view.ShiningCircleButton android:id="@+id/shining_circle_btn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:tAnimationScale="0.6" app:tColor="@color/primary_blue_100" app:tEndAlpha="0.24" app:tStartAlpha="0.24"/>
+            </FrameLayout>
+            <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/pure_black_alpha_85" android:layout_gravity="center_vertical" android:id="@+id/tv_task_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="53dp" android:text="@string/f4"/>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/fl_task_2" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="19dp" android:src="@drawable/ic_checkbox_gray" android:scaleType="fitXY"/>
+            <com.ticktick.task.view.UnScalableTextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/pure_black_alpha_85" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="53dp" android:text="@string/f3"/>
+            <com.ticktick.task.view.UnScalableTextView android:textSize="14sp" android:textColor="@color/pure_black_alpha_36" android:layout_gravity="end|center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14sp" android:text="18:00"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

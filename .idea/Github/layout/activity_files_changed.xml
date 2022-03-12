@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:tag="layout/activity_files_changed_0" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.github.android.views.LoadingViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="match_parent" app:contentPaddingBottom="@dimen/triage_peek_height" app:contentView="@layout/content_view_files" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include android:id="@+id/app_bar_layout" layout="@layout/app_bar_layout"/>
+    <com.github.android.views.BarOfActionsView android:gravity="end" android:layout_gravity="end|bottom" android:id="@+id/bar_of_actions" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" android:layout_alignParentEnd="true">
+        <com.google.android.material.button.MaterialButton android:tag="review_changes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/issue_pr_review_changes" android:contentDescription="@string/screenreader_review_changes" android:layout_marginStart="@dimen/default_margin_quarter" app:icon="@drawable/ic_comment_16" style="@style/BarOfActionButton"/>
+        <com.google.android.material.button.MaterialButton android:tag="jump_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/screenreader_jump_to_file_picker" android:layout_marginStart="@dimen/default_margin_half" app:icon="@drawable/ic_file_symlink_file_16" style="@style/BarOfActionButton.Icon"/>
+    </com.github.android.views.BarOfActionsView>
+    <include android:id="@+id/bottom_sheet_triage" layout="@layout/bottom_sheet_triage"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

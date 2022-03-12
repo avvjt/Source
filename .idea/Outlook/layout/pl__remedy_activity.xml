@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/actionBarTheme" android:id="@+id/pl__toolbar" android:background="?attr/pl__actionBarColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp">
+        <ImageButton android:layout_gravity="end" android:id="@+id/pl__remedy_talk_to_agent" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/pl__ic_help_white_24dp" android:contentDescription="@string/pl__action_talk_to_agent" android:layout_marginEnd="8dp" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ViewSwitcher android:id="@+id/powerlift_remedy_viewswitcher" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="72dp" android:layout_height="72dp"/>
+        <WebView android:id="@+id/powerlift_remedy_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ViewSwitcher>
+</LinearLayout>

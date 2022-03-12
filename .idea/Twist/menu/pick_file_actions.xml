@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:icon="@drawable/ic_menu_onedrive" android:id="@+id/menu_onedrive" android:title="@string/menu_onedrive"/>
     <item android:icon="@drawable/ic_menu_dropbox" android:id="@+id/menu_dropbox" android:title="@string/menu_dropbox"/>
     <item android:icon="@drawable/ic_menu_file" android:id="@+id/menu_files" android:title="@string/menu_file_manager"/>

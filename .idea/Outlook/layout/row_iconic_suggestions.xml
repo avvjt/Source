@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:gravity="start|center_vertical" android:paddingLeft="12dp" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="56dp" android:drawablePadding="28dp" android:textDirection="locale" android:paddingStart="12dp" android:paddingEnd="@dimen/outlook_content_inset"/>

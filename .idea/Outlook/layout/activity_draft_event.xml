@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:theme="@style/ThemeOverlay.Outlook.Toolbar.NoTintNavigation" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" outlook:contentInsetStart="@dimen/compose_toolbar_content_inset" outlook:contentInsetStartWithNavigation="0dp" style="?attr/toolbarStyle"/>
+    <include layout="@layout/compose_banner_mailtip_v2"/>
+    <com.acompli.acompli.views.ObservableScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1" android:overScrollMode="never">
+        <include layout="@layout/edit_meeting_details_view"/>
+    </com.acompli.acompli.views.ObservableScrollView>
+    <Button android:gravity="center" android:id="@+id/delete_or_cancel_meeting_button" android:background="@drawable/top_border_button_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/delete_event" style="@style/Widget.Outlook.Button.Borderless.Red"/>
+</com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout>

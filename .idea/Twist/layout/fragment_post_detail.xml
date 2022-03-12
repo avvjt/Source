@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
-    <androidx.appcompat.widget.Toolbar android:theme="?attr/toolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="?attr/toolbarPopupTheme"/>
-    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="?attr/colorClosedForeground" android:gravity="center" android:id="@+id/closed_banner" android:background="?attr/colorClosedBackground" android:layout_width="match_parent" android:layout_height="22dp" android:text="@string/close_thread_top_banner_text" android:layout_below="@+id/toolbar" android:elevation="8dp"/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:liftOnScroll="true">
+        <androidx.appcompat.widget.Toolbar android:theme="?attr/toolbarTheme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="?attr/toolbarPopupTheme"/>
+    </com.google.android.material.appbar.AppBarLayout>
     <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true"/>
     <TextView android:id="@+id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
-    <FrameLayout android:id="@+id/recycler_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/composer_frame" android:layout_below="@+id/closed_banner">
+    <FrameLayout android:id="@+id/recycler_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/composer_frame" android:layout_below="@+id/appbar">
         <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
     </FrameLayout>
     <FrameLayout android:id="@+id/composer_frame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/Widget.Twist.Composer.Frame"/>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.ui.message.list.views.MessageSnippetExtraAction xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:id="@+id/message_snippet_extra_action" android:background="@drawable/bg_message_extra_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginStart="56dp" app:layout_constraintTop_toBottomOf="@+id/message_snippet_body">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/message_snippet_extra_action_icon" android:background="@drawable/extra_action_circle_background" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="centerInside" android:importantForAccessibility="no" app:tint="@color/outlook_app_on_primary"/>
+        <ImageView android:layout_gravity="end|bottom" android:id="@+id/message_snippet_extra_action_badge" android:background="@drawable/badge_drawable_mask" android:visibility="gone" android:layout_width="13dp" android:layout_height="13dp" android:importantForAccessibility="no"/>
+    </FrameLayout>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="@color/message_extra_action_time_text_color" android:ellipsize="end" android:id="@+id/message_snippet_extra_action_text" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/message_snippet_extra_action_progress_bar" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp"/>
+        <Button android:gravity="center" android:id="@+id/message_snippet_extra_action_button" android:nextFocusLeft="@+id/message_snippet_frontview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48dp" android:minHeight="32dp" android:paddingStart="12dp" android:paddingEnd="12dp" style="@style/Widget.Outlook.Button.ExtraAction"/>
+    </FrameLayout>
+</com.acompli.acompli.ui.message.list.views.MessageSnippetExtraAction>

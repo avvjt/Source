@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/AAG.Theme.AppWidget" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+    <ImageButton android:layout_gravity="bottom|center_horizontal" android:id="@+id/widget_icon" android:padding="0dp" android:layout_width="@dimen/widget_icon_size" android:layout_height="@dimen/widget_icon_size" android:scaleType="centerInside" style="@style/Widget.GoogleMaterial3.AppWidget.Container"/>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_issue_pr_header_0" android:background="@color/listItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include android:id="@+id/list_item_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin_half" layout="@layout/list_item_header"/>
+    <HorizontalScrollView android:paddingBottom="@dimen/default_margin" android:scrollbars="none" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.github.android.views.TransparentLabelView android:id="@+id/pull_request_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" style="@style/InterRegular.Small"/>
+            <com.github.android.views.TransparentLabelView android:id="@+id/locked_state" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_locked_badge" android:layout_marginStart="@dimen/default_margin" app:drawableStartCompat="@drawable/ic_lock_16" app:labelColor="1" style="@style/InterRegular.Small"/>
+            <com.github.android.views.ProgressTransparentLabelView android:layout_gravity="center" android:id="@+id/task_list_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" app:labelColor="8" style="@style/ProgressTransparentLabel"/>
+            <com.github.android.views.TransparentLabelView android:id="@+id/pull_request_head_ref" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/default_margin" app:labelColor="0" style="@style/Monospace.Small"/>
+            <ImageView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right_24" android:contentDescription="@string/screenreader_issue_pr_ref_arrow" android:layout_marginStart="@dimen/default_margin_half" android:layout_marginEnd="@dimen/default_margin_half" app:tint="@color/iconSecondary"/>
+            <com.github.android.views.TransparentLabelView android:id="@+id/pull_request_base_ref" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="@dimen/default_margin" app:labelColor="0" style="@style/Monospace.Small"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <include layout="@layout/list_item_divider"/>
+</LinearLayout>

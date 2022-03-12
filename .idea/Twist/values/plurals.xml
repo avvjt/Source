@@ -1,143 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="channel_information_members_counter">
-        <item>{counter} member</item>
-        <item>{counter} members</item>
+        <item quantity="one">{counter} member</item>
+        <item quantity="other">{counter} members</item>
     </plurals>
-    <plurals name="dialog_message_notify_everyone_channel">
-        <item>Using &quot;Everyone in channel&quot; will notify {counter} person {in_timezones}. Are you sure?</item>
-        <item>Using &quot;Everyone in channel&quot; will notify {counter} people {in_timezones}. Are you sure?</item>
-    </plurals>
-    <plurals name="dialog_message_notify_everyone_channel_simple">
-        <item>Using &quot;Everyone in channel&quot; will notify {counter} person. Are you sure?</item>
-        <item>Using &quot;Everyone in channel&quot; will notify {counter} people. Are you sure?</item>
-    </plurals>
-    <plurals name="dialog_message_notify_everyone_thread">
-        <item>Using &quot;Everyone in thread&quot; will notify {counter} person {in_timezones}. Are you sure?</item>
-        <item>Using &quot;Everyone in thread&quot; will notify {counter} people {in_timezones}. Are you sure?</item>
-    </plurals>
-    <plurals name="dialog_message_notify_everyone_thread_simple">
-        <item>Using &quot;Everyone in thread&quot; will notify {counter} person. Are you sure?</item>
-        <item>Using &quot;Everyone in thread&quot; will notify {counter} people. Are you sure?</item>
+    <plurals name="conversation_subtitle">
+        <item quantity="one">{counter} participant</item>
+        <item quantity="other">{counter} participants</item>
     </plurals>
     <plurals name="dialog_message_remove_users">
-        <item>Are you sure you want to remove {counter} user from {model_name}?</item>
-        <item>Are you sure you want to remove {counter} users from {model_name}?</item>
+        <item quantity="one">Are you sure you want to remove {counter} user from {model_name}?</item>
+        <item quantity="other">Are you sure you want to remove {counter} users from {model_name}?</item>
     </plurals>
     <plurals name="dialog_message_tag_everyone_channel">
-        <item>Using &quot;Everyone in channel&quot; will tag {counter} person {in_timezones}. Are you sure?</item>
-        <item>Using &quot;Everyone in channel&quot; will tag {counter} people {in_timezones}. Are you sure?</item>
+        <item quantity="one">Using &quot;Everyone in channel&quot; will tag {counter} person {in_timezones}. Are you sure?</item>
+        <item quantity="other">Using &quot;Everyone in channel&quot; will tag {counter} people {in_timezones}. Are you sure?</item>
     </plurals>
     <plurals name="dialog_message_tag_everyone_channel_simple">
-        <item>Using &quot;Everyone in channel&quot; will tag {counter} person. Are you sure?</item>
-        <item>Using &quot;Everyone in channel&quot; will tag {counter} people. Are you sure?</item>
+        <item quantity="one">Using &quot;Everyone in channel&quot; will tag {counter} person. Are you sure?</item>
+        <item quantity="other">Using &quot;Everyone in channel&quot; will tag {counter} people. Are you sure?</item>
     </plurals>
     <plurals name="dialog_message_tag_everyone_thread">
-        <item>Using &quot;Everyone in thread&quot; will tag {counter} person {in_timezones}. Are you sure?</item>
-        <item>Using &quot;Everyone in thread&quot; will tag {counter} people {in_timezones}. Are you sure?</item>
+        <item quantity="one">Using &quot;Everyone in thread&quot; will tag {counter} person {in_timezones}. Are you sure?</item>
+        <item quantity="other">Using &quot;Everyone in thread&quot; will tag {counter} people {in_timezones}. Are you sure?</item>
     </plurals>
     <plurals name="dialog_message_tag_everyone_thread_simple">
-        <item>Using &quot;Everyone in thread&quot; will tag {counter} person. Are you sure?</item>
-        <item>Using &quot;Everyone in thread&quot; will tag {counter} people. Are you sure?</item>
-    </plurals>
-    <plurals name="dialog_title_notify">
-        <item>Notify {counter} person?</item>
-        <item>Notify {counter} people?</item>
+        <item quantity="one">Using &quot;Everyone in thread&quot; will tag {counter} person. Are you sure?</item>
+        <item quantity="other">Using &quot;Everyone in thread&quot; will tag {counter} people. Are you sure?</item>
     </plurals>
     <plurals name="dialog_title_tag">
-        <item>Tag {counter} person?</item>
-        <item>Tag {counter} people?</item>
+        <item quantity="one">Tag {counter} person?</item>
+        <item quantity="other">Tag {counter} people?</item>
     </plurals>
     <plurals name="empty_group_messages_body_more">
-        <item>Send a group message to {user_list} and {counter} more</item>
-        <item>Send a group message to {user_list} and {counter} more</item>
+        <item quantity="one">Send a group message to {user_list} and {counter} more</item>
+        <item quantity="other">Send a group message to {user_list} and {counter} more</item>
     </plurals>
     <plurals name="error_short_password">
-        <item>Password cannot be shorter than {counter} character</item>
-        <item>Password cannot be shorter than {counter} characters</item>
+        <item quantity="one">Password cannot be shorter than {counter} character</item>
+        <item quantity="other">Password cannot be shorter than {counter} characters</item>
     </plurals>
     <plurals name="hint_group_message_to_fallback">
-        <item>Group message to {counter} person</item>
-        <item>Group message to {counter} people</item>
+        <item quantity="one">Group message to {counter} person</item>
+        <item quantity="other">Group message to {counter} people</item>
     </plurals>
     <plurals name="hint_message_to_fallback">
-        <item>Message to {counter} person</item>
-        <item>Message to {counter} people</item>
+        <item quantity="one">Message to {counter} person</item>
+        <item quantity="other">Message to {counter} people</item>
     </plurals>
     <plurals name="in_timezone">
-        <item>in {counter} time zone</item>
-        <item>in {counter} time zones</item>
+        <item quantity="one">in {counter} time zone</item>
+        <item quantity="other">in {counter} time zones</item>
     </plurals>
     <plurals name="invite_user_add_to_channels_description">
-        <item>New members will be added to {counter} channel</item>
-        <item>New members will be added to {counter} channels</item>
+        <item quantity="one">New members will be added to {counter} channel</item>
+        <item quantity="other">New members will be added to {counter} channels</item>
     </plurals>
     <plurals name="mtrl_badge_content_description">
-        <item>%d new notification</item>
-        <item>%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
     </plurals>
     <plurals name="notification_comments_group">
-        <item>{counter} new comment</item>
-        <item>{counter} new comments</item>
-    </plurals>
-    <plurals name="notify_recipient_text_fallback">
-        <item>Notify: {counter} recipient</item>
-        <item>Notify: {counter} recipients</item>
+        <item quantity="one">{counter} new comment</item>
+        <item quantity="other">{counter} new comments</item>
     </plurals>
     <plurals name="pref_notification_notify_description">
-        <item>You will be notified when you haven&apos;t been active for &lt;b&gt;{counter} minute&lt;/b&gt;.</item>
-        <item>You will be notified when you haven&apos;t been active for &lt;b&gt;{counter} minutes&lt;/b&gt;.</item>
+        <item quantity="one">You will be notified when you haven&apos;t been active for &lt;b&gt;{counter} minute&lt;/b&gt;.</item>
+        <item quantity="other">You will be notified when you haven&apos;t been active for &lt;b&gt;{counter} minutes&lt;/b&gt;.</item>
     </plurals>
     <plurals name="premium_lock_comment_title">
-        <item>{counter} older comment</item>
-        <item>{counter} older comments</item>
+        <item quantity="one">{counter} older comment</item>
+        <item quantity="other">{counter} older comments</item>
     </plurals>
     <plurals name="premium_lock_message_title">
-        <item>{counter} older message</item>
-        <item>{counter} older messages</item>
+        <item quantity="one">{counter} older message</item>
+        <item quantity="other">{counter} older messages</item>
     </plurals>
     <plurals name="recipient_text_default_fallback">
-        <item>{counter} person</item>
-        <item>{counter} people</item>
+        <item quantity="one">{counter} person</item>
+        <item quantity="other">{counter} people</item>
     </plurals>
     <plurals name="search_expander_comment">
-        <item>{counter} other comment</item>
-        <item>{counter} other comments</item>
+        <item quantity="one">{counter} other comment</item>
+        <item quantity="other">{counter} other comments</item>
     </plurals>
     <plurals name="search_expander_message">
-        <item>{counter} other message</item>
-        <item>{counter} other messages</item>
+        <item quantity="one">{counter} other message</item>
+        <item quantity="other">{counter} other messages</item>
     </plurals>
     <plurals name="tag_recipient_text_fallback">
-        <item>Tag: {counter} person</item>
-        <item>Tag: {counter} people</item>
+        <item quantity="one">Tag: {counter} person</item>
+        <item quantity="other">Tag: {counter} people</item>
     </plurals>
     <plurals name="time_off_description_general_days">
-        <item>Have a restful {counter} day away from work!</item>
-        <item>Have a restful {counter} days away from work!</item>
+        <item quantity="one">Have a restful {counter} day away from work!</item>
+        <item quantity="other">Have a restful {counter} days away from work!</item>
     </plurals>
     <plurals name="time_off_description_parental">
-        <item>{counter} day to devote to your little one. Enjoy!</item>
-        <item>{counter} days to devote to your little one. Enjoy!</item>
+        <item quantity="one">{counter} day to devote to your little one. Enjoy!</item>
+        <item quantity="other">{counter} days to devote to your little one. Enjoy!</item>
     </plurals>
     <plurals name="time_off_description_sick_days">
-        <item>Rest and get well in your {counter} day off.</item>
-        <item>Rest and get well in your {counter} days off.</item>
+        <item quantity="one">Rest and get well in your {counter} day off.</item>
+        <item quantity="other">Rest and get well in your {counter} days off.</item>
     </plurals>
     <plurals name="time_off_description_vacation_days">
-        <item>Enjoy your {counter} day away from work!</item>
-        <item>Enjoy your {counter} days away from work!</item>
+        <item quantity="one">Enjoy your {counter} day away from work!</item>
+        <item quantity="other">Enjoy your {counter} days away from work!</item>
     </plurals>
     <plurals name="typing_users">
-        <item>{user_list} is typing</item>
-        <item>{user_list} are typing</item>
+        <item quantity="one">{user_list} is typing</item>
+        <item quantity="other">{user_list} are typing</item>
     </plurals>
     <plurals name="users_count">
-        <item>{counter} member</item>
-        <item>{counter} members</item>
+        <item quantity="one">{counter} member</item>
+        <item quantity="other">{counter} members</item>
     </plurals>
     <plurals name="users_selected">
-        <item>{counter} Selected</item>
-        <item>{counter} Selected</item>
+        <item quantity="one">{counter} Selected</item>
+        <item quantity="other">{counter} Selected</item>
     </plurals>
 </resources>

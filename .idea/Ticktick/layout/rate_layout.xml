@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rate_bottom_layout" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="204dp" android:layout_margin="6dp" android:layout_alignParentBottom="true" app:cardBackgroundColor="#ffb099" app:cardCornerRadius="@dimen/corners_radius_banner" app:cardElevation="0dp" app:cardMaxElevation="0dp">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rate_bottom_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/ic_rate_bottom" android:scaleType="center"/>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/aqt"/>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/aqs"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <Button android:textSize="15sp" android:textColor="?attr/ej" android:gravity="center" android:id="@+id/cancel_rate_btn" android:background="@drawable/selector_white_button" android:layout_width="122dp" android:layout_height="30dp" android:layout_marginRight="15dp" android:layout_marginBottom="8dp" android:text="@string/aqr" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <Button android:textSize="15sp" android:textColor="?android:attr/textColorPrimaryInverse" android:gravity="center" android:id="@+id/rate_now" android:background="@drawable/selector_positive_button" android:layout_width="122dp" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginBottom="8dp" android:text="@string/aqu"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

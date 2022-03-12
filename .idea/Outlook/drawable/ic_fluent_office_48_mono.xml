@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="48dp" android:width="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="@color/fluent_default_icon_tint" android:pathData="M37 35.92c0 0.88-0.59 1.67-1.44 1.92l-7.6 2.22c0.03-0.17 0.04-0.34 0.04-0.52V8.46c0-0.18-0.01-0.35-0.04-0.52l7.6 2.22C36.41 10.41 37 11.2 37 12.08v23.84zM36.12 8.24l-10.61-3.1C25.2 5.05 24.87 5 24.54 5c-0.6 0-1.19 0.15-1.71 0.45l-11.8 6.65C9.78 12.81 9 14.14 9 15.59v17.65C9 34.26 9.84 35 10.76 35c0.28 0 0.56-0.07 0.83-0.21l3.96-2.1c0.89-0.48 1.45-1.41 1.45-2.42V17.81c0-1.16 0.73-2.19 1.83-2.58L26 12.7V35h-9.82c-1.81 0-2.44 2.4-0.87 3.29l7.52 4.26c0.52 0.3 1.11 0.45 1.71 0.45 0.34 0 0.66-0.05 0.97-0.14l10.61-3.1c1.71-0.5 2.88-2.06 2.88-3.84V12.08c0-1.77-1.17-3.34-2.88-3.84z" android:strokeWidth="1"/>
+</vector>

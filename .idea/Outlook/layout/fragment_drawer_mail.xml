@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/vertical_divider" android:showDividers="middle">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/left_menu" android:background="@color/outlook_app_drawer_sidebar" android:paddingBottom="12dp" android:layout_width="72dp" android:layout_height="match_parent">
+        <com.acompli.acompli.ui.drawer.view.AccountNavigationView android:id="@+id/account_navigation_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="2dp" android:layout_marginBottom="4dp" android:layout_weight="1"/>
+        <com.microsoft.office.outlook.uikit.widget.MenuView android:gravity="center" android:orientation="vertical" android:id="@+id/drawer_menu_view" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:inflationDelegateClass="com.microsoft.office.outlook.uikit.widget.MenuView$ButtonItemInflationDelegate" outlook:menu="@menu/menu_drawer"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/right_layout" android:layout_width="0dp" android:layout_height="match_parent" android:divider="@drawable/horizontal_divider" android:layout_weight="1" android:showDividers="middle">
+        <include android:id="@+id/drawer_mail_header" layout="@layout/row_drawer_mail_header"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/drawer_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.TaskDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ticktick.task.view.navigation.UntouchableViewPager android:id="@+id/viewPager" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/bottom_navigation_height"/>
+        <com.ticktick.task.view.navigation.FragmentPageNavigationView android:id="@+id/page_navigation_layout" android:background="?attr/page_navigation_view_bg" android:layout_width="match_parent" android:layout_height="@dimen/bottom_navigation_height" android:layout_alignParentBottom="true"/>
+        <View android:id="@+id/navigation_shadow_top" android:background="?attr/quickbar_top_shadow" android:layout_width="match_parent" android:layout_height="4dp" android:layout_above="@+id/page_navigation_layout" android:alpha="0.4"/>
+        <View android:id="@+id/tooltip_anchor" android:src="?attr/activity_background" style="@style/show_detail_tool_tip_anchor_style"/>
+        <include layout="@layout/dnd_overlay"/>
+    </RelativeLayout>
+    <com.ticktick.task.view.SlideNavView android:layout_gravity="start" android:id="@+id/nav_view" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:includeStatusBar="true">
+        <FrameLayout android:id="@+id/menu_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.ticktick.task.view.SlideNavView>
+    <com.ticktick.task.view.SlideNavView android:layout_gravity="end" android:id="@+id/item_detail_container" android:background="?attr/activity_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.ticktick.task.view.TaskDrawerLayout>

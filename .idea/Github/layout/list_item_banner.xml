@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/list_item_banner_0" android:background="@drawable/list_item_background" android:paddingTop="@dimen/default_margin_0_75x" android:paddingBottom="@dimen/default_margin_0_75x" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:elevation="@dimen/default_elevation">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/banner_background" android:paddingTop="@dimen/default_margin_0_75x" android:paddingBottom="@dimen/default_margin_0_75x" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+        <TextView android:textSize="@dimen/body_text_size" android:textColor="@color/textPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_join_staff_build_header" android:fontFamily="@font/inter_medium"/>
+        <TextView android:textColor="@color/textPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_join_staff_build_body" style="@style/Tertiary.Small"/>
+    </LinearLayout>
+</LinearLayout>

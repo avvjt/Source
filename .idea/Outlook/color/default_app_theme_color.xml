@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/vhvc_blue6"/>
+    <item android:state_focused="true" android:color="@color/vhvc_blue1"/>
+    <item android:state_enabled="false" android:color="@color/vhvc_grey20"/>
+    <item android:color="@color/vhvc_blue1"/>
+</selector>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tag_project_item" android:paddingRight="?android:attr/scrollbarSize" android:layout_width="match_parent" android:layout_height="56dp">
+        <RelativeLayout android:layout_width="24dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/qu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_tag" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="marquee" android:id="@+id/name" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apu" android:singleLine="true"/>
+        </RelativeLayout>
+    </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+</LinearLayout>

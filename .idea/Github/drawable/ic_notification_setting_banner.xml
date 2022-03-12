@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f080006_ic_notification_setting_banner__0">
+    <target android:name="_R_G_L_2_G_L_1_G_D_0_P_0_G_0_T_0" android:animation="@drawable/res_0x7f080007_ic_notification_setting_banner__1"/>
+    <target android:name="_R_G_L_2_G_L_1_G_D_0_P_0_G_0_T_0" android:animation="@drawable/res_0x7f080057_ic_notification_setting_banner__9"/>
+    <target android:name="_R_G_L_2_G_L_1_G_D_1_P_0_G_0_T_0" android:animation="@drawable/res_0x7f08000f_ic_notification_setting_banner__17"/>
+    <target android:name="_R_G_L_2_G_L_1_G_D_1_P_0_G_0_T_0" android:animation="@drawable/res_0x7f080018_ic_notification_setting_banner__25"/>
+    <target android:name="_R_G_L_2_G_L_1_G_N_1_T_0" android:animation="@drawable/res_0x7f080021_ic_notification_setting_banner__33"/>
+    <target android:name="_R_G_L_2_G_L_0_G_D_0_P_0_G_0_T_0" android:animation="@drawable/res_0x7f08002b_ic_notification_setting_banner__42"/>
+    <target android:name="_R_G_L_2_G_L_0_G_D_1_P_0_G_0_T_0" android:animation="@drawable/res_0x7f080034_ic_notification_setting_banner__50"/>
+    <target android:name="_R_G_L_2_G_L_0_G_N_1_T_0" android:animation="@drawable/res_0x7f08003c_ic_notification_setting_banner__58"/>
+    <target android:name="_R_G_L_1_G_N_1_T_0" android:animation="@drawable/res_0x7f080046_ic_notification_setting_banner__67"/>
+    <target android:name="_R_G_L_0_G_N_1_T_0" android:animation="@drawable/res_0x7f08004e_ic_notification_setting_banner__74"/>
+    <target android:name="time_group" android:animation="@drawable/res_0x7f080056_ic_notification_setting_banner__81"/>
+</animated-vector>

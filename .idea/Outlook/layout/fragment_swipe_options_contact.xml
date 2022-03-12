@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="@string/tag_edge_to_edge" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorTertiary" android:padding="@dimen/settings_swipe_options_padding_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_swipe_configure_title"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1" android:divider="@drawable/horizontal_divider" android:showDividers="middle|beginning">
+            <com.google.android.material.internal.ForegroundLinearLayout android:orientation="vertical" android:id="@+id/right_swipe_layout" android:paddingBottom="@dimen/settings_swipe_options_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/item_background">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/settings_swipe_options_labels_view_height" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/settings_swipe_options_labels_padding_end">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/swipe_right_label"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:id="@+id/right_action_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_swipe_options_padding_very_small"/>
+                    </LinearLayout>
+                    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body2" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_options_change"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="start" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/right_swipe_background" android:layout_width="@dimen/settings_swipe_options_swipe_layout_width" android:layout_height="@dimen/settings_swipe_options_swipe_layout_height" android:weightSum="1" android:showDividers="middle" android:layoutDirection="ltr">
+                    <LinearLayout android:gravity="start|center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/right_action_label_layout" android:layout_width="@dimen/settings_swipe_options_swipe_action_layout_width" android:layout_height="@dimen/settings_swipe_options_swipe_action_layout_height">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading.Fixed" android:textColor="?android:attr/textColorTertiary" android:id="@+id/action_label_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/settings_swipe_options_margin_small"/>
+                        <com.airbnb.lottie.LottieAnimationView android:id="@+id/right_action_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/settings_swipe_options_action_icon_margin"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.internal.ForegroundLinearLayout>
+            <com.google.android.material.internal.ForegroundLinearLayout android:orientation="vertical" android:id="@+id/left_swipe_layout" android:paddingBottom="@dimen/settings_swipe_options_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/item_background" android:weightSum="1">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/settings_swipe_options_labels_view_height" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/settings_swipe_options_labels_padding_end">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/swipe_left_label"/>
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:id="@+id/left_action_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/settings_swipe_options_padding_very_small" android:fontFamily="sans-serif"/>
+                    </LinearLayout>
+                    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body2" android:textColor="?attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_options_change" android:fontFamily="sans-serif-medium"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="end" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/left_swipe_background" android:layout_width="@dimen/settings_swipe_options_swipe_layout_width" android:layout_height="@dimen/settings_swipe_options_swipe_layout_height" android:weightSum="1" android:divider="@drawable/vertical_divider" android:showDividers="middle" android:layoutDirection="ltr">
+                    <LinearLayout android:gravity="end|center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/left_action_label_layout" android:layout_width="@dimen/settings_swipe_options_swipe_action_layout_width" android:layout_height="@dimen/settings_swipe_options_swipe_action_layout_height">
+                        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading.Fixed" android:textColor="?android:attr/textColorTertiary" android:id="@+id/action_label_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/settings_swipe_options_margin_small"/>
+                        <com.airbnb.lottie.LottieAnimationView android:id="@+id/left_action_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/settings_swipe_options_action_icon_margin"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.internal.ForegroundLinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

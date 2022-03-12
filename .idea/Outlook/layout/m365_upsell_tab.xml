@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:padding="@dimen/m365_upsell_tab_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/icon" android:layout_width="24dp" android:layout_height="24dp" android:tint="@color/m365_upsell_tab_icon_tint"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="@color/m365_upsell_tab_title_color" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="@color/m365_upsell_tab_summary_color" android:gravity="center" android:id="@+id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:lineSpacingExtra="2dp"/>
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/drag_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/drag_icon" android:layout_width="@dimen/drag_shadow_icon_dimen" android:layout_height="@dimen/drag_shadow_icon_dimen" android:layout_margin="@dimen/outlook_content_inset"/>
+    <TextView android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/drag_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/outlook_content_inset" android:layout_marginBottom="@dimen/outlook_content_inset" android:maxWidth="@dimen/drag_shadow_text_max_width" android:singleLine="true" android:layout_marginEnd="@dimen/outlook_content_inset" style="@style/TextAppearance.Outlook.Body1"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:background="?attr/activity_background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ticktick.task.pomodoro.progressbar.RoundProgressBar android:id="@+id/roundProgressBar" android:layout_width="@dimen/round_progress_bar_width" android:layout_height="@dimen/round_progress_bar_width" android:layout_marginTop="@dimen/pomo_layout_margin_top" android:layout_centerHorizontal="true" app:roundColor="@color/pure_black_alpha_10" app:roundProgressColor="?attr/ej" app:roundWidth="4dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/statistics_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/round_progress_bar_width" android:layout_marginTop="@dimen/pomo_layout_margin_top" android:baselineAligned="false" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="120dp" android:layout_height="wrap_content">
+                <TextView android:textSize="40sp" android:textColor="?attr/ej" android:id="@+id/today_pomo_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pomo_num"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="120dp" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="40sp" android:textColor="?attr/ej" android:id="@+id/today_focus_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="24sp" android:textColor="?attr/ej" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="h"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tg"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/today_target_layout" android:layout_width="120dp" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="40sp" android:textColor="?attr/ej" android:id="@+id/today_target_percent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="24sp" android:textColor="?attr/ej" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%"/>
+                </LinearLayout>
+                <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ak3"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/time_layout" android:layout_width="match_parent" android:layout_height="@dimen/round_progress_bar_width" android:layout_marginTop="@dimen/pomo_layout_margin_top">
+            <RelativeLayout android:id="@+id/change_time_long_click_area" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/pomo_normal_time_text_size" android:textColor="?attr/ej" android:id="@+id/ahc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:paddingTop="92dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/welcome_summary" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/change_time_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_centerInParent="true">
+                <cn.carbswang.android.numberpickerview.library.NumberPickerView android:id="@+id/minute_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="number_picker_view" app:npv_DividerColor="@color/transparent" app:npv_ItemPaddingHorizontal="5dp" app:npv_ItemPaddingVertical="8dp" app:npv_ShowCount="3" app:npv_TextColorNormal="?attr/ej" app:npv_TextColorSelected="?attr/ej" app:npv_TextSizeNormal="@dimen/pomo_normal_time_text_size" app:npv_TextSizeSelected="@dimen/pomo_normal_time_text_size" app:npv_WrapSelectorWheel="true"/>
+                <TextView android:textSize="28sp" android:textStyle="bold" android:textColor="?attr/ej" android:id="@+id/second_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/minute_picker" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/main_btn_layout" android:focusable="true" android:clickable="true" android:layout_width="@dimen/pomodoro_btn_width" android:layout_height="@dimen/pomodoro_btn_height" android:layout_marginTop="@dimen/pomo_layout_start_pomo_margin_top" android:layout_below="@+id/roundProgressBar" android:layout_centerHorizontal="true">
+            <RelativeLayout android:background="?attr/i" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="16sp" android:textColor="@color/white_alpha_100" android:id="@+id/main_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/ayi" android:layout_centerInParent="true"/>
+                <com.ticktick.task.view.IconTextView android:textSize="10sp" android:textColor="@color/white_alpha_100" android:id="@+id/main_btn_small_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp" android:text="@string/ic_svg_btn_start_pomo" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button android:textAppearance="?android:attr/textAppearanceMedium" android:textSize="16sp" android:textColor="?attr/textColorTertiary" android:gravity="center" android:id="@+id/exit_btn" android:background="@null" android:visibility="gone" android:layout_width="@dimen/pomodoro_btn_width" android:layout_height="@dimen/pomodoro_btn_height" android:layout_marginTop="@dimen/pomo_layout_exit_btn_margin_top" android:text="@string/qy" android:layout_below="@+id/main_btn_layout" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/head_layout" android:layout_width="match_parent" android:layout_height="48dp">
+            <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/sound_btn" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:text="@string/ic_svg_sound_silence"/>
+            <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/btn_select_task" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:text="@string/ic_svg_choose_pomo_task"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/task_detail_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tomato_shining_layout_margin_left" android:layout_marginTop="10dp" android:layout_marginRight="@dimen/tomato_shining_layout_margin_right" android:layout_below="@+id/head_layout">
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="36dp">
+                <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center" android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_toLeftOf="@+id/ic_spinner_down" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/ic_spinner_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_widget_folded_spinner" android:tint="@color/black_alpha_54_light" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorSecondary" android:gravity="center" android:id="@+id/pomo_minimize" android:background="?attr/i" android:visibility="invisible" android:layout_width="56dp" android:layout_height="56dp" android:text="@string/ic_svg_pomo_minimize" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="?attr/toolbar_background" android:layout_width="match_parent" android:layout_height="?attr/k">
+            <TextView android:textSize="20sp" android:textColor="?attr/actionBarTextColorPrimary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/material_normal_padding" android:text="@string/akm"/>
+            <androidx.legacy.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/btn_statistics_toolbar" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:text="@string/ic_svg_pomo_statics"/>
+            <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/btn_select_task_toolbar" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:text="@string/ic_svg_choose_pomo_task"/>
+            <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/btn_settings_toolbar" android:paddingRight="8dp" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:layout_marginRight="-8dp" android:text="@string/ic_svg_pomo_settings"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

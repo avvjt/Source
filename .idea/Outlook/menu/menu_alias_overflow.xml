@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_default" android:title="@string/settings_make_default_alias" outlook:showAsAction="always"/>
+    <item android:id="@+id/menu_delete" android:title="@string/action_delete" outlook:showAsAction="always"/>
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/rippleColor">
+    <item android:id="@android:id/background" android:bottom="@dimen/reaction_button_border_negative">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/corner_radius_large" android:topRightRadius="@dimen/corner_radius_large"/>
+            <solid android:color="@color/badge_gray_background"/>
+            <stroke android:width="@dimen/reaction_button_border" android:color="@color/badge_gray_stroke"/>
+        </shape>
+    </item>
+</ripple>

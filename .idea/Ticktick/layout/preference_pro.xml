@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="?android:attr/scrollbarSize" android:layout_width="match_parent" android:layout_height="56dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="1dp" android:layout_height="wrap_content" android:scaleType="center"/>
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_weight="1">
+        <TextView android:textColor="@color/bright_yellow" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextTitle"/>
+        <TextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextSummary"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+</LinearLayout>

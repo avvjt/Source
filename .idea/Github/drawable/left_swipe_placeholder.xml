@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/backgroundElevatedPrimary"/>
+        </shape>
+    </item>
+    <item android:width="10dp" android:top="18dp" android:bottom="44dp" android:start="16dp" android:end="251dp">
+        <shape android:shape="rectangle">
+            <size android:height="10dp"/>
+            <solid android:color="@color/backgroundElevatedTertiary"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:top="18dp" android:bottom="44dp" android:start="38dp" android:end="56dp">
+        <shape android:shape="rectangle">
+            <size android:height="10dp"/>
+            <solid android:color="@color/backgroundElevatedTertiary"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:width="20dp" android:top="18dp" android:bottom="44dp" android:start="280dp">
+        <shape android:shape="rectangle">
+            <size android:height="10dp"/>
+            <solid android:color="@color/backgroundElevatedTertiary"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:width="89dp" android:top="44dp" android:bottom="18dp" android:start="16dp" android:end="172dp">
+        <shape android:shape="rectangle">
+            <size android:height="10dp"/>
+            <solid android:color="@color/backgroundElevatedTertiary"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:top="44dp" android:bottom="18dp" android:start="117dp" android:end="118dp">
+        <shape android:shape="rectangle">
+            <size android:height="10dp"/>
+            <solid android:color="@color/backgroundElevatedTertiary"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+</layer-list>

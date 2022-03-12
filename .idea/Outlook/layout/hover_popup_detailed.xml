@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uiappcomponent.hover.popup.view.DetailedHoverPopupView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="start|top" android:id="@+id/hover_popup_icon_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:importantForAccessibility="noHideDescendants" android:layout_marginEnd="8dp">
+            <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/hover_popup_avatar" android:layout_width="@dimen/hover_popup_detailed_icon_size" android:layout_height="wrap_content" android:foreground="@drawable/color_circle_foreground" style="@style/Widget.Outlook.PersonAvatar"/>
+            <ImageView android:id="@+id/hover_popup_icon" android:layout_width="@dimen/hover_popup_detailed_icon_size" android:layout_height="@dimen/hover_popup_detailed_icon_size"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.PopupTitle" android:ellipsize="end" android:id="@+id/hover_popup_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false"/>
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.PopupSubtitle" android:ellipsize="end" android:id="@+id/hover_popup_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:autoLink="none" android:id="@+id/hover_popup_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hover_popup_detailed_vertical_offset" android:maxLines="7" android:singleLine="false"/>
+    <com.microsoft.office.outlook.uikit.widget.MenuView android:gravity="end" android:id="@+id/hover_popup_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:divider="@drawable/hover_popup_action_spacing_divider" android:showDividers="middle" outlook:checkBehavior="0" outlook:fillItems="false" outlook:itemSelector="@drawable/hover_popup_action_background"/>
+</com.microsoft.office.outlook.uiappcomponent.hover.popup.view.DetailedHoverPopupView>

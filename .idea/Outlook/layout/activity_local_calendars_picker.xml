@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" outlook:spaceMode="0">
+    <include layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:gravity="center" android:id="@+id/no_calendars_found" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <include layout="@layout/outlook_divider"/>
+    <LinearLayout android:gravity="center" android:id="@+id/footer" android:background="@color/outlook_app_bottom_bar" android:layout_width="match_parent" android:layout_height="50dp">
+        <ProgressBar android:layout_gravity="end|center_vertical" android:id="@+id/progress_bar_add_local_calendars" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset" style="@style/Widget.Outlook.ProgressBar"/>
+        <Button android:enabled="false" android:layout_gravity="end|center_vertical" android:id="@+id/btn_add_local_calendars" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local_calendar_add_calendars" android:contentDescription="@string/local_calendar_add_calendars" android:drawableEnd="@drawable/ic_fluent_chevron_right_20_filled" outlook:drawableTint="@color/ic_arrow_forward_color_selector" style="@style/Widget.Outlook.Button.Borderless.Accent"/>
+    </LinearLayout>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

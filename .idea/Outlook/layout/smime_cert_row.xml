@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="4dp" android:paddingEnd="4dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/certIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_file_certificate"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="28dp">
+        <TextView android:ellipsize="end" android:id="@+id/certDisplayName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextAppearance.Outlook.SubHeading"/>
+        <TextView android:id="@+id/expiryInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Outlook.Body1"/>
+    </LinearLayout>
+</LinearLayout>

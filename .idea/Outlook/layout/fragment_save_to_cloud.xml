@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/bottom_sheet_list_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:importantForAccessibility="no" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/account_list" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:id="@+id/divider" android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/create_new_account" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" style="@style/ListItem.Row">
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_add_24_regular" style="@style/ListItem.Icon"/>
+        <TextView android:ellipsize="end" android:id="@+id/description" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/onboarding_add_account" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:paddingEnd="@dimen/outlook_content_inset" style="@style/ListItem.Title"/>
+    </LinearLayout>
+</LinearLayout>

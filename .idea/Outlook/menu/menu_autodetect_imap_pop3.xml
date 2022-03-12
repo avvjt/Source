@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_mail_24_regular" android:id="@+id/menu_autodetect_imap" android:title="@string/account_imap" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_mail_24_regular" android:id="@+id/menu_autodetect_pop3" android:title="@string/account_pop3" outlook:showAsAction="always"/>
+</menu>

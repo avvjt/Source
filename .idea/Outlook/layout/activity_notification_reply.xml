@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar_account_picker"/>
+        <com.microsoft.office.outlook.compose.view.RecipientEditor android:id="@+id/compose_recipient_editor" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end|middle"/>
+        <EditText android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColorHint="?android:attr/textColorSecondary" android:id="@+id/compose_subject_field" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/compose_header_cell_height" android:hint="@string/compose_subject" android:inputType="textAutoCorrect" android:textDirection="locale" android:importantForAutofill="no" style="@style/Widget.Outlook.ComposeV2.HeaderCell"/>
+        <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    </LinearLayout>
+    <View android:id="@+id/disabled" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

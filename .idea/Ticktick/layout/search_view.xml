@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/quick_add_bottom_layout" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/a_i" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/recognize_area" android:layout_centerVertical="true">
+        <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/icon_search" android:visibility="gone" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:text="@string/ic_svg_search"/>
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="16sp" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/search_et" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="@dimen/quickbar_text_min_width" android:cursorVisible="true" android:singleLine="true" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@null" style="@style/toolbar_edit_text_style_yellow_light"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/recognize_area" android:layout_width="48dp" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/clear_btn" android:background="?attr/i" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/ic_svg_clear"/>
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/ej" android:gravity="center" android:id="@+id/voice_btn" android:background="?attr/i" android:focusable="true" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/ic_svg_audio_record"/>
+    </LinearLayout>
+</RelativeLayout>

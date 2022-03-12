@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/conversation_details_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:id="@+id/error_loading_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/error_loading_message_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/error_loading_message" android:drawableTop="@drawable/illustration_generic_error" android:drawablePadding="@dimen/illustration_state_drawable_padding"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/message_details" android:visibility="visible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/row_conversation_subject"/>
+            <include android:visibility="gone" layout="@layout/row_conversation_block_card"/>
+            <include layout="@layout/row_conversation_message"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/conversation_reply_replyall_forward"/>
+</LinearLayout>

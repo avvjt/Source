@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/EEParentLayout" android:background="@color/lenshvc_color_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.lens.lensuilibrary.ZoomLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/zoomLayout" android:background="@color/lenshvc_color_black" android:padding="48dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/zoomChild" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </com.microsoft.office.lens.lensuilibrary.ZoomLayout>
+</FrameLayout>

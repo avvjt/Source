@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <CheckedTextView android:textColor="?android:attr/textColorSecondary" android:id="@+id/compose_remember" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/compose_option_remember_this_choice" android:drawableStart="@drawable/ic_fluent_checkbox_24_selector" style="@style/ListItem_Row_FabPopup"/>
+    <ImageView android:background="@drawable/horizontal_secondary_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+    <TextView android:id="@+id/compose_here" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/compose_option_compose_here" android:drawableStart="@drawable/ic_fluent_compose_24_regular" style="@style/ListItem_Row_FabPopup"/>
+    <TextView android:id="@+id/compose_new_window" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/compose_option_compose_in_new_window" android:drawableStart="@drawable/ic_fluent_dual_screen_24_regular" style="@style/ListItem_Row_FabPopup"/>
+</LinearLayout>

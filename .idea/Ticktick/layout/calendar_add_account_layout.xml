@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <FrameLayout android:id="@+id/description_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/ag9" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/bb" android:maxLines="4" android:lineSpacingExtra="10dp"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/description_layout">
+        <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:id="@+id/add_google_account" android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/preference_margin" android:src="@drawable/ic_google_logo" android:scaleType="center"/>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/preference_margin" android:layout_weight="1">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Google" style="@style/PreferenceTextTitle"/>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:paddingRight="@dimen/preference_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+    </LinearLayout>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

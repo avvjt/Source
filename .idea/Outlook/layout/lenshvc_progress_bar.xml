@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/lenshvc_progress_bar_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+    <TextView android:textSize="18sp" android:textColor="@color/lenshvc_color_white" android:gravity="center" android:id="@+id/progress_dialog_title_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/lenshvc_downloading_image" android:textAlignment="center" android:lineHeight="24sp"/>
+    <TextView android:textSize="16sp" android:textColor="?attr/lenshvc_theme_color" android:gravity="center" android:id="@+id/cancel_textview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lenshvc_discard_image_dialog_cancel" android:textAlignment="center" android:lineHeight="24sp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/horizontal_divider" android:showDividers="middle">
+        <com.microsoft.office.outlook.uiappcomponent.widget.contact.ContactsCompletionView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColorHint="?android:attr/textColorSecondary" android:id="@+id/contact_picker_text" android:background="@null" android:paddingLeft="@dimen/outlook_content_inset" android:paddingTop="8dp" android:paddingRight="@dimen/outlook_content_inset" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/contacts_completion_view_max_height" android:minHeight="@dimen/contacts_completion_view_min_height" android:hint="@string/contact_picker_hint" android:maxLines="1" android:singleLine="true" android:inputType="textPersonName" android:imeOptions="flagNoExtractUi|actionDone" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/contact_picker_suggestions_layout" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:id="@+id/add_contacts_hint" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_guests_to_group_hint" style="@style/MemberPicker_SuggestionText"/>
+            <TextView android:id="@+id/picker_list_title_suggestions" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/member_picker_suggestions_title" style="@style/MemberPicker_ListSuggestionTitle"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/contact_picker_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView android:id="@+id/contact_picker_result_suggestions" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MemberPicker_SuggestionText"/>
+    </LinearLayout>
+</ScrollView>

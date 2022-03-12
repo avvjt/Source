@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/row_contact_picker_search_others_root" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider_with_left_content_margin" android:showDividers="end">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/contact_picker_entry_icon" android:gravity="center" android:id="@+id/row_contact_picker_search_others_numbers" android:background="@drawable/contact_pick_search_other_number" android:layout_width="@dimen/person_avatar_width" android:layout_height="@dimen/person_avatar_width"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/outlook_content_inset">
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textStyle="bold" android:textColor="?attr/colorAccent" android:id="@+id/row_contact_picker_search_others_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/row_contact_picker_search_others_accounts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

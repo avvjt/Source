@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="@string/tag_edge_to_edge" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <com.google.android.material.imageview.ShapeableImageView android:id="@+id/avatar_image" android:layout_width="@dimen/settings_avatar_circle_size" android:layout_height="@dimen/settings_avatar_circle_size" app:shapeAppearanceOverlay="@style/CircleImageView"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/change_picture_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/settings_edit_profile" style="@style/Widget.Outlook.Button.Borderless.Accent"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

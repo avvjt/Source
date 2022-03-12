@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="@dimen/snack_bar_background_inset" android:insetRight="@dimen/snack_bar_background_inset" android:insetBottom="@dimen/snack_bar_background_inset">
+    <shape android:shape="rectangle">
+        <corners android:radius="@dimen/snack_bar_background_corner_radius"/>
+        <solid android:color="@color/outlook_app_surface_snackbar"/>
+    </shape>
+</inset>

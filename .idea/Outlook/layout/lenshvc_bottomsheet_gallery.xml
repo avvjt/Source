@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/lenshvc_gallery_parent_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:alpha="1">
+    <FrameLayout android:id="@+id/lenshvc_immersive_gallery_bottomsheet" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/lenshvc_immersive_bottom_gallery_peek_height" app:layout_behavior="@string/bottom_sheet_behavior">
+        <View android:id="@+id/lenshvc_bottomsheet_background" android:background="@color/lenshvc_overflow_bottomsheet_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="24dp" android:alpha="0"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/lenshvc_container_immersive" android:background="@color/lenshvc_overflow_bottomsheet_background" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0">
+                <RelativeLayout android:layout_gravity="end|bottom" android:id="@+id/lenshvc_next_button_container_immersive" android:focusable="true" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/lenshvc_gallery_next_button_container_margin" android:importantForAccessibility="yes" android:elevation="1dp">
+                    <RelativeLayout android:background="@drawable/lenshvc_circular_shape" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/lenshvc_button_size" android:layout_height="@dimen/lenshvc_button_size" android:elevation="3dp" android:backgroundTint="?attr/lenshvc_theme_color">
+                        <ImageView android:layout_gravity="center" android:layout_width="@dimen/lenshvc_icon_default_size" android:layout_height="@dimen/lenshvc_icon_default_size" android:src="@drawable/lenshvc_done_chevron_fluent_icon" android:tint="@color/lenshvc_done_icon_color" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <com.microsoft.office.lens.lensuilibrary.SquareTextView android:textColor="?attr/lenshvc_theme_color" android:gravity="center" android:layout_gravity="end|bottom" android:id="@+id/lenshvc_page_number_immersive" android:background="@drawable/lenshvc_circular_shape" android:padding="@dimen/lenshvc_image_count_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/lenshvc_image_count_margin" android:minWidth="@dimen/lenshvc_image_count_background_size" android:minHeight="@dimen/lenshvc_image_count_background_size" android:importantForAccessibility="no" android:layout_marginStart="@dimen/lenshvc_image_count_margin" android:elevation="@dimen/lenshvc_gallery_image_count_elevation" android:backgroundTint="@color/lenshvc_image_count_background"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/lenshvc_gallery_topbar" android:background="?attr/lenshvc_gallery_background_color" android:layout_width="match_parent" android:layout_height="@dimen/lenshvc_action_bar_height" android:alpha="0">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageButton android:id="@+id/lenshvc_bottomSheet_gallery_back" android:src="@drawable/lenshvc_back_icon" android:tint="?attr/lenshvc_gallery_tint_color" style="@style/lensActionBarButtonStyle"/>
+                <TextView android:textSize="@dimen/lenshvc_toolbar_title_text_size" android:textColor="?attr/lenshvc_gallery_tint_color" android:id="@+id/lenshvc_gallery_topbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageButton android:layout_gravity="end|center_vertical" android:id="@+id/lenshvc_native_gallery_import" android:src="@drawable/lenshvc_native_gallery_icon" android:tint="?attr/lenshvc_gallery_tint_color" style="@style/lensActionBarButtonStyle"/>
+        </FrameLayout>
+        <ViewStub android:id="@+id/lenshvc_bottomsheet_mini_gallery_stub" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

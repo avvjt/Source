@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/as_as_root_container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/browser_as_header" android:background="?attr/topBarColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="8dp">
+        <LinearLayout android:id="@+id/as_as_header" android:paddingBottom="0dp" android:elevation="0dp" style="@style/BrowserHeader">
+            <ImageButton android:id="@+id/as_as_back" android:background="@drawable/browser_responsive_circular" android:layout_width="48dp" android:layout_height="match_parent" android:src="@drawable/ic_fluent_arrow_left_24_regular" android:tint="?attr/topBarIconTintColor" android:contentDescription="@string/browser_as_access_action_navigate_back"/>
+            <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/as_as_search_box" android:background="@drawable/browser_address_bar_background" android:layout_width="0dp" android:layout_height="@dimen/browser_top_bar_height" android:layout_weight="1" android:layout_marginStart="@dimen/browser_spacing" android:layout_marginEnd="@dimen/browser_spacing">
+                <ImageButton android:id="@+id/as_as_clear" android:background="@drawable/browser_responsive_circular" android:layout_width="48dp" android:layout_height="match_parent" android:src="@drawable/browser_ic_header_clear" android:scaleType="centerInside" android:tint="?attr/topBarIconTintColor" android:contentDescription="@string/browser_action_clear" android:layout_alignParentEnd="true"/>
+                <EditText android:textSize="16sp" android:textColor="?attr/addressBarTextColor" android:textColorHighlight="?attr/selectedTextBackgroundColor" android:textColorHint="?attr/hintTextColor" android:ellipsize="end" android:id="@+id/browser_as_search_box_edit_text" android:background="@null" android:layout_width="match_parent" android:layout_height="44dp" android:minWidth="2000dp" android:hint="@string/browser_search_box_hint" android:lines="1" android:selectAllOnFocus="true" android:inputType="textNoSuggestions" android:imeOptions="actionSearch" android:textCursorDrawable="@null" android:fontFamily="sans-serif" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_toStartOf="@+id/as_as_clear"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/as_scope_bar" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="-4dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@+id/as_indicator_web" style="@style/BrowserScopeBarIndicator"/>
+                <View android:id="@+id/as_indicator_images" style="@style/BrowserScopeBarIndicator"/>
+                <View android:id="@+id/as_indicator_videos" style="@style/BrowserScopeBarIndicator"/>
+                <View android:id="@+id/as_indicator_news" style="@style/BrowserScopeBarIndicator"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <Button android:id="@+id/as_as_web" android:text="@string/browser_as_scope_all" android:contentDescription="@string/browser_as_scope_all" style="@style/BrowserScopeBarButton"/>
+                <Button android:id="@+id/as_as_images" android:text="@string/browser_as_scope_images" android:contentDescription="@string/browser_as_scope_images" style="@style/BrowserScopeBarButton"/>
+                <Button android:id="@+id/as_as_videos" android:text="@string/browser_as_scope_videos" android:contentDescription="@string/browser_as_scope_videos" style="@style/BrowserScopeBarButton"/>
+                <Button android:id="@+id/as_as_news" android:text="@string/browser_as_scope_news" android:contentDescription="@string/browser_as_scope_news" style="@style/BrowserScopeBarButton"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/as_website_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="58dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/as_website_action_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                <ImageButton android:id="@+id/as_website_icon" android:background="@drawable/browser_responsive_circular" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/browser_website_icon" android:tint="?attr/topBarIconTintColor"/>
+                <ImageButton android:id="@+id/as_website_copy" android:background="@drawable/browser_responsive_circular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/ic_fluent_copy_24_regular" android:tint="?attr/topBarActionIconTintColor"/>
+                <ImageButton android:id="@+id/as_website_edit" android:background="@drawable/browser_responsive_circular" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/ic_fluent_edit_24_regular" android:tint="?attr/topBarActionIconTintColor"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/as_website_title" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:lines="1" android:layout_toLeftOf="@+id/as_website_action_container" android:layout_above="@+id/as_website_link" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+            <TextView android:textSize="14sp" android:textColor="@color/browser_as_website_link_text_color" android:ellipsize="end" android:id="@+id/as_website_link" android:paddingLeft="16dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:lines="1" android:layout_toLeftOf="@+id/as_website_action_container" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/nestScrollView" android:background="?attr/activityBackgroundColor" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_below="@+id/browser_as_header">
+        <LinearLayout android:orientation="vertical" android:id="@+id/as_as_scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="0dp">
+            <com.microsoft.bing.autosuggestion.views.AutoSuggestionView android:id="@+id/as_as_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/bing_as_divider"/>
+            <include layout="@layout/bing_trending_search_layout"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

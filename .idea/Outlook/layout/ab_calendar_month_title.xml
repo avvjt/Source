@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <Button android:textAppearance="@style/TextAppearance.Outlook.Title2" android:textColor="?attr/toolbarTitleColor" android:gravity="center_vertical" android:id="@+id/calendar_month_title_button" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:includeFontPadding="false" android:paddingStart="0dp" outlook:drawableTint="?attr/toolbarTitleColor"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/text_viewer_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <WebView android:id="@+id/text_viewer_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <androidx.appcompat.widget.AppCompatButton android:layout_gravity="bottom" android:id="@+id/text_viewer_open_in_app" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_margin="40dp" android:elevation="4dp" style="@style/Widget.Outlook.Button.MercuryBorder.Rounded"/>
+    </FrameLayout>
+</LinearLayout>

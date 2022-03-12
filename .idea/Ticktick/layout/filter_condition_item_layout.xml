@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/filter_condition_background" style="@style/filter_container_item_style">
+    <com.ticktick.task.view.selectableview.SelectableTextView android:textColor="?android:attr/textColorPrimary" android:id="@+id/ai6" style="@style/filter_item_style"/>
+    <RelativeLayout android:id="@+id/invalid_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/tv_expired" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="0dp" android:text="@string/r2"/>
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/tv_invalid" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/ic_svg_error" android:layout_toRightOf="@+id/tv_expired" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.CalendarHeaderLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/header_layout" android:background="?attr/dialog_bg_color" android:layout_width="match_parent" android:layout_height="@dimen/ca_calendar_title" app:weekend_text_color="?attr/cal_dialog_week_text">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/day_names" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="24dp">
+        <TextView android:id="@+id/day0" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day1" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day2" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day3" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day4" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day5" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day6" style="@style/MonthView_DayLabel"/>
+    </LinearLayout>
+    <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/month_layout" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:gravity="start|center_vertical" android:layout_gravity="center_vertical" android:id="@+id/duedate_tv" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <com.ticktick.task.view.IconTextView android:textColor="?attr/iconColorSecondary" android:layout_gravity="center_vertical" android:id="@+id/ic_spinner_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@string/ic_svg_go_to_today"/>
+    </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+</com.ticktick.task.view.CalendarHeaderLayout>

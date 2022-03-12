@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:importantForAccessibility="no" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/file_container" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+        <ImageView android:id="@+id/icon_image_view" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/ic_file_blank" android:scaleType="fitCenter" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/list_item_icon_margin_end"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/file_item_fullview" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:ellipsize="middle" android:id="@+id/title_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/ListItem.Title"/>
+            <TextView android:ellipsize="end" android:id="@+id/subtitle_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Summary"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    <com.microsoft.office.outlook.uikit.widget.BottomSheetListTitleView android:id="@+id/bottom_sheet_list_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

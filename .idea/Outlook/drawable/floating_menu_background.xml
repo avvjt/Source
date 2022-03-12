@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/floating_menu_height_half"/>
+    <stroke android:width="@dimen/floating_menu_border_width" android:color="@color/outlook_app_divider" android:dashGap="0dp"/>
+    <solid android:color="@color/outlook_app_surface_menu"/>
+    <padding android:left="@dimen/floating_menu_side_padding" android:top="@dimen/floating_menu_border_width" android:right="@dimen/floating_menu_side_padding" android:bottom="@dimen/floating_menu_border_width"/>
+</shape>

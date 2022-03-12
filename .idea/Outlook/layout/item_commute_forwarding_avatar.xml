@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/forward_recipient" android:layout_width="match_parent" android:layout_height="128dp">
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="110dp" android:layout_marginLeft="18dp" android:layout_marginTop="9dp" android:layout_marginRight="18dp" android:layout_marginBottom="9dp" android:layout_marginHorizontal="18dp" android:layout_marginVertical="9dp" app:cardCornerRadius="10dp" app:cardElevation="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/recipient_avatar" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginStart="15dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="22sp" android:ellipsize="end" android:id="@+id/recipient_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="15dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/recipient_avatar" app:layout_constraintTop_toTopOf="0" style="@style/TextAppearance.Outlook.Title2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

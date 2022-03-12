@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/notification_container" android:tag="layout/list_item_home_recent_activity_0" android:background="@drawable/list_item_background" android:paddingTop="@dimen/default_margin_0_75x" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" layout="@layout/list_item_notification_header"/>
+    <include android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" layout="@layout/list_item_notification_summary"/>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/divider_height" android:layout_marginTop="@dimen/default_margin_half" layout="@layout/list_item_divider"/>
+</LinearLayout>

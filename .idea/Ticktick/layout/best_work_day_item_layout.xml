@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/itemForeground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/ai6" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/e1"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <TextView android:textSize="22sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/best_day" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingRight="3dp" android:layout_width="0dp" android:layout_height="140dp" android:baselineAligned="false" android:layout_weight="9">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <com.ticktick.task.view.LineProgress android:id="@+id/progress_1" android:layout_width="8dp" android:layout_height="90dp" app:progress_color="@color/primary_green_36" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <com.ticktick.task.view.LineProgress android:id="@+id/progress_2" android:layout_width="8dp" android:layout_height="90dp" app:progress_color="@color/primary_green_36" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/text_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <com.ticktick.task.view.LineProgress android:id="@+id/progress_3" android:layout_width="8dp" android:layout_height="90dp" app:progress_color="@color/primary_green_36" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/text_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <com.ticktick.task.view.LineProgress android:id="@+id/progress_4" android:layout_width="8dp" android:layout_height="90dp" app:progress_color="@color/primary_green_36" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/text_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <com.ticktick.task.view.LineProgress android:id="@+id/progress_5" android:layout_width="8dp" android:layout_height="90dp" app:progress_color="@color/primary_green_36" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/text_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <com.ticktick.task.view.LineProgress android:id="@+id/progress_6" android:layout_width="8dp" android:layout_height="90dp" app:progress_color="@color/primary_green_36" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/text_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <com.ticktick.task.view.LineProgress android:id="@+id/progress_7" android:layout_width="8dp" android:layout_height="90dp" app:progress_color="@color/primary_green_36" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/text_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

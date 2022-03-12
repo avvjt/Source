@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:tag="@string/tag_edge_to_edge" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/settings_alias_header" android:visibility="gone" layout="@layout/row_settings_header"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/settings_container_alias" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider_with_content_inset" android:showDividers="middle"/>
+        <include android:id="@+id/settings_folder_header" android:visibility="gone" layout="@layout/row_settings_header"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:id="@+id/settings_folder_header_no_folder_prompt_text" android:paddingBottom="@dimen/list_item_header_padding_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/advanced_setting_no_folder_prompt" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/settings_container_folder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider_with_content_inset" android:showDividers="middle"/>
+    </LinearLayout>
+</ScrollView>

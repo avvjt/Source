@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.SwitchCompat xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/meeting_sensitivity_switch" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/microsoft_sensitivity_private" android:drawableStart="@drawable/ic_fluent_lock_closed_24_regular" style="@style/DraftEventSwitch"/>

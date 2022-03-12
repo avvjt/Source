@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:showDividers="middle">
+        <androidx.appcompat.widget.SwitchCompat android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/online_meeting_checkbox" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/online_meetings_account_preference_summary" style="@style/ListItem.Row"/>
+        <TextView android:id="@+id/meeting_providers_list_description" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/online_meeting_providers_list_description" style="@style/ListItem.Summary"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/meeting_providers_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

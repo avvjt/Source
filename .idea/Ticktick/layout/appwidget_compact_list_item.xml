@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/widget_task_item_layout" android:layout_width="match_parent" android:layout_height="20dp">
+    <ImageView android:id="@+id/widget_color_view" style="@style/widget_item_color"/>
+    <TextView android:textSize="@dimen/compact_widget_title_text_size" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/widget_task_item" android:paddingLeft="8dp" android:paddingRight="7dp" android:layout_width="0dp" android:layout_height="20dp" android:text="" android:singleLine="true" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/compact_widget_date_text_size" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/widget_task_date_item" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="20dp" android:text="" android:singleLine="true"/>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" android:background="@color/black_alpha_10" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/reminder_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <FrameLayout android:id="@+id/dismiss_area" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/reminder_layout"/>
+    <RelativeLayout android:gravity="top" android:id="@+id/reminder_layout" android:background="?attr/task_popup_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/task_popup_window_horizontal_margin" android:layout_marginRight="@dimen/task_popup_window_horizontal_margin" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/date_layout" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_toLeftOf="@+id/dismiss" android:layout_alignParentTop="true">
+            <TextView android:textSize="12sp" android:textColor="?attr/ej" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/reminder_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12dp"/>
+        </LinearLayout>
+        <com.ticktick.task.view.IconTextView android:textSize="22sp" android:textColor="?attr/iconColorTertiary" android:gravity="center" android:id="@+id/dismiss" android:layout_width="46dp" android:layout_height="46dp" android:text="@string/ic_svg_clear_min" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/alert_content_view" android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/date_layout">
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="top" android:id="@+id/ai6" android:layout_width="match_parent" android:layout_height="40dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/pop_bottom_layout" android:layout_width="match_parent" android:layout_height="78dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="12dp" android:baselineAligned="false" android:layout_below="@+id/alert_content_view">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/enter_full_screen" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="center" android:id="@+id/icon_view_bg" android:background="@drawable/pomo_popup_ring_light" android:padding="12dp" android:layout_width="54dp" android:layout_height="54dp">
+                    <com.ticktick.task.view.IconTextView android:textColor="?attr/iconColorTertiary" android:id="@+id/icon_view" android:background="@drawable/action_bar_item_background_inverse" android:text="@string/ic_svg_enter_full_screen" style="@style/task_popup_action_icon"/>
+                </LinearLayout>
+                <TextView android:textColor="?android:attr/textColorSecondary" android:id="@+id/tv_view" android:text="@string/qi" style="@style/task_popup_action_text"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/start_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="center" android:id="@+id/start_icon_bg" android:background="@drawable/pomo_popup_ring_light" android:padding="12dp" android:layout_width="54dp" android:layout_height="54dp">
+                    <com.ticktick.task.view.IconTextView android:textColor="?attr/ej" android:id="@+id/start_icon" android:background="@drawable/action_bar_item_background_inverse" android:text="@string/ic_svg_start_pomo" style="@style/task_popup_action_icon"/>
+                </LinearLayout>
+                <TextView android:textColor="?android:attr/textColorSecondary" android:id="@+id/start_text" android:text="@string/ayi" style="@style/task_popup_action_text"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/exit_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <LinearLayout android:gravity="center" android:id="@+id/exit_btn_icon_bg" android:background="@drawable/pomo_popup_ring_light" android:padding="12dp" android:layout_width="54dp" android:layout_height="54dp">
+                    <com.ticktick.task.view.IconTextView android:textColor="?attr/iconColorTertiary" android:id="@+id/exit_btn_icon" android:background="@drawable/action_bar_item_background_inverse" android:text="@string/ic_svg_exit_pomo" style="@style/task_popup_action_icon"/>
+                </LinearLayout>
+                <TextView android:textColor="?android:attr/textColorSecondary" android:text="@string/qz" style="@style/task_popup_action_text"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/gradient_view" android:layout_width="match_parent" android:layout_height="16dp" android:layout_above="@+id/pop_bottom_layout"/>
+    </RelativeLayout>
+</RelativeLayout>

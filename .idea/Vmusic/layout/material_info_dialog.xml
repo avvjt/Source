@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_horizontal" android:id="@+id/material_info_dialog_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" app:cardBackgroundColor="@color/cf_surface" app:cardCornerRadius="8dp" app:cardElevation="3dp">
+    <ScrollView android:paddingLeft="24dp" android:paddingTop="24dp" android:paddingRight="24dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:theme="@style/Theme.ConsentFlow" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.Paragraph"/>
+            <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/action_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton android:id="@+id/dismiss_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_more_dialog_ok_button_text" style="@style/Theme.ConsentFlow.NegativeMaterialButton">
+                    <requestFocus/>
+                </com.google.android.material.button.MaterialButton>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

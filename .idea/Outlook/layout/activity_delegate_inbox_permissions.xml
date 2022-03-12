@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <include android:elevation="4dp" layout="@layout/toolbar_no_inset"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" style="@style/ListItem.Row">
+                <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/delegate_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginEnd="16dp"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/outlook_app_primary_text" android:id="@+id/delegate_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Title"/>
+                    <TextView android:id="@+id/delegate_email" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Summary"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center_vertical" android:id="@+id/delegate_permissions_header" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/delegate_inbox_permission_set_inbox_permission" android:fontFamily="sans-serif-medium" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset" style="@style/ListItem.Header"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/permissions_recycler_view" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="?android:attr/textColorSecondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="16dp" android:text="@string/delegate_inbox_permission_set_inbox_intro" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset" style="@style/ListItem.Summary"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View android:id="@+id/remove_divider" android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    <Button android:textColor="?attr/dangerPrimary" android:gravity="center" android:id="@+id/remove_button" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/delegate_inbox_remove_permissions" android:paddingStart="0dp" android:paddingEnd="0dp"/>
+</LinearLayout>

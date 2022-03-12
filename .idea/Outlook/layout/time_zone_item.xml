@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/item_background" android:paddingTop="@dimen/layout_text_view_margin" android:paddingBottom="@dimen/layout_text_view_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:ellipsize="end" android:id="@+id/timezone_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textDirection="locale"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:id="@+id/timezone_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale"/>
+</LinearLayout>

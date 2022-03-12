@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/container" android:tag="layout/list_item_favorite_selectable_0" android:background="@color/backgroundElevatedSecondary" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:elevation="@dimen/default_elevation">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/organization_avatar" android:tag="binding_1" android:layout_width="@dimen/avatar_32" android:layout_height="@dimen/avatar_32" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/default_margin"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1">
+        <TextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Tertiary.Small"/>
+        <TextView android:textSize="@dimen/body_text_size" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/inter_medium"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/add_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus_circle_24" android:importantForAccessibility="no" app:tint="@color/systemBlue"/>
+</LinearLayout>

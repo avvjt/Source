@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="?attr/omAutoTintActionColor" android:alpha="@dimen/outlook_app_search_button_tint_opacity"/>
+</selector>

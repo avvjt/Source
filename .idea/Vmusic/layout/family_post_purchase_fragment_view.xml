@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/yt_white1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/thumb_image_view" android:layout_width="260dp" android:layout_height="141dp" android:contentDescription="@null"/>
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="?attr/textAppearanceTitle" android:textColor="?attr/ytTextPrimary" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70dp"/>
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="?attr/textAppearanceSubhead" android:textColor="?attr/ytTextSecondary" android:textColorLink="?attr/ytCallToAction" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:lineSpacingExtra="4sp" yt:hyperlinksClickable="true"/>
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="?attr/textAppearanceCaption" android:textColor="?attr/ytTextDisabled" android:textColorLink="?attr/ytCallToAction" android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:lineSpacingExtra="4sp" yt:hyperlinksClickable="true"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:background="?attr/ytStaticBrandRed" android:layout_width="match_parent" android:layout_height="56dp">
+        <com.google.android.libraries.youtube.common.ui.YouTubeButton android:id="@+id/dismiss" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" yt:robotoFont="6" style="@style/FamilyButton"/>
+        <com.google.android.libraries.youtube.common.ui.YouTubeButton android:id="@+id/action" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" yt:robotoFont="6" style="@style/FamilyButton"/>
+    </LinearLayout>
+</LinearLayout>

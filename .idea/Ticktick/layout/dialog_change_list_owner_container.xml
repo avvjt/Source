@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="?android:attr/textColorTertiary" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/change_list_owner_hint"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/a6r" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

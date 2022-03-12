@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/widget_title_layout" android:layout_width="match_parent" android:layout_height="@dimen/widget_titlebar_height">
+    <ImageView android:id="@+id/widget_title_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_title_background" android:scaleType="fitXY"/>
+    <ImageView android:id="@+id/ib_settings" android:layout_width="@dimen/widget_title_icon_width" android:layout_marginLeft="3dp" android:src="@drawable/ic_widget_settings" android:layout_alignParentLeft="true" style="@style/widget_week_title_icon_style"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/today_layout" android:layout_toRightOf="@+id/ib_settings">
+        <ImageView android:id="@+id/ib_pre_week" android:layout_width="45dp" android:src="@drawable/widget_pre_week_white" android:layout_toLeftOf="@+id/tv_month" style="@style/widget_week_title_icon_style"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/tv_month" android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/ib_next_week" android:layout_width="45dp" android:src="@drawable/widget_next_week_white" android:layout_toRightOf="@+id/tv_month" style="@style/widget_week_title_icon_style"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/today_layout" android:layout_width="@dimen/widget_title_icon_width" android:layout_height="match_parent" android:layout_toLeftOf="@+id/widget_title_add">
+        <ImageView android:layout_gravity="center" android:id="@+id/go_today_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_widget_today" style="@style/widget_week_title_icon_style"/>
+        <TextView android:textSize="8sp" android:layout_gravity="center" android:id="@+id/today_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/date_icon_text_style"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/widget_title_add" android:layout_width="@dimen/widget_title_icon_width" android:layout_marginRight="3dp" android:src="@drawable/ic_widget_add" android:layout_alignParentRight="true" style="@style/widget_week_title_icon_style"/>
+</RelativeLayout>

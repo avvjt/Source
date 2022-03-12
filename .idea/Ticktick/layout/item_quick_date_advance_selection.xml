@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/itemSelectableBackground" android:paddingLeft="26dp" android:paddingRight="26dp" android:layout_width="match_parent" android:layout_height="@dimen/quick_date_section_item_height">
+    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/selection_radio_btn" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/icon_edit" android:layout_toRightOf="@+id/selection_radio_btn" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/tv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+        <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:id="@+id/icon_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_slide_edit" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

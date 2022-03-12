@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/item_layout" android:background="?attr/itemForeground" android:layout_width="match_parent" android:layout_height="56dp">
+    <include android:id="@+id/photo_layout" android:layout_width="56dp" android:layout_height="56dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" layout="@layout/rounded_image_view_layout"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/a89" android:layout_toRightOf="@+id/photo_layout">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/a89" android:background="@null" android:paddingLeft="8dp" android:paddingRight="4dp" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

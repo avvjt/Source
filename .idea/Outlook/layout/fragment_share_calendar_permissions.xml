@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:scrollbars="none" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/role_groups_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_calendar_permissions" style="@style/ListItem.Header"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:id="@+id/role_groups_description_text" android:paddingLeft="@dimen/outlook_content_inset" android:paddingTop="@dimen/list_item_header_padding_top" android:paddingRight="@dimen/outlook_content_inset" android:paddingBottom="@dimen/list_item_header_padding_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_calendar_read_only_description" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+        <RadioGroup android:id="@+id/role_groups" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider_with_content_inset" android:showDividers="end|middle">
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/none_group" android:text="@string/share_calendar_none_role" style="@style/Widget_Outlook_PermissionItem"/>
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/custom_group" android:text="@string/share_calendar_custom" style="@style/Widget_Outlook_PermissionItem"/>
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/read_group" android:text="@string/share_calendar_can_view" style="@style/Widget_Outlook_PermissionItem"/>
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/write_group" android:text="@string/share_calendar_can_edit" style="@style/Widget_Outlook_PermissionItem"/>
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/delegate_group" android:text="@string/share_calendar_delegate" style="@style/Widget_Outlook_PermissionItem"/>
+        </RadioGroup>
+        <TextView android:id="@+id/detail_view_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_calendar_share" style="@style/ListItem.Header"/>
+        <RadioGroup android:id="@+id/read_group_detail_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider_with_content_inset" android:showDividers="end|middle">
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/free_busy_read" android:text="@string/share_calendar_when_I_am_busy" style="@style/Widget_Outlook_PermissionItem"/>
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/limited_read" android:text="@string/share_calendar_titles_and_locations" style="@style/Widget_Outlook_PermissionItem"/>
+            <com.acompli.acompli.ui.event.calendar.share.view.EndAlignedRadioButton android:id="@+id/read_all" android:text="@string/share_calendar_all_details" style="@style/Widget_Outlook_PermissionItem"/>
+        </RadioGroup>
+        <Switch android:layout_gravity="end|center_vertical" android:id="@+id/delegate_group_detail_view" android:visibility="gone" android:text="@string/share_calendar_delegate_private" style="@style/Widget_Outlook_PermissionItem"/>
+        <androidx.appcompat.widget.AppCompatButton android:gravity="center" android:id="@+id/remove_permission_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/list_item_row_min_height" android:text="@string/remove" android:maxLines="1" android:singleLine="true" style="?attr/colorRedBorderlessButtonStyle"/>
+    </LinearLayout>
+</ScrollView>

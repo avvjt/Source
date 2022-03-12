@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_ink_pencil_tool_shadow_48dp"/>
+    <item android:id="@+id/pencil_color_layer" android:drawable="@drawable/ic_ink_pencil_tool_color_48dp"/>
+    <item android:drawable="@drawable/ic_ink_pencil_tool_background_48dp"/>
+    <item android:drawable="@drawable/ic_ink_pencil_tool_overlay_48dp"/>
+</layer-list>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white_alpha_100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.actionableview.ActionableIconTextView android:theme="@style/Theme_TickTick_Light_NoActionBar" android:textSize="24sp" android:textColor="@color/black_alpha_36_light" android:id="@+id/icon_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:text="@string/ic_svg_clear" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <com.ticktick.task.view.selectableview.SelectableTextView android:textSize="14sp" android:textColor="@color/black_alpha_36_light" android:id="@+id/tv_learn_pro_skill" android:paddingLeft="8dp" android:paddingTop="20dp" android:paddingRight="8dp" android:paddingBottom="20dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/learn_pro_skill" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <Button android:textSize="16sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:id="@+id/tv_renew_now" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/aj_" android:layout_above="@+id/tv_learn_pro_skill"/>
+    <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/black_alpha_90_light" android:id="@+id/tv_expired_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="60dp" android:layout_marginRight="24dp" android:text="@string/anw"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="20dp" android:layout_above="@+id/tv_renew_now" android:layout_below="@+id/tv_expired_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="@color/black_alpha_54_light" android:id="@+id/tv_expired_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:lineSpacingMultiplier="1.5"/>
+            <FrameLayout android:id="@+id/fl_over_lists_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+                <ImageView android:layout_width="16dp" android:layout_height="14dp" android:src="@drawable/ic_warning" android:tint="@color/special_bg_color" android:translationY="2dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/special_bg_color" android:id="@+id/tv_over_lists_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/ano"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/fl_over_tasks_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <ImageView android:layout_width="16dp" android:layout_height="14dp" android:src="@drawable/ic_warning" android:tint="@color/special_bg_color" android:translationY="2dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/special_bg_color" android:id="@+id/tv_over_tasks_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/fl_over_share_member_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <ImageView android:layout_width="16dp" android:layout_height="14dp" android:src="@drawable/ic_warning" android:tint="@color/special_bg_color" android:translationY="2dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/special_bg_color" android:id="@+id/tv_over_share_member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp"/>
+            </FrameLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/black_alpha_54_light" android:id="@+id/tv_expired_renewal_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:lineSpacingMultiplier="1.5"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

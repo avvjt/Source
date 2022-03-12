@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_active="false" android:color="@color/pill_switch_text_light2_default_disabled"/>
+    <item android:state_enabled="false" android:state_active="true" android:color="@color/pill_switch_text_light2_other_disabled"/>
+    <item android:state_active="false" android:color="@color/pill_switch_text_light2_default"/>
+    <item android:state_active="true" android:color="@color/pill_switch_text_light2_other"/>
+</selector>

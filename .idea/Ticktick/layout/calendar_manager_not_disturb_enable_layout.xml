@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingLeft="@dimen/preference_margin" android:paddingTop="@dimen/preference_margin" android:paddingBottom="@dimen/preference_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/not_disturb_switch" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:id="@+id/cal_edit_list_group_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p4" style="@style/PreferenceTextTitle"/>
+        <TextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g7" android:layout_below="@+id/cal_edit_list_group_text" style="@style/PreferenceTextSummary"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.SwitchCompat android:id="@+id/not_disturb_switch" app:theme="@style/switch_color" style="@style/Switch_Preference_settings"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

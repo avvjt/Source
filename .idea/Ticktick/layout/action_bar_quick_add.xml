@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.IconTextView android:textSize="26sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/icon_back" android:background="?attr/i" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:text="@string/ic_svg_back" android:layout_alignParentLeft="true"/>
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/icon_goto_detail" android:background="?attr/i" android:layout_width="@dimen/action_bar_btn_default_width" android:layout_height="match_parent" android:text="@string/ic_svg_app_goto_detail" android:layout_alignParentRight="true"/>
+</RelativeLayout>

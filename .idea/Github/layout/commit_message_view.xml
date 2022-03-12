@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scroll_view" android:tag="layout/commit_message_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:gravity="top" android:id="@+id/commit_headline" android:background="@android:color/transparent" android:paddingTop="@dimen/default_margin_1_5x" android:paddingBottom="@dimen/default_margin_half" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/triage_merge_commit_message_headline_hint" android:inputType="textMultiLine" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:importantForAutofill="no" style="@style/EditText.Title"/>
+        <com.github.android.views.AutoCompleteView android:id="@+id/commit_body" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

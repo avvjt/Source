@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#ffffff">
+    <item>
+        <selector>
+            <item android:drawable="@drawable/ic_fluent_checkmark_24_regular" android:state_activated="true"/>
+            <item android:drawable="@drawable/ic_fluent_add_24_regular"/>
+        </selector>
+    </item>
+</ripple>

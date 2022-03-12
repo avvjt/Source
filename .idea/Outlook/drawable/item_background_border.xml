@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/colorControlHighlight">
+    <item android:id="@android:id/mask">
+        <inset>
+            <shape android:shape="rectangle">
+                <corners android:radius="@dimen/item_background_border_radius"/>
+                <solid android:color="@android:color/white"/>
+            </shape>
+        </inset>
+    </item>
+    <item android:drawable="@drawable/item_background_border_without_inset"/>
+</ripple>

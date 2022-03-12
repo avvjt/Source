@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/xp" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k2">
+        <TextView android:textAppearance="@style/k2" android:ellipsize="marquee" android:id="@+id/ai6" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+        <DateTimeView android:textAppearance="@style/k0" android:layout_gravity="center" android:id="@+id/ahc" android:paddingLeft="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0"/>
+        <Chronometer android:textAppearance="@style/k0" android:layout_gravity="center" android:id="@+id/g8" android:paddingLeft="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0"/>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/jx" android:ellipsize="marquee" android:id="@+id/ag_" android:visibility="gone" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k2" android:layout_marginTop="-2dp" android:layout_marginBottom="-2dp" android:singleLine="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/xr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/k2">
+        <TextView android:textAppearance="@style/jy" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/ag9" android:fadingEdge="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textAppearance="@style/jv" android:gravity="center" android:layout_gravity="center" android:id="@+id/sn" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0"/>
+    </LinearLayout>
+</LinearLayout>

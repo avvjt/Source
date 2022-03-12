@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f08004f_ic_notification_setting_banner__75" android:duration="2000" android:startOffset="0" android:valueFrom="0" android:valueTo="0" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080050_ic_notification_setting_banner__76" android:duration="2000" android:startOffset="0" android:valueFrom="0" android:valueTo="0" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080051_ic_notification_setting_banner__77" android:duration="550" android:startOffset="2000" android:valueFrom="0" android:valueTo="1.0209" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080052_ic_notification_setting_banner__78" android:duration="550" android:startOffset="2000" android:valueFrom="0" android:valueTo="1.0209" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080053_ic_notification_setting_banner__79" android:duration="217" android:startOffset="2550" android:valueFrom="1.0209" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080055_ic_notification_setting_banner__80" android:duration="217" android:startOffset="2550" android:valueFrom="1.0209" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY"/>
+</set>

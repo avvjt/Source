@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@+id/layout_mailtip_banner" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:importantForAccessibility="yes" android:accessibilityLiveRegion="polite">
+        <LinearLayout android:id="@+id/mailtip_content_layout" android:background="@color/warning_tint40" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="locale" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <ImageView android:id="@+id/img_mailtip_person" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_people_error_20_regular" android:layout_weight="0" android:layout_marginEnd="10dp" outlook:tint="@color/mailtips_text_color"/>
+            <TextView android:textSize="14sp" android:textColor="@color/mailtips_text_color" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/title_mailtips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20dp" android:maxLines="2" android:includeFontPadding="false" android:layout_weight="1" android:layout_marginEnd="10dp"/>
+            <ImageButton android:id="@+id/btn_mailtip_close" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_fluent_dismiss_24_regular" android:layout_weight="0" android:contentDescription="@string/content_description_close_mailtips_warning" outlook:tint="@color/mailtips_text_color"/>
+            <TextView android:textColor="?attr/colorAccent" android:gravity="center" android:id="@+id/text_action" android:background="?attr/selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:includeFontPadding="false" outlook:textAllCaps="true" style="@style/TextAppearance.Outlook.Body2"/>
+        </LinearLayout>
+        <View android:layout_gravity="top" android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+        <View android:layout_gravity="bottom" android:id="@+id/mailtip_border" android:background="@color/mailtips_banner_border" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    </FrameLayout>
+</merge>

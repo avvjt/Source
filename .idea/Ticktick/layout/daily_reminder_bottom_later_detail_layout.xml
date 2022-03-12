@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="68dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/pick_tomorrow_layout" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:gravity="center" android:text="@string/ic_svg_daily_reminder_tomorrow" android:layout_centerInParent="true" style="@style/daily_reminder_detail_imageview"/>
+        <TextView android:text="@string/l1" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pick_next_week_layout" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/daily_reminder_bottom_date_margin_top">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:gravity="center" android:layout_marginTop="0dp" android:text="@string/ic_svg_daily_reminder_today" android:layout_centerInParent="true" style="@style/daily_reminder_detail_imageview"/>
+            <TextView android:textSize="8sp" android:textStyle="bold" android:textColor="?attr/colorHighlight" android:id="@+id/next_week_icon_text" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/next_week_text" android:text="@string/ajm" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pick_other_date_layout" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:gravity="center" android:text="@string/ic_svg_daily_reminder_other_day" style="@style/daily_reminder_detail_imageview"/>
+        <TextView android:text="@string/ko" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/pick_post_pone_layout" android:background="?attr/i" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:gravity="center" android:text="@string/ic_svg_daily_reminder_postpone" android:layout_centerInParent="true" style="@style/daily_reminder_detail_imageview"/>
+        <TextView android:text="@string/ako" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/clear_date_layout" android:background="?attr/i" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/colorHighlight" android:text="@string/ic_svg_daily_reminder_clear_date" style="@style/daily_reminder_detail_imageview"/>
+        <TextView android:text="@string/kn" style="@style/daily_reminder_detail_text"/>
+    </LinearLayout>
+</LinearLayout>

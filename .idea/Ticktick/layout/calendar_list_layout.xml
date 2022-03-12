@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.calendarlist.CalendarPortLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/calendar_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="top" android:id="@+id/week_viewpager_layout" android:layout_width="match_parent" android:layout_height="0dp">
+        <View android:id="@+id/tips_anchor" android:layout_width="1dp" android:layout_height="1dp" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+        <com.ticktick.task.view.calendarlist.CalendarWeekViewPager android:id="@+id/week_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ticktick.task.view.calendarlist.EdgeView android:id="@+id/week_view_left_edge" android:layout_width="16dp" android:layout_height="match_parent" app:forward="0"/>
+        <com.ticktick.task.view.calendarlist.EdgeView android:id="@+id/week_view_right_edge" android:layout_width="16dp" android:layout_height="match_parent" android:layout_alignParentRight="true" app:forward="1"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="top" android:id="@+id/month_viewpager_layout" android:layout_width="match_parent" android:layout_height="0dp">
+        <com.ticktick.task.view.calendarlist.CalendarMonthViewPager android:id="@+id/month_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ticktick.task.view.calendarlist.EdgeView android:id="@+id/month_view_left_edge" android:layout_width="16dp" android:layout_height="match_parent" app:forward="0"/>
+        <com.ticktick.task.view.calendarlist.EdgeView android:id="@+id/month_view_right_edge" android:layout_width="16dp" android:layout_height="match_parent" android:layout_alignParentRight="true" app:forward="1"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="top" android:id="@+id/list_layout" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="0dp">
+        <com.ticktick.task.view.RecyclerViewEmptySupport android:id="@+id/list" android:scrollbars="vertical" android:fadingEdge="none" android:fadingEdgeLength="0sp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp" android:layout_alignParentTop="true" android:smoothScrollbar="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:paddingTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b1m" android:lineSpacingMultiplier="1.4"/>
+            <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_horizontal" android:id="@+id/empty_view_summary" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b1n" android:lineSpacingMultiplier="1.4"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/calendar_week_header_layout"/>
+</com.ticktick.task.view.calendarlist.CalendarPortLayout>

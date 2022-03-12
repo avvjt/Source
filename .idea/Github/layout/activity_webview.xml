@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/activity_webview_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/app_bar_layout" layout="@layout/app_bar_layout"/>
+    <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

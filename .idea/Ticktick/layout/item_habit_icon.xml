@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/layout_habit_icon_row0" android:layout_width="56dp" android:layout_height="56dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_habit_icon_row0" android:layout_width="48dp" android:layout_height="48dp"/>
+        <com.ticktick.task.view.IconTextView android:textSize="11sp" android:textColor="?attr/iconColorPrimaryInverse" android:gravity="center" android:layout_gravity="center" android:id="@+id/selected_circle_view_row0" android:background="@drawable/circle_background_primary_blue" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:text="@string/ic_svg_complete"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/layout_habit_icon_row1" android:layout_width="56dp" android:layout_height="56dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_habit_icon_row1" android:layout_width="48dp" android:layout_height="48dp"/>
+        <com.ticktick.task.view.IconTextView android:textSize="11sp" android:textColor="?attr/iconColorPrimaryInverse" android:gravity="center" android:layout_gravity="center" android:id="@+id/selected_circle_view_row1" android:background="@drawable/circle_background_primary_blue" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:text="@string/ic_svg_complete"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/layout_habit_icon_row2" android:layout_width="56dp" android:layout_height="56dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_habit_icon_row2" android:layout_width="48dp" android:layout_height="48dp"/>
+        <com.ticktick.task.view.IconTextView android:textSize="11sp" android:textColor="?attr/iconColorPrimaryInverse" android:gravity="center" android:layout_gravity="center" android:id="@+id/selected_circle_view_row2" android:background="@drawable/circle_background_primary_blue" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="14dp" android:layout_marginTop="14dp" android:text="@string/ic_svg_complete"/>
+    </FrameLayout>
+</LinearLayout>

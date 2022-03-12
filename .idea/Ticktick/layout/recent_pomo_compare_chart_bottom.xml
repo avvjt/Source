@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ticktick.task.view.CircleColorView android:id="@+id/left_dot" android:layout_width="6dp" android:layout_height="6dp" app:fillColor="@color/primary_red"/>
+        <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/left_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/tu"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp">
+        <com.ticktick.task.view.CircleColorView android:id="@+id/right_dot" android:layout_width="6dp" android:layout_height="6dp" app:fillColor="@color/primary_green"/>
+        <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/right_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/h"/>
+    </LinearLayout>
+</LinearLayout>

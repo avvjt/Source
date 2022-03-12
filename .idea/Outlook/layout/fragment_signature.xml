@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/formatting_toolbar_container">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.SwitchCompat android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/signature_switch_per_account" android:background="@color/outlook_app_banner" android:paddingLeft="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_row_min_height" android:text="@string/per_account_signature" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout android:orientation="vertical" android:id="@+id/all_account_signature_cell" android:paddingLeft="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:hint="@string/all_accounts_name" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/all_account_signature_linear_layout" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.microsoft.office.outlook.compose.richeditor.RichEditorV2 android:id="@+id/signature_rooster_editor_all_account" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="8dp" android:importantForAccessibility="no"/>
+                    </LinearLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/per_account_signature_cell" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/formatting_toolbar_container" android:background="@drawable/bg_format_toolbar_v2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/outlook_app_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_min_size"/>
+        <com.microsoft.office.outlook.compose.view.EditorFormattingToolbar android:id="@+id/formatting_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:showDismissButton="false"/>
+    </LinearLayout>
+</RelativeLayout>

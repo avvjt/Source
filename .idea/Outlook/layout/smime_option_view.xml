@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/smime_option" android:paddingLeft="@dimen/content_inset" android:paddingTop="@dimen/content_inset" android:paddingRight="@dimen/content_inset" android:paddingBottom="@dimen/content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:paddingHorizontal="@dimen/content_inset" android:paddingVertical="@dimen/content_inset">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/option_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textColor="?android:attr/textColorPrimary" android:gravity="start" android:id="@+id/option_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginStart="34dp" style="@style/ListItem.Title"/>
+        <TextView android:gravity="start" android:id="@+id/option_subText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:importantForAccessibility="no" android:layout_marginStart="34dp" style="@style/ListItem.Summary"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center_vertical" android:id="@+id/option_switch" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="yes"/>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="48dp">
+    <ImageView android:id="@+id/item_bg_drag" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <FrameLayout android:gravity="center" android:id="@+id/left_view" android:layout_width="56dp" android:layout_height="48dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/ww" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_search"/>
+        <TextView android:textColor="?attr/textColorSlideMenuInverse" android:gravity="center" android:id="@+id/left_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16" style="@style/date_icon_text_style"/>
+    </FrameLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/right_layout" android:layout_toRightOf="@+id/left_view">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/name" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="48dp" android:singleLine="true"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:ellipsize="end" android:gravity="center" android:id="@+id/task_count" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="12" android:singleLine="true"/>
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/a89" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="@string/ic_svg_arraw"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/item_bg_selected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:src="@drawable/bg_list_item_hold_light" android:scaleType="fitXY"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

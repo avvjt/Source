@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.ui.conversation.v3.views.QuickReplyBottomBarView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|center_horizontal" android:orientation="vertical" android:id="@+id/quick_reply_bottom_bar" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/quick_reply_recipient_layout"/>
+</com.acompli.acompli.ui.conversation.v3.views.QuickReplyBottomBarView>

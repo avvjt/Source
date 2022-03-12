@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp">
+    <ImageView android:id="@+id/folder_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp"/>
+    <TextView android:ellipsize="end" android:id="@+id/folder_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="@dimen/favorite_picker_item_name_section_margin_left" style="@style/FavoritePicker_PrimaryListItem"/>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/favorite_status_icon" android:background="@drawable/item_background_circular" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_star_24_filled" android:scaleType="centerInside"/>
+</LinearLayout>

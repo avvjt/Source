@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+    <item>
+        <selector>
+            <item android:state_enabled="false" android:drawable="@drawable/pill_track_background_light_disabled"/>
+            <item>
+                <shape>
+                    <corners android:radius="16dp"/>
+                    <solid android:color="?attr/colorAccent"/>
+                    <size android:height="32dp"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

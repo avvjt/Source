@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="26dp" android:layout_height="26dp">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/qu" android:layout_width="26dp" android:layout_height="26dp" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/red_point" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:src="@drawable/wechat_red_circle" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</merge>

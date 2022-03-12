@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.ImageViewPager2 android:id="@+id/imageViewPager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/image_btn_layout" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+        <com.ticktick.task.view.selectableview.SelectableImageButton android:layout_gravity="center" android:id="@+id/imageBrowser_back" android:padding="4dp" android:layout_width="60dp" android:layout_height="match_parent" android:src="@mipmap/ic_launcher"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.ticktick.task.view.selectableview.SelectableImageButton android:layout_gravity="center" android:id="@+id/imageBrowser_delete" android:padding="4dp" android:layout_width="60dp" android:layout_height="match_parent" android:src="@mipmap/ic_launcher"/>
+        <com.ticktick.task.view.selectableview.SelectableImageButton android:layout_gravity="center" android:id="@+id/imageBrowser_rotate" android:padding="4dp" android:layout_width="60dp" android:layout_height="match_parent" android:src="@mipmap/ic_launcher"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/image_bottom_layout" android:background="#ffffff" android:padding="2dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:id="@+id/image_address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

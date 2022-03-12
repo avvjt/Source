@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_view" android:tag="layout/fragment_compose_markdown_0" android:background="@color/backgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/app_bar_layout" layout="@layout/flat_app_bar_layout"/>
+    <com.github.android.views.MarkdownBarView android:id="@+id/markdown_bar_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:background="@color/backgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/markdown_bar_layout" android:layout_below="@+id/app_bar_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="top" android:id="@+id/title_text" android:background="@android:color/transparent" android:paddingTop="@dimen/default_margin_1_5x" android:paddingBottom="@dimen/default_margin_half" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/create_issue_title_hint" android:inputType="textMultiLine" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:importantForAutofill="no" style="@style/EditText.Title"/>
+            <com.github.android.views.AutoCompleteView android:id="@+id/body" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

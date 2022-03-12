@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_send_app_container" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    <ImageView android:id="@+id/shadow_bottom_of_choose_send_app" android:layout_width="match_parent" android:layout_height="@dimen/divider_1" style="?attr/tt_divider"/>
+    <FrameLayout android:id="@+id/fl_cancel" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="?attr/ej" android:gravity="center" android:id="@+id/tv_cancel" android:background="?attr/i" android:layout_width="match_parent" android:layout_height="@dimen/cancel_btn_height" android:text="@string/f_"/>
+    </FrameLayout>
+</LinearLayout>

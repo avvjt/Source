@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:icon="@drawable/ic_format_bold" android:id="@+id/action_bold" android:title="Bold" android:checkable="true"/>
+        <item android:icon="@drawable/ic_format_italic" android:id="@+id/action_italic" android:title="Italic" android:checkable="true"/>
+        <item android:icon="@drawable/ic_format_underlined" android:id="@+id/action_underline" android:title="Underline" android:checkable="true"/>
+        <item android:icon="@drawable/ic_format_strikethrough" android:id="@+id/action_strike_through" android:title="Strikethrough" android:checkable="true"/>
+    </group>
+    <group>
+        <item android:icon="@drawable/ic_format_list_bullet" android:id="@+id/action_bullet" android:title="Bulleted list" android:checkable="true"/>
+        <item android:icon="@drawable/ic_format_list_number" android:id="@+id/action_number" android:title="Numbered list" android:checkable="true"/>
+    </group>
+    <group android:visible="false">
+        <item android:icon="@drawable/ic_format_align_left" android:id="@+id/action_align_left" android:title="Align left"/>
+        <item android:icon="@drawable/ic_format_align_center" android:id="@+id/action_align_center" android:title="Align center"/>
+        <item android:icon="@drawable/ic_format_align_right" android:id="@+id/action_align_right" android:title="Align right"/>
+    </group>
+</menu>

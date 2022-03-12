@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="calendar_icon_enabled">false</bool>
+    <bool name="compose_label_single_line">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="enable_system_alarm_service_default">false</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">true</bool>
+    <bool name="event_details_fits_system_windows">true</bool>
+    <bool name="isDeviceTablet">false</bool>
+    <bool name="isNightMode">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="oaf_is_tablet">false</bool>
+    <bool name="outlook_app_is_light_nav_bar">true</bool>
+    <bool name="outlook_app_is_light_status_bar">true</bool>
+    <bool name="show_minical">false</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/list_item_issue_pr_commit_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/commit_layout" android:tag="binding_1" android:background="@drawable/list_item_primary_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+        <FrameLayout android:tag="binding_2" android:layout_width="@dimen/circle_background_size" android:layout_height="@dimen/circle_background_size">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_git_commit_16" android:contentDescription="@string/screenreader_reference_commit" app:tint="@color/timelineIconTint"/>
+        </FrameLayout>
+        <ImageView android:layout_gravity="center_vertical" android:tag="binding_3" android:layout_width="@dimen/avatar_16" android:layout_height="@dimen/avatar_16" android:contentDescription="@string/screenreader_issue_pr_commit_author_avatar" android:layout_marginStart="@dimen/default_margin_0_75x" android:layout_marginEnd="@dimen/default_margin_half"/>
+        <TextView android:textSize="14sp" android:textColor="@color/textTertiary" android:ellipsize="end" android:tag="binding_4" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" style="@style/Monospace"/>
+    </LinearLayout>
+    <include android:layout_width="@dimen/divider_height" android:layout_height="match_parent" android:layout_marginStart="@dimen/default_margin_2x" layout="@layout/list_item_issue_pr_spacer"/>
+</FrameLayout>

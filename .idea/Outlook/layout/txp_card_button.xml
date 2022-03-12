@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="@style/TextAppearance.Outlook.Button.Borderless" android:textColor="?attr/colorAccent" android:id="@+id/txp_card_button" android:background="@drawable/item_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>

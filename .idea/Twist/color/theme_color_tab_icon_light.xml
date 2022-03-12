@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="@color/theme_doist_content_quatenary_dark"/>
+    <item android:color="@color/theme_doist_content_secondary_dark" android:state_activated="false"/>
+    <item android:color="@color/theme_doist_content_light_on_dark_light"/>
+</selector>

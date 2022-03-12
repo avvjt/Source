@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/task_detail_view" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="@dimen/two_pane_detail_tool_bar_height">
+        <com.ticktick.task.view.selectableview.SelectableLinearLayout android:orientation="horizontal" android:id="@+id/title_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/right_layout" android:layout_alignParentLeft="true">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/tool_bar_move_to_list" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/ic_svg_move_to"/>
+            <TextView android:textSize="17sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:singleLine="true"/>
+        </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+        <LinearLayout android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/tool_bar_full_screen" android:background="?attr/sm" android:layout_width="48dp" android:layout_height="match_parent" android:text="@string/ic_svg_full_enter"/>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/share_user_layout" android:background="@drawable/action_bar_item_background_inverse" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp">
+                <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/set_assign_icon" android:layout_width="24dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/ic_svg_assign_others" android:layout_centerInParent="true"/>
+                <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/share_user_photo" android:background="?attr/colorHighlight" android:layout_width="@dimen/action_bar_photo_frame_width" android:layout_height="@dimen/action_bar_photo_frame_height" android:src="@drawable/default_photo_light" android:scaleType="fitXY" android:layout_centerInParent="true" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/record_view" android:background="?attr/activity_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/two_pane_detail_tool_bar_height" android:layout_centerVertical="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:background="@drawable/action_bar_item_background_inverse" android:layout_width="56dp" android:layout_height="wrap_content" android:text="@string/ic_svg_record_stop"/>
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/title_bar_voice_time" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00"/>
+    </LinearLayout>
+</RelativeLayout>

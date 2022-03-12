@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_fluent_calendar_add_24_regular" android:id="@+id/action_compose_event" android:menuCategory="system" android:title="@string/compose_attach_meeting"/>
+    <item android:icon="@drawable/ic_fluent_attach_24_regular" android:id="@+id/action_compose_attach" android:menuCategory="system" android:title="@string/compose_attach"/>
+    <item android:icon="@drawable/ic_fluent_camera_24_regular" android:id="@+id/action_compose_office_lens" android:menuCategory="system" android:title="@string/compose_take_a_photo"/>
+    <item android:icon="@drawable/ic_fluent_text_edit_style_24_regular" android:id="@+id/action_compose_rich_formatting" android:menuCategory="system" android:title="@string/compose_rich_formatting_title"/>
+    <item android:icon="@drawable/ic_fluent_lightbulb_24_regular" android:id="@+id/action_compose_quick_reply_ai_elaborate" android:menuCategory="system" android:title="@string/text_elaborate"/>
+    <item android:icon="@drawable/ic_fluent_inking_tool_24_regular_flipped_vertically" android:id="@+id/action_compose_inking" android:menuCategory="system" android:title="@string/compose_ink_title"/>
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_layout" android:background="?attr/dialog_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+            <TextView android:textSize="20sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/material_normal_padding" android:text="@string/arn"/>
+            <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/as1"/>
+            <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:paddingLeft="24dp" android:paddingTop="10dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as4"/>
+            <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as5"/>
+            <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:paddingLeft="24dp" android:paddingTop="10dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as2"/>
+            <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as3"/>
+            <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:paddingLeft="24dp" android:paddingTop="10dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as6"/>
+            <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as7"/>
+            <ImageView android:layout_height="@dimen/divider_1" android:layout_marginTop="16dp" style="?attr/tt_divider"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.ButtonBarLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/ee" android:background="?attr/activity_background" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/content_layout" app:allowStacking="@bool/b" style="?attr/c9">
+            <androidx.appcompat.widget.AppCompatCheckBox android:textColor="?android:attr/textColorPrimary" android:id="@+id/cb_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="@string/p6" android:includeFontPadding="true" android:drawablePadding="4dp" android:layout_centerVertical="true"/>
+            <androidx.legacy.widget.Space android:id="@+id/ac_" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.ticktick.task.view.selectableview.SelectableAppCompatButton android:textColor="?attr/ej" android:id="@android:id/button1" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/f_" style="?attr/c8"/>
+        </androidx.appcompat.widget.ButtonBarLayout>
+        <include layout="@layout/toolbar_shadow"/>
+    </RelativeLayout>
+</ScrollView>

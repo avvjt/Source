@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/standard_avoid_bottom_navigation">
+        <com.twistapp.ui.widgets.FloatingActionButton android:theme="@style/ThemeOverlay.Twist.Fab.Blue" android:layout_gravity="end|bottom" android:id="@+id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_spacing" android:src="@drawable/ic_create"/>
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:theme="@style/ThemeOverlay.Twist.Navigation.BottomNavigationView" android:layout_gravity="bottom" android:id="@+id/navigation" android:background="?attr/colorBackgroundFloating" android:layout_width="match_parent" android:layout_height="@dimen/standard_avoid_bottom_navigation" app:itemIconTint="@color/selector_bottom_navigation_item" app:itemTextColor="@color/selector_bottom_navigation_item" app:labelVisibilityMode="1" app:menu="@menu/home"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

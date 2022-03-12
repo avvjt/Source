@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_pinned_gist_0" android:background="@drawable/pinned_item_background_with_outline" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/default_margin">
+    <TextView android:ellipsize="end" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Tertiary"/>
+    <TextView android:ellipsize="end" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/Header.Section"/>
+    <TextView android:ellipsize="end" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3"/>
+</LinearLayout>

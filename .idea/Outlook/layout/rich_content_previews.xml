@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView android:id="@+id/thumbnail_card_first" app:cardCornerRadius="5dp" app:cardElevation="0dp" app:strokeColor="@color/rich_content_stroke_color" app:strokeWidth="@dimen/rich_content_stroke_width" style="@style/RichContentCard">
+        <ImageView android:id="@+id/thumbnail_image_first" style="@style/RichContentImage"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView android:id="@+id/thumbnail_card_second" app:cardCornerRadius="5dp" app:cardElevation="0dp" app:strokeColor="@color/rich_content_stroke_color" app:strokeWidth="@dimen/rich_content_stroke_width" style="@style/RichContentCard">
+        <ImageView android:id="@+id/thumbnail_image_second" style="@style/RichContentImage"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView android:id="@+id/thumbnail_card_third" app:cardCornerRadius="5dp" app:cardElevation="0dp" app:strokeColor="@color/rich_content_stroke_color" app:strokeWidth="@dimen/rich_content_stroke_width" style="@style/RichContentCard">
+        <ImageView android:id="@+id/thumbnail_image_third" style="@style/RichContentImage"/>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:textSize="@dimen/outlook_text_size_body_1" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:id="@+id/thumbnail_overflow_text" android:layout_width="@dimen/rich_content_text_width" android:layout_height="@dimen/rich_content_height"/>
+</merge>

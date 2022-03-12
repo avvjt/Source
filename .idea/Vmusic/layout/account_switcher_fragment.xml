@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" yt:navigationContentDescription="@string/accessibility_close" yt:navigationIcon="@drawable/yt_outline_x_mark_vd_theme_24" yt:title="@string/account_switcher_header_title"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/accounts_loading" android:padding="24dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" style="?android:attr/progressBarStyle"/>
+    <ListView android:id="@+id/account_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+</LinearLayout>

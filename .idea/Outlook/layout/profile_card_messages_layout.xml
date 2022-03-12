@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/profile_card_messages_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/profile_card_divider_height" android:layout_marginTop="@dimen/profile_card_divider_margin_top"/>
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/profile_card_see_all_conversations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conversations" style="@style/Widget.Outlook.Button.Header"/>
+    <FrameLayout android:id="@+id/profile_card_messages_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

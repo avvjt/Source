@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_content" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/top_layout" android:background="?attr/toolbar_background" android:layout_width="match_parent" android:layout_height="?attr/k">
+        <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:layout_gravity="start|center_vertical" android:id="@+id/icon_back" android:padding="16dp" android:layout_width="?attr/k" android:layout_height="?attr/k" android:text="@string/ic_svg_back"/>
+        <TextView android:textSize="20sp" android:textColor="?attr/actionBarTextColorPrimary" android:layout_gravity="start|center_vertical" android:id="@+id/tv_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="?attr/k" android:text="@string/cr"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_habits" android:background="?attr/activity_background" android:scrollbars="vertical" android:fadingEdge="none" android:fadingEdgeLength="0sp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="?attr/k" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp" android:smoothScrollbar="true"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

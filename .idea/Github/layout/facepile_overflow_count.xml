@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="11sp" android:textColor="@color/textTertiary" android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/facepile_overflow_background" android:layout_width="wrap_content" android:layout_height="22dp" android:importantForAccessibility="no" android:fontFamily="@font/inter_semibold" android:paddingStart="6dp" android:paddingEnd="6dp"/>

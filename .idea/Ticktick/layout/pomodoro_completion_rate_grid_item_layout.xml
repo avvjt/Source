@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ticktick.task.view.CircleRingProgress android:id="@+id/progress_view" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerInParent="true" app:progress_color="@color/primary_red" app:railway_color="?attr/progress_railway_color" app:stoke_width="3dp"/>
+    <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:ellipsize="none" android:gravity="center" android:id="@+id/ag9" android:layout_width="30dp" android:layout_height="30dp" android:singleLine="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

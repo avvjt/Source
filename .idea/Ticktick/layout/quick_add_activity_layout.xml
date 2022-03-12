@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_layout" layout="@layout/due_actionbar_layout"/>
+    <FrameLayout android:id="@+id/hh" android:background="@color/black_alpha_18" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/quick_add_layout" android:layout_below="@+id/top_layout"/>
+    <FrameLayout android:layout_gravity="bottom" android:id="@+id/quick_add_layout" android:background="@color/black_alpha_18" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_behavior="com.ticktick.task.view.QuickAddBarBehavior">
+        <com.ticktick.task.view.QuickAddView android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/quick_add_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</RelativeLayout>

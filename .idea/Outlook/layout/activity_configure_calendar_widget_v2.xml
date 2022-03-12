@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/calendar_widget_configuration_recycler_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/calendar_widget_v2_setting_divider_margin" android:layout_weight="1"/>
+    <View android:background="@color/calendar_widget_v2_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/calendar_widget_v2_setting_divider_height"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <androidx.appcompat.widget.AppCompatButton android:layout_gravity="center" android:id="@+id/button_ok" android:paddingTop="@dimen/calendar_widget_v2_activity_add_widget_text_padding_top_bottom" android:paddingBottom="@dimen/calendar_widget_v2_activity_add_widget_text_padding_top_bottom" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="@dimen/calendar_widget_v2_activity_add_widget_text_margin" android:text="@string/calendar_widget_v2_add_widget" android:layout_weight="1" style="@style/Widget.Outlook.Button.Accent"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/button_cancel" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/cancel_item" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

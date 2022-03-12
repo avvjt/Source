@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/day_of_week" android:tag="layout/picker_day_of_week_0" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GitHubCustomPreference">
+    <TextView android:gravity="start" android:id="@+id/day_of_week_text" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@+id/checkbox" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/GitHubCustomPreferenceTitle"/>
+    <com.google.android.material.checkbox.MaterialCheckBox android:id="@+id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/day_of_week_text" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

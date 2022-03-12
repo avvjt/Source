@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/simple_message_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Title1" android:textColor="?attr/colorAccent" android:gravity="center" android:id="@+id/simple_message_list_empty" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

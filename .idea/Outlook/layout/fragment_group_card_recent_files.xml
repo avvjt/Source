@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/files_section" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:paddingBottom="@dimen/list_item_row_padding_bottom" android:visibility="visible" android:layout_marginBottom="@dimen/group_card_files_bottom_margin" style="@style/GroupCard_SubListRow">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/profile_card_section_header_with_link_margin_top">
+            <TextView android:paddingTop="@dimen/group_card_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_card_files_section_header" style="@style/ListItem.Header"/>
+            <Button android:id="@+id/group_card_see_all_files" android:visibility="gone" android:text="@string/profile_card_see_all" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/Widget_Outlook_ProfileCard_SeeAll"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/files_recycler_view" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+</LinearLayout>

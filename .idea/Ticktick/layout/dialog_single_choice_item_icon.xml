@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dialog_item_height">
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/qu" style="@style/dialog_left_item_style"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/item_selectIm" android:layout_toRightOf="@+id/qu">
+        <TextView android:id="@+id/ag9" style="@style/dialog_text_style"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/item_selectIm" android:background="@null" android:focusable="false" android:clickable="false" style="@style/dialog_right_item_style"/>
+</RelativeLayout>

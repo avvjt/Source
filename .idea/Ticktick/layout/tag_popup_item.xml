@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/custom_menu_background" android:layout_width="match_parent" android:layout_height="@dimen/tag_popup_item_height">
+    <TextView android:textSize="@dimen/tag_dropdown_text_size" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:id="@+id/option_name" android:paddingLeft="@dimen/tag_dropdown_padding" android:paddingRight="@dimen/tag_dropdown_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

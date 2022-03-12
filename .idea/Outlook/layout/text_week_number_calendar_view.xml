@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/week_number_in_week_view_text_size" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:id="@+id/text_week_number" android:background="@color/outlook_app_drawer_sidebar" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>

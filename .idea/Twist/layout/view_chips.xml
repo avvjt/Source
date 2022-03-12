@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <EditText android:id="@+id/chips_edit_text" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAutofill="2" style="@style/Widget.Twist.ChipsView"/>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <EditText android:id="@+id/chips_edit_text" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAutofill="no" style="@style/Widget.Twist.ChipsView"/>
     <com.twistapp.ui.widgets.chips.core.ChipSearchView android:id="@+id/chips_search_view" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Twist.ChipSearchView"/>
 </FrameLayout>

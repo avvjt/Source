@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/toolbar"/>
+        <com.microsoft.office.outlook.uikit.view.OMRecyclerView android:id="@+id/group_members_listview" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/add_members_fab" android:visibility="gone" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/ic_fluent_add_24_filled" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/accessibility_add_members" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" style="@style/Widget.Outlook.FloatingActionButton"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

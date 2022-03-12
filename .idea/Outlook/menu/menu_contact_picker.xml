@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_checkmark_24_regular" android:id="@+id/action_done" android:title="@string/done" outlook:contentDescription="@string/accessibility_done_button" outlook:iconTint="@color/icon_white_selector" outlook:showAsAction="always"/>
+</menu>

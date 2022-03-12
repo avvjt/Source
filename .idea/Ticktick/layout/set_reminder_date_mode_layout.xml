@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ticktick.task.view.CalendarScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/calendar_set_layout" android:layout_width="match_parent" android:layout_height="251dp" layout="@layout/calendar_set_dialog_layout"/>
+            <com.ticktick.task.view.selectableview.SelectableLinearLayout android:orientation="horizontal" android:id="@+id/batch_edit_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp">
+                <TextView android:textSize="15sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/dx" android:singleLine="true"/>
+            </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+            <include android:id="@+id/due_time_set_layout" layout="@layout/due_time_set_layout"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_reminder_and_repeat" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/reminder_set_layout" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/reminder_set_layout"/>
+                <include android:id="@+id/repeat_item_layout" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/repeat_set_item_layout"/>
+                <include android:id="@+id/repeat_end_item_layout" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/repeat_end_item_layout"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ticktick.task.view.CalendarScrollView>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/description_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/aaq" android:maxLines="4" android:lineSpacingExtra="10dp"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/description_layout">
+        <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/invite_by_wx_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="56dp">
+            <com.ticktick.task.view.IconTextView android:textSize="26sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_width="56dp" android:layout_height="56dp" android:text="@string/ic_svg_wechat"/>
+            <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_by_wx"/>
+        </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+        <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/invite_by_other_layout" android:layout_width="match_parent" android:layout_height="56dp">
+            <com.ticktick.task.view.IconTextView android:textSize="26sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_width="56dp" android:layout_height="56dp" android:text="@string/ic_svg_link"/>
+            <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/invite_by_other_text" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/invite_by_other"/>
+        </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+    </LinearLayout>
+</RelativeLayout>

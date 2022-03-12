@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:columnCount="3">
+    <com.microsoft.office.outlook.uikit.widget.CenterIconTextButton android:id="@+id/btn_add_account_onedrive_for_business" android:text="@string/account_onedrive_for_business" android:contentDescription="@string/setup_onedrive_for_business_account" outlook:drawable="@drawable/ic_fluent_office_one_drive_48_color" style="@style/Widget_Outlook_AccountButton"/>
+    <com.microsoft.office.outlook.uikit.widget.CenterIconTextButton android:id="@+id/btn_add_account_onedrive" android:text="@string/account_onedrive" android:contentDescription="@string/setup_onedrive_account" outlook:drawable="@drawable/ic_fluent_office_one_drive_48_color" style="@style/Widget_Outlook_AccountButton"/>
+    <com.microsoft.office.outlook.uikit.widget.CenterIconTextButton android:id="@+id/btn_add_account_dropbox" android:text="@string/account_dropbox" android:contentDescription="@string/setup_dropbox_account" outlook:drawable="@drawable/ic_fluent_brand_dropbox_48_color" style="@style/Widget_Outlook_AccountButton"/>
+    <com.microsoft.office.outlook.uikit.widget.CenterIconTextButton android:id="@+id/btn_add_account_box" android:text="@string/account_box" android:contentDescription="@string/setup_box_account" outlook:drawable="@drawable/ic_fluent_brand_box_48_color" style="@style/Widget_Outlook_AccountButton"/>
+</GridLayout>

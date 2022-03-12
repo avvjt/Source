@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_loading" android:visible="false" android:title="@string/loading" app:actionLayout="@layout/toolbar_indeterminate_progress" app:showAsAction="always"/>
+    <item android:id="@+id/simulate_time_range" android:title="Admin time range" app:showAsAction="never"/>
+    <item android:id="@+id/simulate_admin_override_allowed" android:title="Admin override allowed" app:showAsAction="never"/>
+    <item android:id="@+id/simulate_admin_no_override" android:title="Admin no override" app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="start" android:id="@android:id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin_1_5x" android:layout_marginStart="@dimen/default_margin" android:layout_marginEnd="@dimen/default_margin" style="@style/Tertiary.Small"/>

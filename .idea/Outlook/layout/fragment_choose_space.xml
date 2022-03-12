@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_no_tint_navigation"/>
+    <TextView android:textColor="?attr/colorAccent" android:gravity="center_vertical" android:id="@+id/available" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workspace_available" style="@style/ListItem.Row"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/spaces" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <include android:id="@+id/search_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/empty_search"/>
+</com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout>

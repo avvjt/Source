@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/reply_replyall_forward_parent" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:divider="@drawable/horizontal_divider" android:showDividers="beginning">
+    <LinearLayout android:orientation="horizontal" android:background="?android:attr/colorBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:id="@+id/conversation_thread_reply" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ic_fluent_arrow_reply_24_regular" android:layout_weight="1" android:contentDescription="@string/reply_action_reply"/>
+        <ImageButton android:id="@+id/conversation_thread_reply_all" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ic_fluent_arrow_reply_all_24_regular" android:layout_weight="1" android:contentDescription="@string/reply_action_reply_all"/>
+        <ImageButton android:id="@+id/conversation_thread_forward" android:background="?attr/selectableItemBackgroundBorderless" android:clickable="false" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ic_fluent_arrow_forward_24_regular" android:layout_weight="1" android:contentDescription="@string/reply_action_forward"/>
+    </LinearLayout>
+</LinearLayout>

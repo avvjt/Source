@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/cortini_control_icon_unpressed_background"/>
+    <size android:height="@dimen/cortini_control_icon_background_size" android:width="@dimen/cortini_control_icon_background_size"/>
+</shape>

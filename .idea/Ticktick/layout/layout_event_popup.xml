@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.reminder.popup.CalendarEventReminderPopupView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" android:gravity="bottom" android:orientation="vertical" android:id="@+id/reminder_layout" android:background="?attr/task_popup_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/date_layout" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_toLeftOf="@+id/dismiss" android:layout_alignParentTop="true">
+        <TextView android:textSize="12sp" android:textColor="?attr/task_popup_color_primary_1" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/reminder_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12dp"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/task_popup_text_color_secondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/calendar_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1"/>
+    </LinearLayout>
+    <com.ticktick.task.view.IconTextView android:textSize="22sp" android:textColor="?attr/task_popup_text_color_secondary" android:gravity="center" android:id="@+id/dismiss" android:layout_width="46dp" android:layout_height="46dp" android:text="@string/ic_svg_clear_min" android:layout_alignParentRight="true"/>
+    <com.ticktick.task.view.PopupRecyclerView android:id="@+id/content_recycler_view" android:layout_width="match_parent" android:layout_height="142dp" android:layout_below="@+id/date_layout"/>
+    <com.ticktick.task.view.selectableview.SelectableTextView android:textSize="16sp" android:textColor="?attr/task_popup_text_color_secondary" android:gravity="center" android:id="@+id/view_detail" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/b6p" android:layout_below="@+id/content_recycler_view"/>
+    <View android:layout_above="@+id/view_detail" style="?attr/tt_divider"/>
+</com.ticktick.task.reminder.popup.CalendarEventReminderPopupView>

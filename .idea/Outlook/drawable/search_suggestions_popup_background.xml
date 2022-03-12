@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/search_edit_container_corner_radius" android:bottomRightRadius="@dimen/search_edit_container_corner_radius"/>
+            <stroke android:width="@dimen/outlook_divider_height" android:color="@color/outlook_app_divider"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/outlook_divider_height" android:right="@dimen/outlook_divider_height" android:bottom="@dimen/outlook_divider_height">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/search_edit_container_corner_radius" android:bottomRightRadius="@dimen/search_edit_container_corner_radius"/>
+            <solid android:color="@color/outlook_app_surface_popup"/>
+        </shape>
+    </item>
+</layer-list>

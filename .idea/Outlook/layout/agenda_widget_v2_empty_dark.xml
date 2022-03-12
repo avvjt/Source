@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bg_widget_all_dark" android:padding="@dimen/widget_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/agenda_widget_v2_header_dark"/>
+    <include layout="@layout/agenda_widget_v2_empty_state_dark"/>
+    <ListView android:id="@+id/agenda_widget_list_view" android:layout_height="wrap_content" style="@style/AgendaWidgetV2ListView_Dark"/>
+</LinearLayout>

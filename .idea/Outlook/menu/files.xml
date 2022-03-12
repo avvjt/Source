@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_search_24_regular" android:id="@+id/files_action_search" android:title="@string/search" app:actionLayout="@layout/action_bar_search_layout" app:iconTint="@android:color/white" app:showAsAction="collapseActionView|always"/>
+</menu>

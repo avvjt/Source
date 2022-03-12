@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="bottom|center_horizontal" android:orientation="vertical" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/scroll_msg_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ticktick.task.view.IconTextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:layout_gravity="center_vertical" android:id="@+id/scroll_direct_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_slide_arrow"/>
+        <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:layout_gravity="center_vertical" android:id="@+id/scroll_msg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ax2"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/task_activities_msg_height">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp">
+            <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@+id/completed_activity_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:layout_gravity="center_horizontal" android:id="@+id/completed_activity_tv" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/completed_activity_date" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="start" android:orientation="horizontal" android:id="@+id/created_activity_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorSecondary" android:layout_gravity="center_horizontal" android:id="@+id/created_activity_tv" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:layout_gravity="center_horizontal" android:id="@+id/created_activity_date" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

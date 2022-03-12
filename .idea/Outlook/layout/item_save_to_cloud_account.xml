@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/create_new_account" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" style="@style/ListItem.Row">
+    <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_office_one_drive_24_color" style="@style/ListItem.Icon"/>
+    <TextView android:ellipsize="end" android:id="@+id/description" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:paddingEnd="@dimen/outlook_content_inset" style="@style/ListItem.Title"/>
+    <ImageView android:id="@+id/lock" android:visibility="invisible" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/ic_fluent_lock_shield_24_regular" android:scaleType="center" android:importantForAccessibility="no"/>
+</LinearLayout>

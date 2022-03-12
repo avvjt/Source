@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.ResizableVerticalLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/resizable_vertical_linear_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.acompli.acompli.ui.event.list.calendar.CalendarView android:id="@+id/calendar_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/design_appbar_elevation" outlook:showCalendarHandle="true" outlook:weekHeadingBackgroundColor="?attr/colorPrimary"/>
+    <include layout="@layout/divider_calendar_bottom"/>
+    <com.acompli.acompli.ui.event.list.multiday.MultiDayView android:id="@+id/multiday_view" android:layout_width="match_parent" android:layout_height="match_parent" outlook:eventClickable="false" outlook:numVisibleDays="1"/>
+</com.microsoft.office.outlook.uikit.widget.ResizableVerticalLinearLayout>

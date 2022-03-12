@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_menu_all_messages" android:id="@+id/menu_filter_all_messages" android:title="@string/all_messages" android:checkable="true"/>
+        <item android:icon="@drawable/ic_menu_unread" android:id="@+id/menu_filter_unread" android:title="@string/unread" android:checkable="true"/>
+        <item android:icon="@drawable/ic_menu_flag" android:id="@+id/menu_filter_flagged" android:title="@string/flagged" android:checkable="true"/>
+        <item android:icon="@drawable/ic_menu_pin" android:id="@+id/menu_filter_pinned" android:title="@string/pinned" android:checkable="true"/>
+        <item android:icon="@drawable/ic_menu_to_me" android:id="@+id/menu_filter_to_me" android:title="@string/to_me" android:checkable="true"/>
+        <item android:icon="@drawable/ic_menu_attachment" android:id="@+id/menu_filter_files" android:title="@string/has_attachments" android:checkable="true"/>
+        <item android:icon="@drawable/ic_menu_mention" android:id="@+id/menu_filter_mentions_me" android:title="@string/mentions_me" android:checkable="true"/>
+    </group>
+</menu>

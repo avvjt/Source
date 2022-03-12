@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_single_choice_background" android:paddingLeft="@dimen/addin_dialog_padding" android:paddingRight="@dimen/addin_dialog_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_schedule_later_row_height" android:paddingStart="@dimen/addin_dialog_padding" android:paddingEnd="@dimen/addin_dialog_padding">
+    <ImageView android:id="@+id/icon" android:layout_width="@dimen/addin_icon_height" android:layout_height="@dimen/addin_icon_width" android:layout_marginEnd="@dimen/addin_dialog_padding"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.compose.richeditor.RichEditorV2 android:id="@+id/rich_edit_text" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+    <TextView android:textSize="@dimen/outlook_text_size_heading" android:textColor="?attr/grey300" android:id="@+id/rich_edit_text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:id="@+id/rich_edit_text_error_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/rich_edit_text">
+        <ImageButton android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_error_circle_24_filled" app:tint="@color/danger_primary"/>
+        <TextView android:textColor="@color/outlook_app_secondary_text" android:id="@+id/rich_edit_text_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+    <View android:id="@+id/rich_edit_text_bottom_line" android:background="@color/grey300" android:layout_width="match_parent" android:layout_height="@dimen/rich_edit_text_bottom_line_normal" android:layout_marginTop="4dp" android:layout_below="@+id/rich_edit_text_error_container"/>
+</RelativeLayout>

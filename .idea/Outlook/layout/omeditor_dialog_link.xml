@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/abc_dialog_padding_material" android:paddingTop="@dimen/abc_dialog_padding_top_material" android:paddingRight="@dimen/abc_dialog_padding_material" android:paddingBottom="@dimen/abc_dialog_padding_material" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/abc_dialog_padding_material" android:paddingEnd="@dimen/abc_dialog_padding_material">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:hint="@string/omeditor_hint_text_to_display" android:importantForAccessibility="no">
+        <EditText android:id="@+id/link_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/omeditor_hint_text_to_display"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/omeditor_hint_link" android:importantForAccessibility="no">
+        <EditText android:id="@+id/link_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" android:contentDescription="@string/omeditor_hint_link"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

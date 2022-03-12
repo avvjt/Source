@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckedTextView android:textColor="?android:attr/textColorSecondary" android:id="@+id/remember_window_choice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/compose_option_remember_this_choice" android:drawableStart="@drawable/ic_fluent_checkbox_24_selector" style="@style/ListItem_Row_FabPopup"/>
+    <ImageView android:id="@+id/remember_divider" android:background="@drawable/horizontal_secondary_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+    <TextView android:id="@+id/menu_create_event" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/create_event" android:drawableStart="@drawable/ic_fluent_calendar_add_24_regular" style="@style/ListItem_Row_FabPopup"/>
+    <TextView android:id="@+id/menu_create_event_new_window" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/create_event_new_window" android:drawableStart="@drawable/ic_fluent_dual_screen_24_regular" style="@style/ListItem_Row_FabPopup"/>
+    <ImageView android:id="@+id/choice_divider" android:background="@drawable/horizontal_secondary_divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"/>
+    <TextView android:id="@+id/menu_book_workspace" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/book_a_workspace" android:drawableStart="@drawable/ic_fluent_people_community_24_regular" style="@style/ListItem_Row_FabPopup"/>
+    <TextView android:id="@+id/menu_book_workspace_new_window" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/book_a_workspace_new_window" android:paddingStart="56dp" style="@style/ListItem_Row_FabPopup"/>
+</merge>

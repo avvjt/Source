@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:gravity="start|top" android:id="@+id/oaf_inapp_form_edittext_comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:lines="4" android:maxLength="4500" android:inputType="textMultiLine" style="@style/oaf_edittext"/>
+    <EditText android:id="@+id/oaf_inapp_form_edittext_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:hint="@string/oaf_email_prompt_required" android:maxLength="200" android:inputType="textEmailAddress" style="@style/oaf_edittext"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/oaf_inapp_form_layout_screenshot" android:focusable="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <CheckBox android:layout_gravity="start" android:id="@+id/oaf_inapp_form_checkbox_screenshot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/oaf_form_screenshot_prompt" style="@style/oaf_checkbox"/>
+        <ImageView android:id="@+id/oaf_inapp_form_image_screenshot" android:importantForAccessibility="no" style="@style/oaf_image_screenshot"/>
+    </LinearLayout>
+    <TextView android:id="@+id/privacy_label_consent_id" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/oaf_privacy_label_consent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="start" android:id="@+id/oaf_inapp_form_checkbox_diagnostics" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/oaf_form_diagnostics_label" style="@style/oaf_checkbox"/>
+        <Button android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:id="@+id/oaf_inapp_form_diagnostic_information_link" android:padding="0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="0dp" android:text="@string/oaf_learn_more" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:textColor="?android:attr/textColorLink" android:id="@+id/oaf_inapp_form_button_privacy" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oaf_privacy_text" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

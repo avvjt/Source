@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/widget_bg_view" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/appwidget_title_layout"/>
+        <ImageView android:id="@+id/title_content_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/widget_content30" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/task_list_view_id" android:fadingEdge="none" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="6dp" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+            <include layout="@layout/widget_empty_view"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/widget_error_tip" android:padding="@dimen/material_normal_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/b7x"/>
+</RelativeLayout>

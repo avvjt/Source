@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+    <ImageView android:importantForAccessibility="no" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <TextView android:textColor="@color/outlook_app_primary_text" android:id="@+id/app_center_authentication_bottomsheet_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/app_center_in_app_update_authenticate_title" android:textAlignment="center" style="@style/TextAppearance.Outlook.Heading2"/>
+    <TextView android:textColor="@color/outlook_app_secondary_text" android:id="@+id/app_center_authentication_bottomsheet_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/app_center_in_app_update_authenticate_description" android:textAlignment="center" android:breakStrategy="balanced" style="@style/TextAppearance.Outlook.SubHeading"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_authenticate" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@string/app_center_in_app_update_authenticate" style="@style/Widget.Outlook.Button.Accent"/>
+</LinearLayout>

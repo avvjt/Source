@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_dark_theme_24_regular" android:id="@+id/action_conversation_view_in_light_mode" android:title="@string/action_view_in_light_mode" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_dark_theme_24_regular" android:id="@+id/action_conversation_view_in_dark_mode" android:title="@string/action_view_in_dark_mode" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="always"/>
+</menu>

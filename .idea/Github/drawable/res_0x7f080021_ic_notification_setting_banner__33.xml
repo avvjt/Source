@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator android:interpolator="@drawable/res_0x7f080022_ic_notification_setting_banner__34" android:duration="167" android:startOffset="0" android:valueFrom="1.34" android:valueTo="1.15" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080023_ic_notification_setting_banner__35" android:duration="167" android:startOffset="0" android:valueFrom="1.34" android:valueTo="1.15" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080024_ic_notification_setting_banner__36" android:duration="333" android:startOffset="167" android:valueFrom="1.15" android:valueTo="1.42" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080025_ic_notification_setting_banner__37" android:duration="333" android:startOffset="167" android:valueFrom="1.15" android:valueTo="1.42" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080026_ic_notification_setting_banner__38" android:duration="583" android:startOffset="500" android:valueFrom="1.42" android:valueTo="1.3" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080027_ic_notification_setting_banner__39" android:duration="583" android:startOffset="500" android:valueFrom="1.42" android:valueTo="1.3" android:valueType="floatType" android:propertyName="scaleY"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f080029_ic_notification_setting_banner__40" android:duration="167" android:startOffset="1083" android:valueFrom="1.3" android:valueTo="1.34" android:valueType="floatType" android:propertyName="scaleX"/>
+    <objectAnimator android:interpolator="@drawable/res_0x7f08002a_ic_notification_setting_banner__41" android:duration="167" android:startOffset="1083" android:valueFrom="1.3" android:valueTo="1.34" android:valueType="floatType" android:propertyName="scaleY"/>
+</set>

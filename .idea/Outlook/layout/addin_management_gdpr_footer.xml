@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/isMinor" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="beginning">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:id="@+id/isMinorText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/gdpr_margin" android:layout_marginTop="@dimen/gdpr_margin" android:layout_marginRight="@dimen/gdpr_margin" android:layout_marginBottom="8dp" android:text="@string/addin_management_gdpr_policy" android:layout_marginStart="@dimen/gdpr_margin" android:layout_marginEnd="@dimen/gdpr_margin"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <ImageView android:id="@+id/qu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:src="@drawable/ic_pro_card" android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true"/>
+    <androidx.appcompat.widget.AppCompatEditText android:textSize="18sp" android:textColor="@color/bright_yellow" android:id="@+id/tv_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp" android:hint="@string/u0" android:layout_below="@+id/qu" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/pro_cursor"/>
+    <Button android:textColor="@color/textColorPrimaryInverse_light" android:id="@+id/btn_get" android:layout_width="match_parent" android:layout_height="44dp" android:layout_margin="16dp" android:text="@string/ar5" android:layout_alignParentBottom="true" style="?attr/c8"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/due_date_fragment_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_layout">
+    <com.ticktick.task.view.CalendarScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:background="?attr/month_view_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/calendar_set_layout" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="293dp" layout="@layout/calendar_set_layout"/>
+            <include android:id="@+id/due_time_set_layout" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp" android:layout_below="@+id/calendar_set_layout" layout="@layout/due_time_set_layout_reminder_set"/>
+            <include android:id="@+id/reminder_set_layout" android:layout_width="match_parent" android:layout_height="56dp" android:layout_below="@+id/due_time_set_layout" layout="@layout/reminder_set_layout"/>
+            <include android:id="@+id/repeat_item_layout" android:layout_width="match_parent" android:layout_height="56dp" android:layout_below="@+id/reminder_set_layout" layout="@layout/repeat_set_item_layout"/>
+            <include android:id="@+id/repeat_end_item_layout" android:layout_width="match_parent" android:layout_height="56dp" android:layout_below="@+id/repeat_item_layout" layout="@layout/repeat_end_item_layout"/>
+        </RelativeLayout>
+    </com.ticktick.task.view.CalendarScrollView>
+</LinearLayout>

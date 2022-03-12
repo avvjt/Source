@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/lenshvc_toast_background" android:paddingLeft="@dimen/lenshvc_toast_horizontal_padding" android:paddingTop="@dimen/lenshvc_toast_vertical_padding" android:paddingRight="@dimen/lenshvc_toast_horizontal_padding" android:paddingBottom="@dimen/lenshvc_toast_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/lenshvc_toast_horizontal_padding" android:paddingVertical="@dimen/lenshvc_toast_vertical_padding">
+    <TextView android:textSize="@dimen/lenshvc_toast_text_size" android:textColor="@color/lenshvc_toast_text_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/lenshvc_toast_message" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

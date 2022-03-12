@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/comment_menu_items">
+        <item android:icon="@drawable/ic_share_16_padded" android:id="@+id/comment_option_share" android:title="@string/menu_option_share" app:iconTint="@color/iconPrimary"/>
+        <item android:icon="@drawable/ic_comment_16_padded" android:id="@+id/comment_option_quote" android:title="@string/menu_option_quote_reply" app:iconTint="@color/iconPrimary"/>
+        <item android:icon="@drawable/ic_cross_reference_16_padded" android:id="@+id/comment_option_reference" android:visible="false" android:title="@string/menu_option_reference_in_new_issue" app:iconTint="@color/iconPrimary"/>
+        <item android:icon="@drawable/ic_pencil_16_padded" android:id="@+id/comment_option_edit" android:visible="false" android:title="@string/button_edit" app:iconTint="@color/iconPrimary"/>
+        <item android:icon="@drawable/ic_trash_16_padded" android:id="@+id/comment_option_delete" android:visible="false" android:title="@string/button_delete" app:iconTint="@color/systemRed"/>
+    </group>
+    <group android:id="@+id/user_menu_items">
+        <item android:icon="@drawable/ic_alert_16_padded" android:id="@+id/comment_option_report" android:visible="false" android:title="@string/menu_option_report" app:iconTint="@color/systemOrange"/>
+        <item android:icon="@drawable/ic_circle_slash_16_padded" android:id="@+id/comment_option_block_user" android:visible="false" android:title="@string/menu_option_block_from_organization" app:iconTint="@color/systemRed"/>
+        <item android:icon="@drawable/ic_circle_slash_16_padded" android:id="@+id/comment_option_unblock_user" android:visible="false" android:title="@string/menu_option_unblock_from_organization" app:iconTint="@color/iconPrimary"/>
+    </group>
+</menu>

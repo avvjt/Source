@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/list_item_row_padding_top" android:paddingBottom="@dimen/list_item_row_padding_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="16dp">
+    <RadioButton android:layout_gravity="center_vertical" android:id="@+id/row_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="28dp">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColor="@color/outlook_app_primary_text" android:ellipsize="end" android:id="@+id/row_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/row_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

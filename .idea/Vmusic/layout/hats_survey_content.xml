@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:background="@drawable/hats_content_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/survey_elevation">
+    <FrameLayout android:id="@+id/hats_content_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="end|top" android:id="@+id/hats_dismiss" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:contentDescription="@string/dismiss" yt:srcCompat="@drawable/yt_outline_x_mark_vd_theme_24" yt:tint="@color/ytm_text_color_primary"/>
+</FrameLayout>

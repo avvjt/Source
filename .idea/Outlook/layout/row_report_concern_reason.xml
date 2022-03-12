@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatRadioButton android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/radio" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/report_concern_radio_selector" android:paddingStart="45dp" android:buttonTint="@color/radio_report_concern_selector"/>
+    <View android:background="@drawable/horizontal_divider_with_left_content_margin" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height" android:insetLeft="30dp"/>
+</LinearLayout>

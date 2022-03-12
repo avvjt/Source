@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="?attr/slide_menu_item_bg" android:layout_width="match_parent" android:layout_height="26dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="26dp">
+        <ImageView android:id="@+id/up_area" android:layout_width="match_parent" android:layout_height="4dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/divider" android:layout_marginLeft="42dp" android:layout_marginRight="42dp" style="?attr/tt_divider"/>
+    </LinearLayout>
+</RelativeLayout>

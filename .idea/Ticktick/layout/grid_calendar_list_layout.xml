@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.calendarlist.CalendarWeekHeaderLayout android:orientation="vertical" android:id="@+id/week_header_layout" android:layout_width="match_parent" android:layout_height="@dimen/calendar_list_title_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:id="@+id/day0" style="@style/GridCalendar_DayLabel"/>
+            <TextView android:id="@+id/day1" style="@style/GridCalendar_DayLabel"/>
+            <TextView android:id="@+id/day2" style="@style/GridCalendar_DayLabel"/>
+            <TextView android:id="@+id/day3" style="@style/GridCalendar_DayLabel"/>
+            <TextView android:id="@+id/day4" style="@style/GridCalendar_DayLabel"/>
+            <TextView android:id="@+id/day5" style="@style/GridCalendar_DayLabel"/>
+            <TextView android:id="@+id/day6" style="@style/GridCalendar_DayLabel"/>
+        </LinearLayout>
+    </com.ticktick.task.view.calendarlist.CalendarWeekHeaderLayout>
+    <com.ticktick.task.view.calendarlist.GridCalendarLayout android:id="@+id/grid_calendar_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/week_header_layout">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/content_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/grid_calendar_content_view_height">
+            <com.ticktick.task.view.RecyclerViewEmptySupport android:id="@+id/a6r" android:background="?attr/grid_calendar_background" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0sp" android:layout_width="match_parent" android:layout_height="match_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+            <ImageView android:layout_below="@+id/a6r" style="?attr/tt_divider"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/emptyView_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b1m"/>
+                <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/empty_view_summary" android:paddingLeft="@dimen/preference_margin" android:paddingTop="6dp" android:paddingRight="@dimen/preference_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b1n"/>
+            </LinearLayout>
+            <View android:background="?attr/sheet_top_shadow" android:layout_width="match_parent" android:layout_height="3dp" android:layout_alignParentBottom="true"/>
+            <View android:background="?attr/sheet_bottom_shadow" android:layout_width="match_parent" android:layout_height="3dp" android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+        <com.ticktick.task.view.calendarlist.GridCalendarViewPager android:id="@+id/grid_calendar_view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.ticktick.task.view.calendarlist.EdgeView android:id="@+id/grid_view_left_edge" android:layout_width="16dp" android:layout_height="match_parent" app:forward="0"/>
+        <com.ticktick.task.view.calendarlist.EdgeView android:id="@+id/grid_view_right_edge" android:layout_width="16dp" android:layout_height="match_parent" android:layout_alignParentRight="true" app:forward="1"/>
+    </com.ticktick.task.view.calendarlist.GridCalendarLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="@dimen/divider_3" android:layout_below="@+id/week_header_layout" style="?attr/tt_divider"/>
+</RelativeLayout>

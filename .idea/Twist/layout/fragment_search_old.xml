@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.twistapp.ui.widgets.IllustrationEmptyView android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:emptyHelpText="@string/empty_search_help_link" app:emptyIllustration="@drawable/img_search_regular" app:emptyTitleText="@string/empty_text_search"/>
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.Twist.Tab" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="0dp" app:contentInsetStartWithNavigation="0dp" app:layout_scrollFlags="0x5" app:popupTheme="?attr/toolbarPopupTheme"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabGravity="0" app:tabMinWidth="@dimen/tab_min_width" app:tabMode="@integer/tab_mode"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include android:layout_gravity="end|bottom" android:id="@+id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_spacing" layout="@layout/fab"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

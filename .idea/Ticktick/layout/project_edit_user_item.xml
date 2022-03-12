@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:id="@+id/add_user_item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/qu" android:background="?attr/textColorPrimaryTint" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:scaleType="center" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+    <com.ticktick.task.view.IconTextView android:textSize="12sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:id="@+id/add_icon" android:visibility="gone" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:text="@string/ic_svg_add_project"/>
+</FrameLayout>

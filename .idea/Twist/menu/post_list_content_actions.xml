@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:icon="@drawable/ic_menu_mark_unread" android:id="@+id/menu_mark_unread" android:title="@string/menu_mark_unread" app:showAsAction="never"/>
     <item android:icon="@drawable/ic_menu_mark_read" android:id="@+id/menu_mark_read" android:title="@string/menu_mark_read" app:showAsAction="never"/>
-    <item android:icon="@drawable/ic_menu_star" android:id="@+id/menu_star_thread" android:title="@string/menu_star_thread" app:showAsAction="never"/>
-    <item android:icon="@drawable/ic_menu_unstar" android:id="@+id/menu_unstar_thread" android:title="@string/menu_unstar_thread" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_save" android:id="@+id/menu_save_thread" android:title="@string/menu_save_thread" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_unsave" android:id="@+id/menu_unsave_thread" android:title="@string/menu_unsave_thread" app:showAsAction="never"/>
     <item android:icon="@drawable/ic_menu_pin" android:id="@+id/menu_pin_thread" android:title="@string/menu_pin_thread" app:showAsAction="never"/>
     <item android:icon="@drawable/ic_menu_unpin" android:id="@+id/menu_unpin_thread" android:title="@string/menu_unpin_thread" app:showAsAction="never"/>
     <item android:icon="@drawable/ic_menu_follow_thread" android:id="@+id/menu_follow_thread" android:title="@string/menu_follow_thread" app:showAsAction="never"/>

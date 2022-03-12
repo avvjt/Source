@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_no_inset"/>
+    <LinearLayout android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/listPreferredItemHeight" android:paddingStart="@dimen/outlook_content_inset">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_fluent_office_48_color" android:scaleType="centerInside"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_weight="1" android:layout_marginStart="32dp">
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:id="@+id/org_allowed_account_email" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:id="@+id/org_allowed_account_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_office365"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" layout="@layout/loading_state"/>
+    <include layout="@layout/outlook_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/outlook_app_bottom_bar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginTop="@dimen/outlook_content_inset">
+        <ImageButton android:id="@+id/back" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_fluent_arrow_left_24_regular" android:contentDescription="@string/back_button_description" outlook:tint="?attr/grey500"/>
+        <android.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button android:id="@+id/next_step_button" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_add_account" android:drawableEnd="@drawable/ic_fluent_chevron_right_20_filled" outlook:drawableTint="@color/ic_arrow_forward_color_selector" style="@style/Widget.Outlook.Button.Borderless.Accent"/>
+        <ProgressBar android:layout_gravity="end|center_vertical" android:id="@+id/progress_bar" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset" android:indeterminateTint="?attr/colorAccent" style="@style/Widget.Outlook.ProgressBar.Medium.Accent"/>
+    </LinearLayout>
+</LinearLayout>

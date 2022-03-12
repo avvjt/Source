@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="action_bar_lines_selected_announcement">
+        <item quantity="one">Line %1d selected</item>
+        <item quantity="other">Lines %1$d to %2$d selected</item>
+    </plurals>
+    <plurals name="action_bar_title_lines_selected">
+        <item quantity="one">Line %1d</item>
+        <item quantity="other">Lines %1$d to %2$d</item>
+    </plurals>
+    <plurals name="checks_failed">
+        <item quantity="one">%d failed</item>
+        <item quantity="other">%d failed</item>
+    </plurals>
+    <plurals name="checks_neutral">
+        <item quantity="one">%d neutral</item>
+        <item quantity="other">%d neutral</item>
+    </plurals>
+    <plurals name="checks_other">
+        <item quantity="one">%d other</item>
+        <item quantity="other">%d others</item>
+    </plurals>
+    <plurals name="checks_passed">
+        <item quantity="one">%d passed</item>
+        <item quantity="other">%d passed</item>
+    </plurals>
+    <plurals name="checks_running">
+        <item quantity="one">%d running</item>
+        <item quantity="other">%d running</item>
+    </plurals>
+    <plurals name="checks_skipped">
+        <item quantity="one">%d skipped</item>
+        <item quantity="other">%d skipped</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_hours_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_minutes_ago">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_months_ago">
+        <item quantity="one">%d month ago</item>
+        <item quantity="other">%d months ago</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="date_formatted_time_n_years_ago">
+        <item quantity="one">%d year ago</item>
+        <item quantity="other">%d years ago</item>
+    </plurals>
+    <plurals name="deployment_approval_request_summary">
+        <item quantity="one">Review needed from you or %s</item>
+        <item quantity="other">Review needed from you, %1$s, or %2$s others</item>
+    </plurals>
+    <plurals name="discussions_inline_replies_preview_metadata_label">
+        <item quantity="one">%d previous reply</item>
+        <item quantity="other">%d previous replies</item>
+    </plurals>
+    <plurals name="explore_contributors_count">
+        <item quantity="one">%d Contributor</item>
+        <item quantity="other">%d Contributors</item>
+    </plurals>
+    <plurals name="file_lines_selected_url">
+        <item quantity="one">L%d</item>
+        <item quantity="other">L%1$d-L%2$d</item>
+    </plurals>
+    <plurals name="files_number_of_additions">
+        <item quantity="one">%,d addition</item>
+        <item quantity="other">%,d additions</item>
+    </plurals>
+    <plurals name="files_number_of_deletions">
+        <item quantity="one">%,d deletion</item>
+        <item quantity="other">%,d deletions</item>
+    </plurals>
+    <plurals name="files_number_of_files_changed">
+        <item quantity="one">%,d file changed</item>
+        <item quantity="other">%,d files changed</item>
+    </plurals>
+    <plurals name="issue_pr_failing_checks_number">
+        <item quantity="one">· %d failed</item>
+        <item quantity="other">· %d failed</item>
+    </plurals>
+    <plurals name="issue_pr_number_of_commits">
+        <item quantity="one">%,d commit</item>
+        <item quantity="other">%,d commits</item>
+    </plurals>
+    <plurals name="issue_pr_number_of_hidden_items">
+        <item quantity="one">Load %,d more item</item>
+        <item quantity="other">Load %,d more items</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="notification_unread_item_label">
+        <item quantity="one">%s unread item</item>
+        <item quantity="other">%s unread items</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_confirmation">
+        <item quantity="one">Mark %d notification as done</item>
+        <item quantity="other">Mark %d notifications as done</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_done_notice">
+        <item quantity="one">Marked %d notification as done</item>
+        <item quantity="other">Marked %d notifications as done</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_confirmation">
+        <item quantity="one">Mark %d notification as read</item>
+        <item quantity="other">Mark %d notifications as read</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_read_notice">
+        <item quantity="one">Marked %d notification as read</item>
+        <item quantity="other">Marked %d notifications as read</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_confirmation">
+        <item quantity="one">Mark %d notification as unread</item>
+        <item quantity="other">Mark %d notifications as unread</item>
+    </plurals>
+    <plurals name="notifications_bulk_mark_as_unread_notice">
+        <item quantity="one">Marked %d notification as unread</item>
+        <item quantity="other">Marked %d notifications as unread</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_confirmation">
+        <item quantity="one">Move %d notification to inbox</item>
+        <item quantity="other">Move %d notifications to inbox</item>
+    </plurals>
+    <plurals name="notifications_bulk_move_to_inbox_notice">
+        <item quantity="one">Moved %d notification to inbox</item>
+        <item quantity="other">Moved %d notifications to inbox</item>
+    </plurals>
+    <plurals name="notifications_n_selected">
+        <item quantity="zero">%d selected</item>
+        <item quantity="one">%d selected</item>
+        <item quantity="other">%d selected</item>
+    </plurals>
+    <plurals name="organizations_followers_label">
+        <item quantity="one">%s follower</item>
+        <item quantity="other">%s followers</item>
+    </plurals>
+    <plurals name="organizations_following_label">
+        <item quantity="one">%s following</item>
+        <item quantity="other">%s following</item>
+    </plurals>
+    <plurals name="release_detail_contributors_view_all_subtitle">
+        <item quantity="one">%d contributor</item>
+        <item quantity="other">%d contributors</item>
+    </plurals>
+    <plurals name="release_discussion_comments_preview_metadata_label">
+        <item quantity="one">%d previous comment</item>
+        <item quantity="other">%d previous comments</item>
+    </plurals>
+    <plurals name="repository_forks_label">
+        <item quantity="one">%s fork</item>
+        <item quantity="other">%s forks</item>
+    </plurals>
+    <plurals name="repository_stars_label">
+        <item quantity="one">%s star</item>
+        <item quantity="other">%s stars</item>
+    </plurals>
+    <plurals name="review_number_of_comments">
+        <item quantity="one">%,d comment</item>
+        <item quantity="other">%,d comments</item>
+    </plurals>
+    <plurals name="search_and_filter_filter_bar_reset_content_description">
+        <item quantity="one">Reset %d filter</item>
+        <item quantity="other">Reset %d filters</item>
+    </plurals>
+    <plurals name="search_results_number_of_issues">
+        <item quantity="one">See %s more issue</item>
+        <item quantity="other">See %s more issues</item>
+    </plurals>
+    <plurals name="search_results_number_of_orgs">
+        <item quantity="one">See %s more organization</item>
+        <item quantity="other">See %s more organizations</item>
+    </plurals>
+    <plurals name="search_results_number_of_pull_requests">
+        <item quantity="one">See %s more pull request</item>
+        <item quantity="other">See %s more pull requests</item>
+    </plurals>
+    <plurals name="search_results_number_of_repos">
+        <item quantity="one">See %s more repository</item>
+        <item quantity="other">See %s more repositories</item>
+    </plurals>
+    <plurals name="search_results_number_of_users">
+        <item quantity="one">See %s more person</item>
+        <item quantity="other">See %s more people</item>
+    </plurals>
+    <plurals name="task_list_progress_label_all_complete">
+        <item quantity="one">%1$d done</item>
+        <item quantity="other">%1$d done</item>
+    </plurals>
+    <plurals name="task_list_progress_label_not_started">
+        <item quantity="one">%1$d task</item>
+        <item quantity="other">%1$d tasks</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_rebase_description">
+        <item quantity="one">When requirements are met, the %d commit from this branch will be rebased and added to the base branch.</item>
+        <item quantity="other">When requirements are met, the %d commits from this branch will be rebased and added to the base branch.</item>
+    </plurals>
+    <plurals name="triage_auto_merge_method_squash_description">
+        <item quantity="one">When requirements are met, the %d commit from this branch will be added to the base branch.</item>
+        <item quantity="other">When requirements are met, the %d commits from this branch will be added to the base branch.</item>
+    </plurals>
+    <plurals name="triage_linked_items_max_reached">
+        <item quantity="one">Only %d item can be linked</item>
+        <item quantity="other">Only %d items can be linked</item>
+    </plurals>
+    <plurals name="triage_merge_method_rebase_description">
+        <item quantity="one">The %d commit from this branch will be rebased and added to the base branch.</item>
+        <item quantity="other">The %d commits from this branch will be rebased and added to the base branch.</item>
+    </plurals>
+    <plurals name="triage_merge_method_squash_description">
+        <item quantity="one">The %d commit from this branch will be added to the base branch.</item>
+        <item quantity="other">The %d commits from this branch will be added to the base branch.</item>
+    </plurals>
+    <plurals name="triage_merge_state_clean_automatically_queue_enabled">
+        <item quantity="one">There is %s ahead of this one in the merge queue.</item>
+        <item quantity="other">There are %s ahead of this one in the merge queue.</item>
+    </plurals>
+    <plurals name="triage_merge_state_clean_automatically_queue_enabled_partial">
+        <item quantity="one">%d pull request</item>
+        <item quantity="other">%d pull requests</item>
+    </plurals>
+    <plurals name="triage_review_multiline_placeholder">
+        <item quantity="one">Line %1d collapsed</item>
+        <item quantity="other">Collapsed lines %1$d to %2$d</item>
+    </plurals>
+</resources>

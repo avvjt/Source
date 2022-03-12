@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/search">
+        <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" style="?attr/toolbarStyle"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_favorites_toolbar" android:background="@drawable/bg_search_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:contentDescription="@string/search_favorites" android:transitionName="@string/transition_name_search_box">
+            <ImageView android:layout_gravity="center_vertical" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_fluent_search_24_regular" android:importantForAccessibility="no" android:layout_marginEnd="16dp" outlook:tint="@android:color/white"/>
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textSize="16sp" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:gravity="center_vertical" android:id="@+id/search_text" android:layout_width="match_parent" android:layout_height="@dimen/search_edit_container_height" android:hint="@string/search_favorites" android:importantForAccessibility="no" android:textDirection="locale"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

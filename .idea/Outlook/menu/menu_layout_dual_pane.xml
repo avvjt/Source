@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_arrow_minimize_24_regular" android:id="@+id/action_layout_dual_pane" android:title="@string/settings_tablet_dual_pane_portrait" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="42dp">
+    <ImageView android:id="@+id/background" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/vacuum_background" android:scaleType="fitXY"/>
+    <ImageView android:id="@+id/vacuum" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/vacuum_inner"/>
+    <TextView android:textSize="12sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:id="@+id/hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/pd"/>
+</RelativeLayout>

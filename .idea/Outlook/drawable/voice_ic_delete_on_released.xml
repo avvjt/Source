@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/height_44dp" android:width="@dimen/width_44dp"/>
+            <solid android:color="@color/vhvc_white1"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="@dimen/height_16dp" android:width="@dimen/width_20dp" android:drawable="@drawable/voice_ic_delete_button"/>
+</layer-list>

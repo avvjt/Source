@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/OfficeFeed.BottomSheet">
+    <TextView android:id="@+id/text_action_sheet_title" style="@style/OfficeFeed.BottomSheet.TitleText"/>
+    <TextView android:id="@+id/text_action_sheet_message" style="@style/OfficeFeed.BottomSheet.MessageText"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/action_sheet_contents" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="@style/TextAppearance.Outlook.Caption.Fixed" android:textColor="@color/outlook_app_on_primary" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/agenda_upcoming" android:background="?attr/colorAccent" android:layout_width="84dp" android:layout_height="16dp" android:maxLines="1" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="4dp"/>

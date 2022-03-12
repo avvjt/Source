@@ -9,6 +9,7 @@
     <integer name="bottomsheet_width_increment">0</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="channel_description_max_length">255</integer>
+    <integer name="channel_name_max_length">80</integer>
     <integer name="composer_maximum_lines">4</integer>
     <integer name="config_tooltipAnimTime">150</integer>
     <integer name="dbx_max_action_buttons">2</integer>
@@ -30,5 +31,6 @@
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <integer name="tab_mode">1</integer>
+    <integer name="thread_subject_max_length">300</integer>
     <integer name="time_off_type_span_count">1</integer>
 </resources>

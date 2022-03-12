@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TabHost android:id="@+id/lenshvc_tab_host" android:layout_width="match_parent" android:layout_height="match_parent">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/lenshvc_gallery_tab_bar_height">
+            <TabWidget android:id="@android:id/tabs" android:layout_width="match_parent" android:layout_height="@dimen/lenshvc_gallery_tab_pill_height" android:layout_margin="@dimen/lenshvc_gallery_tab_bar_margin"/>
+        </HorizontalScrollView>
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/lenshvc_gallery_tab_bar_height"/>
+    </TabHost>
+</LinearLayout>

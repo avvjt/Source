@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/danger_primary" android:gravity="end" android:id="@+id/text_limit" android:paddingRight="@dimen/description_limit_right" android:paddingBottom="@dimen/description_limit_bottom" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:textAlignment="textEnd" android:paddingEnd="@dimen/description_limit_right"/>
+    <EditText android:gravity="top" android:id="@+id/edit_text_description" android:background="@android:color/transparent" android:padding="@dimen/description_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/hint_edit_group_description" android:maxLength="@integer/max_group_description" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+        <requestFocus/>
+    </EditText>
+</RelativeLayout>

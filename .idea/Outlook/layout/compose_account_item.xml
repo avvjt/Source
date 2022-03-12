@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/compose_account_list_selector" android:layout_width="match_parent" android:layout_height="56dp">
+    <ImageView android:id="@+id/account_icon" android:layout_width="72dp" android:layout_height="match_parent" android:scaleType="center" android:contentDescription="@string/account_type_icon"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_weight="1" android:dividerPadding="3dp" android:layout_marginEnd="16dp">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:ellipsize="middle" android:id="@+id/account_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?android:attr/textColorSecondary" android:ellipsize="middle" android:id="@+id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/account_chevron" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/chevron_down" android:scaleType="centerInside" android:tint="@color/outlook_app_icon_tint"/>
+</LinearLayout>

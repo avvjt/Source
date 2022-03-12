@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/searchZeroQueryContainerStyle">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_zero_query_people_section_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/btn_see_more_people" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_header_contacts" style="?attr/searchZeroQueryStartButtonStyle"/>
+        <android.widget.Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/button_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_create" android:contentDescription="@string/content_description_create_contact" style="?attr/searchZeroQueryEndButtonStyle"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_zero_query_people_recycler_view" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_zero_query_bottom_margin" style="?attr/searchZeroQueryRecyclerViewStyle"/>
+</LinearLayout>

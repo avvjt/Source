@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/lenshvc_ripple_color">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <size android:height="40dp" android:width="40dp"/>
+            <solid android:color="@color/lenshvc_ripple_color"/>
+        </shape>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#4d000000"/>
+                    <size android:height="40dp" android:width="40dp"/>
+                    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp"/>
+                </shape>
+            </item>
+            <item>
+                <vector android:height="24dp" android:width="24dp" android:autoMirrored="true" android:viewportWidth="24" android:viewportHeight="24">
+                    <path android:fillColor="#00000000" android:pathData="M0,0h24v24h-24z" android:strokeColor="#000000" android:strokeWidth="0.1" android:strokeAlpha="0.0001" android:fillAlpha="0.01" android:fillType="evenOdd"/>
+                    <path android:fillColor="#ffffff" android:pathData="M4.3971,4.5538L4.4697,4.4697C4.7359,4.2034 5.1526,4.1792 5.4462,4.3971L5.5303,4.4697L12,10.939L18.4697,4.4697C18.7626,4.1768 19.2374,4.1768 19.5303,4.4697C19.8232,4.7626 19.8232,5.2374 19.5303,5.5303L13.061,12L19.5303,18.4697C19.7966,18.7359 19.8208,19.1526 19.6029,19.4462L19.5303,19.5303C19.2641,19.7966 18.8474,19.8208 18.5538,19.6029L18.4697,19.5303L12,13.061L5.5303,19.5303C5.2374,19.8232 4.7626,19.8232 4.4697,19.5303C4.1768,19.2374 4.1768,18.7626 4.4697,18.4697L10.939,12L4.4697,5.5303C4.2034,5.2641 4.1792,4.8474 4.3971,4.5538L4.4697,4.4697L4.3971,4.5538Z" android:strokeColor="#00000000" android:strokeWidth="1" android:fillType="nonZero"/>
+                </vector>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

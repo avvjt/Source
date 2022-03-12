@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/galleryTabMessageContainer" android:background="@color/lenshvc_gallery_tab_message_container_background_color" android:paddingTop="@dimen/lenshvc_gallery_tab_message_container_padding_vertical" android:paddingBottom="@dimen/lenshvc_gallery_tab_message_container_padding_vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/lenshvc_gallery_tab_message_container_padding_horizontal" android:paddingEnd="@dimen/lenshvc_gallery_tab_message_container_padding_horizontal" android:elevation="2dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/galleryTabMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/lenshvc_gallery_tab_message_margin_end">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/messageIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/lenshvc_gallery_tab_message_icon_margin_end"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/lenshvc_gallery_tab_message_title_text_size" android:textColor="@color/lenshvc_gallery_tab_title_text_color" android:id="@+id/messageTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/lenshvc_gallery_tab_message_description_text_size" android:textColor="@color/lenshvc_gallery_tab_message_text_color" android:id="@+id/messageDescription" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/galleryTabNonStickyHeader" android:background="@color/lenshvc_transparent_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@+id/lenshvc_immersive_gallery" android:tag="galleryTabBodyViewTag" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:foregroundGravity="center" android:importantForAccessibility="no"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/lenshvc_gallery_empty_tab_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

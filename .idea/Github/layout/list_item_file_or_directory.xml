@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/item_container" android:tag="layout/list_item_file_or_directory_0" android:background="@drawable/list_item_background" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <TextView android:ellipsize="start" android:id="@+id/dir_or_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="@dimen/default_margin_half"/>
+</LinearLayout>

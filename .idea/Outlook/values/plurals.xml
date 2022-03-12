@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_announce_search_suggestions_shown">
+        <item quantity="one">Showing %1$d suggested search</item>
+        <item quantity="other">Showing %1$d suggested searches</item>
+    </plurals>
+    <plurals name="accessibility_email_thread_stacked_group_avatar_description">
+        <item quantity="one">One group contact</item>
+        <item quantity="other">%d group contacts</item>
+    </plurals>
+    <plurals name="accessibility_messages_selected">
+        <item quantity="one">1 item selected.</item>
+        <item quantity="other">%d items selected.</item>
+    </plurals>
+    <plurals name="accessibility_recent_files">
+        <item quantity="one">One recent file shown</item>
+        <item quantity="other">%d recent files shown</item>
+    </plurals>
+    <plurals name="accessibility_recipient_field_text">
+        <item quantity="one">%1$s, %2$s recipient</item>
+        <item quantity="other">%1$s, %2$s recipients</item>
+    </plurals>
+    <plurals name="add_sso_accounts">
+        <item quantity="one">Add Account</item>
+        <item quantity="other">Add Accounts</item>
+    </plurals>
+    <plurals name="add_sso_accounts_title">
+        <item quantity="one">1 Account found</item>
+        <item quantity="other">%d Accounts found</item>
+    </plurals>
+    <plurals name="adding_sso_accounts">
+        <item quantity="one">Adding Account…</item>
+        <item quantity="other">Adding Accounts…</item>
+    </plurals>
+    <plurals name="agenda_widget_num_calendars">
+        <item quantity="zero">No Calendars</item>
+        <item quantity="one">1 Calendar</item>
+        <item quantity="other">%d Calendars</item>
+    </plurals>
+    <plurals name="all_day_alert_n_days_before_at_time">
+        <item quantity="one">%1$s day before at %2$s</item>
+        <item quantity="other">%1$s days before at %2$s</item>
+    </plurals>
+    <plurals name="attendee_unavailable">
+        <item quantity="one">1 Attendee unavailable</item>
+        <item quantity="other">%d Attendees unavailable</item>
+    </plurals>
+    <plurals name="available_seats">
+        <item quantity="one">%d available seat</item>
+        <item quantity="other">%d available seats</item>
+    </plurals>
+    <plurals name="category_filter_content_description">
+        <item quantity="one">Category is</item>
+        <item quantity="other">Categories are</item>
+    </plurals>
+    <plurals name="commute_onboarding_snackbar_time">
+        <item quantity="one">Play My Emails • 1 min</item>
+        <item quantity="other">Play My Emails • %1$d mins</item>
+    </plurals>
+    <plurals name="commute_summary_info_readouts">
+        <item quantity="one">1 new email</item>
+        <item quantity="other">%1$d new emails</item>
+    </plurals>
+    <plurals name="commute_summary_info_readouts_conversation">
+        <item quantity="one">1 new conversation</item>
+        <item quantity="other">%1$d new conversations</item>
+    </plurals>
+    <plurals name="commute_summary_info_time">
+        <item quantity="one">1 minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <plurals name="conversations_archived">
+        <item quantity="one">Conversation archived</item>
+        <item quantity="other">%d conversations archived</item>
+    </plurals>
+    <plurals name="conversations_deleted">
+        <item quantity="one">Conversation deleted</item>
+        <item quantity="other">%d conversations deleted</item>
+    </plurals>
+    <plurals name="conversations_moved">
+        <item quantity="one">Conversation moved</item>
+        <item quantity="other">%d conversations moved</item>
+    </plurals>
+    <plurals name="conversations_moved_to_inbox">
+        <item quantity="one">Moved to inbox</item>
+        <item quantity="other">%d Conversations moved to inbox</item>
+    </plurals>
+    <plurals name="conversations_moved_to_spam">
+        <item quantity="one">Moved to junk</item>
+        <item quantity="other">%d Conversations moved to junk</item>
+    </plurals>
+    <plurals name="conversations_scheduled">
+        <item quantity="one">Conversation snoozed</item>
+        <item quantity="other">%d conversations snoozed</item>
+    </plurals>
+    <plurals name="conversations_unscheduled">
+        <item quantity="one">Conversation unsnoozed</item>
+        <item quantity="other">%d conversations unsnoozed</item>
+    </plurals>
+    <plurals name="count_unread_email">
+        <item quantity="one">1 unread email</item>
+        <item quantity="other">%d unread emails</item>
+    </plurals>
+    <plurals name="dining_reservation_group">
+        <item quantity="one">%1$s + %2$d guest</item>
+        <item quantity="other">%1$s + %2$d guests</item>
+    </plurals>
+    <plurals name="drafts_discarded">
+        <item quantity="one">Draft discarded</item>
+        <item quantity="other">%d drafts discarded</item>
+    </plurals>
+    <plurals name="error_password_policy_violation">
+        <item quantity="one">An incorrect pin code was entered too many times to unlock this device. For safety reasons, the account %1$s has been deleted.</item>
+        <item quantity="other">An incorrect pin code was entered too many times to unlock this device. For safety reasons, the following accounts have been deleted.\n\n%1$s</item>
+    </plurals>
+    <plurals name="filesize_bytes">
+        <item quantity="one">One Byte</item>
+        <item quantity="other">%d Bytes</item>
+    </plurals>
+    <plurals name="filesize_kilobyte">
+        <item quantity="one">One Kilobyte</item>
+        <item quantity="other">%d Kilobytes</item>
+    </plurals>
+    <plurals name="filesize_megabyte">
+        <item quantity="one">One Megabyte</item>
+        <item quantity="other">%d Megabytes</item>
+    </plurals>
+    <plurals name="gcc_moderate_delete_account">
+        <item quantity="one">Delete Account</item>
+        <item quantity="other">Delete Accounts</item>
+    </plurals>
+    <plurals name="generic_new_mail_subject">
+        <item quantity="one">New message</item>
+        <item quantity="other">New messages</item>
+    </plurals>
+    <plurals name="generic_new_mail_text">
+        <item quantity="one">You have 1 new message</item>
+        <item quantity="other">You have %s new messages</item>
+    </plurals>
+    <plurals name="group_members">
+        <item quantity="one">%d member</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+    <plurals name="hours_quantity">
+        <item quantity="one">1 hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="hours_quantity_widget">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="ibs_accessibility_suggestions_available">
+        <item quantity="one">%d suggested time available</item>
+        <item quantity="other">%d suggested times available</item>
+    </plurals>
+    <plurals name="ids_attendee_conflicts">
+        <item quantity="one">%d attendee conflict</item>
+        <item quantity="other">%d attendee conflicts</item>
+    </plurals>
+    <plurals name="ids_preference_duration_option_hours_description">
+        <item quantity="one">Duration: %d hour</item>
+        <item quantity="other">Duration: %d hours</item>
+    </plurals>
+    <plurals name="in_x_day">
+        <item quantity="zero">Today</item>
+        <item quantity="one">In 1 day</item>
+        <item quantity="other">In %d days</item>
+    </plurals>
+    <plurals name="in_x_min">
+        <item quantity="zero">Now</item>
+        <item quantity="one">in %d min</item>
+        <item quantity="other">in %d mins</item>
+    </plurals>
+    <plurals name="in_x_min_uppercase">
+        <item quantity="one">In 1 min</item>
+        <item quantity="other">In %d mins</item>
+    </plurals>
+    <plurals name="in_x_month">
+        <item quantity="one">In 1 month</item>
+        <item quantity="other">In %d months</item>
+    </plurals>
+    <plurals name="in_x_year">
+        <item quantity="zero">This year</item>
+        <item quantity="one">Next year</item>
+        <item quantity="other">In %d years</item>
+    </plurals>
+    <plurals name="list_ellipsize_more">
+        <item quantity="one">+ 1</item>
+        <item quantity="other">+ %d</item>
+    </plurals>
+    <plurals name="local_calendar_accounts_added">
+        <item quantity="one">Account added!</item>
+        <item quantity="other">Accounts added!</item>
+    </plurals>
+    <plurals name="local_calendar_accounts_found">
+        <item quantity="one">%d Account found</item>
+        <item quantity="other">%d Accounts found</item>
+    </plurals>
+    <plurals name="meeting_details_more_than_conflicts">
+        <item quantity="one">1 Conflict</item>
+        <item quantity="other">%d Conflicts</item>
+    </plurals>
+    <plurals name="message_attachments_summary">
+        <item quantity="one">1 attachment (%2$s)</item>
+        <item quantity="other">%1$d attachments (%2$s)</item>
+    </plurals>
+    <plurals name="messages_deleted">
+        <item quantity="one">Message deleted</item>
+        <item quantity="other">%d messages deleted</item>
+    </plurals>
+    <plurals name="messages_reported">
+        <item quantity="one">Message Reported</item>
+        <item quantity="other">%d messages Reported</item>
+    </plurals>
+    <plurals name="messages_selected">
+        <item quantity="zero">0 Selected</item>
+        <item quantity="one">1 Selected</item>
+        <item quantity="other">%d Selected</item>
+    </plurals>
+    <plurals name="mins_quantity">
+        <item quantity="one">1 min</item>
+        <item quantity="other">%d mins</item>
+    </plurals>
+    <plurals name="mins_quantity_widget">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="name_with_seats">
+        <item quantity="one">%1$s (%2$d seat)</item>
+        <item quantity="other">%1$s (%2$d seats)</item>
+    </plurals>
+    <plurals name="new_messages_quantity">
+        <item quantity="zero">No new messages</item>
+        <item quantity="one">New message</item>
+        <item quantity="other">%d new messages</item>
+    </plurals>
+    <plurals name="new_sso_accounts">
+        <item quantity="one">1 new</item>
+        <item quantity="other">%d new</item>
+    </plurals>
+    <plurals name="no_of_attachments">
+        <item quantity="one">One Attachment.</item>
+        <item quantity="other">%d Attachments.</item>
+    </plurals>
+    <plurals name="num_outlook_contacts_will_be_removed_from_your_device">
+        <item quantity="zero">&lt;b&gt;No Outlook contacts&lt;/b&gt; will be removed from your device.</item>
+        <item quantity="one">&lt;b&gt;1 Outlook contact&lt;/b&gt; will be removed from your device.</item>
+        <item quantity="other">&lt;b&gt;%d Outlook contacts&lt;/b&gt; will be removed from your device.</item>
+    </plurals>
+    <plurals name="num_outlook_contacts_will_start_syncing_to_your_device">
+        <item quantity="zero">&lt;b&gt;No Outlook contacts&lt;/b&gt; will start syncing to your device.</item>
+        <item quantity="one">&lt;b&gt;1 Outlook contact&lt;/b&gt; will start syncing to your device.</item>
+        <item quantity="other">&lt;b&gt;%d Outlook contacts&lt;/b&gt; will start syncing to your device.</item>
+    </plurals>
+    <plurals name="number_more">
+        <item quantity="one">1 more</item>
+        <item quantity="other">%d more</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="number_of_found_contacts">
+        <item quantity="one">Found %d contact</item>
+        <item quantity="other">Found %d contacts</item>
+    </plurals>
+    <plurals name="number_of_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="number_of_hours_medium">
+        <item quantity="one">%d hr</item>
+        <item quantity="other">%d hrs</item>
+    </plurals>
+    <plurals name="number_of_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="number_of_minutes_medium">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d mins</item>
+    </plurals>
+    <plurals name="number_of_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="number_of_weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="number_of_years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="permanently_delete_drafts">
+        <item quantity="one">Permanently delete draft?</item>
+        <item quantity="other">Permanently delete drafts?</item>
+    </plurals>
+    <plurals name="permanently_delete_messages">
+        <item quantity="one">Permanently delete message?</item>
+        <item quantity="other">Permanently delete %1$d messages?</item>
+    </plurals>
+    <plurals name="pl__notification_default_content">
+        <item quantity="one">New message from Support</item>
+        <item quantity="other">%d messages from Support</item>
+    </plurals>
+    <plurals name="plus_n_more">
+        <item quantity="zero">No more</item>
+        <item quantity="one">1 more</item>
+        <item quantity="other">%d more</item>
+    </plurals>
+    <plurals name="proofing_accessibility_category_title">
+        <item quantity="one">%1$s (%2$d suggestion)</item>
+        <item quantity="other">%1$s (%2$d suggestions)</item>
+    </plurals>
+    <plurals name="proofing_accessibility_issue_tips">
+        <item quantity="one">%d issue, double tap or use the Microsoft Editor from Talkback menu to correct</item>
+        <item quantity="other">%d issues, double tap or use the Microsoft Editor from Talkback menu to correct</item>
+    </plurals>
+    <plurals name="proofing_accessibility_more_options">
+        <item quantity="one">More options menu, %d option in list, Back</item>
+        <item quantity="other">More options menu, %d options in list, Back</item>
+    </plurals>
+    <plurals name="recommend_encryption_message">
+        <item quantity="one">@string/recommend_encryption_message_singular</item>
+        <item quantity="other">@string/recommend_encryption_message_plural</item>
+    </plurals>
+    <plurals name="recommend_encryption_message_existing">
+        <item quantity="one">@string/recommend_encryption_message_existing_singular</item>
+        <item quantity="other">@string/recommend_encryption_message_existing_plural</item>
+    </plurals>
+    <plurals name="recurrence_rule_repeat_daily">
+        <item quantity="one">Repeats daily</item>
+        <item quantity="other">Repeats every %d days</item>
+    </plurals>
+    <plurals name="recurrence_rule_repeat_monthly">
+        <item quantity="one">Repeats monthly</item>
+        <item quantity="other">Repeats every %d months</item>
+    </plurals>
+    <plurals name="recurrence_rule_repeat_weekly">
+        <item quantity="one">Repeats weekly</item>
+        <item quantity="other">Repeats every %d weeks</item>
+    </plurals>
+    <plurals name="recurrence_rule_repeat_yearly">
+        <item quantity="one">Repeats every year</item>
+        <item quantity="other">Repeats every %d years</item>
+    </plurals>
+    <plurals name="recurrence_rule_repeat_yearly_without_day_of_month_month_of_year">
+        <item quantity="one">Repeats yearly</item>
+        <item quantity="other">Repeats every %d years</item>
+    </plurals>
+    <plurals name="remove_account">
+        <item quantity="one">Remove account</item>
+        <item quantity="other">Remove accounts</item>
+    </plurals>
+    <plurals name="schedule_notification_focus">
+        <item quantity="one">Focused email</item>
+        <item quantity="other">Focused emails</item>
+    </plurals>
+    <plurals name="schedule_notification_other">
+        <item quantity="one">Other email</item>
+        <item quantity="other">Other emails</item>
+    </plurals>
+    <plurals name="search_filter_button_content_description">
+        <item quantity="one">%d filter</item>
+        <item quantity="other">%d filters</item>
+    </plurals>
+    <plurals name="seats">
+        <item quantity="one">%1$d seat</item>
+        <item quantity="other">%1$d seats</item>
+    </plurals>
+    <plurals name="set_device_admin_explanation">
+        <item quantity="one">%s requires Outlook to be activated as a device administrator to ensure security requirements are met for your account.</item>
+        <item quantity="other">Your accounts require Outlook to be activated as a device administrator to ensure security requirements are met.</item>
+    </plurals>
+    <plurals name="share_calendar_progress_adding_contact">
+        <item quantity="one">Adding contact…</item>
+        <item quantity="other">Adding contacts…</item>
+    </plurals>
+    <plurals name="smime_cert_expiring_soon">
+        <item quantity="one">Your S/MIME certificate is expiring in %d day. Install a certificate or please contact your IT help desk</item>
+        <item quantity="other">Your S/MIME certificate is expiring in %d days. Install a certificate or please contact your IT help desk</item>
+    </plurals>
+    <plurals name="sso_dialog_error_message">
+        <item quantity="one">@string/dialog_message_unable_to_add_account</item>
+        <item quantity="other">@string/dialog_message_unable_to_add_the_following_accounts</item>
+    </plurals>
+    <plurals name="sso_dialog_error_title">
+        <item quantity="one">@string/dialog_title_unable_to_add_account</item>
+        <item quantity="other">@string/dialog_title_unable_to_add_accounts</item>
+    </plurals>
+    <plurals name="support_message_snackbar">
+        <item quantity="one">New message from Support</item>
+        <item quantity="other">%d messages from Support</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="zero">today</item>
+        <item quantity="one">1 day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="time_months_ago">
+        <item quantity="zero">0 months ago</item>
+        <item quantity="one">1 month ago</item>
+        <item quantity="other">%d months ago</item>
+    </plurals>
+    <plurals name="try_again_error_message">
+        <item quantity="one">Your message couldn&apos;t be sent. Please try again.</item>
+        <item quantity="other">%d messages couldn&apos;t be sent. Please try again.</item>
+    </plurals>
+    <plurals name="unread_support_message_badge">
+        <item quantity="one">1 new</item>
+        <item quantity="other">%d new</item>
+    </plurals>
+</resources>

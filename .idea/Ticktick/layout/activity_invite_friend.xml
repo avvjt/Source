@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:id="@+id/load_progress_bar" android:layout_width="match_parent" android:layout_height="2dp" android:progressDrawable="@drawable/progress_horizontal_style" style="@android:style/Widget.ProgressBar.Horizontal"/>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/k" app:contentInsetEnd="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:navigationIcon="@drawable/abc_ic_ab_back_mtrl_am_alpha" app:popupTheme="?attr/TT_Toolbar_Pop" app:theme="?attr/TT_Toolbar" app:titleTextColor="?attr/toolbar_title_color"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/offline" android:paddingBottom="64dp" android:layout="@layout/webview_empty_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/toolbar_shadow"/>
+</FrameLayout>

@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="achievement_level_min_score">
+        <item>@null</item>
+        <item>100</item>
+        <item>300</item>
+        <item>700</item>
+        <item>1400</item>
+        <item>3000</item>
+        <item>6000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>50000</item>
+    </array>
+    <array name="b">
+        <item>Beginner</item>
+        <item>Primary</item>
+        <item>Hardworker</item>
+        <item>Challenger</item>
+        <item>Rising star</item>
+        <item>Freestyle</item>
+        <item>Skyrocket</item>
+        <item>Superhero</item>
+        <item>Legend</item>
+        <item>Epic</item>
+    </array>
+    <array name="achievement_medal_files">
+        <item>ic_medal_level_1.png</item>
+        <item>ic_medal_level_2.png</item>
+        <item>ic_medal_level_3.png</item>
+        <item>ic_medal_level_4.png</item>
+        <item>ic_medal_level_5.png</item>
+        <item>ic_medal_level_6.png</item>
+        <item>ic_medal_level_7.png</item>
+        <item>ic_medal_level_8.png</item>
+        <item>ic_medal_level_9.png</item>
+        <item>ic_medal_level_10.png</item>
+    </array>
+    <array name="achievement_medal_large_files">
+        <item>ic_medal_large_level_1.png</item>
+        <item>ic_medal_large_level_2.png</item>
+        <item>ic_medal_large_level_3.png</item>
+        <item>ic_medal_large_level_4.png</item>
+        <item>ic_medal_large_level_5.png</item>
+        <item>ic_medal_large_level_6.png</item>
+        <item>ic_medal_large_level_7.png</item>
+        <item>ic_medal_large_level_8.png</item>
+        <item>ic_medal_large_level_9.png</item>
+        <item>ic_medal_large_level_10.png</item>
+    </array>
+    <array name="achievement_name_bg_files">
+        <item>ic_achieve_name_bg_grade_1.png</item>
+        <item>ic_achieve_name_bg_grade_2.png</item>
+        <item>ic_achieve_name_bg_grade_3.png</item>
+        <item>ic_achieve_name_bg_grade_4.png</item>
+    </array>
+    <array name="all_day_reminder_pick_mode">
+        <item>Day</item>
+        <item>Week</item>
+    </array>
+    <array name="g">
+        <item>Camera</item>
+        <item>Photo</item>
+        <item>Records</item>
+        <item>Other</item>
+    </array>
+    <array name="h">
+        <item>Keep track of everything in one place and let TickTick organize them for you.</item>
+        <item>You don&apos;t have to remember it all, because TickTick will remind you.</item>
+        <item>Help clarify your priorities, so you can stay focused and accomplish more.</item>
+    </array>
+    <array name="i">
+        <item>Get to-dos out of your head</item>
+        <item>Never miss a deadline again</item>
+        <item>Keep your focus on what matters</item>
+    </array>
+    <array name="j">
+        <item>Overdue</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Next 7 Days</item>
+        <item>Later</item>
+        <item>No Date</item>
+    </array>
+    <array name="k">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Saturday</item>
+    </array>
+    <array name="calendar_fow_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="m">
+        <item>Google</item>
+        <item>URL Link</item>
+    </array>
+    <array name="n">
+        <item>Hangzhou</item>
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>London</item>
+        <item>Moscow</item>
+        <item>San Francisco</item>
+        <item>Seoul</item>
+        <item>Sydney</item>
+        <item>Tokyo</item>
+    </array>
+    <array name="o">
+        <item>%1$sy overdue</item>
+        <item>%1$sd overdue</item>
+        <item>%1$sd left</item>
+        <item>%1$sy left</item>
+    </array>
+    <array name="p">
+        <item>No date</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Day after tomorrow</item>
+        <item>Next week</item>
+    </array>
+    <array name="q">
+        <item>TickTick Blue</item>
+        <item>Dark</item>
+        <item>True Black</item>
+        <item>Pink</item>
+        <item>Black</item>
+        <item>Green</item>
+        <item>Gray</item>
+        <item>Yellow</item>
+        <item>White</item>
+    </array>
+    <array name="r">
+        <item>1st </item>
+        <item>2nd </item>
+        <item>3rd </item>
+        <item>4th </item>
+        <item>5th </item>
+        <item>last </item>
+    </array>
+    <array name="s">
+        <item>Sorry, the number of your task lists has exceeded the upper limit.</item>
+        <item>Sorry, the number of your tasks has exceeded the upper limit.</item>
+        <item>Sorry, the number of your subtasks has exceeded the upper limit.</item>
+        <item>Sorry, the number of recipients has exceeded the upper limit.</item>
+        <item>Sorry, the number of uploaded files has exceeded the upper limit today. Please try again tomorrow.</item>
+        <item>Sorry, the size of uploaded file has exceeded the upper limit today.</item>
+        <item>Sorry, the number of reminders has exceeded the upper limit.</item>
+        <item>Sorry, you&apos;ve reached the use limit on habits.</item>
+    </array>
+    <array name="t">
+        <item>Overdue</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Next 7 Days</item>
+        <item>Later</item>
+        <item>No Date</item>
+        <item>Habit</item>
+        <item>Completed</item>
+    </array>
+    <array name="u">
+        <item>Current recurrence</item>
+        <item>All recurrences from now</item>
+        <item>All recurrences</item>
+    </array>
+    <array name="v">
+        <item>No Repeat</item>
+        <item>Daily</item>
+        <item>Every Weekday (Mon–Fri)</item>
+        <item>Weekly (%1$s)</item>
+        <item>Monthly (The %1$s day)</item>
+        <item>Monthly (The %1$s %2$s)</item>
+        <item>Yearly (on %1$s)</item>
+        <item>Yearly (on Lunar %1$s)</item>
+    </array>
+    <array name="w">
+        <item>Take Photo</item>
+        <item>Choose Photo</item>
+    </array>
+    <array name="habit_animations">
+        <item>habit_animations/habit_animation_daily_check_in.json.zip</item>
+        <item>habit_animations/habit_animation_drink_water.json.zip</item>
+        <item>habit_animations/habit_animation_eat_breakfast.json.zip</item>
+        <item>habit_animations/habit_animation_eat_fruits.json.zip</item>
+        <item>habit_animations/habit_animation_early_to_rise.json.zip</item>
+        <item>habit_animations/habit_animation_early_to_bed.json.zip</item>
+        <item>habit_animations/habit_animation_learn_words.json.zip</item>
+        <item>habit_animations/habit_animation_reading.json.zip</item>
+        <item>habit_animations/habit_animation_quick_snacks.json.zip</item>
+        <item>habit_animations/habit_animation_exercise.json.zip</item>
+        <item>habit_animations/habit_animation_meditation.json.zip</item>
+        <item>habit_animations/habit_animation_keep_calm.json.zip</item>
+        <item>habit_animations/habit_animation_others.json.zip</item>
+    </array>
+    <array name="habit_animations_bg_begin_colors">
+        <item>#6E89E0</item>
+        <item>#6DD1FC</item>
+        <item>#FF8599</item>
+        <item>#7CD9CD</item>
+        <item>#FFAA71</item>
+        <item>#5D5AB2</item>
+        <item>#303455</item>
+        <item>#444973</item>
+        <item>#ED7A5C</item>
+        <item>#8BD1F7</item>
+        <item>#B78EE3</item>
+        <item>#5D5AAC</item>
+        <item>#75CD9B</item>
+    </array>
+    <array name="habit_quotes">
+        <item>Believe in yourself.</item>
+        <item>Now or never.</item>
+        <item>You can totally do this.</item>
+        <item>Go for it.</item>
+        <item>Be so good they can&apos;t ignore you.</item>
+        <item>Every moment matters.</item>
+        <item>Keep your chin up.</item>
+        <item>Dreams don&apos;t work unless you do.</item>
+        <item>Make yourself a priority.</item>
+        <item>Do what is right, not what is easy.</item>
+        <item>Whatever you do, do it well.</item>
+        <item>Take a chance and make a change.</item>
+        <item>Well done is better than well said.</item>
+    </array>
+    <array name="a0">
+        <item>&quot;Your mind is for having ideas, not holding them.&quot;</item>
+        <item>&quot;The most efficient way to live reasonably is every morning to make a plan of one&apos;s day and every night to examine the results obtained.&quot;</item>
+        <item>&quot;If time were to take on human form, would she be your taskmaster or freedom fighter?&quot;</item>
+        <item>&quot;If you spend too much time thinking about a thing, you&apos;ll never get it done.&quot;</item>
+        <item>&quot;You can&apos;t make up for lost time. You can only do better in the future.&quot;</item>
+        <item>&quot;Planning is bringing the future into the present so that you can do something about it now.&quot;</item>
+        <item>&quot;You can have it all. Just not all at once.&quot;</item>
+        <item>&quot;The bad news is time flies. The good news is you&apos;re the pilot.&quot;</item>
+        <item>&quot;Efficiency is doing things right; effectiveness is doing the right things.&quot;</item>
+        <item>&quot;Yesterday is gone. Tomorrow has not yet come. We have only today. Let us begin.&quot;</item>
+    </array>
+    <array name="a1">
+        <item>Uncompleted</item>
+        <item>Habit</item>
+        <item>Completed</item>
+    </array>
+    <array name="a2">
+        <item>System Default</item>
+        <item>On</item>
+        <item>Off</item>
+    </array>
+    <array name="a3">
+        <item>%1$s shared a list &quot;%2$s&quot; with you.</item>
+        <item>%1$s joined the shared list &quot;%2$s&quot;.</item>
+        <item>%1$s refused to join your shared list &quot;%2$s&quot;.</item>
+        <item>%1$s quit the shared list &quot;%2$s&quot;.</item>
+        <item>%1$s deleted the shared list &quot;%2$s&quot;.</item>
+        <item>%1$s has removed you from the shared list &quot;%2$s&quot;.</item>
+        <item>%1$s assigned the task &quot;%2$s&quot; in list &apos;%3$s&apos; to you.</item>
+        <item>The topic you created &quot;%1$s&quot; has new reply.</item>
+        <item>The topic you followed &quot;%1$s&quot; has new reply.</item>
+        <item>%1$s requests to join your shared list &quot;%2$s&quot;.</item>
+        <item>%1$s agreed to share list &quot;%2$s&quot; with you.</item>
+        <item>%1$s declined to share list &quot;%2$s&quot; with you.</item>
+    </array>
+    <array name="a4">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+        <item>13th</item>
+        <item>14th</item>
+        <item>15th</item>
+        <item>16th</item>
+        <item>17th</item>
+        <item>18th</item>
+        <item>19th</item>
+        <item>20th</item>
+        <item>21st</item>
+        <item>22nd</item>
+        <item>23rd</item>
+        <item>24th</item>
+        <item>25th</item>
+        <item>26th</item>
+        <item>27th</item>
+        <item>28th</item>
+        <item>29th</item>
+        <item>30th</item>
+        <item>31st</item>
+    </array>
+    <array name="a5">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Fifth</item>
+        <item>Last</item>
+    </array>
+    <array name="pattern_lock_start_work_entries">
+        <item>@null</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>600</item>
+    </array>
+    <array name="a7">
+        <item>Immediately</item>
+        <item>After 15 seconds</item>
+        <item>After 30 seconds</item>
+        <item>After 1 minute</item>
+        <item>After 3 minutes</item>
+        <item>After 10 minutes</item>
+    </array>
+    <array name="a8">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+        <item>None</item>
+    </array>
+    <array name="a9">
+        <item>Today\nMorning</item>
+        <item>Today\nAfternoon</item>
+        <item>Today\nEvening</item>
+        <item>Today\nNight</item>
+        <item>Tomorrow\nMorning</item>
+        <item>Tomorrow\nAfternoon</item>
+    </array>
+    <array name="a_">
+        <item>Postpone 10 mins</item>
+        <item>Postpone 30 mins</item>
+        <item>Postpone 1 hour</item>
+        <item>Postpone 2 hours</item>
+        <item>Postpone 3 hours</item>
+        <item>Postpone 1 day</item>
+        <item>Postpone 2 days</item>
+        <item>Postpone 3 days</item>
+        <item>Postpone 1 week</item>
+        <item>Postpone 1 month</item>
+    </array>
+    <array name="aa">
+        <item>Postpone \n10 mins</item>
+        <item>Postpone \n30 mins</item>
+        <item>Postpone \n1 hour</item>
+        <item>Postpone \n2 hours</item>
+        <item>Postpone \n3 hours</item>
+        <item>Postpone \n1 day</item>
+        <item>Postpone \n2 days</item>
+        <item>Postpone \n3 days</item>
+        <item>Postpone \n1 week</item>
+        <item>Postpone \n1 month</item>
+    </array>
+    <array name="ab">
+        <item>None</item>
+        <item>Jingle</item>
+        <item>Drip</item>
+        <item>Knock</item>
+        <item>Spiral</item>
+    </array>
+    <array name="preference_completion_task_sound_values">
+        <item>none</item>
+        <item>jingle</item>
+        <item>drip</item>
+        <item>knock</item>
+        <item>spiral</item>
+    </array>
+    <array name="ad">
+        <item>None</item>
+        <item>Complete Task</item>
+        <item>Date</item>
+        <item>Priority</item>
+        <item>Move to</item>
+        <item>Delete Task</item>
+        <item>Add Tag</item>
+    </array>
+    <array name="ae">
+        <item>None</item>
+        <item>Complete Task</item>
+        <item>Date</item>
+        <item>Priority</item>
+        <item>Move to</item>
+        <item>Delete Task</item>
+        <item>Start pomo</item>
+        <item>Estimate pomo</item>
+        <item>Add Tag</item>
+    </array>
+    <array name="preference_custom_swipe_values">
+        <item>none</item>
+        <item>mark_done_task</item>
+        <item>change_due_date</item>
+        <item>change_priority</item>
+        <item>move_task</item>
+        <item>delete_task</item>
+        <item>add_tag</item>
+    </array>
+    <array name="preference_custom_swipe_values_with_pomo">
+        <item>none</item>
+        <item>mark_done_task</item>
+        <item>change_due_date</item>
+        <item>change_priority</item>
+        <item>move_task</item>
+        <item>delete_task</item>
+        <item>start_pomo</item>
+        <item>estimate_pomo</item>
+        <item>add_tag</item>
+    </array>
+    <array name="preference_font_color_values">
+        <item>default</item>
+        <item>black</item>
+        <item>white</item>
+    </array>
+    <array name="preference_language_entries">
+        <item>System Default</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>繁體中文(香港)</item>
+        <item>繁體中文(台灣)</item>
+        <item>Čeština</item>
+        <item>Deutsch</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Lietuvių</item>
+        <item>Magyar</item>
+        <item>Nederlands</item>
+        <item>Italiano</item>
+        <item>Polski</item>
+        <item>Português</item>
+        <item>Русский</item>
+        <item>Slovenčina</item>
+        <item>Svenska</item>
+        <item>Українськa</item>
+        <item>עברית</item>
+        <item>فارسی</item>
+        <item>한국의</item>
+        <item>日本語</item>
+    </array>
+    <array name="preference_language_values">
+        <item>Default</item>
+        <item>en</item>
+        <item>zh-rCN</item>
+        <item>zh-rHK</item>
+        <item>zh-rTW</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>lt</item>
+        <item>hu</item>
+        <item>nl</item>
+        <item>it</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>sk</item>
+        <item>sv</item>
+        <item>uk</item>
+        <item>he</item>
+        <item>fa</item>
+        <item>ko</item>
+        <item>ja</item>
+    </array>
+    <array name="ak">
+        <item>Top of List</item>
+        <item>Bottom of List</item>
+    </array>
+    <array name="preference_overdue_tasks_show_on_values">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="am">
+        <item>Normal</item>
+        <item>Large</item>
+    </array>
+    <array name="preference_text_zoom_values">
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="ao">
+        <item>High Priority</item>
+        <item>Medium Priority</item>
+        <item>Low Priority</item>
+        <item>No Priority</item>
+        <item>Habit</item>
+        <item>Completed</item>
+    </array>
+    <array name="ap">
+        <item>2 days before</item>
+        <item>Yesterday</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>2 days later</item>
+    </array>
+    <array name="aq">
+        <item>No pop-ups</item>
+        <item>Always show pop-ups</item>
+        <item>Show pop-ups (except full screen)</item>
+    </array>
+    <array name="ar">
+        <item>Each</item>
+        <item>On the ...</item>
+        <item>Workday</item>
+    </array>
+    <array name="as">
+        <item>First workday</item>
+        <item>Last workday</item>
+    </array>
+    <array name="at">
+        <item>Due Date</item>
+        <item>Completion Date</item>
+    </array>
+    <array name="au">
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Autumn</item>
+        <item>Winter</item>
+    </array>
+    <array name="av">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </array>
+    <array name="short_week_name">
+        <item>Su</item>
+        <item>Mo</item>
+        <item>Tu</item>
+        <item>We</item>
+        <item>Th</item>
+        <item>Fr</item>
+        <item>Sa</item>
+    </array>
+    <array name="ax">
+        <item>New Task</item>
+        <item>Search</item>
+        <item>View List</item>
+    </array>
+    <array name="shortcut_action_value">
+        <item>@null</item>
+        <item>2</item>
+        <item>1</item>
+    </array>
+    <array name="snooze_minutes">
+        <item>15</item>
+        <item>60</item>
+        <item>180</item>
+        <item>1440</item>
+    </array>
+    <array name="b0">
+        <item>Default</item>
+        <item>Black</item>
+        <item>White</item>
+    </array>
+    <array name="b1">
+        <item>Top of list</item>
+        <item>Bottom of list</item>
+    </array>
+    <array name="task_changed_notification_title">
+        <item>%1$s added task %2$s in shared list %3$s.</item>
+        <item>%1$s completed task %2$s in shared list %3$s.</item>
+        <item>%1$s marked task %2$s in shared list %3$s as undone.</item>
+        <item>%1$s deleted task %2$s in shared list %3$s.</item>
+        <item>%1$s moved task %2$s from shared list %3$s.</item>
+    </array>
+    <array name="b3">
+        <item>Due Time</item>
+        <item>All Day</item>
+    </array>
+    <array name="b4">
+        <item>World Cup</item>
+        <item>Happy 2019</item>
+        <item>Xmas</item>
+        <item>Universe</item>
+    </array>
+    <array name="b5">
+        <item>Ocean</item>
+        <item>Mystery</item>
+        <item>Kitty</item>
+        <item>Architecture</item>
+        <item>B&amp;W</item>
+        <item>Desert</item>
+        <item>Greenery</item>
+        <item>Swallow</item>
+    </array>
+    <array name="time_24_divider">
+        <item>00:00 – 01:00</item>
+        <item>01:00 – 02:00</item>
+        <item>02:00 – 03:00</item>
+        <item>03:00 – 04:00</item>
+        <item>04:00 – 05:00</item>
+        <item>05:00 – 06:00</item>
+        <item>06:00 – 07:00</item>
+        <item>07:00 – 08:00</item>
+        <item>08:00 – 09:00</item>
+        <item>09:00 – 10:00</item>
+        <item>10:00 – 11:00</item>
+        <item>11:00 – 12:00</item>
+        <item>12:00 – 13:00</item>
+        <item>13:00 – 14:00</item>
+        <item>14:00 – 15:00</item>
+        <item>15:00 – 16:00</item>
+        <item>16:00 – 17:00</item>
+        <item>17:00 – 18:00</item>
+        <item>18:00 – 19:00</item>
+        <item>19:00 – 20:00</item>
+        <item>20:00 – 21:00</item>
+        <item>21:00 – 22:00</item>
+        <item>22:00 – 23:00</item>
+        <item>23:00 – 24:00</item>
+    </array>
+    <array name="b7">
+        <item>30 mins</item>
+        <item>1 hour</item>
+        <item>1.5 hours</item>
+        <item>2 hours</item>
+        <item>2.5 hours</item>
+        <item>3 hours</item>
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+    </array>
+    <array name="b8">
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+    </array>
+    <array name="b9">
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Days</item>
+    </array>
+    <array name="b_">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </array>
+    <array name="ba">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+    </array>
+    <array name="bb">
+        <item>Today</item>
+        <item>This Week</item>
+    </array>
+    <array name="bc">
+        <item>Day</item>
+        <item>Week</item>
+    </array>
+    <array name="bd">
+        <item>Days</item>
+        <item>Weeks</item>
+    </array>
+    <array name="be">
+        <item>New Task</item>
+        <item>View List</item>
+    </array>
+    <array name="bf">
+        <item>Uncompleted</item>
+        <item>Habit</item>
+        <item>Completed</item>
+    </array>
+    <array name="bg">
+        <item>Today</item>
+        <item>Next 7 Days</item>
+        <item>All</item>
+        <item>Inbox</item>
+    </array>
+    <array name="wear_select_project_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="bi">
+        <item>Overdue</item>
+        <item>No Date</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Completed</item>
+    </array>
+    <array name="bj">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </array>
+    <array name="bk">
+        <item>Go to list</item>
+        <item>Go to task detail</item>
+    </array>
+    <array name="bl">
+        <item>Dark</item>
+        <item>White</item>
+    </array>
+</resources>

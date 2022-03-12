@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+    <RadioGroup android:orientation="vertical" android:id="@+id/oaf_floodgate_survey_radiogroup_rating" android:paddingBottom="17dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="start" android:id="@+id/oaf_floodgate_survey_text_rating" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <TextView android:layout_gravity="start" android:id="@+id/oaf_floodgate_survey_text_comment" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:labelFor="@+id/oaf_floodgate_survey_edittext_comment"/>
+    <EditText android:gravity="start|top" android:id="@+id/oaf_floodgate_survey_edittext_comment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:lines="4" android:maxLength="4500" android:inputType="textMultiLine" style="@style/oaf_edittext"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:textColor="?android:attr/textColorLink" android:id="@+id/oaf_floodgate_survey_button_privacy" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oaf_privacy_text" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:acompli="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.acompli.acompli.views.AppHeaderView android:layout_gravity="top" android:id="@+id/themed_background_layout" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" acompli:layout_behavior="com.acompli.acompli.views.FitsSystemWindowsBehavior"/>
+    <androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" acompli:layout_behavior="com.acompli.acompli.views.FitsSystemWindowsBehavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.microsoft.office.outlook.uikit.widget.StatusBarView android:id="@+id/status_bar_view" android:background="?attr/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="0dp"/>
+            <com.acompli.acompli.views.CentralToolbar android:id="@+id/central_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.acompli.acompli.views.AcompliDualFragmentContainer android:orientation="horizontal" android:id="@+id/fragments_holder" android:layout_width="match_parent" android:layout_height="match_parent" acompli:dualFragmentMode="fixed" acompli:fixedPrimaryWeight="0.5" acompli:modalElevation="75dp" acompli:modalMarginBottom="50dp" acompli:modalMarginLeft="120dp" acompli:modalMarginRight="120dp" acompli:modalMarginTop="50dp">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/outlook_linear_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/horizontal_divider" android:showDividers="middle">
+                        <FrameLayout android:id="@+id/main_fragment_container" android:focusable="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                        <com.microsoft.office.outlook.uikit.widget.MenuView android:gravity="center" android:id="@+id/nav_drawer_tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" acompli:actionViewGravity="0" acompli:checkBehavior="1" acompli:fillItems="true" acompli:itemSelector="@drawable/item_background_borderless" acompli:menu="@menu/menu_central_activity_tabs" acompli:menuStyle="2" style="@style/Widget.Outlook.MenuView.Borderless"/>
+                    </LinearLayout>
+                    <com.acompli.acompli.views.AcompliFragmentContainer android:id="@+id/secondary_fragment_container" android:layout_width="0dp" android:layout_height="match_parent"/>
+                </com.acompli.acompli.views.AcompliDualFragmentContainer>
+            </FrameLayout>
+        </LinearLayout>
+        <include layout="@layout/navigation_drawer"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

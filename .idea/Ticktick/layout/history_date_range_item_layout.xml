@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/pre_btn" android:layout_width="56dp" android:layout_height="48dp" android:layout_marginLeft="16dp" android:layout_alignParentLeft="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/pre_btn_text" android:background="?attr/i" android:layout_width="32dp" android:layout_height="32dp" android:text="@string/ic_svg_arraw" android:rotation="90"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:id="@+id/next_btn" android:layout_width="56dp" android:layout_height="48dp" android:layout_marginRight="16dp" android:layout_alignParentRight="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/next_btn_text" android:background="?attr/i" android:layout_width="32dp" android:layout_height="32dp" android:text="@string/ic_svg_arraw" android:rotation="270"/>
+    </LinearLayout>
+</RelativeLayout>

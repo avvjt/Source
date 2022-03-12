@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="?attr/textAppearanceLargePopupMenu" android:ellipsize="end" android:gravity="center_vertical" android:id="@android:id/text1" android:background="@drawable/popup_singlechoice_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/dropdownListPreferredItemHeight" android:maxLines="1" android:singleLine="true" android:paddingStart="16dp" android:paddingEnd="16dp"/>

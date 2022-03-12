@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/hh" android:background="@drawable/newbie_tips_white_bg" android:paddingLeft="@dimen/newbie_layout_padding_left_or_right" android:paddingTop="@dimen/newbie_layout_padding_left_or_right" android:paddingRight="@dimen/newbie_layout_padding_left_or_right" android:paddingBottom="@dimen/newbie_layout_padding_left_or_right" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/black_alpha_90_light" android:id="@+id/hint_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

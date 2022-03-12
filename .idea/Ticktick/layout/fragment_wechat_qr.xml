@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:id="@+id/qr_code_iv" android:visibility="invisible" android:layout_width="170dp" android:layout_height="170dp" android:layout_marginTop="30dp" android:scaleType="center" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="160sp" android:textColor="@color/black_alpha_100_black" android:gravity="center" android:id="@+id/qr_default" android:layout_width="170dp" android:layout_height="170dp" android:layout_marginTop="30dp" android:text="@string/ic_svg_default_share_qr_code" android:layout_alignParentTop="true" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:id="@+id/xp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/ats" android:layout_below="@+id/qr_code_iv"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:id="@+id/line2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/do" android:layout_below="@+id/xp"/>
+    </RelativeLayout>
+    <Button android:textColor="@color/white_alpha_100" android:id="@+id/bottom_btn" android:text="@string/invite_by_wx" android:layout_alignParentBottom="true" style="@style/BottomBtn"/>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

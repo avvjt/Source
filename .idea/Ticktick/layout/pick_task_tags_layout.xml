@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="58dp">
+        <EditText android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:textColorHint="?attr/textColorPrimaryTint" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/query_text" android:background="@android:color/transparent" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/material_normal_padding" android:hint="@string/qk" android:ems="10" android:scrollHorizontally="true" android:singleLine="true" android:completionThreshold="1" android:layout_weight="1" android:inputType="text"/>
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/clear_btn" android:background="@drawable/action_bar_item_background_inverse" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/ic_svg_clear"/>
+    </LinearLayout>
+    <ImageView style="?attr/tt_divider"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ticktick.task.view.RecyclerViewEmptySupport android:id="@+id/recyclerView" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:dividerHeight="@dimen/divider_height" android:minHeight="150dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                <View android:layout_gravity="center" android:id="@+id/empty_view_img_bg" android:background="@drawable/empty_view_bg" android:layout_width="146dp" android:layout_height="146dp"/>
+                <ImageView android:id="@+id/emptyView_img_lower" android:layout_width="200dp" android:layout_height="200dp" android:src="@drawable/icon_empty_tag" android:scaleType="center"/>
+                <com.ticktick.task.view.IconTextView android:textSize="200sp" android:textColor="?attr/ej" android:id="@+id/emptyView_img_upper" android:layout_width="200dp" android:layout_height="200dp" android:text="@string/ic_svg_empty_tag"/>
+            </FrameLayout>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/emptyView_title" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b29" android:lineSpacingMultiplier="1.4"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_horizontal" android:id="@+id/emptyView_summary" android:paddingLeft="50dp" android:paddingTop="5dp" android:paddingRight="50dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b1s" android:lineSpacingMultiplier="1.4"/>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView style="?attr/tt_divider"/>
+</LinearLayout>

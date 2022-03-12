@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/itemForeground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="16dp" android:text="@string/af3"/>
+    <TextView android:textSize="24sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/most_focused_hours_tv" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginLeft="16dp" android:text="@string/agf"/>
+    <FrameLayout android:paddingTop="18dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ticktick.task.view.GridCoordinatesView android:id="@+id/grid_chart_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" app:grid_line_color="?attr/chart_grid_line_color" app:grid_stroke_width="1dp" app:pg_bg_color="?attr/activity_background" app:pg_color="?attr/chart_progress_normal_color" app:pg_highlight_color="@color/primary_green_100" app:tv_color="?android:attr/textColorTertiary"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.calendarlist.CalendarWeekHeaderLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/week_header_layout" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="@dimen/calendar_list_title_height">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:id="@+id/day0" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day1" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day2" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day3" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day4" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day5" style="@style/MonthView_DayLabel"/>
+        <TextView android:id="@+id/day6" style="@style/MonthView_DayLabel"/>
+    </LinearLayout>
+</com.ticktick.task.view.calendarlist.CalendarWeekHeaderLayout>

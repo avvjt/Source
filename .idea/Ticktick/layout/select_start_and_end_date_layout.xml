@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tab_layout"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include android:layout_width="match_parent" android:layout_height="@dimen/divider_1" layout="@layout/preference_divider"/>
+    <LinearLayout android:paddingLeft="@dimen/material_normal_padding" android:paddingRight="@dimen/material_normal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/calendar_set_layout" android:background="?attr/month_view_background" android:layout_width="match_parent" android:layout_height="293dp" layout="@layout/calendar_set_layout"/>
+    </LinearLayout>
+    <include android:id="@+id/buttonPanelLayout" layout="@layout/tt_alert_dialog_button_bar_material"/>
+</LinearLayout>

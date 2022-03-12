@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.ui.txp.view.TxPTimelineView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:id="@+id/email_thread_txp" android:background="@color/conversation_details_surface" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:inContext="1"/>

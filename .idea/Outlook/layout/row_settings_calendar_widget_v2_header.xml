@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/settings_top_divider" android:background="@color/calendar_widget_v2_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/calendar_widget_v2_setting_divider_height" android:layout_marginTop="@dimen/calendar_widget_v2_setting_divider_margin"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="false" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@drawable/account_picker_circle" android:clipToPadding="false" android:layout_width="@dimen/calendar_widget_v2_setting_icon_container_size" android:layout_height="@dimen/calendar_widget_v2_setting_icon_container_size" android:layout_marginLeft="@dimen/calendar_widget_v2_setting_margin_left_right" android:layout_marginTop="@dimen/calendar_widget_v2_setting_margin_top_bottom" android:layout_marginBottom="@dimen/calendar_widget_v2_setting_margin_top_bottom" android:elevation="@dimen/calendar_widget_v2_setting_icon_elevation">
+            <ImageView android:layout_gravity="center" android:id="@+id/settings_icon" android:layout_width="@dimen/calendar_widget_v2_setting_icon_size" android:layout_height="@dimen/calendar_widget_v2_setting_icon_size"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/settings_title_container" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/calendar_widget_v2_setting_title_container_margin_left">
+            <TextView android:textSize="@dimen/calendar_widget_v2_setting_header_text_size" android:id="@+id/settings_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"/>
+            <TextView android:textSize="@dimen/calendar_widget_v2_setting_sub_header_text_size" android:textColor="@color/calendar_widget_v2_sub_heading_color" android:ellipsize="end" android:id="@+id/settings_summary" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="@dimen/inbox_widget_inbox_title_start_padding_v2">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_lock_shield_24_regular" app:tint="?attr/colorControlNormal"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/settings_bottom_divider" android:background="@color/calendar_widget_v2_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/calendar_widget_v2_setting_divider_height" android:layout_marginBottom="@dimen/calendar_widget_v2_setting_divider_margin"/>
+</LinearLayout>

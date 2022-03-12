@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/Theme.ConsentFlow" android:orientation="vertical" android:id="@+id/consent_ui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/scroll_handle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/scroll_handle" android:contentDescription="@string/scroll_handle_content_description"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/account_particle_container" android:focusable="true" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="14dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/account_avatar" android:layout_width="36dp" android:layout_height="36dp" android:scaleType="fitEnd"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_weight="1" android:layout_marginStart="8dp">
+            <TextView android:id="@+id/account_display_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.AccountDisplayName"/>
+            <TextView android:id="@+id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.AccountName"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/write_consent_progress_bar_container" android:layout_width="match_parent" android:layout_height="3dp">
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true" style="@style/Theme.ConsentFlow.Divider"/>
+        <com.google.android.libraries.material.progress.MaterialProgressBar android:id="@+id/write_consent_progress_bar" android:visibility="gone" android:layout_alignParentBottom="true" app:mtrlLinearBarHeight="3dp" style="@style/Theme.ConsentFlow.WriteConsentProgressBar"/>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:id="@+id/consent_container" android:clipChildren="false" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/consent_container_margin">
+            <ImageView android:layout_gravity="top|center_horizontal" android:id="@+id/header_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/consent_container_neg_margin" android:layout_marginBottom="8dp" android:scaleType="fitStart" android:layout_marginStart="@dimen/consent_container_neg_margin" android:layout_marginEnd="@dimen/consent_container_neg_margin"/>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/bsn_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardBackgroundColor="@color/google_blue50" app:strokeWidth="0dp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="100dp">
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/bsn_image" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="16dp" android:scaleType="fitCenter"/>
+                    </LinearLayout>
+                    <TextView android:textSize="14sp" android:gravity="center_vertical" android:id="@+id/bsn_content" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" style="@style/Theme.ConsentFlow.Title"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/description_paragraphs_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/footer_paragraph_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/action_container" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.NegativeMaterialButton">
+                    <requestFocus/>
+                </com.google.android.material.button.MaterialButton>
+                <com.google.android.material.button.MaterialButton android:id="@+id/negative_hairline_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Theme.ConsentFlow.OutlinedMaterialButton">
+                    <requestFocus/>
+                </com.google.android.material.button.MaterialButton>
+                <View android:layout_width="16dp" android:layout_height="match_parent"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/positive_button" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.PositiveMaterialButton"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/positive_hairline_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Theme.ConsentFlow.OutlinedMaterialButton">
+                    <requestFocus/>
+                </com.google.android.material.button.MaterialButton>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/action_container_vertical" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+                <com.google.android.material.button.MaterialButton android:id="@+id/positive_hairline_button_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.OutlinedMaterialButton">
+                    <requestFocus/>
+                </com.google.android.material.button.MaterialButton>
+                <com.google.android.material.button.MaterialButton android:id="@+id/positive_rounded_button_vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.OutlinedMaterialButtonRounded">
+                    <requestFocus/>
+                </com.google.android.material.button.MaterialButton>
+                <com.google.android.material.button.MaterialButton android:id="@+id/temporary_positive_hairline_button_vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.OutlinedMaterialButton"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/temporary_positive_rounded_button_vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.OutlinedMaterialButtonRounded"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/negative_hairline_button_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.OutlinedMaterialButton"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/negative_rounded_button_vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.ConsentFlow.OutlinedMaterialButtonRounded"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

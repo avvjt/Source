@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/preference_category_divider"/>
+    <com.ticktick.task.view.selectableview.SelectableRelativeLayout android:id="@+id/click_area" android:layout_width="match_parent" android:layout_height="56dp">
+        <ImageView android:id="@+id/qu" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="15dp" android:src="@drawable/learn_more" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/aca" android:layout_toRightOf="@+id/qu" android:layout_centerVertical="true"/>
+    </com.ticktick.task.view.selectableview.SelectableRelativeLayout>
+</LinearLayout>

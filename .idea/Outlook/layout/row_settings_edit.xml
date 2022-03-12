@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:paddingLeft="12dp" android:paddingTop="@dimen/list_item_row_padding_top" android:paddingRight="12dp" android:paddingBottom="@dimen/list_item_row_padding_bottom" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_row_double_min_height" android:paddingStart="12dp" android:paddingEnd="12dp">
+    <com.google.android.material.textfield.TextInputLayout android:gravity="center_vertical" android:id="@+id/settings_summary_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <view android:ellipsize="end" android:id="@+id/settings_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:imeOptions="flagNoExtractUi|actionDone" android:textDirection="locale" class="com.acompli.acompli.ui.settings.preferences.EditableEntry$CustomEditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</FrameLayout>

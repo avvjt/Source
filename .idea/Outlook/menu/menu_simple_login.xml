@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_question_circle_24_regular" android:id="@+id/menu_help" android:title="@string/onboarding_auto_detect_wrong_google" outlook:iconTint="@color/icon_white_selector" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_checkmark_24_regular" android:id="@+id/menu_done" android:title="@string/done" outlook:iconTint="@color/icon_white_selector" outlook:showAsAction="always"/>
+</menu>

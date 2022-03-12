@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_repository_branch_0" android:background="@drawable/list_item_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include layout="@layout/list_item_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/container" android:tag="binding_1" android:paddingTop="@dimen/default_margin" android:paddingBottom="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+        <TextView android:textColor="@color/textTertiary" android:ellipsize="end" android:id="@+id/branch_name" android:tag="binding_2" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/default_margin_half" android:layout_weight="1" android:importantForAccessibility="no" app:drawableStartCompat="@drawable/ic_git_branch_16" app:drawableTint="@color/iconSecondary" style="@style/Monospace"/>
+        <TextView android:tag="binding_3" android:background="@android:color/transparent" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repository_button_change_branch" android:importantForAccessibility="no" android:layout_marginStart="@dimen/default_margin_half" style="@style/TextButton"/>
+    </LinearLayout>
+</LinearLayout>

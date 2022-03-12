@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/row_contact_picker_search_directory_root" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textStyle="bold" android:textColor="?android:attr/textColorSecondary" android:id="@+id/row_contact_picker_contact_header_text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

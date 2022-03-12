@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.reminder.popup.SnoozeTimeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:skin="http://schemas.android.com/android/skin" android:orientation="vertical" android:background="?attr/task_popup_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:minHeight="@dimen/reminder_snooze_time_layout_height">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/xp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/snooze_15" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:text="@string/ic_svg_fifteen_mins" style="@style/task_popup_snooze_action_icon"/>
+            <TextView android:id="@+id/summary_text1" android:text="@string/sv" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/snooze_1h" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:text="@string/ic_svg_one_hour" style="@style/task_popup_snooze_action_icon"/>
+            <TextView android:id="@+id/summary_text2" android:text="@string/ai5" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/snooze_3h" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:text="@string/ic_svg_three_hours" style="@style/task_popup_snooze_action_icon"/>
+            <TextView android:id="@+id/summary_text3" android:text="@string/b15" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/line2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/xp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/snooze_24h" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:text="@string/ic_svg_tomorrow_date" style="@style/task_popup_snooze_action_icon"/>
+            <TextView android:id="@+id/summary_text4" android:text="@string/l1" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/default_time" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:id="@+id/ic_default_time" android:text="@string/ic_svg_afternoon" style="@style/task_popup_snooze_action_icon"/>
+            <TextView android:id="@+id/summary_text5" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/custom_snooze_time" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.ticktick.task.view.IconTextView android:text="@string/ic_svg_time_custom" style="@style/task_popup_snooze_action_icon"/>
+            <TextView android:text="@string/l2" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/xr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line2">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/back_previous_view" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="54dp" android:layout_height="54dp">
+                <View android:background="?attr/pomo_popup_ring" android:layout_width="54dp" android:layout_height="54dp"/>
+                <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorTertiary" android:gravity="center" android:layout_width="54dp" android:layout_height="54dp" android:text="@string/ic_svg_popup_back" style="@style/task_popup_snooze_action_icon"/>
+            </RelativeLayout>
+            <TextView android:text="@string/ds" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/skip_to_next_periodic" android:paddingTop="@dimen/material_normal_padding" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="54dp" android:layout_height="54dp">
+                <View android:background="?attr/pomo_popup_ring" android:layout_width="54dp" android:layout_height="54dp"/>
+                <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorTertiary" android:gravity="center" android:layout_width="54dp" android:layout_height="54dp" android:text="@string/ic_svg_popup_skip_to" style="@style/task_popup_snooze_action_icon"/>
+            </RelativeLayout>
+            <TextView android:layout_height="wrap_content" android:text="@string/awz" style="@style/snooze_time_text_style"/>
+            <TextView android:id="@+id/tv_next_periodic_date" android:layout_height="wrap_content" android:layout_marginTop="0dp" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/pick_up_time" android:paddingTop="@dimen/material_normal_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <RelativeLayout android:layout_width="54dp" android:layout_height="54dp">
+                <View android:background="?attr/pomo_popup_ring" android:layout_width="54dp" android:layout_height="54dp"/>
+                <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorTertiary" android:gravity="center" android:layout_width="54dp" android:layout_height="54dp" android:text="@string/ic_svg_custom_date" style="@style/task_popup_snooze_action_icon"/>
+            </RelativeLayout>
+            <TextView android:text="@string/gu" style="@style/snooze_time_text_style"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.ticktick.task.reminder.popup.SnoozeTimeLayout>

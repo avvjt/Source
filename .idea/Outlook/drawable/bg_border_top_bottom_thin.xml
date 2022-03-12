@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/item_background"/>
+    <item android:left="-2dp" android:right="-2dp" android:start="-2dp" android:end="-2dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="@dimen/outlook_divider_height" android:color="@color/outlook_app_divider"/>
+        </shape>
+    </item>
+</layer-list>

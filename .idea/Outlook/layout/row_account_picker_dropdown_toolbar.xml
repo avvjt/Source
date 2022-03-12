@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_single_choice_background" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:id="@+id/person_avatar" android:visibility="gone" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/list_item_icon_margin_end" style="@style/Widget.Outlook.PersonAvatar"/>
+    <ImageView android:id="@+id/icon" android:scaleType="center" android:importantForAccessibility="no" style="@style/ListItem.Icon"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:dividerPadding="3dp">
+        <TextView android:ellipsize="end" android:id="@+id/title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/ListItem.Title"/>
+        <TextView android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/subtitle" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/ListItem.Summary"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/lock" android:visibility="gone" android:layout_width="@dimen/list_item_icon_size" android:layout_height="@dimen/list_item_icon_size" android:src="@drawable/ic_fluent_lock_shield_24_regular" android:scaleType="center" android:importantForAccessibility="no"/>
+</LinearLayout>

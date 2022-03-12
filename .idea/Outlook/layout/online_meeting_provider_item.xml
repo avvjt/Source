@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/item_logo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_headset_24_regular" android:minWidth="24dp" android:minHeight="24dp" android:layout_marginEnd="@dimen/inbox_widget_inbox_title_start_padding_v2"/>
+    <TextView android:ellipsize="end" android:id="@+id/provider_name" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" style="@style/TextAppearance.Outlook.SubHeading"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/tick" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_checkmark_24_filled" android:tint="?attr/colorAccent" android:contentDescription="@string/accessibility_selected"/>
+</LinearLayout>

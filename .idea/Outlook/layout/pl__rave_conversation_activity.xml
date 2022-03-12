@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/actionBarTheme" android:id="@+id/pl__toolbar" android:background="?attr/pl__actionBarColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp" app:title="@string/pl__rave_conversation_activity_title"/>
+    <ViewFlipper android:id="@+id/pl__view_flipper" android:layout_width="match_parent" android:layout_height="match_parent" android:inAnimation="@anim/pl__fade_in_fast">
+        <ProgressBar android:layout_gravity="center" android:layout_width="72dp" android:layout_height="72dp"/>
+        <WebView android:id="@+id/pl__webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="48dp" android:text="@string/pl__rave_conversation_error"/>
+    </ViewFlipper>
+</LinearLayout>

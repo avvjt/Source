@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/coordinator_layout" android:tag="layout/coordinator_recycler_view_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/header_shadow" android:background="@drawable/default_shadow_horizontal" android:layout_width="match_parent" android:layout_height="3dp" android:alpha="0" android:elevation="1dp" android:stateListAnimator="@animator/shadow_alpha_animator"/>
+    <com.github.android.views.LoadingViewFlipper android:id="@+id/view_flipper" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <include android:id="@+id/app_bar_layout" layout="@layout/app_bar_layout"/>
+    <com.github.android.views.MarkdownBarView android:layout_gravity="bottom" android:id="@+id/markdown_bar_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

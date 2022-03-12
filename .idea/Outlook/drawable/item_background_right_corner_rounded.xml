@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+    <item android:id="@android:id/mask">
+        <shape>
+            <solid android:color="@android:color/white"/>
+            <corners android:topRightRadius="@dimen/calendar_event_corner_radius" android:bottomRightRadius="@dimen/calendar_event_corner_radius"/>
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_selected="true" android:drawable="@drawable/item_highlight_right_corner_rounded_shape"/>
+        </selector>
+    </item>
+</ripple>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_delete_24_regular" android:id="@+id/action_delete" android:title="@string/action_delete" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_delete_24_regular" android:id="@+id/action_hard_delete" android:visible="false" android:title="@string/action_delete" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_archive_24_regular" android:id="@+id/action_archive" android:title="@string/action_archive" android:alphabeticShortcut="a" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_menu_move" android:id="@+id/action_move" android:title="@string/action_move" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_menu_inbox" android:id="@+id/action_move_to_nonfocus" android:title="@string/move_to_other_inbox" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_move_to_focused" android:id="@+id/action_move_to_focus" android:title="@string/move_to_focused" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_spam" android:id="@+id/action_move_to_spam" android:title="@string/action_move_to_spam" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_spam" android:id="@+id/action_report_message" android:title="@string/action_report_message" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_mute" android:id="@+id/action_conversation_ignore" android:title="@string/action_ignore_conversation" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_unmute" android:id="@+id/action_conversation_restore" android:visible="false" android:title="@string/action_restore_conversation" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_inbox" android:id="@+id/action_move_to_inbox" android:title="@string/action_move_to_inbox" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_read" android:id="@+id/action_read" android:title="@string/action_mark_read" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_unread" android:id="@+id/action_unread" android:title="@string/action_unread" android:alphabeticShortcut="u" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_flag" android:id="@+id/action_flag" android:title="@string/action_flag" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_unflag" android:id="@+id/action_unflag" android:title="@string/action_unflag" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_pin" android:id="@+id/action_pin" android:title="@string/action_pin" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_unpin" android:id="@+id/action_unpin" android:title="@string/action_unpin" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_schedule" android:id="@+id/action_schedule" android:title="@string/schedule" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_select_all" android:id="@+id/action_select_all" android:title="@string/action_select_all" app:showAsAction="never"/>
+    <item android:icon="@drawable/ic_menu_unselect_all" android:id="@+id/action_unselect_all" android:title="@string/action_unselect_all" app:showAsAction="never"/>
+</menu>

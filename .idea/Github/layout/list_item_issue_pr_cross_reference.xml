@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/list_item_issue_pr_cross_reference_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/cross_reference_item" android:layout_width="match_parent" android:layout_height="@dimen/button_height" android:baselineAligned="false" android:layout_marginStart="60dp" android:layout_marginEnd="@dimen/default_margin" style="@style/ButtonPrimary">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/state_image_background" android:background="@drawable/list_item_background_rounded" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="10dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/state_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tint="@color/backgroundSecondary"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:layout_marginEnd="@dimen/default_margin_half" style="@style/Bold"/>
+        <ImageView android:id="@+id/private_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock_16" android:contentDescription="@string/screenreader_reference_private_repo" android:layout_marginEnd="@dimen/default_margin_half" app:tint="@color/iconSecondary"/>
+    </LinearLayout>
+    <include android:layout_width="@dimen/divider_height" android:layout_height="match_parent" android:layout_marginStart="@dimen/default_margin_2x" layout="@layout/list_item_issue_pr_spacer"/>
+</FrameLayout>

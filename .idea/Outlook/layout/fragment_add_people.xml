@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/fragment_add_people" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/people_appbarlayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" style="@style/MessagesTabBarBackground_Adaptive">
+        <com.microsoft.office.outlook.uikit.widget.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/add_people_tablayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/messages_tab_bar_height" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset" style="@style/Widget.Outlook.TabLayout.OnAccent"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/add_people_view_pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

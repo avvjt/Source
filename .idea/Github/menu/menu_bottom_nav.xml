@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_home" android:id="@+id/home" android:title="@string/menu_home"/>
+    <item android:icon="@drawable/ic_menu_notifications" android:id="@+id/notifications" android:title="@string/menu_notifications"/>
+    <item android:icon="@drawable/ic_menu_explore" android:id="@+id/explore" android:title="@string/menu_explore"/>
+    <item android:icon="@drawable/ic_menu_profile" android:id="@+id/profile" android:title="@string/menu_profile"/>
+</menu>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <TextView android:textSize="22sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ahl" android:layout_below="@+id/toolbar" android:layout_centerInParent="true"/>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

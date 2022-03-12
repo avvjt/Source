@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="?attr/actionBarTheme" android:id="@+id/pl__toolbar" android:background="?attr/pl__actionBarColor" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:elevation="4dp" app:title="@string/pl__insights_entry_toolbar_title">
+        <ImageButton android:layout_gravity="end" android:id="@+id/pl__insights_toolbar_button" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/pl__ic_send_white_24dp" android:contentDescription="@string/pl__action_submit" android:layout_marginEnd="8dp" style="@style/Widget.AppCompat.Button.Borderless"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ViewFlipper android:id="@+id/pl__insights_viewsflipper" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/pl__insights_entry_include"/>
+        <ProgressBar android:layout_gravity="center" android:layout_width="72dp" android:layout_height="72dp"/>
+        <include layout="@layout/pl__insights_list_include"/>
+        <WebView android:id="@+id/pl__insights_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ViewFlipper>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="a">true</bool>
+    <bool name="b">false</bool>
+    <bool name="c">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="e">true</bool>
+    <bool name="f">false</bool>
+    <bool name="google_enabled">true</bool>
+    <bool name="is_port">true</bool>
+    <bool name="i">true</bool>
+    <bool name="show_statistics_cards_by_grid">false</bool>
+    <bool name="use_two_pane">false</bool>
+    <bool name="l">false</bool>
+</resources>

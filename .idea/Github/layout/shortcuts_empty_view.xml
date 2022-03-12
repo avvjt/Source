@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorGray" android:src="@drawable/ic_zap_16" app:tint="@color/shortcutForegroundColorGray" style="@style/ShortcutEmptyStateIcon"/>
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorGreen" android:src="@drawable/ic_issue_opened_16" app:tint="@color/shortcutForegroundColorGreen" style="@style/ShortcutEmptyStateIcon"/>
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorBlue" android:src="@drawable/ic_git_pull_request_16" app:tint="@color/shortcutForegroundColorBlue" style="@style/ShortcutEmptyStateIcon"/>
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorPurple" android:src="@drawable/ic_comment_discussion_16" app:tint="@color/shortcutForegroundColorPurple" style="@style/ShortcutEmptyStateIcon"/>
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorOrange" android:src="@drawable/ic_organization_16" app:tint="@color/shortcutForegroundColorOrange" style="@style/ShortcutEmptyStateIcon"/>
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorPink" android:src="@drawable/ic_people_16" app:tint="@color/shortcutForegroundColorPink" style="@style/ShortcutEmptyStateIcon"/>
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorPurple" android:src="@drawable/ic_briefcase_16" app:tint="@color/shortcutForegroundColorPurple" style="@style/ShortcutEmptyStateIcon"/>
+    <com.google.android.material.imageview.ShapeableImageView android:background="@color/shortcutBackgroundColorGray" android:src="@drawable/ic_file_diff_16" app:tint="@color/shortcutForegroundColorGray" style="@style/ShortcutEmptyStateIcon"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

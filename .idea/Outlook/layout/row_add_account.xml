@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/add_shared_mailbox" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" style="@style/ListItem.Row">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" style="@style/ListItem.Icon"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:id="@+id/title" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Title"/>
+        <TextView android:id="@+id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Summary"/>
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textColor="?attr/colorAccent" android:layout_gravity="center_vertical" android:id="@+id/settings_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+</LinearLayout>

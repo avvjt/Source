@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/foreground_color_light" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:padding="9.6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/black_alpha_85" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="6sp" android:textColor="@color/colorPrimary_light" android:id="@+id/tv_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        <TextView android:textSize="6sp" android:textStyle="bold" android:textColor="@color/black_alpha_85" android:id="@+id/hh" android:background="@color/black_alpha_4" android:paddingLeft="4.8dp" android:paddingTop="6.4dp" android:paddingRight="4.8dp" android:paddingBottom="6.4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4.8dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+            <com.ticktick.task.view.IconTextView android:textSize="9.6sp" android:layout_width="wrap_content" android:layout_height="12.8dp" android:text="@string/ic_svg_agenda_share"/>
+            <TextView android:textSize="6.4sp" android:textStyle="bold" android:textColor="@color/black_alpha_85" android:layout_gravity="center_vertical" android:id="@+id/tv_total_person" android:paddingLeft="3.2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RelativeLayout android:id="@+id/ll_avatar_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <com.ticktick.task.view.IconTextView android:textSize="9.6sp" android:textColor="@color/black_alpha_24_light" android:gravity="center" android:id="@+id/a89" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ic_svg_arraw" android:rotation="270"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

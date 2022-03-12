@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DualScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" outlook:firstScreen="@layout/splash_duo" outlook:secondScreen="@layout/activity_org_allowed_accounts" outlook:singleScreenKeep="2"/>

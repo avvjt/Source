@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <ImageView android:id="@+id/custom_swipe_preview" android:background="?attr/cal_list_divider_gray" android:layout_width="match_parent" android:layout_height="156dp" android:src="@drawable/custom_swipe_preview" android:scaleType="center" android:layout_below="@+id/toolbar"/>
+    <com.ticktick.task.view.selectableview.SelectableListView android:id="@+id/list" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp" android:layout_above="@+id/reset_button" android:layout_below="@+id/custom_swipe_preview"/>
+    <Button android:textColor="?attr/ej" android:id="@+id/reset_button" android:text="@string/fy" android:layout_alignParentBottom="true" style="@style/BottomBtn"/>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

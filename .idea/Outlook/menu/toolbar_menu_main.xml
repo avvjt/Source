@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_fluent_calendar_add_24_regular" android:id="@+id/action_compose_event" android:menuCategory="system" android:title="@string/compose_attach_meeting">
+        <menu>
+            <item android:icon="@drawable/ic_fluent_calendar_checkmark_24_regular" android:id="@+id/action_compose_attach_availability" android:title="@string/send_availability"/>
+            <item android:icon="@drawable/ic_fluent_calendar_add_24_regular" android:id="@+id/action_compose_convert_to_event" android:title="@string/convert_to_event"/>
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_fluent_attach_24_regular" android:id="@+id/action_compose_attach_combined" android:menuCategory="system" android:title="@string/compose_attach">
+        <menu>
+            <item android:icon="@drawable/ic_fluent_document_24_regular" android:id="@+id/action_compose_attach_choose_file_combined" android:title="@string/compose_choose_from_files"/>
+            <item android:icon="@drawable/ic_fluent_image_24_regular" android:id="@+id/action_compose_attach_choose_photo_library" android:title="@string/compose_choose_from_photo_library"/>
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_fluent_camera_24_regular" android:id="@+id/action_compose_take_photo" android:menuCategory="system" android:title="@string/compose_take_a_photo"/>
+    <item android:icon="@drawable/ic_fluent_text_edit_style_24_regular" android:id="@+id/action_compose_rich_formatting" android:menuCategory="system" android:title="@string/compose_rich_formatting_title"/>
+    <item android:icon="@drawable/ic_fluent_inking_tool_24_regular_flipped_vertically" android:id="@+id/action_compose_inking" android:menuCategory="system" android:title="@string/compose_ink_title"/>
+    <item android:icon="@drawable/ic_fluent_lightbulb_24_regular" android:id="@+id/action_compose_ai_elaborate" android:menuCategory="system" android:title="@string/text_elaborate"/>
+    <item android:icon="@drawable/ic_fluent_more_horizontal_24_regular" android:id="@+id/more_options" android:menuCategory="alternative" android:title="@string/more_options">
+        <menu>
+            <item android:icon="@drawable/ic_fluent_classification_24_regular" android:id="@+id/action_compose_add_clp_label" android:title="@string/add_sensitivity"/>
+            <item android:icon="@drawable/ic_fluent_lock_closed_24_regular" android:id="@+id/action_compose_secure_message" android:title="@string/sign_encrypt_message"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/suggested_reply_button" android:drawablePadding="4dp" app:drawableTint="@color/outlook_app_floating_pill_icon" style="@style/Widget_Outlook_SuggestedReplyText"/>

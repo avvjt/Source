@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_lock_closed_24_regular" android:id="@+id/menu_view_privacy" android:title="@string/label_privacy_gdpr" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_text_description_24_regular" android:id="@+id/menu_view_terms" android:title="@string/label_license_terms" outlook:showAsAction="always"/>
+</menu>

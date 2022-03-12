@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/cal_subscribe_edt_dialog_describe" android:paddingLeft="24dp" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/g1"/>
+        <com.google.android.material.textfield.TextInputLayout android:theme="@style/edit_text_style_light" android:id="@+id/cal_subscribe_edt_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:layout_marginRight="20dp" android:hint="@string/cal_subscribe_hint" app:errorEnabled="true" app:hintAnimationEnabled="false" app:hintTextAppearance="@style/InputLayout_TextAppearance">
+            <androidx.appcompat.widget.AppCompatEditText android:textColorHint="?android:attr/textColorHint" android:gravity="fill_horizontal" android:id="@+id/cal_subscribe_edt" android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10" android:scrollHorizontally="true" android:singleLine="true" android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

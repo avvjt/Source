@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/outlook_app_surface_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:background="@color/outlook_app_surface_dialog" android:paddingTop="0dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Outlook.Toolbar.Dialog"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:id="@+id/dialog_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset"/>
+    <com.acompli.acompli.ui.event.picker.DayOfWeekPicker android:id="@+id/day_of_week_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

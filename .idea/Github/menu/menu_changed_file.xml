@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_clippy_16" android:id="@+id/changed_file_option_copy_path" android:title="@string/menu_option_copy_file_path" app:iconTint="@color/iconPrimary"/>
+    <item android:icon="@drawable/ic_file_16" android:id="@+id/changed_file_option_view" android:title="@string/menu_option_view_file" app:iconTint="@color/iconPrimary"/>
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_hover_menu_action_delete" android:id="@+id/action_delete" android:title="@string/action_delete" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_hover_menu_action_delete" android:id="@+id/action_hard_delete" android:visible="false" android:title="@string/action_delete" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_hover_menu_action_archive" android:id="@+id/action_archive" android:title="@string/action_archive" android:alphabeticShortcut="a" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_hover_menu_action_read" android:id="@+id/action_read" android:title="@string/action_mark_read" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_hover_menu_action_unread" android:id="@+id/action_unread" android:title="@string/action_unread" android:alphabeticShortcut="u" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_menu_flag" android:id="@+id/action_flag" android:title="@string/action_flag" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_menu_unflag" android:id="@+id/action_unflag" android:title="@string/action_unflag" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_menu_pin" android:id="@+id/action_pin" android:title="@string/action_pin" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_menu_unpin" android:id="@+id/action_unpin" android:title="@string/action_unpin" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_menu_schedule" android:id="@+id/action_schedule" android:title="@string/schedule" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_hover_menu_action_reply_all" android:id="@+id/action_reply_all" android:title="@string/reply_action_reply_all" app:showAsAction="always"/>
+</menu>

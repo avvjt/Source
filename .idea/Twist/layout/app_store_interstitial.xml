@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
     <FrameLayout android:id="@+id/dbx_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
         <include android:layout_gravity="bottom" android:id="@+id/dbx_button_bar" android:layout_height="match_parent" layout="@layout/bottom_bar_light"/>
     </FrameLayout>

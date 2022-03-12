@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/cortini_suggestion_pill_pressed_background"/>
+    <corners android:topLeftRadius="@dimen/cortini_suggestion_pill_border_radius" android:topRightRadius="@dimen/cortini_suggestion_pill_border_radius" android:bottomLeftRadius="@dimen/cortini_suggestion_pill_border_radius"/>
+    <size android:height="@dimen/cortini_handle_pill_height" android:width="@dimen/cortini_handle_pill_width"/>
+</shape>

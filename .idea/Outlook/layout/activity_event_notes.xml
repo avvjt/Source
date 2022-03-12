@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/event_notes_root" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <com.acompli.acompli.ui.conversation.v3.views.MessageAttachmentsView android:id="@+id/event_notes_attachments" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp"/>
+    <FrameLayout android:id="@+id/conversation_content_frame" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/event_notes_webview" android:focusable="true" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="yes" android:accessibilityLiveRegion="polite"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorPrimary" android:linksClickable="true" android:id="@+id/event_notes_textview" android:padding="16dp" android:focusable="true" android:visibility="gone" android:clickable="false" android:longClickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:accessibilityLiveRegion="polite"/>
+        <ProgressBar android:id="@+id/event_notes_webProgressView" android:background="?attr/colorAccentHighlighted" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4dp" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/thread_loading_progress" style="?android:attr/progressBarStyleHorizontal"/>
+    </FrameLayout>
+</com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout>

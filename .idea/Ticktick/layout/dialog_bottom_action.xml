@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dialog_item_height">
+    <TextView android:textColor="?attr/ej" android:id="@+id/ag9" android:layout_marginLeft="20dp" style="@style/dialog_text_style"/>
+</FrameLayout>

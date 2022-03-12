@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/compose_to_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="0dp" style="@style/Widget.Outlook.ComposeV2.HeaderCell">
+        <TextView android:id="@+id/compose_to_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compose_to" android:importantForAccessibility="no" style="@style/Widget.Outlook.ComposeV2.HeaderLabel"/>
+        <com.microsoft.office.outlook.uiappcomponent.widget.contact.ContactPickerView android:id="@+id/compose_to_field" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:inputType="textEmailAddress" android:privateImeOptions="disableSticker=true;disableGifKeyboard=true" android:contentDescription="@string/to_enter_recipient_address" style="@style/Widget.Outlook.ComposeV2.ContactPicker"/>
+        <FrameLayout android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="7dp">
+            <ProgressBar android:id="@+id/search_progress" android:paddingTop="0.6dp" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminate="true" android:importantForAccessibility="no" android:indeterminateTintMode="src_in" style="?android:attr/progressBarStyle"/>
+            <ImageButton android:id="@+id/search_cancel_btn" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_fluent_dismiss_circle_24_filled" android:contentDescription="@string/clear_search" style="?attr/actionButtonStyle"/>
+            <ImageButton android:id="@+id/compose_expand_cc_bcc" android:background="@drawable/item_background_circular" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_fluent_chevron_down_20_filled"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/compose_cc_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Outlook.ComposeV2.HeaderCell">
+        <TextView android:id="@+id/compose_cc_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cc" android:importantForAccessibility="no" style="@style/Widget.Outlook.ComposeV2.HeaderLabel"/>
+        <com.microsoft.office.outlook.uiappcomponent.widget.contact.ContactPickerView android:id="@+id/compose_cc_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:privateImeOptions="disableSticker=true;disableGifKeyboard=true" android:contentDescription="@string/cc_enter_recipient_address" style="@style/Widget.Outlook.ComposeV2.ContactPicker"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/compose_bcc_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget.Outlook.ComposeV2.HeaderCell">
+        <TextView android:id="@+id/compose_bcc_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compose_bcc" android:importantForAccessibility="no" style="@style/Widget.Outlook.ComposeV2.HeaderLabel"/>
+        <com.microsoft.office.outlook.uiappcomponent.widget.contact.ContactPickerView android:id="@+id/compose_bcc_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:privateImeOptions="disableSticker=true;disableGifKeyboard=true" android:contentDescription="@string/bcc_enter_recipient_address" style="@style/Widget.Outlook.ComposeV2.ContactPicker"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_block_header_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include layout="@layout/list_item_divider"/>
+    <TextView android:background="@color/listItemBackground" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/block_from_org_list_header" style="@style/Bold"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/meeting_selected_category" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" style="@style/ListItem.Row">
+    <ImageView android:src="@drawable/ic_fluent_tag_24_regular" android:tint="@color/outlook_app_icon_tint" android:contentDescription="@string/calendar_category_color_name" style="@style/ListItem.Icon"/>
+</LinearLayout>

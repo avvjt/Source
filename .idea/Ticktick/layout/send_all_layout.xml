@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/hh" android:layout_width="@dimen/max_sheet_width" android:layout_height="wrap_content">
+    <com.ticktick.task.view.DragView android:id="@+id/drawer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/main_content" android:background="?attr/dialog_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/ai6" android:padding="16dp" android:layout_width="match_parent" android:layout_height="48dp"/>
+            <ListView android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:divider="@android:color/transparent"/>
+        </FrameLayout>
+    </com.ticktick.task.view.DragView>
+</FrameLayout>

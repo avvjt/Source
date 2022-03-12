@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:state_activated="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/search_edit_container_corner_radius" android:topRightRadius="@dimen/search_edit_container_corner_radius"/>
+                    <stroke android:width="@dimen/outlook_divider_height" android:color="@color/search_edit_text_border"/>
+                </shape>
+            </item>
+            <item android:left="@dimen/outlook_divider_height" android:top="@dimen/outlook_divider_height" android:right="@dimen/outlook_divider_height">
+                <shape android:shape="rectangle">
+                    <corners android:topLeftRadius="@dimen/search_edit_container_corner_radius" android:topRightRadius="@dimen/search_edit_container_corner_radius"/>
+                    <solid android:color="@color/search_edit_text_background_themed_light_selector" android:alpha="0.5"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="false" android:state_activated="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/search_edit_container_corner_radius"/>
+            <stroke android:width="@dimen/outlook_divider_height" android:color="@color/search_edit_text_border"/>
+            <solid android:color="@color/search_edit_text_background_themed_light_selector"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/search_edit_container_corner_radius"/>
+            <solid android:color="@color/search_edit_text_background_themed_light_selector"/>
+        </shape>
+    </item>
+</selector>

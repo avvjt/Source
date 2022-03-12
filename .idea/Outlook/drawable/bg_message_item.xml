@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="1dp">
+    <item android:left="@dimen/message_thread_border_offset" android:right="@dimen/message_thread_border_offset" android:start="@dimen/message_thread_border_offset" android:end="@dimen/message_thread_border_offset">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/conversation_details_message_surface"/>
+            <stroke android:width="@dimen/outlook_divider_height" android:color="@color/outlook_app_divider"/>
+        </shape>
+    </item>
+</layer-list>

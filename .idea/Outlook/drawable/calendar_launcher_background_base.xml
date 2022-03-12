@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="108dp" android:width="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#000" android:pathData="M38,33L70,33C71.105,33 72,33.895 72,35L72,73C72,74.657 70.657,76 69,76L39,76C37.343,76 36,74.657 36,73L36,35C36,33.895 36.895,33 38,33Z" android:strokeAlpha="0.2" android:fillAlpha="0.2" android:fillType="nonZero"/>
+    <path android:fillColor="#0f78d4" android:pathData="M39,32L69,32C70.657,32 72,33.343 72,35L72,72C72,73.657 70.657,75 69,75L39,75C37.343,75 36,73.657 36,72L36,35C36,33.343 37.343,32 39,32Z" android:fillType="nonZero"/>
+    <path android:fillColor="#0f78d4" android:pathData="M60,63.333L72,63.333L72,72C72,73.657 70.657,75 69,75L60,75L60,63.333Z" android:fillType="nonZero"/>
+    <path android:fillColor="#35b8f1" android:pathData="M60,51.667l12,0l0,11.666l-12,0z" android:fillType="nonZero"/>
+    <path android:fillColor="#56dcff" android:pathData="M60,40l12,0l0,11.667l-12,0z" android:fillType="nonZero"/>
+    <path android:fillColor="#0664b2" android:pathData="M48,63.333l12,0l0,11.667l-12,0z" android:fillType="nonZero"/>
+    <path android:fillColor="#0f78d4" android:pathData="M48,51.667l12,0l0,11.666l-12,0z" android:fillType="nonZero"/>
+    <path android:fillColor="#37bbf1" android:pathData="M48,40l12,0l0,11.667l-12,0z" android:fillType="nonZero"/>
+    <path android:fillColor="#123b6d" android:pathData="M36,63.333L48,63.333L48,75L39,75C37.343,75 36,73.657 36,72L36,63.333Z" android:fillType="nonZero"/>
+    <path android:fillColor="#0664b2" android:pathData="M36,51.667l12,0l0,11.666l-12,0z" android:fillType="nonZero"/>
+    <path android:fillColor="#0f78d4" android:pathData="M36,40l12,0l0,11.667l-12,0z" android:fillType="nonZero"/>
+    <path android:fillColor="#0362b1" android:pathData="M39,32L69,32C70.657,32 72,33.343 72,35L72,40L36,40L36,35C36,33.343 37.343,32 39,32Z" android:fillType="nonZero"/>
+    <path android:fillColor="@drawable/res_0x7f080018_calendar_launcher_background_base__0" android:pathData="M69,32C70.657,32 72,33.343 72,35L72,72C72,73.657 70.657,75 69,75L39,75C37.343,75 36,73.657 36,72L36,35C36,33.343 37.343,32 39,32L69,32ZM69,32.5L39,32.5C37.619,32.5 36.5,33.619 36.5,35L36.5,72C36.5,73.381 37.619,74.5 39,74.5L69,74.5C70.381,74.5 71.5,73.381 71.5,72L71.5,35C71.5,33.619 70.381,32.5 69,32.5Z" android:fillType="nonZero"/>
+</vector>

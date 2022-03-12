@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/list_item_deployment_associated_pr_0" android:background="@color/listItemBackground" android:paddingTop="@dimen/default_margin_0_75x" android:paddingBottom="@dimen/default_margin_half" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:elevation="@dimen/default_elevation">
+    <include android:id="@+id/notification_item_header" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" layout="@layout/list_item_notification_header"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

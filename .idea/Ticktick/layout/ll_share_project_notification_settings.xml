@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/tips" android:paddingLeft="24dp" android:paddingTop="8dp" android:paddingRight="24dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shared_lists_notification_tips" android:lineSpacingMultiplier="1.2"/>
+    <com.ticktick.task.view.selectableview.SelectableRelativeLayout android:id="@+id/settings_notification_complete_or_undo_task" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="56dp">
+        <TextView android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/complete_or_undo_task" android:layout_centerVertical="true" style="@style/PreferenceTextTitle"/>
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_notification_complete_or_undo_task" android:layout_alignParentRight="true" app:theme="@style/switch_color" style="@style/Switch_Preference_settings"/>
+    </com.ticktick.task.view.selectableview.SelectableRelativeLayout>
+    <com.ticktick.task.view.selectableview.SelectableRelativeLayout android:id="@+id/settings_notification_add_a_task" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="56dp">
+        <TextView android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_a_task" android:layout_centerVertical="true" style="@style/PreferenceTextTitle"/>
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_notification_add_a_task" android:layout_alignParentRight="true" app:theme="@style/switch_color" style="@style/Switch_Preference_settings"/>
+    </com.ticktick.task.view.selectableview.SelectableRelativeLayout>
+    <com.ticktick.task.view.selectableview.SelectableRelativeLayout android:id="@+id/settings_notification_delete_or_move_out_task" android:paddingLeft="24dp" android:layout_width="match_parent" android:layout_height="56dp">
+        <TextView android:textColor="?android:attr/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_or_remove_task" android:layout_centerVertical="true" style="@style/PreferenceTextTitle"/>
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/switch_notification_delete_or_move_out_task" android:layout_alignParentRight="true" app:theme="@style/switch_color" style="@style/Switch_Preference_settings"/>
+    </com.ticktick.task.view.selectableview.SelectableRelativeLayout>
+</LinearLayout>

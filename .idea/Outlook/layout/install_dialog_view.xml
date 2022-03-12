@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/install_dialog_linear_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="320dp">
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="@color/Gray8" android:id="@+id/install_dialog_title" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/install_dialog_icon" android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="4dp"/>
+    <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/Gray8" android:layout_gravity="center" android:id="@+id/install_dialog_text" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:background="@color/Gray5" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/install_dialog_button_layout" android:layout_width="match_parent" android:layout_height="47dp">
+        <Button android:id="@+id/install_dialog_left_button" style="@style/install_dialog_button"/>
+        <View android:id="@+id/install_dialog_betweenbuttons_border" android:background="@color/Gray5" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:id="@+id/install_dialog_right_button" style="@style/install_dialog_button"/>
+    </LinearLayout>
+</LinearLayout>

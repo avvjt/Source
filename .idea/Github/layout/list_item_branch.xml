@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:tag="layout/list_item_branch_0" android:background="@drawable/list_item_background" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:elevation="@dimen/default_elevation">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textColor="@color/textTertiary" android:ellipsize="end" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/Monospace"/>
+        <com.github.android.views.TransparentLabelView android:textSize="@dimen/body_text_size_small" android:tag="binding_2" android:padding="@dimen/default_margin_quarter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repository_branch_default_badge" android:fontFamily="@font/inter_regular" android:layout_marginStart="@dimen/default_margin_half" app:labelColor="1"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/circle_background" android:tag="binding_3" android:background="@drawable/circle_background_fill_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:backgroundTint="@color/systemBlue">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_16" android:contentDescription="@string/label_selected" app:tint="@color/gray_000"/>
+    </FrameLayout>
+</LinearLayout>

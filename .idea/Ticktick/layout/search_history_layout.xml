@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/search_history" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.EmptyViewLayout android:id="@+id/search_empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:layout_gravity="center" android:id="@+id/empty_view_img_bg" android:background="?attr/empty_view_bg" android:layout_width="146dp" android:layout_height="146dp"/>
+                <ImageView android:id="@+id/emptyView_img_lower" android:layout_width="200dp" android:layout_height="200dp" android:src="@drawable/icon_empty_search_history" android:scaleType="center"/>
+                <com.ticktick.task.view.IconTextView android:textSize="200sp" android:textColor="?attr/ej" android:id="@+id/emptyView_img_upper" android:layout_width="200dp" android:layout_height="200dp" android:text="@string/ic_svg_empty_search_history"/>
+            </FrameLayout>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/emptyView_title" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q7" android:lineSpacingMultiplier="1.4"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_horizontal" android:id="@+id/search_emptyView_summary" android:paddingLeft="50dp" android:paddingTop="5dp" android:paddingRight="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/q5" android:lineSpacingMultiplier="1.4"/>
+        </LinearLayout>
+    </com.ticktick.task.view.EmptyViewLayout>
+    <com.ticktick.task.view.selectableview.SelectableListView android:id="@+id/history_list" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="#00000000" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="true"/>
+    <com.ticktick.task.view.selectableview.SelectableTextView android:textSize="14sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:id="@+id/clear_history" android:layout_width="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/hi" android:layout_below="@+id/history_list" android:layout_centerHorizontal="true" style="@style/Text_Button"/>
+</RelativeLayout>

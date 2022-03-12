@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/color_item_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:importantForAccessibility="yes">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/lenshvc_color_item" android:background="@drawable/lenshvc_color_item" android:focusable="false" android:clickable="false" android:layout_width="@dimen/lenshvc_color_item_size" android:layout_height="@dimen/lenshvc_color_item_size" android:importantForAccessibility="no"/>
+</FrameLayout>

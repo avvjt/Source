@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/time_picker_dialog" android:focusable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/background" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include android:layout_gravity="center" android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="@dimen/header_height_white" layout="@layout/radial_time_header_label_white"/>
+        </FrameLayout>
+        <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/picker_dimen">
+            <com.ticktick.task.view.RadialPickerLayout android:layout_gravity="center" android:id="@+id/time_picker" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

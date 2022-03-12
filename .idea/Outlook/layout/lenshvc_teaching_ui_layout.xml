@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/teachingUIView" android:background="@color/lenshvc_transparent_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/lenshvc_teaching_ui_text_color" android:id="@+id/teachingUIText" android:background="@drawable/lenshvc_tooltip_rounded_corners" android:paddingTop="@dimen/lenshvc_gallery_tooltip_textview_padding" android:paddingBottom="@dimen/lenshvc_gallery_tooltip_textview_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/lenshvc_toast_vertical_padding" android:paddingEnd="@dimen/lenshvc_toast_vertical_padding"/>
+</LinearLayout>

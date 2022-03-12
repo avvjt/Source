@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="SwipeActionName">
+        <item>@string/settings_swipe_actions_save</item>
+        <item>@string/settings_swipe_actions_mark_as_read</item>
+        <item>@string/settings_swipe_actions_mark_as_done</item>
+        <item>@string/settings_swipe_actions_unsubscribe</item>
+    </array>
+    <array name="SwipeActionsValue">
+        <item>1</item>
+        <item>3</item>
+        <item>@null</item>
+        <item>2</item>
+    </array>
+    <array name="language_codes">
+        <item />
+        <item>en</item>
+        <item>es</item>
+        <item>pt-BR</item>
+        <item>ja</item>
+        <item>zh-CN</item>
+    </array>
+    <array name="languages">
+        <item>@string/settings_language_follow_system</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Português (Brasil)</item>
+        <item>日本語</item>
+        <item>简体中文</item>
+    </array>
+</resources>

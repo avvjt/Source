@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="72dp">
+        <RelativeLayout android:id="@+id/image_theme_container" android:background="@drawable/shadow_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+            <ProgressBar android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <com.ticktick.task.view.BottomCropImageView android:id="@+id/image_theme_preview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/offline" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+                <View android:layout_gravity="center" android:id="@+id/empty_view_img_bg" android:background="@drawable/empty_view_bg" android:layout_width="146dp" android:layout_height="146dp"/>
+                <ImageView android:id="@+id/emptyView_img_lower" android:layout_width="200dp" android:layout_height="200dp" android:src="@drawable/icon_empty_no_network" android:scaleType="center"/>
+                <com.ticktick.task.view.IconTextView android:textSize="200sp" android:textColor="?attr/ej" android:id="@+id/emptyView_img_upper" android:layout_width="200dp" android:layout_height="200dp" android:text="@string/ic_svg_empty_no_network"/>
+            </FrameLayout>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/emptyView_title" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b1q" android:lineSpacingMultiplier="1.4"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_horizontal" android:id="@+id/emptyView_summary" android:paddingLeft="50dp" android:paddingTop="5dp" android:paddingRight="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b25" android:lineSpacingMultiplier="1.4"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="?android:attr/textColorPrimaryInverse" android:id="@+id/use" android:background="@drawable/selector_positive_button" android:text="@string/b61" style="@style/BottomBtn"/>
+    </RelativeLayout>
+</RelativeLayout>

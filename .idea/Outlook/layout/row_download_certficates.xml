@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/conversation_details_message_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:divider="@drawable/horizontal_divider" android:showDividers="end|beginning">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/encrypt_icon" android:padding="4dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_file_certificate"/>
+        <TextView android:textSize="@dimen/outlook_text_size_caption" android:textColor="?android:attr/textColorSecondary" android:id="@+id/get_certificate_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.4" android:layout_marginStart="@dimen/outlook_content_inset"/>
+    </LinearLayout>
+</LinearLayout>

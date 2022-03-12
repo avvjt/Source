@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="@dimen/task_detail_input_bar_height">
+    <com.ticktick.task.view.actionableview.ActionableIconTextView android:id="@+id/input_tag" android:text="@string/ic_svg_special_tag" style="@style/detail_input_view_icon"/>
+    <EditText android:textSize="14sp" android:textColorHint="?android:attr/textColorHint" android:id="@+id/input_tag_et" android:visibility="invisible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:hint="@string/aa7" android:layout_weight="1" android:inputType="textAutoCorrect" android:imeOptions="actionDone"/>
+    <com.ticktick.task.view.actionableview.ActionableIconTextView android:id="@+id/input_item_reminder" android:text="@string/ic_svg_input_view_reminder" style="@style/detail_input_view_icon"/>
+    <com.ticktick.task.view.actionableview.ActionableIconTextView android:id="@+id/input_task_kind" android:text="@string/ic_svg_input_view_checklist" style="@style/detail_input_view_icon"/>
+    <com.ticktick.task.view.actionableview.ActionableIconTextView android:id="@+id/input_close_keyboard" android:text="@string/ic_svg_close_keyboard" style="@style/detail_input_view_icon"/>
+</LinearLayout>

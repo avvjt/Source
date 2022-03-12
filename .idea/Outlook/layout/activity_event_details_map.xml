@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:buttonGravity="top" outlook:contentInsetEnd="@dimen/outlook_content_inset" outlook:contentInsetRight="@dimen/outlook_content_inset" outlook:navigationIcon="@drawable/ic_fluent_arrow_left_24_regular" outlook:title="Coffee Cupping" style="@style/Widget.Outlook.Toolbar.Light"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <fragment android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" outlook:layout_behavior="@string/appbar_scrolling_view_behavior" class="com.google.android.gms.maps.SupportMapFragment"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/btn_direction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/outlook_content_inset" android:src="@drawable/ic_fluent_directions_24_filled" android:contentDescription="@string/get_directions" android:layout_marginEnd="@dimen/outlook_content_inset" outlook:backgroundTint="?attr/colorAccent" outlook:layout_anchor="@+id/map" outlook:layout_anchorGravity="0x800055" style="@style/Widget.Outlook.FloatingActionButton"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

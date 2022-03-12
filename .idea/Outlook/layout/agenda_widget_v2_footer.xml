@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/agenda_widget_footer_root" android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/footer_text" android:paddingTop="@dimen/agenda_widget_v2_footer_padding_top" android:paddingBottom="@dimen/agenda_widget_v2_footer_padding_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/WidgetFooter"/>
+</LinearLayout>

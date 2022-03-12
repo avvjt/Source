@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/layout_root_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" outlook:spaceMode="1">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/toolbarStyle">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/toolbar_container" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.Widget.Outlook.ToolBar.Title" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false"/>
+            <TextView android:textAppearance="@style/TextAppearance.Widget.Outlook.ToolBar.Subtitle" android:gravity="center_vertical" android:id="@+id/toolbar_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawablePadding="8dp"/>
+        </LinearLayout>
+    </com.microsoft.office.outlook.uikit.widget.Toolbar>
+    <FrameLayout android:id="@+id/fragment_container" android:background="@drawable/layout_content_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@+id/interesting_calendar_coordinator" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/interesting_calendar_appbar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.microsoft.office.outlook.uikit.view.OMRecyclerView android:id="@+id/addin_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <include android:id="@+id/minor_addins_error_page" android:visibility="gone" layout="@layout/minor_addins_error_page"/>
+    </FrameLayout>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

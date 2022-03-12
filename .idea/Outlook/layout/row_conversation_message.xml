@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.acompli.acompli.ui.conversation.v3.views.MessageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/message_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/message_margin">
+    <com.acompli.acompli.ui.conversation.v3.views.ClpTimeLineView android:gravity="center_vertical" android:id="@+id/clp_timeline" android:background="@color/clp_timeline_background_color" android:paddingTop="4dp" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <com.acompli.acompli.ui.conversation.v3.views.MessageCardView android:id="@+id/message_card_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/message_thread_margin" android:layout_marginEnd="@dimen/message_thread_margin">
+        <LinearLayout android:orientation="vertical" android:id="@+id/message_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.acompli.acompli.ui.conversation.v3.views.MessageHeaderView android:id="@+id/message_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.acompli.acompli.ui.conversation.v3.views.MessageAttachmentsView android:id="@+id/message_attachments" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/outlook_content_inset"/>
+            <com.microsoft.office.outlook.uiappcomponent.widget.event.MessageInvitationView android:id="@+id/message_invitation" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.acompli.acompli.ui.conversation.v3.views.MessageCalendarInvitationView android:id="@+id/message_calendar_invitation" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/layout_addin_notification_list" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <FrameLayout android:id="@+id/message_body_container" android:padding="@dimen/outlook_divider_height" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/message_body_min_height">
+                <include layout="@layout/view_message_loading_shimmer"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/message_body_read_more" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/outlook_content_inset" android:text="@string/email_rendering_read_more" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset" style="@style/Widget.Outlook.Button.AccentBorder"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/message_footer_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-16dp">
+                <com.acompli.acompli.ui.conversation.v3.views.MessageFooterView android:id="@+id/message_footer_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.acompli.acompli.ui.conversation.v3.views.ReactionView android:id="@+id/reaction_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.acompli.acompli.ui.conversation.v3.views.MessageCardView>
+</com.acompli.acompli.ui.conversation.v3.views.MessageView>

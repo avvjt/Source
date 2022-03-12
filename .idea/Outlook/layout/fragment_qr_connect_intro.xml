@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:spaceMode="1">
+    <com.microsoft.office.outlook.illustration.IllustrationStateView android:id="@+id/content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" app:subtitle="@string/qr_connect_intro_description" app:title="@string/qr_connect_intro_title"/>
+    <com.microsoft.office.outlook.uikit.widget.StackButtonGroupView android:id="@+id/button_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" app:primaryButtonText="@string/qr_connect_scan_code_cta" app:secondaryButtonText="@string/qr_connect_manual_sign_in_cta"/>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

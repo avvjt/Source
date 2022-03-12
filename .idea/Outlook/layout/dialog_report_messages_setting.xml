@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:title="@string/action_report_message" style="@style/Widget.Outlook.Toolbar.Dialog"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/report_messages_account_dialog_message" android:paddingStart="@dimen/abc_dialog_padding_material" android:paddingEnd="@dimen/abc_dialog_padding_material"/>
+    <RadioGroup android:id="@+id/report_messages_account_dialog_radio_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/abc_dialog_padding_material" android:checkedButton="@+id/report_messages_account_dialog_radio_ask" android:paddingStart="@dimen/abc_dialog_padding_material" android:paddingEnd="@dimen/abc_dialog_padding_material">
+        <RadioButton android:id="@+id/report_messages_account_dialog_radio_ask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_messages_account_dialog_option_ask"/>
+        <RadioButton android:id="@+id/report_messages_account_dialog_radio_always" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_messages_account_dialog_option_always"/>
+        <RadioButton android:id="@+id/report_messages_account_dialog_radio_never" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_messages_account_dialog_option_never"/>
+    </RadioGroup>
+</LinearLayout>

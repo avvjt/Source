@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_layout" android:background="@drawable/layout_root_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:spaceMode="1">
+    <include layout="@layout/app_bar_layout"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/settings_coordinatorLayout" android:background="@drawable/layout_content_background" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.microsoft.office.outlook.uikit.widget.HeightAdjustmentBehavior"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

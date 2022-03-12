@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/calendar_edit_bottom_height">
+    <Button android:id="@+id/ed" android:text="@string/b5e" android:layout_centerInParent="true" style="@style/BottomBtn"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/error_bottom_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <Button android:textColor="?attr/ej" android:id="@+id/reauthorize" android:layout_width="0dp" android:text="@string/aqw" android:layout_weight="1" style="@style/BottomBtn"/>
+        <Button android:textColor="@color/primary_red" android:id="@+id/unsubscribe" android:layout_width="0dp" android:text="@string/b5e" android:layout_weight="1" style="@style/BottomBtn"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/outlook_app_divider"/>
+    </item>
+    <item android:top="@dimen/outlook_divider_height" android:bottom="@dimen/outlook_divider_height">
+        <color android:color="@color/conversation_details_message_surface"/>
+    </item>
+</layer-list>

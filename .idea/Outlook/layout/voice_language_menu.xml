@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/height_248dp">
+    <RelativeLayout android:background="@drawable/voice_settings_heading_background" android:layout_width="match_parent" android:layout_height="@dimen/height_44dp">
+        <ImageView android:id="@+id/voice_language_selection_back_button" android:padding="@dimen/padding_14dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/voice_settings_back_button" android:contentDescription="@string/ar"/>
+        <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/vhvc_blue2" android:gravity="center" android:id="@+id/voice_language_selection_heading" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/ah" android:contentDescription="@string/ah" android:layout_marginStart="@dimen/margin_44dp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/voice_language_recycler_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

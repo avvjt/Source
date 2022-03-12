@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="?attr/dialog_bg_color" app:cardCornerRadius="@dimen/corners_radius_dialog" app:cardElevation="0dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:id="@+id/tips_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:text="@string/arn" style="@style/PreferenceTextTitle"/>
+        <TextView android:textSize="15sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/tips_text2" android:paddingLeft="8dp" android:paddingRight="8dp" android:text="@string/as9" style="@style/TextView_Multiline_Message_Preference"/>
+        <com.ticktick.task.view.selectableview.SelectableListView android:id="@+id/tips_list" android:paddingBottom="10dp" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0dp"/>
+        <ImageView style="?attr/tt_divider"/>
+        <androidx.appcompat.widget.ButtonBarLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/ee" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/c9">
+            <com.ticktick.task.view.selectableview.SelectableAppCompatButton android:textColor="?attr/ej" android:id="@android:id/button3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" style="?attr/c7"/>
+            <androidx.legacy.widget.Space android:id="@+id/ac_" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <com.ticktick.task.view.selectableview.SelectableAppCompatButton android:textColor="?attr/ej" android:id="@android:id/button2" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/p6" style="?attr/c6"/>
+            <com.ticktick.task.view.selectableview.SelectableAppCompatButton android:textColor="?attr/ej" android:id="@android:id/button1" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mu" style="?attr/c8"/>
+        </androidx.appcompat.widget.ButtonBarLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

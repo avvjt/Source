@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_select_all_on_24_regular" android:id="@+id/action_select_all" android:title="@string/action_select_all" app:iconTint="@color/icon_white_selector" app:showAsAction="always"/>
+</menu>

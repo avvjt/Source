@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <FrameLayout android:id="@+id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/ww" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_normal_list"/>
+            <TextView android:textColor="?attr/go_today_text_color" android:id="@+id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/date_icon_text_style"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:id="@+id/ag9" android:singleLine="true" android:layout_toLeftOf="@+id/right_layout" android:layout_toRightOf="@+id/left_layout" android:layout_alignWithParentIfMissing="true" android:marqueeRepeatLimit="10" style="@style/dialog_text_style"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/selection_icon" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/selection_checkbox" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

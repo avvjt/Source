@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/show_all_commands_help_layout" android:layout_width="match_parent" android:layout_height="@dimen/height_248dp">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recview" android:background="@drawable/voice_settings_row_background" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

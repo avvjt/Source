@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:tag="layout/list_item_top_repository_0" android:background="@drawable/list_item_background" android:paddingTop="@dimen/default_margin_0_75x" android:paddingBottom="@dimen/default_margin_0_75x" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:elevation="@dimen/default_elevation">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/organization_avatar" android:tag="binding_1" android:layout_width="@dimen/avatar_32" android:layout_height="@dimen/avatar_32" android:layout_marginEnd="@dimen/default_margin"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1">
+        <TextView android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Tertiary.Small"/>
+        <TextView android:textSize="@dimen/body_text_size" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/inter_medium"/>
+    </LinearLayout>
+</LinearLayout>

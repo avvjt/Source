@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_layout" android:background="?attr/i" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+        <LinearLayout android:id="@+id/title_text_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true">
+            <TextView android:textSize="20sp" android:textColor="?attr/actionBarTextColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ic_spinner_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/spinner_down" android:scaleType="center" android:tint="?attr/iconColorPrimary" android:layout_toRightOf="@+id/title_text_layout" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/share_user_layout" android:background="?attr/i" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:layout_toLeftOf="@+id/fl_overflow" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/set_assign_icon" android:layout_width="24dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/ic_svg_assign_others" android:layout_centerInParent="true"/>
+        <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/share_user_photo" android:background="?attr/colorHighlight" android:visibility="gone" android:layout_width="@dimen/action_bar_photo_frame_width" android:layout_height="@dimen/action_bar_photo_frame_height" android:src="@drawable/default_photo_light" android:scaleType="fitXY" android:layout_centerInParent="true" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_overflow" android:background="?attr/i" android:layout_width="?attr/k" android:layout_height="?attr/k" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="end|center_vertical" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="10dp" android:src="@drawable/ic_overflow" android:scaleType="fitXY" android:tint="?attr/iconColorPrimary"/>
+    </FrameLayout>
+</RelativeLayout>

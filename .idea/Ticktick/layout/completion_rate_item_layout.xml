@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/itemForeground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/ai6" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/jd"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+            <TextView android:textSize="22sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/rate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00%"/>
+            <TextView android:textSize="14sp" android:textColor="@color/primary_red" android:id="@+id/offset_rate_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="-0%"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="9">
+            <com.ticktick.task.view.CircleRingProgress android:id="@+id/progress_view" android:layout_width="108dp" android:layout_height="108dp" android:layout_marginTop="14dp" app:progress_color="@color/primary_red" app:railway_color="?attr/progress_railway_color" app:stoke_width="7dp"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp">
+                <ImageView android:background="@drawable/circle_background_primary_red" android:layout_width="6dp" android:layout_height="6dp" android:layout_margin="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/primary_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36dp" android:text="@string/j6"/>
+                <ImageView android:id="@+id/icon_undone_circle" android:background="@drawable/circle_background_gray" android:layout_width="6dp" android:layout_height="6dp" android:layout_margin="8dp"/>
+                <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/b5_"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

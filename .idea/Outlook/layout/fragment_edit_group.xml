@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/outlook_content_inset">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/edited_group_avatar" android:layout_width="@dimen/group_edit_avatar_size" android:layout_height="@dimen/group_edit_avatar_size" android:importantForAccessibility="no"/>
+            <com.microsoft.office.outlook.avatar.ui.widgets.PersonAvatar android:layout_gravity="center_horizontal" android:id="@+id/group_avatar" android:layout_width="@dimen/group_edit_avatar_size" android:layout_height="wrap_content" android:importantForAccessibility="no" style="@style/Widget.Outlook.PersonAvatar"/>
+            <ImageButton android:id="@+id/edit_group_avatar_layout" android:background="@drawable/edit_avatar_background" android:layout_width="@dimen/group_edit_avatar_size" android:layout_height="@dimen/group_edit_avatar_size" android:src="@drawable/ic_fluent_camera_24_regular" android:scaleType="centerInside" android:contentDescription="@string/accessibility_edit_group_photo" app:tint="@color/outlook_app_on_primary"/>
+        </FrameLayout>
+        <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@+id/group_name_display" android:text="@string/label_group_name" style="@style/InputTextLayoutLabel"/>
+            <com.google.android.material.textfield.TextInputLayout android:id="@+id/input_layout_group_name" app:hintEnabled="false" style="@style/GroupFormTextInputLayout">
+                <EditText android:id="@+id/input_group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_group_name" android:accessibilityTraversalAfter="@+id/group_name_display" style="@style/Widget.Outlook.TextInputLayout.EditText.Large"/>
+                <TextView android:textColor="@color/grey300" android:ellipsize="end" android:id="@+id/decorated_group_name" android:padding="@dimen/decorated_group_name_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <ProgressBar android:id="@+id/progress_bar_group_name" style="@style/Widget.Outlook.ProgressBar.Blue.TextInputLayout"/>
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout android:gravity="center_vertical" android:id="@+id/input_layout_group_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/outlook_content_inset" android:hint="@string/label_group_email" app:hintAnimationEnabled="false" style="@style/ListItem.Row">
+            <EditText android:textColor="?android:attr/textColorSecondary" android:id="@+id/input_group_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:id="@+id/heading_group_setting" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_group_heading_group_settings" style="@style/ListItem.Header"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/group_description_block" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_group_description_label" style="@style/ListItem.Title"/>
+                <TextView android:id="@+id/group_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/hint_edit_group_description" style="@style/ListItem.Summary"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/group_privacy_block" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_group_privacy_label" style="@style/ListItem.Title"/>
+                <TextView android:id="@+id/group_privacy" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Summary"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/group_language_block" android:background="@drawable/item_background" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language" style="@style/ListItem.Title"/>
+                <TextView android:id="@+id/group_language" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Summary"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/group_data_classification_block" android:background="@drawable/item_background" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@+id/group_data_classification_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_activity_edit_classification" style="@style/ListItem.Title"/>
+                <TextView android:id="@+id/group_data_classification" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItem.Summary"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/group_allow_external_members_block" style="@style/Groups_SettingCheckboxItem">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/title_activity_allow_external_senders" android:layout_weight="1" style="@style/ListItem.Title"/>
+                <ImageButton android:id="@+id/allow_external_senders_help" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_fluent_question_circle_24_regular" android:contentDescription="@string/external_mail_help"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/allow_external_senders_checkbox" style="@style/Groups_SettingSwitchCompat"/>
+        </LinearLayout>
+        <TextView android:id="@+id/member_settings_heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/edit_group_heading_member_settings" style="@style/ListItem.Header"/>
+        <LinearLayout android:id="@+id/group_follow_in_inbox_block" style="@style/Groups_SettingCheckboxItem">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/settings_group_follow_in_inbox" android:layout_weight="1" style="@style/ListItem.Title"/>
+                <ImageButton android:id="@+id/follow_in_inbox_help" android:background="@null" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_fluent_question_circle_24_regular" android:contentDescription="@string/follow_in_inbox_help"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/follow_in_inbox_checkbox" style="@style/Groups_SettingSwitchCompat"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/usage_guidelines_block" android:background="@drawable/item_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/group_usage_guidelines" style="@style/ListItem.Row">
+            <ImageView android:src="@drawable/ic_fluent_info_24_regular" android:importantForAccessibility="no" app:tint="?attr/colorAccent" style="@style/ListItem.Icon"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_usage_guidelines" android:importantForAccessibility="no" style="@style/ListItem.Title.Action"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/delete_group_block" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/delete_group" style="@style/ListItem.Row">
+            <ImageView android:src="@drawable/ic_fluent_delete_24_regular" android:importantForAccessibility="no" app:tint="?attr/dangerPrimary" style="@style/ListItem.Icon"/>
+            <TextView android:textColor="?attr/dangerPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_group" android:importantForAccessibility="no" style="@style/ListItem.Title.Action"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

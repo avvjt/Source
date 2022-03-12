@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.uiappcomponent.widget.account.AccountPickerView android:id="@+id/account_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_picker_content_mode_height" app:mode="oneLine"/>
+</LinearLayout>

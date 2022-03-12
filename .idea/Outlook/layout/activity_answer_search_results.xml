@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" outlook:spaceMode="0">
+    <include layout="@layout/toolbar"/>
+    <FrameLayout android:id="@+id/recycler_view_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_results_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/search_answer_vertical_margin_16" android:layout_marginBottom="@dimen/search_answer_vertical_margin_16" android:layout_marginVertical="@dimen/search_answer_vertical_margin_16" outlook:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </FrameLayout>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

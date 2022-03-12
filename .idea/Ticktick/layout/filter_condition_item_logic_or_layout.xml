@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/logic_or_background" style="@style/filter_container_item_style">
+    <com.ticktick.task.view.selectableview.SelectableTextView android:textColor="@color/color_green_logic_or" android:id="@+id/tv_have_problem" android:text="@string/aim" style="@style/filter_item_style"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ticktick.task.view.WeekHeaderLabelsView android:id="@+id/week_header_labels" android:layout_width="match_parent" android:layout_height="@dimen/week_day_header_height"/>
+        <com.ticktick.task.view.AllDayScrollView android:id="@+id/week_all_day_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="22dp" android:fillViewport="true">
+            <com.ticktick.task.view.AllDayHeaderView android:orientation="horizontal" android:id="@+id/week_all_day_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.ticktick.task.view.AllDayScrollView>
+        <ImageView android:id="@+id/top_divider" style="?attr/tt_divider"/>
+        <com.ticktick.task.view.PagedScrollView android:id="@+id/week_days_scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.ticktick.task.view.GridViewFrame android:orientation="horizontal" android:id="@+id/week_days_content" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content" custom:draw_hours="false">
+                <include layout="@layout/week_day_content"/>
+                <include layout="@layout/week_day_content"/>
+                <include layout="@layout/week_day_content"/>
+                <include layout="@layout/week_day_content"/>
+                <include layout="@layout/week_day_content"/>
+                <include layout="@layout/week_day_content"/>
+                <include layout="@layout/week_day_content"/>
+            </com.ticktick.task.view.GridViewFrame>
+        </com.ticktick.task.view.PagedScrollView>
+    </LinearLayout>
+</FrameLayout>

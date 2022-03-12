@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/head_content" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText android:textColor="?android:attr/textColorPrimary" android:textColorHint="?android:attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/tv_filter_name" android:background="?attr/activity_background" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/edit_text_default_height" android:hint="@string/aq0" android:maxLines="1"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/a6r" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+</LinearLayout>

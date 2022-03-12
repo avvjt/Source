@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_share_android_24_regular" android:id="@+id/image_viewer_menu_share" android:title="@string/menu_action_share" app:iconTint="?attr/omAutoTintActionColor" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/image_viewer_menu_open_with" android:title="@string/image_viewer_open_with" app:showAsAction="never"/>
+    <item android:id="@+id/image_viewer_menu_save_to_device" android:title="@string/action_save" app:showAsAction="never"/>
+</menu>

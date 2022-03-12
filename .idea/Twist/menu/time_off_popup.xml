@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_timeoff_edit" android:title="@string/pref_profile_photo_menu_edit_time_off"/>
     <item android:id="@+id/menu_timeoff_end" android:title="@string/pref_profile_photo_menu_end_time_off"/>
 </menu>

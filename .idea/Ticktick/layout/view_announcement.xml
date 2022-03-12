@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/special_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/ic_svg_office_post"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white_alpha_100" android:layout_gravity="center_vertical" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginRight="56dp" android:maxLines="2"/>
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:layout_gravity="end|center_vertical" android:id="@+id/tv_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/ic_svg_clear_min"/>
+</merge>

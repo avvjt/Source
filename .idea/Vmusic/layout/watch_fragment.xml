@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.youtube.music.player.PlayerPanel xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:id="@+id/player_panel" android:background="@color/yt_black_pure" android:layout_width="0dp" android:layout_height="0dp" android:contentDescription="@string/accessibility_video_player">
+    <com.google.android.apps.youtube.music.player.MusicPlayerView android:id="@+id/watch_player" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/player_error_icon_layout" android:background="@color/darker_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/player_error_icon" android:layout_width="@dimen/watch_while_mini_player_error_icon_size" android:layout_height="@dimen/watch_while_mini_player_error_icon_size" android:layout_margin="@dimen/item_extra_small_spacing" android:tint="@color/ytm_color_grey_06" android:layout_centerInParent="true" android:contentDescription="@null" yt:srcCompat="@drawable/yt_outline_alert_circle_white_24"/>
+    </RelativeLayout>
+</com.google.android.apps.youtube.music.player.PlayerPanel>

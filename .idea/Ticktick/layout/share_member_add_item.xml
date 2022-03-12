@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:roundedImageView="http://schemas.android.com/apk/res-auto" android:id="@+id/layout" android:background="?attr/itemForeground" android:layout_width="match_parent" android:layout_height="56dp">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/photo" android:layout_width="56dp" android:layout_height="56dp" android:layout_alignParentLeft="true">
+        <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/qu" android:background="?attr/textColorPrimaryTint" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="center" android:layout_centerInParent="true" roundedImageView:mutate_background="true" roundedImageView:oval="true"/>
+        <com.ticktick.task.view.IconTextView android:textSize="20sp" android:textColor="?attr/activity_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_add_project" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_toRightOf="@+id/photo">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ba" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/bottom_divider" android:visibility="gone" android:layout_marginLeft="56dp" android:layout_alignParentBottom="true" style="?attr/tt_divider"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

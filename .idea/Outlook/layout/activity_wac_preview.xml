@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="48dp" android:elevation="@dimen/design_appbar_elevation" style="@style/Widget.Outlook.Toolbar"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/grey50" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/link_progress_bar" android:background="?attr/colorAccentHighlighted" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/progress_total_height" android:layout_marginTop="@dimen/progress_margin_height" android:layout_marginBottom="@dimen/progress_margin_height" android:indeterminate="true" android:indeterminateTint="?attr/colorAccent" style="?android:attr/progressBarStyleHorizontal"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.microsoft.office.outlook.previewer.view.WacPreviewer android:id="@+id/wac_previewer_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/open_in_office_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="48dp" android:layout_margin="40dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:elevation="4dp" style="@style/Widget.Outlook.Button.MercuryBorder.Rounded"/>
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:id="@+id/viewer_loading_view" android:background="@color/outlook_app_surface_under_page" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/loading" android:maxLines="1" android:singleLine="true" android:textIsSelectable="false"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/viewer_error_view" android:background="@color/outlook_app_surface_primary" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/wxp_icon" android:layout_width="48dp" android:layout_height="48dp"/>
+                <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:id="@+id/error_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+                <Button android:id="@+id/open_in_another_app_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/open_in_another_app" style="?attr/outlookAccentBorderlessButtonStyle"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

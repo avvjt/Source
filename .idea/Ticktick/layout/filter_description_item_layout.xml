@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="72dp">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/preference_margin" android:layout_weight="1">
+            <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextTitle"/>
+            <TextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextSummary"/>
+            <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/filter_error" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/ic_svg_error" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@android:id/widget_frame" android:paddingRight="@dimen/preference_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/bottom_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginLeft="@dimen/preference_margin" android:layout_alignParentBottom="true" layout="@layout/preference_divider"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end">
+    <ImageView android:gravity="center" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginTop="12dp" android:src="@drawable/ic_bing_calendars" android:scaleType="fitCenter" android:tint="@color/interesting_calendar_header_tint"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginRight="48dp" android:layout_marginBottom="24dp" android:text="@string/interesting_calendar_header_text" android:layout_marginStart="48dp" android:layout_marginEnd="48dp"/>
+</LinearLayout>

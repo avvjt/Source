@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_content" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ticktick.task.view.ArrangeTaskDrawerLayout android:id="@+id/arrange_task_drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+            <FrameLayout android:id="@+id/list_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <FrameLayout android:layout_gravity="end" android:id="@+id/arrange_task_container" android:background="?attr/activity_background" android:fitsSystemWindows="true" android:layout_width="@dimen/arrange_task_fragment_width" android:layout_height="match_parent"/>
+        </com.ticktick.task.view.ArrangeTaskDrawerLayout>
+        <ViewStub android:id="@+id/choose_calendar_mode" android:visibility="gone" android:layout="@layout/choose_calendar_mode_view" android:layout_width="match_parent" android:layout_height="@dimen/choose_calendar_mode_height" android:layout_below="@+id/toolbar"/>
+        <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+        <ImageView android:id="@+id/top_divider" android:layout_below="@+id/toolbar" style="?attr/tt_divider"/>
+        <include android:id="@+id/toolbar_shadow" layout="@layout/toolbar_shadow"/>
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@+id/add_task_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_add_key_inside" android:tint="@color/white_alpha_100" app:backgroundTint="?attr/colorAccentFab"/>
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="end|bottom" android:id="@+id/cancel_drag_view" android:visibility="gone" android:layout_width="@dimen/ec" android:layout_height="@dimen/ec" android:layout_margin="16dp" android:src="@color/black_alpha_100_light"/>
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:layout_gravity="end|bottom" android:id="@+id/cancel_drag_im" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/ic_svg_cancel_drag"/>
+    <TextView android:textSize="14sp" android:textColor="@color/white_alpha_100" android:gravity="center_horizontal" android:layout_gravity="end|bottom" android:id="@+id/cancel_drag_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginBottom="75dp" android:text="@string/f_"/>
+    <com.ticktick.task.view.UndoFloatingActionButton android:layout_gravity="start|bottom" android:id="@+id/undo_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_undo" android:tint="@color/white_alpha_100" app:backgroundTint="@color/special_bg_color" app:fabCustomSize="48dp" app:maxImageSize="24dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

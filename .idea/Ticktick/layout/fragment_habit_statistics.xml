@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70dp" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="28sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/tv_total_check_ins" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/yu"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="28sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/tv_max_streak" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/y0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="28sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/tv_current_streak" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/wc"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?attr/divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="24dp" android:layout_marginTop="8dp" android:layout_marginRight="24dp" android:layout_marginBottom="8dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginBottom="8dp">
+        <com.ticktick.task.view.IconTextView android:textSize="38sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/pre_btn_text" android:background="?attr/i" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginLeft="8dp" android:text="@string/ic_svg_arraw" android:rotation="90"/>
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="center" android:id="@+id/tv_time" android:background="?attr/sl" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.ticktick.task.view.IconTextView android:textSize="38sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/next_btn_text" android:background="?attr/i" android:layout_width="42dp" android:layout_height="42dp" android:layout_marginRight="8dp" android:text="@string/ic_svg_arraw" android:rotation="-90"/>
+    </FrameLayout>
+    <include android:id="@+id/habit_calendar_set_layout" layout="@layout/habit_calendar_set_layout"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" style="?attr/tt_divider"/>
+    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/tv_month_rate_label" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_marginLeft="22dp" android:text="@string/total_rate"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="32dp">
+        <TextView android:textSize="24sp" android:textColor="?android:attr/textColorPrimary" android:gravity="start" android:id="@+id/tv_month_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:minWidth="48dp"/>
+        <com.ticktick.task.view.LineProgress android:layout_gravity="center_vertical" android:id="@+id/progress_month_rate" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:orientation="horizontal" app:progress_color="@color/primary_green_100" app:progress_highlight_color="@color/primary_green_100" app:railway_color="?attr/progress_railway_color" app:stoke_width="8dp"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/tv_month_total_check_ins" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="22dp" android:layout_marginTop="26dp"/>
+    <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/tv_month_max_streak" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="22dp"/>
+    <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/tv_month_plan_check_ins" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_marginLeft="22dp"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="22dp" android:layout_marginTop="32dp" android:layout_marginRight="22dp" style="?attr/tt_divider"/>
+    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/tv_daily_goals" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_marginLeft="22dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_month_goal_chart" android:layout_width="match_parent" android:layout_height="192dp">
+        <com.ticktick.task.view.MonthLineChartAxisYView android:id="@+id/axis_view_chart_y" android:layout_width="48dp" android:layout_height="match_parent"/>
+        <HorizontalScrollView android:id="@+id/scroll_chart_month_goal" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="24dp" android:overScrollMode="never">
+            <com.ticktick.task.view.MonthLineProgressChartView android:id="@+id/chart_view_month_goal" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <View android:layout_width="wrap_content" android:layout_height="32dp"/>
+</LinearLayout>

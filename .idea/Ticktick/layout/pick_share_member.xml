@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/search_layout" android:layout_width="match_parent" android:layout_height="56dp">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_width="56dp" android:layout_height="wrap_content" android:text="@string/ic_svg_search"/>
+        <EditText android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:textColorHint="?android:attr/textColorHint" android:layout_gravity="center_vertical" android:id="@+id/input" android:background="@null" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="32dp" android:hint="@string/aaj" android:layout_weight="1" android:inputType="textEmailAddress" android:imeOptions="actionDone"/>
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/clear" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/ic_svg_clear_min"/>
+    </LinearLayout>
+    <ImageView style="?attr/tt_divider"/>
+    <LinearLayout android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.ticktick.task.view.RecyclerViewEmptySupport android:id="@+id/member_list" android:background="?attr/activity_background" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@android:id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/emptyView_img" android:background="@drawable/empty_view_bg_light" android:layout_width="156dp" android:layout_height="156dp" android:layout_marginTop="70dp" android:scaleType="center"/>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_horizontal" android:id="@+id/emptyView_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/aak"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_fluent_mail_24_selector" android:id="@+id/action_mail" android:title="@string/mail_tab_name" android:checkable="true" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_search_24_selector" android:id="@+id/action_search" android:title="@string/search" android:checkable="true" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_fluent_calendar_empty_24_regular" android:id="@+id/action_calendar" android:title="@string/calendar_tab_name" android:checkable="true" outlook:showAsAction="always"/>
+</menu>

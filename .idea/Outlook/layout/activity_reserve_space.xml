@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/container" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:theme="@style/ThemeOverlay.Outlook.Toolbar.NoTintNavigation" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" outlook:contentInsetStart="64dp" outlook:contentInsetStartWithNavigation="0dp" style="?attr/toolbarStyle"/>
+    <com.acompli.acompli.views.ObservableScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/horizontal_divider_with_left_content_margin" android:animateLayoutChanges="true" android:showDividers="middle">
+            <com.microsoft.office.outlook.calendar.compose.MeetingTimeLayout android:orientation="vertical" android:id="@+id/date_controls_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider_with_left_content_margin" android:showDividers="middle"/>
+            <include android:id="@+id/layout_selected_room" layout="@layout/row_choose_room"/>
+            <com.microsoft.office.outlook.calendar.reservespace.SpaceView android:id="@+id/layout_selected_space" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row"/>
+            <com.microsoft.office.outlook.calendar.reservespace.IndoorMapWebView android:id="@+id/indoor_map_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/list_item_row_padding_top" android:layout_weight="1"/>
+        </LinearLayout>
+    </com.acompli.acompli.views.ObservableScrollView>
+</com.microsoft.office.outlook.uikit.widget.DrawInsetsLinearLayout>

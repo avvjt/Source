@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/widget_undone_count_layout" android:layout_width="52dp" android:layout_height="72dp">
+    <TextView android:id="@+id/widget_background" android:background="@mipmap/ic_launcher" android:layout_width="52dp" android:layout_height="52dp"/>
+    <RelativeLayout android:id="@+id/widget_icon_badge_view" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_icon_badge" android:scaleType="center" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/white_alpha_100" android:id="@+id/widget_undone_count_number_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12dp" android:textStyle="normal" android:textColor="#bbffffff" android:gravity="center_horizontal" android:id="@+id/widget_undone_count_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="3dp" android:layout_marginRight="6dp" android:layout_marginBottom="1dp" android:text="@string/cn" android:layout_below="@+id/widget_background" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textColor="?attr/actionBarTextColorPrimary" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/ai6" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:layout_toLeftOf="@+id/option_layout" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/option_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:indeterminateDrawable="@drawable/progress_medium_holo"/>
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/daily_reminder" android:background="@drawable/action_bar_item_background_holo_light" android:visibility="gone" android:layout_width="56dp" android:layout_height="match_parent" android:text="@string/ic_svg_daily_reminder_actionbar"/>
+    </LinearLayout>
+</RelativeLayout>

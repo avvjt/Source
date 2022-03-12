@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_wrong_auto_detect" android:title="@string/onboarding_change_account_provider"/>
+    <item android:id="@+id/menu_contact_support" android:title="@string/contact_support"/>
+    <item android:id="@+id/menu_collect_diagnostics" android:title="@string/settings_collect_intune_diagnostics"/>
+    <item android:id="@+id/menu_share_diagnostics" android:title="@string/settings_share_diagnostic_logs"/>
+</menu>

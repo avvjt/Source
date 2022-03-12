@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="20dp" android:width="20dp" android:viewportWidth="20" android:viewportHeight="20">
+    <path android:fillColor="@color/fluent_default_icon_tint" android:pathData="M15 3H5C4.735 3 4.48 3.105 4.293 3.293 4.105 3.48 4 3.735 4 4v12c0 0.265 0.105 0.52 0.293 0.707C4.48 16.895 4.735 17 5 17h2c0.265 0 0.52-0.105 0.707-0.293C7.895 16.52 8 16.265 8 16v-1h3c0.265 0 0.52-0.105 0.707-0.293C11.895 14.52 12 14.265 12 14v-2h3c0.265 0 0.52-0.105 0.707-0.293C15.895 11.52 16 11.265 16 11V4c0-0.265-0.105-0.52-0.293-0.707C15.52 3.105 15.265 3 15 3zm0 1v7h-3V4h3zm-4 0v3H8V4h3zm0 4v6H8V8h3zm-4 8H5v-5h2v5zm-2-6V4h2v6H5z"/>
+</vector>

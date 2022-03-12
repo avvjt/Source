@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/drop_zone_background"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/drop_zone_padding" android:top="@dimen/drop_zone_padding" android:right="@dimen/drop_zone_padding" android:bottom="@dimen/drop_zone_padding">
+        <selector>
+            <item android:state_enabled="true">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/drop_zone_dash_border" android:color="@color/drop_zone_dashed_line_enabled" android:dashWidth="@dimen/drop_zone_dash_width" android:dashGap="@dimen/drop_zone_dash_width"/>
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/drop_zone_dash_border" android:color="@color/drop_zone_dashed_line_disabled" android:dashWidth="@dimen/drop_zone_dash_width" android:dashGap="@dimen/drop_zone_dash_width"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/settings_icon" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="24dp" android:scaleType="centerInside" android:importantForAccessibility="no" android:layout_marginEnd="24dp"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:ellipsize="end" android:id="@+id/settings_title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:importantForAccessibility="no" android:textDirection="locale"/>
+    <Button android:id="@+id/settings_action_open" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Outlook.Button.AccentBorder"/>
+    <Button android:textColor="@color/accent_button_text_selector" android:id="@+id/settings_action_install" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Outlook.Button.Accent"/>
+</LinearLayout>

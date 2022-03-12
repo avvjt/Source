@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Spinner android:id="@+id/week_picker_accessibility" android:paddingTop="@dimen/week_of_month_picker_padding_vertical" android:paddingBottom="@dimen/week_of_month_picker_padding_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/week_of_month_picker_padding" android:paddingEnd="@dimen/week_of_month_picker_padding"/>
+    <View android:background="@color/outlook_app_divider" android:layout_width="@dimen/outlook_divider_width" android:layout_height="match_parent"/>
+    <Spinner android:id="@+id/day_of_week_picker_accessibility" android:paddingTop="@dimen/week_of_month_picker_padding_vertical" android:paddingBottom="@dimen/week_of_month_picker_padding_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:paddingStart="@dimen/week_of_month_picker_padding" android:paddingEnd="@dimen/week_of_month_picker_padding"/>
+</merge>

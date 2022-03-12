@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:id="@+id/app_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:stateListAnimator="@null" yt:layout_behavior="com.google.android.apps.youtube.music.ui.appchrome.appbar.MusicAppBarBehavior">
+    <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" yt:layout_scrollFlags="0x3" yt:titleEnabled="false">
+        <FrameLayout android:id="@+id/collapsing_toolbar_layout_background_container" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" yt:layout_collapseMode="1">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textAppearance="@style/TextAppearance_AppCompat_Widget_ActionBar_Title" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/toolbar_title" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:textAlignment="viewStart" android:layout_toStartOf="@+id/menu_layout" android:layout_alignParentStart="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/menu_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+                    <android.support.v7.widget.RecyclerView android:id="@+id/toolbar_top_level_menu_buttons_anchor" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                    <include android:layout_gravity="center_vertical" android:id="@+id/toolbar_contextual_menu_anchor" android:padding="@dimen/item_medium_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/contextual_menu_anchor"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    <include android:id="@+id/toolbar_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider"/>
+</com.google.android.material.appbar.AppBarLayout>

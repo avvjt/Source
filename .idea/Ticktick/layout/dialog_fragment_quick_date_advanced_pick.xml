@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="?attr/ej" android:id="@+id/tv_time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp"/>
+    <TextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/tv_repeat_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="4dp"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <View android:background="?attr/divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <include layout="@layout/layout_quick_date_advanced_pick_basics"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_quick_dates_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+        <View android:background="?attr/divider_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

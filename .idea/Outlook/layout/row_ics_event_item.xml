@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/item_background" android:paddingTop="@dimen/combined_search_item_padding_vertical" android:paddingBottom="@dimen/combined_search_item_padding_vertical" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <LinearLayout android:orientation="vertical" android:layout_width="72dp" android:layout_height="wrap_content" android:paddingStart="16dp">
+        <TextView android:textSize="28sp" android:id="@+id/day_of_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="sans-serif"/>
+        <TextView android:textSize="12sp" android:layout_gravity="center_vertical" android:id="@+id/month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="16dp">
+            <com.microsoft.office.outlook.uikit.widget.RelevantEllipsisTextView android:ellipsize="end" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="2dp" style="@style/TextAppearance.Outlook.SubHeading"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/recurring_icon" android:layout_width="@dimen/event_search_icon_size" android:layout_height="@dimen/event_search_icon_size" android:src="@drawable/ic_fluent_arrow_sync_24_regular" android:contentDescription="@string/this_is_a_recurring_event" android:layout_marginEnd="1dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginEnd="16dp">
+            <TextView android:ellipsize="end" android:id="@+id/time" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_weight="1" outlook:textAllCaps="true" style="@style/TextAppearance.Outlook.Body1"/>
+        </LinearLayout>
+        <com.microsoft.office.outlook.uikit.widget.RelevantEllipsisTextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:gravity="bottom" android:id="@+id/location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1" android:singleLine="true" android:drawablePadding="6dp" android:drawableStart="@drawable/ic_fluent_location_16_regular" android:layout_marginEnd="16dp" style="@style/TextAppearance.Outlook.Body1"/>
+    </LinearLayout>
+    <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/view_event" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="48dp" android:minHeight="32dp" android:text="@string/app_status_action_view" android:paddingEnd="16dp" style="?attr/outlookAccentBorderlessButtonStyle"/>
+</LinearLayout>

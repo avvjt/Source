@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/meeting_selected_alert" android:background="@drawable/item_background" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp" style="@style/ListItem.Row">
+    <ImageView android:src="@drawable/ic_fluent_alert_24_regular" style="@style/ListItem.Icon"/>
+    <TextView android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/meeting_selected_alert_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/meeting_detail_alert_label" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Title"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorPrimary" android:gravity="end|center_vertical" android:id="@+id/meeting_selected_alert_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/none" android:maxLines="10" android:layout_weight="1" android:paddingStart="4dp" style="@style/ListItem.Summary"/>
+</LinearLayout>

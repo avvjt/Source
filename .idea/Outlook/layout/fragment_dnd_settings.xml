@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dnd_settings_container" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.microsoft.office.outlook.uiappcomponent.widget.account.AccountPickerView android:id="@+id/account_picker" android:background="@drawable/item_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_picker_content_mode_height" outlook:includeAllAccountsOption="true" outlook:mode="oneLine"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?android:attr/textColorSecondary" android:id="@+id/dnd_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:text="@string/do_not_disturb_settings_description" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <View android:id="@+id/dnd_description_divider" android:background="@color/outlook_app_divider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

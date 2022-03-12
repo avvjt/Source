@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="?attr/colorAccent" android:state_activated="true"/>
+    <item android:state_enabled="false" android:color="?attr/grey100" android:alpha="@dimen/outlook_app_disabled_state_opacity"/>
+    <item android:color="?attr/grey100" android:state_activated="false"/>
+</selector>

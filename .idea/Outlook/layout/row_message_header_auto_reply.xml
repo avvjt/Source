@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@color/messages_header_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/outlook_content_inset">
+    <TextView android:textSize="16sp" android:ellipsize="end" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/automatic_replies" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:fontFamily="sans-serif-medium"/>
+    <Button android:ellipsize="end" android:layout_gravity="center" android:id="@+id/header_auto_reply_turn_off_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/turn_off" android:maxLines="1" android:singleLine="true" android:fontFamily="sans-serif-medium" style="?attr/outlookAccentBorderlessButtonStyle"/>
+</LinearLayout>

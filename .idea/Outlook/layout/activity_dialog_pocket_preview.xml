@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:minWidth="300dp" android:showDividers="middle">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/previewImage" android:layout_width="100dp" android:layout_height="100dp" android:layout_margin="10dp" android:scaleType="fitCenter"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18sp" android:textStyle="bold" android:id="@+id/title" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:maxLines="2" android:layout_marginStart="5dp"/>
+                <TextView android:textSize="14sp" android:id="@+id/excerpt" android:padding="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:maxLines="3" android:layout_marginStart="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tvSaveLayout" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp">
+            <ImageView android:paddingRight="10dp" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/pocket_small" android:paddingEnd="10dp"/>
+            <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/tvSave" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_save_to_pocket"/>
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@+id/tvOpen" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp" android:text="@string/action_open"/>
+        <TextView android:gravity="center" android:id="@+id/tvCopyLink" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp" android:text="@string/action_copy_link"/>
+        <TextView android:gravity="center" android:id="@+id/tvCancel" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="65dp" android:text="@android:string/cancel"/>
+    </LinearLayout>
+</ScrollView>

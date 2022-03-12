@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/search_natural_language_recourse_icon"/>
+            <size android:height="40dp" android:width="40dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:id="@+id/search_icon" android:drawable="@drawable/ic_fluent_search_20_regular"/>
+</layer-list>

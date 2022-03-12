@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar_no_inset"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/layout_content_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="?android:attr/textColorSecondary" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/outlook_content_inset" android:layout_marginTop="24dp" android:layout_marginRight="@dimen/outlook_content_inset" android:layout_marginBottom="@dimen/list_item_header_padding_bottom" android:text="@string/shared_mailbox_select_account_title" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/shared_mailbox_account_list" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

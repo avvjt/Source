@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/recycler_view" android:tag="layout/list_item_code_options_preview_wrapped_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>

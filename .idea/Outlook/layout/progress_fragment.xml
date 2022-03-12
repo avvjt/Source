@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:background="@color/pw_window_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/progress_ux_container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="@dimen/progress_spinner_size" android:layout_height="@dimen/progress_spinner_size" android:layout_marginBottom="@dimen/progress_spinner_margin_bottom" android:indeterminate="true" android:indeterminateTint="@color/pw_progress_spinner"/>
+        <VideoView android:id="@+id/loading_animation_view" android:layout_width="@dimen/progress_animation_width" android:layout_height="@dimen/progress_animation_height" android:importantForAccessibility="no"/>
+        <TextView android:textAppearance="@style/TextAppearance.Paywall.Body1" android:textColor="@color/pw_progress_text" android:id="@+id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:gravity="bottom|center_horizontal" android:id="@+id/bottom_m365_logo" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/microsoft365_logo" android:baselineAlignBottom="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:importantForAccessibility="no"/>
+</RelativeLayout>

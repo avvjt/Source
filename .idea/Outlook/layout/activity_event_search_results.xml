@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" outlook:spaceMode="0">
+    <include layout="@layout/toolbar"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/search_results_coordinator_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_results_recycler_view" android:paddingBottom="64dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.microsoft.office.outlook.illustration.IllustrationStateView android:layout_gravity="center" android:id="@+id/error_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:illustration="@drawable/illustration_generic_error" outlook:shouldShowButton="false" outlook:shouldShowSubtitle="false" outlook:title="@string/calendar_results_empty"/>
+        <com.microsoft.office.outlook.uikit.widget.TextActionButton android:textColor="?attr/colorAccent" android:layout_gravity="bottom|center_horizontal" android:id="@+id/today_action_button" android:background="@drawable/bg_event_search_results_fab" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_margin="12dp" android:minWidth="0dp" android:text="@string/today" android:contentDescription="@string/jump_today" android:paddingStart="16dp" android:paddingEnd="16dp" android:elevation="8dp" outlook:textAllCaps="false" style="@style/Widget.Outlook.Button"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

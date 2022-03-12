@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/immersive_view_container" android:background="@android:color/transparent" android:layout_width="2dp" android:layout_height="2dp">
+    <ImageView android:id="@+id/lenshvc_gallery_item_preview" android:background="@color/lenshvc_gallery_item_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:id="@+id/lenshvc_gallery_item_selected_state" android:background="@color/lenshvc_mini_gallery_preview_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:layout_gravity="bottom" android:id="@+id/lenshvc_gallery_item_gradient" android:background="@drawable/lenshvc_gallery_item_view_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/lenshvc_mini_gallery_preview_gradient_height"/>
+    <include layout="@layout/lenshvc_gallery_video_thumbnail_duration"/>
+    <include layout="@layout/lenshvc_gallery_selection_marker_layout"/>
+</FrameLayout>

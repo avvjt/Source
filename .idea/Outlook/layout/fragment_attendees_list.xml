@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/view_switcher" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_state_message" android:paddingLeft="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:paddingBottom="@dimen/attendee_empty_state_icon_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_detail_attendee_empty" android:singleLine="false" android:drawableTop="@drawable/illustration_people" android:drawablePadding="@dimen/illustration_state_drawable_padding" android:fontFamily="sans-serif-medium" android:accessibilityLiveRegion="assertive"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/attendee_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</ViewSwitcher>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.emmx.webview.browser.popupsell.UpsellOverflowComponent xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/upsell_overflow" android:background="@drawable/browser_overflow_menu_background" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="@dimen/browser_elevation_top">
+    <FrameLayout android:id="@+id/upsell_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/browser_popup_upsell_card_view_radius" app:cardElevation="@dimen/browser_popup_upsell_card_view_elevation">
+            <ImageView android:id="@+id/upsell_popup_background" android:background="@drawable/browser_upsell_popup_background_img" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/upsell_overflow_content" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_gravity="center" android:id="@+id/browser_upsell_drag_indicator" android:background="@drawable/browser_popup_upsell_handler_shape" android:visibility="gone" android:layout_width="36dp" android:layout_height="4dp" android:layout_marginTop="@dimen/browser_spacing"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/browser_edge_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="8dp" android:src="@drawable/browser_edge_logo"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/upsell_popup_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/browser_popup_upsell_edge_title" style="@style/BrowserTextAppearancePopupUpsellTitle"/>
+            <Space android:layout_width="wrap_content" android:layout_height="8dp"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/upsell_popup_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/browser_popup_upsell_edge_summary" style="@style/BrowserTextAppearancePopupUpsellSummary"/>
+            <Space android:layout_width="wrap_content" android:layout_height="8dp"/>
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/yes" android:background="@drawable/browser_popup_upsell_button_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/browser_popup_upsell_edge_install" style="@style/BrowserTextAppearancePopupUpsellButton"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.microsoft.emmx.webview.browser.popupsell.UpsellOverflowComponent>

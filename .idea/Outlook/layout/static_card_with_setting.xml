@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/width_284dp" android:layout_height="@dimen/height_120dp" android:layout_marginLeft="@dimen/margin_8dp" android:layout_marginTop="@dimen/margin_16dp" android:layout_marginRight="@dimen/margin_8dp" app:cardBackgroundColor="@color/vhvc_grey21" app:cardCornerRadius="@dimen/radius_8dp" app:cardElevation="@dimen/elevation_0dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/settings_image_icon" android:background="@drawable/voice_ic_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12dp" android:layout_marginTop="@dimen/margin_12dp"/>
+        <TextView android:textSize="@dimen/text_size_12dp" android:textStyle="normal" android:textColor="@color/vhvc_grey13" android:id="@+id/voice_command_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12dp" android:layout_marginTop="@dimen/margin_8dp" android:layout_marginRight="@dimen/margin_12dp" android:text="@string/dn" android:lineSpacingExtra="@dimen/line_spacing_4sp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="?android:attr/textColorPrimary" android:id="@+id/drawer_item_header_title" android:paddingLeft="@dimen/abc_dialog_padding_material" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/favorite_left_nav_section_header" android:paddingStart="@dimen/abc_dialog_padding_material" style="@style/ListItem.Header"/>

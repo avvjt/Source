@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_background" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListItem.Row">
+    <ImageView android:id="@+id/interesting_calendar_icon" android:background="@drawable/interesting_calendar_icon_background" android:padding="6dp" android:layout_width="36dp" android:layout_height="36dp" android:scaleType="centerInside" android:layout_marginEnd="20dp" style="@style/ListItem.Icon"/>
+    <TextView android:id="@+id/interesting_calendar_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/ListItem.Title"/>
+    <FrameLayout android:id="@+id/interesting_calendar_subscribe" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="56dp" android:layout_height="44dp" style="@style/Widget.Outlook.Button.CheckableAccentBorder">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/interesting_calendar_subscribe_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallInverse"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/interesting_calendar_subscribe_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_add_account_button_icon" android:tint="@color/add_button_color_selector"/>
+    </FrameLayout>
+</LinearLayout>

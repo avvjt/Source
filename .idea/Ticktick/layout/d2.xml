@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@android:color/transparent" app:cardElevation="10dp">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bm" android:layout_width="600dp" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:background="@drawable/bo" android:layout_width="match_parent" android:layout_height="110dp">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="12dp" android:layout_marginTop="11dp" android:layout_marginBottom="11dp" android:scaleType="fitXY" android:adjustViewBounds="false" app:srcCompat="@drawable/bw"/>
+            </FrameLayout>
+            <TextView android:textSize="52sp" android:typeface="sans" android:textColor="@color/uh" android:gravity="center" android:id="@+id/hf" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="sans-serif-light"/>
+            <ProgressBar android:id="@+id/a5k" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_alignTop="@+id/hf" android:layout_alignBottom="@+id/hf" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/gz" android:layout_marginLeft="90dp" android:layout_marginTop="18dp" android:layout_marginRight="90dp" android:text="@string/com_facebook_smart_device_instructions" style="@style/uh"/>
+        <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/h0" android:layout_width="match_parent" android:layout_marginTop="12dp" android:text="@string/com_facebook_smart_device_instructions_or" style="@style/uh"/>
+        <TextView android:id="@+id/gw" android:layout_marginTop="12dp" style="@style/uh"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="17dp">
+            <Button android:textSize="18sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/ub" android:layout_gravity="center_horizontal" android:id="@+id/f3" android:background="@drawable/bn" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200dp" android:text="@android:string/cancel" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

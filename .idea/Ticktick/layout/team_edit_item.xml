@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/hh" android:background="?attr/activity_background" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="56dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/right_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="56dp" android:singleLine="true"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_marginRight="@dimen/material_normal_padding" android:layout_alignParentRight="true">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/a89" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

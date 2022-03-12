@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="beginning">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Button.Borderless" android:textColor="?attr/colorAccent" android:ellipsize="end" android:gravity="center" android:id="@+id/footer_term_privacy_policy" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_row_min_height" android:text="@string/addin_see_terms_policy" android:maxLines="1" android:singleLine="true"/>
+</LinearLayout>

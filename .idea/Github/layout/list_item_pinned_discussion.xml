@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:orientation="vertical" android:id="@+id/pinned_discussion_item" android:tag="layout/list_item_pinned_discussion_0" android:paddingTop="@dimen/default_margin" android:paddingBottom="@dimen/default_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" android:minHeight="168sp" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin" android:layout_marginStart="@dimen/default_margin" android:elevation="@dimen/default_elevation">
+    <TextView android:textColor="@color/discussionsSpotlightCategoryText" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/inter_semibold"/>
+    <TextView android:textColor="@android:color/white" android:ellipsize="end" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" style="@style/EditText.Title"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_half">
+        <ImageView android:layout_gravity="center_vertical" android:tag="binding_3" android:layout_width="@dimen/avatar_24" android:layout_height="@dimen/avatar_24"/>
+        <TextView android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/inter_medium" android:layout_marginStart="@dimen/default_margin_half" style="@style/BodyText.Small"/>
+    </LinearLayout>
+</LinearLayout>

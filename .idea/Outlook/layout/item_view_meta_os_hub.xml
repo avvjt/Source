@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView android:layout_gravity="center_horizontal" android:layout_width="56dp" android:layout_height="56dp" app:cardCornerRadius="12dp" app:contentPadding="8dp" app:strokeColor="@color/outlook_app_divider" app:strokeWidth="@dimen/outlook_divider_width">
+        <ImageView android:id="@+id/tab_item_icon" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tab_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+</LinearLayout>

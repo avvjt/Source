@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_mark_all_read" android:title="@string/menu_mark_all_read"/>
     <item android:id="@+id/menu_information" android:title="@string/menu_channel_info"/>
     <item android:id="@+id/menu_channel_users" android:title="@string/menu_channel_users"/>

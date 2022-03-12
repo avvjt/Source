@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ticktick.task.view.IconTextView android:textSize="48sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_today_date"/>
+            <com.ticktick.task.view.UnScalableTextView android:textSize="18sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center" android:id="@+id/tv_today_day" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l3"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="48sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_tomorrow_date"/>
+        <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/l4"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="48sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_pickdate_repeat"/>
+        <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/at6"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.ticktick.task.view.IconTextView android:textSize="48sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_other_date"/>
+        <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="?android:attr/textColorTertiary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ajl"/>
+    </LinearLayout>
+</LinearLayout>

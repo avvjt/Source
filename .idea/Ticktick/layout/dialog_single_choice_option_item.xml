@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dialog_item_height">
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/qu" android:paddingRight="0dp" style="@style/dialog_left_item_style"/>
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/qu">
+        <TextView android:id="@+id/ag9" style="@style/dialog_text_style"/>
+    </LinearLayout>
+</RelativeLayout>

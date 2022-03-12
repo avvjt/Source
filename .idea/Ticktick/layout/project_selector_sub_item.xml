@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:layout_gravity="center_vertical" android:id="@+id/ww" android:paddingLeft="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_normal_list"/>
+        <TextView android:ellipsize="end" android:id="@+id/ag9" android:layout_width="0dp" android:singleLine="true" android:layout_weight="1" style="@style/dialog_text_style"/>
+        <com.ticktick.task.view.actionableview.ActionableIconTextView android:textSize="16sp" android:textColor="?android:attr/textColorTertiary" android:layout_gravity="center_vertical" android:id="@+id/icon_know_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_know_more"/>
+        <RelativeLayout android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/selection_icon" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerVertical="true"/>
+            <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/selection_checkbox" android:background="@null" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.ticktick.task.view.selectableview.SelectableFrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/minigallery_awp_header_root" android:background="@color/lenshvc_transparent_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/lenshvc_mini_gallery" android:layout_width="match_parent" android:layout_height="@dimen/lenshvc_mini_gallery_preview_default_size" android:importantForAccessibility="no"/>
+</LinearLayout>

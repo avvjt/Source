@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/calendar_edit_head_height">
+    <TextView android:gravity="center_vertical" android:id="@+id/label" android:layout_height="24dp" android:text="@string/an" android:textIsSelectable="false" style="@style/TextView_ListSeparator_Preference"/>
+    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/ag9" android:layout_width="wrap_content" android:layout_height="56dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:singleLine="true" android:layout_below="@+id/label"/>
+    <View android:id="@+id/gap" android:layout_width="match_parent" android:layout_height="8dp" android:layout_below="@+id/ag9"/>
+    <View android:id="@+id/divider" android:background="?attr/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginLeft="@dimen/preference_margin" android:layout_above="@+id/gap"/>
+</com.ticktick.task.view.selectableview.SelectableRelativeLayout>

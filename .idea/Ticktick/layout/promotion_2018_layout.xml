@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/contentLayout" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/corners_radius_card" app:cardElevation="1dp">
+        <com.ticktick.task.view.RoundImage.RoundedImageView android:layout_width="match_parent" android:layout_height="122dp" android:scaleType="fitXY"/>
+        <com.ticktick.task.view.RoundImage.RoundedImageView android:id="@+id/s4" android:layout_width="match_parent" android:layout_height="122dp" android:scaleType="center"/>
+        <com.ticktick.task.view.selectableview.SelectableIconTextView android:textSize="24sp" android:textColor="@color/white_alpha_100" android:gravity="center" android:layout_gravity="end|top" android:id="@+id/cancel_btn" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="center" android:text="@string/ic_svg_clear_min"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

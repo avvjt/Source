@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.conversation.list.ConversationListItem xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/message_snippet_frontview" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget_Outlook_MessageListItem">
+    <include layout="@layout/row_message_snippet"/>
+</com.microsoft.office.outlook.conversation.list.ConversationListItem>

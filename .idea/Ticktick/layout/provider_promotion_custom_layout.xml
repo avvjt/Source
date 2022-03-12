@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/graph" android:paddingLeft="18dp" android:paddingTop="16dp" android:paddingRight="18dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/accessor_icon" android:layout_width="42dp" android:layout_height="42dp" android:src="@mipmap/ic_launcher" android:scaleType="fitXY"/>
+            <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/accessor_name" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TickTick" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/read_task" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:scaleType="fitXY" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="42dp" android:layout_height="42dp" android:src="@mipmap/ic_launcher" android:scaleType="fitXY"/>
+            <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cn" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/hh" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nt" android:layout_below="@+id/graph"/>
+</RelativeLayout>

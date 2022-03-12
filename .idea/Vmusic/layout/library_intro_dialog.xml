@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="?attr/textAppearanceTitle" android:ellipsize="end" android:id="@+id/intro_title" android:paddingTop="@dimen/item_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textAlignment="viewStart" android:paddingStart="?attr/dialogPreferredPadding" android:paddingEnd="?attr/dialogPreferredPadding"/>
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="?attr/textAppearanceSubhead" android:id="@+id/intro_message" android:paddingTop="@dimen/item_large_spacing" android:paddingBottom="@dimen/item_large_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" android:paddingStart="?attr/dialogPreferredPadding" android:paddingEnd="?attr/dialogPreferredPadding"/>
+    </LinearLayout>
+</ScrollView>

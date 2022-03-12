@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:ellipsize="end" android:id="@android:id/text1" android:background="@drawable/item_single_choice_background" android:layout_width="match_parent" android:layout_height="?attr/dropdownListPreferredItemHeight" android:maxLines="1" android:singleLine="true" style="?attr/spinnerDropDownItemStyle"/>

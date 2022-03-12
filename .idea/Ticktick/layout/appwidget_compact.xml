@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+    <ImageView android:id="@+id/widget_bg_view30" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/widget_title_layout" android:layout_width="match_parent" android:layout_height="32dp" android:minHeight="32dp">
+            <ImageView android:id="@+id/widget_title_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/widget_title_background" android:scaleType="fitXY"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/widget_title_text" android:paddingLeft="8dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:drawableRight="@drawable/ic_widget_folded_spinner" android:drawableEnd="@drawable/ic_widget_folded_spinner"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/click_to_main_area" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/widget_title_add" android:layout_toRightOf="@+id/widget_title_text"/>
+            <ImageView android:id="@+id/widget_title_add" android:layout_width="32dp" android:layout_height="match_parent" android:layout_marginRight="6dp" android:src="@drawable/ic_widget_add" android:scaleType="center" android:layout_toLeftOf="@+id/widget_title_setting"/>
+            <ImageView android:id="@+id/widget_title_setting" android:layout_width="32dp" android:layout_height="match_parent" android:src="@drawable/ic_widget_settings" android:scaleType="center" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/title_content_divider" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/widget_content30" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="2dp">
+            <ListView android:id="@+id/task_list_view_id" android:fadingEdge="none" android:alwaysDrawnWithCache="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="4dp" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+            <include layout="@layout/widget_empty_view"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

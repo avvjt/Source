@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/outlook_app_surface_dialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/outlook_content_inset" android:paddingTop="@dimen/outlook_content_inset" android:paddingRight="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@+id/bottom_sheet_bug_report_screenshot" android:layout_width="200dp" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+                <VideoView android:layout_gravity="center" android:id="@+id/bottom_sheet_video_view" android:visibility="gone" android:layout_width="200dp" android:layout_height="300dp" android:adjustViewBounds="true"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/bottom_sheet_bug_report_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.Outlook.ProgressBar.Large"/>
+            </FrameLayout>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/bottom_sheet_bug_report_include_screenshot_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:minHeight="48dp" android:text="@string/include_screenshot_in_bug_report"/>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/bottom_sheet_bug_report_include_email_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:minHeight="48dp" android:text="@string/include_email_in_bug_report"/>
+            <Button android:id="@+id/bottom_sheet_record_video" android:text="@string/record_screen_video" style="@style/Base_Widget_Outlook_ShakerDialogButton"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/additional_feedback_buttons" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <Button android:id="@+id/bottom_sheet_analytics_capture_button" android:visibility="gone" android:text="@string/turn_on_analytics_capture" style="@style/Base_Widget_Outlook_ShakerDialogButton"/>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.core.widget.NestedScrollView>

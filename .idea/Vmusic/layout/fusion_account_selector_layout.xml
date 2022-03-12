@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/ytGeneralBackgroundA" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="6dp">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/large_font_size" android:textColor="?attr/ytTextPrimary" android:ellipsize="end" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/account_switcher_header_title" android:singleLine="true" android:layout_weight="1" android:textAlignment="viewStart" yt:robotoFont="6"/>
+        <ImageView android:id="@+id/add_account" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/yt_outline_add_black_24" android:scaleType="center" android:tint="?attr/ytTextPrimary" android:contentDescription="@string/account_switcher_add_account"/>
+    </LinearLayout>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/account_list" android:paddingBottom="8dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:divider="@null" android:layout_weight="1"/>
+    <View android:id="@+id/footer_separator" android:background="?attr/ytSeparator" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="8dp"/>
+    <ListView android:id="@+id/account_list_footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/extra_footers" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

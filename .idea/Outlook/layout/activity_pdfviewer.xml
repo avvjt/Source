@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/toolbar" android:background="@drawable/viewer_actionbar_foreground" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <ProgressBar android:id="@+id/progress_bar" android:background="?attr/colorAccentHighlighted" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/progress_total_height" android:layout_marginTop="@dimen/progress_margin_height" android:layout_marginBottom="@dimen/progress_margin_height" android:indeterminate="true" android:indeterminateTint="?attr/colorAccent" style="?android:attr/progressBarStyleHorizontal"/>
+    <RelativeLayout android:background="@color/outlook_app_surface_primary" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:name="com.microsoft.office.outlook.viewers.ui.BetterPdfFragment" android:id="@+id/pdf_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:layoutManager="LinearLayoutManager"/>
+        <include layout="@layout/viewer_loading_ghost_view"/>
+        <com.microsoft.office.outlook.viewers.ViewerErrorView android:id="@+id/viewer_error_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

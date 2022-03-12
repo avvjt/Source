@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/fragment_review_comment_0" android:background="@color/backgroundSecondary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/app_bar_layout" layout="@layout/flat_app_bar_layout"/>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.core.widget.NestedScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_above="@+id/markdown_bar_layout" app:layout_constraintBottom_toTopOf="@+id/markdown_bar_layout" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/backgroundSecondary" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="2dp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                <com.github.android.views.AutoCompleteView android:id="@+id/autocomplete_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.github.android.views.MarkdownBarView android:id="@+id/markdown_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/scroll_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_issue_pr_files_changed_0" android:background="@color/listItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <include layout="@layout/list_item_divider"/>
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/files_changed_container" android:tag="binding_2" android:paddingTop="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/default_margin" android:paddingEnd="@dimen/default_margin">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_file_diff_16" android:layout_marginEnd="@dimen/default_margin" app:tint="@color/textPrimary"/>
+            <TextView android:tag="binding_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Medium"/>
+            <TextView android:textColor="@color/green_500" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/default_margin_quarter"/>
+            <TextView android:textColor="@color/red_500" android:tag="binding_5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:id="@+id/review_context" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_3x" android:layout_marginEnd="@dimen/default_margin" style="@style/Tertiary"/>
+        <TextView android:textColor="@color/colorAccent" android:id="@+id/review_cta" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/default_margin_3x" android:layout_marginEnd="@dimen/default_margin"/>
+        <Space android:layout_width="1dp" android:layout_height="@dimen/default_margin"/>
+    </LinearLayout>
+    <include layout="@layout/list_item_divider"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/commit_number" android:tag="binding_6" android:background="?attr/selectableItemBackground" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_git_commit_16" android:layout_marginEnd="@dimen/default_margin" app:tint="@color/textPrimary"/>
+        <TextView android:layout_gravity="center_vertical" android:tag="binding_7" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Medium"/>
+        <TextView android:tag="binding_8" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Tertiary"/>
+    </LinearLayout>
+</LinearLayout>

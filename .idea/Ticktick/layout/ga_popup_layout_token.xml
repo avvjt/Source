@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/dialog_message" android:paddingLeft="24dp" android:paddingTop="20dp" android:paddingRight="24dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/b6j" android:lineSpacingMultiplier="1.4"/>
+        <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:ellipsize="marquee" android:id="@+id/username_text" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:singleLine="true"/>
+        <androidx.appcompat.widget.AppCompatEditText android:textSize="18sp" android:gravity="fill_horizontal" android:id="@+id/password_edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:hint="@string/aiz" android:scrollHorizontally="true" android:singleLine="true" android:inputType="textPassword" style="@style/edit_text_style_light"/>
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/login_show_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:checked="false" android:text="@string/tq"/>
+    </LinearLayout>
+    <include layout="@layout/tt_alert_dialog_button_bar_material"/>
+</LinearLayout>

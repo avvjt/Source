@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="46dp">
+        <com.ticktick.task.pomodoro.progressbar.RoundProgressBar android:layout_gravity="center" android:id="@+id/roundProgressBar" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_centerInParent="true" app:roundColor="@color/pure_black_alpha_10" app:roundProgressColor="?attr/ej" app:roundWidth="2dp"/>
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/qu" android:layout_width="26dp" android:layout_height="26dp" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:ellipsize="end" android:id="@+id/label_linked_item_title" android:tag="layout/list_item_triage_sheet_linked_issueorpullrequest_0" android:padding="@dimen/default_margin" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground" android:singleLine="true" android:drawablePadding="@dimen/default_margin"/>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:layout_gravity="top" android:id="@+id/overall_overlay" android:paddingTop="36dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+    <RelativeLayout android:id="@+id/main_overlay" android:background="?attr/ytOverlayBackgroundHeavy" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linear_layout_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" android:layout_alignParentTop="true">
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="12sp" android:textColor="?attr/ytStaticWhite" android:id="@+id/screen_name" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" yt:robotoFont="0"/>
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="12sp" android:textColor="?attr/ytStaticWhite" android:id="@+id/parent_name" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" yt:robotoFont="0"/>
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="12sp" android:textColor="?attr/ytStaticWhite" android:id="@+id/transition_name" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" yt:robotoFont="0"/>
+        </LinearLayout>
+        <ScrollView android:id="@+id/click_scroll_view" android:background="?attr/ytOverlayButtonPrimary" android:visibility="visible" android:layout_width="match_parent" android:layout_height="48dp" android:layout_margin="4dp" android:layout_below="@+id/linear_layout_text"/>
+        <TextView android:textSize="16sp" android:textColor="?attr/ytStaticWhite" android:id="@+id/hide_button" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:text="@string/hide_button_text" android:layout_alignParentRight="true" android:textAlignment="center"/>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="?attr/ytStaticWhite" android:id="@+id/show_button" android:background="?attr/ytOverlayBackgroundHeavy" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="8dp" android:text="@string/show_button_text" android:layout_alignParentRight="true" android:textAlignment="center"/>
+</RelativeLayout>

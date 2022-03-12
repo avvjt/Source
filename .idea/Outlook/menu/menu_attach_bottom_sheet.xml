@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_fluent_link_24_regular" android:id="@+id/txt_insert_link" android:title="@string/insert_link"/>
+    <item android:icon="@drawable/ic_fluent_attach_24_regular" android:id="@+id/txt_attach_actual_file" android:title="@string/actual_file"/>
+    <item android:icon="@drawable/ic_fluent_document_search_24_regular" android:id="@+id/txt_attach_preview" android:title="@string/file_preview"/>
+</menu>

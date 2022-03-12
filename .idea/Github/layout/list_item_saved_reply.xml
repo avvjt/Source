@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="layout/list_item_saved_reply_0" android:background="@drawable/list_item_background" android:padding="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+    <TextView android:ellipsize="end" android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/inter_medium"/>
+    <TextView android:ellipsize="end" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+</LinearLayout>

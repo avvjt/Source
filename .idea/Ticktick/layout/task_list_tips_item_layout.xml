@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" app:cardCornerRadius="@dimen/corners_radius_banner" app:cardElevation="0dp" app:cardMaxElevation="0dp">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/bg_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/left_layout" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/ic_left_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center"/>
+            <ImageView android:id="@+id/ic_left" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center" android:tint="?attr/iconColorPrimaryInverse"/>
+        </FrameLayout>
+        <TextView android:textSize="12sp" android:textColor="?android:attr/textColorPrimaryInverse" android:gravity="center_vertical" android:id="@+id/ag9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/google_sub_promo_msg" android:layout_toRightOf="@+id/left_layout" android:lineSpacingMultiplier="1.3"/>
+        <FrameLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/right_btn_layout" android:layout_below="@+id/ag9">
+            <Button android:textSize="12sp" android:layout_gravity="center" android:id="@+id/cancel_btn" android:background="?attr/selector_button_bg" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="28dp" android:minWidth="72dp" android:text="@string/f_"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/right_btn_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_below="@+id/ag9" android:layout_alignParentRight="true">
+            <Button android:textSize="12sp" android:layout_gravity="center" android:id="@+id/action_btn" android:background="@drawable/selector_positive_button" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="28dp" android:layout_margin="8dp" android:minWidth="72dp" android:text="@string/tt"/>
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

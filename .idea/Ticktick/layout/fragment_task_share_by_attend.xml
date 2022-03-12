@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:id="@+id/tips" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/share_agenda_tips" android:layout_alignParentTop="true"/>
+    <com.ticktick.task.view.ObservableScrollView android:orientation="vertical" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tips" app:top_line="@dimen/task_and_list_share_activity_image_margin_top">
+        <FrameLayout android:id="@+id/fl_image_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="@dimen/task_and_list_share_activity_image_margin_bottom" app:cardCornerRadius="8dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="25sp" android:textColor="@color/black_alpha_90" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="15sp" android:textColor="@color/colorPrimary_light" android:id="@+id/tv_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56dp">
+                        <ImageView android:id="@+id/avatar_layout" android:layout_width="wrap_content" android:layout_height="32dp" android:scaleType="center"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/black_alpha_36_light" android:layout_gravity="center_vertical" android:id="@+id/tv_total_person" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </com.ticktick.task.view.ObservableScrollView>
+    <View android:id="@+id/divider_shadow" android:background="@drawable/ab_solid_shadow_holo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp"/>
+</RelativeLayout>

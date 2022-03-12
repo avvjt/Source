@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/settings_coordinatorLayout" android:background="@drawable/layout_root_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/settings_recycler_view" android:background="@drawable/layout_content_background" android:paddingBottom="@dimen/bottom_pinned_bar_height" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/group_usage_guideline"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

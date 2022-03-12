@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/bottom_sheet_collection_handle"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_filter_panel_header_margin_bottom" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading2" android:id="@+id/button_filter_panel_title_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Filters" android:layout_weight="1"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textColor="@color/search_filter_panel_apply_button_text" android:gravity="end" android:id="@+id/button_apply_search_filters" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Apply" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.acompli.acompli.layouts.FlowLayout android:id="@+id/search_refiners_selected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_filter_panel_vertical_spacing" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset"/>
+    <com.acompli.acompli.layouts.FlowLayout android:id="@+id/search_refiners_unselected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/search_filter_panel_vertical_spacing" android:layout_marginStart="@dimen/outlook_content_inset" android:layout_marginEnd="@dimen/outlook_content_inset"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/static_filter_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

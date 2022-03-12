@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="@dimen/bottom_sheet_list_vertical_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:importantForAccessibility="no" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <LinearLayout android:id="@+id/add_normal_account" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bottom_sheet_handle_vertical_padding" android:minHeight="48dp" style="@style/ListItem.Row">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_mail_inbox_24_regular" style="@style/ListItem.Icon"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_add_normal_account" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Title"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_an_account_summary" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Summary"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/add_shared_mailbox" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" style="@style/ListItem.Row">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_people_24_regular" style="@style/ListItem.Icon"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_add_shared_mailbox_account" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Title"/>
+            <TextView android:id="@+id/add_shared_account_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delegate_inbox_select_add_account_summary" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Summary"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/create_new_account" android:background="?attr/selectableItemBackground" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" style="@style/ListItem.Row">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fluent_add_24_regular" style="@style/ListItem.Icon"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/create_new_account" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Title"/>
+            <TextView android:id="@+id/create_new_account_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_new_account_summary" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Summary"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

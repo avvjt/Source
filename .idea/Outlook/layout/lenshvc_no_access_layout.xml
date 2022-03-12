@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/permission_view" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/lenshvc_permission_view_padding" android:paddingEnd="@dimen/lenshvc_permission_view_padding">
+    <ImageView android:id="@+id/lenshvc_permission_view_icon" android:layout_width="@dimen/lenshvc_permission_view_image_width" android:layout_height="@dimen/lenshvc_permission_view_image_height" android:contentDescription="Camera Icon"/>
+    <TextView android:textSize="16sp" android:id="@+id/lenshvc_permission_view_title" android:layout_marginTop="16dp" style="@style/permissionViewTextStyle"/>
+    <TextView android:textSize="14sp" android:id="@+id/lenshvc_permission_view_summary" android:layout_marginTop="19dp" style="@style/permissionViewTextStyle"/>
+    <Button android:id="@+id/lenshvc_permission_view_go_button" style="@style/permissionViewButtonStyle"/>
+    <Button android:id="@+id/lenshvc_permission_view_settings_button" style="@style/permissionViewButtonStyle"/>
+</LinearLayout>

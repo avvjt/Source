@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/top_layout" layout="@layout/due_actionbar_layout"/>
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top_layout">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:text="@string/aq7" style="@style/TextView_ListSeparator_Preference"/>
+                <GridView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/grid_view_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:horizontalSpacing="16dp" android:verticalSpacing="16dp" android:numColumns="4"/>
+                <include layout="@layout/preference_category_divider"/>
+                <TextView android:text="@string/au6" style="@style/TextView_ListSeparator_Preference"/>
+                <GridView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/grid_view_seasons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:horizontalSpacing="16dp" android:verticalSpacing="16dp" android:numColumns="2"/>
+                <include layout="@layout/preference_category_divider"/>
+                <TextView android:text="@string/hf" style="@style/TextView_ListSeparator_Preference"/>
+                <GridView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/grid_view_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:horizontalSpacing="16dp" android:verticalSpacing="16dp" android:numColumns="2"/>
+                <include layout="@layout/preference_category_divider"/>
+                <TextView android:text="@string/b0y" style="@style/TextView_ListSeparator_Preference"/>
+                <GridView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/grid_view_photograph" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:horizontalSpacing="16dp" android:verticalSpacing="16dp" android:numColumns="2"/>
+                <include layout="@layout/preference_category_divider"/>
+                <TextView android:text="@string/b0x" style="@style/TextView_ListSeparator_Preference"/>
+                <GridView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/grid_view_activities" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:horizontalSpacing="16dp" android:verticalSpacing="16dp" android:numColumns="2"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <View android:id="@+id/action_bar_shadow" android:background="@drawable/ab_solid_shadow_holo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="5dp" android:layout_below="@+id/top_layout"/>
+</RelativeLayout>

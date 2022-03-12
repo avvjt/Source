@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="@style/TextAppearance.Widget.Outlook.ToolBar.Title.Dialog" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginStart="@dimen/abc_dialog_padding_material" android:layout_marginEnd="@dimen/abc_dialog_padding_material"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.acompli.acompli.ui.event.list.calendar.CalendarView android:id="@+id/calendar_view" android:layout_width="match_parent" android:layout_height="wrap_content" outlook:fullMode="true" outlook:showCalendarDayBusyIndicator="false" outlook:showWeekHeadingDivider="true" outlook:weekHeadingBackgroundColor="@color/outlook_app_surface_dialog" outlook:weekHeadingElevation="@dimen/date_time_picker_elevation" outlook:weekdayHeadingTextColor="?android:attr/textColorSecondary" outlook:weekendHeadingTextColor="?attr/grey300"/>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/statusbar" android:background="@color/danger_primary" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_availability_on_this_day" android:fontFamily="sans-serif"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/resolution_progress_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/outlook_app_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+            <include layout="@layout/layout_datetime_picker_progressbar"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

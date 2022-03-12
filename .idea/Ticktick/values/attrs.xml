@@ -1,0 +1,2239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SeekArcThumb" format="reference">
+    </attr>
+    <attr name="SeekArcThumbOffset" format="dimension">
+    </attr>
+    <attr name="TT_Toolbar" format="reference">
+    </attr>
+    <attr name="TT_Toolbar_Inverse" format="reference">
+    </attr>
+    <attr name="TT_Toolbar_Pop" format="reference">
+    </attr>
+    <attr name="Toolbar" format="reference">
+    </attr>
+    <attr name="account_pay_icon" format="reference">
+    </attr>
+    <attr name="h" format="reference">
+    </attr>
+    <attr name="i" format="reference">
+    </attr>
+    <attr name="j" format="reference">
+    </attr>
+    <attr name="k" format="dimension">
+        <enum name="atv" value="0" />
+    </attr>
+    <attr name="l" format="reference">
+    </attr>
+    <attr name="m" format="reference">
+    </attr>
+    <attr name="n" format="reference">
+    </attr>
+    <attr name="o" format="reference">
+    </attr>
+    <attr name="p" format="reference">
+    </attr>
+    <attr name="actionBarTextColorPrimary" format="reference">
+    </attr>
+    <attr name="r" format="reference">
+    </attr>
+    <attr name="s" format="reference">
+    </attr>
+    <attr name="t" format="reference">
+    </attr>
+    <attr name="u" format="reference">
+    </attr>
+    <attr name="v" format="reference">
+    </attr>
+    <attr name="w" format="reference">
+    </attr>
+    <attr name="x" format="reference|color">
+    </attr>
+    <attr name="y" format="reference">
+    </attr>
+    <attr name="z" format="reference">
+    </attr>
+    <attr name="a0" format="reference">
+    </attr>
+    <attr name="a1" format="reference">
+    </attr>
+    <attr name="a2" format="reference">
+    </attr>
+    <attr name="a3" format="reference">
+    </attr>
+    <attr name="a4" format="reference">
+    </attr>
+    <attr name="a5" format="reference">
+    </attr>
+    <attr name="a6" format="reference">
+    </attr>
+    <attr name="a7" format="reference">
+    </attr>
+    <attr name="a8" format="reference">
+    </attr>
+    <attr name="a9" format="reference">
+    </attr>
+    <attr name="a_" format="reference">
+    </attr>
+    <attr name="aa" format="reference">
+    </attr>
+    <attr name="ab" format="reference">
+    </attr>
+    <attr name="ac" format="string">
+    </attr>
+    <attr name="ad" format="string">
+    </attr>
+    <attr name="actionbar_bg_color_inverse" format="reference|color">
+    </attr>
+    <attr name="af" format="reference">
+    </attr>
+    <attr name="activity_background" format="reference">
+    </attr>
+    <attr name="ah" format="boolean">
+    </attr>
+    <attr name="ai" format="reference">
+    </attr>
+    <attr name="aj" format="boolean">
+    </attr>
+    <attr name="ak" format="reference">
+    </attr>
+    <attr name="al" format="reference">
+    </attr>
+    <attr name="am">
+        <enum name="fd" value="2" />
+        <enum name="o3" value="1" />
+        <enum name="o4" value="0" />
+        <enum name="ac7" value="4" />
+        <enum name="ac8" value="3" />
+        <enum name="ad_" value="5" />
+    </attr>
+    <attr name="an">
+        <enum name="cv" value="3" />
+        <enum name="fd" value="2" />
+        <enum name="o3" value="1" />
+        <enum name="o4" value="0" />
+        <enum name="ad_" value="4" />
+    </attr>
+    <attr name="ao" format="boolean">
+    </attr>
+    <attr name="ap" format="boolean">
+    </attr>
+    <attr name="aq" format="boolean">
+    </attr>
+    <attr name="ar" format="boolean">
+    </attr>
+    <attr name="as" format="float">
+    </attr>
+    <attr name="at">
+        <flag name="a" value="2" />
+        <flag name="b" value="4096" />
+        <flag name="d" value="8" />
+        <flag name="e" value="65536" />
+        <flag name="f" value="1" />
+        <flag name="h" value="4" />
+    </attr>
+    <attr name="ambientEnabled" format="boolean">
+    </attr>
+    <attr name="arcColor" format="color">
+    </attr>
+    <attr name="arcWidth" format="dimension">
+    </attr>
+    <attr name="ax" format="dimension">
+    </attr>
+    <attr name="ay" format="dimension">
+    </attr>
+    <attr name="aspect" format="string">
+    </attr>
+    <attr name="assetName" format="string">
+    </attr>
+    <attr name="b1" format="reference">
+    </attr>
+    <attr name="b2" format="dimension">
+    </attr>
+    <attr name="b3" format="dimension">
+    </attr>
+    <attr name="b4" format="reference">
+    </attr>
+    <attr name="b5" format="dimension">
+    </attr>
+    <attr name="b6">
+        <enum name="a1z" value="0" />
+        <enum name="ao1" value="1" />
+    </attr>
+    <attr name="b7" format="reference">
+    </attr>
+    <attr name="b8" format="reference|color">
+    </attr>
+    <attr name="b9" format="reference|color">
+    </attr>
+    <attr name="b_" format="color">
+    </attr>
+    <attr name="ba">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="bb" format="dimension">
+    </attr>
+    <attr name="barrierAllowsGoneWidgets" format="boolean">
+    </attr>
+    <attr name="barrierDirection">
+        <enum name="d3" value="3" />
+        <enum name="mf" value="6" />
+        <enum name="ww" value="0" />
+        <enum name="a89" value="1" />
+        <enum name="acv" value="5" />
+        <enum name="aj5" value="2" />
+    </attr>
+    <attr name="beginAngle" format="float">
+    </attr>
+    <attr name="bf" format="boolean">
+    </attr>
+    <attr name="bg" format="boolean">
+    </attr>
+    <attr name="bh" format="boolean">
+    </attr>
+    <attr name="bi" format="dimension">
+    </attr>
+    <attr name="bj" format="dimension">
+        <enum name="ci" value="-1" />
+    </attr>
+    <attr name="bk" format="boolean">
+    </attr>
+    <attr name="bgColor" format="color">
+    </attr>
+    <attr name="bg_list_item_hold" format="reference">
+    </attr>
+    <attr name="bn" format="dimension">
+    </attr>
+    <attr name="border_color" format="color">
+    </attr>
+    <attr name="border_width" format="dimension">
+    </attr>
+    <attr name="bq" format="reference">
+    </attr>
+    <attr name="br" format="reference">
+    </attr>
+    <attr name="bs" format="reference">
+    </attr>
+    <attr name="bt" format="reference">
+    </attr>
+    <attr name="bu" format="reference">
+    </attr>
+    <attr name="bv" format="color">
+    </attr>
+    <attr name="bw">
+        <enum name="nd" value="1" />
+        <enum name="a1z" value="0" />
+        <enum name="a3d" value="2" />
+    </attr>
+    <attr name="bx" format="dimension">
+    </attr>
+    <attr name="by" format="dimension">
+    </attr>
+    <attr name="bz" format="dimension">
+    </attr>
+    <attr name="c0" format="dimension">
+    </attr>
+    <attr name="c1" format="dimension">
+    </attr>
+    <attr name="c2" format="color">
+    </attr>
+    <attr name="c3" format="dimension">
+    </attr>
+    <attr name="btn_bg_bottom" format="reference">
+    </attr>
+    <attr name="c5" format="reference">
+    </attr>
+    <attr name="c6" format="reference">
+    </attr>
+    <attr name="c7" format="reference">
+    </attr>
+    <attr name="c8" format="reference">
+    </attr>
+    <attr name="c9" format="reference">
+    </attr>
+    <attr name="c_">
+        <flag name="d3" value="80" />
+        <flag name="aj5" value="48" />
+    </attr>
+    <attr name="ca" format="dimension">
+    </attr>
+    <attr name="cb" format="reference">
+    </attr>
+    <attr name="cc" format="reference">
+        <enum name="ri" value="2" />
+        <enum name="acu" value="0" />
+        <enum name="aqb" value="1" />
+    </attr>
+    <attr name="cd" format="reference">
+    </attr>
+    <attr name="ce" format="reference">
+    </attr>
+    <attr name="cf" format="color">
+    </attr>
+    <attr name="cg">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="cal_dialog_week_text" format="reference">
+    </attr>
+    <attr name="cal_list_divider_gray" format="reference">
+    </attr>
+    <attr name="calendar_pop_arrow" format="reference">
+    </attr>
+    <attr name="calendar_pop_arrow_top" format="reference">
+    </attr>
+    <attr name="calendar_pop_bg" format="reference">
+    </attr>
+    <attr name="cameraBearing" format="float">
+    </attr>
+    <attr name="cameraMaxZoomPreference" format="float">
+    </attr>
+    <attr name="cameraMinZoomPreference" format="float">
+    </attr>
+    <attr name="cameraTargetLat" format="float">
+    </attr>
+    <attr name="cameraTargetLng" format="float">
+    </attr>
+    <attr name="cameraTilt" format="float">
+    </attr>
+    <attr name="cameraZoom" format="float">
+    </attr>
+    <attr name="ct" format="color">
+    </attr>
+    <attr name="cu" format="dimension">
+    </attr>
+    <attr name="cv" format="dimension">
+    </attr>
+    <attr name="cw" format="dimension">
+    </attr>
+    <attr name="cx" format="boolean">
+    </attr>
+    <attr name="cy" format="boolean">
+    </attr>
+    <attr name="cz" format="reference">
+    </attr>
+    <attr name="centered" format="boolean">
+    </attr>
+    <attr name="chainUseRtl" format="boolean">
+    </attr>
+    <attr name="chart_grid_line_color" format="reference|color">
+    </attr>
+    <attr name="chart_progress_normal_color" format="reference|color">
+    </attr>
+    <attr name="d4" format="reference">
+    </attr>
+    <attr name="d5" format="reference">
+    </attr>
+    <attr name="d6" format="reference">
+    </attr>
+    <attr name="d7" format="reference">
+    </attr>
+    <attr name="d8" format="boolean">
+    </attr>
+    <attr name="d9" format="boolean">
+    </attr>
+    <attr name="d_" format="reference">
+    </attr>
+    <attr name="da" format="color">
+    </attr>
+    <attr name="db" format="dimension">
+    </attr>
+    <attr name="dc" format="dimension">
+    </attr>
+    <attr name="dd" format="reference">
+    </attr>
+    <attr name="de" format="reference">
+    </attr>
+    <attr name="df" format="boolean">
+    </attr>
+    <attr name="dg" format="dimension">
+    </attr>
+    <attr name="dh" format="color">
+    </attr>
+    <attr name="di" format="boolean">
+    </attr>
+    <attr name="dj" format="dimension">
+    </attr>
+    <attr name="dk" format="dimension">
+    </attr>
+    <attr name="dl" format="dimension">
+    </attr>
+    <attr name="dm" format="dimension">
+    </attr>
+    <attr name="dn" format="reference">
+    </attr>
+    <attr name="do" format="dimension">
+    </attr>
+    <attr name="dp" format="color">
+    </attr>
+    <attr name="dq" format="dimension">
+    </attr>
+    <attr name="dr" format="reference">
+    </attr>
+    <attr name="ds" format="boolean">
+    </attr>
+    <attr name="circle_background" format="reference">
+    </attr>
+    <attr name="circle_background_color" format="reference|color">
+    </attr>
+    <attr name="circle_border_color" format="reference|color">
+    </attr>
+    <attr name="circle_border_overlay" format="boolean">
+    </attr>
+    <attr name="circle_border_width" format="reference|dimension">
+    </attr>
+    <attr name="circle_color" format="color">
+    </attr>
+    <attr name="civ_border_color" format="color">
+    </attr>
+    <attr name="civ_border_overlay" format="boolean">
+    </attr>
+    <attr name="civ_border_width" format="dimension">
+    </attr>
+    <attr name="civ_circle_background_color" format="color">
+    </attr>
+    <attr name="civ_fill_color" format="color">
+    </attr>
+    <attr name="click_remove_id" format="integer">
+    </attr>
+    <attr name="clockwise" format="boolean">
+    </attr>
+    <attr name="e6" format="reference">
+    </attr>
+    <attr name="e7" format="boolean">
+    </attr>
+    <attr name="e8" format="dimension">
+    </attr>
+    <attr name="e9" format="dimension">
+    </attr>
+    <attr name="e_" format="dimension">
+    </attr>
+    <attr name="ea" format="color">
+    </attr>
+    <attr name="eb" format="boolean">
+    </attr>
+    <attr name="ec" format="reference">
+    </attr>
+    <attr name="ed" format="string">
+    </attr>
+    <attr name="ee" format="reference">
+    </attr>
+    <attr name="ef">
+        <flag name="d3" value="80" />
+        <flag name="fd" value="17" />
+        <flag name="fe" value="1" />
+        <flag name="ff" value="16" />
+        <flag name="mf" value="8388613" />
+        <flag name="nc" value="112" />
+        <flag name="ww" value="3" />
+        <flag name="a89" value="5" />
+        <flag name="acv" value="8388611" />
+        <flag name="aj5" value="48" />
+    </attr>
+    <attr name="eg" format="reference">
+    </attr>
+    <attr name="collapsed_height" format="dimension">
+    </attr>
+    <attr name="ei" format="color">
+    </attr>
+    <attr name="ej" format="color">
+    </attr>
+    <attr name="colorAccentFab" format="reference">
+    </attr>
+    <attr name="colorAccentSecondary" format="reference">
+    </attr>
+    <attr name="colorAccentTertiary" format="reference">
+    </attr>
+    <attr name="en" format="color">
+    </attr>
+    <attr name="eo" format="color">
+    </attr>
+    <attr name="ep" format="color">
+    </attr>
+    <attr name="eq" format="color">
+    </attr>
+    <attr name="er" format="color">
+    </attr>
+    <attr name="es" format="reference|color">
+    </attr>
+    <attr name="colorHighlight" format="reference">
+    </attr>
+    <attr name="eu" format="color">
+    </attr>
+    <attr name="ev" format="color">
+    </attr>
+    <attr name="colorPrimaryDarkInverse" format="reference">
+    </attr>
+    <attr name="colorPrimaryTint" format="reference">
+    </attr>
+    <attr name="ey" format="reference">
+        <enum name="ci" value="2" />
+        <enum name="im" value="0" />
+        <enum name="xn" value="1" />
+    </attr>
+    <attr name="ez" format="color">
+    </attr>
+    <attr name="f0" format="color">
+    </attr>
+    <attr name="f1">
+        <enum name="d3" value="0" />
+        <enum name="sr" value="1" />
+        <enum name="aj5" value="2" />
+    </attr>
+    <attr name="f2" format="boolean">
+    </attr>
+    <attr name="f3" format="color">
+    </attr>
+    <attr name="f4">
+        <enum name="fd" value="0" />
+        <enum name="ww" value="1" />
+        <enum name="a89" value="2" />
+    </attr>
+    <attr name="f5" format="boolean">
+    </attr>
+    <attr name="f6" format="string">
+    </attr>
+    <attr name="f7" format="string">
+    </attr>
+    <attr name="f8" format="string">
+    </attr>
+    <attr name="f9">
+        <enum name="a2y" value="1" />
+        <enum name="a3h" value="2" />
+        <enum name="ao3" value="0" />
+    </attr>
+    <attr name="f_">
+        <enum name="vl" value="-4" />
+        <enum name="a20" value="-3" />
+        <enum name="abi" value="-2" />
+    </attr>
+    <attr name="fa">
+        <enum name="dd" value="2" />
+        <enum name="ed" value="1" />
+        <enum name="acu" value="0" />
+    </attr>
+    <attr name="fb">
+        <enum name="cj" value="0" />
+        <enum name="l6" value="1" />
+        <enum name="a1k" value="2" />
+    </attr>
+    <attr name="fc" format="reference">
+    </attr>
+    <attr name="constraintSet" format="reference">
+    </attr>
+    <attr name="constraint_referenced_ids" format="string">
+    </attr>
+    <attr name="content" format="reference">
+    </attr>
+    <attr name="fg" format="string">
+    </attr>
+    <attr name="fh" format="dimension">
+    </attr>
+    <attr name="fi" format="dimension">
+    </attr>
+    <attr name="fj" format="dimension">
+    </attr>
+    <attr name="fk" format="dimension">
+    </attr>
+    <attr name="fl" format="dimension">
+    </attr>
+    <attr name="fm" format="dimension">
+    </attr>
+    <attr name="fn" format="dimension">
+    </attr>
+    <attr name="fo" format="dimension">
+    </attr>
+    <attr name="fp" format="dimension">
+    </attr>
+    <attr name="fq" format="dimension">
+    </attr>
+    <attr name="fr" format="dimension">
+    </attr>
+    <attr name="fs" format="color">
+    </attr>
+    <attr name="ft" format="reference">
+    </attr>
+    <attr name="fu" format="reference">
+    </attr>
+    <attr name="fv" format="dimension">
+    </attr>
+    <attr name="corner_radius" format="dimension">
+    </attr>
+    <attr name="corner_radius_bottom_left" format="dimension">
+    </attr>
+    <attr name="corner_radius_bottom_right" format="dimension">
+    </attr>
+    <attr name="corner_radius_top_left" format="dimension">
+    </attr>
+    <attr name="corner_radius_top_right" format="dimension">
+    </attr>
+    <attr name="count_days" format="integer">
+    </attr>
+    <attr name="g2" format="boolean">
+    </attr>
+    <attr name="g3" format="integer">
+    </attr>
+    <attr name="g4" format="reference">
+    </attr>
+    <attr name="g5" format="reference">
+    </attr>
+    <attr name="cropBorderColor" format="color">
+    </attr>
+    <attr name="cropBorderWidth" format="dimension">
+    </attr>
+    <attr name="cropFocusHeight" format="dimension">
+    </attr>
+    <attr name="cropFocusWidth" format="dimension">
+    </attr>
+    <attr name="cropMaskColor" format="color">
+    </attr>
+    <attr name="cropStyle">
+        <enum name="circle" value="1" />
+        <enum name="rectangle" value="0" />
+    </attr>
+    <attr name="current_month_mark_color" format="reference">
+    </attr>
+    <attr name="gc" format="reference">
+    </attr>
+    <attr name="custom_menu_background" format="reference">
+    </attr>
+    <attr name="custom_menu_option_item_divider_color" format="color">
+    </attr>
+    <attr name="datePickPressedTextColor" format="reference">
+    </attr>
+    <attr name="gg" format="string">
+    </attr>
+    <attr name="gh" format="reference|string|integer|boolean|float">
+    </attr>
+    <attr name="gi" format="string">
+    </attr>
+    <attr name="gj" format="dimension">
+    </attr>
+    <attr name="gk" format="reference">
+    </attr>
+    <attr name="gl" format="reference">
+    </attr>
+    <attr name="gm" format="string">
+    </attr>
+    <attr name="gn" format="reference">
+    </attr>
+    <attr name="go" format="dimension">
+    </attr>
+    <attr name="gp" format="reference">
+    </attr>
+    <attr name="gq" format="string">
+    </attr>
+    <attr name="dialog_bg_color" format="reference|color">
+    </attr>
+    <attr name="gs" format="boolean">
+    </attr>
+    <attr name="gt">
+        <flag name="l3" value="32" />
+        <flag name="q7" value="4" />
+        <flag name="a1z" value="0" />
+        <flag name="ab5" value="16" />
+        <flag name="ab6" value="2" />
+        <flag name="ab7" value="8" />
+        <flag name="aoe" value="1" />
+    </attr>
+    <attr name="gu" format="reference">
+    </attr>
+    <attr name="gv" format="reference">
+    </attr>
+    <attr name="gw" format="reference">
+    </attr>
+    <attr name="gx" format="reference">
+    </attr>
+    <attr name="gy" format="reference">
+    </attr>
+    <attr name="gz" format="dimension">
+    </attr>
+    <attr name="dividerSecondary_color" format="reference">
+    </attr>
+    <attr name="h1" format="reference">
+    </attr>
+    <attr name="divider_color" format="reference">
+    </attr>
+    <attr name="drag_enabled" format="boolean">
+    </attr>
+    <attr name="drag_handle_id" format="integer">
+    </attr>
+    <attr name="drag_in_toast_bg" format="reference">
+    </attr>
+    <attr name="drag_scroll_start" format="float">
+    </attr>
+    <attr name="drag_start_mode">
+        <enum name="onDown" value="0" />
+        <enum name="onLongPress" value="2" />
+        <enum name="onMove" value="1" />
+    </attr>
+    <attr name="draw_hours" format="boolean">
+    </attr>
+    <attr name="h9" format="dimension">
+    </attr>
+    <attr name="h_" format="reference">
+    </attr>
+    <attr name="drawerEmailColor" format="reference">
+    </attr>
+    <attr name="drawerIconColor" format="reference">
+    </attr>
+    <attr name="drawerUsernameColor" format="reference">
+    </attr>
+    <attr name="drawer_background" format="reference">
+    </attr>
+    <attr name="drawer_foreground_color" format="reference">
+    </attr>
+    <attr name="drawer_itemForeground" format="reference">
+    </attr>
+    <attr name="hg" format="reference">
+    </attr>
+    <attr name="drop_animation_duration" format="integer">
+    </attr>
+    <attr name="hi" format="dimension">
+    </attr>
+    <attr name="hj" format="reference">
+    </attr>
+    <attr name="hk" format="reference">
+    </attr>
+    <attr name="hl" format="reference|color">
+    </attr>
+    <attr name="hm" format="reference">
+    </attr>
+    <attr name="hn" format="reference">
+    </attr>
+    <attr name="editTextUnderlineColor" format="reference">
+    </attr>
+    <attr name="eight_icon_area" format="reference">
+    </attr>
+    <attr name="hq" format="dimension">
+    </attr>
+    <attr name="emptyVisibility">
+        <enum name="oo" value="0" />
+        <enum name="tf" value="1" />
+    </attr>
+    <attr name="empty_view_bg" format="reference">
+    </attr>
+    <attr name="enable" format="boolean">
+    </attr>
+    <attr name="hu" format="boolean">
+    </attr>
+    <attr name="hv" format="boolean">
+    </attr>
+    <attr name="hw" format="boolean">
+    </attr>
+    <attr name="hx" format="reference">
+    </attr>
+    <attr name="hy" format="reference">
+    </attr>
+    <attr name="hz" format="boolean">
+    </attr>
+    <attr name="i0" format="reference">
+    </attr>
+    <attr name="i1" format="reference">
+    </attr>
+    <attr name="i2" format="boolean">
+    </attr>
+    <attr name="i3">
+        <flag name="d3" value="80" />
+        <flag name="fd" value="17" />
+        <flag name="fe" value="1" />
+        <flag name="ff" value="16" />
+        <flag name="mf" value="8388613" />
+        <flag name="nc" value="112" />
+        <flag name="ww" value="3" />
+        <flag name="a89" value="5" />
+        <flag name="acv" value="8388611" />
+        <flag name="aj5" value="48" />
+    </attr>
+    <attr name="i4" format="dimension">
+    </attr>
+    <attr name="i5" format="dimension">
+    </attr>
+    <attr name="i6" format="dimension">
+    </attr>
+    <attr name="i7" format="dimension">
+    </attr>
+    <attr name="i8" format="dimension">
+    </attr>
+    <attr name="i9" format="reference">
+    </attr>
+    <attr name="i_">
+        <enum name="fd" value="0" />
+        <enum name="mf" value="1" />
+    </attr>
+    <attr name="ia" format="dimension">
+    </attr>
+    <attr name="ib" format="dimension">
+    </attr>
+    <attr name="ic" format="dimension">
+    </attr>
+    <attr name="id" format="dimension">
+    </attr>
+    <attr name="ie">
+        <enum name="ci" value="-1" />
+        <enum name="a0k" value="1" />
+        <enum name="a20" value="0" />
+    </attr>
+    <attr name="if" format="boolean">
+    </attr>
+    <attr name="ig" format="reference">
+    </attr>
+    <attr name="ih" format="reference">
+    </attr>
+    <attr name="ii" format="reference">
+    </attr>
+    <attr name="ij" format="reference">
+    </attr>
+    <attr name="fgColor" format="color">
+    </attr>
+    <attr name="fillColor" format="reference|color">
+    </attr>
+    <attr name="filter_condition_background" format="reference">
+    </attr>
+    <attr name="finalHeight" format="dimension">
+    </attr>
+    <attr name="finalYPosition" format="dimension">
+    </attr>
+    <attr name="ip" format="dimension">
+    </attr>
+    <attr name="iq">
+        <enum name="gs" value="2" />
+        <enum name="gt" value="3" />
+        <enum name="a95" value="0" />
+        <enum name="a97" value="1" />
+    </attr>
+    <attr name="ir">
+        <enum name="a2m" value="0" />
+        <enum name="atu" value="1" />
+        <enum name="atw" value="2" />
+    </attr>
+    <attr name="fling_handle_id" format="integer">
+    </attr>
+    <attr name="float_alpha" format="float">
+    </attr>
+    <attr name="float_background_color" format="color">
+    </attr>
+    <attr name="iv" format="reference|string|integer|boolean|color|float|dimension|fraction">
+    </attr>
+    <attr name="iw" format="reference">
+    </attr>
+    <attr name="ix" format="string">
+    </attr>
+    <attr name="iy" format="string">
+    </attr>
+    <attr name="iz" format="reference">
+    </attr>
+    <attr name="j0">
+        <enum name="c3" value="1" />
+        <enum name="d1" value="0" />
+    </attr>
+    <attr name="j1" format="integer">
+        <enum name="oa" value="-1" />
+    </attr>
+    <attr name="j2" format="string">
+    </attr>
+    <attr name="j3" format="string">
+    </attr>
+    <attr name="j4">
+        <enum name="tl" value="1" />
+        <enum name="a20" value="0" />
+    </attr>
+    <attr name="j5" format="string">
+    </attr>
+    <attr name="j6" format="integer">
+    </attr>
+    <attr name="foregroundInset" format="reference|color">
+    </attr>
+    <attr name="j8" format="boolean">
+    </attr>
+    <attr name="forward">
+        <enum name="ww" value="0" />
+        <enum name="a89" value="1" />
+    </attr>
+    <attr name="j_" format="string">
+    </attr>
+    <attr name="ja" format="dimension">
+    </attr>
+    <attr name="gap_color" format="reference">
+    </attr>
+    <attr name="jc" format="reference">
+    </attr>
+    <attr name="go_today_text_color" format="reference">
+    </attr>
+    <attr name="gridItemForeground" format="reference">
+    </attr>
+    <attr name="grid_calendar_background" format="reference">
+    </attr>
+    <attr name="grid_line_color" format="color">
+    </attr>
+    <attr name="grid_stroke_width" format="dimension">
+    </attr>
+    <attr name="habit_edit_bg_color" format="reference|color">
+    </attr>
+    <attr name="habit_edit_icon_color" format="reference|color">
+    </attr>
+    <attr name="hasRailway" format="boolean">
+    </attr>
+    <attr name="jl" format="reference">
+    </attr>
+    <attr name="jm" format="dimension">
+    </attr>
+    <attr name="jn" format="string">
+    </attr>
+    <attr name="jo" format="boolean">
+    </attr>
+    <attr name="jp" format="reference">
+    </attr>
+    <attr name="jq" format="reference">
+    </attr>
+    <attr name="jr" format="boolean">
+    </attr>
+    <attr name="js" format="boolean">
+    </attr>
+    <attr name="jt" format="boolean">
+    </attr>
+    <attr name="ju" format="boolean">
+    </attr>
+    <attr name="jv" format="reference">
+    </attr>
+    <attr name="jw" format="reference">
+    </attr>
+    <attr name="jx" format="reference">
+    </attr>
+    <attr name="jy" format="dimension">
+    </attr>
+    <attr name="ic_task_pop_bg" format="reference">
+    </attr>
+    <attr name="k0" format="reference">
+    </attr>
+    <attr name="iconColorDisable" format="reference">
+    </attr>
+    <attr name="iconColorDone" format="reference">
+    </attr>
+    <attr name="iconColorInverse" format="reference">
+    </attr>
+    <attr name="iconColorPrimary" format="reference">
+    </attr>
+    <attr name="iconColorPrimaryInverse" format="reference">
+    </attr>
+    <attr name="iconColorSecondary" format="reference">
+    </attr>
+    <attr name="iconColorTertiary" format="reference">
+    </attr>
+    <attr name="k8" format="dimension">
+    </attr>
+    <attr name="k9">
+        <flag name="acv" value="1" />
+        <flag name="agc" value="2" />
+    </attr>
+    <attr name="k_" format="dimension">
+    </attr>
+    <attr name="ka" format="dimension">
+    </attr>
+    <attr name="kb" format="boolean">
+    </attr>
+    <attr name="kc" format="dimension">
+    </attr>
+    <attr name="kd" format="color">
+    </attr>
+    <attr name="ke">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="kf" format="boolean">
+    </attr>
+    <attr name="kg" format="float">
+    </attr>
+    <attr name="kh">
+        <enum name="b6" value="2" />
+        <enum name="b7" value="1" />
+        <enum name="a1z" value="0" />
+    </attr>
+    <attr name="ki" format="reference">
+    </attr>
+    <attr name="includeStatusBar" format="reference|boolean">
+    </attr>
+    <attr name="kk" format="reference">
+    </attr>
+    <attr name="init_exp_background" format="reference">
+    </attr>
+    <attr name="init_logic_background" format="reference">
+    </attr>
+    <attr name="kn" format="string">
+    </attr>
+    <attr name="ko" format="integer">
+    </attr>
+    <attr name="input_view_bg" format="reference">
+    </attr>
+    <attr name="kq" format="reference|color">
+    </attr>
+    <attr name="kr" format="boolean">
+    </attr>
+    <attr name="ks" format="boolean">
+    </attr>
+    <attr name="kt" format="reference">
+    </attr>
+    <attr name="itemForeground" format="reference">
+    </attr>
+    <attr name="kv" format="dimension">
+    </attr>
+    <attr name="kw" format="boolean">
+    </attr>
+    <attr name="kx" format="dimension">
+    </attr>
+    <attr name="ky" format="dimension">
+    </attr>
+    <attr name="kz" format="color">
+    </attr>
+    <attr name="l0" format="dimension">
+    </attr>
+    <attr name="itemSelectableBackground" format="reference">
+    </attr>
+    <attr name="l2" format="dimension">
+    </attr>
+    <attr name="l3" format="reference">
+    </attr>
+    <attr name="l4" format="reference">
+    </attr>
+    <attr name="l5" format="reference">
+    </attr>
+    <attr name="l6" format="color">
+    </attr>
+    <attr name="item_selected_color" format="reference">
+    </attr>
+    <attr name="l8">
+        <enum name="fd" value="2" />
+        <enum name="o3" value="1" />
+        <enum name="o4" value="0" />
+        <enum name="ac7" value="4" />
+        <enum name="ac8" value="3" />
+    </attr>
+    <attr name="l9" format="string">
+    </attr>
+    <attr name="l_" format="reference">
+    </attr>
+    <attr name="la">
+        <enum name="ci" value="-1" />
+        <enum name="vk" value="1" />
+        <enum name="a_w" value="0" />
+        <enum name="ao4" value="2" />
+    </attr>
+    <attr name="label_text_color" format="color">
+    </attr>
+    <attr name="lc" format="dimension">
+    </attr>
+    <attr name="latLngBoundsNorthEastLatitude" format="float">
+    </attr>
+    <attr name="latLngBoundsNorthEastLongitude" format="float">
+    </attr>
+    <attr name="latLngBoundsSouthWestLatitude" format="float">
+    </attr>
+    <attr name="latLngBoundsSouthWestLongitude" format="float">
+    </attr>
+    <attr name="lh" format="reference">
+    </attr>
+    <attr name="li" format="string">
+    </attr>
+    <attr name="lj">
+        <enum name="ci" value="-1" />
+        <enum name="cv" value="3" />
+        <enum name="fd" value="2" />
+        <enum name="o3" value="1" />
+        <enum name="o4" value="0" />
+        <enum name="ad_" value="4" />
+    </attr>
+    <attr name="lk" format="reference">
+    </attr>
+    <attr name="ll">
+        <flag name="d3" value="80" />
+        <flag name="fd" value="17" />
+        <flag name="fe" value="1" />
+        <flag name="ff" value="16" />
+        <flag name="gm" value="8" />
+        <flag name="gn" value="128" />
+        <flag name="mf" value="8388613" />
+        <flag name="na" value="119" />
+        <flag name="nb" value="7" />
+        <flag name="nc" value="112" />
+        <flag name="ww" value="3" />
+        <flag name="a89" value="5" />
+        <flag name="acv" value="8388611" />
+        <flag name="aj5" value="48" />
+    </attr>
+    <attr name="lm" format="string">
+    </attr>
+    <attr name="ln">
+        <enum name="a1z" value="0" />
+        <enum name="a3k" value="2" />
+        <enum name="a49" value="1" />
+    </attr>
+    <attr name="lo" format="float">
+    </attr>
+    <attr name="layout_constrainedHeight" format="boolean">
+    </attr>
+    <attr name="layout_constrainedWidth" format="boolean">
+    </attr>
+    <attr name="layout_constraintBaseline_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintBaseline_toBaselineOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintBottom_toBottomOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintBottom_toTopOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintCircle" format="reference">
+    </attr>
+    <attr name="layout_constraintCircleAngle" format="integer">
+    </attr>
+    <attr name="layout_constraintCircleRadius" format="dimension">
+    </attr>
+    <attr name="layout_constraintDimensionRatio" format="string">
+    </attr>
+    <attr name="layout_constraintEnd_toEndOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintEnd_toStartOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintGuide_begin" format="dimension">
+    </attr>
+    <attr name="layout_constraintGuide_end" format="dimension">
+    </attr>
+    <attr name="layout_constraintGuide_percent" format="float">
+    </attr>
+    <attr name="layout_constraintHeight_default">
+        <enum name="a3v" value="2" />
+        <enum name="acp" value="0" />
+        <enum name="atu" value="1" />
+    </attr>
+    <attr name="layout_constraintHeight_max" format="dimension">
+        <enum name="atu" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_min" format="dimension">
+        <enum name="atu" value="-2" />
+    </attr>
+    <attr name="layout_constraintHeight_percent" format="float">
+    </attr>
+    <attr name="layout_constraintHorizontal_bias" format="float">
+    </attr>
+    <attr name="layout_constraintHorizontal_chainStyle">
+        <enum name="a3g" value="2" />
+        <enum name="acp" value="0" />
+        <enum name="acq" value="1" />
+    </attr>
+    <attr name="layout_constraintHorizontal_weight" format="float">
+    </attr>
+    <attr name="layout_constraintLeft_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintLeft_toLeftOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintLeft_toRightOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintRight_toLeftOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintRight_toRightOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toEndOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintStart_toStartOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_creator" format="integer">
+    </attr>
+    <attr name="layout_constraintTop_toBottomOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintTop_toTopOf" format="reference">
+        <enum name="a3l" value="0" />
+    </attr>
+    <attr name="layout_constraintVertical_bias" format="float">
+    </attr>
+    <attr name="layout_constraintVertical_chainStyle">
+        <enum name="a3g" value="2" />
+        <enum name="acp" value="0" />
+        <enum name="acq" value="1" />
+    </attr>
+    <attr name="layout_constraintVertical_weight" format="float">
+    </attr>
+    <attr name="layout_constraintWidth_default">
+        <enum name="a3v" value="2" />
+        <enum name="acp" value="0" />
+        <enum name="atu" value="1" />
+    </attr>
+    <attr name="layout_constraintWidth_max" format="dimension">
+        <enum name="atu" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_min" format="dimension">
+        <enum name="atu" value="-2" />
+    </attr>
+    <attr name="layout_constraintWidth_percent" format="float">
+    </attr>
+    <attr name="mt">
+        <flag name="bd" value="119" />
+        <flag name="d3" value="80" />
+        <flag name="mf" value="8388613" />
+        <flag name="ww" value="3" />
+        <flag name="a1z" value="0" />
+        <flag name="a89" value="5" />
+        <flag name="acv" value="8388611" />
+        <flag name="aj5" value="48" />
+    </attr>
+    <attr name="layout_editor_absoluteX" format="dimension">
+    </attr>
+    <attr name="layout_editor_absoluteY" format="dimension">
+    </attr>
+    <attr name="mw" format="fraction">
+    </attr>
+    <attr name="mx" format="float">
+    </attr>
+    <attr name="my" format="float">
+    </attr>
+    <attr name="layout_goneMarginBottom" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginEnd" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginLeft" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginRight" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginStart" format="dimension">
+    </attr>
+    <attr name="layout_goneMarginTop" format="dimension">
+    </attr>
+    <attr name="n5">
+        <enum name="d3" value="80" />
+        <enum name="mf" value="8388613" />
+        <enum name="ww" value="3" />
+        <enum name="a1z" value="0" />
+        <enum name="a89" value="5" />
+        <enum name="acv" value="8388611" />
+        <enum name="aj5" value="48" />
+    </attr>
+    <attr name="n6" format="integer">
+    </attr>
+    <attr name="n7" format="dimension">
+    </attr>
+    <attr name="n8" format="dimension">
+    </attr>
+    <attr name="n9" format="dimension">
+    </attr>
+    <attr name="n_" format="dimension">
+    </attr>
+    <attr name="layout_optimizationLevel">
+        <flag name="cu" value="2" />
+        <flag name="fh" value="4" />
+        <flag name="l1" value="8" />
+        <flag name="l2" value="1" />
+        <flag name="pb" value="32" />
+        <flag name="a1z" value="0" />
+        <flag name="acu" value="7" />
+    </attr>
+    <attr name="nb" format="integer">
+    </attr>
+    <attr name="nc">
+        <flag name="mk" value="4" />
+        <flag name="ml" value="8" />
+        <flag name="mt" value="2" />
+        <flag name="a9r" value="1" />
+        <flag name="abt" value="16" />
+        <flag name="abu" value="32" />
+    </attr>
+    <attr name="nd" format="reference">
+    </attr>
+    <attr name="ne" format="boolean">
+    </attr>
+    <attr name="nf" format="boolean">
+    </attr>
+    <attr name="ng" format="dimension">
+    </attr>
+    <attr name="nh" format="dimension">
+    </attr>
+    <attr name="ni" format="reference">
+    </attr>
+    <attr name="nj" format="reference">
+    </attr>
+    <attr name="nk" format="reference">
+    </attr>
+    <attr name="nl" format="reference">
+    </attr>
+    <attr name="nm" format="reference">
+    </attr>
+    <attr name="nn" format="reference">
+    </attr>
+    <attr name="no" format="dimension">
+    </attr>
+    <attr name="np" format="dimension">
+    </attr>
+    <attr name="nq" format="dimension">
+    </attr>
+    <attr name="nr" format="dimension">
+    </attr>
+    <attr name="ns" format="dimension">
+    </attr>
+    <attr name="list_item_divider" format="reference">
+    </attr>
+    <attr name="list_section_bg_color" format="reference">
+    </attr>
+    <attr name="liteMode" format="boolean">
+    </attr>
+    <attr name="logic_select_invalid_and_background" format="reference">
+    </attr>
+    <attr name="logic_select_invalid_or_background" format="reference">
+    </attr>
+    <attr name="login_logo" format="reference">
+    </attr>
+    <attr name="nz" format="reference">
+    </attr>
+    <attr name="o0" format="string">
+    </attr>
+    <attr name="lottie_autoPlay" format="boolean">
+    </attr>
+    <attr name="lottie_colorFilter" format="color">
+    </attr>
+    <attr name="lottie_enableMergePathsForKitKatAndAbove" format="boolean">
+    </attr>
+    <attr name="lottie_fileName" format="string">
+    </attr>
+    <attr name="lottie_imageAssetsFolder" format="string">
+    </attr>
+    <attr name="lottie_loop" format="boolean">
+    </attr>
+    <attr name="lottie_progress" format="float">
+    </attr>
+    <attr name="lottie_rawRes" format="reference">
+    </attr>
+    <attr name="lottie_repeatCount" format="integer">
+    </attr>
+    <attr name="lottie_repeatMode">
+        <enum name="restart" value="1" />
+        <enum name="reverse" value="2" />
+    </attr>
+    <attr name="lottie_scale" format="float">
+    </attr>
+    <attr name="lottie_url" format="string">
+    </attr>
+    <attr name="mapType">
+        <enum name="hybrid" value="4" />
+        <enum name="a1z" value="0" />
+        <enum name="a20" value="1" />
+        <enum name="satellite" value="2" />
+        <enum name="terrain" value="3" />
+    </attr>
+    <attr name="od" format="reference">
+    </attr>
+    <attr name="oe" format="reference">
+    </attr>
+    <attr name="max" format="integer">
+    </attr>
+    <attr name="og" format="dimension">
+    </attr>
+    <attr name="oh" format="dimension">
+    </attr>
+    <attr name="oi" format="dimension">
+    </attr>
+    <attr name="oj" format="dimension">
+    </attr>
+    <attr name="maxProgress" format="integer">
+    </attr>
+    <attr name="ol" format="dimension">
+    </attr>
+    <attr name="max_drag_scroll_speed" format="float">
+    </attr>
+    <attr name="on" format="boolean">
+    </attr>
+    <attr name="oo" format="reference">
+    </attr>
+    <attr name="op" format="integer">
+    </attr>
+    <attr name="month_view_background" format="reference">
+    </attr>
+    <attr name="or" format="reference">
+    </attr>
+    <attr name="mutate_background" format="boolean">
+    </attr>
+    <attr name="ot" format="string">
+    </attr>
+    <attr name="ou" format="reference">
+    </attr>
+    <attr name="ov">
+        <enum name="xx" value="1" />
+        <enum name="a20" value="0" />
+        <enum name="ae4" value="2" />
+    </attr>
+    <attr name="ow" format="reference">
+    </attr>
+    <attr name="ox" format="string">
+    </attr>
+    <attr name="note_small_icon" format="reference">
+    </attr>
+    <attr name="notification_none_btn" format="reference">
+    </attr>
+    <attr name="npv_AlternativeHint" format="reference|string">
+    </attr>
+    <attr name="npv_AlternativeTextArrayWithMeasureHint" format="reference">
+    </attr>
+    <attr name="npv_AlternativeTextArrayWithoutMeasureHint" format="reference">
+    </attr>
+    <attr name="npv_DividerColor" format="reference|color">
+    </attr>
+    <attr name="npv_DividerHeight" format="reference|dimension">
+    </attr>
+    <attr name="npv_DividerMarginLeft" format="reference|dimension">
+    </attr>
+    <attr name="npv_DividerMarginRight" format="reference|dimension">
+    </attr>
+    <attr name="npv_EmptyItemHint" format="reference|string">
+    </attr>
+    <attr name="npv_HintText" format="reference|string">
+    </attr>
+    <attr name="npv_ItemPaddingHorizontal" format="reference|dimension">
+    </attr>
+    <attr name="npv_ItemPaddingVertical" format="reference|dimension">
+    </attr>
+    <attr name="npv_MarginEndOfHint" format="reference|dimension">
+    </attr>
+    <attr name="npv_MarginStartOfHint" format="reference|dimension">
+    </attr>
+    <attr name="npv_MaxValue" format="reference|integer">
+    </attr>
+    <attr name="npv_MinValue" format="reference|integer">
+    </attr>
+    <attr name="npv_RespondChangeInMainThread" format="reference|boolean">
+    </attr>
+    <attr name="npv_RespondChangeOnDetached" format="reference|boolean">
+    </attr>
+    <attr name="npv_ShowCount" format="reference|integer">
+    </attr>
+    <attr name="npv_ShowDivider" format="reference|boolean">
+    </attr>
+    <attr name="npv_TextArray" format="reference">
+    </attr>
+    <attr name="npv_TextColorHint" format="reference|color">
+    </attr>
+    <attr name="npv_TextColorNormal" format="reference|color">
+    </attr>
+    <attr name="npv_TextColorSelected" format="reference|color">
+    </attr>
+    <attr name="npv_TextEllipsize" format="reference|string">
+    </attr>
+    <attr name="npv_TextSizeHint" format="reference|dimension">
+    </attr>
+    <attr name="npv_TextSizeNormal" format="reference|dimension">
+    </attr>
+    <attr name="npv_TextSizeSelected" format="reference|dimension">
+    </attr>
+    <attr name="npv_WrapSelectorWheel" format="reference|boolean">
+    </attr>
+    <attr name="pr">
+        <flag name="a" value="2" />
+        <flag name="b" value="4096" />
+        <flag name="d" value="8" />
+        <flag name="e" value="65536" />
+        <flag name="f" value="1" />
+        <flag name="h" value="4" />
+    </attr>
+    <attr name="ps" format="integer">
+    </attr>
+    <attr name="pt" format="boolean">
+    </attr>
+    <attr name="orientation">
+        <flag name="q8" value="0" />
+        <flag name="aon" value="1" />
+    </attr>
+    <attr name="oval" format="boolean">
+    </attr>
+    <attr name="over_pane_bg" format="reference">
+    </attr>
+    <attr name="px" format="boolean">
+    </attr>
+    <attr name="py" format="dimension">
+    </attr>
+    <attr name="pz" format="dimension">
+    </attr>
+    <attr name="q0" format="dimension">
+    </attr>
+    <attr name="q1" format="dimension">
+    </attr>
+    <attr name="page_navigation_view_bg" format="reference|color">
+    </attr>
+    <attr name="panEnabled" format="boolean">
+    </attr>
+    <attr name="q4" format="reference">
+    </attr>
+    <attr name="q5" format="reference">
+    </attr>
+    <attr name="q6" format="dimension">
+    </attr>
+    <attr name="q7" format="string">
+    </attr>
+    <attr name="q8" format="reference">
+    </attr>
+    <attr name="q9" format="boolean">
+    </attr>
+    <attr name="q_" format="color">
+    </attr>
+    <attr name="qa">
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="pay_btn_bg" format="reference">
+    </attr>
+    <attr name="percent" format="float">
+    </attr>
+    <attr name="qd" format="boolean">
+    </attr>
+    <attr name="pg_bg_color" format="color">
+    </attr>
+    <attr name="pg_color" format="color">
+    </attr>
+    <attr name="pg_highlight_color" format="color">
+    </attr>
+    <attr name="pomo_popup_ring" format="reference">
+    </attr>
+    <attr name="qi" format="reference">
+    </attr>
+    <attr name="qj" format="reference">
+    </attr>
+    <attr name="qk" format="reference">
+    </attr>
+    <attr name="ql" format="string">
+    </attr>
+    <attr name="qm" format="reference">
+    </attr>
+    <attr name="qn" format="reference">
+    </attr>
+    <attr name="qo" format="reference">
+    </attr>
+    <attr name="qp" format="reference">
+    </attr>
+    <attr name="qq" format="dimension">
+    </attr>
+    <attr name="qr" format="reference">
+    </attr>
+    <attr name="qs" format="reference">
+    </attr>
+    <attr name="qt" format="reference">
+    </attr>
+    <attr name="qu" format="reference">
+    </attr>
+    <attr name="qv" format="reference">
+    </attr>
+    <attr name="qw" format="reference">
+    </attr>
+    <attr name="qx" format="reference">
+    </attr>
+    <attr name="qy" format="reference">
+    </attr>
+    <attr name="qz" format="reference">
+    </attr>
+    <attr name="preference_gap_color" format="reference|color">
+    </attr>
+    <attr name="r1" format="boolean">
+    </attr>
+    <attr name="r2" format="dimension">
+    </attr>
+    <attr name="progress" format="integer">
+    </attr>
+    <attr name="r4" format="dimension">
+    </attr>
+    <attr name="r5" format="reference">
+    </attr>
+    <attr name="progressBarThickness" format="dimension">
+    </attr>
+    <attr name="progressColor" format="color">
+    </attr>
+    <attr name="progressMax" format="integer">
+    </attr>
+    <attr name="progressMin" format="integer">
+    </attr>
+    <attr name="progressStart" format="integer">
+    </attr>
+    <attr name="progressValue" format="integer">
+    </attr>
+    <attr name="progressWidth" format="dimension">
+    </attr>
+    <attr name="progress_color" format="color">
+    </attr>
+    <attr name="progress_highlight_color" format="color">
+    </attr>
+    <attr name="progress_railway_color" format="reference">
+    </attr>
+    <attr name="progress_style" format="reference">
+    </attr>
+    <attr name="progressbarColor" format="color">
+    </attr>
+    <attr name="progressbar_circle_drawable" format="reference">
+    </attr>
+    <attr name="purchase_btn_text_color" format="reference">
+    </attr>
+    <attr name="rj" format="reference">
+    </attr>
+    <attr name="rk" format="string">
+    </attr>
+    <attr name="quickScaleEnabled" format="boolean">
+    </attr>
+    <attr name="quick_add_bar_bg" format="reference">
+    </attr>
+    <attr name="quickbar_top_shadow" format="reference">
+    </attr>
+    <attr name="ro" format="reference">
+    </attr>
+    <attr name="railway_color" format="color">
+    </attr>
+    <attr name="rq" format="reference">
+    </attr>
+    <attr name="rr" format="reference">
+    </attr>
+    <attr name="rs" format="reference">
+    </attr>
+    <attr name="reminder_small_icon" format="reference">
+    </attr>
+    <attr name="remove_animation_duration" format="integer">
+    </attr>
+    <attr name="remove_enabled" format="boolean">
+    </attr>
+    <attr name="remove_mode">
+        <enum name="clickRemove" value="0" />
+        <enum name="flingRemove" value="1" />
+    </attr>
+    <attr name="repeat_small_icon" format="reference">
+    </attr>
+    <attr name="ry" format="boolean">
+    </attr>
+    <attr name="ring_width" format="dimension">
+    </attr>
+    <attr name="s0" format="reference">
+    </attr>
+    <attr name="ringtoneType">
+        <flag name="b9" value="4" />
+        <flag name="bd" value="7" />
+        <flag name="a29" value="2" />
+        <flag name="a90" value="1" />
+    </attr>
+    <attr name="s2" format="color">
+    </attr>
+    <attr name="rotateDegrees" format="integer">
+    </attr>
+    <attr name="rotation" format="integer">
+    </attr>
+    <attr name="roundColor" format="color">
+    </attr>
+    <attr name="roundEdges" format="boolean">
+    </attr>
+    <attr name="roundProgressColor" format="color">
+    </attr>
+    <attr name="roundWidth" format="dimension">
+    </attr>
+    <attr name="s9" format="reference|string">
+    </attr>
+    <attr name="s_" format="integer">
+    </attr>
+    <attr name="sa" format="reference|color">
+    </attr>
+    <attr name="sb" format="dimension">
+    </attr>
+    <attr name="sc" format="reference">
+    </attr>
+    <attr name="sd" format="reference">
+    </attr>
+    <attr name="se" format="reference">
+    </attr>
+    <attr name="seekArcStyle" format="reference">
+    </attr>
+    <attr name="sg" format="integer">
+    </attr>
+    <attr name="sh" format="reference">
+    </attr>
+    <attr name="si" format="reference">
+    </attr>
+    <attr name="seek_arc_thumb" format="reference">
+    </attr>
+    <attr name="sk" format="boolean">
+    </attr>
+    <attr name="sl" format="reference">
+    </attr>
+    <attr name="sm" format="reference">
+    </attr>
+    <attr name="selectedColor" format="color">
+    </attr>
+    <attr name="selector_button_bg" format="reference">
+    </attr>
+    <attr name="sheet_bottom_shadow" format="reference">
+    </attr>
+    <attr name="sheet_top_shadow" format="reference">
+    </attr>
+    <attr name="sr" format="boolean">
+    </attr>
+    <attr name="ss">
+        <flag name="bf" value="2" />
+        <flag name="gq" value="8" />
+        <flag name="s2" value="1" />
+        <flag name="a1j" value="0" />
+        <flag name="ats" value="4" />
+    </attr>
+    <attr name="showDefault" format="boolean">
+    </attr>
+    <attr name="su">
+        <flag name="cx" value="1" />
+        <flag name="mf" value="4" />
+        <flag name="a0c" value="2" />
+        <flag name="a1z" value="0" />
+    </attr>
+    <attr name="sv">
+        <flag name="cx" value="1" />
+        <flag name="mf" value="4" />
+        <flag name="a0c" value="2" />
+        <flag name="a1z" value="0" />
+    </attr>
+    <attr name="sw">
+        <flag name="cx" value="1" />
+        <flag name="mf" value="4" />
+        <flag name="a0c" value="2" />
+        <flag name="a1z" value="0" />
+    </attr>
+    <attr name="sx">
+        <flag name="cx" value="1" />
+        <flag name="mf" value="4" />
+        <flag name="a0c" value="2" />
+        <flag name="a1z" value="0" />
+    </attr>
+    <attr name="sy" format="reference">
+    </attr>
+    <attr name="sz" format="boolean">
+    </attr>
+    <attr name="showSilent" format="boolean">
+    </attr>
+    <attr name="t1" format="boolean">
+    </attr>
+    <attr name="t2" format="boolean">
+    </attr>
+    <attr name="show_in_dialog" format="boolean">
+    </attr>
+    <attr name="t4" format="reference">
+    </attr>
+    <attr name="t5" format="boolean">
+    </attr>
+    <attr name="t6" format="boolean">
+    </attr>
+    <attr name="t7" format="boolean">
+    </attr>
+    <attr name="slide_menu_item_bg" format="reference">
+    </attr>
+    <attr name="slide_shuffle_speed" format="float">
+    </attr>
+    <attr name="snackBarBackgroundColor" format="reference">
+    </attr>
+    <attr name="ta" format="reference">
+    </attr>
+    <attr name="tb" format="reference">
+    </attr>
+    <attr name="sort_enabled" format="boolean">
+    </attr>
+    <attr name="td" format="integer">
+    </attr>
+    <attr name="te" format="boolean">
+    </attr>
+    <attr name="tf" format="reference">
+    </attr>
+    <attr name="tg" format="reference">
+    </attr>
+    <attr name="spinner_pop_bg" format="reference">
+    </attr>
+    <attr name="ti" format="boolean">
+    </attr>
+    <attr name="src" format="reference">
+    </attr>
+    <attr name="tk" format="reference">
+    </attr>
+    <attr name="tl" format="boolean">
+    </attr>
+    <attr name="startAngle" format="integer">
+    </attr>
+    <attr name="startHeight" format="dimension">
+    </attr>
+    <attr name="startToolbarPosition" format="dimension">
+    </attr>
+    <attr name="startXPosition" format="dimension">
+    </attr>
+    <attr name="tq" format="boolean">
+    </attr>
+    <attr name="tr" format="boolean">
+    </attr>
+    <attr name="ts" format="boolean">
+    </attr>
+    <attr name="tt" format="boolean">
+    </attr>
+    <attr name="tu" format="boolean">
+    </attr>
+    <attr name="tv" format="reference|color">
+    </attr>
+    <attr name="statusBarColor" format="reference|color">
+    </attr>
+    <attr name="tx" format="color">
+    </attr>
+    <attr name="stoke_width" format="dimension">
+    </attr>
+    <attr name="tz" format="color">
+    </attr>
+    <attr name="u0" format="dimension">
+    </attr>
+    <attr name="stroke_width" format="dimension">
+    </attr>
+    <attr name="style">
+        <enum name="FILL" value="1" />
+        <enum name="STROKE" value="0" />
+    </attr>
+    <attr name="u3" format="reference">
+    </attr>
+    <attr name="u4" format="reference">
+    </attr>
+    <attr name="u5" format="string">
+    </attr>
+    <attr name="u6" format="reference">
+    </attr>
+    <attr name="u7" format="color">
+    </attr>
+    <attr name="u8" format="reference">
+    </attr>
+    <attr name="u9" format="reference">
+    </attr>
+    <attr name="u_" format="string">
+    </attr>
+    <attr name="ua" format="string">
+    </attr>
+    <attr name="ub" format="string">
+    </attr>
+    <attr name="sweepAngle" format="integer">
+    </attr>
+    <attr name="ud" format="dimension">
+    </attr>
+    <attr name="ue" format="dimension">
+    </attr>
+    <attr name="uf" format="reference">
+    </attr>
+    <attr name="ug" format="reference">
+    </attr>
+    <attr name="uh" format="reference">
+    </attr>
+    <attr name="ui" format="reference">
+    </attr>
+    <attr name="uj" format="string">
+    </attr>
+    <attr name="uk" format="string">
+    </attr>
+    <attr name="switch_thumb_normal_color" format="reference|color">
+    </attr>
+    <attr name="tAnimationScale" format="float">
+    </attr>
+    <attr name="tArrowLocation">
+        <enum name="tLeft" value="0" />
+        <enum name="tRight" value="1" />
+    </attr>
+    <attr name="tCanUncheck" format="boolean">
+    </attr>
+    <attr name="tCheckBgColor" format="reference|integer">
+    </attr>
+    <attr name="tCheckStrokeColor" format="reference|integer">
+    </attr>
+    <attr name="tColor" format="reference|color">
+    </attr>
+    <attr name="tEndAlpha" format="float">
+    </attr>
+    <attr name="tIconSrc" format="reference">
+    </attr>
+    <attr name="tRadius" format="integer">
+    </attr>
+    <attr name="tStartAlpha" format="float">
+    </attr>
+    <attr name="tTaskTitle" format="reference|string">
+    </attr>
+    <attr name="ux" format="reference">
+    </attr>
+    <attr name="uy" format="dimension">
+    </attr>
+    <attr name="uz">
+        <enum name="fd" value="1" />
+        <enum name="na" value="0" />
+    </attr>
+    <attr name="v0" format="color">
+    </attr>
+    <attr name="v1">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="v2" format="reference">
+    </attr>
+    <attr name="v3" format="integer">
+    </attr>
+    <attr name="v4" format="color">
+    </attr>
+    <attr name="tabIndicatorColorInverse" format="reference">
+    </attr>
+    <attr name="v6" format="boolean">
+    </attr>
+    <attr name="v7">
+        <enum name="d3" value="0" />
+        <enum name="fd" value="1" />
+        <enum name="ad_" value="3" />
+        <enum name="aj5" value="2" />
+    </attr>
+    <attr name="v8" format="dimension">
+    </attr>
+    <attr name="v9" format="boolean">
+    </attr>
+    <attr name="v_" format="dimension">
+    </attr>
+    <attr name="va" format="dimension">
+    </attr>
+    <attr name="vb">
+        <enum name="no" value="1" />
+        <enum name="a_0" value="0" />
+    </attr>
+    <attr name="vc" format="dimension">
+    </attr>
+    <attr name="vd" format="dimension">
+    </attr>
+    <attr name="ve" format="dimension">
+    </attr>
+    <attr name="vf" format="dimension">
+    </attr>
+    <attr name="vg" format="dimension">
+    </attr>
+    <attr name="vh" format="color">
+    </attr>
+    <attr name="vi" format="color">
+    </attr>
+    <attr name="vj" format="reference">
+    </attr>
+    <attr name="vk" format="reference">
+    </attr>
+    <attr name="vl" format="color">
+    </attr>
+    <attr name="vm" format="boolean">
+    </attr>
+    <attr name="tab_background_color" format="reference|color">
+    </attr>
+    <attr name="task_popup_bg" format="reference">
+    </attr>
+    <attr name="task_popup_color_highlight" format="reference">
+    </attr>
+    <attr name="task_popup_color_primary_1" format="reference">
+    </attr>
+    <attr name="task_popup_color_primary_2" format="reference">
+    </attr>
+    <attr name="task_popup_color_primary_tint" format="reference">
+    </attr>
+    <attr name="task_popup_text_color_primary_1" format="reference">
+    </attr>
+    <attr name="task_popup_text_color_primary_2" format="reference">
+    </attr>
+    <attr name="task_popup_text_color_secondary" format="reference">
+    </attr>
+    <attr name="vw" format="reference|boolean">
+    </attr>
+    <attr name="vx" format="reference">
+    </attr>
+    <attr name="vy" format="reference">
+    </attr>
+    <attr name="vz" format="reference">
+    </attr>
+    <attr name="w0" format="reference">
+    </attr>
+    <attr name="w1" format="reference">
+    </attr>
+    <attr name="w2" format="reference">
+    </attr>
+    <attr name="w3" format="reference">
+    </attr>
+    <attr name="w4" format="reference">
+    </attr>
+    <attr name="w5" format="reference">
+    </attr>
+    <attr name="w6" format="reference">
+    </attr>
+    <attr name="w7" format="reference">
+    </attr>
+    <attr name="w8" format="reference">
+    </attr>
+    <attr name="w9" format="reference">
+    </attr>
+    <attr name="w_" format="reference">
+    </attr>
+    <attr name="wa" format="reference">
+    </attr>
+    <attr name="wb" format="reference">
+    </attr>
+    <attr name="wc" format="reference">
+    </attr>
+    <attr name="wd" format="reference">
+    </attr>
+    <attr name="we" format="reference">
+    </attr>
+    <attr name="wf" format="reference">
+    </attr>
+    <attr name="wg" format="reference">
+    </attr>
+    <attr name="textColor" format="color">
+    </attr>
+    <attr name="wi" format="reference|color">
+    </attr>
+    <attr name="textColorDoneTint" format="reference">
+    </attr>
+    <attr name="textColorPrimaryTint" format="reference">
+    </attr>
+    <attr name="wl" format="reference|color">
+    </attr>
+    <attr name="textColorSlideMenuInverse" format="reference">
+    </attr>
+    <attr name="textColorTertiary" format="reference">
+    </attr>
+    <attr name="wo" format="dimension">
+    </attr>
+    <attr name="wp" format="reference">
+    </attr>
+    <attr name="textIsDisplayable" format="boolean">
+    </attr>
+    <attr name="textSize" format="dimension">
+    </attr>
+    <attr name="ws" format="dimension">
+    </attr>
+    <attr name="wt" format="reference">
+    </attr>
+    <attr name="wu" format="dimension">
+    </attr>
+    <attr name="three_day_desalt_bg" format="color">
+    </attr>
+    <attr name="ww" format="dimension">
+    </attr>
+    <attr name="wx" format="color">
+    </attr>
+    <attr name="wy">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="wz" format="reference">
+    </attr>
+    <attr name="x0" format="color">
+    </attr>
+    <attr name="x1">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="tileBackgroundColor" format="color">
+    </attr>
+    <attr name="tile_mode">
+        <enum name="clamp" value="0" />
+        <enum name="mirror" value="2" />
+        <enum name="repeat" value="1" />
+    </attr>
+    <attr name="tile_mode_x">
+        <enum name="clamp" value="0" />
+        <enum name="mirror" value="2" />
+        <enum name="repeat" value="1" />
+    </attr>
+    <attr name="tile_mode_y">
+        <enum name="clamp" value="0" />
+        <enum name="mirror" value="2" />
+        <enum name="repeat" value="1" />
+    </attr>
+    <attr name="x6" format="color">
+    </attr>
+    <attr name="x7">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="x8" format="string">
+    </attr>
+    <attr name="x9" format="boolean">
+    </attr>
+    <attr name="x_" format="dimension">
+    </attr>
+    <attr name="xa" format="dimension">
+    </attr>
+    <attr name="xb" format="dimension">
+    </attr>
+    <attr name="xc" format="dimension">
+    </attr>
+    <attr name="xd" format="dimension">
+    </attr>
+    <attr name="xe" format="dimension">
+    </attr>
+    <attr name="xf" format="reference">
+    </attr>
+    <attr name="xg" format="color">
+    </attr>
+    <attr name="xh" format="reference">
+    </attr>
+    <attr name="xi" format="reference">
+    </attr>
+    <attr name="xj" format="reference">
+    </attr>
+    <attr name="xk" format="reference">
+    </attr>
+    <attr name="toolbar_background" format="reference|color">
+    </attr>
+    <attr name="toolbar_title_color" format="reference">
+    </attr>
+    <attr name="xn" format="reference|color">
+    </attr>
+    <attr name="xo" format="reference">
+    </attr>
+    <attr name="xp" format="string">
+    </attr>
+    <attr name="top_line" format="dimension">
+    </attr>
+    <attr name="touchInside" format="boolean">
+    </attr>
+    <attr name="xs" format="reference">
+    </attr>
+    <attr name="xt" format="color">
+    </attr>
+    <attr name="xu">
+        <enum name="at" value="16" />
+        <enum name="a16" value="14" />
+        <enum name="a9q" value="15" />
+        <enum name="acr" value="9" />
+        <enum name="acs" value="5" />
+        <enum name="act" value="3" />
+    </attr>
+    <attr name="track_drag_sort" format="boolean">
+    </attr>
+    <attr name="true_black_toolbar_divider_color" format="reference|color">
+    </attr>
+    <attr name="ttDropDownHorizontalOffset" format="integer">
+    </attr>
+    <attr name="ttDropDownVerticalOffset" format="integer">
+    </attr>
+    <attr name="ttSvgIcon" format="reference">
+    </attr>
+    <attr name="tt_divider" format="reference">
+    </attr>
+    <attr name="tt_dividerTeritary" format="reference">
+    </attr>
+    <attr name="y2" format="integer">
+    </attr>
+    <attr name="tv_color" format="color">
+    </attr>
+    <attr name="uiCompass" format="boolean">
+    </attr>
+    <attr name="uiMapToolbar" format="boolean">
+    </attr>
+    <attr name="uiRotateGestures" format="boolean">
+    </attr>
+    <attr name="uiScrollGestures" format="boolean">
+    </attr>
+    <attr name="uiScrollGesturesDuringRotateOrZoom" format="boolean">
+    </attr>
+    <attr name="uiTiltGestures" format="boolean">
+    </attr>
+    <attr name="uiZoomControls" format="boolean">
+    </attr>
+    <attr name="uiZoomGestures" format="boolean">
+    </attr>
+    <attr name="yb" format="boolean">
+    </attr>
+    <attr name="useViewLifecycle" format="boolean">
+    </attr>
+    <attr name="use_default_controller" format="boolean">
+    </attr>
+    <attr name="viewCached" format="reference|boolean">
+    </attr>
+    <attr name="yf" format="string">
+    </attr>
+    <attr name="yg" format="reference">
+    </attr>
+    <attr name="voice_input_bar_bg" format="reference">
+    </attr>
+    <attr name="voice_input_bg_color" format="reference|color">
+    </attr>
+    <attr name="voice_input_layout_bg" format="reference">
+    </attr>
+    <attr name="voice_progress_bar" format="reference">
+    </attr>
+    <attr name="vpiLinePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiTabPageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="vpiUnderlinePageIndicatorStyle" format="reference">
+    </attr>
+    <attr name="weekday_text_color" format="color">
+    </attr>
+    <attr name="weekend_text_color" format="color">
+    </attr>
+    <attr name="yq" format="reference">
+    </attr>
+    <attr name="widget_dialog_bg" format="reference">
+    </attr>
+    <attr name="ys" format="boolean">
+    </attr>
+    <attr name="yt" format="boolean">
+    </attr>
+    <attr name="yu" format="boolean">
+    </attr>
+    <attr name="windowBackgroundInverse_color" format="reference|color">
+    </attr>
+    <attr name="yw" format="dimension|fraction">
+    </attr>
+    <attr name="yx" format="dimension|fraction">
+    </attr>
+    <attr name="yy" format="dimension|fraction">
+    </attr>
+    <attr name="yz" format="dimension|fraction">
+    </attr>
+    <attr name="z0" format="dimension|fraction">
+    </attr>
+    <attr name="z1" format="dimension|fraction">
+    </attr>
+    <attr name="z2" format="boolean">
+    </attr>
+    <attr name="z3" format="reference">
+    </attr>
+    <attr name="zOrderOnTop" format="boolean">
+    </attr>
+    <attr name="zoomEnabled" format="boolean">
+    </attr>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ticktick.task.view.RecyclerViewEmptySupport android:id="@+id/a6r" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/divider"/>
+    <RelativeLayout android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/divider">
+        <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:id="@+id/empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agv" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14sp" android:textColor="?attr/textColorDoneTint" android:id="@+id/empty_summary" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aze" android:layout_below="@+id/empty_title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/divider" android:layout_above="@+id/filter_project" style="?attr/tt_divider"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/filter_project" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14sp" android:textColor="?attr/ej" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/project_name" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:layout_centerInParent="true"/>
+        <com.ticktick.task.view.IconTextView android:textSize="24dp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ic_svg_arraw" android:layout_toRightOf="@+id/project_name" android:layout_centerVertical="true" android:rotation="270"/>
+    </RelativeLayout>
+</RelativeLayout>

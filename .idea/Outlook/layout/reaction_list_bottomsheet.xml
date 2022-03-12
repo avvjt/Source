@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/handle_bar" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/Widget.Outlook.BottomSheet.Handle"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Heading2" android:gravity="center_vertical" android:id="@+id/reactions_header" android:layout_width="wrap_content" android:layout_height="56dp" android:text="@string/reaction_details_bottotmsheet_header" android:singleLine="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/handle_bar"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/reacted_users_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/reactions_header"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

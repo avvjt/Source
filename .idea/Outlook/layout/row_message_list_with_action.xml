@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/message_snippet_frontview" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Widget_Outlook_MessageListItem">
+    <include layout="@layout/row_message_snippet"/>
+    <include layout="@layout/row_message_list_extra_action"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

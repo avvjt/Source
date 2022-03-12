@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:textColor="@color/local_domain_button_text_color" android:id="@+id/local_domain_button" android:background="@drawable/local_domain_button_background_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/local_domain_button_height" android:stateListAnimator="@null" outlook:textAllCaps="false"/>

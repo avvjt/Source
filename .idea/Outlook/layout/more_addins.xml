@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/grey25" android:layout_width="match_parent" android:layout_height="@dimen/dialog_schedule_later_row_height" android:divider="@drawable/horizontal_divider" android:showDividers="beginning">
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:gravity="center_vertical" android:id="@+id/more_addins" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/more_add_ins" android:drawablePadding="@dimen/addin_title_padding" android:drawableStart="@drawable/ic_fluent_apps_add_in_24_regular" android:paddingStart="@dimen/addin_title_padding" android:paddingEnd="@dimen/addin_title_padding"/>
+</LinearLayout>

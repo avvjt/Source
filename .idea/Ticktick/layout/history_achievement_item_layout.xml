@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/title_layout" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="14sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/afd"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="120dp">
+        <com.ticktick.task.view.IconTextView android:textSize="16sp" android:textColor="?attr/textColorPrimaryTint" android:id="@+id/triangle_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:text="@string/ic_svg_triangle" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="42dp" android:layout_marginBottom="16dp" android:minWidth="72dp" android:layout_toLeftOf="@+id/triangle_view">
+            <RelativeLayout android:layout_width="56dp" android:layout_height="56dp">
+                <com.ticktick.task.view.CircleRingProgress android:id="@+id/start_level_progress_view" android:layout_width="54dp" android:layout_height="54dp" android:layout_centerInParent="true" app:progress_color="@color/achievement_progress_color" app:railway_color="@color/transparent" app:stoke_width="6dp"/>
+                <ImageView android:id="@+id/start_level_icon" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="20sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/start_score_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="0"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="42dp" android:layout_marginTop="12dp" android:layout_marginBottom="16dp" android:minWidth="72dp" android:layout_toRightOf="@+id/triangle_view">
+            <RelativeLayout android:layout_width="56dp" android:layout_height="56dp">
+                <com.ticktick.task.view.CircleRingProgress android:id="@+id/end_level_progress_view" android:layout_width="54dp" android:layout_height="54dp" android:layout_centerInParent="true" app:progress_color="@color/achievement_progress_color" app:railway_color="@color/transparent" app:stoke_width="6dp"/>
+                <ImageView android:id="@+id/end_level_icon" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="20sp" android:textColor="?android:attr/textColorTertiary" android:id="@+id/end_score_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="0"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

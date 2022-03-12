@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" outlook:spaceMode="0">
+    <include layout="@layout/toolbar"/>
+    <fragment android:name="com.microsoft.office.outlook.feed.ui.RecommendedVerticalFragment" android:id="@+id/recommended_vertical_feed" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.microsoft.office.outlook.uikit.widget.SingleScreenLinearLayout>

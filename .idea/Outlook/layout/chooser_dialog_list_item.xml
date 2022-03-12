@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/chooser_list_item_padding_left" android:paddingRight="@dimen/chooser_list_item_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <ImageView android:id="@+id/chooser_dialog_list_appicon" android:padding="1dp" android:layout_width="@dimen/chooser_list_icon_size" android:layout_height="@dimen/chooser_list_icon_size" android:scaleType="fitCenter"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/Gray10" android:id="@+id/chooser_dialog_list_appname" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/Gray7" android:id="@+id/chooser_dialog_list_app_subtext" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

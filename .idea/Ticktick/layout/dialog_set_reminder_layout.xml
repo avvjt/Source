@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/date_title" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="46dp">
+            <com.google.android.material.tabs.TabLayout android:layout_gravity="center_horizontal" android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="match_parent" app:tabBackground="?attr/tab_background_color" app:tabGravity="0" app:tabIndicatorColor="?attr/ej" app:tabIndicatorHeight="2dp" app:tabMaxWidth="0dp" app:tabMode="1" app:tabPaddingEnd="24dp" app:tabPaddingStart="24dp" app:tabSelectedTextColor="?android:attr/textColorPrimary" app:tabTextAppearance="@style/TextAppearance_Medium_16" app:tabTextColor="?android:attr/textColorSecondary"/>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:id="@+id/date_mode" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="@string/kv"/>
+            <include android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginTop="-1dp" layout="@layout/toolbar_divider"/>
+        </LinearLayout>
+        <include android:id="@+id/layout_quick_date_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="8dp" layout="@layout/layout_quick_date_items_for_custom_date_pick_dialog"/>
+    </LinearLayout>
+    <include android:id="@+id/date_mode_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top_layout" layout="@layout/set_reminder_date_mode_layout"/>
+    <include android:id="@+id/date_duration_mode_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top_layout" layout="@layout/dialog_set_reminder_date_duration_mode_layout"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/calendars_enumeration" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/buttonBarStyle">
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/button_cancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/cancel_item" android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/button_ok" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/ok" android:layout_weight="1" style="@style/Widget.Outlook.Button.Accent"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/list_item_issue_pr_loading_header_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:tag="binding_1" android:background="@color/listItemBackground" android:paddingBottom="@dimen/default_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/default_elevation">
+        <include android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/list_item_header"/>
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_2x"/>
+</LinearLayout>

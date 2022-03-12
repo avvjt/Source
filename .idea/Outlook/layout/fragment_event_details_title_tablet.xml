@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.microsoft.office.outlook.uikit.widget.Toolbar android:id="@+id/event_detail_tablet_control_header" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:titleTextColor="?attr/grey300"/>
+    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+    <LinearLayout android:layout_gravity="start|bottom" android:orientation="horizontal" android:id="@+id/event_details_tablet_title_container" android:paddingTop="@dimen/outlook_content_inset" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+        <ImageView android:id="@+id/event_details_icon" android:layout_width="@dimen/event_icon_size" android:layout_height="@dimen/event_icon_size" android:scaleType="centerInside" android:layout_marginStart="12dp" android:layout_marginEnd="28dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/horizontal_divider" android:showDividers="end" android:paddingEnd="@dimen/outlook_content_inset">
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.Title2" android:textSize="@dimen/event_detail_title_size" android:ellipsize="end" android:id="@+id/event_details_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" android:textDirection="locale"/>
+            <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:ellipsize="end" android:id="@+id/event_details_calendar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/outlook_content_inset" android:maxLines="1" android:singleLine="true" android:textDirection="locale"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

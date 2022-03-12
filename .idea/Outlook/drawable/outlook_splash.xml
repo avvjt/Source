@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/res_0x7f080104_outlook_splash__0">
+    <target android:name="_R_G_L_5_G_D_0_P_0" android:animation="@drawable/res_0x7f080105_outlook_splash__1"/>
+    <target android:name="_R_G_L_5_G" android:animation="@drawable/res_0x7f080126_outlook_splash__4"/>
+    <target android:name="_R_G_L_5_G" android:animation="@drawable/res_0x7f08014a_outlook_splash__8"/>
+    <target android:name="_R_G_L_4_G_T_1" android:animation="@drawable/res_0x7f080107_outlook_splash__11"/>
+    <target android:name="_R_G_L_4_G_T_1" android:animation="@drawable/res_0x7f08010c_outlook_splash__16"/>
+    <target android:name="_R_G_L_4_G_N_8_T_0" android:animation="@drawable/res_0x7f080118_outlook_splash__27"/>
+    <target android:name="_R_G_L_4_G_N_8_T_0" android:animation="@drawable/res_0x7f08011d_outlook_splash__31"/>
+    <target android:name="_R_G_L_3_G_N_8_T_0" android:animation="@drawable/res_0x7f080120_outlook_splash__34"/>
+    <target android:name="_R_G_L_3_G_N_8_T_0" android:animation="@drawable/res_0x7f080124_outlook_splash__38"/>
+    <target android:name="_R_G_L_2_G_D_0_P_0" android:animation="@drawable/res_0x7f080128_outlook_splash__41"/>
+    <target android:name="_R_G_L_2_G" android:animation="@drawable/res_0x7f08012a_outlook_splash__43"/>
+    <target android:name="_R_G_L_2_G_N_8_T_0" android:animation="@drawable/res_0x7f08012f_outlook_splash__48"/>
+    <target android:name="_R_G_L_2_G_N_8_T_0" android:animation="@drawable/res_0x7f080134_outlook_splash__52"/>
+    <target android:name="_R_G_L_2_G_N_8_N_7_T_0" android:animation="@drawable/res_0x7f080137_outlook_splash__55"/>
+    <target android:name="_R_G_L_2_G_N_8_N_7_T_0" android:animation="@drawable/res_0x7f080138_outlook_splash__56"/>
+    <target android:name="_R_G_L_1_G_N_8_T_0" android:animation="@drawable/res_0x7f080139_outlook_splash__57"/>
+    <target android:name="_R_G_L_1_G_N_8_T_0" android:animation="@drawable/res_0x7f08013e_outlook_splash__61"/>
+    <target android:name="_R_G_L_0_G_N_2_N_8_T_0" android:animation="@drawable/res_0x7f080141_outlook_splash__64"/>
+    <target android:name="_R_G_L_0_G_N_2_N_8_T_0" android:animation="@drawable/res_0x7f080145_outlook_splash__68"/>
+    <target android:name="time_group" android:animation="@drawable/res_0x7f080149_outlook_splash__71"/>
+</animated-vector>

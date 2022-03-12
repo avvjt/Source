@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/tastebuilder_view" android:background="?attr/musicBackgroundColor" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="top" android:id="@+id/tastebuilder_logo_music" android:layout_width="@dimen/onboarding_logo_music_width" android:layout_height="@dimen/onboarding_logo_music_height" android:layout_marginTop="@dimen/onboarding_logo_music_margin_top" android:src="@drawable/logo_music" android:contentDescription="@null" android:layout_marginStart="@dimen/onboarding_logo_music_margin_horizontal"/>
+        <android.support.v7.widget.RecyclerView android:id="@+id/tastebuilder_contents" android:paddingBottom="@dimen/tastebuilder_bottom_bar_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/tastebuilder_margin_top" android:layout_marginStart="@dimen/tastebuilder_margin_horizontal" android:layout_marginEnd="@dimen/tastebuilder_margin_horizontal"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/bottom_bar" android:background="@color/ytm_color_grey_10_at_90pct" android:layout_width="match_parent" android:layout_height="@dimen/tastebuilder_bottom_bar_height">
+            <com.google.android.libraries.youtube.common.ui.YouTubeButton android:textAppearance="@style/TextAppearance.YouTubeMusic.Button1" android:id="@+id/accept_button" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.BlueButton"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>

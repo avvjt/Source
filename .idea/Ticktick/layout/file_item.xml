@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.selectableview.SelectableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/list_view_item_height_high">
+    <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/file_icon" android:focusable="false" android:layout_width="56dp" android:layout_height="match_parent" android:text="@string/ic_svg_file"/>
+    <TextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/file_name" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="@dimen/material_normal_padding" android:layout_weight="1"/>
+</com.ticktick.task.view.selectableview.SelectableLinearLayout>

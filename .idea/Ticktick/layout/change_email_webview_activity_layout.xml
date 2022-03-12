@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:id="@+id/loading_view" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/loading_progress_bar" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginTop="200dp"/>
+            <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/azi"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/loading_error_view" android:background="?attr/activity_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/no_internet_empty_image" android:background="@drawable/empty_view_bg_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:scaleType="center"/>
+            <TextView android:textSize="16sp" android:textColor="?android:attr/textColorSecondary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/afs"/>
+        </LinearLayout>
+        <WebView android:id="@+id/webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <include layout="@layout/toolbar_shadow"/>
+</RelativeLayout>

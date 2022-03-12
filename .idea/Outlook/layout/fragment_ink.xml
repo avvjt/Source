@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/upper_bound" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/content_description_canvas_upper_bound" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/container">
+        <ImageView android:id="@+id/upper_bound_bubble" android:background="@drawable/ic_bubble" android:padding="5dp" android:layout_width="24dp" android:layout_height="24dp" app:srcCompat="@drawable/down_arrow"/>
+        <View android:background="?attr/colorAccent" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/canvasContainer" android:layout_width="match_parent" android:layout_height="300dp">
+        <FrameLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/content_description_drawing_canvas" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/ink_expand" android:paddingTop="8dp" android:paddingBottom="12dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="40dp" android:layout_marginTop="4dp" android:contentDescription="@string/content_description_expand" android:paddingStart="12dp" android:paddingEnd="12dp" android:layout_marginEnd="4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_fluent_arrow_expand_24_regular" app:tint="?attr/colorAccent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@+id/lower_bound" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/content_description_canvas_lower_bound" android:paddingStart="16dp" android:paddingEnd="16dp" app:layout_constraintBottom_toBottomOf="@+id/container" app:layout_constraintStart_toStartOf="0">
+        <ImageView android:id="@+id/lower_bound_bubble" android:background="@drawable/ic_bubble" android:padding="5dp" android:layout_width="24dp" android:layout_height="24dp" android:scaleX="-1" android:rotation="180" app:srcCompat="@drawable/down_arrow"/>
+        <View android:background="?attr/colorAccent" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

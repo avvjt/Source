@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/drop_zone_parent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:id="@+id/drop_zone_attachment" android:background="@drawable/drop_zone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@drawable/drop_zone_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/drop_to_attach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drop_to_attach" style="@style/TextAppearance.Outlook.Body2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/drop_zone_inline" android:background="@drawable/drop_zone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@drawable/drop_zone_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/drop_inline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drop_to_inline" style="@style/TextAppearance.Outlook.Body2"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

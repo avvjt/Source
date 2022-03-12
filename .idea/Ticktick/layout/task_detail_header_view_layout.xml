@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ticktick.task.view.TaskProgressRelativeLayout android:id="@+id/header_lbl" android:layout_width="match_parent" android:layout_height="@dimen/task_detail_date_item_height">
+        <RelativeLayout android:id="@+id/date_reminder_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/priority_toggle_btn">
+            <RelativeLayout android:id="@+id/task_checkbox_wrap" android:background="?attr/i" android:layout_width="56dp" android:layout_height="52dp">
+                <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/task_checkbox" android:background="@null" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/task_checkbox_wrap">
+                <TextView android:textSize="14sp" android:textColorHint="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/task_date_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:hint="@string/aun" android:maxLines="1"/>
+                <TextView android:textSize="14sp" android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/task_repeat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.ticktick.task.view.selectableview.SelectableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/date_picker_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/priority_toggle_btn">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:id="@+id/set_duedate_icon" android:visibility="gone" android:layout_width="24dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/ic_svg_special_calendar"/>
+            <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/i8" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="@string/aun" android:maxLines="1"/>
+            <View android:id="@+id/custom_blank" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:gravity="center_vertical" android:id="@+id/today" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/l3" android:maxLines="1"/>
+            <View android:id="@+id/today_blank" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="?attr/textColorTertiary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tomorrow" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/l4" android:maxLines="1"/>
+            <View android:id="@+id/tomorrow_blank" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1"/>
+        </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+        <FrameLayout android:id="@+id/priority_toggle_btn" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <com.ticktick.task.view.IconTextView android:textSize="24sp" android:gravity="center" android:id="@+id/priority_toggle" android:background="?attr/i" android:layout_width="48dp" android:layout_height="56dp" android:scaleType="center" android:text="@string/ic_svg_priority_high"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="?attr/activity_background"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="14sp" android:textColor="?attr/colorHighlight" android:gravity="center_vertical" android:id="@+id/tv_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/material_normal_padding"/>
+        <com.ticktick.task.view.TaskProgressBar android:id="@+id/task_progress" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/task_detail_date_item_height" android:max="100" android:progressDrawable="@drawable/progress_horizontal" android:thumb="@null" style="@style/sb"/>
+    </com.ticktick.task.view.TaskProgressRelativeLayout>
+    <ViewStub android:id="@+id/location_stub" android:layout="@layout/detail_list_item_location" android:inflatedId="@+id/location_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/date_picker_bar_shadow" android:layout_height="@dimen/divider_1" android:layout_marginLeft="@dimen/material_normal_padding" android:layout_marginRight="@dimen/material_normal_padding" style="?attr/tt_divider"/>
+</LinearLayout>

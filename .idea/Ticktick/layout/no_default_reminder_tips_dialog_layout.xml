@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:id="@+id/tips_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:text="@string/oe" style="@style/PreferenceTextTitle"/>
+    <TextView android:textSize="15sp" android:textColor="?android:attr/textColorSecondary" android:id="@+id/tips_text2" android:paddingLeft="16dp" android:paddingRight="16dp" android:text="@string/nl" style="@style/TextView_Multiline_Message_Preference"/>
+    <androidx.appcompat.widget.ButtonBarLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/ee" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/c9">
+        <com.ticktick.task.view.selectableview.SelectableAppCompatButton android:textColor="?attr/ej" android:id="@android:id/button3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" style="?attr/c7"/>
+        <androidx.legacy.widget.Space android:id="@+id/ac_" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.ticktick.task.view.selectableview.SelectableAppCompatButton android:textColor="?attr/ej" android:id="@android:id/button2" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/c6"/>
+        <com.ticktick.task.view.selectableview.SelectableAppCompatButton android:textColor="?attr/ej" android:id="@android:id/button1" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mu" style="?attr/c8"/>
+    </androidx.appcompat.widget.ButtonBarLayout>
+</LinearLayout>

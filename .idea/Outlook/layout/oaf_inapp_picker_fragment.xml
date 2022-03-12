@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="12dp">
+    <com.microsoft.office.feedback.inapp.view.IconButton android:id="@+id/oaf_inapp_picker_iconbutton_smile" android:text="@string/oaf_picker_button_smile" iconButton:iconDrawable="@drawable/oaf_picker_smile" style="@style/oaf_pickerbutton">
+        <requestFocus/>
+    </com.microsoft.office.feedback.inapp.view.IconButton>
+    <com.microsoft.office.feedback.inapp.view.IconButton android:id="@+id/oaf_inapp_picker_iconbutton_frown" android:text="@string/oaf_picker_button_frown" iconButton:iconDrawable="@drawable/oaf_picker_frown" style="@style/oaf_pickerbutton"/>
+    <com.microsoft.office.feedback.inapp.view.IconButton android:id="@+id/oaf_inapp_picker_iconbutton_idea" android:visibility="gone" android:text="@string/oaf_picker_button_idea" iconButton:iconDrawable="@drawable/oaf_picker_idea" style="@style/oaf_pickerbutton"/>
+    <com.microsoft.office.feedback.inapp.view.IconButton android:id="@+id/oaf_inapp_picker_iconbutton_bug" android:visibility="gone" android:text="@string/oaf_picker_button_bug" iconButton:iconDrawable="@drawable/oaf_picker_bug" style="@style/oaf_pickerbutton"/>
+</LinearLayout>

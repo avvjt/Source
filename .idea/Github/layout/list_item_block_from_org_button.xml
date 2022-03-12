@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/list_item_block_from_org_button_0" android:background="@color/listItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.github.android.views.ProgressButton android:id="@+id/block_from_org_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:elevation="@dimen/default_elevation" app:buttonBackground="@android:color/transparent" app:buttonProgressTint="@color/systemRed" app:buttonText="@string/block_from_org_button" app:buttonTextColor="@color/systemRed"/>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/add_attachment_item" android:background="@drawable/item_background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/compose_attach" style="@style/ListItem.Row">
+        <ImageView android:id="@+id/add_attachment_item_icon" android:layout_height="match_parent" android:src="@drawable/ic_fluent_attach_24_regular" style="@style/ListItem.Icon"/>
+        <TextView android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/add_attachment_item_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/attachments" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Title"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/added_attachments_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:id="@+id/show_more_attachments_item" android:background="@drawable/item_background" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/compose_attach" style="@style/ListItem.Row">
+        <ImageView android:id="@+id/show_more_attachments_icon" android:focusable="false" android:layout_height="match_parent" android:src="@drawable/ic_fluent_attach_24_regular" style="@style/ListItem.Icon"/>
+        <TextView android:textColor="?android:attr/textColorSecondary" android:gravity="center_vertical" android:id="@+id/show_more_attachments_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/show_more_attachments" android:maxLines="1" android:singleLine="true" style="@style/ListItem.Title"/>
+    </LinearLayout>
+</LinearLayout>

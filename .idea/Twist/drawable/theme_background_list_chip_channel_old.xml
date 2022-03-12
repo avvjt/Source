@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size android:height="@dimen/theme_list_item_chip_size" android:width="@dimen/theme_list_item_chip_size"/>
+    <corners android:radius="@dimen/theme_list_item_chip_corner_radius"/>
+    <padding android:left="@dimen/theme_list_item_chip_padding_big" android:right="@dimen/theme_list_item_chip_padding_big"/>
+</shape>

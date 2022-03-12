@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/carousel_text_item_layout" android:paddingTop="@dimen/lenshvc_carousel_text_padding_top" android:paddingBottom="@dimen/lenshvc_carousel_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lenshvc_carousel_item_horizontal_margin" android:layout_marginRight="@dimen/lenshvc_carousel_item_horizontal_margin">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/lenshvc_carousel_text_padding_horizontal" android:paddingEnd="@dimen/lenshvc_carousel_text_padding_horizontal">
+        <TextView android:textSize="@dimen/lenshvc_carousel_text_size" android:id="@+id/carousel_item_text_view" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="yes"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/carousel_item_discovery_dot" android:visibility="gone" android:layout_width="@dimen/lenshvc_discovery_dot_size" android:layout_height="@dimen/lenshvc_discovery_dot_size" android:src="@drawable/lenshvc_actions_discovery_dot"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:elevation="0dp">
+            <include layout="@layout/tab_layout"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="428dp" android:layout_above="@+id/buttonPanelLayout" android:layout_below="@+id/appbar"/>
+        <include android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginTop="-1dp" android:layout_below="@+id/appbar" layout="@layout/toolbar_divider"/>
+    </RelativeLayout>
+    <include android:id="@+id/buttonPanelLayout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/tt_alert_dialog_button_bar_material"/>
+</LinearLayout>

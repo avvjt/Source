@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColor="?android:attr/textColorSecondary" android:gravity="center" android:id="@+id/viewer_loading_view" android:background="@color/outlook_app_surface_under_page" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/loading" android:maxLines="1" android:singleLine="true" android:textIsSelectable="false"/>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" android:id="@+id/thumbnail_frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0dp" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:textColor="@color/ytm_text_color_primary" android:gravity="center" android:id="@+id/list_index" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" yt:robotoFont="6"/>
+    <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:layout_gravity="center" android:id="@+id/square_thumbnail_container" android:layout_width="match_parent" android:layout_height="match_parent" yt:aspectRatio="@fraction/aspect_ratio_square">
+        <com.makeramen.RoundedImageView android:id="@+id/square_thumbnail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" yt:corner_radius="@dimen/music_list_item_thumbnail_corner_radius"/>
+    </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+    <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:layout_gravity="center" android:id="@+id/wide_thumbnail_container" android:layout_width="match_parent" android:layout_height="match_parent" yt:aspectRatio="@fraction/rounded_aspect_ratio_16_9">
+        <com.makeramen.RoundedImageView android:id="@+id/wide_thumbnail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" yt:corner_radius="@dimen/rounded_button_corner_radius"/>
+    </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+    <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:layout_gravity="center" android:id="@+id/circle_thumbnail_container" android:layout_width="match_parent" android:layout_height="match_parent" yt:aspectRatio="@fraction/aspect_ratio_square">
+        <com.makeramen.RoundedImageView android:id="@+id/circle_thumbnail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" yt:oval="true"/>
+    </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+    <TableLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TableRow android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+            <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" yt:aspectRatio="@fraction/aspect_ratio_square">
+                <com.makeramen.RoundedImageView android:id="@+id/quilt_thumbnail_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" yt:corner_radius="@dimen/music_list_item_thumbnail_corner_radius"/>
+            </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+            <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" yt:aspectRatio="@fraction/aspect_ratio_square">
+                <com.makeramen.RoundedImageView android:id="@+id/quilt_thumbnail_2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" yt:corner_radius="@dimen/music_list_item_thumbnail_corner_radius"/>
+            </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+        </TableRow>
+        <TableRow android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+            <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" yt:aspectRatio="@fraction/aspect_ratio_square">
+                <com.makeramen.RoundedImageView android:id="@+id/quilt_thumbnail_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" yt:corner_radius="@dimen/music_list_item_thumbnail_corner_radius"/>
+            </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+            <com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" yt:aspectRatio="@fraction/aspect_ratio_square">
+                <com.makeramen.RoundedImageView android:id="@+id/quilt_thumbnail_4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:cropToPadding="true" android:contentDescription="@null" yt:corner_radius="@dimen/music_list_item_thumbnail_corner_radius"/>
+            </com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>
+        </TableRow>
+    </TableLayout>
+    <FrameLayout android:id="@+id/thumbnail_overlay_parent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/content_unavailable_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" yt:srcCompat="@drawable/yt_outline_alert_circle_vd_theme_24"/>
+</FrameLayout>

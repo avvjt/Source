@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/compose_availability_background_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/compose_availability_day_blocks" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/compose_availability_day_divider" android:showDividers="middle"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Body1" android:textColor="?attr/colorAccent" android:gravity="center" android:background="@drawable/compose_availability_brand_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/made_easy_by_outlook"/>
+</LinearLayout>

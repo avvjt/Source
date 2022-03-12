@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/chart_item_width" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom|center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/chart_axis_x_margin_bottom">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="@dimen/chart_item_progress_width_with_margin" android:layout_height="wrap_content">
+            <com.ticktick.task.view.UnScalableTextView android:textColor="?android:attr/textColorPrimary" android:id="@+id/value1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:id="@+id/progress1" android:layout_width="@dimen/chart_item_progress_width" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="@dimen/chart_item_progress_width_with_margin" android:layout_height="wrap_content">
+            <com.ticktick.task.view.UnScalableTextView android:textColor="?android:attr/textColorPrimary" android:id="@+id/value2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:id="@+id/progress2" android:layout_width="@dimen/chart_item_progress_width" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.ticktick.task.view.UnScalableTextView android:textSize="12sp" android:textColor="?attr/textColorTertiary" android:layout_gravity="bottom|center_horizontal" android:id="@+id/x_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+</FrameLayout>

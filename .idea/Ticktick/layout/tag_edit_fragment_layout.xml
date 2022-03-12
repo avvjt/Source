@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/hh" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" layout="@layout/toolbar_layout"/>
+    <ScrollView android:id="@+id/content_scroll" android:background="?attr/activity_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/head_content" android:layout_width="match_parent" android:layout_height="48dp">
+                <androidx.appcompat.widget.AppCompatEditText android:textSize="20sp" android:textColor="?android:attr/textColorPrimary" android:id="@+id/tasklist_rename_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:hint="@string/azq" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="textNoSuggestions" android:imeOptions="actionDone"/>
+                <include android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_alignParentBottom="true" layout="@layout/preference_divider"/>
+            </RelativeLayout>
+            <com.ticktick.task.view.selectableview.SelectableLinearLayout android:orientation="horizontal" android:id="@+id/project_color_layout" android:layout_width="match_parent" android:layout_height="56dp">
+                <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="?attr/iconColorPrimary" android:gravity="center" android:layout_width="56dp" android:layout_height="56dp" android:text="@string/ic_svg_project_color"/>
+                <androidx.appcompat.widget.AppCompatImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/project_color" android:layout_width="26dp" android:layout_height="26dp" android:scaleType="center" android:tint="?attr/iconColorPrimary"/>
+            </com.ticktick.task.view.selectableview.SelectableLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

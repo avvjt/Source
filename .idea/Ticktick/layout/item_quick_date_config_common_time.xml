@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="26dp" android:paddingRight="26dp" android:layout_width="match_parent" android:layout_height="@dimen/quick_date_section_item_height">
+    <TextView android:textSize="14sp" android:gravity="center" android:id="@+id/tv_customize_common_time" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/all"/>
+</FrameLayout>

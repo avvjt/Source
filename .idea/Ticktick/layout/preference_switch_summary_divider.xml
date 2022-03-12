@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="72dp">
+    <ImageView android:layout_gravity="center" android:id="@android:id/icon" android:layout_width="50dp" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:paddingLeft="@dimen/preference_margin" android:paddingTop="@dimen/preference_margin" android:paddingRight="@dimen/preference_margin" android:paddingBottom="@dimen/preference_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@android:id/checkbox" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextTitle"/>
+        <TextView android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PreferenceTextSummary"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.SwitchCompat android:id="@android:id/checkbox" app:theme="@style/switch_color" style="@style/Switch_Preference_settings"/>
+    <include android:id="@+id/bottom_divider" android:layout_width="match_parent" android:layout_height="@dimen/divider_1" android:layout_marginLeft="@dimen/preference_margin" android:layout_alignParentBottom="true" layout="@layout/preference_divider"/>
+</RelativeLayout>

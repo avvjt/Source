@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/preview_layout" android:layout_width="match_parent" android:layout_height="76dp">
+    <ImageView android:id="@+id/wallpaper" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/background" android:layout_width="272dp" android:layout_height="56dp" android:scaleType="fitXY" android:layout_alignLeft="@+id/foreground" android:layout_alignTop="@+id/foreground" android:layout_alignRight="@+id/foreground" android:layout_alignBottom="@+id/foreground"/>
+    <ImageView android:id="@+id/foreground" android:layout_width="272dp" android:layout_height="56dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+</RelativeLayout>

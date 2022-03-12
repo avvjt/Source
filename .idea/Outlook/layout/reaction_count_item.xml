@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageSwitcher android:id="@+id/reaction_image" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginBottom="10dp" android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+    <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:id="@+id/reaction_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2dp" android:layout_marginEnd="8dp" app:layout_constraintBottom_toBottomOf="@+id/reaction_image" app:layout_constraintStart_toEndOf="@+id/reaction_image" app:layout_constraintTop_toTopOf="@+id/reaction_image"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

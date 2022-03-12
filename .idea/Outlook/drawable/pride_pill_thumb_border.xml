@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="16dp"/>
+    <padding android:left="@dimen/pride_theme_border_width" android:top="@dimen/pride_theme_border_width" android:right="@dimen/pride_theme_border_width" android:bottom="@dimen/pride_theme_border_width"/>
+</shape>

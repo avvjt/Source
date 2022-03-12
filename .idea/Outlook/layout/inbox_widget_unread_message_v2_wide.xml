@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/inbox_message_item_root" android:padding="@dimen/inbox_widget_message_start_end_padding_v2" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/inbox_widget_message_item_min_height_v2" android:showDividers="none">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/inbox_widget_unread_counter_padding_v2">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.SubHeading" android:textStyle="bold" android:textColor="@color/outlook_app_primary_text" android:ellipsize="end" android:id="@+id/message_sender" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1"/>
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Caption" android:textStyle="bold" android:textColor="@color/com_primary" android:gravity="center_vertical" android:id="@+id/date_sent" android:layout_width="wrap_content" android:layout_height="match_parent" android:includeFontPadding="false" android:layout_marginStart="@dimen/inbox_widget_text_margin_left_v2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/inbox_widget_sender_subject_distance">
+        <TextView android:textAppearance="@style/TextAppearance.Outlook.Body2" android:textColor="@color/outlook_app_primary_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/message_subject" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1"/>
+        <include layout="@layout/inbox_widget_snippet_icons"/>
+    </LinearLayout>
+    <include layout="@layout/inbox_widget_message_snippet"/>
+    <include layout="@layout/inbox_widget_rsvp_wide"/>
+</LinearLayout>

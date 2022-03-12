@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:outlook="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_menu_report_spam" android:id="@+id/report_spam_menu_item" android:title="@string/report_message_bottom_dialog_option_junk" outlook:contentDescription="@string/accessibility_report_spam" outlook:showAsAction="always"/>
+    <item android:icon="@drawable/ic_menu_report_phishing" android:id="@+id/report_phishing_menu_item" android:title="@string/report_message_bottom_dialog_option_phishing" outlook:contentDescription="@string/accessibility_report_phishing" outlook:showAsAction="always"/>
+</menu>

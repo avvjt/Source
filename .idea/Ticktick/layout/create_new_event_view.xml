@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ticktick.task.view.CreateNewEventView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/btn_up" android:background="@color/primary_green" android:visibility="invisible" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true"/>
+    <Button android:id="@+id/btn_down" android:background="@color/primary_red" android:visibility="invisible" android:layout_width="10dp" android:layout_height="10dp" android:layout_marginLeft="20dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/selected_hour_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/l6"/>
+</com.ticktick.task.view.CreateNewEventView>

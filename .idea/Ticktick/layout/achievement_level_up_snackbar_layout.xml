@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/achievement_level_up_layout" android:background="?attr/itemSelectableBackground" android:layout_width="match_parent" android:layout_height="68dp" app:cardBackgroundColor="@color/achievement_snackbar_bg_color" app:cardCornerRadius="@dimen/corners_radius_card">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/level_icon" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:scaleType="center" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/cancel_icon" android:layout_toRightOf="@+id/level_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="16sp" android:textColor="@color/textColorPrimary_light" android:ellipsize="marquee" android:id="@+id/ai6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" android:singleLine="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/textColorTertiary_light" android:id="@+id/hh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="content"/>
+        </LinearLayout>
+        <com.ticktick.task.view.IconTextView android:textSize="24sp" android:textColor="@color/textColorTertiary_light" android:gravity="center" android:id="@+id/cancel_icon" android:background="?attr/i" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="34dp" android:layout_height="68dp" android:text="@string/ic_svg_clear_min" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

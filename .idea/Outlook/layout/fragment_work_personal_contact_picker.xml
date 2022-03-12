@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/compose_banner_mailtip_v2"/>
+    <com.microsoft.office.outlook.uiappcomponent.widget.contact.ContactPickerView android:textAppearance="@style/TextAppearance.Outlook.Heading1" android:textColorHint="?android:attr/textColorSecondary" android:id="@+id/contact_name" android:background="@color/compose_v2_surface" android:paddingLeft="@dimen/outlook_content_inset" android:paddingTop="8dp" android:paddingRight="@dimen/outlook_content_inset" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/contacts_completion_view_max_height" android:minHeight="@dimen/contacts_completion_view_min_height" android:hint="@string/contact_picker_hint" android:maxLines="1" android:singleLine="true" android:inputType="textPersonName" android:imeOptions="flagNoExtractUi|actionDone" android:paddingStart="@dimen/outlook_content_inset" android:paddingEnd="@dimen/outlook_content_inset"/>
+    <View android:background="@drawable/horizontal_divider" android:layout_width="match_parent" android:layout_height="@dimen/outlook_divider_height"/>
+</LinearLayout>
